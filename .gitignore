@@ -18,6 +18,12 @@ yarn-error.log*
 # Documentos pesados locales (para no inflar el repo ni ralentizar Pages)
 *.pdf
 *.docx
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.zip
+*.tar.gz
 
 # Node modules (si se usan a futuro)
 node_modules/
