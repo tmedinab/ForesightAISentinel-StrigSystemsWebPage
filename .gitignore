@@ -28,4 +28,6 @@ yarn-error.log*
 # Node modules (si se usan a futuro)
 node_modules/
 dist/
+scratch/
+
 build/

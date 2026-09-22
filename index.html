@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Strig Systems | Foresight AI — Inteligencia Aérea Autónoma</title>
   <meta name="description" content="Strig Systems desarrolla Foresight AI: plataforma de vigilancia territorial autónoma con drones VTOL y Edge AI. Cierra la ventana nocturna de 10 horas en detección de incendios forestales. Ahorro del 90% vs aviación tripulada.">
-  <meta name="keywords" content="Strig Systems, Foresight AI, Incendios Forestales, Vigilancia Aérea Autónoma, VTOL, Edge AI, Jetson Orin Nano, SIYI ZT6, CORFO, UdeC">
+  <meta name="keywords" content="Strig Systems, Foresight AI, Incendios Forestales, Vigilancia Aérea Autónoma, Drones VTOL, Edge AI, Detección Temprana, Monitoreo Nocturno, CORFO, UdeC">
   <meta name="author" content="Strig Systems SpA">
   <link rel="canonical" href="https://strigsystems.tech/">
 
@@ -86,7 +86,7 @@
             <span class="arrow-icon">→</span>
           </a>
           <a href="#tecnologia" class="btn-ghost">
-            <span data-i18n="hero_cta_secondary">Ver Arquitectura Técnica</span>
+            <span data-i18n="hero_cta_secondary">Ver Capacidades del Sistema</span>
           </a>
         </div>
 
@@ -105,7 +105,7 @@
           <div class="metric-card glass-panel">
             <div class="metric-value">&lt; 5%</div>
             <div class="metric-title" data-i18n="m3_title">Falsas Alarmas</div>
-            <div class="metric-sub" data-i18n="m3_sub">Fusión LWIR radiométrica + RGB</div>
+            <div class="metric-sub" data-i18n="m3_sub">Fusión termográfica y óptica a bordo</div>
           </div>
           <div class="metric-card glass-panel">
             <div class="metric-value">0 CAPEX</div>
@@ -170,20 +170,20 @@
     <section class="section" id="tecnologia">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag" data-i18n="tech_tag">Arquitectura del Sistema</span>
+          <span class="section-tag" data-i18n="tech_tag">Capacidades Operativas</span>
           <h2 class="section-title" data-i18n="tech_title">Vigilancia Territorial con Inteligencia A Bordo</h2>
           <p class="section-subtitle" data-i18n="tech_sub">
-            Diseñado bajo enfoque MOSA (Modular Open Systems Approach). La aeronave VTOL piensa, detecta y decide en el borde sin requerir enlace continuo a internet.
+            Arquitectura autónoma de alta disponibilidad. La aeronave VTOL detecta, clasifica y georreferencia en el borde sin requerir enlace continuo a internet ni servidores en tierra.
           </p>
         </div>
 
         <div class="tech-cards-grid">
           <div class="tech-card glass-panel">
             <div class="tech-avatar-circle">
-              <img src="assets/img/tech/thermal_detection.png" alt="Cámara térmica SIYI ZT6" class="circle-thumb" loading="lazy">
+              <img src="assets/img/tech/aerial_scan_loop.webp" alt="Visión Térmica Bi-Espectral en Tiempo Real" class="circle-thumb" loading="lazy">
             </div>
-            <h3 class="tech-title" data-i18n="t1_title">Sensor Bi-Espectral SIYI ZT6</h3>
-            <p class="tech-desc" data-i18n="t1_desc">Térmica radiométrica LWIR 640×512 (13 mm) + Cámara 4K en gimbal de 3 ejes. Verificación en oscuridad total y reducción de falsos positivos por debajo del 5%.</p>
+            <h3 class="tech-title" data-i18n="t1_title">Visión Térmica Bi-Espectral</h3>
+            <p class="tech-desc" data-i18n="t1_desc">Detección infrarroja radiométrica y óptica de alta definición en gimbal estabilizado. Identificación de amenazas térmicas y presencia en oscuridad total con menos de 5% de falsas alarmas.</p>
           </div>
 
           <div class="tech-card glass-panel">
@@ -201,8 +201,8 @@
                 <line x1="1" y1="14" x2="4" y2="14"></line>
               </svg>
             </div>
-            <h3 class="tech-title" data-i18n="t2_title">Cómputo Edge Jetson Orin Nano</h3>
-            <p class="tech-desc" data-i18n="t2_desc">Inferencia de redes neuronales a bordo. El segmento aéreo analiza frames en tiempo real sin saturar el enlace de datos y actúa de forma autónoma.</p>
+            <h3 class="tech-title" data-i18n="t2_title">Inteligencia Artificial Embarcada</h3>
+            <p class="tech-desc" data-i18n="t2_desc">Procesamiento de visión computacional a bordo en el borde (Edge AI). Análisis de video y clasificación autónoma en tiempo real sin depender de conectividad externa ni saturar enlaces.</p>
           </div>
 
           <div class="tech-card glass-panel">
@@ -214,16 +214,16 @@
                 <path d="M12 14v7"></path>
               </svg>
             </div>
-            <h3 class="tech-title" data-i18n="t3_title">Alertas LoRa UHF 900 MHz (Dark-Zone)</h3>
-            <p class="tech-desc" data-i18n="t3_desc">Emisión de alertas tácticas ultraligeras en menos de 5 segundos vía radioenlace UHF (RFD900x), garantizando operatividad en quebradas sin cobertura celular.</p>
+            <h3 class="tech-title" data-i18n="t3_title">Telemetría Táctica para Zonas Remotas</h3>
+            <p class="tech-desc" data-i18n="t3_desc">Emisión de alertas estructuradas en menos de 5 segundos mediante radioenlaces de largo alcance, garantizando operatividad táctica en quebradas y predios sin cobertura celular.</p>
           </div>
 
           <div class="tech-card glass-panel">
             <div class="tech-avatar-circle">
-              <img src="assets/img/tech/vtol_payload.png" alt="Aeronave Striver Mini VTOL" class="circle-thumb" loading="lazy">
+              <img src="assets/img/tech/territorial_hud_grid.webp" alt="Vigilancia Territorial Continua" class="circle-thumb" loading="lazy">
             </div>
-            <h3 class="tech-title" data-i18n="t4_title">Célula VTOL QuadPlane (2,1 m)</h3>
-            <p class="tech-desc" data-i18n="t4_desc">Despegue y aterrizaje vertical sin pista. Autonomía de 45 a 52 minutos cubriendo ~1 km de radio (~314 ha) por sortie con vientos de hasta 8 m/s.</p>
+            <h3 class="tech-title" data-i18n="t4_title">Aeronave VTOL de Rango Extendido</h3>
+            <p class="tech-desc" data-i18n="t4_desc">Despegue y aterrizaje vertical independiente de pista en cualquier relieve. Cobertura territorial de cientos de hectáreas por patrullaje con alta resistencia a condiciones de viento.</p>
           </div>
 
           <div class="tech-card glass-panel">
@@ -237,8 +237,8 @@
                 <circle cx="12" cy="12" r="3"></circle>
               </svg>
             </div>
-            <h3 class="tech-title" data-i18n="t5_title">Georreferenciación por Raytracing & RTK</h3>
-            <p class="tech-desc" data-i18n="t5_desc">Cálculo de coordenadas por proyección angular (ray-casting) desde el gimbal al modelo de elevación digital (DEM) con RTK a bordo (≤ 5m de error y submétrica vía SfM).</p>
+            <h3 class="tech-title" data-i18n="t5_title">Georreferenciación Quirúrgica</h3>
+            <p class="tech-desc" data-i18n="t5_desc">Proyección angular instantánea hacia el terreno asistida por posicionamiento centimétrico de alta precisión, calculando coordenadas exactas para el despacho inmediato de brigadas.</p>
           </div>
 
           <div class="tech-card glass-panel">
@@ -248,19 +248,18 @@
                 <path d="m9 12 2 2 4-4"></path>
               </svg>
             </div>
-            <h3 class="tech-title" data-i18n="t6_title">Marco SORA 2.5 & Transición BVLOS</h3>
-            <p class="tech-desc" data-i18n="t6_desc">Arquitectura concebida bajo normas aeronáuticas DGAC (DAN 151/91), paracaídas balístico y matriz FDIR para operaciones más allá de la línea de vista visual.</p>
+            <h3 class="tech-title" data-i18n="t6_title">Operación Segura & Certificada</h3>
+            <p class="tech-desc" data-i18n="t6_desc">Diseñado bajo rigurosos marcos de seguridad aeronáutica civil, protocolos de redundancia, paracaídas balístico y contingencia autónoma para misiones críticas complejas.</p>
           </div>
         </div>
 
-        <!-- Hardware & Engineering Specs Bar -->
+        <!-- Hardware & Engineering Specs Bar -> Replaced with Capabilities Strip -->
         <div class="specs-bar glass-panel">
-          <div class="spec-pill"><span class="spec-name">Aeronave:</span> QuadPlane VTOL 2.1m Striver Mini</div>
-          <div class="spec-pill"><span class="spec-name">Cómputo:</span> NVIDIA Jetson Orin Nano + NVMe</div>
-          <div class="spec-pill"><span class="spec-name">Sensor:</span> SIYI ZT6 LWIR 640×512 Radiométrica</div>
-          <div class="spec-pill"><span class="spec-name">Georreferenciación:</span> Raytracing + RTK GNSS</div>
-          <div class="spec-pill"><span class="spec-name">Enlaces:</span> LoRa UHF 900MHz + ELRS 2.4GHz</div>
-          <div class="spec-pill"><span class="spec-name">Cobertura:</span> ~314 ha / radio 1 km por sortie</div>
+          <div class="spec-pill"><span class="spec-name">Operación:</span> Cobertura Nocturna Continua</div>
+          <div class="spec-pill"><span class="spec-name">Eficiencia:</span> 90% Menor Costo vs Avión Tripulado</div>
+          <div class="spec-pill"><span class="spec-name">Respuesta:</span> Alertas Tácticas en &lt; 5 Segundos</div>
+          <div class="spec-pill"><span class="spec-name">Confiabilidad:</span> &lt; 5% Tasa de Falsas Alarmas</div>
+          <div class="spec-pill"><span class="spec-name">Modelo:</span> Intelligence as a Service (0 CAPEX)</div>
         </div>
       </div>
     </section>
@@ -288,7 +287,7 @@
             <div class="phase-number-badge">02</div>
             <div class="phase-time">Semanas 3 - 4</div>
             <h3 class="phase-title" data-i18n="ph2_title">Calibración Sensorial</h3>
-            <p class="phase-desc" data-i18n="ph2_desc">Pruebas en terreno de firmas térmicas, validación de enlace LoRa en zonas sin cobertura y simulacros controlados.</p>
+            <p class="phase-desc" data-i18n="ph2_desc">Pruebas en terreno de firmas térmicas, validación de telemetría táctica en zonas sin cobertura y simulacros controlados.</p>
           </div>
 
           <div class="pilot-phase-card glass-panel">
