@@ -1,162 +1,535 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Foresight AI Sentinel | Strig Systems</title>
-  <meta name="description" content="Foresight AI Sentinel por Strig Systems. Inteligencia artificial de próxima generación para monitoreo, predicción y salvaguarda autónoma de sistemas críticos.">
-  <meta name="keywords" content="Foresight AI, Sentinel, Strig Systems, Artificial Intelligence, Cybersecurity, Predictive Analytics, AI Agents">
-  <meta name="author" content="Strig Systems">
+  <title>Strig Systems | Foresight AI — Inteligencia Aérea Autónoma para Activos Críticos</title>
+  <meta name="description" content="Strig Systems desarrolla Foresight AI: plataforma de vigilancia territorial autónoma con aeronaves VTOL y procesamiento Edge AI. Detección temprana y respuesta proactiva ante incendios e intrusiones en grandes extensiones territoriales.">
+  <meta name="keywords" content="Strig Systems, Foresight AI, Detección de Incendios, Vigilancia Aérea Autónoma, VTOL, Edge AI, Visión Computacional, Monitoreo Nocturno, BVLOS, CORFO, UdeC">
+  <meta name="author" content="Strig Systems SpA">
   <link rel="canonical" href="https://strigsystems.tech/">
 
-  <!-- Open Graph / Social Cards -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://strigsystems.tech/">
-  <meta property="og:title" content="Foresight AI Sentinel | Strig Systems">
-  <meta property="og:description" content="Inteligencia autónoma de próxima generación para protección y vigilancia predictiva.">
+  <meta property="og:title" content="Strig Systems | Foresight AI">
+  <meta property="og:description" content="Inteligencia aérea autónoma para la protección de activos críticos y mitigación proactiva de riesgos territoriales.">
+  <meta property="og:image" content="https://strigsystems.tech/assets/img/tech/vtol_payload.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>">
 
   <!-- Google Fonts: Space Grotesk & Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Ambient Lighting Effects -->
   <div class="background-grid" aria-hidden="true"></div>
   <div class="glow-orb glow-top-left" aria-hidden="true"></div>
-  <div class="glow-orb glow-bottom-right" aria-hidden="true"></div>
+  <div class="glow-orb glow-center-right" aria-hidden="true"></div>
+  <div class="glow-orb glow-bottom-left" aria-hidden="true"></div>
 
-  <!-- Header / Navigation -->
+  <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <div class="brand">
+      <a href="#" class="brand" aria-label="Strig Systems">
         <span class="brand-shield" aria-hidden="true">◈</span>
         <span class="brand-name">STRIG<span class="accent-text">SYSTEMS</span></span>
-      </div>
-      <nav class="nav-links">
-        <a href="#vision" class="nav-item">Visión</a>
-        <a href="#capacidades" class="nav-item">Capacidades</a>
-        <a href="#arquitectura" class="nav-item">Arquitectura</a>
-        <a href="#contacto" class="btn-secondary">Contacto</a>
+        <span class="brand-divider">/</span>
+        <span class="brand-sub">FORESIGHT AI</span>
+      </a>
+
+      <nav class="nav-links" id="main-nav">
+        <a href="#problema" class="nav-item" data-i18n="nav_problem">Problema</a>
+        <a href="#tecnologia" class="nav-item" data-i18n="nav_tech">Tecnología</a>
+        <a href="#piloto" class="nav-item" data-i18n="nav_pilot">Programa Piloto</a>
+        <a href="#innovacion" class="nav-item" data-i18n="nav_collab">I+D & Alianzas</a>
+        <a href="#equipo" class="nav-item" data-i18n="nav_team">Equipo</a>
       </nav>
+
+      <div class="header-actions">
+        <button id="lang-toggle" class="lang-btn" aria-label="Cambiar idioma / Switch language">
+          <span class="lang-option active" data-lang-val="es">ES</span>
+          <span class="lang-divider">/</span>
+          <span class="lang-option" data-lang-val="en">EN</span>
+        </button>
+        <a href="#contacto" class="btn-primary btn-header" data-i18n="nav_cta">Postular a Piloto</a>
+      </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
   <main>
-    <section class="hero-section" id="vision">
+    <!-- HERO -->
+    <section class="hero-section">
       <div class="container hero-content">
         <div class="badge-tag">
           <span class="badge-dot"></span>
-          <span>Foresight AI Sentinel v1.0 • Live Telemetry</span>
+          <span data-i18n="hero_badge">Tecnología Aeroespacial • Apoyada por CORFO & Lab Aeroespacial UdeC</span>
         </div>
 
         <h1 class="hero-title">
-          Vigilancia predictiva e inteligencia autónoma con <span class="gradient-text">Foresight Sentinel</span>
+          <span data-i18n="hero_title_line1">Vigilancia aérea autónoma para la</span><br>
+          <span class="gradient-text" data-i18n="hero_title_line2">protección de activos críticos.</span>
         </h1>
 
-        <p class="hero-subtitle">
-          Protección proactiva y toma de decisiones en tiempo real impulsada por redes de agentes de inteligencia artificial de alta fidelidad. Desarrollado por Strig Systems.
+        <p class="hero-subtitle" data-i18n="hero_subtitle">
+          Cerramos la ventana de vulnerabilidad nocturna en grandes extensiones territoriales. Nuestra plataforma VTOL autónoma integra Edge AI para detectar, verificar y geo-referenciar amenazas en tiempo real, reduciendo hasta un 90% el costo de monitoreo aéreo.
         </p>
 
         <div class="hero-actions">
-          <a href="#capacidades" class="btn-primary" id="explore-btn">
-            Explorar Tecnología
+          <a href="#contacto" class="btn-primary">
+            <span data-i18n="hero_cta_primary">Postular a Piloto Operativo</span>
             <span class="arrow-icon">→</span>
           </a>
-          <a href="https://github.com/tmedinab" target="_blank" rel="noopener noreferrer" class="btn-ghost" id="github-btn">
-            GitHub @tmedinab
+          <a href="#piloto" class="btn-ghost">
+            <span data-i18n="hero_cta_secondary">Ver Alcance del Piloto</span>
           </a>
         </div>
 
-        <!-- Metric Cards Grid -->
+        <!-- Metrics Strip -->
         <div class="metrics-grid">
           <div class="metric-card glass-panel">
-            <div class="metric-value" data-target="99.99">99.99%</div>
-            <div class="metric-label">Disponibilidad Operativa</div>
+            <div class="metric-value">90%</div>
+            <div class="metric-title" data-i18n="m1_title">Reducción de Costo Operativo</div>
+            <div class="metric-desc" data-i18n="m1_desc">Frente a patrullaje de aviación tripulada tradicional</div>
           </div>
           <div class="metric-card glass-panel">
-            <div class="metric-value">&lt; 12ms</div>
-            <div class="metric-label">Latencia de Inferencia</div>
+            <div class="metric-value">10 h</div>
+            <div class="metric-title" data-i18n="m2_title">Ventana Crítica Nocturna</div>
+            <div class="metric-desc" data-i18n="m2_desc">Vigilancia continua cuando la aviación convencional no opera</div>
           </div>
           <div class="metric-card glass-panel">
-            <div class="metric-value">24/7</div>
-            <div class="metric-label">Monitoreo Predictivo</div>
+            <div class="metric-value">&lt; 5%</div>
+            <div class="metric-title" data-i18n="m3_title">Tasa de Falsos Positivos</div>
+            <div class="metric-desc" data-i18n="m3_desc">Fusión sensorial bi-espectral y verificación a bordo</div>
           </div>
           <div class="metric-card glass-panel">
-            <div class="metric-value">0-Trust</div>
-            <div class="metric-label">Seguridad Criptográfica</div>
+            <div class="metric-value">0 CAPEX</div>
+            <div class="metric-title" data-i18n="m4_title">Modelo Intelligence as a Service</div>
+            <div class="metric-desc" data-i18n="m4_desc">Suscripción por cobertura territorial sin compra de flota</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Capabilities Section -->
-    <section class="section" id="capacidades">
+    <!-- SECTION: EL PROBLEMA Y LA BRECHA OPERATIVA -->
+    <section class="section section-border" id="problema">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Capacidades del Sistema Sentinel</h2>
-          <p class="section-subtitle">Arquitectura modular diseñada para anticipar fallas, mitigar riesgos y sincronizar decisiones complejas.</p>
+          <span class="section-tag" data-i18n="prob_tag">Contexto Operacional</span>
+          <h2 class="section-title" data-i18n="prob_title">La brecha nocturna en la protección territorial</h2>
+          <p class="section-subtitle" data-i18n="prob_subtitle">
+            En temporadas de alto riesgo, los incidentes provocados por acción humana se concentran en horarios sin cobertura aérea activa. La ausencia de vigilancia táctica nocturna deriva en focos descontrolados y pérdidas millonarias.
+          </p>
         </div>
 
-        <div class="features-grid">
-          <article class="feature-card glass-panel">
-            <div class="feature-icon">🛡️</div>
-            <h3 class="feature-title">Vigilancia Predictiva</h3>
-            <p class="feature-desc">Modelos de series temporales y agentes analistas que detectan anomalías microscópicas antes de que impacten los servicios críticos.</p>
+        <div class="problem-grid">
+          <article class="problem-card glass-panel">
+            <div class="card-status-bar"></div>
+            <h3 class="card-title" data-i18n="p1_title">Centrales de Operaciones</h3>
+            <p class="card-text" data-i18n="p1_desc">
+              Información tardía o fragmentada. Cuando los sistemas satelitales reportan un incremento térmico, el frente de fuego ya ha alcanzado escala de emergencia.
+            </p>
+            <div class="card-pill" data-i18n="p1_pill">Toma de decisiones reactiva</div>
           </article>
 
-          <article class="feature-card glass-panel">
-            <div class="feature-icon">⚡</div>
-            <h3 class="feature-title">Orquestación Multi-Agente</h3>
-            <p class="feature-desc">Flujos coordinados donde agentes especializados auditan, validan y ejecutan protocolos de contingencia con consenso estricto.</p>
+          <article class="problem-card glass-panel">
+            <div class="card-status-bar"></div>
+            <h3 class="card-title" data-i18n="p2_title">Propietarios de Activos</h3>
+            <p class="card-text" data-i18n="p2_desc">
+              Exposición permanente a pérdidas severas en biomasa comercial, instalaciones industriales y predios agrícolas por focos no contenidos en su origen.
+            </p>
+            <div class="card-pill" data-i18n="p2_pill">Pérdida patrimonial crítica</div>
           </article>
 
-          <article class="feature-card glass-panel">
-            <div class="feature-icon">🔒</div>
-            <h3 class="feature-title">Resiliencia & Cero Confianza</h3>
-            <p class="feature-desc">Registros inmutables con trazas de auditoría criptográficas, garantizando la soberanía de los datos y trazabilidad total.</p>
+          <article class="problem-card glass-panel accent-card">
+            <div class="card-status-bar alert"></div>
+            <h3 class="card-title" data-i18n="p3_title">Equipos de Respuesta en Terreno</h3>
+            <p class="card-text" data-i18n="p3_desc">
+              Despliegues nocturnos en zonas complejas sin reconocimiento aéreo previo, incrementando el peligro para brigadas y cuadrillas operativas.
+            </p>
+            <div class="card-pill alert" data-i18n="p3_pill">Riesgo vital innecesario</div>
           </article>
+        </div>
+
+        <!-- Comparative Assessment -->
+        <div class="comparison-banner glass-panel">
+          <h3 class="banner-title" data-i18n="comp_title">Limitaciones del Estado del Arte</h3>
+          <div class="limitations-grid">
+            <div class="limit-col">
+              <span class="limit-icon">🛰️</span>
+              <h4 data-i18n="c1_title">Sistemas Satelitales</h4>
+              <p data-i18n="c1_desc">Mapeo térmico macro, pero con alta latencia de refresco e incapacidad de discernir precursores humanos o focos incipientes.</p>
+            </div>
+            <div class="limit-col">
+              <span class="limit-icon">🗼</span>
+              <h4 data-i18n="c2_title">Torres Ópticas Fijas</h4>
+              <p data-i18n="c2_desc">Monitoreo estacionario vulnerable a puntos ciegos por relieve topográfico, nubosidad baja y vegetación densa.</p>
+            </div>
+            <div class="limit-col">
+              <span class="limit-icon">🎮</span>
+              <h4 data-i18n="c3_title">Drones Manuales VLOS</h4>
+              <p data-i18n="c3_desc">Requieren cuadrilla y piloto en terreno. Alcance limitado a línea de vista visual, respuesta lenta y costo operativo inviable a escala.</p>
+            </div>
+          </div>
+          <div class="banner-quote">
+            <span class="quote-symbol">“</span>
+            <span data-i18n="comp_quote">Ninguna alternativa convencional resuelve oportunamente la interrogante crítica: <em>¿Existe una amenaza humana o térmica en este instante y coordenadas precisas?</em></span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Domain Status Banner -->
-    <section class="section-alt" id="arquitectura">
+    <!-- SECTION: ARQUITECTURA TECNOLÓGICA -->
+    <section class="section" id="tecnologia">
       <div class="container">
-        <div class="status-card glass-panel">
-          <div class="status-header">
-            <div class="status-indicator">
-              <span class="status-pulse"></span>
-              <span class="status-text">Despliegue en Producción Activo</span>
-            </div>
-            <div class="status-domain">strigsystems.tech</div>
-          </div>
-          <p class="status-description">
-            Este nodo está conectado a <strong>GitHub Pages</strong> a través de pipelines de integración continua en GitHub Actions, respaldado por la red Anycast DNS global y certificados TLS gestionados automáticamente.
+        <div class="section-header">
+          <span class="section-tag" data-i18n="tech_tag">Plataforma Foresight AI</span>
+          <h2 class="section-title" data-i18n="tech_title">Arquitectura Integrada de Vigilancia Aérea</h2>
+          <p class="section-subtitle" data-i18n="tech_subtitle">
+            Un ecosistema de software y hardware concebido para transformar sensores aéreos aislados en una red inteligente de respuesta y toma de decisiones autónoma.
           </p>
-          <div class="status-badges">
-            <span class="tech-chip">GitHub Actions CI/CD</span>
-            <span class="tech-chip">Anycast DNS</span>
-            <span class="tech-chip">HTTPS / TLS 1.3</span>
-            <span class="tech-chip">Get.Tech Domain</span>
+        </div>
+
+        <div class="solution-grid">
+          <!-- Visual diagram -->
+          <div class="solution-preview glass-panel">
+            <img src="assets/img/tech/vtol_payload.png" alt="Aeronave VTOL Autónoma Foresight AI" class="tech-img" loading="lazy">
+            <div class="preview-footer">
+              <span class="preview-badge">Payload Bi-Espectral + Edge Computing</span>
+              <span class="preview-spec">Autonomía VTOL • Navegación BVLOS</span>
+            </div>
+          </div>
+
+          <!-- Feature items -->
+          <div class="solution-details">
+            <div class="tech-feature-card glass-panel">
+              <div class="feature-num">01</div>
+              <div class="feature-body">
+                <h3 class="feature-name" data-i18n="f1_title">Fusión Sensorial Térmica + Óptica a Bordo</h3>
+                <p class="feature-desc" data-i18n="f1_desc">Inferencia de visión computacional en el borde (Edge AI). Identifica y verifica fuentes de calor y presencia en oscuridad total, manteniendo la tasa de falsos positivos por debajo del 5%.</p>
+              </div>
+            </div>
+
+            <div class="tech-feature-card glass-panel">
+              <div class="feature-num">02</div>
+              <div class="feature-body">
+                <h3 class="feature-name" data-i18n="f2_title">Telémetro Láser y Georreferenciación Quirúrgica</h3>
+                <p class="feature-desc" data-i18n="f2_desc">Cálculo instantáneo de coordenadas geográficas de la anomalía sin margen de error por perspectiva, facilitando el despacho exacto de recursos terrestres.</p>
+              </div>
+            </div>
+
+            <div class="tech-feature-card glass-panel">
+              <div class="feature-num">03</div>
+              <div class="feature-body">
+                <h3 class="feature-name" data-i18n="f3_title">Re-enrutamiento Autónomo y Telemetría Ligera</h3>
+                <p class="feature-desc" data-i18n="f3_desc">Ante eventos sospechosos, la aeronave adapta su patrón de vuelo de forma autónoma y emite alertas estructuradas de bajo peso de datos, operando sin depender de enlaces 4G/5G de alta velocidad.</p>
+              </div>
+            </div>
+
+            <div class="tech-feature-card glass-panel">
+              <div class="feature-num">04</div>
+              <div class="feature-body">
+                <h3 class="feature-name" data-i18n="f4_title">Supervisión Estratégica (Human-in-the-Loop)</h3>
+                <p class="feature-desc" data-i18n="f4_desc">Capacidades de transmisión de video y audio táctico a demanda. El operador central mantiene el control supervisorio y la potestad de la decisión final.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Comparison Table -->
+        <div class="table-container glass-panel">
+          <table class="specs-table">
+            <thead>
+              <tr>
+                <th data-i18n="tbl_h1">Parámetro</th>
+                <th class="tbl-mute" data-i18n="tbl_h2">Operación con Dron Convencional</th>
+                <th class="tbl-accent" data-i18n="tbl_h3">Plataforma Foresight AI (Strig Systems)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tbl-row-title" data-i18n="r1_title">Modo de Navegación</td>
+                <td data-i18n="r1_c1">Pilotaje manual asistido por operador en terreno</td>
+                <td class="tbl-highlight" data-i18n="r1_c2">Misiones programadas con re-enrutamiento reactivo autónomo</td>
+              </tr>
+              <tr>
+                <td class="tbl-row-title" data-i18n="r2_title">Dependencia de Conectividad</td>
+                <td data-i18n="r2_c1">Requiere enlace ininterrumpido de alto ancho de banda</td>
+                <td class="tbl-highlight" data-i18n="r2_c2">Procesamiento Edge autónomo; no se detiene ante pérdida de señal</td>
+              </tr>
+              <tr>
+                <td class="tbl-row-title" data-i18n="r3_title">Filtrado y Calidad de Datos</td>
+                <td data-i18n="r3_c1">Flujo de video en bruto que induce fatiga operativa</td>
+                <td class="tbl-highlight" data-i18n="r3_c2">Fusión bi-espectral y alertas filtradas con precisión &lt; 5% falsas alarmas</td>
+              </tr>
+              <tr>
+                <td class="tbl-row-title" data-i18n="r4_title">Estructura de Costos</td>
+                <td data-i18n="r4_c1">Costos escalados por cuadrilla y equipo dedicado</td>
+                <td class="tbl-highlight" data-i18n="r4_c2">Ahorro del 90% en patrullaje (~US$250/h vs US$2.500/h avión tripulado)</td>
+              </tr>
+              <tr>
+                <td class="tbl-row-title" data-i18n="r5_title">Trayectoria Regulatoria</td>
+                <td data-i18n="r5_c1">Línea de vista visual diurna (VLOS)</td>
+                <td class="tbl-highlight" data-i18n="r5_c2">Diseñado para transición a operaciones nocturnas BVLOS bajo DGAC</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: PROGRAMA PILOTO B2B/B2G -->
+    <section class="section section-border" id="piloto">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="pilot_tag">Despliegue Operativo</span>
+          <h2 class="section-title" data-i18n="pilot_title">Programa Piloto para Clientes y Empresas del Sector</h2>
+          <p class="section-subtitle" data-i18n="pilot_subtitle">
+            Diseñado para empresas forestales, minería, utilities e instituciones públicas que buscan evaluar el impacto de la vigilancia autónoma en sus predios de mayor riesgo.
+          </p>
+        </div>
+
+        <div class="pilot-steps-grid">
+          <div class="step-card glass-panel">
+            <div class="step-header">
+              <span class="step-badge">Fase 1</span>
+              <span class="step-time">Semanas 1 - 2</span>
+            </div>
+            <h3 class="step-title" data-i18n="st1_title">Levantamiento Territorial & Riesgos</h3>
+            <p class="step-desc" data-i18n="st1_desc">
+              Mapeo de predios prioritarios, análisis de topografía, identificación de zonas ciegas actuales e integración con los protocolos de seguridad del cliente.
+            </p>
+          </div>
+
+          <div class="step-card glass-panel">
+            <div class="step-header">
+              <span class="step-badge">Fase 2</span>
+              <span class="step-time">Semanas 3 - 4</span>
+            </div>
+            <h3 class="step-title" data-i18n="st2_title">Calibración & Pruebas en Terreno</h3>
+            <p class="step-desc" data-i18n="st2_desc">
+              Despliegue controlado para calibración de firmas térmicas, prueba de enlace de alertas ligeras y simulación de escenarios de detección nocturna.
+            </p>
+          </div>
+
+          <div class="step-card glass-panel">
+            <div class="step-header">
+              <span class="step-badge">Fase 3</span>
+              <span class="step-time">Semanas 5 - 8</span>
+            </div>
+            <h3 class="step-title" data-i18n="st3_title">Vigilancia Nocturna Activa</h3>
+            <p class="step-desc" data-i18n="st3_desc">
+              Patrullaje autónomo programado en las ventanas horarias de máxima vulnerabilidad con monitoreo y soporte en tiempo real.
+            </p>
+          </div>
+
+          <div class="step-card glass-panel">
+            <div class="step-header">
+              <span class="step-badge">Fase 4</span>
+              <span class="step-time">Cierre</span>
+            </div>
+            <h3 class="step-title" data-i18n="st4_title">Informe Técnico & Retorno Operativo</h3>
+            <p class="step-desc" data-i18n="st4_desc">
+              Auditoría completa de métricas: tiempo de detección, incidentes prevenidos, reducción de despachos en falso y propuesta de escalamiento IaaS.
+            </p>
+          </div>
+        </div>
+
+        <div class="pilot-cta-bar glass-panel">
+          <div class="bar-info">
+            <h3 data-i18n="pilot_bar_title">Postulación al Programa de Validación 2026</h3>
+            <p data-i18n="pilot_bar_desc">Disponibilidad limitada de cupos operacionales por temporada. Prioridad para predios de alto riesgo forestal e industrial.</p>
+          </div>
+          <a href="#contacto" class="btn-primary" data-i18n="pilot_bar_cta">Solicitar Evaluación de Factibilidad</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: I+D, ALIANZAS & INNOVACIÓN (CONCURSOS / FONDOS / ASOCIACIONES) -->
+    <section class="section" id="innovacion">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="collab_tag">Ecosistema & Tracción</span>
+          <h2 class="section-title" data-i18n="collab_title">I+D Aplicada, Concursos y Alianzas Estratégicas</h2>
+          <p class="section-subtitle" data-i18n="collab_subtitle">
+            Combinamos rigor científico aeroespacial con validación de mercado industrial. Participamos activamente en consorcios de innovación y programas de aceleración de alta exigencia.
+          </p>
+        </div>
+
+        <div class="partners-grid">
+          <div class="partner-card glass-panel">
+            <img src="assets/img/logos/corfo_logo.png" alt="CORFO Gobierno de Chile" class="partner-img" loading="lazy">
+            <h3 class="partner-role" data-i18n="part_c_title">Fondo Semilla CORFO</h3>
+            <p class="partner-detail" data-i18n="part_c_desc">Proyecto adjudicado para la validación técnica y comercial de la arquitectura de vigilancia autónoma.</p>
+          </div>
+
+          <div class="partner-card glass-panel">
+            <img src="assets/img/logos/udec_logo.png" alt="Universidad de Concepción" class="partner-img" loading="lazy">
+            <h3 class="partner-role" data-i18n="part_u_title">Laboratorio Aeroespacial UdeC</h3>
+            <p class="partner-detail" data-i18n="part_u_desc">Respaldo científico e infraestructura de ensayos para integración de sistemas aerodinámicos y aviónica.</p>
+          </div>
+
+          <div class="partner-card glass-panel">
+            <img src="assets/img/logos/gearbox_logo.png" alt="Gearbox Aceleradora" class="partner-img" loading="lazy">
+            <h3 class="partner-role" data-i18n="part_g_title">Gearbox UdeC & Desafíos Globales</h3>
+            <p class="partner-detail" data-i18n="part_g_desc">Aceleración tecnológica, participación en Brain Chile y preparación para programas de escalamiento internacional.</p>
+          </div>
+
+          <div class="partner-card glass-panel">
+            <div class="collab-badge">
+              <span class="collab-icon">🤝</span>
+              <h3 class="partner-role" data-i18n="part_i_title">Validación con la Industria</h3>
+              <p class="partner-detail" data-i18n="part_i_desc">Entrevistas operativas y contraste de requerimientos técnicos con gerencias de Arauco, OroraTech y Everseek.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Open Opportunities Box -->
+        <div class="opportunities-box glass-panel">
+          <h3 class="opp-title" data-i18n="opp_title">Oportunidades de Colaboración e Inversión</h3>
+          <div class="opp-grid">
+            <div class="opp-col">
+              <h4 data-i18n="opp_col1_title">💼 Fondos de Capital & Inversionistas</h4>
+              <p data-i18n="opp_col1_desc">Levantamiento de ronda para escalamiento de prototipos VTOL de largo alcance y certificación operacional nocturna BVLOS.</p>
+            </div>
+            <div class="opp-col">
+              <h4 data-i18n="opp_col2_title">🔬 Centros Tecnológicos & Academia</h4>
+              <p data-i18n="opp_col2_desc">Colaboración en modelos de inferencia computacional para condiciones atmosféricas extremas y sensores multiespectrales.</p>
+            </div>
+            <div class="opp-col">
+              <h4 data-i18n="opp_col3_title">🏛️ Instituciones Públicas & Gobiernos</h4>
+              <p data-i18n="opp_col3_desc">Modelos B2G orientados a la protección de interfaz urbano-forestal y reducción de costos públicos en emergencias.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: EQUIPO FUNDADOR -->
+    <section class="section section-border" id="equipo">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="team_tag">Equipo de Liderazgo</span>
+          <h2 class="section-title" data-i18n="team_title">Ingeniería Aeroespacial y Operaciones Tácticas</h2>
+          <p class="section-subtitle" data-i18n="team_subtitle">
+            Un equipo con base en ingeniería aeroespacial, experiencia operativa directa en emergencias y dominio de la normativa aeronáutica civil.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-card glass-panel">
+            <div class="avatar-box">
+              <img src="assets/img/team/tomas_medina.jpg" alt="Tomás Medina Browne" class="avatar-img" loading="lazy">
+            </div>
+            <h3 class="member-name">Tomás Medina</h3>
+            <span class="member-role">CEO & Co-founder</span>
+            <p class="member-bio" data-i18n="bio_tomas">Ingeniería Aeroespacial. Especialista en Visión Computacional, Machine Learning, Ingeniería de Sistemas y CAD/CAM.</p>
+          </div>
+
+          <div class="team-card glass-panel">
+            <div class="avatar-box">
+              <img src="assets/img/team/carlos_gutierrez.jpg" alt="Carlos Gutiérrez" class="avatar-img" loading="lazy">
+            </div>
+            <h3 class="member-name">Carlos Gutiérrez</h3>
+            <span class="member-role">Co-founder</span>
+            <p class="member-bio" data-i18n="bio_carlos">Ingeniería Aeroespacial. Bombero Operativo. Especialista en CFD, análisis aerodinámico y arquitectura táctica.</p>
+          </div>
+
+          <div class="team-card glass-panel">
+            <div class="avatar-box">
+              <img src="assets/img/team/richard_solis.jpg" alt="Richard Solís" class="avatar-img" loading="lazy">
+            </div>
+            <h3 class="member-name">Richard Solís</h3>
+            <span class="member-role">Co-founder</span>
+            <p class="member-bio" data-i18n="bio_richard">Ingeniería Aeroespacial. Diseño RPAS, certificación de aeronavegabilidad y regulaciones operacionales DGAC.</p>
+          </div>
+
+          <div class="team-card glass-panel">
+            <div class="avatar-box">
+              <img src="assets/img/team/ananda_glaria.png" alt="Ananda Glaria" class="avatar-img" loading="lazy">
+            </div>
+            <h3 class="member-name">Ananda Glaria</h3>
+            <span class="member-role">Co-founder</span>
+            <p class="member-bio" data-i18n="bio_ananda">Ingeniería Aeroespacial. Integración de sistemas, ensayos de vuelo RPAS, simulación aerodinámica y CFD.</p>
+          </div>
+
+          <div class="team-card glass-panel advisor-card">
+            <div class="avatar-box">
+              <img src="assets/img/team/alejandro_lopez.png" alt="Dr. Alejandro López T." class="avatar-img" loading="lazy">
+            </div>
+            <h3 class="member-name">Dr. Alejandro López T.</h3>
+            <span class="member-role">Advisor</span>
+            <p class="member-bio" data-i18n="bio_advisor">PhD Space Systems Engineering and Management. Asesor en arquitectura de misión y desarrollo de tecnología aeroespacial.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CONTACTO / CALL TO ACTION -->
+    <section class="section section-border" id="contacto">
+      <div class="container">
+        <div class="contact-box glass-panel">
+          <div class="contact-content">
+            <span class="section-tag" data-i18n="cta_tag">Canal de Contacto Directo</span>
+            <h2 class="cta-title" data-i18n="cta_title">Coordinemos una Evaluación Operacional</h2>
+            <p class="cta-desc" data-i18n="cta_desc">
+              Si representas a una empresa forestal, institución de respuesta territorial, o eres evaluador de fondos y desafíos de innovación, nuestro equipo técnico está disponible para atender tu requerimiento.
+            </p>
+
+            <div class="cta-actions">
+              <a href="mailto:contacto@strigsystems.tech?subject=Postulacion%20a%20Piloto%20Operativo%20-%20Foresight%20AI" class="btn-primary btn-large">
+                <span data-i18n="cta_btn_pilot">Postular a Piloto Operativo</span>
+                <span class="arrow-icon">→</span>
+              </a>
+              <a href="mailto:tomas@strigsystems.tech?subject=Consulta%20Alianzas%20o%20Inversion%20-%20Strig%20Systems" class="btn-ghost btn-large">
+                <span data-i18n="cta_btn_collab">Consultar por Alianzas / Inversión</span>
+              </a>
+            </div>
+
+            <div class="contact-badges">
+              <span class="c-badge">📍 Concepción, Chile</span>
+              <span class="c-badge">✉️ contacto@strigsystems.tech</span>
+              <span class="c-badge">🔒 Protección y Confidencialidad de Datos</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer" id="contacto">
+  <!-- FOOTER -->
+  <footer class="site-footer">
     <div class="container footer-content">
-      <div class="footer-brand">
-        <p><strong>Strig Systems</strong> • Foresight AI Sentinel</p>
-        <p class="footer-copy">© 2026 Strig Systems. Todos los derechos reservados.</p>
+      <div class="footer-col-main">
+        <div class="brand">
+          <span class="brand-shield" aria-hidden="true">◈</span>
+          <span class="brand-name">STRIG<span class="accent-text">SYSTEMS</span></span>
+        </div>
+        <p class="footer-mission" data-i18n="footer_mission">
+          Desarrollo de sistemas aéreos no tripulados e inteligencia computacional para la mitigación anticipada de riesgos en el mundo físico.
+        </p>
+        <p class="footer-legal">© 2026 Strig Systems SpA. Todos los derechos reservados.</p>
       </div>
-      <div class="footer-links">
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_col_nav">Secciones</h4>
+        <a href="#problema" data-i18n="nav_problem">Problema</a>
+        <a href="#tecnologia" data-i18n="nav_tech">Tecnología</a>
+        <a href="#piloto" data-i18n="nav_pilot">Programa Piloto</a>
+        <a href="#innovacion" data-i18n="nav_collab">I+D & Alianzas</a>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_col_corp">Corporativo</h4>
+        <a href="#equipo" data-i18n="nav_team">Equipo</a>
+        <a href="mailto:contacto@strigsystems.tech">contacto@strigsystems.tech</a>
+        <a href="https://github.com/tmedinab" target="_blank" rel="noopener noreferrer">GitHub @tmedinab</a>
         <a href="https://strigsystems.tech">strigsystems.tech</a>
-        <a href="https://github.com/tmedinab" target="_blank" rel="noopener noreferrer">github.com/tmedinab</a>
       </div>
     </div>
   </footer>

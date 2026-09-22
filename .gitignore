@@ -15,6 +15,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Documentos pesados locales (para no inflar el repo ni ralentizar Pages)
+*.pdf
+*.docx
+
 # Node modules (si se usan a futuro)
 node_modules/
 dist/
