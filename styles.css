@@ -760,18 +760,22 @@ body {
    ========================================================================== */
 .team-cards-row {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.1rem;
   margin-bottom: 2rem;
 }
 
 .founder-card {
-  padding: 2rem 1.4rem;
+  padding: 1.8rem 1.1rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+/* Precise portrait centering */
+.avatar-photo { object-position: center center; }
+
 
 .founder-name {
   font-family: var(--font-heading);
@@ -932,9 +936,9 @@ body {
 /* ==========================================================================
    Responsive Breakpoints
    ========================================================================== */
-@media (max-width: 1080px) {
+@media (max-width: 1180px) {
   .team-cards-row {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .tech-cards-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -946,6 +950,13 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (max-width: 768px) {
+  .team-cards-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 
 @media (max-width: 860px) {
   .nav-links {

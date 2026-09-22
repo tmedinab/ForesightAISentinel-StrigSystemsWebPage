@@ -17,7 +17,7 @@ const translations = {
     hero_badge: "Fondo Semilla CORFO Adjudicado • Apoyo UdeC",
     hero_title_1: "Los riesgos se mueven rápido.",
     hero_title_2: "Nosotros los vemos venir.",
-    hero_sub: "Plataforma de vigilancia territorial autónoma con drones VTOL e inferencia Edge AI a bordo. Cerramos la ventana de vulnerabilidad nocturna de 10 horas donde la aviación tripulada no puede operar, reduciendo el costo de patrullaje de <strong>US$2.500 a US$250 por hora</strong>.",
+    hero_sub: "Plataforma de vigilancia territorial autónoma con drones VTOL e inferencia Edge AI a bordo. Cerramos la brecha nocturna de 10 horas detectando actividad humana no autorizada —precursor del 99,7% de los incendios forestales— antes de que se inicien los focos, con 90% menor costo que la aviación tripulada.",
     hero_cta_primary: "Postular a Piloto Operativo",
     hero_cta_secondary: "Ver Capacidades del Sistema",
 
@@ -27,7 +27,7 @@ const translations = {
     m2_title: "Ventana Crítica Nocturna",
     m2_sub: "Vigilancia autónoma en oscuridad total",
     m3_title: "Falsas Alarmas",
-    m3_sub: "Fusión termográfica y óptica a bordo",
+    m3_sub: "Verificación multi-frame a bordo (cero fatiga de alerta)",
     m4_title: "Modelo Intelligence as a Service",
     m4_sub: "Suscripción por cobertura territorial",
 
@@ -44,7 +44,7 @@ const translations = {
     p3_head: "Brigadistas en Terreno",
     p3_desc: "Exposición a peligro extremo ingresando de noche a ciegas en el bosque sin verificación aérea previa del terreno.",
     p3_tag: "Riesgo vital innecesario",
-    quote_text: "Satélites tienen alta latencia orbital; torres fijas tienen puntos ciegos topográficos; drones manuales requieren cuadrilla en terreno. Ninguno responde a tiempo la pregunta decisiva: <em>¿Hay una amenaza humana o térmica en este instante y coordenadas exactas?</em>",
+    quote_text: "Satélites tienen latencia orbital; torres fijas tienen puntos ciegos topográficos; drones manuales exigen cuadrillas nocturnas en riesgo. Ninguno responde a tiempo la pregunta decisiva: <em>¿Hay una amenaza humana o térmica en este instante y coordenadas exactas?</em>",
 
     // Technology
     tech_tag: "Capacidades Operativas",
@@ -52,10 +52,10 @@ const translations = {
     tech_sub: "Arquitectura autónoma de alta disponibilidad. La aeronave VTOL detecta, clasifica y georreferencia en el borde sin requerir enlace continuo a internet ni servidores en tierra.",
     t1_title: "Visión Térmica Bi-Espectral",
     t1_desc: "Detección infrarroja radiométrica y óptica de alta definición en gimbal estabilizado. Identificación de amenazas térmicas y presencia en oscuridad total con menos de 5% de falsas alarmas.",
-    t2_title: "Inteligencia Artificial Embarcada",
-    t2_desc: "Procesamiento de visión computacional a bordo en el borde (Edge AI). Análisis de video y clasificación autónoma en tiempo real sin depender de conectividad externa ni saturar enlaces.",
-    t3_title: "Telemetría Táctica para Zonas Remotas",
-    t3_desc: "Emisión de alertas estructuradas en menos de 5 segundos mediante radioenlaces de largo alcance, garantizando operatividad táctica en quebradas y predios sin cobertura celular.",
+    t2_title: "Inteligencia Artificial Embarcada (Zero-Cloud)",
+    t2_desc: "Inferencia de visión computacional 100% local a bordo. La aeronave detecta, clasifica y valida amenazas en tiempo real sin requerir internet, nube externa ni conectividad celular.",
+    t3_title: "Telemetría Táctica en Zonas Desconectadas",
+    t3_desc: "Emisión de fichas de alerta y coordenadas exactas en menos de 5 segundos vía radioenlace táctico de largo alcance, garantizando operatividad en quebradas y predios remotos.",
     t4_title: "Aeronave VTOL de Rango Extendido",
     t4_desc: "Despegue y aterrizaje vertical independiente de pista en cualquier relieve. Cobertura territorial de cientos de hectáreas por patrullaje con alta resistencia a condiciones de viento.",
     t5_title: "Georreferenciación Quirúrgica",
@@ -74,9 +74,9 @@ const translations = {
     ph3_title: "Vigilancia Nocturna Activa",
     ph3_desc: "Patrullaje autónomo programado en las horas de mayor vulnerabilidad con telemetría en vivo y soporte al C2 del cliente.",
     ph4_title: "Auditoría & Retorno Operativo",
-    ph4_desc: "Informe técnico con tiempos de detección, falsas alarmas filtradas, horas de vuelo ahorradas y propuesta de escalamiento IaaS.",
+    ph4_desc: "Informe técnico con tiempos de respuesta, falsas alarmas filtradas, horas de vuelo ahorradas e integración auditada con el centro de operaciones (C2) del cliente.",
     callout_title: "Convocatoria de Validación 2026",
-    callout_desc: "Cupos de vuelo limitados por temporada de incendios. Evaluación de factibilidad territorial sin costo para predios forestales e industriales.",
+    callout_desc: "Cupos limitados por temporada de incendios en la Macrozona Centro-Sur. Evaluación de factibilidad territorial e interoperabilidad C2 sin costo para predios forestales e industriales.",
     callout_cta: "Solicitar Factibilidad de Piloto",
 
     // Alliances & R&D
@@ -97,11 +97,12 @@ const translations = {
     // Team
     team_tag: "Equipo Fundador",
     team_title: "Ingeniería Aeroespacial & Operaciones Tácticas",
-    team_sub: "Un equipo multidisciplinario que une diseño aeronáutico, visión computacional, experiencia directa como bombero operativo y certificación civil DGAC.",
-    bio_tomas: "Ingeniería Aeroespacial • Visión Computacional, Machine Learning, Ingeniería de Sistemas y CAD/CAM.",
-    bio_carlos: "Ingeniería Aeroespacial • Bombero Operativo. CFD, análisis aerodinámico y arquitectura táctica.",
-    bio_richard: "Ingeniería Aeroespacial • Diseño RPAS, certificación aeronáutica y regulaciones operacionales DGAC.",
-    bio_ananda: "Ingeniería Aeroespacial • Integración de sistemas, ensayos de vuelo RPAS, CAD/CAM y CFD.",
+    team_sub: "5 ingenieros civiles aeroespaciales de la Universidad de Concepción, combinando diseño aeronáutico, visión computacional, experiencia bomberil en primera línea y certificación civil.",
+    bio_tomas: "Ingeniero Civil Aeroespacial • Visión Computacional, Machine Learning, CAD/CAM e Ingeniería de Sistemas C4ISR.",
+    bio_carlos: "Bombero Operativo • Ingeniero Civil Aeroespacial. Análisis CFD, logística operacional y arquitectura de interfaz táctica.",
+    bio_ananda: "Ingeniera Civil Aeroespacial • Integración y ensayos de vuelo RPAS, CAD, análisis estructural (FEA) y CFD.",
+    bio_richard: "Ingeniero Civil Aeroespacial • Ingeniería de sistemas, aseguramiento normativo, control de calidad y certificación aeronáutica.",
+    bio_pablo: "Ingeniero Civil Aeroespacial • Arquitectura de sistemas, lógica e integración de flujo de datos, validación y verificación.",
     bio_advisor: "PhD Space Systems Engineering and Management. Asesor senior en arquitectura de sistemas espaciales y escalamiento aeroespacial.",
 
     // CTA
@@ -130,7 +131,7 @@ const translations = {
     hero_badge: "CORFO Seed Grant Awarded • Backed by UdeC",
     hero_title_1: "Risks move fast.",
     hero_title_2: "We see them coming.",
-    hero_sub: "Autonomous territorial surveillance platform powered by VTOL uncrewed aircraft and onboard Edge AI. We close the critical 10-hour nighttime vulnerability window where manned aviation cannot fly, slashing aerial patrol costs from <strong>US$2,500 to US$250 per flight hour</strong>.",
+    hero_sub: "Autonomous territorial surveillance platform powered by VTOL uncrewed aircraft and onboard Edge AI. We close the critical 10-hour nighttime window by detecting unauthorized human activity—precursor to 99.7% of wildfires—before ignition occurs, slashing aerial patrol costs by 90%.",
     hero_cta_primary: "Apply for Operational Pilot",
     hero_cta_secondary: "Explore Capabilities",
 
@@ -140,7 +141,7 @@ const translations = {
     m2_title: "Critical Night Window",
     m2_sub: "Autonomous patrol in pitch-black darkness",
     m3_title: "False Alarm Rate",
-    m3_sub: "Onboard thermal and optical fusion",
+    m3_sub: "Onboard multi-frame verification (zero alert fatigue)",
     m4_title: "Intelligence as a Service",
     m4_sub: "Territorial coverage subscription, zero CAPEX",
 
@@ -157,7 +158,7 @@ const translations = {
     p3_head: "Ground Firefighters",
     p3_desc: "Extreme physical hazard entering rugged mountainous terrain in darkness without prior aerial reconnaissance.",
     p3_tag: "Avoidable human risk",
-    quote_text: "Satellites have orbital latency; fixed watchtowers suffer topographic blind spots; manual drones require ground crews. None answers the decisive question in time: <em>Is there a verified human or thermal threat right now at exact coordinates?</em>",
+    quote_text: "Satellites suffer orbital latency; fixed watchtowers face topographic blind spots; manual drones place nocturnal ground crews at risk. None answers the decisive question in time: <em>Is there an unauthorized human presence or thermal anomaly right now at exact coordinates?</em>",
 
     // Technology
     tech_tag: "Operational Capabilities",
@@ -165,10 +166,10 @@ const translations = {
     tech_sub: "High-availability autonomous architecture. The VTOL airframe detects, classifies, and geolocalizes at the edge without requiring persistent internet or ground servers.",
     t1_title: "Bi-Spectral Thermal Vision",
     t1_desc: "Radiometric infrared and high-definition optical sensing on a stabilized gimbal. Pinpoint threat identification and human presence verification in complete darkness with under 5% false alarm rates.",
-    t2_title: "Onboard Edge Artificial Intelligence",
-    t2_desc: "Direct onboard computer vision inference. Real-time video processing and autonomous threat verification without saturating telemetry bandwidth or relying on ground servers.",
-    t3_title: "Tactical Telemetry for Remote Dark Zones",
-    t3_desc: "Ultra-fast structured tactical alerts dispatched in under 5 seconds over long-range radio links, operating reliably in canyons and acreage without cellular 4G/5G coverage.",
+    t2_title: "Onboard Edge AI (Zero-Cloud)",
+    t2_desc: "100% local onboard computer vision inference. The aircraft detects, classifies, and verifies threats in real time without requiring internet, cloud servers, or cellular connectivity.",
+    t3_title: "Tactical Telemetry in Dark Zones",
+    t3_desc: "Transmission of structured alert packages and exact coordinates in under 5 seconds over long-range tactical radio links, fully operational in canyons and remote terrain.",
     t4_title: "Extended-Range Autonomous VTOL Airframe",
     t4_desc: "Runway-independent vertical takeoff and landing across any terrain. Continuous tactical surveillance covering hundreds of hectares per mission with high wind resistance.",
     t5_title: "Real-Time Surgical Geolocalization",
@@ -187,9 +188,9 @@ const translations = {
     ph3_title: "Active Nighttime Surveillance",
     ph3_desc: "Scheduled autonomous patrols throughout hours of maximum vulnerability with live structured telemetry and C2 integration.",
     ph4_title: "Audit & Operational ROI",
-    ph4_desc: "Comprehensive engineering report: detection latency, false alarm reduction, manned flight hours saved, and IaaS scale-up roadmap.",
+    ph4_desc: "Technical evaluation report detailing response latency, filtered false alarms, flight hours saved, and audited integration with the client's existing operations center (C2).",
     callout_title: "2026 Validation Cohort Applications",
-    callout_desc: "Limited operational flight slots available per fire season. Free territorial feasibility evaluation for industrial and forestry holdings.",
+    callout_desc: "Limited operational flight slots available per fire season in South-Central Chile. Free territorial feasibility and C2 interoperability assessment for forestry and industrial holdings.",
     callout_cta: "Request Pilot Feasibility Assessment",
 
     // Alliances & R&D
@@ -210,11 +211,12 @@ const translations = {
     // Team
     team_tag: "Founding Team",
     team_title: "Aerospace Engineering & Tactical Operations",
-    team_sub: "A multidisciplinary team combining aeronautical design, computer vision, operational firefighting experience, and DGAC civil certification.",
-    bio_tomas: "Aerospace Engineering • Computer Vision, Machine Learning, Systems Engineering, and CAD/CAM.",
-    bio_carlos: "Aerospace Engineering • Operational Firefighter. CFD, aerodynamic analysis, and tactical mission architecture.",
-    bio_richard: "Aerospace Engineering • RPAS design, airworthiness certification, and DGAC civil operational regulations.",
-    bio_ananda: "Aerospace Engineering • Systems integration, RPAS flight testing, CAD/CAM, and CFD.",
+    team_sub: "5 aerospace engineers from Universidad de Concepción, combining aeronautical design, computer vision, frontline firefighting experience, and civil aviation certification.",
+    bio_tomas: "Aerospace Engineer • Computer Vision, Machine Learning, CAD/CAM, and C4ISR Systems Engineering.",
+    bio_carlos: "Active Firefighter • Aerospace Engineer. CFD analysis, operational logistics, and tactical interface architecture.",
+    bio_ananda: "Aerospace Engineer • RPAS integration & flight testing, CAD, FEA structural analysis, and CFD.",
+    bio_richard: "Aerospace Engineer • Systems engineering, regulatory compliance, quality control, and aeronautical certification.",
+    bio_pablo: "Aerospace Engineer • Systems architecture, data flow logic & integration, validation and verification.",
     bio_advisor: "PhD Space Systems Engineering and Management. Senior advisor on space mission architectures and deep-tech scaling.",
 
     // CTA
