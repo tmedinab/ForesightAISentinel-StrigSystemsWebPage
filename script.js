@@ -112,6 +112,37 @@ const translations = {
     cta_btn1: "Postular a Piloto Operativo",
     cta_btn2: "Consultar por Alianzas / Inversión",
 
+    // Pilot Modal
+    modal_badge: "Validación Territorial 2026",
+    modal_title: "Postulación al Programa Piloto",
+    modal_sub: "Completa los datos de tu entidad. Evaluamos factibilidad operativa e interoperabilidad C2 para la temporada de riesgo.",
+    f_name_label: "Nombre y Apellido *",
+    f_name_ph: "Ej: Marcela Soto",
+    f_email_label: "Correo Corporativo / Institucional *",
+    f_email_ph: "nombre@empresa.cl",
+    f_company_label: "Empresa u Organización *",
+    f_company_ph: "Ej: Forestal / Minera / Institución",
+    f_phone_label: "Teléfono / WhatsApp (Opcional)",
+    f_phone_ph: "+56 9 1234 5678",
+    f_region_label: "Región Territorial *",
+    f_region_default: "Selecciona una región...",
+    f_interest_label: "Tipo de Interés *",
+    f_interest_default: "Selecciona el tipo de interés...",
+    opt_interest_1: "Programa Piloto Operativo (Forestal / Industrial)",
+    opt_interest_2: "Alianzas de I+D / Validación Técnica",
+    opt_interest_3: "Inversión / Fondos de Capital Deep Tech",
+    opt_interest_4: "Consulta General / Demostración C2",
+    f_message_label: "Detalles Adicionales o Necesidad Específica (Opcional)",
+    f_message_ph: "Describe brevemente el tipo de predio, zona geográfica o consulta técnica...",
+    f_submit_btn: "Enviar Postulación a Piloto",
+    f_submitting: "Enviando postulación...",
+    f_privacy: "Tus datos serán tratados bajo estricta confidencialidad técnica (NDA disponible).",
+    form_val_error: "Por favor completa todos los campos obligatorios (*) con un formato válido.",
+    form_error_msg: "Hubo un problema al enviar la solicitud. Puedes escribirnos directamente a",
+    success_title: "¡Postulación Recibida con Éxito!",
+    success_desc: "Hemos recibido los antecedentes de tu entidad. Nuestro equipo de ingeniería aeroespacial revisará la factibilidad territorial y se contactará directamente dentro de 24 horas hábiles.",
+    success_close_btn: "Cerrar Ventana",
+
     // Footer
     footer_tagline: "Desarrollo de sistemas aéreos autónomos e inteligencia computacional para la mitigación anticipada de riesgos críticos.",
     f_nav: "Navegación",
@@ -226,6 +257,37 @@ const translations = {
     cta_btn1: "Apply for Operational Pilot",
     cta_btn2: "Inquire for Alliances / Investment",
 
+    // Pilot Modal
+    modal_badge: "2026 Territorial Validation",
+    modal_title: "Pilot Program Application",
+    modal_sub: "Submit your organization's details. We assess operational feasibility and C2 interoperability for the high-risk fire season.",
+    f_name_label: "Full Name *",
+    f_name_ph: "e.g., Jane Smith",
+    f_email_label: "Corporate / Institutional Email *",
+    f_email_ph: "name@company.com",
+    f_company_label: "Company or Organization *",
+    f_company_ph: "e.g., Forestry / Mining / Agency",
+    f_phone_label: "Phone / WhatsApp (Optional)",
+    f_phone_ph: "+56 9 1234 5678",
+    f_region_label: "Territorial Region *",
+    f_region_default: "Select a region...",
+    f_interest_label: "Area of Interest *",
+    f_interest_default: "Select area of interest...",
+    opt_interest_1: "Operational Pilot Program (Forestry / Industrial)",
+    opt_interest_2: "R&D Alliances / Academic Validation",
+    opt_interest_3: "Deep Tech / Dual-Use Investment",
+    opt_interest_4: "General Inquiry / C2 Demonstration",
+    f_message_label: "Additional Details or Specific Requirements (Optional)",
+    f_message_ph: "Briefly outline your acreage, geographic zone, or tactical technical inquiry...",
+    f_submit_btn: "Submit Pilot Application",
+    f_submitting: "Submitting application...",
+    f_privacy: "Your data is handled under strict technical non-disclosure standards (NDA available).",
+    form_val_error: "Please complete all required fields (*) with a valid format.",
+    form_error_msg: "An error occurred sending your application. You can email us directly at",
+    success_title: "Application Received Successfully!",
+    success_desc: "We have received your organization's information. Our aerospace engineering team will review territorial feasibility and follow up directly within 24 business hours.",
+    success_close_btn: "Close Window",
+
     // Footer
     footer_tagline: "Autonomous uncrewed aircraft systems and Edge AI computing for proactive critical risk mitigation.",
     f_nav: "Platform",
@@ -281,6 +343,9 @@ document.addEventListener('DOMContentLoaded', () => {
       panel.style.setProperty('--mouse-y', `${y}px`);
     });
   });
+
+  // Initialize Pilot Modal
+  initPilotModal();
 });
 
 /**
@@ -292,11 +357,19 @@ function setLanguage(lang) {
   document.documentElement.setAttribute('lang', lang);
   localStorage.setItem('strig_lang', lang);
 
-  // Update translatable nodes
+  // Update translatable nodes (innerHTML)
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (dict[key]) {
       el.innerHTML = dict[key];
+    }
+  });
+
+  // Update placeholders
+  document.querySelectorAll('[data-i18n-ph]').forEach(el => {
+    const key = el.getAttribute('data-i18n-ph');
+    if (dict[key]) {
+      el.setAttribute('placeholder', dict[key]);
     }
   });
 
@@ -309,3 +382,184 @@ function setLanguage(lang) {
     }
   });
 }
+
+/**
+ * Controller for Pilot Application Modal & Resilient Submission
+ */
+function initPilotModal() {
+  const modal = document.getElementById('pilot-modal');
+  if (!modal) return;
+
+  const openBtns = document.querySelectorAll('[data-open-modal="pilot-modal"]');
+  const closeBtns = modal.querySelectorAll('[data-close-modal]');
+  const form = document.getElementById('pilot-form');
+  const successState = document.getElementById('form-success');
+  const valError = document.getElementById('form-validation-error');
+  const netError = document.getElementById('form-error');
+  const submitBtn = document.getElementById('form-submit-btn');
+  const btnText = submitBtn ? submitBtn.querySelector('.btn-text') : null;
+  const btnSpinner = submitBtn ? submitBtn.querySelector('.btn-spinner') : null;
+  const arrowIcon = submitBtn ? submitBtn.querySelector('.arrow-icon') : null;
+
+  function openModal() {
+    modal.classList.add('active');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+    const firstInput = modal.querySelector('#form-name');
+    if (firstInput) {
+      setTimeout(() => firstInput.focus(), 120);
+    }
+  }
+
+  function closeModal() {
+    modal.classList.remove('active');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+  }
+
+  openBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openModal();
+    });
+  });
+
+  closeBtns.forEach(btn => {
+    btn.addEventListener('click', closeModal);
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+
+  if (form) {
+    // Clear validation styling upon interaction
+    const inputsToWatch = form.querySelectorAll('.form-input, .form-select, .form-textarea');
+    inputsToWatch.forEach(input => {
+      input.addEventListener('input', () => {
+        input.classList.remove('input-invalid');
+        if (valError) valError.style.display = 'none';
+      });
+      input.addEventListener('change', () => {
+        input.classList.remove('input-invalid');
+        if (valError) valError.style.display = 'none';
+      });
+    });
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      if (valError) valError.style.display = 'none';
+      if (netError) netError.style.display = 'none';
+
+      const name = form.querySelector('#form-name');
+      const email = form.querySelector('#form-email');
+      const company = form.querySelector('#form-company');
+      const phone = form.querySelector('#form-phone');
+      const region = form.querySelector('#form-region');
+      const interest = form.querySelector('#form-interest');
+      const message = form.querySelector('#form-message');
+
+      let isValid = true;
+      [name, email, company, region, interest].forEach(input => {
+        if (!input || !input.value.trim()) {
+          if (input) input.classList.add('input-invalid');
+          isValid = false;
+        } else {
+          if (input) input.classList.remove('input-invalid');
+        }
+      });
+
+      // Email RFC regex
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (email && email.value && !emailRegex.test(email.value.trim())) {
+        email.classList.add('input-invalid');
+        isValid = false;
+      }
+
+      if (!isValid) {
+        if (valError) {
+          valError.style.display = 'block';
+          valError.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+        return;
+      }
+
+      // Collect data object
+      const payload = {
+        Nombre: name.value.trim(),
+        Email: email.value.trim(),
+        Empresa_Organizacion: company.value.trim(),
+        Telefono: phone ? phone.value.trim() : '',
+        Region: region.value,
+        Tipo_Interes: interest.value,
+        Mensaje: message ? message.value.trim() : '',
+        _subject: `Nueva Postulación Piloto: ${company.value.trim()} (${region.value}) - Strig Systems`,
+        _template: 'table',
+        _captcha: 'false'
+      };
+
+      // Button UI state
+      const currentLang = document.documentElement.getAttribute('data-lang') || 'es';
+      const dict = translations[currentLang] || translations.es;
+
+      if (submitBtn) submitBtn.disabled = true;
+      if (btnSpinner) btnSpinner.style.display = 'inline-block';
+      if (arrowIcon) arrowIcon.style.display = 'none';
+      if (btnText) btnText.textContent = dict.f_submitting || "Enviando...";
+
+      try {
+        const response = await fetch('https://formsubmit.co/ajax/contacto@strigsystems.tech', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        });
+
+        if (response.ok) {
+          form.style.display = 'none';
+          if (successState) successState.style.display = 'flex';
+          form.reset();
+        } else {
+          throw new Error(`Server returned HTTP ${response.status}`);
+        }
+      } catch (err) {
+        console.warn('FormSubmit AJAX request failed, showing fallback:', err);
+        if (netError) {
+          netError.style.display = 'block';
+          // Prepare mailto fallback link with pre-filled content
+          const fallbackSubject = encodeURIComponent(`Postulación Piloto - ${company.value.trim()}`);
+          const fallbackBody = encodeURIComponent(
+            `Nombre: ${name.value.trim()}\n` +
+            `Email: ${email.value.trim()}\n` +
+            `Empresa: ${company.value.trim()}\n` +
+            `Teléfono: ${phone ? phone.value.trim() : ''}\n` +
+            `Región: ${region.value}\n` +
+            `Interés: ${interest.value}\n` +
+            `Detalles: ${message ? message.value.trim() : ''}`
+          );
+          const mailLink = netError.querySelector('.alert-link');
+          if (mailLink) {
+            mailLink.href = `mailto:contacto@strigsystems.tech?subject=${fallbackSubject}&body=${fallbackBody}`;
+          }
+        }
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
+        if (btnSpinner) btnSpinner.style.display = 'none';
+        if (arrowIcon) arrowIcon.style.display = 'inline-block';
+        if (btnText) btnText.textContent = dict.f_submit_btn || "Enviar Postulación a Piloto";
+      }
+    });
+  }
+}
+

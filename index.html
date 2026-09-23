@@ -57,7 +57,7 @@
           <span class="lang-divider">/</span>
           <span class="lang-option" data-lang-val="en">EN</span>
         </button>
-        <a href="#contacto" class="btn-primary btn-header" data-i18n="nav_cta">Postular a Piloto</a>
+        <button type="button" class="btn-primary btn-header" data-open-modal="pilot-modal" data-i18n="nav_cta">Postular a Piloto</button>
       </div>
     </div>
   </header>
@@ -81,10 +81,10 @@
         </p>
 
         <div class="hero-actions">
-          <a href="#contacto" class="btn-primary">
+          <button type="button" class="btn-primary" data-open-modal="pilot-modal">
             <span data-i18n="hero_cta_primary">Postular a Piloto Operativo</span>
             <span class="arrow-icon">→</span>
-          </a>
+          </button>
           <a href="#tecnologia" class="btn-ghost">
             <span data-i18n="hero_cta_secondary">Ver Capacidades del Sistema</span>
           </a>
@@ -311,7 +311,7 @@
             <h3 class="callout-title" data-i18n="callout_title">Convocatoria de Validación 2026</h3>
             <p class="callout-desc" data-i18n="callout_desc">Cupos limitados por temporada de incendios en la Macrozona Centro-Sur. Evaluación de factibilidad territorial e interoperabilidad C2 sin costo para predios forestales e industriales.</p>
           </div>
-          <a href="#contacto" class="btn-primary" data-i18n="callout_cta">Solicitar Factibilidad de Piloto</a>
+          <button type="button" class="btn-primary" data-open-modal="pilot-modal" data-i18n="callout_cta">Solicitar Factibilidad de Piloto</button>
         </div>
       </div>
     </section>
@@ -460,10 +460,10 @@
           </p>
 
           <div class="contact-btn-group">
-            <a href="mailto:contacto@strigsystems.tech?subject=Postulacion%20Programa%20Piloto%20Foresight%20AI" class="btn-primary btn-large">
+            <button type="button" class="btn-primary btn-large" data-open-modal="pilot-modal">
               <span data-i18n="cta_btn1">Postular a Piloto Operativo</span>
               <span class="arrow-icon">→</span>
-            </a>
+            </button>
             <a href="mailto:tomas@strigsystems.tech?subject=Consulta%20Inversion%20y%20Alianzas%20-%20Strig%20Systems" class="btn-ghost btn-large">
               <span data-i18n="cta_btn2">Consultar por Alianzas / Inversión</span>
             </a>
@@ -511,6 +511,140 @@
       </div>
     </div>
   </footer>
+
+  <!-- PILOT APPLICATION MODAL -->
+  <div id="pilot-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-window glass-panel">
+      <!-- Close button -->
+      <button type="button" class="modal-close-btn" data-close-modal aria-label="Cerrar modal">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Modal Body / Form Container -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-badge">
+            <span class="badge-dot"></span>
+            <span data-i18n="modal_badge">Validación Territorial 2026</span>
+          </div>
+          <h2 id="modal-title" class="modal-title" data-i18n="modal_title">Postulación al Programa Piloto</h2>
+          <p class="modal-subtitle" data-i18n="modal_sub">
+            Completa los datos de tu entidad. Evaluamos factibilidad operativa e interoperabilidad C2 para la temporada de riesgo.
+          </p>
+        </div>
+
+        <form id="pilot-form" class="pilot-form" novalidate>
+          <!-- Honeypot anti-spam -->
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <!-- FormSubmit configuration -->
+          <input type="hidden" name="_subject" value="Nueva Postulación Programa Piloto - Strig Systems">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+
+          <div class="form-grid">
+            <!-- Nombre -->
+            <div class="form-group">
+              <label for="form-name" class="form-label" data-i18n="f_name_label">Nombre y Apellido *</label>
+              <input type="text" id="form-name" name="Nombre" class="form-input" required placeholder="Ej: Marcela Soto" data-i18n-ph="f_name_ph">
+            </div>
+
+            <!-- Email Corporativo -->
+            <div class="form-group">
+              <label for="form-email" class="form-label" data-i18n="f_email_label">Correo Corporativo / Institucional *</label>
+              <input type="email" id="form-email" name="Email" class="form-input" required placeholder="nombre@empresa.cl" data-i18n-ph="f_email_ph">
+            </div>
+
+            <!-- Empresa u Organización -->
+            <div class="form-group">
+              <label for="form-company" class="form-label" data-i18n="f_company_label">Empresa u Organización *</label>
+              <input type="text" id="form-company" name="Empresa_Organizacion" class="form-input" required placeholder="Ej: Forestal / Minera / Institución" data-i18n-ph="f_company_ph">
+            </div>
+
+            <!-- Teléfono / WhatsApp -->
+            <div class="form-group">
+              <label for="form-phone" class="form-label" data-i18n="f_phone_label">Teléfono / WhatsApp (Opcional)</label>
+              <input type="tel" id="form-phone" name="Telefono" class="form-input" placeholder="+56 9 1234 5678" data-i18n-ph="f_phone_ph">
+            </div>
+
+            <!-- Región -->
+            <div class="form-group">
+              <label for="form-region" class="form-label" data-i18n="f_region_label">Región Territorial *</label>
+              <select id="form-region" name="Region" class="form-select" required>
+                <option value="" disabled selected data-i18n="f_region_default">Selecciona una región...</option>
+                <option value="Biobío">Región del Biobío</option>
+                <option value="La Araucanía">Región de La Araucanía</option>
+                <option value="Maule">Región del Maule</option>
+                <option value="Ñuble">Región de Ñuble</option>
+                <option value="Los Ríos">Región de Los Ríos</option>
+                <option value="Los Lagos">Región de Los Lagos</option>
+                <option value="Valparaíso">Región de Valparaíso</option>
+                <option value="Metropolitana">Región Metropolitana</option>
+                <option value="Otra Región de Chile">Otra Región de Chile</option>
+                <option value="Internacional">Internacional (Fuera de Chile)</option>
+              </select>
+            </div>
+
+            <!-- Tipo de Interés -->
+            <div class="form-group">
+              <label for="form-interest" class="form-label" data-i18n="f_interest_label">Tipo de Interés *</label>
+              <select id="form-interest" name="Tipo_Interes" class="form-select" required>
+                <option value="" disabled selected data-i18n="f_interest_default">Selecciona el tipo de interés...</option>
+                <option value="Piloto Forestal/Industrial" data-i18n="opt_interest_1">Programa Piloto Operativo (Forestal / Industrial)</option>
+                <option value="Alianza I+D/Academia" data-i18n="opt_interest_2">Alianzas de I+D / Validación Técnica</option>
+                <option value="Inversión Deep Tech" data-i18n="opt_interest_3">Inversión / Fondos de Capital Deep Tech</option>
+                <option value="Consulta General" data-i18n="opt_interest_4">Consulta General / Demostración C2</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Mensaje / Detalles -->
+          <div class="form-group full-width">
+            <label for="form-message" class="form-label" data-i18n="f_message_label">Detalles Adicionales o Necesidad Específica (Opcional)</label>
+            <textarea id="form-message" name="Mensaje" class="form-textarea" rows="3" placeholder="Describe brevemente el tipo de predio, zona geográfica o consulta técnica..." data-i18n-ph="f_message_ph"></textarea>
+          </div>
+
+          <!-- Feedback Alerts -->
+          <div id="form-validation-error" class="form-alert alert-warning" style="display: none;" role="alert">
+            <span data-i18n="form_val_error">Por favor completa todos los campos obligatorios (*) con un formato válido.</span>
+          </div>
+
+          <div id="form-error" class="form-alert alert-error" style="display: none;" role="alert">
+            <span data-i18n="form_error_msg">Hubo un problema al enviar la solicitud. Puedes escribirnos directamente a</span>
+            <a href="mailto:contacto@strigsystems.tech" class="alert-link">contacto@strigsystems.tech</a>.
+          </div>
+
+          <!-- Submit Button -->
+          <div class="form-actions">
+            <button type="submit" id="form-submit-btn" class="btn-primary btn-submit">
+              <span class="btn-text" data-i18n="f_submit_btn">Enviar Postulación a Piloto</span>
+              <span class="btn-spinner" style="display: none;" aria-hidden="true"></span>
+              <span class="arrow-icon">→</span>
+            </button>
+            <span class="form-privacy-note" data-i18n="f_privacy">Tus datos serán tratados bajo estricta confidencialidad técnica (NDA disponible).</span>
+          </div>
+        </form>
+
+        <!-- Success Container -->
+        <div id="form-success" class="form-success-state" style="display: none;">
+          <div class="success-icon-circle">
+            <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="var(--accent-cyan)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <h3 class="success-title" data-i18n="success_title">¡Postulación Recibida con Éxito!</h3>
+          <p class="success-desc" data-i18n="success_desc">
+            Hemos recibido los antecedentes de tu entidad. Nuestro equipo de ingeniería aeroespacial revisará la factibilidad territorial y se contactará directamente dentro de 24 horas hábiles.
+          </p>
+          <div class="success-actions">
+            <button type="button" class="btn-ghost" data-close-modal data-i18n="success_close_btn">Cerrar Ventana</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
