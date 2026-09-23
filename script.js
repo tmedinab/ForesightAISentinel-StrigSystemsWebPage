@@ -7,6 +7,7 @@ const translations = {
   es: {
     // Nav
     nav_problem: "Problema",
+    nav_compare: "Comparativa",
     nav_tech: "Tecnología",
     nav_pilot: "Programa Piloto",
     nav_alliances: "I+D & Alianzas",
@@ -45,6 +46,48 @@ const translations = {
     p3_desc: "Exposición a peligro extremo ingresando de noche a ciegas en el bosque sin verificación aérea previa del terreno.",
     p3_tag: "Riesgo vital innecesario",
     quote_text: "Satélites tienen latencia orbital; torres fijas tienen puntos ciegos topográficos; drones manuales exigen cuadrillas nocturnas en riesgo. Ninguno responde a tiempo la pregunta decisiva: <em>¿Hay una amenaza humana o térmica en este instante y coordenadas exactas?</em>",
+
+    // Tactical Benchmark
+    comp_tag: "Benchmark Táctico",
+    comp_title: "Por Qué las Soluciones Tradicionales Fallan de Noche",
+    comp_sub: "Análisis técnico comparativo entre satélites de órbita baja, torres térmicas fijas, drones manuales y la plataforma autónoma Foresight AI.",
+    matrix_scroll_hint: "⇄ Desliza horizontalmente para comparar tecnologías",
+    th_dim: "Dimensión Operativa",
+    th_sat: "Satélites LEO<br><span class=\"th-sub\">FIRMS / OroraTech</span>",
+    th_tower: "Torres Térmicas Fijas<br><span class=\"th-sub\">Mástiles Ópticos</span>",
+    th_drone: "Drones Manuales<br><span class=\"th-sub\">Cuadrillas Nocturnas</span>",
+    strig_badge: "Arquitectura Óptima",
+    th_strig: "Strig Systems<br><span class=\"th-sub\">Foresight AI (VTOL + Edge AI)</span>",
+    r1_dim: "Patrullaje Nocturno Continuo",
+    r1_sat: "Pasos orbitales discretos (1 a 4 horas). Vacío ciego entre pasadas.",
+    r1_tower: "Continuo 24/7, pero estrictamente limitado a línea de vista (LOS).",
+    r1_drone: "30 a 45 min por batería. Limitado por fatiga y visibilidad de operadores.",
+    r1_strig: "<strong>Patrullaje autónomo programado</strong> en las 10 horas de vulnerabilidad nocturna.",
+    r2_dim: "Latencia de Detección & Alerta",
+    r2_sat: "<span class=\"badge-negative\">30 a 90 minutos</span> (bajada orbital y procesamiento satelital).",
+    r2_tower: "Instantánea en sensor; requiere verificación manual en central C2.",
+    r2_drone: "Instantánea para operador local; demorada a central si no hay 4G/5G.",
+    r2_strig: "<span class=\"badge-positive\">&lt; 5 segundos</span> (Inferencia Edge AI local a bordo + radioenlace táctico).",
+    r3_dim: "Detección de Precursores (Humanos / Vehículos)",
+    r3_sat: "<span class=\"badge-negative\">0%</span> (Resolución 375m a 1km. Incapaz de ver personas o fogatas).",
+    r3_tower: "Nula en zonas boscosas densas o senderos fuera de visión directa.",
+    r3_drone: "Posible a baja cota, pero arriesgando cuadrillas humanas en el bosque.",
+    r3_strig: "<span class=\"badge-positive\">Detección nocturna de personas</span> y vehículos antes de la ignición (99,7% de causas).",
+    r4_dim: "Puntos Ciegos Topográficos",
+    r4_sat: "Afectado por nubes densas, humo copioso y copas arbóreas cerradas.",
+    r4_tower: "<span class=\"badge-negative\">Crítico:</span> Puntos ciegos físicos tras cerros, quebradas y valles.",
+    r4_drone: "Limitado por relieve agreste y restricción de alcance visual (VLOS).",
+    r4_strig: "<span class=\"badge-positive\">Cero puntos ciegos:</span> Vuelo adaptativo de ala fija sobre quebradas y cañones.",
+    r5_dim: "Riesgo Humano en Terreno",
+    r5_sat: "Cero riesgo directo.",
+    r5_tower: "Cero riesgo directo.",
+    r5_drone: "<span class=\"badge-negative\">Alto riesgo:</span> Cuadrillas expuestas de noche en caminos forestales remotos.",
+    r5_strig: "<span class=\"badge-positive\">Cero riesgo humano:</span> Misión, despegue y aterrizaje 100% autónomos.",
+    r6_dim: "Modelo Económico & Costo",
+    r6_sat: "Suscripción SaaS (US$15k-$60k/año), sin detección de precursores.",
+    r6_tower: "<span class=\"badge-negative\">Altísimo CAPEX:</span> US$40k-$100k por torre instalada (mástil + energía).",
+    r6_drone: "CAPEX medio + alto costo en horas hombre nocturnas y camionetas 4x4.",
+    r6_strig: "<span class=\"badge-positive\">0 CAPEX (Intelligence as a Service):</span> 90% menor costo vs aviación tripulada.",
 
     // Technology
     tech_tag: "Capacidades Operativas",
@@ -152,6 +195,7 @@ const translations = {
   en: {
     // Nav
     nav_problem: "The Problem",
+    nav_compare: "Benchmark",
     nav_tech: "Technology",
     nav_pilot: "Pilot Program",
     nav_alliances: "R&D & Alliances",
@@ -190,6 +234,48 @@ const translations = {
     p3_desc: "Extreme physical hazard entering rugged mountainous terrain in darkness without prior aerial reconnaissance.",
     p3_tag: "Avoidable human risk",
     quote_text: "Satellites suffer orbital latency; fixed watchtowers face topographic blind spots; manual drones place nocturnal ground crews at risk. None answers the decisive question in time: <em>Is there an unauthorized human presence or thermal anomaly right now at exact coordinates?</em>",
+
+    // Tactical Benchmark
+    comp_tag: "Tactical Benchmark",
+    comp_title: "Why Legacy Solutions Fail in the Night Window",
+    comp_sub: "Comparative technical analysis across LEO satellites, fixed thermal watchtowers, manual drones, and the Foresight AI autonomous platform.",
+    matrix_scroll_hint: "⇄ Swipe horizontally to compare technologies",
+    th_dim: "Operational Dimension",
+    th_sat: "LEO Satellites<br><span class=\"th-sub\">FIRMS / OroraTech</span>",
+    th_tower: "Fixed Thermal Towers<br><span class=\"th-sub\">Optical Masts</span>",
+    th_drone: "Manual Drones<br><span class=\"th-sub\">Night Ground Crews</span>",
+    strig_badge: "Optimal Architecture",
+    th_strig: "Strig Systems<br><span class=\"th-sub\">Foresight AI (VTOL + Edge AI)</span>",
+    r1_dim: "Continuous Night Patrol",
+    r1_sat: "Discrete orbital passes (every 1 to 4 hours). Blind gaps between passes.",
+    r1_tower: "Continuous 24/7, but strictly limited to line-of-sight (LOS).",
+    r1_drone: "30 to 45 min per battery. Constrained by crew fatigue and nocturnal line-of-sight.",
+    r1_strig: "<strong>Scheduled autonomous patrol</strong> across the critical 10-hour nighttime vulnerability window.",
+    r2_dim: "Detection & Alert Latency",
+    r2_sat: "<span class=\"badge-negative\">30 to 90 minutes</span> (orbital downlink and cloud processing lag).",
+    r2_tower: "Instant at sensor; requires manual verification by dispatch operator.",
+    r2_drone: "Instant for local pilot; delayed to dispatch C2 without 4G/5G cell signal.",
+    r2_strig: "<span class=\"badge-positive\">&lt; 5 seconds</span> (onboard local Edge AI inference + tactical radio datalink).",
+    r3_dim: "Precursor Detection (Humans / Vehicles)",
+    r3_sat: "<span class=\"badge-negative\">0%</span> (375m to 1km resolution; incapable of spotting individuals or small campfires).",
+    r3_tower: "Zero under dense canopy or topographic corridors away from direct mast view.",
+    r3_drone: "Feasible at low altitude, but requires risking ground crews in the forest.",
+    r3_strig: "<span class=\"badge-positive\">Nocturnal detection of human presence</span> and vehicles prior to ignition (root cause of 99.7% of fires).",
+    r4_dim: "Topographic Blind Spots",
+    r4_sat: "Degraded by cloud cover, heavy smoke, and dense tree canopy.",
+    r4_tower: "<span class=\"badge-negative\">Critical:</span> Physical blind spots behind hills, ravines, and opposite slopes.",
+    r4_drone: "Restricted by rugged topography and visual line of sight (VLOS) regulations.",
+    r4_strig: "<span class=\"badge-positive\">Zero blind spots:</span> Adaptive fixed-wing terrain contouring over canyons and ridges.",
+    r5_dim: "Human Operational Hazard",
+    r5_sat: "Zero physical hazard.",
+    r5_tower: "Zero physical hazard.",
+    r5_drone: "<span class=\"badge-negative\">High hazard:</span> Nocturnal ground crews operating on remote forest roads in danger zones.",
+    r5_strig: "<span class=\"badge-positive\">Zero human hazard:</span> 100% autonomous launch, patrol mission, and recovery.",
+    r6_dim: "Economic Model & Cost",
+    r6_sat: "Software subscription (US$15k-$60k/yr), zero precursor prevention capability.",
+    r6_tower: "<span class=\"badge-negative\">Extremely High CAPEX:</span> US$40k-$100k per installed mast (power + micro-links).",
+    r6_drone: "Medium CAPEX + heavy recurring night-shift labor and 4x4 fleet logistics.",
+    r6_strig: "<span class=\"badge-positive\">0 CAPEX (Intelligence as a Service):</span> 90% cost reduction vs manned aerial patrol.",
 
     // Technology
     tech_tag: "Operational Capabilities",
@@ -343,6 +429,10 @@ document.addEventListener('DOMContentLoaded', () => {
       panel.style.setProperty('--mouse-y', `${y}px`);
     });
   });
+
+  // Initialize Mobile Menu & Header Scroll
+  initMobileMenu();
+  initHeaderScroll();
 
   // Initialize Pilot Modal
   initPilotModal();
@@ -562,4 +652,74 @@ function initPilotModal() {
     });
   }
 }
+
+/**
+ * Controller for Mobile Navigation Drawer
+ */
+function initMobileMenu() {
+  const toggleBtn = document.getElementById('mobile-toggle');
+  const drawer = document.getElementById('mobile-drawer');
+  if (!toggleBtn || !drawer) return;
+
+  function toggleDrawer(open) {
+    const shouldOpen = open !== undefined ? open : !drawer.classList.contains('open');
+    if (shouldOpen) {
+      drawer.classList.add('open');
+      toggleBtn.classList.add('active');
+      toggleBtn.setAttribute('aria-expanded', 'true');
+      drawer.setAttribute('aria-hidden', 'false');
+    } else {
+      drawer.classList.remove('open');
+      toggleBtn.classList.remove('active');
+      toggleBtn.setAttribute('aria-expanded', 'false');
+      drawer.setAttribute('aria-hidden', 'true');
+    }
+  }
+
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleDrawer();
+  });
+
+  // Close when clicking any link inside the mobile drawer
+  drawer.querySelectorAll('.mobile-nav-item, .btn-mobile-cta').forEach(link => {
+    link.addEventListener('click', () => {
+      toggleDrawer(false);
+    });
+  });
+
+  // Close when clicking outside header & drawer
+  document.addEventListener('click', (e) => {
+    if (!drawer.contains(e.target) && !toggleBtn.contains(e.target)) {
+      toggleDrawer(false);
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && drawer.classList.contains('open')) {
+      toggleDrawer(false);
+    }
+  });
+}
+
+/**
+ * Dynamic Header Scroll Blur & Compact State
+ */
+function initHeaderScroll() {
+  const header = document.querySelector('.site-header');
+  if (!header) return;
+
+  const handleScroll = () => {
+    if (window.scrollY > 25) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  handleScroll();
+}
+
 
