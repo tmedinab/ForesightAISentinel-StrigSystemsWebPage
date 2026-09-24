@@ -223,7 +223,8 @@ const translations = {
     // Footer
     footer_tagline: "Desarrollo de sistemas aéreos autónomos e inteligencia computacional para la mitigación anticipada de riesgos críticos.",
     f_nav: "Navegación",
-    f_corp: "Corporativo"
+    f_corp: "Corporativo",
+    f_privacy_link: "Política de Privacidad & Gobernanza"
   },
 
   en: {
@@ -445,7 +446,8 @@ const translations = {
     // Footer
     footer_tagline: "Autonomous uncrewed aircraft systems and Edge AI computing for proactive critical risk mitigation.",
     f_nav: "Platform",
-    f_corp: "Corporate"
+    f_corp: "Corporate",
+    f_privacy_link: "Privacy Policy & Governance"
   }
 };
 
