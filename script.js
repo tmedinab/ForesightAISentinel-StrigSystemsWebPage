@@ -1,5 +1,5 @@
 /**
- * Strig Systems — Foresight AI Sentinel
+ * Strig Systems — Athene Noctua
  * Enterprise Production Client Controller (Bilingual ES / EN)
  */
 
@@ -50,14 +50,14 @@ const translations = {
     // Tactical Benchmark
     comp_tag: "Benchmark Táctico",
     comp_title: "Por Qué las Soluciones Tradicionales Fallan de Noche",
-    comp_sub: "Análisis técnico comparativo entre satélites de órbita baja, torres térmicas fijas, drones manuales y la plataforma autónoma Foresight AI.",
+    comp_sub: "Análisis técnico comparativo entre satélites de órbita baja, torres térmicas fijas, drones manuales y la plataforma autónoma Athene.",
     matrix_scroll_hint: "⇄ Desliza horizontalmente para comparar tecnologías",
     th_dim: "Dimensión Operativa",
     th_sat: "Satélites LEO<br><span class=\"th-sub\">FIRMS / OroraTech</span>",
     th_tower: "Torres Térmicas Fijas<br><span class=\"th-sub\">Mástiles Ópticos</span>",
     th_drone: "Drones Manuales<br><span class=\"th-sub\">Cuadrillas Nocturnas</span>",
-    strig_badge: "Arquitectura Óptima",
-    th_strig: "Strig Systems<br><span class=\"th-sub\">Foresight AI (VTOL + Edge AI)</span>",
+    strig_badge: "Nuestra Arquitectura",
+    th_strig: "Strig Systems<br><span class=\"th-sub\">Athene (VTOL + Edge AI)</span>",
     r1_dim: "Patrullaje Nocturno Continuo",
     r1_sat: "Pasos orbitales discretos (1 a 4 horas). Vacío ciego entre pasadas.",
     r1_tower: "Continuo 24/7, pero estrictamente limitado a línea de vista (LOS).",
@@ -238,14 +238,14 @@ const translations = {
     // Tactical Benchmark
     comp_tag: "Tactical Benchmark",
     comp_title: "Why Legacy Solutions Fail in the Night Window",
-    comp_sub: "Comparative technical analysis across LEO satellites, fixed thermal watchtowers, manual drones, and the Foresight AI autonomous platform.",
+    comp_sub: "Comparative technical analysis across LEO satellites, fixed thermal watchtowers, manual drones, and the Athene autonomous platform.",
     matrix_scroll_hint: "⇄ Swipe horizontally to compare technologies",
     th_dim: "Operational Dimension",
     th_sat: "LEO Satellites<br><span class=\"th-sub\">FIRMS / OroraTech</span>",
     th_tower: "Fixed Thermal Towers<br><span class=\"th-sub\">Optical Masts</span>",
     th_drone: "Manual Drones<br><span class=\"th-sub\">Night Ground Crews</span>",
-    strig_badge: "Optimal Architecture",
-    th_strig: "Strig Systems<br><span class=\"th-sub\">Foresight AI (VTOL + Edge AI)</span>",
+    strig_badge: "Our Architecture",
+    th_strig: "Strig Systems<br><span class=\"th-sub\">Athene (VTOL + Edge AI)</span>",
     r1_dim: "Continuous Night Patrol",
     r1_sat: "Discrete orbital passes (every 1 to 4 hours). Blind gaps between passes.",
     r1_tower: "Continuous 24/7, but strictly limited to line-of-sight (LOS).",
@@ -383,7 +383,7 @@ const translations = {
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log(
-    '%c◈ STRIG SYSTEMS %c| Foresight AI Sentinel Online',
+    '%c◈ STRIG SYSTEMS %c| Athene Noctua Online',
     'color: #00f0ff; font-weight: bold; font-size: 14px; background: #050811; padding: 4px 8px; border-radius: 4px; border: 1px solid #00f0ff;',
     'color: #94a3b8; font-size: 12px;'
   );
@@ -721,5 +721,6 @@ function initHeaderScroll() {
   window.addEventListener('scroll', handleScroll, { passive: true });
   handleScroll();
 }
+
 
 
