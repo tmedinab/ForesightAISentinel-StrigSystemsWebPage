@@ -362,6 +362,158 @@
       </div>
     </section>
 
+    <!-- SECTION: SIMULADOR DE ENLACE TÁCTICO & C2 (DEFENSE-GRADE HUD) -->
+    <section class="section section-border c2-section" id="c2-console">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="c2_tag">◈ Consola C2 Athene</span>
+          <h2 class="section-title" data-i18n="c2_title">Simulador de Enlace Táctico & Misión Nocturna</h2>
+          <p class="section-subtitle" data-i18n="c2_sub">
+            Experimenta en tiempo real la telemetría embarcada de la aeronave Noctua-01 y la inferencia bi-espectral del Edge NPU con discriminación térmica de precursores.
+          </p>
+        </div>
+
+        <div class="c2-viewport-container glass-panel">
+          <!-- Top Control & Status Toolbar -->
+          <div class="c2-toolbar">
+            <div class="c2-status-group">
+              <span class="c2-beacon-dot"></span>
+              <span class="c2-link-status" data-i18n="c2_status_link">TELEMETRÍA LINK: ACTIVO (915 MHz FHSS)</span>
+              <span class="c2-tag-airframe">AIRFRAME: NOCTUA-01</span>
+            </div>
+
+            <div class="c2-controls-group">
+              <div class="c2-btn-group" role="group" aria-label="Paleta Térmica">
+                <span class="c2-label" data-i18n="c2_lbl_palette">PALETA:</span>
+                <button type="button" class="c2-mode-btn active" data-palette="ironbow">IRONBOW</button>
+                <button type="button" class="c2-mode-btn" data-palette="whitehot">WHITE HOT</button>
+                <button type="button" class="c2-mode-btn" data-palette="blackhot">BLACK HOT</button>
+              </div>
+
+              <div class="c2-btn-group" role="group" aria-label="Aumento Digital">
+                <span class="c2-label" data-i18n="c2_lbl_zoom">ZOOM:</span>
+                <button type="button" class="c2-zoom-btn active" data-zoom="1.0">1.0x</button>
+                <button type="button" class="c2-zoom-btn" data-zoom="2.5">2.5x</button>
+                <button type="button" class="c2-zoom-btn" data-zoom="5.0">5.0x</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Main C2 Display Grid (Canvas + Live HUD) -->
+          <div class="c2-screen-wrapper" id="c2-screen-wrapper">
+            <!-- Canvas FLIR Procedural Surface -->
+            <canvas id="c2-flir-canvas" width="800" height="450" class="c2-canvas"></canvas>
+
+            <!-- Vector Defense HUD Overlay -->
+            <div class="c2-hud-overlay" id="c2-hud">
+              <!-- Top Heading Tape -->
+              <div class="c2-heading-tape-wrapper">
+                <div class="c2-heading-marker">▼</div>
+                <div class="c2-heading-readout" id="c2-heading-val">068° ENE</div>
+                <div class="c2-heading-ticks" id="c2-heading-ticks">
+                  <span>040</span><span>·</span><span>050</span><span>·</span><span>060</span><span>·</span><span class="major">070</span><span>·</span><span>080</span><span>·</span><span>090</span>
+                </div>
+              </div>
+
+              <!-- Top Left: Flight Envelope Telemetry -->
+              <div class="c2-hud-box c2-hud-tl">
+                <div class="hud-item"><span class="hud-lbl">ALT:</span> <span class="hud-val" id="c2-alt-val">420 M AGL</span></div>
+                <div class="hud-item"><span class="hud-lbl">TAS:</span> <span class="hud-val" id="c2-tas-val">78 KM/H</span></div>
+                <div class="hud-item"><span class="hud-lbl">WIND:</span> <span class="hud-val">18 KT / 33 KM/H</span></div>
+                <div class="hud-item"><span class="hud-lbl">BAT:</span> <span class="hud-val hud-accent">84% (58 MIN)</span></div>
+              </div>
+
+              <!-- Top Right: Sensor & Thermal Radiometry -->
+              <div class="c2-hud-box c2-hud-tr">
+                <div class="hud-item"><span class="hud-lbl">GIMBAL:</span> <span class="hud-val" id="c2-gimbal-val">AZ +14.2° | EL -32.8°</span></div>
+                <div class="hud-item"><span class="hud-lbl">FOV:</span> <span class="hud-val" id="c2-fov-val">45.0° HFOV</span></div>
+                <div class="hud-item"><span class="hud-lbl">CORE TEMP:</span> <span class="hud-val">34.2°C (VOx)</span></div>
+                <div class="hud-item"><span class="hud-lbl">CAL:</span> <span class="hud-val hud-green">NUC OK [AUTO]</span></div>
+              </div>
+
+              <!-- Center: Pitch Ladder & Crosshair Target Box -->
+              <div class="c2-pitch-ladder" id="c2-pitch-ladder">
+                <div class="pitch-line pos-10">+10 ─── &nbsp; ─── +10</div>
+                <div class="pitch-line pos-5">+05 ─── &nbsp; ─── +05</div>
+                <div class="pitch-line horizon">00 ━━━━ &nbsp; ━━━━ 00</div>
+                <div class="pitch-line neg-5">-05 ─── &nbsp; ─── -05</div>
+                <div class="pitch-line neg-10">-10 ─── &nbsp; ─── -10</div>
+              </div>
+
+              <!-- Reticle Tracking Box -->
+              <div class="c2-target-box" id="c2-target-box">
+                <div class="target-corner tl"></div>
+                <div class="target-corner tr"></div>
+                <div class="target-corner bl"></div>
+                <div class="target-corner br"></div>
+                <div class="target-tag" id="c2-target-tag">TARGET LOCKED [PRECURSOR]</div>
+                <div class="target-temp" id="c2-target-temp">T_MAX: 284°C (ΔT +268°C)</div>
+              </div>
+
+              <!-- Bottom Left: Coordinates & GPS Precision -->
+              <div class="c2-hud-box c2-hud-bl">
+                <div class="hud-item"><span class="hud-lbl">TARGET LAT:</span> <span class="hud-val" id="c2-lat-val">37°14'32.6" S</span></div>
+                <div class="hud-item"><span class="hud-lbl">TARGET LON:</span> <span class="hud-val" id="c2-lon-val">72°41'04.2" W</span></div>
+                <div class="hud-item"><span class="hud-lbl">MGRS:</span> <span class="hud-val">18H WE 3928 7812</span></div>
+                <div class="hud-item"><span class="hud-lbl">GPS FIX:</span> <span class="hud-val hud-green">RTK FIXED (±2 CM)</span></div>
+              </div>
+
+              <!-- Bottom Right: Edge NPU Confirmation Buffer -->
+              <div class="c2-hud-box c2-hud-br">
+                <div class="hud-item"><span class="hud-lbl">EDGE NPU:</span> <span class="hud-val hud-accent" id="c2-buffer-txt">CONFIRMED (16/16)</span></div>
+                <div class="c2-buffer-bar">
+                  <div class="c2-buffer-fill" id="c2-buffer-fill"></div>
+                </div>
+                <div class="hud-item"><span class="hud-lbl">CLASS:</span> <span class="hud-val hud-alert" id="c2-class-val">INTENTIONAL PRECURSOR</span></div>
+                <div class="hud-item"><span class="hud-lbl">CONFIDENCE:</span> <span class="hud-val hud-alert" id="c2-conf-val">98.4%</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Action Bar -->
+          <div class="c2-footer-bar">
+            <div class="c2-footer-info">
+              <span class="c2-hint" data-i18n="c2_hint">💡 Haz clic sobre el cuadrante térmico para re-orientar el sensor y calcular coordenadas georreferenciadas.</span>
+            </div>
+            <button type="button" class="btn btn-primary c2-dispatch-btn" id="c2-dispatch-btn">
+              <span class="dispatch-icon" aria-hidden="true">📡</span>
+              <span class="btn-text" data-i18n="c2_btn_dispatch">Despachar Dossier Táctico C2</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Tactical Dossier Modal Popup -->
+        <div class="c2-dossier-modal" id="c2-dossier-modal" aria-hidden="true" role="dialog">
+          <div class="c2-dossier-dialog glass-panel">
+            <div class="c2-dossier-header">
+              <div class="dossier-title-wrap">
+                <span class="dossier-badge">PAQUETE DE ALERTA TÁCTICA C2</span>
+                <h3 class="dossier-title">Dossier de Detección Temprana #ATH-2026-0924</h3>
+              </div>
+              <button type="button" class="c2-dossier-close" id="c2-dossier-close" aria-label="Cerrar">&times;</button>
+            </div>
+            <div class="c2-dossier-body">
+              <div class="dossier-meta-grid">
+                <div class="dossier-field"><span class="field-k">Vector Aéreo:</span> <span class="field-v">Noctua-01 (VTOL)</span></div>
+                <div class="dossier-field"><span class="field-k">Algoritmo:</span> <span class="field-v">Athene Edge NPU v4.2</span></div>
+                <div class="dossier-field"><span class="field-k">Latencia Emisión:</span> <span class="field-v hud-green">&lt; 3,8 segundos</span></div>
+                <div class="dossier-field"><span class="field-k">Coordenadas WGS-84:</span> <span class="field-v hud-accent" id="dossier-coords">-37.24238, -72.68450</span></div>
+                <div class="dossier-field"><span class="field-k">Firma Térmica:</span> <span class="field-v hud-alert" id="dossier-temp">284°C (Punto Anómalo Crítico)</span></div>
+                <div class="dossier-field"><span class="field-k">Clasificación:</span> <span class="field-v hud-alert">Precursor Humano / Foco Inicial</span></div>
+                <div class="dossier-field"><span class="field-k">Validación Multi-frame:</span> <span class="field-v">16 de 16 frames consecutivos</span></div>
+                <div class="dossier-field"><span class="field-k">Protocolo Red:</span> <span class="field-v">FHSS 915 MHz / Formato STANAG 4586</span></div>
+              </div>
+              <div class="dossier-actions">
+                <button type="button" class="btn btn-secondary" id="dossier-copy-btn">Copiar Coordenadas GPS</button>
+                <button type="button" class="btn btn-primary" id="dossier-sim-export-btn">Simular Despacho a Brigada Terrestre</button>
+              </div>
+              <div class="dossier-alert-status" id="dossier-alert-status" style="display:none;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- SECTION: PROGRAMA PILOTO B2B/B2G -->
     <section class="section section-border" id="piloto">
       <div class="container">

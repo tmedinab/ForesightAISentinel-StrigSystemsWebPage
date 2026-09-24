@@ -111,6 +111,16 @@ const translations = {
     spec_4: "<span class=\"spec-name\">Normativa:</span> Enfoque DGAC DAN 151 / BVLOS",
     spec_5: "<span class=\"spec-name\">Modelo:</span> Intelligence as a Service (0 CAPEX)",
 
+    // C2 Tactical Console
+    c2_tag: "◈ Consola C2 Athene",
+    c2_title: "Simulador de Enlace Táctico & Misión Nocturna",
+    c2_sub: "Experimenta en tiempo real la telemetría embarcada de la aeronave Noctua-01 y la inferencia bi-espectral del Edge NPU con discriminación térmica de precursores.",
+    c2_status_link: "TELEMETRÍA LINK: ACTIVO (915 MHz FHSS)",
+    c2_lbl_palette: "PALETA:",
+    c2_lbl_zoom: "ZOOM:",
+    c2_hint: "💡 Haz clic sobre el cuadrante térmico para re-orientar el sensor y calcular coordenadas georreferenciadas.",
+    c2_btn_dispatch: "Despachar Dossier Táctico C2",
+
     // Pilot Program
     pilot_tag: "Validación en Terreno",
     pilot_title: "Programa Piloto para Empresas del Sector",
@@ -304,6 +314,16 @@ const translations = {
     spec_4: "<span class=\"spec-name\">Regulation:</span> DGAC DAN 151 / BVLOS Scope",
     spec_5: "<span class=\"spec-name\">Model:</span> Intelligence as a Service (0 CAPEX)",
 
+    // C2 Tactical Console
+    c2_tag: "◈ Athene C2 Console",
+    c2_title: "Tactical Datalink & Night Mission Simulator",
+    c2_sub: "Experience real-time onboard telemetry from the Noctua-01 airframe and Edge NPU bi-spectral inference with thermal precursor discrimination.",
+    c2_status_link: "TELEMETRY LINK: ACTIVE (915 MHz FHSS)",
+    c2_lbl_palette: "PALETTE:",
+    c2_lbl_zoom: "ZOOM:",
+    c2_hint: "💡 Click on the thermal display to re-orient the gimbal sensor and compute surgical target coordinates.",
+    c2_btn_dispatch: "Dispatch Tactical C2 Dossier",
+
     // Pilot Program
     pilot_tag: "Field Validation",
     pilot_title: "Early Deployment Pilot Program",
@@ -451,6 +471,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize Pilot Modal
   initPilotModal();
+
+  // Initialize C2 Tactical Simulator
+  initC2Simulator();
 });
 
 /**
@@ -736,6 +759,363 @@ function initHeaderScroll() {
   window.addEventListener('scroll', handleScroll, { passive: true });
   handleScroll();
 }
+
+/**
+ * Controller for Tactical C2 FLIR Mission Simulator
+ */
+function initC2Simulator() {
+  const canvas = document.getElementById('c2-flir-canvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const screenWrapper = document.getElementById('c2-screen-wrapper');
+
+  // Interactive controls
+  const paletteBtns = document.querySelectorAll('.c2-mode-btn');
+  const zoomBtns = document.querySelectorAll('.c2-zoom-btn');
+
+  // Readouts
+  const headingVal = document.getElementById('c2-heading-val');
+  const pitchLadder = document.getElementById('c2-pitch-ladder');
+  const targetBox = document.getElementById('c2-target-box');
+  const targetTag = document.getElementById('c2-target-tag');
+  const targetTemp = document.getElementById('c2-target-temp');
+  const latVal = document.getElementById('c2-lat-val');
+  const lonVal = document.getElementById('c2-lon-val');
+  const fovVal = document.getElementById('c2-fov-val');
+  const bufferTxt = document.getElementById('c2-buffer-txt');
+  const bufferFill = document.getElementById('c2-buffer-fill');
+  const gimbalVal = document.getElementById('c2-gimbal-val');
+
+  // Dossier modal
+  const dispatchBtn = document.getElementById('c2-dispatch-btn');
+  const dossierModal = document.getElementById('c2-dossier-modal');
+  const dossierClose = document.getElementById('c2-dossier-close');
+  const dossierCoords = document.getElementById('dossier-coords');
+  const dossierTemp = document.getElementById('dossier-temp');
+  const copyBtn = document.getElementById('dossier-copy-btn');
+  const exportBtn = document.getElementById('dossier-sim-export-btn');
+  const alertStatus = document.getElementById('dossier-alert-status');
+
+  // State
+  let currentPalette = 'ironbow';
+  let currentZoom = 1.0;
+  let target = {
+    x: 485,
+    y: 235,
+    temp: 284,
+    lat: -37.24238,
+    lon: -72.68450
+  };
+  let isBufferRunning = false;
+  let t = 0;
+
+  // Generate 256-color LUTs for true radiometric rendering
+  const luts = {
+    ironbow: createIronbowLUT(),
+    whitehot: createWhiteHotLUT(),
+    blackhot: createBlackHotLUT()
+  };
+
+  function createIronbowLUT() {
+    const lut = new Uint8ClampedArray(256 * 3);
+    for (let i = 0; i < 256; i++) {
+      const p = i / 255;
+      let r = 0, g = 0, b = 0;
+      if (p < 0.25) {
+        const f = p / 0.25;
+        r = Math.floor(18 + f * 72);
+        g = 0;
+        b = Math.floor(40 + f * 90);
+      } else if (p < 0.5) {
+        const f = (p - 0.25) / 0.25;
+        r = Math.floor(90 + f * 110);
+        g = Math.floor(f * 25);
+        b = Math.floor(130 - f * 80);
+      } else if (p < 0.75) {
+        const f = (p - 0.5) / 0.25;
+        r = Math.floor(200 + f * 55);
+        g = Math.floor(25 + f * 115);
+        b = Math.floor(50 - f * 50);
+      } else if (p < 0.92) {
+        const f = (p - 0.75) / 0.17;
+        r = 255;
+        g = Math.floor(140 + f * 90);
+        b = Math.floor(f * 20);
+      } else {
+        const f = (p - 0.92) / 0.08;
+        r = 255;
+        g = Math.min(255, Math.floor(230 + f * 25));
+        b = Math.min(255, Math.floor(20 + f * 235));
+      }
+      lut[i * 3] = r;
+      lut[i * 3 + 1] = g;
+      lut[i * 3 + 2] = b;
+    }
+    return lut;
+  }
+
+  function createWhiteHotLUT() {
+    const lut = new Uint8ClampedArray(256 * 3);
+    for (let i = 0; i < 256; i++) {
+      lut[i * 3] = i;
+      lut[i * 3 + 1] = i;
+      lut[i * 3 + 2] = i;
+    }
+    return lut;
+  }
+
+  function createBlackHotLUT() {
+    const lut = new Uint8ClampedArray(256 * 3);
+    for (let i = 0; i < 256; i++) {
+      const inv = 255 - i;
+      lut[i * 3] = inv;
+      lut[i * 3 + 1] = inv;
+      lut[i * 3 + 2] = inv;
+    }
+    return lut;
+  }
+
+  // Pre-generate thermal intensity grid (offscreen 400x225)
+  const gw = 400;
+  const gh = 225;
+  const rawIntensity = new Float32Array(gw * gh);
+
+  for (let y = 0; y < gh; y++) {
+    for (let x = 0; x < gw; x++) {
+      const nx = x / gw;
+      const ny = y / gh;
+      const mountain = Math.sin(nx * 5.2 + ny * 2.1) * 0.15 + Math.cos(nx * 3.1 - ny * 4.2) * 0.12;
+      let val = 0.22 + ny * 0.1 + mountain;
+      const roadX = 0.35 + Math.sin(ny * 6) * 0.12 + ny * 0.25;
+      const distToRoad = Math.abs(nx - roadX);
+      if (distToRoad < 0.012) {
+        val -= 0.08;
+      }
+      const treeNoise = ((x * 17 + y * 31) % 19) / 19 * 0.04;
+      val += treeNoise;
+      rawIntensity[y * gw + x] = Math.max(0.05, Math.min(0.55, val));
+    }
+  }
+
+  const offCanvas = document.createElement('canvas');
+  offCanvas.width = gw;
+  offCanvas.height = gh;
+  const offCtx = offCanvas.getContext('2d');
+  const imgData = offCtx.createImageData(gw, gh);
+  const data = imgData.data;
+
+  // Main Render Loop
+  function render() {
+    t += 0.025;
+    const activeLut = luts[currentPalette] || luts.ironbow;
+
+    const tx = (target.x / 800) * gw;
+    const ty = (target.y / 450) * gh;
+
+    // Secondary human presence walking near campfire
+    const hx = tx + Math.cos(t * 1.5) * 12;
+    const hy = ty + Math.sin(t * 1.2) * 8;
+
+    let pIdx = 0;
+    for (let y = 0; y < gh; y++) {
+      for (let x = 0; x < gw; x++) {
+        let intensity = rawIntensity[y * gw + x];
+
+        // Main fire precursor heat bloom
+        const dx1 = x - tx;
+        const dy1 = y - ty;
+        const distSq1 = dx1 * dx1 + dy1 * dy1;
+        if (distSq1 < 400) {
+          const bloom = Math.exp(-distSq1 / 55);
+          const flicker = 1.0 + Math.sin(t * 8 + x * 0.5) * 0.06;
+          intensity += bloom * 0.75 * flicker;
+        }
+
+        // Secondary human heat signature
+        const dx2 = x - hx;
+        const dy2 = y - hy;
+        const distSq2 = dx2 * dx2 + dy2 * dy2;
+        if (distSq2 < 120) {
+          const humanBloom = Math.exp(-distSq2 / 20);
+          intensity += humanBloom * 0.38;
+        }
+
+        const lutIdx = Math.max(0, Math.min(255, Math.floor(intensity * 255)));
+        const lPos = lutIdx * 3;
+
+        data[pIdx] = activeLut[lPos];
+        data[pIdx + 1] = activeLut[lPos + 1];
+        data[pIdx + 2] = activeLut[lPos + 2];
+        data[pIdx + 3] = 255;
+        pIdx += 4;
+      }
+    }
+
+    offCtx.putImageData(imgData, 0, 0);
+
+    ctx.imageSmoothingEnabled = true;
+    ctx.imageSmoothingQuality = 'medium';
+    ctx.drawImage(offCanvas, 0, 0, 800, 450);
+
+    // Update Telemetry dynamics
+    const curHeading = (68.4 + Math.sin(t * 0.6) * 3.2).toFixed(1);
+    const curRoll = (Math.sin(t * 0.8) * 1.8).toFixed(1);
+    const curPitch = (-2.1 + Math.cos(t * 0.5) * 0.8).toFixed(1);
+
+    if (headingVal) headingVal.textContent = `${curHeading}° ENE`;
+    if (gimbalVal) gimbalVal.textContent = `AZ +${(14.2 + Math.sin(t * 0.7) * 1.5).toFixed(1)}° | EL -32.8°`;
+
+    if (pitchLadder) {
+      pitchLadder.style.transform = `translate(-50%, -50%) rotate(${curRoll}deg) translateY(${curPitch * 3}px)`;
+    }
+
+    updateTargetBoxPosition();
+    requestAnimationFrame(render);
+  }
+
+  function updateTargetBoxPosition() {
+    if (!targetBox || !screenWrapper) return;
+    const rect = screenWrapper.getBoundingClientRect();
+    const scaleX = rect.width / 800;
+    const scaleY = rect.height / 450;
+
+    targetBox.style.left = `${target.x * scaleX}px`;
+    targetBox.style.top = `${target.y * scaleY}px`;
+  }
+
+  // Palette button interactions
+  paletteBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      paletteBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentPalette = btn.getAttribute('data-palette') || 'ironbow';
+    });
+  });
+
+  // Digital Zoom buttons
+  zoomBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      zoomBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentZoom = parseFloat(btn.getAttribute('data-zoom') || '1.0');
+
+      if (canvas) {
+        canvas.style.transform = `scale(${currentZoom})`;
+      }
+
+      if (fovVal) {
+        if (currentZoom === 1.0) fovVal.textContent = "45.0° HFOV";
+        else if (currentZoom === 2.5) fovVal.textContent = "18.0° HFOV";
+        else if (currentZoom === 5.0) fovVal.textContent = "9.0° HFOV";
+      }
+    });
+  });
+
+  // Click-to-Lock Target Position
+  if (screenWrapper) {
+    screenWrapper.addEventListener('click', (e) => {
+      const rect = screenWrapper.getBoundingClientRect();
+      const clickX = e.clientX - rect.left;
+      const clickY = e.clientY - rect.top;
+
+      const normX = Math.max(40, Math.min(760, (clickX / rect.width) * 800));
+      const normY = Math.max(40, Math.min(410, (clickY / rect.height) * 450));
+
+      target.x = normX;
+      target.y = normY;
+
+      const dLat = (normY - 225) * 0.00018;
+      const dLon = (normX - 400) * 0.00022;
+      target.lat = -37.24238 + dLat;
+      target.lon = -72.68450 + dLon;
+
+      const randomTemp = Math.floor(190 + Math.random() * 140);
+      target.temp = randomTemp;
+
+      if (targetTemp) targetTemp.textContent = `T_MAX: ${randomTemp}°C (ΔT +${randomTemp - 16}°C)`;
+      if (latVal) latVal.textContent = `${Math.abs(target.lat).toFixed(5)}° S`;
+      if (lonVal) lonVal.textContent = `${Math.abs(target.lon).toFixed(5)}° W`;
+
+      runBufferAnimation();
+    });
+  }
+
+  function runBufferAnimation() {
+    if (isBufferRunning) return;
+    isBufferRunning = true;
+    let frame = 0;
+    if (bufferFill) bufferFill.style.width = '0%';
+    if (bufferTxt) bufferTxt.textContent = "BUFFERING (0/16)";
+
+    const interval = setInterval(() => {
+      frame++;
+      const pct = (frame / 16) * 100;
+      if (bufferFill) bufferFill.style.width = `${pct}%`;
+      if (bufferTxt) bufferTxt.textContent = `BUFFERING (${frame}/16)`;
+
+      if (frame >= 16) {
+        clearInterval(interval);
+        isBufferRunning = false;
+        if (bufferTxt) bufferTxt.textContent = "CONFIRMED (16/16)";
+        if (targetTag) {
+          targetTag.textContent = "TARGET LOCKED [PRECURSOR]";
+          targetTag.style.background = "rgba(245, 158, 11, 0.9)";
+        }
+      }
+    }, 45);
+  }
+
+  // Dossier Modal Logic
+  if (dispatchBtn && dossierModal) {
+    dispatchBtn.addEventListener('click', () => {
+      if (dossierCoords) dossierCoords.textContent = `${target.lat.toFixed(5)}, ${target.lon.toFixed(5)}`;
+      if (dossierTemp) dossierTemp.textContent = `${target.temp}°C (Punto Anómalo Crítico)`;
+      if (alertStatus) alertStatus.style.display = 'none';
+      dossierModal.classList.add('active');
+      dossierModal.setAttribute('aria-hidden', 'false');
+    });
+
+    if (dossierClose) {
+      dossierClose.addEventListener('click', () => {
+        dossierModal.classList.remove('active');
+        dossierModal.setAttribute('aria-hidden', 'true');
+      });
+    }
+
+    dossierModal.addEventListener('click', (e) => {
+      if (e.target === dossierModal) {
+        dossierModal.classList.remove('active');
+        dossierModal.setAttribute('aria-hidden', 'true');
+      }
+    });
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', () => {
+        const text = `${target.lat.toFixed(5)}, ${target.lon.toFixed(5)}`;
+        navigator.clipboard.writeText(text).then(() => {
+          copyBtn.textContent = "¡Coordenadas Copiadas!";
+          setTimeout(() => { copyBtn.textContent = "Copiar Coordenadas GPS"; }, 2000);
+        });
+      });
+    }
+
+    if (exportBtn) {
+      exportBtn.addEventListener('click', () => {
+        if (alertStatus) {
+          alertStatus.style.display = 'block';
+          alertStatus.innerHTML = `✓ Paquete FHSS 915 MHz emitido a Central C2 y Cuadrilla Alpha-1. Tiempo de transmisión: 2,4s.`;
+        }
+      });
+    }
+  }
+
+  // Start rendering
+  render();
+
+  // Resize handler
+  window.addEventListener('resize', updateTargetBoxPosition, { passive: true });
+}
+
 
 
 
