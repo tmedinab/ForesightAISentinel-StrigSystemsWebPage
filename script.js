@@ -15,10 +15,10 @@ const translations = {
     nav_cta: "Postular a Piloto",
 
     // Hero
-    hero_badge: "Fondo Semilla CORFO Adjudicado • Apoyo UdeC",
+    hero_badge: "Proyecto Semilla Inicia CORFO • UdeC • Experiencia Bomberil en Primera Línea",
     hero_title_1: "Los riesgos se mueven rápido.",
     hero_title_2: "Nosotros los vemos venir.",
-    hero_sub: "Plataforma de vigilancia territorial autónoma con drones VTOL e inferencia Edge AI a bordo. Cerramos la brecha nocturna de 10 horas detectando actividad humana no autorizada —precursor del 99,7% de los incendios forestales— antes de que se inicien los focos, con 90% menor costo que la aviación tripulada.",
+    hero_sub: "Plataforma de vigilancia territorial autónoma con drones VTOL e inferencia Edge AI a bordo. Cerramos la brecha nocturna de 10 horas detectando actividad humana no autorizada —precursor del 99,7% de los incendios forestales— antes de que inicien los focos, reduciendo hasta un 90% el costo de vuelo y un 85% el gasto operacional territorial consolidado.",
     hero_cta_primary: "Postular a Piloto Operativo",
     hero_cta_secondary: "Ver Capacidades del Sistema",
 
@@ -33,7 +33,7 @@ const translations = {
     m4_sub: "Suscripción por cobertura territorial",
 
     // Problem
-    prob_tag: "El Diagnóstico Territorial",
+    prob_tag: "Diagnóstico Territorial • Foco en Primera Línea",
     prob_title: "La brecha nocturna que cuesta US$130M al año",
     prob_sub: "El 99,7% de los incendios forestales son causados por el ser humano. La aviación tripulada combate de día, pero por normativa y seguridad no vuela de noche. Cuando el riesgo de propagación e intencionalidad es más alto, el cielo queda vacío.",
     p1_head: "Centrales de Operaciones",
@@ -87,7 +87,7 @@ const translations = {
     r6_sat: "Suscripción SaaS (US$15k-$60k/año). Accesible para escala macro; no sustituye la vigilancia táctica.",
     r6_tower: "<span class=\"badge-negative\">Altísimo CAPEX:</span> US$40k-$100k por torre instalada (mástil, óptica militar, energía solar y caminos de acceso).",
     r6_drone: "<span class=\"badge-negative\">OPEX Masivo:</span> US$600-$1.500/hora de vuelo en avioneta diurna + horas extra nocturnas de brigadas, combustible 4x4 y reposición por desgaste de drones.",
-    r6_strig: "<span class=\"badge-positive\">0 CAPEX (Intelligence as a Service):</span> Suscripción operativa por hectárea protegida; 90% menor costo vs aviación tripulada.",
+    r6_strig: "<span class=\"badge-positive\">0 CAPEX (Intelligence as a Service):</span> Suscripción operativa por hectárea protegida; 90% menor costo por hora de vuelo y ~85% de ahorro anual consolidado.",
 
     // Technology
     tech_tag: "Capacidades Operativas",
@@ -96,11 +96,11 @@ const translations = {
     t1_title: "Gimbal Bi-Espectral Noctua-Optics",
     t1_desc: "Payload giroestabilizado de 3 ejes con sensor microbolómetro LWIR radiométrico no refrigerado (640×512) y cámara óptica diurna 4K. Identificación térmica precisa en oscuridad total con algoritmo de discriminación multi-frame (<5% falsas alarmas).",
     t2_title: "Inferencia Edge NPU Zero-Cloud (NVIDIA Jetson)",
-    t2_desc: "Cómputo a bordo basado en arquitectura NVIDIA Jetson (Orin Nano Super) y aceleración mediante NVIDIA TensorRT. Ejecución local de visión computacional y modelos multimodales ligeros para clasificación y validación de amenazas en tiempo real, operando con autonomía total en zonas sin internet ni señal celular.",
+    t2_desc: "Cómputo a bordo basado en arquitectura NVIDIA Jetson (Orin Nano Super) con pipeline cuantizado FP16 acelerado por NVIDIA TensorRT sobre JetPack SDK / ROS2. Ejecución local de visión computacional y modelos multimodales ligeros para clasificación y validación de amenazas en tiempo real (<40 ms), operando con autonomía total Zero-Cloud en zonas sin internet ni señal celular.",
     t3_title: "Telemetría Táctica en Zonas Desconectadas",
-    t3_desc: "Emisión de fichas de alerta y coordenadas exactas en menos de 5 segundos vía radioenlace táctico FHSS 915 MHz (>20 km LOS), garantizando operatividad en quebradas y predios remotos sin señal celular.",
+    t3_desc: "Emisión de fichas de alerta y coordenadas exactas en menos de 5 segundos vía radioenlace táctico FHSS 915 MHz (>20 km LOS con Link Margin >6 dB), garantizando enlace de telemetría ininterrumpido más allá del perímetro físico de patrulla sin dependencia celular.",
     t4_title: "Aeronave VTOL & Hoja de Ruta de Ingeniería",
-    t4_desc: "Plataforma de validación VTOL 4+1 lift+cruise (2,1 m de envergadura) en transición hacia la célula propietaria industrial Noctua-01. Diseñada para despegue y aterrizaje vertical independiente de pista, hasta 90 min de autonomía, crucero de ala fija de alta eficiencia, envolvente de viento de 45 km/h (24 kt) y radio de 15 km.",
+    t4_desc: "Plataforma de validación VTOL 4+1 lift+cruise (2,1 m de envergadura) en transición hacia la célula propietaria industrial Noctua-01. Diseñada para despegue y aterrizaje vertical independiente de pista, hasta 90 min de autonomía, crucero de ala fija de alta eficiencia, envolvente de viento de 45 km/h (24 kt) y radio operacional seguro de 15 km (cobertura de clústeres de hasta 50.000 ha por estación).",
     t5_title: "Georreferenciación Quirúrgica",
     t5_desc: "Proyección angular instantánea hacia el terreno asistida por posicionamiento centimétrico RTK/GNSS de alta precisión, calculando coordenadas exactas para el despacho inmediato de brigadas.",
     t6_title: "Operación Segura & Marco DGAC",
@@ -143,7 +143,7 @@ const translations = {
     // ROI Calculator
     roi_badge: "MODELO ECONÓMICO",
     roi_title: "Calculadora de Retorno Operativo Territorial",
-    roi_sub: "Estima el ahorro económico y la reducción de huella de carbono según la superficie de tus predios.",
+    roi_sub: "Modelo Intelligence as a Service (0 CAPEX). Estima el ahorro operacional integral (~85% vs aviación tripulada) y la reducción de emisiones según la superficie de tus predios.",
     roi_lbl_area: "Superficie a Proteger:",
     roi_lbl_manned: "Costo Aviación Tripulada Estimado:",
     roi_sub_manned: "Avioneta diurna + cuadrilla",
@@ -251,10 +251,10 @@ const translations = {
     nav_cta: "Apply for Pilot",
 
     // Hero
-    hero_badge: "CORFO Seed Grant Awarded • Backed by UdeC",
+    hero_badge: "CORFO Seed Grant Awarded • Backed by UdeC • Frontline Firefighting Experience",
     hero_title_1: "Risks move fast.",
     hero_title_2: "We see them coming.",
-    hero_sub: "Autonomous territorial surveillance platform powered by VTOL uncrewed aircraft and onboard Edge AI. We close the critical 10-hour nighttime window by detecting unauthorized human activity—precursor to 99.7% of wildfires—before ignition occurs, slashing aerial patrol costs by 90%.",
+    hero_sub: "Autonomous territorial surveillance platform powered by VTOL aircraft and onboard Edge AI. We close the critical 10-hour nighttime gap by detecting unauthorized human activity—precursor to 99.7% of wildfires—before ignition occurs, slashing aerial patrol flight costs by up to 90% and consolidating territorial OPEX savings by 85%.",
     hero_cta_primary: "Apply for Operational Pilot",
     hero_cta_secondary: "Explore Capabilities",
 
@@ -269,7 +269,7 @@ const translations = {
     m4_sub: "Territorial coverage subscription, zero CAPEX",
 
     // Problem
-    prob_tag: "Territorial Assessment",
+    prob_tag: "Territorial Assessment • Frontline Firefighting Experience",
     prob_title: "The nighttime vulnerability gap costing US$130M yearly",
     prob_sub: "99.7% of wildfires are human-caused. Manned aircraft operate strictly during daylight due to flight safety regulations. When arson and weather-driven fire spread peak, the airspace remains unprotected.",
     p1_head: "Operations Centers",
@@ -323,7 +323,7 @@ const translations = {
     r6_sat: "SaaS software subscription (US$15k-$60k/yr). Accessible at macro scale; does not replace tactical parcel surveillance.",
     r6_tower: "<span class=\"badge-negative\">Extremely High CAPEX:</span> US$40k-$100k per installed mast (tower, military-grade optics, solar arrays, and access roads).",
     r6_drone: "<span class=\"badge-negative\">Massive OPEX:</span> US$600-$1,500/flight hour for daytime patrol planes + heavy night overtime labor, 4x4 fleet fuel/maintenance, and drone attrition.",
-    r6_strig: "<span class=\"badge-positive\">0 CAPEX (Intelligence as a Service):</span> Operational subscription per protected hectare; 90% cost reduction vs manned aviation.",
+    r6_strig: "<span class=\"badge-positive\">0 CAPEX (Intelligence as a Service):</span> Operational subscription per protected hectare; 90% flight-hour cost reduction and ~85% net annual territorial savings.",
 
     // Technology
     tech_tag: "Operational Capabilities",
@@ -332,11 +332,11 @@ const translations = {
     t1_title: "Noctua-Optics Bi-Spectral Gimbal",
     t1_desc: "3-axis gyro-stabilized payload with uncooled radiometric LWIR microbolometer (640×512) and 4K daytime optical sensor. Pinpoint thermal threat identification in total darkness with multi-frame temporal discrimination algorithm (<5% false alarm rate).",
     t2_title: "Onboard Edge AI Zero-Cloud (NVIDIA Jetson)",
-    t2_desc: "Onboard computing powered by NVIDIA Jetson (Orin Nano Super) architecture and accelerated with NVIDIA TensorRT. Real-time local execution of computer vision and lightweight multimodal models classifying and verifying threats in under 40 milliseconds, operating completely offline in dark zones without internet or cloud dependency.",
+    t2_desc: "Onboard computing powered by NVIDIA Jetson (Orin Nano Super) architecture with an FP16 quantized inference pipeline accelerated by NVIDIA TensorRT on JetPack SDK / ROS2. Real-time local execution of computer vision models and multimodal verification (<40 ms), operating completely offline Zero-Cloud without internet or cloud dependency.",
     t3_title: "Tactical Telemetry in Dark Zones",
-    t3_desc: "Structured alert dossiers and exact coordinates transmitted in under 5 seconds via 915 MHz FHSS tactical radio datalink (>20 km LOS), ensuring full operability across ravines and remote parcels without cellular coverage.",
+    t3_desc: "Structured alert dossiers and exact coordinates transmitted in under 5 seconds via 915 MHz FHSS tactical radio datalink (>20 km LOS with >6 dB link margin), ensuring uninterrupted C2 telemetry beyond the physical patrol perimeter without cellular dependency.",
     t4_title: "VTOL Airframe & Engineering Roadmap",
-    t4_desc: "4+1 lift+cruise VTOL validation testbed (2.1 m wingspan) transitioning toward the proprietary industrial Noctua-01 airframe. Engineered for runway-independent vertical takeoff, up to 90 min endurance, high-efficiency fixed-wing cruise, 45 km/h (24 kt) wind envelope tolerance, and 15 km operational radius.",
+    t4_desc: "4+1 lift+cruise VTOL validation testbed (2.1 m wingspan) transitioning toward the proprietary industrial Noctua-01 airframe. Engineered for runway-independent vertical takeoff, up to 90 min endurance, high-efficiency fixed-wing cruise, 45 km/h (24 kt) wind envelope tolerance, and 15 km safe operational radius (covering clusters up to 50,000 ha per docking base).",
     t5_title: "Real-Time Surgical Geolocalization",
     t5_desc: "Instant angular terrain projection assisted by high-precision RTK/GNSS centimetric positioning, calculating exact target coordinates for the rapid dispatch of ground crews.",
     t6_title: "Certified Safety & DGAC Compliance",
@@ -379,7 +379,7 @@ const translations = {
     // ROI Calculator
     roi_badge: "ECONOMIC MODEL",
     roi_title: "Territorial Operational ROI Calculator",
-    roi_sub: "Estimate operational savings and carbon footprint reduction based on your land acreage.",
+    roi_sub: "Intelligence as a Service model (0 CAPEX). Estimate consolidated operational savings (~85% vs manned aviation) and emissions avoided based on your acreage.",
     roi_lbl_area: "Acreage to Protect:",
     roi_lbl_manned: "Estimated Manned Aviation Cost:",
     roi_sub_manned: "Daytime aircraft + ground crew",
@@ -750,7 +750,7 @@ function initPilotModal() {
           );
           const mailLink = netError.querySelector('.alert-link');
           if (mailLink) {
-            mailLink.href = `mailto:contacto@strigsystems.tech?subject=${fallbackSubject}&body=${fallbackBody}`;
+            mailLink.href = `mailto:contacto@strigsystems.tech?cc=tmedina@strigsystems.tech&subject=${fallbackSubject}&body=${fallbackBody}`;
           }
         }
       } finally {
@@ -1144,8 +1144,30 @@ function initC2Simulator() {
   const imgData = offCtx.createImageData(gw, gh);
   const data = imgData.data;
 
+  // Lifecycle visibility tracking to pause RAF when off-screen (battery & Core Web Vitals)
+  let isC2Visible = true;
+  let isRendering = false;
+  const c2Section = document.getElementById('c2-console');
+  if (c2Section && 'IntersectionObserver' in window) {
+    const c2Observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        isC2Visible = entry.isIntersecting;
+        if (isC2Visible && !isRendering) {
+          isRendering = true;
+          requestAnimationFrame(render);
+        }
+      });
+    }, { threshold: 0.05 });
+    c2Observer.observe(c2Section);
+  }
+
   // Main Render Loop
   function render() {
+    if (!isC2Visible) {
+      isRendering = false;
+      return;
+    }
+    isRendering = true;
     t += 0.025;
     const activeLut = luts[currentPalette] || luts.ironbow;
 
@@ -1232,7 +1254,11 @@ function initC2Simulator() {
     }
 
     updateTargetBoxPosition();
-    requestAnimationFrame(render);
+    if (isC2Visible) {
+      requestAnimationFrame(render);
+    } else {
+      isRendering = false;
+    }
   }
 
   function updateTargetBoxPosition() {

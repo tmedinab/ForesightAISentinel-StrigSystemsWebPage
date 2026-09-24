@@ -90,7 +90,7 @@
       <div class="container hero-content">
         <div class="badge-tag">
           <span class="badge-dot"></span>
-          <span data-i18n="hero_badge">Fondo Semilla CORFO Adjudicado • Apoyo UdeC</span>
+          <span data-i18n="hero_badge">Proyecto Semilla Inicia CORFO • UdeC • Experiencia Bomberil en Primera Línea</span>
         </div>
 
         <h1 class="hero-title">
@@ -99,7 +99,7 @@
         </h1>
 
         <p class="hero-subtitle" data-i18n="hero_sub">
-          Plataforma de vigilancia territorial autónoma con drones VTOL e inferencia Edge AI a bordo. Cerramos la brecha nocturna de 10 horas detectando actividad humana no autorizada —precursor del 99,7% de los incendios forestales— antes de que se inicien los focos, con 90% menor costo que la aviación tripulada.
+          Plataforma de vigilancia territorial autónoma con drones VTOL e inferencia Edge AI a bordo. Cerramos la brecha nocturna de 10 horas detectando actividad humana no autorizada —precursor del 99,7% de los incendios forestales— antes de que inicien los focos, reduciendo hasta un 90% el costo de vuelo y un 85% el gasto operacional territorial consolidado.
         </p>
 
         <div class="hero-actions">
@@ -300,7 +300,7 @@
               </svg>
             </div>
             <h3 class="tech-title" data-i18n="t2_title">Inferencia Edge NPU Zero-Cloud (NVIDIA Jetson)</h3>
-            <p class="tech-desc" data-i18n="t2_desc">Cómputo a bordo basado en arquitectura NVIDIA Jetson (Orin Nano Super) y aceleración mediante NVIDIA TensorRT. Ejecución local de visión computacional y modelos multimodales ligeros para clasificación y validación de amenazas en tiempo real, operando con autonomía total en zonas sin internet ni señal celular.</p>
+            <p class="tech-desc" data-i18n="t2_desc">Cómputo a bordo basado en arquitectura NVIDIA Jetson (Orin Nano Super) con pipeline cuantizado FP16 acelerado por NVIDIA TensorRT sobre JetPack SDK / ROS2. Ejecución local de visión computacional y modelos multimodales ligeros para clasificación y validación de amenazas en tiempo real (&lt;40 ms), operando con autonomía total Zero-Cloud en zonas sin internet ni señal celular.</p>
           </div>
 
           <div class="tech-card glass-panel">
@@ -313,7 +313,7 @@
               </svg>
             </div>
             <h3 class="tech-title" data-i18n="t3_title">Telemetría Táctica en Zonas Desconectadas</h3>
-            <p class="tech-desc" data-i18n="t3_desc">Emisión de fichas de alerta y coordenadas exactas en menos de 5 segundos vía radioenlace táctico FHSS 915 MHz (&gt;20 km LOS), garantizando operatividad en quebradas y predios remotos sin señal celular.</p>
+            <p class="tech-desc" data-i18n="t3_desc">Emisión de fichas de alerta y coordenadas exactas en menos de 5 segundos vía radioenlace táctico FHSS 915 MHz (&gt;20 km LOS con Link Margin &gt;6 dB), garantizando enlace de telemetría ininterrumpido más allá del perímetro físico de patrulla sin dependencia celular.</p>
           </div>
 
           <div class="tech-card glass-panel">
@@ -321,7 +321,7 @@
               <img src="assets/img/tech/territorial_hud_grid.webp" alt="Vigilancia Territorial Continua" class="circle-thumb" loading="lazy">
             </div>
             <h3 class="tech-title" data-i18n="t4_title">Aeronave VTOL & Hoja de Ruta de Ingeniería</h3>
-            <p class="tech-desc" data-i18n="t4_desc">Plataforma de validación VTOL 4+1 lift+cruise (2,1 m de envergadura) en transición hacia la célula propietaria industrial Noctua-01. Diseñada para despegue y aterrizaje vertical independiente de pista, hasta 90 min de autonomía, crucero de ala fija de alta eficiencia, envolvente de viento de 45 km/h (24 kt) y radio de 15 km.</p>
+            <p class="tech-desc" data-i18n="t4_desc">Plataforma de validación VTOL 4+1 lift+cruise (2,1 m de envergadura) en transición hacia la célula propietaria industrial Noctua-01. Diseñada para despegue y aterrizaje vertical independiente de pista, hasta 90 min de autonomía, crucero de ala fija de alta eficiencia, envolvente de viento de 45 km/h (24 kt) y radio operacional seguro de 15 km (cobertura de clústeres de hasta 50.000 ha por estación).</p>
           </div>
 
           <div class="tech-card glass-panel">
@@ -433,6 +433,7 @@
                   <div class="hud-item"><span class="hud-lbl">TAS:</span> <span class="hud-val" id="c2-tas-val">78 KM/H</span></div>
                   <div class="hud-item"><span class="hud-lbl">WIND:</span> <span class="hud-val">18 KT / 33 KM/H</span></div>
                   <div class="hud-item"><span class="hud-lbl">BAT:</span> <span class="hud-val hud-accent">84% (58 MIN)</span></div>
+                  <div class="hud-item"><span class="hud-lbl">FAILSAFE:</span> <span class="hud-val hud-green">AUTO-RTH</span></div>
                 </div>
 
                 <!-- Top Right: Sensor & Thermal Radiometry -->
@@ -468,6 +469,7 @@
                   <div class="hud-item"><span class="hud-lbl">TARGET LON:</span> <span class="hud-val" id="c2-lon-val">72°41'04.2" W</span></div>
                   <div class="hud-item"><span class="hud-lbl">MGRS:</span> <span class="hud-val">18H WE 3928 7812</span></div>
                   <div class="hud-item"><span class="hud-lbl">GPS FIX:</span> <span class="hud-val hud-green">RTK FIXED (±2 CM)</span></div>
+                  <div class="hud-item"><span class="hud-lbl">AIRSPACE:</span> <span class="hud-val hud-accent">DAN 151 SEG</span></div>
                 </div>
 
                 <!-- Bottom Right: Edge NPU Confirmation Buffer -->
@@ -753,7 +755,7 @@
           <div class="roi-header">
             <span class="roi-badge" data-i18n="roi_badge">MODELO ECONÓMICO</span>
             <h3 class="roi-title" data-i18n="roi_title">Calculadora de Retorno Operativo Territorial</h3>
-            <p class="roi-sub" data-i18n="roi_sub">Estima el ahorro económico y la reducción de huella de carbono según la superficie de tus predios.</p>
+            <p class="roi-sub" data-i18n="roi_sub">Modelo Intelligence as a Service (0 CAPEX). Estima el ahorro operacional integral (~85% vs aviación tripulada) y la reducción de emisiones según la superficie de tus predios.</p>
           </div>
 
           <div class="roi-slider-container">
