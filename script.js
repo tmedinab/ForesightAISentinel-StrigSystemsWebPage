@@ -111,15 +111,34 @@ const translations = {
     spec_4: "<span class=\"spec-name\">Normativa:</span> Marco DGAC DAN 151 / BVLOS",
     spec_5: "<span class=\"spec-name\">Modelo:</span> Intelligence as a Service (0 CAPEX)",
 
-    // C2 Tactical Console
+    // C2 Tactical Console & Dual Views
     c2_tag: "◈ Consola C2 Athene",
     c2_title: "Simulador de Enlace Táctico & Misión Nocturna",
     c2_sub: "Experimenta en tiempo real la telemetría embarcada de la aeronave Noctua-01 y la inferencia bi-espectral del Edge NPU con discriminación térmica de precursores.",
     c2_status_link: "TELEMETRÍA LINK: ACTIVO (915 MHz FHSS)",
+    c2_view_gimbal: "SENSOR GIMBAL (FLIR)",
+    c2_view_map: "MANDO SITUACIONAL C2",
     c2_lbl_palette: "PALETA:",
     c2_lbl_zoom: "ZOOM:",
-    c2_hint: "💡 Haz clic sobre el cuadrante térmico para re-orientar el sensor y calcular coordenadas georreferenciadas.",
+    c2_hint: "💡 Haz clic sobre el cuadrante térmico o el mapa táctico para re-orientar el sensor y calcular coordenadas georreferenciadas.",
     c2_btn_dispatch: "Despachar Dossier Táctico C2",
+    c2_poly_label: "POLÍGONO PROTEGIDO: PREDIO SAN IGNACIO (12.400 HA)",
+    c2_nest_label: "ESTACIÓN BASE NEST [ALPHA]",
+    c2_nest_sub: "ACOPLE AUTÓNOMO OK",
+    c2_anomaly_label: "⚠️ ANOMALÍA TÉRMICA",
+    c2_vtol_label: "NOCTUA-01 [PATRULLA]",
+    c2_salute_intel: "INTELIGENCIA TÁCTICA (SALUTE)",
+    salute_lbl_size: "S (SIZE):",
+    salute_val_size: "2 Personas en sendero",
+    salute_lbl_act: "A (ACTIVITY):",
+    salute_val_act: "Precursor / Foco Incipiente",
+    salute_lbl_loc: "L (LOCATION):",
+    salute_lbl_unit: "U (UNIT):",
+    salute_val_unit: "Noctua-01 (EO/IR FLIR)",
+    salute_lbl_time: "T (TIME):",
+    salute_lbl_eq: "E (EQUIPMENT):",
+    salute_val_eq: "Bidón Combustible (VLM Edge)",
+    c2_pip_swap: "⇄ CLIC PARA EXPANDIR",
 
     // Pilot Program
     pilot_tag: "Validación en Terreno",
@@ -141,7 +160,7 @@ const translations = {
     alliances_tag: "Ecosistema & Tracción",
     alliances_title: "I+D Aplicada y Alianzas Estratégicas",
     alliances_sub: "Combinamos ingeniería aeroespacial rigurosa con validación en el mercado real, respaldados por las instituciones líderes en innovación y transferencia tecnológica.",
-    p_corfo: "Fondo Semilla Inicia 25INI2-313170",
+    p_corfo: "Proyecto Semilla Inicia CORFO",
     p_udec: "Apoyo de la UdeC",
     p_industry: "Validación & Entrevistas Forestales",
     p_thermal: "Contraste Ecosistema Térmico",
@@ -314,15 +333,34 @@ const translations = {
     spec_4: "<span class=\"spec-name\">Regulation:</span> DGAC DAN 151 / BVLOS Scope",
     spec_5: "<span class=\"spec-name\">Model:</span> Intelligence as a Service (0 CAPEX)",
 
-    // C2 Tactical Console
+    // C2 Tactical Console & Dual Views
     c2_tag: "◈ Athene C2 Console",
     c2_title: "Tactical Datalink & Night Mission Simulator",
     c2_sub: "Experience real-time onboard telemetry from the Noctua-01 airframe and Edge NPU bi-spectral inference with thermal precursor discrimination.",
     c2_status_link: "TELEMETRY LINK: ACTIVE (915 MHz FHSS)",
+    c2_view_gimbal: "GIMBAL SENSOR (FLIR)",
+    c2_view_map: "C2 SITUATIONAL MAP",
     c2_lbl_palette: "PALETTE:",
     c2_lbl_zoom: "ZOOM:",
-    c2_hint: "💡 Click on the thermal display to re-orient the gimbal sensor and compute surgical target coordinates.",
+    c2_hint: "💡 Click anywhere on the thermal quadrant or tactical map to slew the gimbal sensor and compute target coordinates.",
     c2_btn_dispatch: "Dispatch Tactical C2 Dossier",
+    c2_poly_label: "PROTECTED POLYGON: SAN IGNACIO SECTOR (12,400 HA)",
+    c2_nest_label: "NEST ALPHA DOCKING BASE",
+    c2_nest_sub: "AUTONOMOUS DOCK OK",
+    c2_anomaly_label: "⚠️ THERMAL ANOMALY",
+    c2_vtol_label: "NOCTUA-01 [PATROL]",
+    c2_salute_intel: "TACTICAL INTEL DOSSIER (SALUTE)",
+    salute_lbl_size: "S (SIZE):",
+    salute_val_size: "2 Individuals on trail",
+    salute_lbl_act: "A (ACTIVITY):",
+    salute_val_act: "Thermal Precursor / Fire Spot",
+    salute_lbl_loc: "L (LOCATION):",
+    salute_lbl_unit: "U (UNIT):",
+    salute_val_unit: "Noctua-01 (EO/IR FLIR)",
+    salute_lbl_time: "T (TIME):",
+    salute_lbl_eq: "E (EQUIPMENT):",
+    salute_val_eq: "Accelerant Canister (Edge VLM)",
+    c2_pip_swap: "⇄ CLICK TO EXPAND",
 
     // Pilot Program
     pilot_tag: "Field Validation",
@@ -344,7 +382,7 @@ const translations = {
     alliances_tag: "Ecosystem & Traction",
     alliances_title: "Applied R&D & Strategic Partnerships",
     alliances_sub: "We blend aerospace engineering rigor with real-world market validation, backed by leading innovation hubs and institutional research laboratories.",
-    p_corfo: "CORFO Seed Grant 25INI2-313170",
+    p_corfo: "CORFO Semilla Inicia Program",
     p_udec: "Backed by UdeC",
     p_industry: "Field Validation & Forestry Interviews",
     p_thermal: "Thermal Ecosystem Industry Contrast",
@@ -761,7 +799,7 @@ function initHeaderScroll() {
 }
 
 /**
- * Controller for Tactical C2 FLIR Mission Simulator
+ * Controller for Tactical C2 FLIR Mission Simulator & Dual Situational Map
  */
 function initC2Simulator() {
   const canvas = document.getElementById('c2-flir-canvas');
@@ -772,6 +810,23 @@ function initC2Simulator() {
   // Interactive controls
   const paletteBtns = document.querySelectorAll('.c2-mode-btn');
   const zoomBtns = document.querySelectorAll('.c2-zoom-btn');
+  const btnGimbal = document.getElementById('c2-btn-gimbal');
+  const btnMap = document.getElementById('c2-btn-map');
+
+  // Panels & Views
+  const panelGimbal = document.getElementById('c2-gimbal-panel');
+  const panelMap = document.getElementById('c2-map-panel');
+  const pipWindow = document.getElementById('c2-pip-window');
+  const pipViewport = document.getElementById('c2-pip-viewport');
+  const pipBadge = document.getElementById('c2-pip-badge');
+
+  // Tactical Map SVG Elements
+  const mapSvg = document.getElementById('c2-map-svg');
+  const mapTarget = document.getElementById('c2-map-target');
+  const mapTargetTemp = document.getElementById('c2-map-target-temp');
+  const mapTargetCoords = document.getElementById('c2-map-target-coords');
+  const mapVtol = document.getElementById('c2-map-vtol');
+  const saluteLocation = document.getElementById('salute-location');
 
   // Readouts
   const headingVal = document.getElementById('c2-heading-val');
@@ -797,8 +852,10 @@ function initC2Simulator() {
   const alertStatus = document.getElementById('dossier-alert-status');
 
   // State
+  let currentView = 'gimbal'; // 'gimbal' | 'map'
   let currentPalette = 'ironbow';
   let currentZoom = 1.0;
+  const vtol = { x: 390, y: 180 };
   let target = {
     x: 485,
     y: 235,
@@ -808,6 +865,73 @@ function initC2Simulator() {
   };
   let isBufferRunning = false;
   let t = 0;
+
+  // Setup PiP internal elements
+  let pipCanvas = null;
+  let pipCtx = null;
+  let pipMapClone = null;
+
+  if (pipViewport) {
+    // 1. Mini canvas for live FLIR mirror (when in map view)
+    pipCanvas = document.createElement('canvas');
+    pipCanvas.width = 210;
+    pipCanvas.height = 118;
+    pipCanvas.className = 'c2-pip-canvas';
+    pipCanvas.style.display = 'none';
+    pipCtx = pipCanvas.getContext('2d');
+    pipViewport.appendChild(pipCanvas);
+
+    // 2. Mini Map SVG container for map preview (when in gimbal view)
+    if (mapSvg) {
+      pipMapClone = mapSvg.cloneNode(true);
+      pipMapClone.id = 'c2-pip-map-clone';
+      pipMapClone.style.display = 'block';
+      pipMapClone.style.width = '100%';
+      pipMapClone.style.height = '100%';
+      pipViewport.appendChild(pipMapClone);
+    }
+  }
+
+  function setConsoleView(view) {
+    currentView = view;
+    const isEn = (document.documentElement.getAttribute('data-lang') || 'es') === 'en';
+
+    if (view === 'gimbal') {
+      if (panelGimbal) panelGimbal.classList.add('active');
+      if (panelMap) panelMap.classList.remove('active');
+      if (btnGimbal) btnGimbal.classList.add('active');
+      if (btnMap) btnMap.classList.remove('active');
+      if (pipCanvas) pipCanvas.style.display = 'none';
+      if (pipMapClone) pipMapClone.style.display = 'block';
+      if (pipBadge) {
+        pipBadge.textContent = isEn ? "⇄ C2 MAP (CLICK)" : "⇄ MAPA C2 (CLIC)";
+      }
+    } else {
+      if (panelMap) panelMap.classList.add('active');
+      if (panelGimbal) panelGimbal.classList.remove('active');
+      if (btnMap) btnMap.classList.add('active');
+      if (btnGimbal) btnGimbal.classList.remove('active');
+      if (pipMapClone) pipMapClone.style.display = 'none';
+      if (pipCanvas) pipCanvas.style.display = 'block';
+      if (pipBadge) {
+        pipBadge.textContent = isEn ? "⇄ FLIR GIMBAL (CLICK)" : "⇄ GIMBAL FLIR (CLIC)";
+      }
+    }
+  }
+
+  if (btnGimbal) btnGimbal.addEventListener('click', () => setConsoleView('gimbal'));
+  if (btnMap) btnMap.addEventListener('click', () => setConsoleView('map'));
+  if (pipWindow) {
+    pipWindow.addEventListener('click', () => {
+      setConsoleView(currentView === 'gimbal' ? 'map' : 'gimbal');
+    });
+    pipWindow.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        setConsoleView(currentView === 'gimbal' ? 'map' : 'gimbal');
+      }
+    });
+  }
 
   // Generate 256-color LUTs for true radiometric rendering
   const luts = {
@@ -957,6 +1081,28 @@ function initC2Simulator() {
     ctx.imageSmoothingQuality = 'medium';
     ctx.drawImage(offCanvas, 0, 0, 800, 450);
 
+    // If map view is active, live-mirror the FLIR canvas into the PiP window!
+    if (currentView === 'map' && pipCtx && pipCanvas) {
+      pipCtx.drawImage(canvas, 0, 0, 210, 118);
+    }
+
+    // Dynamic rotation of VTOL vector towards target
+    const dx = target.x - vtol.x;
+    const dy = target.y - vtol.y;
+    const targetAngleDeg = (Math.atan2(dy, dx) * 180 / Math.PI);
+    const flightWobble = Math.sin(t * 0.8) * 1.5;
+    const currentHeadingAngle = targetAngleDeg + flightWobble;
+
+    if (mapVtol) {
+      mapVtol.setAttribute('transform', `translate(${vtol.x}, ${vtol.y}) rotate(${currentHeadingAngle.toFixed(1)})`);
+    }
+    if (pipMapClone) {
+      const cloneVtol = pipMapClone.querySelector('#c2-map-vtol');
+      if (cloneVtol) {
+        cloneVtol.setAttribute('transform', `translate(${vtol.x}, ${vtol.y}) rotate(${currentHeadingAngle.toFixed(1)})`);
+      }
+    }
+
     // Update Telemetry dynamics
     const curHeading = (68.4 + Math.sin(t * 0.6) * 3.2).toFixed(1);
     const curRoll = (Math.sin(t * 0.8) * 1.8).toFixed(1);
@@ -1011,9 +1157,55 @@ function initC2Simulator() {
     });
   });
 
+  // Centralized Target Update (Works for both Gimbal click & Map click)
+  function updateTargetPosition(normX, normY) {
+    target.x = normX;
+    target.y = normY;
+
+    const dLat = (normY - 225) * 0.00018;
+    const dLon = (normX - 400) * 0.00022;
+    target.lat = -37.24238 + dLat;
+    target.lon = -72.68450 + dLon;
+
+    const randomTemp = Math.floor(190 + Math.random() * 140);
+    target.temp = randomTemp;
+
+    if (targetTemp) targetTemp.textContent = `T_MAX: ${randomTemp}°C (ΔT +${randomTemp - 16}°C)`;
+    if (latVal) latVal.textContent = `${Math.abs(target.lat).toFixed(5)}° S`;
+    if (lonVal) lonVal.textContent = `${Math.abs(target.lon).toFixed(5)}° W`;
+
+    // Update Tactical Map SVG elements
+    if (mapTarget) {
+      mapTarget.setAttribute('transform', `translate(${target.x}, ${target.y})`);
+    }
+    if (mapTargetTemp) {
+      mapTargetTemp.textContent = `T_MAX: ${randomTemp}°C [PRECURSOR]`;
+    }
+    const easting = Math.round(724000 + (normX / 800) * 4000);
+    const northing = Math.round(5875000 + ((450 - normY) / 450) * 4000);
+    const utmStr = `18H WE ${Math.round(easting / 100)} ${Math.round(northing / 100)}`;
+    if (mapTargetCoords) {
+      mapTargetCoords.textContent = `UTM: ${utmStr}`;
+    }
+    if (saluteLocation) {
+      saluteLocation.textContent = `UTM ${utmStr}`;
+    }
+
+    // Mirror to PiP clone if present
+    if (pipMapClone) {
+      const cloneTarget = pipMapClone.querySelector('#c2-map-target');
+      if (cloneTarget) cloneTarget.setAttribute('transform', `translate(${target.x}, ${target.y})`);
+    }
+
+    runBufferAnimation();
+  }
+
   // Click-to-Lock Target Position
   if (screenWrapper) {
     screenWrapper.addEventListener('click', (e) => {
+      // Do not intercept clicks on PiP or SALUTE card
+      if (e.target.closest('#c2-pip-window') || e.target.closest('#c2-salute-card')) return;
+
       const rect = screenWrapper.getBoundingClientRect();
       const clickX = e.clientX - rect.left;
       const clickY = e.clientY - rect.top;
@@ -1021,22 +1213,7 @@ function initC2Simulator() {
       const normX = Math.max(40, Math.min(760, (clickX / rect.width) * 800));
       const normY = Math.max(40, Math.min(410, (clickY / rect.height) * 450));
 
-      target.x = normX;
-      target.y = normY;
-
-      const dLat = (normY - 225) * 0.00018;
-      const dLon = (normX - 400) * 0.00022;
-      target.lat = -37.24238 + dLat;
-      target.lon = -72.68450 + dLon;
-
-      const randomTemp = Math.floor(190 + Math.random() * 140);
-      target.temp = randomTemp;
-
-      if (targetTemp) targetTemp.textContent = `T_MAX: ${randomTemp}°C (ΔT +${randomTemp - 16}°C)`;
-      if (latVal) latVal.textContent = `${Math.abs(target.lat).toFixed(5)}° S`;
-      if (lonVal) lonVal.textContent = `${Math.abs(target.lon).toFixed(5)}° W`;
-
-      runBufferAnimation();
+      updateTargetPosition(normX, normY);
     });
   }
 
