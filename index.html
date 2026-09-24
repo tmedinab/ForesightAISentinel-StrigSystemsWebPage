@@ -121,17 +121,22 @@
           </div>
           <div class="metric-card glass-panel">
             <div class="metric-value">100%</div>
-            <div class="metric-title" data-i18n="m2_title">Cobertura Cenital</div>
-            <div class="metric-sub" data-i18n="m2_sub">Visión térmica en quebradas invisibles a 4x4</div>
+            <div class="metric-title" data-i18n="m2_title">Visión Aérea Total</div>
+            <div class="metric-sub" data-i18n="m2_sub">Visión térmica en quebradas invisibles para 4x4</div>
           </div>
           <div class="metric-card glass-panel">
             <div class="metric-value">&lt; 5 s</div>
             <div class="metric-title" data-i18n="m3_title">Alerta Pre-Ignición</div>
-            <div class="metric-sub" data-i18n="m3_sub">Inferencia NPU en el borde (&lt;5% falsas alarmas)</div>
+            <div class="metric-sub" data-i18n="m3_sub">Edge AI a bordo (&lt;5% falsas alarmas)</div>
           </div>
           <div class="metric-card glass-panel">
             <div class="metric-value">-40%</div>
-            <div class="metric-title" data-i18n="m4_title">Gasto Operacional Nocturno</div>
+            <div class="metric-header-row">
+              <div class="metric-title" data-i18n="m4_title">Gasto Operacional Nocturno</div>
+              <span class="metric-info-trigger" tabindex="0" role="button" aria-label="Ver desglose del ahorro operacional">ⓘ
+                <span class="metric-tooltip" role="tooltip" data-i18n="m4_tooltip">Ahorro neto directo estimado al reemplazar 2 camionetas 4x4 terrestres por 1 base autónoma Athene IaaS Nest Alpha en clústeres de 25.000 ha durante la temporada crítica de 5 meses.</span>
+              </span>
+            </div>
             <div class="metric-sub" data-i18n="m4_sub">Ahorro directo vs patrullas 4x4 terrestres</div>
           </div>
         </div>
@@ -143,7 +148,13 @@
       <div class="container">
         <div class="section-header">
           <span class="section-tag" data-i18n="prob_tag">El Diagnóstico Territorial</span>
-          <h2 class="section-title" data-i18n="prob_title">La brecha nocturna que cuesta US$130M al año (Fuente: CORMA)</h2>
+          <h2 class="section-title">
+            <span data-i18n="prob_title">La brecha nocturna que cuesta US$130M al año</span>
+            <span class="source-badge-wrap" tabindex="0" role="button" aria-label="Ver fuente oficial de la estimación">
+              <span class="source-badge">Fuente: CORMA <span class="badge-info-icon">ⓘ</span></span>
+              <span class="source-tooltip" role="tooltip" data-i18n="corma_tooltip">Dato oficial Corporación Chilena de la Madera (CORMA): Gasto consolidado anual de la industria y el Estado en combate y prevención de incendios forestales en Chile.</span>
+            </span>
+          </h2>
           <p class="section-subtitle" data-i18n="prob_sub">
             El 99,7% de los incendios forestales son causados por el ser humano. La aviación tripulada combate de día, pero por seguridad y normativa DGAC no vuela de noche. Cuando el viento y el riesgo de intencionalidad son más altos, el cielo queda vacío y las camionetas en tierra no tienen visibilidad en el bosque profundo.
           </p>
@@ -228,7 +239,7 @@
                 <td class="td-tech" data-i18n="r2_sat"><span class="badge-negative">30 a 90 minutos</span> (descarga orbital, procesamiento en la nube y distribución de alertas a centrales).</td>
                 <td class="td-tech" data-i18n="r2_tower">Instantánea en sensor óptico; requiere operador humano 24/7 en central para verificación y filtrado de falsas alarmas.</td>
                 <td class="td-tech" data-i18n="r2_drone">Instantánea para el piloto u operador local; demorada hacia la central de despacho si no existe cobertura 4G/5G en la quebrada o predio.</td>
-                <td class="td-tech td-highlight" data-i18n="r2_strig"><span class="badge-positive">&lt; 5 segundos</span> (Inferencia Edge NPU local a bordo + radioenlace táctico de telemetría de largo alcance).</td>
+                <td class="td-tech td-highlight" data-i18n="r2_strig"><span class="badge-positive">&lt; 5 segundos</span> (Inferencia Edge AI local a bordo + radioenlace táctico de telemetría de largo alcance).</td>
               </tr>
               <tr>
                 <td class="td-dim" data-i18n="r3_dim">Detección de Precursores (Humanos / Vehículos)</td>
@@ -299,7 +310,7 @@
                 <line x1="1" y1="14" x2="4" y2="14"></line>
               </svg>
             </div>
-            <h3 class="tech-title" data-i18n="t2_title">Inferencia Edge NPU Zero-Cloud (NVIDIA Jetson)</h3>
+            <h3 class="tech-title" data-i18n="t2_title">Inferencia Edge AI Zero-Cloud (NVIDIA Jetson)</h3>
             <p class="tech-desc" data-i18n="t2_desc">Cómputo a bordo basado en arquitectura NVIDIA Jetson (Orin Nano Super) con pipeline cuantizado FP16 acelerado por NVIDIA TensorRT sobre JetPack SDK / ROS2. Ejecución local de visión computacional y modelos multimodales ligeros para clasificación y validación de amenazas en tiempo real (&lt;40 ms), operando con autonomía total Zero-Cloud en zonas sin internet ni señal celular.</p>
           </div>
 
@@ -427,22 +438,42 @@
 
           <div class="roi-metrics-grid">
             <div class="roi-metric-card">
-              <span class="roi-metric-k" data-i18n="roi_lbl_manned">Patrullaje Terrestre 4x4 (Status Quo):</span>
+              <div class="roi-card-header">
+                <span class="roi-metric-k" data-i18n="roi_lbl_manned">Patrullaje Terrestre 4x4 (Status Quo):</span>
+                <span class="roi-info-trigger" tabindex="0" role="button" aria-label="Ver desglose de costos de patrullaje terrestre">ⓘ
+                  <span class="roi-tooltip" role="tooltip" data-i18n="roi_tt_manned">Estándar faena forestal Chile (5 meses): 2 vigilantes en rol 7x7 (~US$4.200/mes) + arriendo 4x4 equipada (~US$1.400/mes) + diésel y mantención en ripio (~US$800/mes) = US$6.400/mes por camioneta. 2 camionetas cubren ~25k ha con &lt;12% de visión efectiva.</span>
+                </span>
+              </div>
               <span class="roi-metric-v roi-v-manned" id="roi-manned-val">US$ 64.000 / temporada (5 m)</span>
               <span class="roi-metric-sub" id="roi-manned-sub" data-i18n="roi_sub_manned">2 camionetas c/guardias 7x7 • Cobertura &lt; 12%</span>
             </div>
             <div class="roi-metric-card">
-              <span class="roi-metric-k" data-i18n="roi_lbl_strig">Suscripción Athene IaaS (0 CAPEX):</span>
+              <div class="roi-card-header">
+                <span class="roi-metric-k" data-i18n="roi_lbl_strig">Suscripción Athene IaaS (0 CAPEX):</span>
+                <span class="roi-info-trigger" tabindex="0" role="button" aria-label="Ver desglose del modelo IaaS">ⓘ
+                  <span class="roi-tooltip" role="tooltip" data-i18n="roi_tt_strig">Suscripción IaaS temporada de riesgo (5 meses): US$7.500/mes por base Nest Alpha. Incluye estación autónoma, VTOL Noctua-01, recambios, mantenimiento y software C2. Cero inversión en compra de flota (0 CAPEX).</span>
+                </span>
+              </div>
               <span class="roi-metric-v roi-v-strig" id="roi-strig-val">US$ 37.500 / temporada (5 m)</span>
               <span class="roi-metric-sub" id="roi-strig-sub" data-i18n="roi_sub_strig">1 Base Nest Alpha + VTOL • Cobertura 100%</span>
             </div>
             <div class="roi-metric-card roi-highlight-card">
-              <span class="roi-metric-k" data-i18n="roi_lbl_savings">Ahorro Directo de Vigilancia:</span>
+              <div class="roi-card-header">
+                <span class="roi-metric-k" data-i18n="roi_lbl_savings">Ahorro Directo de Vigilancia:</span>
+                <span class="roi-info-trigger" tabindex="0" role="button" aria-label="Ver desglose del ahorro directo">ⓘ
+                  <span class="roi-tooltip" role="tooltip" data-i18n="roi_tt_savings">Ahorro neto directo de US$26.500 (-41%) por cada clúster de 25.000 ha durante la temporada de 5 meses al optimizar el gasto operacional fijo de patrullaje terrestre.</span>
+                </span>
+              </div>
               <span class="roi-metric-v roi-v-savings" id="roi-savings-val">US$ 26.500</span>
               <span class="roi-metric-badge" id="roi-savings-pct">-41% DIRECTO</span>
             </div>
             <div class="roi-metric-card">
-              <span class="roi-metric-k" data-i18n="roi_lbl_co2">Escudo Preventivo de Combate:</span>
+              <div class="roi-card-header">
+                <span class="roi-metric-k" data-i18n="roi_lbl_co2">Escudo Preventivo de Combate:</span>
+                <span class="roi-info-trigger" tabindex="0" role="button" aria-label="Ver estimación de combate aéreo evitado">ⓘ
+                  <span class="roi-tooltip" role="tooltip" data-i18n="roi_tt_co2">Horas de combate aéreo evitadas: Interceptar 1 foco en fase pre-ignición ahorra ~20 h de vuelo de extinción al amanecer (aviones cisterna Air Tractor AT-802F a US$2.200/h + helicópteros a US$2.500/h = &gt;US$44.000), sin contar la madera comercial salvada.</span>
+                </span>
+              </div>
               <span class="roi-metric-v roi-v-co2" id="roi-co2-val">&gt; US$ 44.000</span>
               <span class="roi-metric-sub" id="roi-co2-sub" data-i18n="roi_sub_co2">Aviones cisterna evitados al amanecer (1 foco)</span>
             </div>

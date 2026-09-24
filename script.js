@@ -25,16 +25,18 @@ const translations = {
     // Metrics
     m1_title: "Ventana Crítica Nocturna",
     m1_sub: "Vigilancia autónoma continua (20:00 a 06:00)",
-    m2_title: "Cobertura Cenital",
-    m2_sub: "Visión térmica en quebradas invisibles a 4x4",
+    m2_title: "Visión Aérea Total",
+    m2_sub: "Visión térmica en quebradas invisibles para 4x4",
     m3_title: "Alerta Pre-Ignición",
-    m3_sub: "Inferencia NPU en el borde (<5% falsas alarmas)",
+    m3_sub: "Edge AI a bordo (<5% falsas alarmas)",
     m4_title: "Gasto Operacional Nocturno",
     m4_sub: "Ahorro directo vs patrullas 4x4 terrestres",
+    m4_tooltip: "Ahorro neto directo estimado al reemplazar 2 camionetas 4x4 terrestres por 1 base autónoma Athene IaaS Nest Alpha en clústeres de 25.000 ha durante la temporada crítica de 5 meses.",
 
     // Problem
     prob_tag: "El Diagnóstico Territorial",
-    prob_title: "La brecha nocturna que cuesta US$130M al año (Fuente: CORMA)",
+    prob_title: "La brecha nocturna que cuesta US$130M al año",
+    corma_tooltip: "Dato oficial Corporación Chilena de la Madera (CORMA): Gasto consolidado anual de la industria y el Estado en combate y prevención de incendios forestales en Chile.",
     prob_sub: "El 99,7% de los incendios forestales son causados por el ser humano. La aviación tripulada combate de día, pero por seguridad y normativa DGAC no vuela de noche. Cuando el viento y el riesgo de intencionalidad son más altos, el cielo queda vacío y las camionetas en tierra no tienen visibilidad en el bosque profundo.",
     p1_head: "Centrales de Operaciones",
     p1_desc: "Incertidumbre constante. Cuando los satélites reportan calor, el foco ya ha alcanzado escala incontrolable.",
@@ -67,7 +69,7 @@ const translations = {
     r2_sat: "<span class=\"badge-negative\">30 a 90 minutos</span> (descarga orbital, procesamiento en la nube y distribución de alertas a centrales).",
     r2_tower: "Instantánea en sensor óptico; requiere operador humano 24/7 en central para verificación y filtrado de falsas alarmas.",
     r2_drone: "Instantánea para el piloto u operador local; demorada hacia la central de despacho si no existe cobertura 4G/5G en la quebrada o predio.",
-    r2_strig: "<span class=\"badge-positive\">&lt; 5 segundos</span> (Inferencia Edge NPU local a bordo + radioenlace táctico de telemetría de largo alcance).",
+    r2_strig: "<span class=\"badge-positive\">&lt; 5 segundos</span> (Inferencia Edge AI local a bordo + radioenlace táctico de telemetría de largo alcance).",
     r3_dim: "Detección de Precursores (Humanos / Vehículos)",
     r3_sat: "<span class=\"badge-negative\">0%</span> (Resolución espacial de 375m a 1km. Diseñado para incendios activos, incapaz de ver personas o fogatas).",
     r3_tower: "Nula en senderos boscosos densos o bajo dosel arbóreo fuera del ángulo visual del mástil.",
@@ -95,7 +97,7 @@ const translations = {
     tech_sub: "Arquitectura autónoma de alta disponibilidad. La aeronave VTOL detecta, clasifica y georreferencia en el borde sin requerir enlace continuo a internet ni servidores en tierra.",
     t1_title: "Gimbal Bi-Espectral Noctua-Optics",
     t1_desc: "Payload giroestabilizado de 3 ejes con sensor microbolómetro LWIR radiométrico no refrigerado (640×512) y cámara óptica diurna 4K. Identificación térmica precisa en oscuridad total con algoritmo de discriminación multi-frame (<5% falsas alarmas).",
-    t2_title: "Inferencia Edge NPU Zero-Cloud (NVIDIA Jetson)",
+    t2_title: "Inferencia Edge AI Zero-Cloud (NVIDIA Jetson)",
     t2_desc: "Cómputo a bordo basado en arquitectura NVIDIA Jetson (Orin Nano Super) con pipeline cuantizado FP16 acelerado por NVIDIA TensorRT sobre JetPack SDK / ROS2. Ejecución local de visión computacional y modelos multimodales ligeros para clasificación y validación de amenazas en tiempo real (<40 ms), operando con autonomía total Zero-Cloud en zonas sin internet ni señal celular.",
     t3_title: "Telemetría Táctica en Zonas Desconectadas",
     t3_desc: "Emisión de fichas de alerta y coordenadas exactas en menos de 5 segundos vía radioenlace táctico FHSS 915 MHz (>20 km LOS con Link Margin >6 dB), garantizando enlace de telemetría ininterrumpido más allá del perímetro físico de patrulla sin dependencia celular.",
@@ -114,7 +116,7 @@ const translations = {
     // C2 Tactical Console & Dual Views
     c2_tag: "◈ Consola C2 Athene",
     c2_title: "Simulador de Enlace Táctico & Misión Nocturna",
-    c2_sub: "Experimenta en tiempo real la telemetría embarcada de la aeronave Noctua-01 y la inferencia bi-espectral del Edge NPU con discriminación térmica de precursores.",
+    c2_sub: "Experimenta en tiempo real la telemetría embarcada de la aeronave Noctua-01 y la inferencia bi-espectral de Edge AI con discriminación térmica de precursores.",
     c2_status_link: "TELEMETRÍA LINK: ACTIVO (915 MHz FHSS)",
     c2_view_gimbal: "SENSOR GIMBAL (FLIR)",
     c2_view_map: "MANDO SITUACIONAL C2",
@@ -147,11 +149,15 @@ const translations = {
     roi_lbl_area: "Superficie a Proteger:",
     roi_lbl_manned: "Patrullaje Terrestre 4x4 (Status Quo):",
     roi_sub_manned: "2 camionetas c/guardias 7x7 • Cobertura < 12%",
+    roi_tt_manned: "Estándar faena forestal Chile (5 meses): 2 vigilantes en rol 7x7 (~US$4.200/mes) + arriendo 4x4 equipada (~US$1.400/mes) + diésel y mantención en ripio (~US$800/mes) = US$6.400/mes por camioneta. 2 camionetas cubren ~25k ha con <12% de visión efectiva.",
     roi_lbl_strig: "Suscripción Athene IaaS (0 CAPEX):",
     roi_sub_strig: "1 Base Nest Alpha + VTOL • Cobertura 100%",
+    roi_tt_strig: "Suscripción IaaS temporada de riesgo (5 meses): US$7.500/mes por base Nest Alpha. Incluye estación autónoma, VTOL Noctua-01, recambios, mantenimiento y software C2. Cero inversión en compra de flota (0 CAPEX).",
     roi_lbl_savings: "Ahorro Directo de Vigilancia:",
+    roi_tt_savings: "Ahorro neto directo de US$26.500 (-41%) por cada clúster de 25.000 ha durante la temporada de 5 meses al optimizar el gasto operacional fijo de patrullaje terrestre.",
     roi_lbl_co2: "Escudo Preventivo de Combate:",
     roi_sub_co2: "Aviones cisterna evitados al amanecer (1 foco)",
+    roi_tt_co2: "Horas de combate aéreo evitadas: Interceptar 1 foco en fase pre-ignición ahorra ~20 h de vuelo de extinción al amanecer (aviones cisterna Air Tractor AT-802F a US$2.200/h + helicópteros a US$2.500/h = >US$44.000), sin contar la madera comercial salvada.",
 
     // Pilot Program
     pilot_tag: "Validación en Terreno",
@@ -261,16 +267,18 @@ const translations = {
     // Metrics
     m1_title: "Critical Night Window",
     m1_sub: "Continuous autonomous patrol (20:00 to 06:00)",
-    m2_title: "Cenital Topographic Coverage",
+    m2_title: "Total Aerial Visibility",
     m2_sub: "Thermal vision in ravines blind to 4x4 trucks",
     m3_title: "Pre-Ignition Tactical Alert",
-    m3_sub: "Onboard NPU edge inference (<5% false alarms)",
+    m3_sub: "Onboard Edge AI (<5% false alarms)",
     m4_title: "Nighttime OPEX Reduction",
     m4_sub: "Direct savings vs 4x4 ground patrol fleets",
+    m4_tooltip: "Estimated direct net savings when replacing 2 ground 4x4 trucks with 1 autonomous Athene IaaS Nest Alpha base across 25,000 ha clusters during the critical 5-month season.",
 
     // Problem
     prob_tag: "Territorial Diagnostic",
-    prob_title: "The nighttime vulnerability gap costing US$130M yearly (Source: CORMA)",
+    prob_title: "The nighttime vulnerability gap costing US$130M yearly",
+    corma_tooltip: "Official data from Chilean Wood Corporation (CORMA): Consolidated annual expenditure by industry and the State on wildfire fighting and prevention in Chile.",
     prob_sub: "99.7% of wildfires are human-caused. Manned aircraft combat fires during daylight, but due to DGAC flight safety standards do not fly at night. When wind and arson risks peak, the skies remain empty and ground trucks have zero visibility deep within the forest.",
     p1_head: "Operations Centers",
     p1_desc: "Persistent uncertainty. By the time orbital satellites detect thermal anomalies, the fire front has reached catastrophic scale.",
@@ -303,7 +311,7 @@ const translations = {
     r2_sat: "<span class=\"badge-negative\">30 to 90 minutes</span> (orbital downlink, cloud processing, and regional alert dissemination lag).",
     r2_tower: "Instantaneous at optical sensor; requires 24/7 human console operator for verification and false alarm filtering.",
     r2_drone: "Instantaneous for local pilot or crew; significantly delayed to central dispatch without reliable 4G/5G coverage in remote terrain.",
-    r2_strig: "<span class=\"badge-positive\">&lt; 5 seconds</span> (onboard local Edge NPU inference + long-range tactical telemetry radio datalink).",
+    r2_strig: "<span class=\"badge-positive\">&lt; 5 seconds</span> (onboard local Edge AI inference + long-range tactical telemetry radio datalink).",
     r3_dim: "Precursor Detection (Humans / Vehicles)",
     r3_sat: "<span class=\"badge-negative\">0%</span> (375m to 1km spatial resolution; engineered for active fires, incapable of spotting individuals or small campfires).",
     r3_tower: "Zero under dense canopy, forest trails, or blind ravines outside direct mast sightline.",
@@ -331,7 +339,7 @@ const translations = {
     tech_sub: "High-availability autonomous architecture. The VTOL airframe detects, classifies, and geolocalizes at the edge without requiring persistent internet or ground servers.",
     t1_title: "Noctua-Optics Bi-Spectral Gimbal",
     t1_desc: "3-axis gyro-stabilized payload with uncooled radiometric LWIR microbolometer (640×512) and 4K daytime optical sensor. Pinpoint thermal threat identification in total darkness with multi-frame temporal discrimination algorithm (<5% false alarm rate).",
-    t2_title: "Onboard Edge AI Zero-Cloud (NVIDIA Jetson)",
+    t2_title: "Zero-Cloud Edge AI Inference (NVIDIA Jetson)",
     t2_desc: "Onboard computing powered by NVIDIA Jetson (Orin Nano Super) architecture with an FP16 quantized inference pipeline accelerated by NVIDIA TensorRT on JetPack SDK / ROS2. Real-time local execution of computer vision models and multimodal verification (<40 ms), operating completely offline Zero-Cloud without internet or cloud dependency.",
     t3_title: "Tactical Telemetry in Dark Zones",
     t3_desc: "Structured alert dossiers and exact coordinates transmitted in under 5 seconds via 915 MHz FHSS tactical radio datalink (>20 km LOS with >6 dB link margin), ensuring uninterrupted C2 telemetry beyond the physical patrol perimeter without cellular dependency.",
@@ -350,7 +358,7 @@ const translations = {
     // C2 Tactical Console & Dual Views
     c2_tag: "◈ Athene C2 Console",
     c2_title: "Tactical Datalink & Night Mission Simulator",
-    c2_sub: "Experience real-time onboard telemetry from the Noctua-01 airframe and Edge NPU bi-spectral inference with thermal precursor discrimination.",
+    c2_sub: "Experience real-time onboard telemetry from the Noctua-01 airframe and Edge AI bi-spectral inference with thermal precursor discrimination.",
     c2_status_link: "TELEMETRY LINK: ACTIVE (915 MHz FHSS)",
     c2_view_gimbal: "GIMBAL SENSOR (FLIR)",
     c2_view_map: "C2 SITUATIONAL MAP",
@@ -383,11 +391,15 @@ const translations = {
     roi_lbl_area: "Acreage to Protect:",
     roi_lbl_manned: "4x4 Ground Patrol (Status Quo):",
     roi_sub_manned: "2 patrol trucks w/7x7 guards • < 12% coverage",
+    roi_tt_manned: "Chilean forestry operation standard (5 months): 2 guards on 7x7 rotation (~US$4,200/mo) + equipped 4x4 lease (~US$1,400/mo) + diesel & gravel maintenance (~US$800/mo) = US$6,400/mo per truck. 2 trucks cover ~25k ha with <12% effective visibility.",
     roi_lbl_strig: "Athene IaaS Subscription (0 CAPEX):",
     roi_sub_strig: "1 Nest Alpha Base + VTOL • 100% coverage",
+    roi_tt_strig: "Risk season IaaS subscription (5 months): US$7,500/mo per Nest Alpha base. Includes autonomous docking station, Noctua-01 VTOL, spare parts, maintenance, and C2 software. Zero fleet purchase expenditure (0 CAPEX).",
     roi_lbl_savings: "Direct Surveillance Savings:",
+    roi_tt_savings: "Direct net savings of US$26,500 (-41%) per 25,000 ha cluster during the 5-month critical season by optimizing fixed ground patrol operational expenditures.",
     roi_lbl_co2: "Preventive Combat Shield:",
     roi_sub_co2: "Air tankers avoided at dawn (1 fire prevented)",
+    roi_tt_co2: "Air combat hours avoided: Intercepting 1 hotspot in pre-ignition saves ~20 hours of dawn suppression flight (Air Tractor AT-802F water bombers @ US$2,200/h + helicopters @ US$2,500/h = >US$44,000), not counting commercial timber preserved.",
 
     // Pilot Program
     pilot_tag: "Field Validation",
@@ -543,6 +555,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize Territorial ROI Calculator
   initRoiCalculator();
+
+  // Initialize Interactive Tooltips & Source Badges
+  initTooltips();
 });
 
 /**
@@ -959,6 +974,70 @@ function initRoiCalculator() {
 
   // Initial calculation
   updateRoi();
+}
+
+/**
+ * Controller for interactive tooltips and source badges (click/tap toggling & click-outside dismissal)
+ */
+function initTooltips() {
+  const triggers = document.querySelectorAll('.source-badge-wrap, .metric-info-trigger, .roi-info-trigger');
+  if (!triggers.length) return;
+
+  triggers.forEach(trigger => {
+    // Handle click/tap for mobile & touchscreens
+    trigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isActive = trigger.classList.contains('active');
+
+      // Close all other open tooltips
+      triggers.forEach(t => {
+        if (t !== trigger) {
+          t.classList.remove('active');
+          t.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      if (isActive) {
+        trigger.classList.remove('active');
+        trigger.setAttribute('aria-expanded', 'false');
+      } else {
+        trigger.classList.add('active');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+    });
+
+    // Handle keyboard accessibility (Enter / Space / Escape)
+    trigger.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        trigger.click();
+      } else if (e.key === 'Escape') {
+        trigger.classList.remove('active');
+        trigger.setAttribute('aria-expanded', 'false');
+        trigger.blur();
+      }
+    });
+  });
+
+  // Close when clicking anywhere outside
+  document.addEventListener('click', (e) => {
+    triggers.forEach(trigger => {
+      if (!trigger.contains(e.target)) {
+        trigger.classList.remove('active');
+        trigger.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+
+  // Close on Escape key globally
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      triggers.forEach(trigger => {
+        trigger.classList.remove('active');
+        trigger.setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
 }
 
 /**
