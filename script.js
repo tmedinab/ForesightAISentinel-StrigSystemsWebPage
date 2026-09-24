@@ -15,27 +15,27 @@ const translations = {
     nav_cta: "Postular a Piloto",
 
     // Hero
-    hero_badge: "Proyecto Semilla Inicia CORFO • UdeC • Experiencia Bomberil en Primera Línea",
+    hero_badge: "Proyecto Semilla Inicia CORFO • UdeC • Combate de Incendios en Primera Línea",
     hero_title_1: "Los riesgos se mueven rápido.",
     hero_title_2: "Nosotros los vemos venir.",
-    hero_sub: "Plataforma de vigilancia territorial autónoma con drones VTOL e inferencia Edge AI a bordo. Cerramos la brecha nocturna de 10 horas detectando actividad humana no autorizada —precursor del 99,7% de los incendios forestales— antes de que inicien los focos, reduciendo hasta un 90% el costo de vuelo y un 85% el gasto operacional territorial consolidado.",
+    hero_sub: "Plataforma de vigilancia territorial autónoma con drones VTOL e inferencia Edge AI a bordo. Cerramos la brecha nocturna de 10 horas detectando actividad humana no autorizada y precursores térmicos antes de la ignición — optimizando el gasto en patrullaje terrestre hasta en un 40% y evitando el despliegue millonario de aviones de combate al amanecer.",
     hero_cta_primary: "Postular a Piloto Operativo",
     hero_cta_secondary: "Ver Capacidades del Sistema",
 
     // Metrics
-    m1_title: "Ahorro en Costo de Vuelo",
-    m1_sub: "US$250/h vs US$2.500/h avión tripulado",
-    m2_title: "Ventana Crítica Nocturna",
-    m2_sub: "Vigilancia autónoma en oscuridad total",
-    m3_title: "Falsas Alarmas",
-    m3_sub: "Verificación multi-frame a bordo (cero fatiga de alerta)",
-    m4_title: "Modelo Intelligence as a Service",
-    m4_sub: "Suscripción por cobertura territorial",
+    m1_title: "Ventana Crítica Nocturna",
+    m1_sub: "Vigilancia autónoma continua (20:00 a 06:00)",
+    m2_title: "Cobertura Cenital",
+    m2_sub: "Visión térmica en quebradas invisibles a 4x4",
+    m3_title: "Alerta Pre-Ignición",
+    m3_sub: "Inferencia NPU en el borde (<5% falsas alarmas)",
+    m4_title: "Gasto Operacional Nocturno",
+    m4_sub: "Ahorro directo vs patrullas 4x4 terrestres",
 
     // Problem
-    prob_tag: "Diagnóstico Territorial • Foco en Primera Línea",
-    prob_title: "La brecha nocturna que cuesta US$130M al año",
-    prob_sub: "El 99,7% de los incendios forestales son causados por el ser humano. La aviación tripulada combate de día, pero por normativa y seguridad no vuela de noche. Cuando el riesgo de propagación e intencionalidad es más alto, el cielo queda vacío.",
+    prob_tag: "El Diagnóstico Territorial",
+    prob_title: "La brecha nocturna que cuesta US$130M al año (Fuente: CORMA)",
+    prob_sub: "El 99,7% de los incendios forestales son causados por el ser humano. La aviación tripulada combate de día, pero por seguridad y normativa DGAC no vuela de noche. Cuando el viento y el riesgo de intencionalidad son más altos, el cielo queda vacío y las camionetas en tierra no tienen visibilidad en el bosque profundo.",
     p1_head: "Centrales de Operaciones",
     p1_desc: "Incertidumbre constante. Cuando los satélites reportan calor, el foco ya ha alcanzado escala incontrolable.",
     p1_tag: "Información fragmentada",
@@ -43,9 +43,9 @@ const translations = {
     p2_desc: "Riesgo permanente de pérdidas patrimoniales catastróficas en madera, biomasa e infraestructura productiva.",
     p2_tag: "Pérdidas millonarias",
     p3_head: "Brigadistas en Terreno",
-    p3_desc: "Exposición a peligro extremo ingresando de noche a ciegas en el bosque sin verificación aérea previa del terreno.",
+    p3_desc: "Exposición extrema a emboscadas, cortes de camino o accidentes al ingresar de noche a ciegas por caminos de ripio, con menos del 12% de visibilidad efectiva fuera de la huella.",
     p3_tag: "Riesgo vital innecesario",
-    quote_text: "Plataforma concebida desde la ingeniería aeroespacial y el combate de incendios en primera línea: mientras satélites sufren latencia orbital y torres fijas tienen puntos ciegos, la vigilancia tripulada no vuela de noche. Ninguno responde a tiempo la pregunta decisiva: <em>¿Hay una presencia humana no autorizada o anomalía térmica ahora mismo en estas coordenadas exactas?</em>",
+    quote_text: "Satélites sufren latencia orbital; torres fijas tienen puntos ciegos orográficos; las patrullas en camioneta 4x4 solo ven lo que tocan sus focos en el camino; y los aviones cisterna quedan en tierra al atardecer por seguridad. Athene es el centinela aéreo nocturno que detecta la fogata o el precursor antes de que nazca el incendio, evitando el despliegue millonario de aeronaves de combate al amanecer.",
 
     // Tactical Benchmark
     comp_tag: "Benchmark Táctico",
@@ -61,7 +61,7 @@ const translations = {
     r1_dim: "Patrullaje Nocturno Continuo",
     r1_sat: "Pasos orbitales discretos (1 a 4 h). Estándar macrocontinental indiscutido de día, pero con ventana ciega crítica durante la noche.",
     r1_tower: "Continuo 24/7 de alta confiabilidad, pero estrictamente limitado a la línea de vista directa (LOS) de su cuenca visible.",
-    r1_drone: "Inoperante de noche. Las avionetas quedan en tierra al atardecer por restricción DGAC/VFR (riesgo CFIT en penumbra). En tierra, las cuadrillas con drones sufren fatiga y 30-45 min de batería por vuelo.",
+    r1_drone: "Inoperante de noche. Los aviones cisterna y de coordinación quedan en tierra al atardecer por normativa DGAC/VFR nocturno (riesgo de colisión contra el relieve CFIT). En tierra, las camionetas 4x4 sufren fatiga, lentitud en ripio y nula visibilidad fuera del camino.",
     r1_strig: "<strong>Patrullaje autónomo programado</strong> en las 10 horas de vulnerabilidad nocturna con aeronave VTOL Noctua-01 y estación de acople.",
     r2_dim: "Latencia de Detección & Alerta",
     r2_sat: "<span class=\"badge-negative\">30 a 90 minutos</span> (descarga orbital, procesamiento en la nube y distribución de alertas a centrales).",
@@ -83,11 +83,11 @@ const translations = {
     r5_tower: "Cero exposición humana directa (salvo mantenimiento en cumbres aisladas).",
     r5_drone: "<span class=\"badge-negative\">Alto riesgo vital & Ratio 1:1:</span> Requiere 1 piloto + 1 observador certificado por aeronave. Peligro de accidentes aéreos en vuelo rasante sobre relieve agreste, y cuadrillas terrestres expuestas en caminos forestales aislados en horario nocturno crítico.",
     r5_strig: "<span class=\"badge-positive\">Cero exposición & Multiplicador 1:N:</span> Misión, despegue y aterrizaje 100% autónomos desde estación de acople. Un solo operador táctico C2 supervisa hasta 5 cuadrículas de vuelo automatizado simultáneamente.",
-    r6_dim: "Modelo Económico & Costo",
+    r6_dim: "Modelo Económico & Estructura de Costo",
     r6_sat: "Suscripción SaaS (US$15k-$60k/año). Accesible para escala macro; no sustituye la vigilancia táctica.",
     r6_tower: "<span class=\"badge-negative\">Altísimo CAPEX:</span> US$40k-$100k por torre instalada (mástil, óptica militar, energía solar y caminos de acceso).",
-    r6_drone: "<span class=\"badge-negative\">OPEX Masivo:</span> US$600-$1.500/hora de vuelo en avioneta diurna + horas extra nocturnas de brigadas, combustible 4x4 y reposición por desgaste de drones.",
-    r6_strig: "<span class=\"badge-positive\">0 CAPEX (Intelligence as a Service):</span> Suscripción operativa por hectárea protegida; 90% menor costo por hora de vuelo y ~85% de ahorro anual consolidado.",
+    r6_drone: "<span class=\"badge-negative\">Costos Desarticulados:</span> Extinción diurna masiva: US$2.000-$3.500/hora de vuelo (aviones cisterna y helicópteros). Patrullaje terrestre nocturno: ~US$6.400/mes por camioneta 4x4 (2 vigilantes 7x7 + combustible + arriendo) con menos del 12% de cobertura predial.",
+    r6_strig: "<span class=\"badge-positive\">Intelligence as a Service (IaaS):</span> Suscripción modular (~US$7.500/mes por base Nest Alpha en temporada de riesgo). ~40% menor costo que patrullas 4x4 terrestres, 100% de cobertura en quebradas y prevención activa que ahorra decenas de miles de dólares en combate aéreo al amanecer.",
 
     // Technology
     tech_tag: "Capacidades Operativas",
@@ -143,15 +143,15 @@ const translations = {
     // ROI Calculator
     roi_badge: "MODELO ECONÓMICO",
     roi_title: "Calculadora de Retorno Operativo Territorial",
-    roi_sub: "Modelo Intelligence as a Service (0 CAPEX). 1 estación autónoma Nest Alpha cubre clústeres de 12.000 a 25.000 ha (como el predio San Ignacio del C2). Superficies mayores (50k y 100k ha) escalan modularmente con 2 a 4 bases interconectadas, reduciendo ~85% el gasto operacional territorial consolidado.",
+    roi_sub: "Modelo Intelligence as a Service (0 CAPEX). Compara el costo del patrullaje terrestre nocturno en camionetas 4x4 (Fuente: estándares de faena forestal en Chile) frente al despliegue autónomo de estaciones Nest Alpha durante la temporada crítica de 5 meses (noviembre a marzo), sumado al ahorro en horas de aviones cisterna al amanecer.",
     roi_lbl_area: "Superficie a Proteger:",
-    roi_lbl_manned: "Costo Aviación Tripulada Estimado:",
-    roi_sub_manned: "Avioneta diurna + cuadrilla",
-    roi_lbl_strig: "Suscripción Athene (0 CAPEX):",
-    roi_sub_strig: "Patrullaje nocturno autónomo",
-    roi_lbl_savings: "Ahorro Neto Operacional:",
-    roi_lbl_co2: "Huella CO2 Evitada:",
-    roi_sub_co2: "Cero emisiones fósiles de vuelo",
+    roi_lbl_manned: "Patrullaje Terrestre 4x4 (Status Quo):",
+    roi_sub_manned: "2 camionetas c/guardias 7x7 • Cobertura < 12%",
+    roi_lbl_strig: "Suscripción Athene IaaS (0 CAPEX):",
+    roi_sub_strig: "1 Base Nest Alpha + VTOL • Cobertura 100%",
+    roi_lbl_savings: "Ahorro Directo de Vigilancia:",
+    roi_lbl_co2: "Escudo Preventivo de Combate:",
+    roi_sub_co2: "Aviones cisterna evitados al amanecer (1 foco)",
 
     // Pilot Program
     pilot_tag: "Validación en Terreno",
@@ -187,7 +187,7 @@ const translations = {
     // Team
     team_tag: "Equipo Fundador",
     team_title: "Ingeniería Aeroespacial & Operaciones Tácticas",
-    team_sub: "5 ingenieros civiles aeroespaciales de la Universidad de Concepción, combinando diseño aeronáutico, visión computacional, experiencia bomberil en primera línea y certificación civil.",
+    team_sub: "5 ingenieros civiles aeroespaciales de la Universidad de Concepción, combinando diseño aeronáutico, visión computacional, combate de incendios en primera línea y certificación aeronáutica.",
     bio_tomas: "Ingeniero Civil Aeroespacial • Visión Computacional, Machine Learning, CAD/CAM e Ingeniería de Sistemas C4ISR.",
     bio_carlos: "Bombero Operativo • Ingeniero Civil Aeroespacial. Análisis CFD, logística operacional y arquitectura de interfaz táctica.",
     bio_ananda: "Ingeniera Civil Aeroespacial • Integración y ensayos de vuelo RPAS, CAD, análisis estructural (FEA) y CFD.",
@@ -254,24 +254,24 @@ const translations = {
     hero_badge: "CORFO Seed Grant Awarded • Backed by UdeC • Frontline Firefighting Experience",
     hero_title_1: "Risks move fast.",
     hero_title_2: "We see them coming.",
-    hero_sub: "Autonomous territorial surveillance platform powered by VTOL aircraft and onboard Edge AI. We close the critical 10-hour nighttime gap by detecting unauthorized human activity—precursor to 99.7% of wildfires—before ignition occurs, slashing aerial patrol flight costs by up to 90% and consolidating territorial OPEX savings by 85%.",
+    hero_sub: "Autonomous territorial surveillance platform powered by VTOL aircraft and onboard Edge AI. We close the critical 10-hour nighttime gap by detecting unauthorized human activity and thermal precursors before ignition—optimizing ground patrol OPEX by up to 40% and preventing multi-million dollar deployments of morning air combat fleets.",
     hero_cta_primary: "Apply for Operational Pilot",
     hero_cta_secondary: "Explore Capabilities",
 
     // Metrics
-    m1_title: "Flight Cost Reduction",
-    m1_sub: "US$250/h vs US$2,500/h manned aircraft",
-    m2_title: "Critical Night Window",
-    m2_sub: "Autonomous patrol in pitch-black darkness",
-    m3_title: "False Alarm Rate",
-    m3_sub: "Onboard multi-frame verification (zero alert fatigue)",
-    m4_title: "Intelligence as a Service",
-    m4_sub: "Territorial coverage subscription, zero CAPEX",
+    m1_title: "Critical Night Window",
+    m1_sub: "Continuous autonomous patrol (20:00 to 06:00)",
+    m2_title: "Cenital Topographic Coverage",
+    m2_sub: "Thermal vision in ravines blind to 4x4 trucks",
+    m3_title: "Pre-Ignition Tactical Alert",
+    m3_sub: "Onboard NPU edge inference (<5% false alarms)",
+    m4_title: "Nighttime OPEX Reduction",
+    m4_sub: "Direct savings vs 4x4 ground patrol fleets",
 
     // Problem
-    prob_tag: "Territorial Assessment • Frontline Firefighting Experience",
-    prob_title: "The nighttime vulnerability gap costing US$130M yearly",
-    prob_sub: "99.7% of wildfires are human-caused. Manned aircraft operate strictly during daylight due to flight safety regulations. When arson and weather-driven fire spread peak, the airspace remains unprotected.",
+    prob_tag: "Territorial Diagnostic",
+    prob_title: "The nighttime vulnerability gap costing US$130M yearly (Source: CORMA)",
+    prob_sub: "99.7% of wildfires are human-caused. Manned aircraft combat fires during daylight, but due to DGAC flight safety standards do not fly at night. When wind and arson risks peak, the skies remain empty and ground trucks have zero visibility deep within the forest.",
     p1_head: "Operations Centers",
     p1_desc: "Persistent uncertainty. By the time orbital satellites detect thermal anomalies, the fire front has reached catastrophic scale.",
     p1_tag: "Fragmented intelligence",
@@ -279,9 +279,9 @@ const translations = {
     p2_desc: "Permanent risk of multi-million dollar capital losses in commercial timber, biomass, and production infrastructure.",
     p2_tag: "Catastrophic exposure",
     p3_head: "Ground Firefighters",
-    p3_desc: "Extreme physical hazard entering rugged mountainous terrain in darkness without prior aerial reconnaissance.",
+    p3_desc: "Extreme exposure to road blockages, ambushes, or roll-over hazards entering deep forests on gravel tracks at night, with under 12% effective visibility beyond the tire track.",
     p3_tag: "Avoidable human risk",
-    quote_text: "Conceived from aerospace engineering and frontline wildfire combat experience: while satellites face orbital latency and fixed towers have blind spots, manned surveillance cannot fly at night. None can answer the decisive question in time: <em>Is there an unauthorized human presence or thermal anomaly right now at exact coordinates?</em>",
+    quote_text: "Satellites suffer orbital latency; fixed towers face orographic blind spots; 4x4 truck patrols only see what headlights touch on the dirt road; and water bombers are grounded at dusk for flight safety. Athene is the autonomous night sentinel that detects campfires or human precursors before fire ignites, avoiding multi-million dollar air combat deployments at dawn.",
 
     // Tactical Benchmark
     comp_tag: "Tactical Benchmark",
@@ -297,7 +297,7 @@ const translations = {
     r1_dim: "Continuous Night Patrol",
     r1_sat: "Discrete orbital passes (1 to 4 h). Uncontested daytime macro standard, but leaves a critical blind window throughout the night.",
     r1_tower: "Continuous 24/7 with high reliability, but strictly restricted to direct line of sight (LOS) within its visible basin.",
-    r1_drone: "Inoperable at night. Light aircraft are grounded at sunset by DGAC/VFR rules (CFIT terrain hazard). On the ground, crews with drones face operator fatigue and 30-45 min battery limits.",
+    r1_drone: "Inoperable at night. Water-dropping air tankers and spotters are grounded at dusk under DGAC/night-VFR rules (controlled flight into terrain / CFIT hazard). On the ground, 4x4 patrol trucks face fatigue, slow speeds on gravel roads, and zero visibility off the track.",
     r1_strig: "<strong>Scheduled autonomous patrol</strong> across the critical 10-hour nighttime vulnerability window with Noctua-01 VTOL airframe and docking station.",
     r2_dim: "Detection & Alert Latency",
     r2_sat: "<span class=\"badge-negative\">30 to 90 minutes</span> (orbital downlink, cloud processing, and regional alert dissemination lag).",
@@ -319,11 +319,11 @@ const translations = {
     r5_tower: "Zero direct human exposure (except maintenance on isolated peaks).",
     r5_drone: "<span class=\"badge-negative\">High life risk & 1:1 ratio:</span> Requires 1 pilot + 1 certified spotter per airborne asset. Crash risk in low-altitude patrol, plus ground crews exposed on isolated logging tracks during high-arson night hours.",
     r5_strig: "<span class=\"badge-positive\">Zero exposure & 1:N multiplier:</span> 100% autonomous launch, patrol mission, and docking recovery from automated station. A single tactical C2 operator monitors up to 5 automated flight grids simultaneously.",
-    r6_dim: "Economic Model & Cost",
+    r6_dim: "Economic Model & Cost Structure",
     r6_sat: "SaaS software subscription (US$15k-$60k/yr). Accessible at macro scale; does not replace tactical parcel surveillance.",
     r6_tower: "<span class=\"badge-negative\">Extremely High CAPEX:</span> US$40k-$100k per installed mast (tower, military-grade optics, solar arrays, and access roads).",
-    r6_drone: "<span class=\"badge-negative\">Massive OPEX:</span> US$600-$1,500/flight hour for daytime patrol planes + heavy night overtime labor, 4x4 fleet fuel/maintenance, and drone attrition.",
-    r6_strig: "<span class=\"badge-positive\">0 CAPEX (Intelligence as a Service):</span> Operational subscription per protected hectare; 90% flight-hour cost reduction and ~85% net annual territorial savings.",
+    r6_drone: "<span class=\"badge-negative\">Fragmented Heavy OPEX:</span> Daytime mass suppression: US$2,000-$3,500/flight hour (air tankers and heavy helicopters). Nocturnal ground patrol: ~US$6,400/month per 4x4 truck (2 security guards on 7x7 shift + fuel + lease) with under 12% land coverage.",
+    r6_strig: "<span class=\"badge-positive\">Intelligence as a Service (IaaS):</span> Modular operational subscription (~US$7,500/month per Nest Alpha base during risk season). ~40% lower cost than 4x4 ground patrols, 100% topographic coverage in ravines, and active prevention saving tens of thousands in dawn air combat.",
 
     // Technology
     tech_tag: "Operational Capabilities",
@@ -379,15 +379,15 @@ const translations = {
     // ROI Calculator
     roi_badge: "ECONOMIC MODEL",
     roi_title: "Territorial Operational ROI Calculator",
-    roi_sub: "Intelligence as a Service model (0 CAPEX). 1 autonomous Nest Alpha base covers clusters of 12,000 to 25,000 ha (matching C2 San Ignacio sector). Larger holdings (50k & 100k ha) scale modularly with 2 to 4 interconnected bases, slashing ~85% of net territorial OPEX.",
+    roi_sub: "Intelligence as a Service model (0 CAPEX). Compare nocturnal 4x4 ground patrol costs (Source: Chilean forestry operational benchmarks) against autonomous Nest Alpha base deployments during the 5-month critical season (Nov–Mar), plus morning air combat hours avoided.",
     roi_lbl_area: "Acreage to Protect:",
-    roi_lbl_manned: "Estimated Manned Aviation Cost:",
-    roi_sub_manned: "Daytime aircraft + ground crew",
-    roi_lbl_strig: "Athene Subscription (0 CAPEX):",
-    roi_sub_strig: "Autonomous nighttime patrol",
-    roi_lbl_savings: "Net Operational Savings:",
-    roi_lbl_co2: "Carbon Footprint Avoided:",
-    roi_sub_co2: "Zero fossil aviation emissions",
+    roi_lbl_manned: "4x4 Ground Patrol (Status Quo):",
+    roi_sub_manned: "2 patrol trucks w/7x7 guards • < 12% coverage",
+    roi_lbl_strig: "Athene IaaS Subscription (0 CAPEX):",
+    roi_sub_strig: "1 Nest Alpha Base + VTOL • 100% coverage",
+    roi_lbl_savings: "Direct Surveillance Savings:",
+    roi_lbl_co2: "Preventive Combat Shield:",
+    roi_sub_co2: "Air tankers avoided at dawn (1 fire prevented)",
 
     // Pilot Program
     pilot_tag: "Field Validation",
@@ -833,16 +833,22 @@ function initHeaderScroll() {
 }
 
 /**
- * Interactive Territorial Acreage ROI Calculator
+ * Interactive Territorial Acreage ROI Calculator (Chilean Forestry Operational Model)
+ * Baseline: 4x4 Ground Patrol (2 guards 7x7 + lease + fuel = US$ 6,400/mo/truck, 5-month season Nov-Mar)
+ * Solution: Athene IaaS (Nest Alpha Base + VTOL Noctua-01 = US$ 7,500/mo/base, 5-month season Nov-Mar)
+ * Shield: Morning air suppression hours avoided (Air Tractor / Helicopter combat > US$ 44,000 / incident)
  */
 function initRoiCalculator() {
   const slider = document.getElementById('roi-slider');
   const areaReadout = document.getElementById('roi-area-readout');
   const mannedVal = document.getElementById('roi-manned-val');
+  const mannedSub = document.getElementById('roi-manned-sub');
   const strigVal = document.getElementById('roi-strig-val');
+  const strigSub = document.getElementById('roi-strig-sub');
   const savingsVal = document.getElementById('roi-savings-val');
   const savingsPct = document.getElementById('roi-savings-pct');
   const co2Val = document.getElementById('roi-co2-val');
+  const co2Sub = document.getElementById('roi-co2-sub');
   const presetBtns = document.querySelectorAll('.roi-preset-btn');
 
   if (!slider) return;
@@ -851,37 +857,78 @@ function initRoiCalculator() {
     const ha = parseInt(slider.value, 10);
     const lang = document.documentElement.getAttribute('data-lang') || 'es';
     const isEs = lang === 'es';
-
-    // Financial model:
-    // Manned Aviation: US$ 6.50 / ha / year
-    // Athene Autonomous VTOL IaaS: US$ 0.95 / ha / year
-    // Carbon Footprint Avoided: 0.00194 metric tons CO2e / ha / year
-    const mannedCost = ha * 6.5;
-    const strigCost = ha * 0.95;
-    const savings = mannedCost - strigCost;
-    const co2Avoided = ha * 0.00194;
-
     const locale = isEs ? 'es-CL' : 'en-US';
-    const perYear = isEs ? 'año' : 'yr';
-    const costWord = isEs ? 'COSTO' : 'COST';
+
+    // 1. Ground Patrol Status Quo:
+    // 1 truck covers ~12,500 ha with < 12% visual coverage
+    // Cost: US$ 6,400 / month * 5 months = US$ 32,000 per truck / season
+    const trucks = Math.max(1, Math.round(ha / 12500));
+    const mannedCost = trucks * 32000;
+
+    // 2. Athene IaaS:
+    // 1 Nest Alpha base covers up to 25,000 ha cluster (15 km operational radius)
+    // Subscription: US$ 7,500 / month * 5 months = US$ 37,500 per base / season
+    // For smaller pilot sectors (<= 12.5k ha), shared modular cluster rate applies (US$ 18,750 / season)
+    let bases = 1;
+    let strigCost = 37500;
+    if (ha <= 12500) {
+      bases = 1;
+      strigCost = 18750; // modular cluster rate (US$ 3,750/mo)
+    } else {
+      bases = Math.max(1, Math.round(ha / 25000));
+      strigCost = bases * 37500;
+    }
+
+    // 3. Direct Operational Savings:
+    const savings = mannedCost - strigCost;
+    const pct = mannedCost > 0 ? Math.round((savings / mannedCost) * 100) : 41;
+
+    // 4. Combat Avoidance Shield:
+    // 1 prevented fire saves ~20 hours of Air Tractor AT-802F (US$ 2,200/h) or AS350 helicopter suppression
+    const avoidedFires = Math.max(1, Math.round(ha / 25000));
+    const combatAvoided = avoidedFires * 44000;
+
+    const seasonWord = isEs ? 'temporada (5 m)' : 'season (5 mo)';
+    const directWord = isEs ? 'DIRECTO' : 'DIRECT';
 
     if (areaReadout) {
       areaReadout.textContent = `${ha.toLocaleString(locale)} ha`;
     }
     if (mannedVal) {
-      mannedVal.textContent = `US$ ${Math.round(mannedCost).toLocaleString(locale)} / ${perYear}`;
+      mannedVal.textContent = `US$ ${Math.round(mannedCost).toLocaleString(locale)} / ${seasonWord}`;
+    }
+    if (mannedSub) {
+      mannedSub.textContent = isEs
+        ? `${trucks} ${trucks > 1 ? 'camionetas' : 'camioneta'} c/guardias 7x7 • Cobertura < 12%`
+        : `${trucks} patrol ${trucks > 1 ? 'trucks' : 'truck'} w/7x7 guards • < 12% coverage`;
     }
     if (strigVal) {
-      strigVal.textContent = `US$ ${Math.round(strigCost).toLocaleString(locale)} / ${perYear}`;
+      strigVal.textContent = `US$ ${Math.round(strigCost).toLocaleString(locale)} / ${seasonWord}`;
+    }
+    if (strigSub) {
+      if (ha <= 12500) {
+        strigSub.textContent = isEs
+          ? `1 Base Nest Alpha (Sector Prioritario) • Cobertura 100%`
+          : `1 Nest Alpha Base (Priority Sector) • 100% coverage`;
+      } else {
+        strigSub.textContent = isEs
+          ? `${bases} ${bases > 1 ? 'Bases' : 'Base'} Nest Alpha + VTOL • Cobertura 100%`
+          : `${bases} Nest Alpha ${bases > 1 ? 'Bases' : 'Base'} + VTOL • 100% coverage`;
+      }
     }
     if (savingsVal) {
       savingsVal.textContent = `US$ ${Math.round(savings).toLocaleString(locale)}`;
     }
     if (savingsPct) {
-      savingsPct.textContent = `-85% ${costWord}`;
+      savingsPct.textContent = `-${pct}% ${directWord}`;
     }
     if (co2Val) {
-      co2Val.textContent = `${co2Avoided.toLocaleString(locale, { minimumFractionDigits: 1, maximumFractionDigits: 1 })} t CO2e`;
+      co2Val.textContent = `> US$ ${Math.round(combatAvoided).toLocaleString(locale)}`;
+    }
+    if (co2Sub) {
+      co2Sub.textContent = isEs
+        ? `Aviones cisterna evitados al amanecer (${avoidedFires} ${avoidedFires > 1 ? 'focos' : 'foco'})`
+        : `Air tankers avoided at dawn (${avoidedFires} ${avoidedFires > 1 ? 'fires' : 'fire'} prevented)`;
     }
 
     // Sync preset buttons active state
