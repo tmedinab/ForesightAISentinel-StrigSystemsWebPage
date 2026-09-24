@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Strig Systems | Athene — Inteligencia Aérea Autónoma</title>
-  <meta name="description" content="Strig Systems desarrolla Athene: plataforma de vigilancia territorial autónoma con drones VTOL y Edge AI. Cierra la ventana nocturna de 10 horas en detección de incendios forestales. Ahorro del 90% vs aviación tripulada.">
+  <meta name="description" content="Strig Systems desarrolla Athene: plataforma de vigilancia territorial autónoma con drones VTOL y Edge AI. Cierra la ventana nocturna de 10 horas en detección de incendios forestales. Ahorro de hasta el 40% vs patrullaje terrestre 4x4.">
   <meta name="keywords" content="Strig Systems, Athene, Noctua, Incendios Forestales, Vigilancia Aérea Autónoma, Drones VTOL, Edge AI, Detección Temprana, Monitoreo Nocturno, CORFO, UdeC">
   <meta name="author" content="Strig Systems SpA">
   <link rel="canonical" href="https://strigsystems.tech/">
@@ -126,7 +126,7 @@
           </div>
           <div class="metric-card glass-panel">
             <div class="metric-value">&lt; 5 s</div>
-            <div class="metric-title" data-i18n="m3_title">Alerta Pre-Ignición</div>
+            <div class="metric-title" data-i18n="m3_title">Alerta Preignición</div>
             <div class="metric-sub" data-i18n="m3_sub">Edge AI a bordo (&lt;5% falsas alarmas)</div>
           </div>
           <div class="metric-card glass-panel">
@@ -245,7 +245,7 @@
                 <td class="td-dim" data-i18n="r3_dim">Detección de Precursores (Humanos / Vehículos)</td>
                 <td class="td-tech" data-i18n="r3_sat"><span class="badge-negative">0%</span> (Resolución espacial de 375m a 1km. Diseñado para incendios activos, incapaz de ver personas o fogatas).</td>
                 <td class="td-tech" data-i18n="r3_tower">Nula en senderos boscosos densos o bajo dosel arbóreo fuera del ángulo visual del mástil.</td>
-                <td class="td-tech" data-i18n="r3_drone">Severamente limitada. Las avionetas no vuelan de noche para detectar campamentos o fogatas tempranas; las patrullas en camioneta sólo vigilan caminos habilitados, dejando el interior ciego.</td>
+                <td class="td-tech" data-i18n="r3_drone">Severamente limitada. Las avionetas no vuelan de noche para detectar campamentos o fogatas tempranas; las patrullas en camioneta solo vigilan caminos habilitados, dejando el interior ciego.</td>
                 <td class="td-tech td-highlight" data-i18n="r3_strig"><span class="badge-positive">Detección óptica/térmica</span> de presencia humana y vehículos antes de la ignición (causa del 99,7% de los incendios).</td>
               </tr>
               <tr>
@@ -289,9 +289,9 @@
         <div class="tech-cards-grid">
           <div class="tech-card glass-panel">
             <div class="tech-avatar-circle">
-              <img src="assets/img/tech/aerial_scan_loop.webp" alt="Visión Térmica Bi-Espectral en Tiempo Real" class="circle-thumb" loading="lazy">
+              <img src="assets/img/tech/aerial_scan_loop.webp" alt="Visión Térmica Biespectral en Tiempo Real" class="circle-thumb" loading="lazy">
             </div>
-            <h3 class="tech-title" data-i18n="t1_title">Gimbal Bi-Espectral Noctua-Optics</h3>
+            <h3 class="tech-title" data-i18n="t1_title">Gimbal Biespectral Noctua-Optics</h3>
             <p class="tech-desc" data-i18n="t1_desc">Payload giroestabilizado de 3 ejes con sensor microbolómetro LWIR radiométrico no refrigerado (640×512) y cámara óptica diurna 4K. Identificación térmica precisa en oscuridad total con algoritmo de discriminación multi-frame (&lt;5% falsas alarmas).</p>
           </div>
 
@@ -358,7 +358,7 @@
               </svg>
             </div>
             <h3 class="tech-title" data-i18n="t6_title">Operación Segura & Marco DGAC</h3>
-            <p class="tech-desc" data-i18n="t6_desc">Diseñado bajo estándares de ingeniería aeroespacial. Arquitectura 4+1 lift+cruise con tolerancia a pérdida de motor sustentador, paracaídas balístico pirotécnico autónomo y protocolos operacionales bajo marco DAN 151 / DAN 91 (DGAC Chile) para BVLOS segregado con retorno automático ante contingencia (Auto-RTH).</p>
+            <p class="tech-desc" data-i18n="t6_desc">Diseñada bajo estándares de ingeniería aeroespacial. Arquitectura 4+1 lift+cruise con tolerancia a pérdida de motor sustentador, paracaídas balístico pirotécnico autónomo y protocolos operacionales bajo marco DAN 151 / DAN 91 (DGAC Chile) para BVLOS segregado con retorno automático ante contingencia (Auto-RTH).</p>
           </div>
         </div>
 
@@ -376,11 +376,34 @@
           <div class="flow-header">
             <span class="flow-tag" data-i18n="flow_tag">ARQUITECTURA DE ENLACE OFF-GRID</span>
             <h3 class="flow-title" data-i18n="flow_title">Cómo se cierra el circuito táctico en zonas sin señal celular</h3>
-            <p class="flow-sub" data-i18n="flow_sub">El 80% de los predios forestales y cordilleranos son zonas oscuras de conectividad. Athene opera sin depender de torres 4G/5G mediante un radioenlace táctico directo de largo alcance.</p>
+            <p class="flow-sub" data-i18n="flow_sub">El 80% de los predios forestales y cordilleranos son zonas oscuras de conectividad. Athene opera sin depender de torres 4G/5G mediante radioenlaces tácticos bilaterales directos.</p>
           </div>
-          <div class="flow-grid">
-            <!-- Nodo 1: Aeronave VTOL -->
-            <div class="flow-step-card">
+          <div class="flow-grid flow-grid-bilateral">
+            <!-- Nodo 2: Recepción Táctica en Terreno (Camioneta 4x4) -->
+            <div class="flow-step-card flow-step-flank">
+              <div class="step-num">02</div>
+              <div class="step-icon-wrap">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <h4 class="step-title" data-i18n="flow_s2_title">Cuadrilla 4x4 en Terreno</h4>
+              <p class="step-desc" data-i18n="flow_s2_desc">Receptor táctico de cabina emite alarma acústica y coordenadas GPS directas. La cuadrilla confirma recepción y retroalimenta el estado de intercepción vía enlace directo FHSS.</p>
+              <span class="step-badge badge-green" data-i18n="flow_s2_badge">Receptor Táctico & Retorno Táctico</span>
+            </div>
+
+            <!-- Conector Bilateral 1: Cuadrilla ⇄ Aeronave -->
+            <div class="flow-connector flow-connector-left" aria-hidden="true">
+              <div class="connector-line">
+                <div class="connector-pulse-out"></div>
+                <div class="connector-pulse-in"></div>
+              </div>
+              <span class="connector-label" data-i18n="flow_c1_label">⇄ Enlace Bilateral FHSS 915 MHz (&gt;20 km LOS)</span>
+            </div>
+
+            <!-- Nodo 1: Aeronave VTOL (Nodo Central Aéreo) -->
+            <div class="flow-step-card flow-step-center">
               <div class="step-num">01</div>
               <div class="step-icon-wrap">
                 <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -389,41 +412,22 @@
                   <path d="M2 12l10 5 10-5"></path>
                 </svg>
               </div>
-              <h4 class="step-title" data-i18n="flow_s1_title">Detección Edge AI a Bordo</h4>
-              <p class="step-desc" data-i18n="flow_s1_desc">La aeronave procesa el espectro térmico en tiempo real con NVIDIA Jetson a bordo. Identifica el precursor y calcula coordenadas GPS en &lt; 5 segundos sin conexión a internet ni servidores en tierra.</p>
-              <span class="step-badge" data-i18n="flow_s1_badge">Inferencia Zero-Cloud</span>
+              <h4 class="step-title" data-i18n="flow_s1_title">Aeronave VTOL (Nodo Central Aéreo)</h4>
+              <p class="step-desc" data-i18n="flow_s1_desc">La aeronave procesa el espectro térmico en tiempo real con NVIDIA Jetson a bordo. Emite telemetría táctica simultánea hacia la cuadrilla y la central, y recibe comandos de misión y acuse de recibo en tiempo real.</p>
+              <span class="step-badge" data-i18n="flow_s1_badge">Inferencia Edge AI Bilateral</span>
             </div>
 
-            <!-- Conector / Flecha 1 -->
-            <div class="flow-connector" aria-hidden="true">
-              <div class="connector-line"></div>
-              <div class="connector-pulse"></div>
-              <span class="connector-label" data-i18n="flow_c1_label">FHSS 915 MHz (&gt;20 km LOS)</span>
-            </div>
-
-            <!-- Nodo 2: Recepción Táctica en Terreno (Camioneta) -->
-            <div class="flow-step-card flow-step-highlight">
-              <div class="step-num">02</div>
-              <div class="step-icon-wrap">
-                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                </svg>
+            <!-- Conector Bilateral 2: Aeronave ⇄ Central C2 -->
+            <div class="flow-connector flow-connector-right" aria-hidden="true">
+              <div class="connector-line">
+                <div class="connector-pulse-out"></div>
+                <div class="connector-pulse-in"></div>
               </div>
-              <h4 class="step-title" data-i18n="flow_s2_title">Alerta Inmediata a Cuadrilla</h4>
-              <p class="step-desc" data-i18n="flow_s2_desc">El receptor táctico FHSS en la cabina de la camioneta 4x4 emite alarma acústica y despliega las coordenadas exactas en la pantalla del brigadista, guiando la intercepción directa en terreno.</p>
-              <span class="step-badge badge-green" data-i18n="flow_s2_badge">Receptor Táctico de Cabina</span>
-            </div>
-
-            <!-- Conector / Flecha 2 -->
-            <div class="flow-connector" aria-hidden="true">
-              <div class="connector-line"></div>
-              <div class="connector-pulse"></div>
-              <span class="connector-label" data-i18n="flow_c2_label">Uplink Satelital Starlink</span>
+              <span class="connector-label" data-i18n="flow_c2_label">⇄ Enlace Bilateral Satelital Starlink / C2</span>
             </div>
 
             <!-- Nodo 3: Base Nest & Central C2 -->
-            <div class="flow-step-card">
+            <div class="flow-step-card flow-step-flank">
               <div class="step-num">03</div>
               <div class="step-icon-wrap">
                 <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -431,9 +435,9 @@
                   <line x1="4" y1="22" x2="4" y2="15"></line>
                 </svg>
               </div>
-              <h4 class="step-title" data-i18n="flow_s3_title">Sincronización con Central C2</h4>
-              <p class="step-desc" data-i18n="flow_s3_desc">La estación base retransmite simultáneamente el paquete táctico vía satélite Starlink hacia la central de despacho del cliente (GIS / Webhook / WhatsApp de emergencia).</p>
-              <span class="step-badge" data-i18n="flow_s3_badge">Central de Despacho GIS</span>
+              <h4 class="step-title" data-i18n="flow_s3_title">Estación Base Nest & Central C2</h4>
+              <p class="step-desc" data-i18n="flow_s3_desc">La estación base sincroniza telemetría completa vía satélite Starlink hacia la central de despacho del cliente (GIS / Webhook), permitiendo monitoreo global y reasignación dinámica de vuelo.</p>
+              <span class="step-badge" data-i18n="flow_s3_badge">Gateway Satelital C2 Bidireccional</span>
             </div>
           </div>
         </div>
@@ -508,7 +512,7 @@
               <div class="roi-card-header">
                 <span class="roi-metric-k" data-i18n="roi_lbl_manned">Patrullaje Terrestre 4x4 (Status Quo):</span>
                 <span class="roi-info-trigger" tabindex="0" role="button" aria-label="Ver desglose de costos de patrullaje terrestre">ⓘ
-                  <span class="roi-tooltip" role="tooltip" data-i18n="roi_tt_manned">Estándar faena forestal Chile (5 meses): 2 vigilantes en rol 7x7 (~US$4.200/mes) + arriendo 4x4 equipada (~US$1.400/mes) + diésel y mantención en ripio (~US$800/mes) = US$6.400/mes por camioneta. 2 camionetas cubren ~25k ha con &lt;12% de visión efectiva.</span>
+                  <span class="roi-tooltip" role="tooltip" data-i18n="roi_tt_manned">Estándar de faena forestal en Chile (5 meses): 2 vigilantes en rol 7x7 (~US$4.200/mes) + arriendo 4x4 equipada (~US$1.400/mes) + diésel y mantención en ripio (~US$800/mes) = US$6.400/mes por camioneta. 2 camionetas cubren ~25k ha con &lt;12% de visión efectiva.</span>
                 </span>
               </div>
               <span class="roi-metric-v roi-v-manned" id="roi-manned-val">US$ 64.000 / temporada (5 m)</span>
@@ -522,7 +526,7 @@
                 </span>
               </div>
               <span class="roi-metric-v roi-v-strig" id="roi-strig-val">US$ 37.500 / temporada (5 m)</span>
-              <span class="roi-metric-sub" id="roi-strig-sub" data-i18n="roi_sub_strig">1 Base Nest Alpha + VTOL • Cobertura 100%</span>
+              <span class="roi-metric-sub" id="roi-sub-strig" data-i18n="roi_sub_strig">1 Base Nest Alpha + VTOL • Cobertura 100%</span>
             </div>
             <div class="roi-metric-card roi-highlight-card">
               <div class="roi-card-header">
@@ -538,7 +542,7 @@
               <div class="roi-card-header">
                 <span class="roi-metric-k" data-i18n="roi_lbl_co2">Escudo Preventivo de Combate:</span>
                 <span class="roi-info-trigger" tabindex="0" role="button" aria-label="Ver estimación de combate aéreo evitado">ⓘ
-                  <span class="roi-tooltip" role="tooltip" data-i18n="roi_tt_co2">Horas de combate aéreo evitadas: Interceptar 1 foco en fase pre-ignición ahorra ~20 h de vuelo de extinción al amanecer (aviones cisterna Air Tractor AT-802F a US$2.200/h + helicópteros a US$2.500/h = &gt;US$44.000), sin contar la madera comercial salvada.</span>
+                  <span class="roi-tooltip" role="tooltip" data-i18n="roi_tt_co2">Horas de combate aéreo evitadas: Interceptar 1 foco en fase de preignición ahorra ~20 h de vuelo de extinción al amanecer (aviones cisterna Air Tractor AT-802F a US$2.200/h + helicópteros a US$2.500/h = &gt;US$44.000), sin contar la madera comercial salvada.</span>
                 </span>
               </div>
               <span class="roi-metric-v roi-v-co2" id="roi-co2-val">&gt; US$ 44.000</span>
@@ -736,7 +740,7 @@
               <span data-i18n="cta_btn1">Postular a Piloto Operativo</span>
               <span class="arrow-icon">→</span>
             </button>
-            <a href="mailto:tomas@strigsystems.tech?subject=Consulta%20Inversion%20y%20Alianzas%20-%20Strig%20Systems" class="btn-ghost btn-large">
+            <a href="mailto:tomas@strigsystems.tech?subject=Consulta%20Inversi%C3%B3n%20y%20Alianzas%20-%20Strig%20Systems" class="btn-ghost btn-large">
               <span data-i18n="cta_btn2">Consultar por Alianzas / Inversión</span>
             </a>
           </div>
@@ -1044,7 +1048,7 @@
           <div class="brief-box">
             <h3 class="brief-box-title" data-i18n="eb_b1_title">1. El Problema Operacional</h3>
             <ul class="brief-list">
-              <li data-i18n="eb_b1_p1"><strong>Ventana ciega nocturna (20:00 a 06:00):</strong> La aviación tripulada combate de día pero no vuela de noche por normativa DGAC y riesgo de choque con el relieve (CFIT).</li>
+              <li data-i18n="eb_b1_p1"><strong>Ventana ciega nocturna (20:00 a 06:00):</strong> La aviación tripulada combate de día, pero no vuela de noche por normativa DGAC y riesgo de choque con el relieve (CFIT).</li>
               <li data-i18n="eb_b1_p2"><strong>Costo industrial masivo:</strong> Gasto consolidado anual de US$130M en combate y prevención en Chile (Fuente: CORMA).</li>
               <li data-i18n="eb_b1_p3"><strong>Puntos ciegos terrestres:</strong> Patrullas en 4x4 cubren &lt; 12% del predio, ciegas ante quebradas y rodales interiores donde se inician fogatas y focos intencionales.</li>
             </ul>
@@ -1053,7 +1057,7 @@
           <div class="brief-box">
             <h3 class="brief-box-title" data-i18n="eb_b2_title">2. Solución Tecnológica</h3>
             <ul class="brief-list">
-              <li data-i18n="eb_b2_p1"><strong>Aeronave VTOL Lift+Cruise (2,1 m):</strong> Despegue vertical en claro de bosque, 90 min de patrulla y 15 km de radio operativo.</li>
+              <li data-i18n="eb_b2_p1"><strong>Aeronave VTOL Lift+Cruise (2,1 m):</strong> Despegue vertical en un claro de bosque, 90 min de patrulla y 15 km de radio operativo.</li>
               <li data-i18n="eb_b2_p2"><strong>Edge AI Zero-Cloud a Bordo:</strong> Cómputo NVIDIA Jetson + aceleración TensorRT; detección térmica en &lt; 5 s sin conexión a internet ni señal celular.</li>
               <li data-i18n="eb_b2_p3"><strong>Telemetría Táctica FHSS 915 MHz:</strong> Alerta acústica y coordenadas GPS directas a la cabina de la camioneta en terreno (&gt;20 km LOS).</li>
             </ul>
@@ -1064,7 +1068,7 @@
             <ul class="brief-list">
               <li data-i18n="eb_b3_p1"><strong>Status Quo Terrestre:</strong> 2 camionetas 4x4 con guardias 7x7 = US$64.000 / temporada de 5 meses para 25.000 ha.</li>
               <li data-i18n="eb_b3_p2"><strong>Suscripción Athene IaaS:</strong> 1 Base Nest Alpha + VTOL = US$37.500 / temporada. <strong>Ahorro directo de US$26.500 (-41%)</strong>.</li>
-              <li data-i18n="eb_b3_p3"><strong>Escudo de Combate Aéreo:</strong> Interceptar 1 foco en pre-ignición evita ~20 h de aviones cisterna Air Tractor AT-802F y helicópteros (&gt;US$44.000).</li>
+              <li data-i18n="eb_b3_p3"><strong>Escudo de Combate Aéreo:</strong> Interceptar 1 foco en preignición evita ~20 h de vuelo de aviones cisterna Air Tractor AT-802F y helicópteros (&gt;US$44.000).</li>
             </ul>
           </div>
 

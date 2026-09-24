@@ -16,7 +16,7 @@ Cinematic aerial drone footage, sleek matte-black carbon-fiber hybrid VTOL unman
 ---
 
 ### Prompt 2: Feed Térmico Aéreo FLIR en Visión Ironbow (Simulador C2 / Tecnología)
-* **Objetivo:** Reproducir la perspectiva aérea auténtica del sensor térmico bi-espectral discriminando un precursor térmico (fogata o vehículo) en la oscuridad.
+* **Objetivo:** Reproducir la perspectiva aérea auténtica del sensor térmico biespectral discriminando un precursor térmico (fogata o vehículo) en la oscuridad.
 * **Aspect Ratio:** 16:9
 * **Prompt para IA (Inglés Técnico):**
 ```text
