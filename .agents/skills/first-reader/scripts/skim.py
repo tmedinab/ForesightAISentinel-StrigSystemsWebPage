@@ -15,6 +15,9 @@ import re
 import sys
 from pathlib import Path
 
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
+
 WPM = 238  # average adult silent reading speed (Brysbaert 2019 meta-analysis)
 MOBILE_CHARS_PER_LINE = 38
 MOBILE_LINES_PER_SCREEN = 14
