@@ -57,37 +57,37 @@ const translations = {
     th_tower: "Torres Térmicas Fijas<br><span class=\"th-sub\">Mástiles Ópticos</span>",
     th_drone: "Drones Manuales<br><span class=\"th-sub\">Cuadrillas Nocturnas</span>",
     strig_badge: "Nuestra Arquitectura",
-    th_strig: "Strig Systems<br><span class=\"th-sub\">Athene (VTOL + Edge AI)</span>",
+    th_strig: "Strig Systems<br><span class=\"th-sub\">Athene (VTOL Noctua-01 + Edge AI)</span>",
     r1_dim: "Patrullaje Nocturno Continuo",
     r1_sat: "Pasos orbitales discretos (1 a 4 horas). Vacío ciego entre pasadas.",
     r1_tower: "Continuo 24/7, pero estrictamente limitado a línea de vista (LOS).",
     r1_drone: "30 a 45 min por batería. Limitado por fatiga y visibilidad de operadores.",
-    r1_strig: "<strong>Patrullaje autónomo programado</strong> en las 10 horas de vulnerabilidad nocturna.",
+    r1_strig: "<strong>Patrullaje autónomo programado</strong> en las 10 horas de vulnerabilidad nocturna con aeronave VTOL Noctua-01.",
     r2_dim: "Latencia de Detección & Alerta",
     r2_sat: "<span class=\"badge-negative\">30 a 90 minutos</span> (bajada orbital y procesamiento satelital).",
     r2_tower: "Instantánea en sensor; requiere verificación manual en central C2.",
     r2_drone: "Instantánea para operador local; demorada a central si no hay 4G/5G.",
-    r2_strig: "<span class=\"badge-positive\">&lt; 5 segundos</span> (Inferencia Edge AI local a bordo + radioenlace táctico).",
+    r2_strig: "<span class=\"badge-positive\">&lt; 5 segundos</span> (Inferencia Edge NPU local a bordo + radioenlace táctico).",
     r3_dim: "Detección de Precursores (Humanos / Vehículos)",
     r3_sat: "<span class=\"badge-negative\">0%</span> (Resolución 375m a 1km. Incapaz de ver personas o fogatas).",
     r3_tower: "Nula en zonas boscosas densas o senderos fuera de visión directa.",
     r3_drone: "Posible a baja cota, pero arriesgando cuadrillas humanas en el bosque.",
-    r3_strig: "<span class=\"badge-positive\">Detección nocturna de personas</span> y vehículos antes de la ignición (99,7% de causas).",
+    r3_strig: "<span class=\"badge-positive\">Detección óptica/térmica</span> de personas y vehículos antes de la ignición (99,7% de causas).",
     r4_dim: "Puntos Ciegos Topográficos",
     r4_sat: "Afectado por nubes densas, humo copioso y copas arbóreas cerradas.",
     r4_tower: "<span class=\"badge-negative\">Crítico:</span> Puntos ciegos físicos tras cerros, quebradas y valles.",
     r4_drone: "Limitado por relieve agreste y restricción de alcance visual (VLOS).",
-    r4_strig: "<span class=\"badge-positive\">Cero puntos ciegos:</span> Vuelo adaptativo de ala fija sobre quebradas y cañones.",
+    r4_strig: "<span class=\"badge-positive\">Mapeo adaptativo:</span> Vuelo autónomo por debajo de nubes, perfilando quebradas y laderas sin sombra topográfica.",
     r5_dim: "Riesgo Humano en Terreno",
     r5_sat: "Cero riesgo directo.",
     r5_tower: "Cero riesgo directo.",
     r5_drone: "<span class=\"badge-negative\">Alto riesgo:</span> Cuadrillas expuestas de noche en caminos forestales remotos.",
-    r5_strig: "<span class=\"badge-positive\">Cero riesgo humano:</span> Misión, despegue y aterrizaje 100% autónomos.",
+    r5_strig: "<span class=\"badge-positive\">Cero riesgo humano:</span> Misión, despegue y aterrizaje 100% autónomos desde estación de acople.",
     r6_dim: "Modelo Económico & Costo",
     r6_sat: "Suscripción SaaS (US$15k-$60k/año), sin detección de precursores.",
     r6_tower: "<span class=\"badge-negative\">Altísimo CAPEX:</span> US$40k-$100k por torre instalada (mástil + energía).",
     r6_drone: "CAPEX medio + alto costo en horas hombre nocturnas y camionetas 4x4.",
-    r6_strig: "<span class=\"badge-positive\">0 CAPEX (Intelligence as a Service):</span> 90% menor costo vs aviación tripulada.",
+    r6_strig: "<span class=\"badge-positive\">0 CAPEX (Intelligence as a Service):</span> Suscripción operativa por hectárea; 90% menor costo vs aviación tripulada.",
 
     // Technology
     tech_tag: "Capacidades Operativas",
@@ -99,12 +99,17 @@ const translations = {
     t2_desc: "Inferencia de visión computacional 100% local a bordo. La aeronave detecta, clasifica y valida amenazas en tiempo real sin requerir internet, nube externa ni conectividad celular.",
     t3_title: "Telemetría Táctica en Zonas Desconectadas",
     t3_desc: "Emisión de fichas de alerta y coordenadas exactas en menos de 5 segundos vía radioenlace táctico de largo alcance, garantizando operatividad en quebradas y predios remotos.",
-    t4_title: "Aeronave VTOL de Rango Extendido",
-    t4_desc: "Despegue y aterrizaje vertical independiente de pista en cualquier relieve. Cobertura territorial de cientos de hectáreas por patrullaje con alta resistencia a condiciones de viento.",
+    t4_title: "Aeronave VTOL Noctua-01",
+    t4_desc: "Vector aéreo híbrido de despegue y aterrizaje vertical independiente de pista. Hasta 90 min de autonomía, crucero eficiente de ala fija, envolvente de viento de hasta 45 km/h (24 kt) y cobertura de 15 km de radio operativo.",
     t5_title: "Georreferenciación Quirúrgica",
     t5_desc: "Proyección angular instantánea hacia el terreno asistida por posicionamiento centimétrico de alta precisión, calculando coordenadas exactas para el despacho inmediato de brigadas.",
-    t6_title: "Operación Segura & Certificada",
-    t6_desc: "Diseñado bajo rigurosos marcos de seguridad aeronáutica civil, protocolos de redundancia, paracaídas balístico y contingencia autónoma para misiones críticas complejas.",
+    t6_title: "Operación Segura & Marco DGAC",
+    t6_desc: "Diseñado bajo estándares de ingeniería aeroespacial. Protocolos operacionales en proceso de acreditación técnica bajo normativa DAN 151 / DAN 91 (DGAC Chile) para operaciones BVLOS con segregación y paracaídas balístico.",
+    spec_1: "<span class=\"spec-name\">Plataforma:</span> VTOL Noctua-01",
+    spec_2: "<span class=\"spec-name\">Envolvente:</span> Viento hasta 45 km/h (24 kt)",
+    spec_3: "<span class=\"spec-name\">Respuesta:</span> Alertas Tácticas en &lt; 5 Segundos",
+    spec_4: "<span class=\"spec-name\">Normativa:</span> Enfoque DGAC DAN 151 / BVLOS",
+    spec_5: "<span class=\"spec-name\">Modelo:</span> Intelligence as a Service (0 CAPEX)",
 
     // Pilot Program
     pilot_tag: "Validación en Terreno",
@@ -245,37 +250,37 @@ const translations = {
     th_tower: "Fixed Thermal Towers<br><span class=\"th-sub\">Optical Masts</span>",
     th_drone: "Manual Drones<br><span class=\"th-sub\">Night Ground Crews</span>",
     strig_badge: "Our Architecture",
-    th_strig: "Strig Systems<br><span class=\"th-sub\">Athene (VTOL + Edge AI)</span>",
+    th_strig: "Strig Systems<br><span class=\"th-sub\">Athene (Noctua-01 VTOL + Edge AI)</span>",
     r1_dim: "Continuous Night Patrol",
     r1_sat: "Discrete orbital passes (every 1 to 4 hours). Blind gaps between passes.",
     r1_tower: "Continuous 24/7, but strictly limited to line-of-sight (LOS).",
     r1_drone: "30 to 45 min per battery. Constrained by crew fatigue and nocturnal line-of-sight.",
-    r1_strig: "<strong>Scheduled autonomous patrol</strong> across the critical 10-hour nighttime vulnerability window.",
+    r1_strig: "<strong>Scheduled autonomous patrol</strong> across the critical 10-hour nighttime vulnerability window with Noctua-01 VTOL airframe.",
     r2_dim: "Detection & Alert Latency",
     r2_sat: "<span class=\"badge-negative\">30 to 90 minutes</span> (orbital downlink and cloud processing lag).",
     r2_tower: "Instant at sensor; requires manual verification by dispatch operator.",
     r2_drone: "Instant for local pilot; delayed to dispatch C2 without 4G/5G cell signal.",
-    r2_strig: "<span class=\"badge-positive\">&lt; 5 seconds</span> (onboard local Edge AI inference + tactical radio datalink).",
+    r2_strig: "<span class=\"badge-positive\">&lt; 5 seconds</span> (onboard local Edge NPU inference + tactical radio datalink).",
     r3_dim: "Precursor Detection (Humans / Vehicles)",
     r3_sat: "<span class=\"badge-negative\">0%</span> (375m to 1km resolution; incapable of spotting individuals or small campfires).",
     r3_tower: "Zero under dense canopy or topographic corridors away from direct mast view.",
     r3_drone: "Feasible at low altitude, but requires risking ground crews in the forest.",
-    r3_strig: "<span class=\"badge-positive\">Nocturnal detection of human presence</span> and vehicles prior to ignition (root cause of 99.7% of fires).",
+    r3_strig: "<span class=\"badge-positive\">Optical & thermal detection</span> of human presence and vehicles prior to ignition (root cause of 99.7% of fires).",
     r4_dim: "Topographic Blind Spots",
     r4_sat: "Degraded by cloud cover, heavy smoke, and dense tree canopy.",
     r4_tower: "<span class=\"badge-negative\">Critical:</span> Physical blind spots behind hills, ravines, and opposite slopes.",
     r4_drone: "Restricted by rugged topography and visual line of sight (VLOS) regulations.",
-    r4_strig: "<span class=\"badge-positive\">Zero blind spots:</span> Adaptive fixed-wing terrain contouring over canyons and ridges.",
+    r4_strig: "<span class=\"badge-positive\">Adaptive contour mapping:</span> Autonomous flight beneath cloud decks, navigating ravines and ridges without topographic shadow.",
     r5_dim: "Human Operational Hazard",
     r5_sat: "Zero physical hazard.",
     r5_tower: "Zero physical hazard.",
     r5_drone: "<span class=\"badge-negative\">High hazard:</span> Nocturnal ground crews operating on remote forest roads in danger zones.",
-    r5_strig: "<span class=\"badge-positive\">Zero human hazard:</span> 100% autonomous launch, patrol mission, and recovery.",
+    r5_strig: "<span class=\"badge-positive\">Zero human hazard:</span> 100% autonomous launch, patrol mission, and docking recovery.",
     r6_dim: "Economic Model & Cost",
     r6_sat: "Software subscription (US$15k-$60k/yr), zero precursor prevention capability.",
     r6_tower: "<span class=\"badge-negative\">Extremely High CAPEX:</span> US$40k-$100k per installed mast (power + micro-links).",
     r6_drone: "Medium CAPEX + heavy recurring night-shift labor and 4x4 fleet logistics.",
-    r6_strig: "<span class=\"badge-positive\">0 CAPEX (Intelligence as a Service):</span> 90% cost reduction vs manned aerial patrol.",
+    r6_strig: "<span class=\"badge-positive\">0 CAPEX (Intelligence as a Service):</span> Operational subscription per protected hectare; 90% cost reduction vs manned patrol.",
 
     // Technology
     tech_tag: "Operational Capabilities",
@@ -287,12 +292,17 @@ const translations = {
     t2_desc: "100% local onboard computer vision inference. The aircraft detects, classifies, and verifies threats in real time without requiring internet, cloud servers, or cellular connectivity.",
     t3_title: "Tactical Telemetry in Dark Zones",
     t3_desc: "Transmission of structured alert packages and exact coordinates in under 5 seconds over long-range tactical radio links, fully operational in canyons and remote terrain.",
-    t4_title: "Extended-Range Autonomous VTOL Airframe",
-    t4_desc: "Runway-independent vertical takeoff and landing across any terrain. Continuous tactical surveillance covering hundreds of hectares per mission with high wind resistance.",
+    t4_title: "Noctua-01 Autonomous VTOL Airframe",
+    t4_desc: "Runway-independent hybrid vertical takeoff and fixed-wing cruise vector. Up to 90 min endurance, 45 km/h (24 kt) wind envelope tolerance, and 15 km operational radius across rugged topography.",
     t5_title: "Real-Time Surgical Geolocalization",
     t5_desc: "Instant angular terrain projection assisted by high-precision centimetric positioning, calculating exact target coordinates for the rapid dispatch of ground crews.",
-    t6_title: "Certified Safety & Mission Redundancy",
-    t6_desc: "Engineered under rigorous civil aviation safety standards, redundant subsystems, ballistic parachute recovery, and autonomous contingency fail-safes for critical operations.",
+    t6_title: "Certified Safety & DGAC Compliance",
+    t6_desc: "Engineered under aerospace safety standards. Flight procedures and redundancy protocols aligned with Chilean civil aviation DAN 151 / DAN 91 technical regulations for BVLOS operations with ballistic parachute.",
+    spec_1: "<span class=\"spec-name\">Platform:</span> VTOL Noctua-01",
+    spec_2: "<span class=\"spec-name\">Flight Envelope:</span> Wind up to 45 km/h (24 kt)",
+    spec_3: "<span class=\"spec-name\">Response:</span> Tactical Alerts in &lt; 5 Seconds",
+    spec_4: "<span class=\"spec-name\">Regulation:</span> DGAC DAN 151 / BVLOS Scope",
+    spec_5: "<span class=\"spec-name\">Model:</span> Intelligence as a Service (0 CAPEX)",
 
     // Pilot Program
     pilot_tag: "Field Validation",
@@ -418,16 +428,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Card Mouse Tracking Lighting Effect
+  // Card Mouse Tracking Lighting Effect (Optimized with RAF)
   const glassPanels = document.querySelectorAll('.glass-panel');
   glassPanels.forEach(panel => {
+    let ticking = false;
     panel.addEventListener('mousemove', (e) => {
-      const rect = panel.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      panel.style.setProperty('--mouse-x', `${x}px`);
-      panel.style.setProperty('--mouse-y', `${y}px`);
-    });
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const rect = panel.getBoundingClientRect();
+          panel.style.setProperty('--mouse-x', `${e.clientX - rect.left}px`);
+          panel.style.setProperty('--mouse-y', `${e.clientY - rect.top}px`);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
   });
 
   // Initialize Mobile Menu & Header Scroll

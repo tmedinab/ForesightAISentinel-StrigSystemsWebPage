@@ -29,5 +29,7 @@ yarn-error.log*
 node_modules/
 dist/
 scratch/
+.first-reader/
+.first-reader*
 
 build/
