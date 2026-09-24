@@ -45,7 +45,7 @@ const translations = {
     p3_head: "Brigadistas en Terreno",
     p3_desc: "Exposición a peligro extremo ingresando de noche a ciegas en el bosque sin verificación aérea previa del terreno.",
     p3_tag: "Riesgo vital innecesario",
-    quote_text: "Satélites sufren latencia orbital; torres fijas tienen puntos ciegos topográficos; la vigilancia tripulada (avionetas y cuadrillas) no opera de noche o arriesga vidas. Ninguno responde a tiempo la pregunta decisiva: <em>¿Hay una presencia humana no autorizada o anomalía térmica ahora mismo en estas coordenadas exactas?</em>",
+    quote_text: "Plataforma concebida desde la ingeniería aeroespacial y el combate de incendios en primera línea: mientras satélites sufren latencia orbital y torres fijas tienen puntos ciegos, la vigilancia tripulada no vuela de noche. Ninguno responde a tiempo la pregunta decisiva: <em>¿Hay una presencia humana no autorizada o anomalía térmica ahora mismo en estas coordenadas exactas?</em>",
 
     // Tactical Benchmark
     comp_tag: "Benchmark Táctico",
@@ -78,11 +78,11 @@ const translations = {
     r4_tower: "<span class=\"badge-negative\">Crítico:</span> Puntos ciegos físicos insalvables tras cerros, quebradas y laderas opuestas.",
     r4_drone: "Crítico. Las cuadrillas terrestres no tienen visibilidad tras cerros ni en quebradas profundas; las aeronaves diurnas sufren con nubosidad baja y humo denso.",
     r4_strig: "<span class=\"badge-positive\">Mapeo adaptativo:</span> Vuelo autónomo por debajo del techo nuboso, perfilando quebradas y laderas sin sombra topográfica.",
-    r5_dim: "Riesgo Humano en Terreno",
+    r5_dim: "Riesgo Humano & Apalancamiento Operativo",
     r5_sat: "Cero exposición humana directa.",
     r5_tower: "Cero exposición humana directa (salvo mantenimiento en cumbres aisladas).",
-    r5_drone: "<span class=\"badge-negative\">Alto riesgo vital:</span> Peligro de accidentes aéreos en vuelo rasante sobre relieve agreste, y cuadrillas terrestres expuestas en caminos forestales aislados en horario de riesgo.",
-    r5_strig: "<span class=\"badge-positive\">Cero exposición humana:</span> Misión, despegue y aterrizaje 100% autónomos desde estación de acople.",
+    r5_drone: "<span class=\"badge-negative\">Alto riesgo vital & Ratio 1:1:</span> Requiere 1 piloto + 1 observador certificado por aeronave. Peligro de accidentes aéreos en vuelo rasante sobre relieve agreste, y cuadrillas terrestres expuestas en caminos forestales aislados en horario nocturno crítico.",
+    r5_strig: "<span class=\"badge-positive\">Cero exposición & Multiplicador 1:N:</span> Misión, despegue y aterrizaje 100% autónomos desde estación de acople. Un solo operador táctico C2 supervisa hasta 5 cuadrículas de vuelo automatizado simultáneamente.",
     r6_dim: "Modelo Económico & Costo",
     r6_sat: "Suscripción SaaS (US$15k-$60k/año). Accesible para escala macro; no sustituye la vigilancia táctica.",
     r6_tower: "<span class=\"badge-negative\">Altísimo CAPEX:</span> US$40k-$100k por torre instalada (mástil, óptica militar, energía solar y caminos de acceso).",
@@ -104,7 +104,7 @@ const translations = {
     t5_title: "Georreferenciación Quirúrgica",
     t5_desc: "Proyección angular instantánea hacia el terreno asistida por posicionamiento centimétrico RTK/GNSS de alta precisión, calculando coordenadas exactas para el despacho inmediato de brigadas.",
     t6_title: "Operación Segura & Marco DGAC",
-    t6_desc: "Diseñado bajo estándares de ingeniería aeroespacial. Protocolos operacionales en proceso de acreditación técnica bajo normativa DAN 151 / DAN 91 (DGAC Chile) para operaciones BVLOS con segregación de espacio aéreo, telemetría redundante y paracaídas balístico.",
+    t6_desc: "Diseñado bajo estándares de ingeniería aeroespacial. Arquitectura 4+1 lift+cruise con tolerancia a pérdida de motor sustentador, paracaídas balístico pirotécnico autónomo y protocolos operacionales bajo marco DAN 151 / DAN 91 (DGAC Chile) para BVLOS segregado con retorno automático ante contingencia (Auto-RTH).",
     spec_1: "<span class=\"spec-name\">Plataforma:</span> VTOL Noctua-01",
     spec_2: "<span class=\"spec-name\">Envolvente:</span> Viento 45 km/h | -5°C a +45°C",
     spec_3: "<span class=\"spec-name\">Respuesta:</span> Alerta Táctica &lt; 5 s (FHSS)",
@@ -143,7 +143,7 @@ const translations = {
     // ROI Calculator
     roi_badge: "MODELO ECONÓMICO",
     roi_title: "Calculadora de Retorno Operativo Territorial",
-    roi_sub: "Modelo Intelligence as a Service (0 CAPEX). Estima el ahorro operacional integral (~85% vs aviación tripulada) y la reducción de emisiones según la superficie de tus predios.",
+    roi_sub: "Modelo Intelligence as a Service (0 CAPEX). 1 estación autónoma Nest Alpha cubre clústeres de 12.000 a 25.000 ha (como el predio San Ignacio del C2). Superficies mayores (50k y 100k ha) escalan modularmente con 2 a 4 bases interconectadas, reduciendo ~85% el gasto operacional territorial consolidado.",
     roi_lbl_area: "Superficie a Proteger:",
     roi_lbl_manned: "Costo Aviación Tripulada Estimado:",
     roi_sub_manned: "Avioneta diurna + cuadrilla",
@@ -281,7 +281,7 @@ const translations = {
     p3_head: "Ground Firefighters",
     p3_desc: "Extreme physical hazard entering rugged mountainous terrain in darkness without prior aerial reconnaissance.",
     p3_tag: "Avoidable human risk",
-    quote_text: "Satellites suffer orbital latency; fixed watchtowers face topographic blind spots; conventional manned surveillance (patrol planes and ground crews) is grounded at night or risks human lives. None answers the decisive question in time: <em>Is there an unauthorized human presence or thermal anomaly right now at exact coordinates?</em>",
+    quote_text: "Conceived from aerospace engineering and frontline wildfire combat experience: while satellites face orbital latency and fixed towers have blind spots, manned surveillance cannot fly at night. None can answer the decisive question in time: <em>Is there an unauthorized human presence or thermal anomaly right now at exact coordinates?</em>",
 
     // Tactical Benchmark
     comp_tag: "Tactical Benchmark",
@@ -314,11 +314,11 @@ const translations = {
     r4_tower: "<span class=\"badge-negative\">Critical:</span> Irrecoverable physical blind spots behind ridgelines, valleys, and opposing slopes.",
     r4_drone: "Critical. Ground crews have zero line of sight behind ridges or deep ravines; daytime aircraft face severe degradation in low clouds and heavy smoke.",
     r4_strig: "<span class=\"badge-positive\">Adaptive contour mapping:</span> Autonomous flight beneath cloud decks, navigating ravines and ridges without topographic shadow.",
-    r5_dim: "Human Operational Hazard",
+    r5_dim: "Human Operational Hazard & Ratio",
     r5_sat: "Zero direct human exposure.",
     r5_tower: "Zero direct human exposure (except maintenance on isolated peaks).",
-    r5_drone: "<span class=\"badge-negative\">High human hazard:</span> Severe crash risk (CFIT) in low-altitude patrol, plus ground crews exposed on isolated logging tracks during high-arson hours.",
-    r5_strig: "<span class=\"badge-positive\">Zero human hazard:</span> 100% autonomous launch, patrol mission, and docking recovery from automated station.",
+    r5_drone: "<span class=\"badge-negative\">High life risk & 1:1 ratio:</span> Requires 1 pilot + 1 certified spotter per airborne asset. Crash risk in low-altitude patrol, plus ground crews exposed on isolated logging tracks during high-arson night hours.",
+    r5_strig: "<span class=\"badge-positive\">Zero exposure & 1:N multiplier:</span> 100% autonomous launch, patrol mission, and docking recovery from automated station. A single tactical C2 operator monitors up to 5 automated flight grids simultaneously.",
     r6_dim: "Economic Model & Cost",
     r6_sat: "SaaS software subscription (US$15k-$60k/yr). Accessible at macro scale; does not replace tactical parcel surveillance.",
     r6_tower: "<span class=\"badge-negative\">Extremely High CAPEX:</span> US$40k-$100k per installed mast (tower, military-grade optics, solar arrays, and access roads).",
@@ -340,7 +340,7 @@ const translations = {
     t5_title: "Real-Time Surgical Geolocalization",
     t5_desc: "Instant angular terrain projection assisted by high-precision RTK/GNSS centimetric positioning, calculating exact target coordinates for the rapid dispatch of ground crews.",
     t6_title: "Certified Safety & DGAC Compliance",
-    t6_desc: "Engineered under aerospace safety standards. Flight procedures and redundancy protocols aligned with Chilean civil aviation DAN 151 / DAN 91 technical regulations for BVLOS operations with airspace segregation, redundant telemetry, and ballistic parachute.",
+    t6_desc: "Engineered under aerospace safety standards. Redundant 4+1 lift+cruise architecture with lift-motor loss tolerance, autonomous pyrotechnic ballistic parachute, and operational procedures aligned with Chilean DGAC DAN 151 / DAN 91 regulations for segregated BVLOS with automatic contingency return (Auto-RTH).",
     spec_1: "<span class=\"spec-name\">Platform:</span> VTOL Noctua-01",
     spec_2: "<span class=\"spec-name\">Flight Envelope:</span> Wind 45 km/h | -5°C to +45°C",
     spec_3: "<span class=\"spec-name\">Response:</span> Tactical Alert &lt; 5 s (FHSS)",
@@ -379,7 +379,7 @@ const translations = {
     // ROI Calculator
     roi_badge: "ECONOMIC MODEL",
     roi_title: "Territorial Operational ROI Calculator",
-    roi_sub: "Intelligence as a Service model (0 CAPEX). Estimate consolidated operational savings (~85% vs manned aviation) and emissions avoided based on your acreage.",
+    roi_sub: "Intelligence as a Service model (0 CAPEX). 1 autonomous Nest Alpha base covers clusters of 12,000 to 25,000 ha (matching C2 San Ignacio sector). Larger holdings (50k & 100k ha) scale modularly with 2 to 4 interconnected bases, slashing ~85% of net territorial OPEX.",
     roi_lbl_area: "Acreage to Protect:",
     roi_lbl_manned: "Estimated Manned Aviation Cost:",
     roi_sub_manned: "Daytime aircraft + ground crew",
@@ -1421,8 +1421,11 @@ function initC2Simulator() {
     if (exportBtn) {
       exportBtn.addEventListener('click', () => {
         if (alertStatus) {
+          const isEn = (document.documentElement.getAttribute('data-lang') || 'es') === 'en';
           alertStatus.style.display = 'block';
-          alertStatus.innerHTML = `✓ Paquete FHSS 915 MHz emitido a Central C2 y Cuadrilla Alpha-1. Tiempo de transmisión: 2,4s.`;
+          alertStatus.innerHTML = isEn
+            ? `✓ Multichannel tactical package transmitted (2.1s): FHSS 915 MHz to Crew Alpha-1 in field + Starlink Satlink Uplink + Central C2 GIS Webhook.`
+            : `✓ Paquete táctico multicanal transmitido (2,1s): Radioenlace FHSS 915 MHz a Cuadrilla Alpha-1 en terreno + Uplink Satelital Starlink + Webhook Central GIS / Despacho.`;
         }
       });
     }

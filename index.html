@@ -182,7 +182,7 @@
         <div class="quote-strip glass-panel">
           <span class="quote-symbol">“</span>
           <p class="quote-text" data-i18n="quote_text">
-            Satélites sufren latencia orbital; torres fijas tienen puntos ciegos topográficos; la vigilancia tripulada (avionetas y cuadrillas) no opera de noche o arriesga vidas. Ninguno responde a tiempo la pregunta decisiva: <em>¿Hay una presencia humana no autorizada o anomalía térmica ahora mismo en estas coordenadas exactas?</em>
+            Plataforma concebida desde la ingeniería aeroespacial y el combate de incendios en primera línea: mientras satélites sufren latencia orbital y torres fijas tienen puntos ciegos, la vigilancia tripulada no vuela de noche. Ninguno responde a tiempo la pregunta decisiva: <em>¿Hay una presencia humana no autorizada o anomalía térmica ahora mismo en estas coordenadas exactas?</em>
           </p>
         </div>
       </div>
@@ -245,11 +245,11 @@
                 <td class="td-tech td-highlight" data-i18n="r4_strig"><span class="badge-positive">Mapeo adaptativo:</span> Vuelo autónomo por debajo del techo nuboso, perfilando quebradas y laderas sin sombra topográfica.</td>
               </tr>
               <tr>
-                <td class="td-dim" data-i18n="r5_dim">Riesgo Humano en Terreno</td>
+                <td class="td-dim" data-i18n="r5_dim">Riesgo Humano & Apalancamiento Operativo</td>
                 <td class="td-tech" data-i18n="r5_sat">Cero exposición humana directa.</td>
                 <td class="td-tech" data-i18n="r5_tower">Cero exposición humana directa (salvo mantenimiento en cumbres aisladas).</td>
-                <td class="td-tech" data-i18n="r5_drone"><span class="badge-negative">Alto riesgo vital:</span> Peligro de accidentes aéreos en vuelo rasante sobre relieve agreste, y cuadrillas terrestres expuestas en caminos forestales aislados en horario de riesgo.</td>
-                <td class="td-tech td-highlight" data-i18n="r5_strig"><span class="badge-positive">Cero exposición humana:</span> Misión, despegue y aterrizaje 100% autónomos desde estación de acople.</td>
+                <td class="td-tech" data-i18n="r5_drone"><span class="badge-negative">Alto riesgo vital & Ratio 1:1:</span> Requiere 1 piloto + 1 observador certificado por aeronave. Peligro de accidentes aéreos en vuelo rasante sobre relieve agreste, y cuadrillas terrestres expuestas en caminos forestales aislados en horario nocturno crítico.</td>
+                <td class="td-tech td-highlight" data-i18n="r5_strig"><span class="badge-positive">Cero exposición & Multiplicador 1:N:</span> Misión, despegue y aterrizaje 100% autónomos desde estación de acople. Un solo operador táctico C2 supervisa hasta 5 cuadrículas de vuelo automatizado simultáneamente.</td>
               </tr>
               <tr>
                 <td class="td-dim" data-i18n="r6_dim">Modelo Económico & Costo</td>
@@ -347,7 +347,7 @@
               </svg>
             </div>
             <h3 class="tech-title" data-i18n="t6_title">Operación Segura & Marco DGAC</h3>
-            <p class="tech-desc" data-i18n="t6_desc">Diseñado bajo estándares de ingeniería aeroespacial. Protocolos operacionales en proceso de acreditación técnica bajo normativa DAN 151 / DAN 91 (DGAC Chile) para operaciones BVLOS con segregación de espacio aéreo, telemetría redundante y paracaídas balístico.</p>
+            <p class="tech-desc" data-i18n="t6_desc">Diseñado bajo estándares de ingeniería aeroespacial. Arquitectura 4+1 lift+cruise con tolerancia a pérdida de motor sustentador, paracaídas balístico pirotécnico autónomo y protocolos operacionales bajo marco DAN 151 / DAN 91 (DGAC Chile) para BVLOS segregado con retorno automático ante contingencia (Auto-RTH).</p>
           </div>
         </div>
 
@@ -696,7 +696,7 @@
                 <div class="dossier-field"><span class="field-k">Firma Térmica:</span> <span class="field-v hud-alert" id="dossier-temp">284°C (Punto Anómalo Crítico)</span></div>
                 <div class="dossier-field"><span class="field-k">Clasificación:</span> <span class="field-v hud-alert">Precursor Humano / Foco Inicial</span></div>
                 <div class="dossier-field"><span class="field-k">Validación Multi-frame:</span> <span class="field-v">16 de 16 frames consecutivos</span></div>
-                <div class="dossier-field"><span class="field-k">Protocolo Red:</span> <span class="field-v">FHSS 915 MHz / Formato STANAG 4586</span></div>
+                <div class="dossier-field"><span class="field-k">Exportación Multicanal:</span> <span class="field-v">FHSS 915 MHz / Uplink Starlink / Webhook GIS</span></div>
               </div>
               <div class="dossier-actions">
                 <button type="button" class="btn btn-secondary" id="dossier-copy-btn">Copiar Coordenadas GPS</button>
@@ -755,7 +755,7 @@
           <div class="roi-header">
             <span class="roi-badge" data-i18n="roi_badge">MODELO ECONÓMICO</span>
             <h3 class="roi-title" data-i18n="roi_title">Calculadora de Retorno Operativo Territorial</h3>
-            <p class="roi-sub" data-i18n="roi_sub">Modelo Intelligence as a Service (0 CAPEX). Estima el ahorro operacional integral (~85% vs aviación tripulada) y la reducción de emisiones según la superficie de tus predios.</p>
+            <p class="roi-sub" data-i18n="roi_sub">Modelo Intelligence as a Service (0 CAPEX). 1 estación autónoma Nest Alpha cubre clústeres de 12.000 a 25.000 ha (como el predio San Ignacio del C2). Superficies mayores (50k y 100k ha) escalan modularmente con 2 a 4 bases interconectadas, reduciendo ~85% el gasto operacional territorial consolidado.</p>
           </div>
 
           <div class="roi-slider-container">
@@ -999,7 +999,6 @@
           <a href="mailto:contacto@strigsystems.tech">contacto@strigsystems.tech</a>
           <a href="mailto:tmedina@strigsystems.tech">tmedina@strigsystems.tech (Lead)</a>
           <a href="privacy.html" data-i18n="f_privacy_link">Política de Privacidad & Gobernanza</a>
-          <a href="https://github.com/tmedinab" target="_blank" rel="noopener noreferrer">GitHub @tmedinab</a>
           <a href="https://strigsystems.tech">strigsystems.tech</a>
         </div>
       </div>
