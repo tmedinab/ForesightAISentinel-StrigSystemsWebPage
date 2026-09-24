@@ -182,7 +182,7 @@
         <div class="quote-strip glass-panel">
           <span class="quote-symbol">“</span>
           <p class="quote-text" data-i18n="quote_text">
-            Satélites tienen latencia orbital; torres fijas tienen puntos ciegos topográficos; drones manuales exigen cuadrillas nocturnas en riesgo. Ninguno responde a tiempo la pregunta decisiva: <em>¿Hay una amenaza humana o térmica en este instante y coordenadas exactas?</em>
+            Satélites sufren latencia orbital; torres fijas tienen puntos ciegos topográficos; la vigilancia tripulada (avionetas y cuadrillas) no opera de noche o arriesga vidas. Ninguno responde a tiempo la pregunta decisiva: <em>¿Hay una presencia humana no autorizada o anomalía térmica ahora mismo en estas coordenadas exactas?</em>
           </p>
         </div>
       </div>
@@ -195,7 +195,7 @@
           <span class="section-tag" data-i18n="comp_tag">Benchmark Táctico</span>
           <h2 class="section-title" data-i18n="comp_title">Por Qué las Soluciones Tradicionales Fallan de Noche</h2>
           <p class="section-subtitle" data-i18n="comp_sub">
-            Análisis técnico comparativo entre satélites de órbita baja, torres térmicas fijas, drones manuales y la plataforma autónoma Athene.
+            Análisis técnico comparativo entre satélites de órbita baja, torres térmicas fijas, vigilancia tripulada convencional y la plataforma autónoma Athene.
           </p>
         </div>
 
@@ -208,7 +208,7 @@
                 <th class="th-dim" data-i18n="th_dim">Dimensión Operativa</th>
                 <th class="th-tech" data-i18n="th_sat">Satélites LEO<br><span class="th-sub">FIRMS / OroraTech</span></th>
                 <th class="th-tech" data-i18n="th_tower">Torres Térmicas Fijas<br><span class="th-sub">Mástiles Ópticos</span></th>
-                <th class="th-tech" data-i18n="th_drone">Drones Manuales<br><span class="th-sub">Cuadrillas Nocturnas</span></th>
+                <th class="th-tech" data-i18n="th_drone">Vigilancia Tripulada<br><span class="th-sub">Avionetas Diurnas + Cuadrillas/Drones</span></th>
                 <th class="th-tech th-highlight">
                   <div class="winner-badge" data-i18n="strig_badge">Nuestra Arquitectura</div>
                   <div data-i18n="th_strig">Strig Systems<br><span class="th-sub">Athene (VTOL Noctua-01 + Edge AI)</span></div>
@@ -218,45 +218,45 @@
             <tbody>
               <tr>
                 <td class="td-dim" data-i18n="r1_dim">Patrullaje Nocturno Continuo</td>
-                <td class="td-tech" data-i18n="r1_sat">Pasos orbitales discretos (1 a 4 horas). Vacío ciego entre pasadas.</td>
-                <td class="td-tech" data-i18n="r1_tower">Continuo 24/7, pero estrictamente limitado a línea de vista (LOS).</td>
-                <td class="td-tech" data-i18n="r1_drone">30 a 45 min por batería. Limitado por fatiga y visibilidad de operadores.</td>
-                <td class="td-tech td-highlight" data-i18n="r1_strig"><strong>Patrullaje autónomo programado</strong> en las 10 horas de vulnerabilidad nocturna con aeronave VTOL Noctua-01.</td>
+                <td class="td-tech" data-i18n="r1_sat">Pasos orbitales discretos (1 a 4 h). Estándar macrocontinental indiscutido de día, pero con ventana ciega crítica durante la noche.</td>
+                <td class="td-tech" data-i18n="r1_tower">Continuo 24/7 de alta confiabilidad, pero estrictamente limitado a la línea de vista directa (LOS) de su cuenca visible.</td>
+                <td class="td-tech" data-i18n="r1_drone">Inoperante de noche. Las avionetas quedan en tierra al atardecer por restricción DGAC/VFR (riesgo CFIT en penumbra). En tierra, las cuadrillas con drones sufren fatiga y 30-45 min de batería por vuelo.</td>
+                <td class="td-tech td-highlight" data-i18n="r1_strig"><strong>Patrullaje autónomo programado</strong> en las 10 horas de vulnerabilidad nocturna con aeronave VTOL Noctua-01 y estación de acople.</td>
               </tr>
               <tr>
                 <td class="td-dim" data-i18n="r2_dim">Latencia de Detección & Alerta</td>
-                <td class="td-tech" data-i18n="r2_sat"><span class="badge-negative">30 a 90 minutos</span> (bajada orbital y procesamiento satelital).</td>
-                <td class="td-tech" data-i18n="r2_tower">Instantánea en sensor; requiere verificación manual en central C2.</td>
-                <td class="td-tech" data-i18n="r2_drone">Instantánea para operador local; demorada a central si no hay 4G/5G.</td>
-                <td class="td-tech td-highlight" data-i18n="r2_strig"><span class="badge-positive">&lt; 5 segundos</span> (Inferencia Edge NPU local a bordo + radioenlace táctico).</td>
+                <td class="td-tech" data-i18n="r2_sat"><span class="badge-negative">30 a 90 minutos</span> (descarga orbital, procesamiento en la nube y distribución de alertas a centrales).</td>
+                <td class="td-tech" data-i18n="r2_tower">Instantánea en sensor óptico; requiere operador humano 24/7 en central para verificación y filtrado de falsas alarmas.</td>
+                <td class="td-tech" data-i18n="r2_drone">Instantánea para el piloto u operador local; demorada hacia la central de despacho si no existe cobertura 4G/5G en la quebrada o predio.</td>
+                <td class="td-tech td-highlight" data-i18n="r2_strig"><span class="badge-positive">&lt; 5 segundos</span> (Inferencia Edge NPU local a bordo + radioenlace táctico de telemetría de largo alcance).</td>
               </tr>
               <tr>
                 <td class="td-dim" data-i18n="r3_dim">Detección de Precursores (Humanos / Vehículos)</td>
-                <td class="td-tech" data-i18n="r3_sat"><span class="badge-negative">0%</span> (Resolución 375m a 1km. Incapaz de ver personas o fogatas).</td>
-                <td class="td-tech" data-i18n="r3_tower">Nula en zonas boscosas densas o senderos fuera de visión directa.</td>
-                <td class="td-tech" data-i18n="r3_drone">Posible a baja cota, pero arriesgando cuadrillas humanas en el bosque.</td>
-                <td class="td-tech td-highlight" data-i18n="r3_strig"><span class="badge-positive">Detección óptica/térmica</span> de personas y vehículos antes de la ignición (99,7% de causas).</td>
+                <td class="td-tech" data-i18n="r3_sat"><span class="badge-negative">0%</span> (Resolución espacial de 375m a 1km. Diseñado para incendios activos, incapaz de ver personas o fogatas).</td>
+                <td class="td-tech" data-i18n="r3_tower">Nula en senderos boscosos densos o bajo dosel arbóreo fuera del ángulo visual del mástil.</td>
+                <td class="td-tech" data-i18n="r3_drone">Severamente limitada. Las avionetas no vuelan de noche para detectar campamentos o fogatas tempranas; las patrullas en camioneta sólo vigilan caminos habilitados, dejando el interior ciego.</td>
+                <td class="td-tech td-highlight" data-i18n="r3_strig"><span class="badge-positive">Detección óptica/térmica</span> de presencia humana y vehículos antes de la ignición (causa del 99,7% de los incendios).</td>
               </tr>
               <tr>
                 <td class="td-dim" data-i18n="r4_dim">Puntos Ciegos Topográficos</td>
-                <td class="td-tech" data-i18n="r4_sat">Afectado por nubes densas, humo copioso y copas arbóreas cerradas.</td>
-                <td class="td-tech" data-i18n="r4_tower"><span class="badge-negative">Crítico:</span> Puntos ciegos físicos tras cerros, quebradas y valles.</td>
-                <td class="td-tech" data-i18n="r4_drone">Limitado por relieve agreste y restricción de alcance visual (VLOS).</td>
-                <td class="td-tech td-highlight" data-i18n="r4_strig"><span class="badge-positive">Mapeo adaptativo:</span> Vuelo autónomo por debajo de nubes, perfilando quebradas y laderas sin sombra topográfica.</td>
+                <td class="td-tech" data-i18n="r4_sat">Afectado por nubosidad baja, humo denso e inversión térmica que absorben la radiación infrarroja.</td>
+                <td class="td-tech" data-i18n="r4_tower"><span class="badge-negative">Crítico:</span> Puntos ciegos físicos insalvables tras cerros, quebradas y laderas opuestas.</td>
+                <td class="td-tech" data-i18n="r4_drone">Crítico. Las cuadrillas terrestres no tienen visibilidad tras cerros ni en quebradas profundas; las aeronaves diurnas sufren con nubosidad baja y humo denso.</td>
+                <td class="td-tech td-highlight" data-i18n="r4_strig"><span class="badge-positive">Mapeo adaptativo:</span> Vuelo autónomo por debajo del techo nuboso, perfilando quebradas y laderas sin sombra topográfica.</td>
               </tr>
               <tr>
                 <td class="td-dim" data-i18n="r5_dim">Riesgo Humano en Terreno</td>
-                <td class="td-tech" data-i18n="r5_sat">Cero riesgo directo.</td>
-                <td class="td-tech" data-i18n="r5_tower">Cero riesgo directo.</td>
-                <td class="td-tech" data-i18n="r5_drone"><span class="badge-negative">Alto riesgo:</span> Cuadrillas expuestas de noche en caminos forestales remotos.</td>
-                <td class="td-tech td-highlight" data-i18n="r5_strig"><span class="badge-positive">Cero riesgo humano:</span> Misión, despegue y aterrizaje 100% autónomos desde estación de acople.</td>
+                <td class="td-tech" data-i18n="r5_sat">Cero exposición humana directa.</td>
+                <td class="td-tech" data-i18n="r5_tower">Cero exposición humana directa (salvo mantenimiento en cumbres aisladas).</td>
+                <td class="td-tech" data-i18n="r5_drone"><span class="badge-negative">Alto riesgo vital:</span> Peligro de accidentes aéreos en vuelo rasante sobre relieve agreste, y cuadrillas terrestres expuestas en caminos forestales aislados en horario de riesgo.</td>
+                <td class="td-tech td-highlight" data-i18n="r5_strig"><span class="badge-positive">Cero exposición humana:</span> Misión, despegue y aterrizaje 100% autónomos desde estación de acople.</td>
               </tr>
               <tr>
                 <td class="td-dim" data-i18n="r6_dim">Modelo Económico & Costo</td>
-                <td class="td-tech" data-i18n="r6_sat">Suscripción SaaS (US$15k-$60k/año), sin detección de precursores.</td>
-                <td class="td-tech" data-i18n="r6_tower"><span class="badge-negative">Altísimo CAPEX:</span> US$40k-$100k por torre instalada (mástil + energía).</td>
-                <td class="td-tech" data-i18n="r6_drone">CAPEX medio + alto costo en horas hombre nocturnas y camionetas 4x4.</td>
-                <td class="td-tech td-highlight" data-i18n="r6_strig"><span class="badge-positive">0 CAPEX (Intelligence as a Service):</span> Suscripción operativa por hectárea; 90% menor costo vs aviación tripulada.</td>
+                <td class="td-tech" data-i18n="r6_sat">Suscripción SaaS (US$15k-$60k/año). Accesible para escala macro; no sustituye la vigilancia táctica.</td>
+                <td class="td-tech" data-i18n="r6_tower"><span class="badge-negative">Altísimo CAPEX:</span> US$40k-$100k por torre instalada (mástil, óptica militar, energía solar y caminos de acceso).</td>
+                <td class="td-tech" data-i18n="r6_drone"><span class="badge-negative">OPEX Masivo:</span> US$600-$1.500/hora de vuelo en avioneta diurna + horas extra nocturnas de brigadas, combustible 4x4 y reposición por desgaste de drones.</td>
+                <td class="td-tech td-highlight" data-i18n="r6_strig"><span class="badge-positive">0 CAPEX (Intelligence as a Service):</span> Suscripción operativa por hectárea protegida; 90% menor costo vs aviación tripulada.</td>
               </tr>
             </tbody>
           </table>
@@ -280,8 +280,8 @@
             <div class="tech-avatar-circle">
               <img src="assets/img/tech/aerial_scan_loop.webp" alt="Visión Térmica Bi-Espectral en Tiempo Real" class="circle-thumb" loading="lazy">
             </div>
-            <h3 class="tech-title" data-i18n="t1_title">Visión Térmica Bi-Espectral</h3>
-            <p class="tech-desc" data-i18n="t1_desc">Detección infrarroja radiométrica y óptica de alta definición en gimbal estabilizado. Identificación de amenazas térmicas y presencia en oscuridad total con menos de 5% de falsas alarmas.</p>
+            <h3 class="tech-title" data-i18n="t1_title">Gimbal Bi-Espectral Noctua-Optics</h3>
+            <p class="tech-desc" data-i18n="t1_desc">Payload giroestabilizado de 3 ejes con sensor microbolómetro LWIR radiométrico no refrigerado (640×512) y cámara óptica diurna 4K. Identificación térmica precisa en oscuridad total con algoritmo de discriminación multi-frame (&lt;5% falsas alarmas).</p>
           </div>
 
           <div class="tech-card glass-panel">
@@ -313,7 +313,7 @@
               </svg>
             </div>
             <h3 class="tech-title" data-i18n="t3_title">Telemetría Táctica en Zonas Desconectadas</h3>
-            <p class="tech-desc" data-i18n="t3_desc">Emisión de fichas de alerta y coordenadas exactas en menos de 5 segundos vía radioenlace táctico de largo alcance, garantizando operatividad en quebradas y predios remotos.</p>
+            <p class="tech-desc" data-i18n="t3_desc">Emisión de fichas de alerta y coordenadas exactas en menos de 5 segundos vía radioenlace táctico FHSS 915 MHz (&gt;20 km LOS), garantizando operatividad en quebradas y predios remotos sin señal celular.</p>
           </div>
 
           <div class="tech-card glass-panel">
@@ -321,7 +321,7 @@
               <img src="assets/img/tech/territorial_hud_grid.webp" alt="Vigilancia Territorial Continua" class="circle-thumb" loading="lazy">
             </div>
             <h3 class="tech-title" data-i18n="t4_title">Aeronave VTOL Noctua-01</h3>
-            <p class="tech-desc" data-i18n="t4_desc">Vector aéreo híbrido de despegue y aterrizaje vertical independiente de pista. Hasta 90 min de autonomía, crucero eficiente de ala fija, envolvente de viento de hasta 45 km/h (24 kt) y cobertura de 15 km de radio operativo.</p>
+            <p class="tech-desc" data-i18n="t4_desc">Vector aéreo híbrido de despegue y aterrizaje vertical independiente de pista. Hasta 90 min de autonomía, crucero eficiente de ala fija, envolvente de viento hasta 45 km/h (24 kt), techo operacional de 3.000 m MSL (500 m AGL), rango térmico de -5°C a +45°C y radio operativo de 15 km.</p>
           </div>
 
           <div class="tech-card glass-panel">
@@ -336,7 +336,7 @@
               </svg>
             </div>
             <h3 class="tech-title" data-i18n="t5_title">Georreferenciación Quirúrgica</h3>
-            <p class="tech-desc" data-i18n="t5_desc">Proyección angular instantánea hacia el terreno asistida por posicionamiento centimétrico de alta precisión, calculando coordenadas exactas para el despacho inmediato de brigadas.</p>
+            <p class="tech-desc" data-i18n="t5_desc">Proyección angular instantánea hacia el terreno asistida por posicionamiento centimétrico RTK/GNSS de alta precisión, calculando coordenadas exactas para el despacho inmediato de brigadas.</p>
           </div>
 
           <div class="tech-card glass-panel">
@@ -347,16 +347,16 @@
               </svg>
             </div>
             <h3 class="tech-title" data-i18n="t6_title">Operación Segura & Marco DGAC</h3>
-            <p class="tech-desc" data-i18n="t6_desc">Diseñado bajo estándares de ingeniería aeroespacial. Protocolos operacionales en proceso de acreditación técnica bajo normativa DAN 151 / DAN 91 (DGAC Chile) para operaciones BVLOS con segregación y paracaídas balístico.</p>
+            <p class="tech-desc" data-i18n="t6_desc">Diseñado bajo estándares de ingeniería aeroespacial. Protocolos operacionales en proceso de acreditación técnica bajo normativa DAN 151 / DAN 91 (DGAC Chile) para operaciones BVLOS con segregación de espacio aéreo, telemetría redundante y paracaídas balístico.</p>
           </div>
         </div>
 
         <!-- Hardware & Engineering Capabilities Specs Bar -->
         <div class="specs-bar glass-panel">
           <div class="spec-pill" data-i18n="spec_1"><span class="spec-name">Plataforma:</span> VTOL Noctua-01</div>
-          <div class="spec-pill" data-i18n="spec_2"><span class="spec-name">Envolvente:</span> Viento hasta 45 km/h (24 kt)</div>
-          <div class="spec-pill" data-i18n="spec_3"><span class="spec-name">Respuesta:</span> Alertas Tácticas en &lt; 5 Segundos</div>
-          <div class="spec-pill" data-i18n="spec_4"><span class="spec-name">Normativa:</span> Enfoque DGAC DAN 151 / BVLOS</div>
+          <div class="spec-pill" data-i18n="spec_2"><span class="spec-name">Envolvente:</span> Viento 45 km/h | -5°C a +45°C</div>
+          <div class="spec-pill" data-i18n="spec_3"><span class="spec-name">Respuesta:</span> Alerta Táctica &lt; 5 s (FHSS)</div>
+          <div class="spec-pill" data-i18n="spec_4"><span class="spec-name">Normativa:</span> Marco DGAC DAN 151 / BVLOS</div>
           <div class="spec-pill" data-i18n="spec_5"><span class="spec-name">Modelo:</span> Intelligence as a Service (0 CAPEX)</div>
         </div>
       </div>
