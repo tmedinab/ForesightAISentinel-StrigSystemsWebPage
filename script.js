@@ -262,6 +262,7 @@ const translations = {
     f_submit_btn: "Enviar Postulación a Piloto",
     f_submitting: "Enviando postulación...",
     f_privacy: "Tus datos serán tratados bajo estricta confidencialidad técnica (NDA disponible).",
+    f_consent_label: "Acepto el tratamiento de mis datos de contacto para la evaluación técnica de factibilidad del piloto y declaro conocer los <a href=\"terms.html\" target=\"_blank\" class=\"legal-inline-link\">Términos de Servicio B2B</a> y la <a href=\"privacy.html\" target=\"_blank\" class=\"legal-inline-link\">Política de Privacidad</a> (Ley N° 19.628).",
     form_val_error: "Por favor completa todos los campos obligatorios (*) con un formato válido.",
     form_error_msg: "Hubo un problema al enviar la solicitud. Puedes escribirnos directamente a",
     success_title: "¡Postulación Recibida con Éxito!",
@@ -309,7 +310,8 @@ const translations = {
     footer_tagline: "Desarrollo de sistemas aéreos autónomos e inteligencia computacional para la mitigación anticipada de riesgos críticos.",
     f_nav: "Navegación",
     f_corp: "Corporativo",
-    f_privacy_link: "Política de Privacidad & Gobernanza"
+    f_privacy_link: "Política de Privacidad & Gobernanza",
+    f_terms_link: "Términos de Servicio & Pilotaje B2B"
   },
 
   en: {
@@ -570,6 +572,7 @@ const translations = {
     f_submit_btn: "Submit Pilot Application",
     f_submitting: "Submitting application...",
     f_privacy: "Your data is handled under strict technical non-disclosure standards (NDA available).",
+    f_consent_label: "I agree to data processing for technical pilot feasibility evaluation and acknowledge the <a href=\"terms.html\" target=\"_blank\" class=\"legal-inline-link\">B2B Terms of Service</a> and <a href=\"privacy.html\" target=\"_blank\" class=\"legal-inline-link\">Privacy Policy</a> (Law No. 19,628).",
     form_val_error: "Please complete all required fields (*) with a valid format.",
     form_error_msg: "An error occurred sending your application. You can email us directly at",
     success_title: "Application Received Successfully!",
@@ -617,7 +620,8 @@ const translations = {
     footer_tagline: "Autonomous uncrewed aircraft systems and Edge AI computing for proactive critical risk mitigation.",
     f_nav: "Platform",
     f_corp: "Corporate",
-    f_privacy_link: "Privacy Policy & Governance"
+    f_privacy_link: "Privacy Policy & Governance",
+    f_terms_link: "B2B Terms of Service & Pilotage"
   }
 };
 
@@ -834,6 +838,13 @@ function initPilotModal() {
         isValid = false;
       }
 
+      // Consent validation
+      const consent = form.querySelector('#form-consent');
+      if (consent && !consent.checked) {
+        if (consent.parentElement) consent.parentElement.classList.add('input-invalid');
+        isValid = false;
+      }
+
       if (!isValid) {
         if (valError) {
           valError.style.display = 'block';
@@ -996,6 +1007,12 @@ function initBriefingModal() {
       }
       if (!contact || !contact.value.trim()) {
         if (contact) contact.classList.add('input-invalid');
+        isValid = false;
+      }
+
+      const consent = form.querySelector('#b-consent');
+      if (consent && !consent.checked) {
+        if (consent.parentElement) consent.parentElement.classList.add('input-invalid');
         isValid = false;
       }
 

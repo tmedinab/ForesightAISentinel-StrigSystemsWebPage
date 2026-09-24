@@ -784,6 +784,7 @@
           <a href="mailto:contacto@strigsystems.tech">contacto@strigsystems.tech</a>
           <a href="mailto:tmedina@strigsystems.tech">tmedina@strigsystems.tech (Lead)</a>
           <a href="privacy.html" data-i18n="f_privacy_link">Política de Privacidad & Gobernanza</a>
+          <a href="terms.html" data-i18n="f_terms_link">Términos de Servicio & Pilotaje B2B</a>
           <a href="https://strigsystems.tech">strigsystems.tech</a>
         </div>
       </div>
@@ -884,6 +885,14 @@
             <textarea id="form-message" name="Mensaje" class="form-textarea" rows="3" placeholder="Describe brevemente el tipo de predio, zona geográfica o consulta técnica..." data-i18n-ph="f_message_ph"></textarea>
           </div>
 
+          <!-- Consent Checkbox -->
+          <div class="form-group form-checkbox-group">
+            <label class="form-checkbox-label" for="form-consent">
+              <input type="checkbox" id="form-consent" name="Consentimiento" required class="form-checkbox">
+              <span class="checkbox-text" data-i18n="f_consent_label">Acepto el tratamiento de mis datos de contacto para la evaluación técnica del piloto y declaro conocer los <a href="terms.html" target="_blank" class="legal-inline-link">Términos de Servicio B2B</a> y la <a href="privacy.html" target="_blank" class="legal-inline-link">Política de Privacidad</a> (Ley N° 19.628).</span>
+            </label>
+          </div>
+
           <!-- Feedback Alerts -->
           <div id="form-validation-error" class="form-alert alert-warning" style="display: none;" role="alert">
             <span data-i18n="form_val_error">Por favor completa todos los campos obligatorios (*) con un formato válido.</span>
@@ -975,6 +984,14 @@
           <div id="briefing-error" class="form-alert alert-error" style="display: none;" role="alert">
             <span data-i18n="form_error_msg">Hubo un problema al enviar la solicitud. Puedes escribirnos directamente a</span>
             <a href="mailto:tmedina@strigsystems.tech" class="alert-link">tmedina@strigsystems.tech</a>.
+          </div>
+
+          <!-- Briefing Consent Checkbox -->
+          <div class="form-group form-checkbox-group">
+            <label class="form-checkbox-label" for="b-consent">
+              <input type="checkbox" id="b-consent" name="Consentimiento" required class="form-checkbox">
+              <span class="checkbox-text" data-i18n="f_consent_label">Acepto el tratamiento de mis datos de contacto para la evaluación técnica del piloto y declaro conocer los <a href="terms.html" target="_blank" class="legal-inline-link">Términos de Servicio B2B</a> y la <a href="privacy.html" target="_blank" class="legal-inline-link">Política de Privacidad</a> (Ley N° 19.628).</span>
+            </label>
           </div>
 
           <div class="form-actions">
