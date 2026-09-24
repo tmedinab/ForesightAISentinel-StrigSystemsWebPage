@@ -364,11 +364,78 @@
 
         <!-- Hardware & Engineering Capabilities Specs Bar -->
         <div class="specs-bar glass-panel">
-          <div class="spec-pill" data-i18n="spec_1"><span class="spec-name">Plataforma:</span> VTOL Noctua-01</div>
+          <div class="spec-pill" data-i18n="spec_1"><span class="spec-name">Plataforma MVP:</span> VTOL Lift+Cruise 2,1 m (Hacia Noctua-01)</div>
           <div class="spec-pill" data-i18n="spec_2"><span class="spec-name">Envolvente:</span> Viento 45 km/h | -5°C a +45°C</div>
           <div class="spec-pill" data-i18n="spec_3"><span class="spec-name">Respuesta:</span> Alerta Táctica &lt; 5 s (FHSS)</div>
           <div class="spec-pill" data-i18n="spec_4"><span class="spec-name">Normativa:</span> Marco DGAC DAN 151 / BVLOS</div>
           <div class="spec-pill" data-i18n="spec_5"><span class="spec-name">Modelo:</span> Intelligence as a Service (0 CAPEX)</div>
+        </div>
+
+        <!-- Off-Grid Tactical Datalink Architecture (Diagrama del Triángulo Táctico) -->
+        <div class="tactical-flow-box glass-panel">
+          <div class="flow-header">
+            <span class="flow-tag" data-i18n="flow_tag">ARQUITECTURA DE ENLACE OFF-GRID</span>
+            <h3 class="flow-title" data-i18n="flow_title">Cómo se cierra el circuito táctico en zonas sin señal celular</h3>
+            <p class="flow-sub" data-i18n="flow_sub">El 80% de los predios forestales y cordilleranos son zonas oscuras de conectividad. Athene opera sin depender de torres 4G/5G mediante un radioenlace táctico directo de largo alcance.</p>
+          </div>
+          <div class="flow-grid">
+            <!-- Nodo 1: Aeronave VTOL -->
+            <div class="flow-step-card">
+              <div class="step-num">01</div>
+              <div class="step-icon-wrap">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                  <path d="M2 17l10 5 10-5"></path>
+                  <path d="M2 12l10 5 10-5"></path>
+                </svg>
+              </div>
+              <h4 class="step-title" data-i18n="flow_s1_title">Detección Edge AI a Bordo</h4>
+              <p class="step-desc" data-i18n="flow_s1_desc">La aeronave procesa el espectro térmico en tiempo real con NVIDIA Jetson a bordo. Identifica el precursor y calcula coordenadas GPS en &lt; 5 segundos sin conexión a internet ni servidores en tierra.</p>
+              <span class="step-badge" data-i18n="flow_s1_badge">Inferencia Zero-Cloud</span>
+            </div>
+
+            <!-- Conector / Flecha 1 -->
+            <div class="flow-connector" aria-hidden="true">
+              <div class="connector-line"></div>
+              <div class="connector-pulse"></div>
+              <span class="connector-label" data-i18n="flow_c1_label">FHSS 915 MHz (&gt;20 km LOS)</span>
+            </div>
+
+            <!-- Nodo 2: Recepción Táctica en Terreno (Camioneta) -->
+            <div class="flow-step-card flow-step-highlight">
+              <div class="step-num">02</div>
+              <div class="step-icon-wrap">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <h4 class="step-title" data-i18n="flow_s2_title">Alerta Inmediata a Cuadrilla</h4>
+              <p class="step-desc" data-i18n="flow_s2_desc">El receptor táctico FHSS en la cabina de la camioneta 4x4 emite alarma acústica y despliega las coordenadas exactas en la pantalla del brigadista, guiando la intercepción directa en terreno.</p>
+              <span class="step-badge badge-green" data-i18n="flow_s2_badge">Receptor Táctico de Cabina</span>
+            </div>
+
+            <!-- Conector / Flecha 2 -->
+            <div class="flow-connector" aria-hidden="true">
+              <div class="connector-line"></div>
+              <div class="connector-pulse"></div>
+              <span class="connector-label" data-i18n="flow_c2_label">Uplink Satelital Starlink</span>
+            </div>
+
+            <!-- Nodo 3: Base Nest & Central C2 -->
+            <div class="flow-step-card">
+              <div class="step-num">03</div>
+              <div class="step-icon-wrap">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                  <line x1="4" y1="22" x2="4" y2="15"></line>
+                </svg>
+              </div>
+              <h4 class="step-title" data-i18n="flow_s3_title">Sincronización con Central C2</h4>
+              <p class="step-desc" data-i18n="flow_s3_desc">La estación base retransmite simultáneamente el paquete táctico vía satélite Starlink hacia la central de despacho del cliente (GIS / Webhook / WhatsApp de emergencia).</p>
+              <span class="step-badge" data-i18n="flow_s3_badge">Central de Despacho GIS</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -478,15 +545,45 @@
               <span class="roi-metric-sub" id="roi-co2-sub" data-i18n="roi_sub_co2">Aviones cisterna evitados al amanecer (1 foco)</span>
             </div>
           </div>
+
+          <!-- IaaS Operational Framework & Commitments -->
+          <div class="iaas-framework-box">
+            <div class="iaas-framework-header">
+              <span class="iaas-tag" data-i18n="iaas_tag">MARCO OPERACIONAL IAAS</span>
+              <h4 class="iaas-title" data-i18n="iaas_title">Condiciones y Compromiso del Modelo Intelligence as a Service</h4>
+              <p class="iaas-sub" data-i18n="iaas_sub">Estructurado para que las empresas del sector incorporen vigilancia aérea nocturna sin adquirir activos fijos ni asumir pasivos operacionales.</p>
+            </div>
+            <div class="iaas-pillars-grid">
+              <div class="iaas-pillar-card">
+                <div class="pillar-icon">🛡️</div>
+                <h5 class="pillar-title" data-i18n="iaas_p1_title">0 CAPEX & Cero Pasivo de Flota</h5>
+                <p class="pillar-desc" data-i18n="iaas_p1_desc">La empresa no compra drones ni asume depreciación de aeronaves. Se contrata disponibilidad operativa por temporada de riesgo forestal como gasto operacional (OPEX).</p>
+              </div>
+              <div class="iaas-pillar-card">
+                <div class="pillar-icon">⚙️</div>
+                <h5 class="pillar-title" data-i18n="iaas_p2_title">Mantenimiento & Soporte Técnico Integral</h5>
+                <p class="pillar-desc" data-i18n="iaas_p2_desc">Recambios preventivos de hélices, baterías, sensores y actualización de modelos de IA a bordo gestionados directamente por el equipo de ingeniería de Strig Systems.</p>
+              </div>
+              <div class="iaas-pillar-card">
+                <div class="pillar-icon">📜</div>
+                <h5 class="pillar-title" data-i18n="iaas_p3_title">Gestión de Cumplimiento DGAC</h5>
+                <p class="pillar-desc" data-i18n="iaas_p3_desc">Operación conducida bajo protocolos de seguridad operacional conforme a normativa DAN 151 / DAN 91 para operaciones BVLOS segregadas y zonas de contingencia.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- Pilot Callout Bar -->
+        <!-- Pilot Callout Bar (Tri-Action Funnel) -->
         <div class="callout-box glass-panel">
           <div class="callout-info">
             <h3 class="callout-title" data-i18n="callout_title">Convocatoria de Validación 2026</h3>
             <p class="callout-desc" data-i18n="callout_desc">Cupos limitados por temporada de incendios en la Macrozona Centro-Sur. Evaluación de factibilidad territorial e interoperabilidad C2 sin costo para predios forestales e industriales.</p>
           </div>
-          <button type="button" class="btn-primary" data-open-modal="pilot-modal" data-i18n="callout_cta">Solicitar Factibilidad de Piloto</button>
+          <div class="callout-actions">
+            <button type="button" class="btn-primary" data-open-modal="pilot-modal" data-i18n="callout_cta">Solicitar Factibilidad de Piloto</button>
+            <button type="button" class="btn-secondary" data-open-modal="briefing-modal" data-i18n="callout_briefing">Agendar Briefing Técnico (15 min)</button>
+            <button type="button" class="btn-outline-pdf" data-open-modal="brief-modal" data-i18n="callout_brief_pdf">Executive Brief (PDF)</button>
+          </div>
         </div>
       </div>
     </section>
@@ -818,6 +915,172 @@
           <div class="success-actions">
             <button type="button" class="btn-ghost" data-close-modal data-i18n="success_close_btn">Cerrar Ventana</button>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: AGENDAR BRIEFING TÉCNICO (15 MIN) -->
+  <div id="briefing-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="briefing-title">
+    <div class="modal-dialog glass-panel briefing-dialog">
+      <button type="button" class="modal-close" data-close-modal aria-label="Cerrar ventana">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-badge">
+            <span class="badge-dot"></span>
+            <span data-i18n="briefing_badge">Ingeniería & Operaciones</span>
+          </div>
+          <h2 id="briefing-title" class="modal-title" data-i18n="briefing_modal_title">Agendar Briefing Técnico de 15 Minutos</h2>
+          <p class="modal-subtitle" data-i18n="briefing_modal_sub">
+            Conversación técnica directa con Tomás Medina (Technical Lead): evaluamos la orografía de tus predios, viabilidad de radioenlace y requerimientos C2.
+          </p>
+        </div>
+
+        <form id="briefing-form" class="pilot-form" novalidate>
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="_subject" value="Solicitud de Briefing Técnico 15 min - Strig Systems">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="b-name" class="form-label" data-i18n="f_name_label">Nombre y Apellido *</label>
+              <input type="text" id="b-name" name="Nombre" class="form-input" required placeholder="Ej: Carlos Silva" data-i18n-ph="f_name_ph">
+            </div>
+
+            <div class="form-group">
+              <label for="b-contact" class="form-label" data-i18n="f_contact_label">Correo Corporativo o WhatsApp *</label>
+              <input type="text" id="b-contact" name="Contacto" class="form-input" required placeholder="correo@empresa.cl o +56 9..." data-i18n-ph="f_contact_ph">
+            </div>
+
+            <div class="form-group full-width">
+              <label for="b-time" class="form-label" data-i18n="f_briefing_time_label">Horario Preferente *</label>
+              <select id="b-time" name="Horario_Preferente" class="form-select" required>
+                <option value="Mañana (09:00 - 13:00 CLT)" selected data-i18n="f_briefing_time_morn">Mañana (09:00 - 13:00 CLT)</option>
+                <option value="Tarde (14:00 - 18:00 CLT)" data-i18n="f_briefing_time_aft">Tarde (14:00 - 18:00 CLT)</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="briefing-error" class="form-alert alert-error" style="display: none;" role="alert">
+            <span data-i18n="form_error_msg">Hubo un problema al enviar la solicitud. Puedes escribirnos directamente a</span>
+            <a href="mailto:tmedina@strigsystems.tech" class="alert-link">tmedina@strigsystems.tech</a>.
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" id="b-submit-btn" class="btn-primary btn-submit">
+              <span class="btn-text" data-i18n="f_briefing_submit">Solicitar Briefing Técnico</span>
+              <span class="btn-spinner" style="display: none;" aria-hidden="true"></span>
+              <span class="arrow-icon">→</span>
+            </button>
+            <div class="direct-contact-note">
+              <span data-i18n="f_briefing_direct">O escribe directamente al Technical Lead:</span>
+              <a href="mailto:tmedina@strigsystems.tech" class="highlight-link">tmedina@strigsystems.tech</a>
+            </div>
+          </div>
+        </form>
+
+        <div id="briefing-success" class="form-success-state" style="display: none;">
+          <div class="success-icon-circle">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--accent-cyan)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <h3 class="success-title" data-i18n="briefing_success_title">¡Solicitud de Briefing Recibida!</h3>
+          <p class="success-desc" data-i18n="briefing_success_desc">
+            Tomás Medina se contactará contigo para coordinar el enlace de Google Meet según tu preferencia horaria.
+          </p>
+          <div class="success-actions">
+            <button type="button" class="btn-ghost" data-close-modal data-i18n="success_close_btn">Cerrar Ventana</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: EXECUTIVE BRIEF ONE-PAGER -->
+  <div id="brief-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="brief-doc-title">
+    <div class="modal-dialog glass-panel executive-brief-dialog">
+      <div class="brief-modal-actions no-print">
+        <button type="button" class="btn-brief-print" id="brief-print-btn">
+          <span data-i18n="brief_doc_print">🖨️ Imprimir / Guardar como PDF</span>
+        </button>
+        <button type="button" class="modal-close" data-close-modal aria-label="Cerrar ventana">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="executive-brief-paper" id="executive-brief-paper">
+        <!-- Paper Header -->
+        <div class="brief-paper-header">
+          <div class="brief-logo-area">
+            <span class="brief-brand">STRIG SYSTEMS</span>
+            <span class="brief-product">PLATAFORMA ATHENE</span>
+          </div>
+          <div class="brief-meta-area">
+            <span class="brief-doc-tag" data-i18n="eb_tag">EXECUTIVE BRIEF 2026</span>
+            <span class="brief-doc-sub" data-i18n="eb_sub">Vigilancia Territorial Autónoma Nocturna</span>
+          </div>
+        </div>
+
+        <div class="brief-paper-lead">
+          <h1 id="brief-doc-title" class="brief-h1" data-i18n="eb_h1">Inteligencia Aérea Autónoma para el Combate de Incendios en la Brecha Nocturna</h1>
+          <p class="brief-summary" data-i18n="eb_summary">
+            Athene cierra la ventana ciega nocturna de 10 horas mediante aeronaves VTOL lift+cruise de 2,1 m (plataforma MVP en transición hacia la célula propietaria Noctua-01), inferencia térmica Edge AI a bordo (NVIDIA Jetson) y telemetría táctica FHSS 915 MHz, sustituyendo el costoso patrullaje terrestre y evitando el despliegue millonario de aeronaves de combate al amanecer.
+          </p>
+        </div>
+
+        <!-- 4 Grid Sections -->
+        <div class="brief-paper-grid">
+          <div class="brief-box">
+            <h3 class="brief-box-title" data-i18n="eb_b1_title">1. El Problema Operacional</h3>
+            <ul class="brief-list">
+              <li data-i18n="eb_b1_p1"><strong>Ventana ciega nocturna (20:00 a 06:00):</strong> La aviación tripulada combate de día pero no vuela de noche por normativa DGAC y riesgo de choque con el relieve (CFIT).</li>
+              <li data-i18n="eb_b1_p2"><strong>Costo industrial masivo:</strong> Gasto consolidado anual de US$130M en combate y prevención en Chile (Fuente: CORMA).</li>
+              <li data-i18n="eb_b1_p3"><strong>Puntos ciegos terrestres:</strong> Patrullas en 4x4 cubren &lt; 12% del predio, ciegas ante quebradas y rodales interiores donde se inician fogatas y focos intencionales.</li>
+            </ul>
+          </div>
+
+          <div class="brief-box">
+            <h3 class="brief-box-title" data-i18n="eb_b2_title">2. Solución Tecnológica</h3>
+            <ul class="brief-list">
+              <li data-i18n="eb_b2_p1"><strong>Aeronave VTOL Lift+Cruise (2,1 m):</strong> Despegue vertical en claro de bosque, 90 min de patrulla y 15 km de radio operativo.</li>
+              <li data-i18n="eb_b2_p2"><strong>Edge AI Zero-Cloud a Bordo:</strong> Cómputo NVIDIA Jetson + aceleración TensorRT; detección térmica en &lt; 5 s sin conexión a internet ni señal celular.</li>
+              <li data-i18n="eb_b2_p3"><strong>Telemetría Táctica FHSS 915 MHz:</strong> Alerta acústica y coordenadas GPS directas a la cabina de la camioneta en terreno (&gt;20 km LOS).</li>
+            </ul>
+          </div>
+
+          <div class="brief-box">
+            <h3 class="brief-box-title" data-i18n="eb_b3_title">3. Modelo Económico IaaS (0 CAPEX)</h3>
+            <ul class="brief-list">
+              <li data-i18n="eb_b3_p1"><strong>Status Quo Terrestre:</strong> 2 camionetas 4x4 con guardias 7x7 = US$64.000 / temporada de 5 meses para 25.000 ha.</li>
+              <li data-i18n="eb_b3_p2"><strong>Suscripción Athene IaaS:</strong> 1 Base Nest Alpha + VTOL = US$37.500 / temporada. <strong>Ahorro directo de US$26.500 (-41%)</strong>.</li>
+              <li data-i18n="eb_b3_p3"><strong>Escudo de Combate Aéreo:</strong> Interceptar 1 foco en pre-ignición evita ~20 h de aviones cisterna Air Tractor AT-802F y helicópteros (&gt;US$44.000).</li>
+            </ul>
+          </div>
+
+          <div class="brief-box">
+            <h3 class="brief-box-title" data-i18n="eb_b4_title">4. Validación Operativa 2026</h3>
+            <ul class="brief-list">
+              <li data-i18n="eb_b4_p1"><strong>Respaldo Institucional:</strong> Proyecto Semilla Inicia CORFO y apoyo de la Universidad de Concepción (UdeC).</li>
+              <li data-i18n="eb_b4_p2"><strong>Programa Piloto Macrozona Centro-Sur:</strong> Despliegue en 4 fases metodológicas (Levantamiento, Calibración, Vigilancia Nocturna, Auditoría ROI).</li>
+              <li data-i18n="eb_b4_p3"><strong>Contacto Directo:</strong> Tomás Medina (Technical Lead) | <code>tmedina@strigsystems.tech</code> | <code>strigsystems.tech</code></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="brief-paper-footer">
+          <span>Strig Systems SpA • Concepción, Chile</span>
+          <span>contacto@strigsystems.tech • strigsystems.tech</span>
         </div>
       </div>
     </div>

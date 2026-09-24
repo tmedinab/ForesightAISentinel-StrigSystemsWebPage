@@ -107,11 +107,27 @@ const translations = {
     t5_desc: "Proyección angular instantánea hacia el terreno asistida por posicionamiento centimétrico RTK/GNSS de alta precisión, calculando coordenadas exactas para el despacho inmediato de brigadas.",
     t6_title: "Operación Segura & Marco DGAC",
     t6_desc: "Diseñado bajo estándares de ingeniería aeroespacial. Arquitectura 4+1 lift+cruise con tolerancia a pérdida de motor sustentador, paracaídas balístico pirotécnico autónomo y protocolos operacionales bajo marco DAN 151 / DAN 91 (DGAC Chile) para BVLOS segregado con retorno automático ante contingencia (Auto-RTH).",
-    spec_1: "<span class=\"spec-name\">Plataforma:</span> VTOL Noctua-01",
+    spec_1: "<span class=\"spec-name\">Plataforma MVP:</span> VTOL Lift+Cruise 2,1 m (Hacia Noctua-01)",
     spec_2: "<span class=\"spec-name\">Envolvente:</span> Viento 45 km/h | -5°C a +45°C",
     spec_3: "<span class=\"spec-name\">Respuesta:</span> Alerta Táctica &lt; 5 s (FHSS)",
     spec_4: "<span class=\"spec-name\">Normativa:</span> Marco DGAC DAN 151 / BVLOS",
     spec_5: "<span class=\"spec-name\">Modelo:</span> Intelligence as a Service (0 CAPEX)",
+
+    // Off-Grid Tactical Datalink Architecture
+    flow_tag: "ARQUITECTURA DE ENLACE OFF-GRID",
+    flow_title: "Cómo se cierra el circuito táctico en zonas sin señal celular",
+    flow_sub: "El 80% de los predios forestales y cordilleranos son zonas oscuras de conectividad. Athene opera sin depender de torres 4G/5G mediante un radioenlace táctico directo de largo alcance.",
+    flow_s1_title: "Detección Edge AI a Bordo",
+    flow_s1_desc: "La aeronave procesa el espectro térmico en tiempo real con NVIDIA Jetson a bordo. Identifica el precursor y calcula coordenadas GPS en &lt; 5 segundos sin conexión a internet ni servidores en tierra.",
+    flow_s1_badge: "Inferencia Zero-Cloud",
+    flow_c1_label: "FHSS 915 MHz (&gt;20 km LOS)",
+    flow_s2_title: "Alerta Inmediata a Cuadrilla",
+    flow_s2_desc: "El receptor táctico FHSS en la cabina de la camioneta 4x4 emite alarma acústica y despliega las coordenadas exactas en la pantalla del brigadista, guiando la intercepción directa en terreno.",
+    flow_s2_badge: "Receptor Táctico de Cabina",
+    flow_c2_label: "Uplink Satelital Starlink",
+    flow_s3_title: "Sincronización con Central C2",
+    flow_s3_desc: "La estación base retransmite simultáneamente el paquete táctico vía satélite Starlink hacia la central de despacho del cliente (GIS / Webhook / WhatsApp de emergencia).",
+    flow_s3_badge: "Central de Despacho GIS",
 
     // C2 Tactical Console & Dual Views
     c2_tag: "◈ Consola C2 Athene",
@@ -159,6 +175,17 @@ const translations = {
     roi_sub_co2: "Aviones cisterna evitados al amanecer (1 foco)",
     roi_tt_co2: "Horas de combate aéreo evitadas: Interceptar 1 foco en fase pre-ignición ahorra ~20 h de vuelo de extinción al amanecer (aviones cisterna Air Tractor AT-802F a US$2.200/h + helicópteros a US$2.500/h = >US$44.000), sin contar la madera comercial salvada.",
 
+    // IaaS Operational Framework
+    iaas_tag: "MARCO OPERACIONAL IAAS",
+    iaas_title: "Condiciones y Compromiso del Modelo Intelligence as a Service",
+    iaas_sub: "Estructurado para que las empresas del sector incorporen vigilancia aérea nocturna sin adquirir activos fijos ni asumir pasivos operacionales.",
+    iaas_p1_title: "0 CAPEX & Cero Pasivo de Flota",
+    iaas_p1_desc: "La empresa no compra drones ni asume depreciación de aeronaves. Se contrata disponibilidad operativa por temporada de riesgo forestal como gasto operacional (OPEX).",
+    iaas_p2_title: "Mantenimiento & Soporte Técnico Integral",
+    iaas_p2_desc: "Recambios preventivos de hélices, baterías, sensores y actualización de modelos de IA a bordo gestionados directamente por el equipo de ingeniería de Strig Systems.",
+    iaas_p3_title: "Gestión de Cumplimiento DGAC",
+    iaas_p3_desc: "Operación conducida bajo protocolos de seguridad operacional conforme a normativa DAN 151 / DAN 91 para operaciones BVLOS segregadas y zonas de contingencia.",
+
     // Pilot Program
     pilot_tag: "Validación en Terreno",
     pilot_title: "Programa Piloto para Empresas del Sector",
@@ -174,6 +201,8 @@ const translations = {
     callout_title: "Convocatoria de Validación 2026",
     callout_desc: "Cupos limitados por temporada de incendios en la Macrozona Centro-Sur. Evaluación de factibilidad territorial e interoperabilidad C2 sin costo para predios forestales e industriales.",
     callout_cta: "Solicitar Factibilidad de Piloto",
+    callout_briefing: "Agendar Briefing Técnico (15 min)",
+    callout_brief_pdf: "Executive Brief (PDF)",
 
     // Alliances & R&D
     alliances_tag: "Ecosistema & Tracción",
@@ -238,6 +267,43 @@ const translations = {
     success_title: "¡Postulación Recibida con Éxito!",
     success_desc: "Hemos recibido los antecedentes de tu entidad. Nuestro equipo de ingeniería aeroespacial revisará la factibilidad territorial y se contactará directamente dentro de 24 horas hábiles.",
     success_close_btn: "Cerrar Ventana",
+
+    // Briefing Modal (15 min)
+    briefing_badge: "Ingeniería & Operaciones",
+    briefing_modal_title: "Agendar Briefing Técnico de 15 Minutos",
+    briefing_modal_sub: "Conversación técnica directa con Tomás Medina (Technical Lead): evaluamos la orografía de tus predios, viabilidad de radioenlace y requerimientos C2.",
+    f_contact_label: "Correo Corporativo o WhatsApp *",
+    f_contact_ph: "correo@empresa.cl o +56 9...",
+    f_briefing_time_label: "Horario Preferente *",
+    f_briefing_time_morn: "Mañana (09:00 - 13:00 CLT)",
+    f_briefing_time_aft: "Tarde (14:00 - 18:00 CLT)",
+    f_briefing_submit: "Solicitar Briefing Técnico",
+    f_briefing_direct: "O escribe directamente al Technical Lead:",
+    briefing_success_title: "¡Solicitud de Briefing Recibida!",
+    briefing_success_desc: "Tomás Medina se contactará contigo para coordinar el enlace de Google Meet según tu preferencia horaria.",
+
+    // Executive Brief (One-Pager Whitepaper)
+    brief_doc_print: "🖨️ Imprimir / Guardar como PDF",
+    eb_tag: "EXECUTIVE BRIEF 2026",
+    eb_sub: "Vigilancia Territorial Autónoma Nocturna",
+    eb_h1: "Inteligencia Aérea Autónoma para el Combate de Incendios en la Brecha Nocturna",
+    eb_summary: "Athene cierra la ventana ciega nocturna de 10 horas mediante aeronaves VTOL lift+cruise de 2,1 m (plataforma MVP en transición hacia la célula propietaria Noctua-01), inferencia térmica Edge AI a bordo (NVIDIA Jetson) y telemetría táctica FHSS 915 MHz, sustituyendo el costoso patrullaje terrestre y evitando el despliegue millonario de aeronaves de combate al amanecer.",
+    eb_b1_title: "1. El Problema Operacional",
+    eb_b1_p1: "<strong>Ventana ciega nocturna (20:00 a 06:00):</strong> La aviación tripulada combate de día pero no vuela de noche por normativa DGAC y riesgo de choque con el relieve (CFIT).",
+    eb_b1_p2: "<strong>Costo industrial masivo:</strong> Gasto consolidado anual de US$130M en combate y prevención en Chile (Fuente: CORMA).",
+    eb_b1_p3: "<strong>Puntos ciegos terrestres:</strong> Patrullas en 4x4 cubren &lt; 12% del predio, ciegas ante quebradas y rodales interiores donde se inician fogatas y focos intencionales.",
+    eb_b2_title: "2. Solución Tecnológica",
+    eb_b2_p1: "<strong>Aeronave VTOL Lift+Cruise (2,1 m):</strong> Despegue vertical en claro de bosque, 90 min de patrulla y 15 km de radio operativo.",
+    eb_b2_p2: "<strong>Edge AI Zero-Cloud a Bordo:</strong> Cómputo NVIDIA Jetson + aceleración TensorRT; detección térmica en &lt; 5 s sin conexión a internet ni señal celular.",
+    eb_b2_p3: "<strong>Telemetría Táctica FHSS 915 MHz:</strong> Alerta acústica y coordenadas GPS directas a la cabina de la camioneta en terreno (&gt;20 km LOS).",
+    eb_b3_title: "3. Modelo Económico IaaS (0 CAPEX)",
+    eb_b3_p1: "<strong>Status Quo Terrestre:</strong> 2 camionetas 4x4 con guardias 7x7 = US$64.000 / temporada de 5 meses para 25.000 ha.",
+    eb_b3_p2: "<strong>Suscripción Athene IaaS:</strong> 1 Base Nest Alpha + VTOL = US$37.500 / temporada. <strong>Ahorro directo de US$26.500 (-41%)</strong>.",
+    eb_b3_p3: "<strong>Escudo de Combate Aéreo:</strong> Interceptar 1 foco en pre-ignición evita ~20 h de aviones cisterna Air Tractor AT-802F y helicópteros (&gt;US$44.000).",
+    eb_b4_title: "4. Validación Operativa 2026",
+    eb_b4_p1: "<strong>Respaldo Institucional:</strong> Proyecto Semilla Inicia CORFO y apoyo de la Universidad de Concepción (UdeC).",
+    eb_b4_p2: "<strong>Programa Piloto Macrozona Centro-Sur:</strong> Despliegue en 4 fases metodológicas (Levantamiento, Calibración, Vigilancia Nocturna, Auditoría ROI).",
+    eb_b4_p3: "<strong>Contacto Directo:</strong> Tomás Medina (Technical Lead) | <code>tmedina@strigsystems.tech</code> | <code>strigsystems.tech</code>",
 
     // Footer
     footer_tagline: "Desarrollo de sistemas aéreos autónomos e inteligencia computacional para la mitigación anticipada de riesgos críticos.",
@@ -349,11 +415,27 @@ const translations = {
     t5_desc: "Instant angular terrain projection assisted by high-precision RTK/GNSS centimetric positioning, calculating exact target coordinates for the rapid dispatch of ground crews.",
     t6_title: "Certified Safety & DGAC Compliance",
     t6_desc: "Engineered under aerospace safety standards. Redundant 4+1 lift+cruise architecture with lift-motor loss tolerance, autonomous pyrotechnic ballistic parachute, and operational procedures aligned with Chilean DGAC DAN 151 / DAN 91 regulations for segregated BVLOS with automatic contingency return (Auto-RTH).",
-    spec_1: "<span class=\"spec-name\">Platform:</span> VTOL Noctua-01",
+    spec_1: "<span class=\"spec-name\">MVP Platform:</span> 2.1 m Lift+Cruise VTOL (Towards Noctua-01)",
     spec_2: "<span class=\"spec-name\">Flight Envelope:</span> Wind 45 km/h | -5°C to +45°C",
     spec_3: "<span class=\"spec-name\">Response:</span> Tactical Alert &lt; 5 s (FHSS)",
     spec_4: "<span class=\"spec-name\">Regulation:</span> DGAC DAN 151 / BVLOS Scope",
     spec_5: "<span class=\"spec-name\">Model:</span> Intelligence as a Service (0 CAPEX)",
+
+    // Off-Grid Tactical Datalink Architecture
+    flow_tag: "OFF-GRID DATALINK ARCHITECTURE",
+    flow_title: "Closing the Tactical Loop in Zero-Cellular Remote Zones",
+    flow_sub: "Over 80% of remote forestry and mountain holdings are connectivity dead zones. Athene operates without 4G/5G dependency via a direct long-range tactical radio link.",
+    flow_s1_title: "Onboard Edge AI Detection",
+    flow_s1_desc: "The aircraft analyzes the thermal spectrum in real time with onboard NVIDIA Jetson. It classifies threats and computes GPS coordinates in &lt; 5 seconds without internet or ground cloud servers.",
+    flow_s1_badge: "Zero-Cloud Inference",
+    flow_c1_label: "915 MHz FHSS (&gt;20 km LOS)",
+    flow_s2_title: "Instant Ground Crew Alert",
+    flow_s2_desc: "The FHSS tactical receiver inside the 4x4 patrol cab triggers an acoustic siren and displays precise coordinates on the crew screen, guiding direct ground interception.",
+    flow_s2_badge: "Cab Tactical Receiver",
+    flow_c2_label: "Starlink Satellite Uplink",
+    flow_s3_title: "Central C2 Dispatch Sync",
+    flow_s3_desc: "The base station simultaneously relays the tactical payload via Starlink satellite to the client's central dispatch (GIS / Webhooks / Emergency Alerts).",
+    flow_s3_badge: "GIS Central Dispatch",
 
     // C2 Tactical Console & Dual Views
     c2_tag: "◈ Athene C2 Console",
@@ -401,6 +483,17 @@ const translations = {
     roi_sub_co2: "Air tankers avoided at dawn (1 fire prevented)",
     roi_tt_co2: "Air combat hours avoided: Intercepting 1 hotspot in pre-ignition saves ~20 hours of dawn suppression flight (Air Tractor AT-802F water bombers @ US$2,200/h + helicopters @ US$2,500/h = >US$44,000), not counting commercial timber preserved.",
 
+    // IaaS Operational Framework
+    iaas_tag: "IAAS OPERATIONAL FRAMEWORK",
+    iaas_title: "Intelligence as a Service Model & Operational Commitments",
+    iaas_sub: "Structured for enterprises to deploy autonomous aerial night surveillance without purchasing fixed assets or carrying fleet liabilities.",
+    iaas_p1_title: "0 CAPEX & Zero Fleet Liability",
+    iaas_p1_desc: "Clients do not buy drones or carry aircraft depreciation. Operational uptime is contracted per wildfire season as an operational expense (OPEX).",
+    iaas_p2_title: "Comprehensive Maintenance & Tech Support",
+    iaas_p2_desc: "Preventative replacement of props, batteries, thermal sensors, and onboard AI model updates are directly managed by Strig Systems engineering.",
+    iaas_p3_title: "DGAC Regulatory Compliance Management",
+    iaas_p3_desc: "Operations conducted under strict safety protocols conforming to Chilean DGAC DAN 151 / DAN 91 regulations for segregated BVLOS and contingency zones.",
+
     // Pilot Program
     pilot_tag: "Field Validation",
     pilot_title: "Early Deployment Pilot Program",
@@ -416,6 +509,8 @@ const translations = {
     callout_title: "2026 Validation Cohort Applications",
     callout_desc: "Limited operational flight slots available per fire season in South-Central Chile. Free territorial feasibility and C2 interoperability assessment for forestry and industrial holdings.",
     callout_cta: "Request Pilot Feasibility Assessment",
+    callout_briefing: "Schedule Technical Briefing (15 min)",
+    callout_brief_pdf: "Executive Brief (PDF)",
 
     // Alliances & R&D
     alliances_tag: "Ecosystem & Traction",
@@ -480,6 +575,43 @@ const translations = {
     success_title: "Application Received Successfully!",
     success_desc: "We have received your organization's information. Our aerospace engineering team will review territorial feasibility and follow up directly within 24 business hours.",
     success_close_btn: "Close Window",
+
+    // Briefing Modal (15 min)
+    briefing_badge: "Engineering & Operations",
+    briefing_modal_title: "Schedule a 15-Minute Technical Briefing",
+    briefing_modal_sub: "Direct technical session with Tomás Medina (Technical Lead): evaluating terrain orography, tactical radio link margins, and C2 requirements.",
+    f_contact_label: "Corporate Email or WhatsApp *",
+    f_contact_ph: "email@company.com or +56 9...",
+    f_briefing_time_label: "Preferred Time Window *",
+    f_briefing_time_morn: "Morning (09:00 - 13:00 CLT)",
+    f_briefing_time_aft: "Afternoon (14:00 - 18:00 CLT)",
+    f_briefing_submit: "Request Technical Briefing",
+    f_briefing_direct: "Or email the Technical Lead directly:",
+    briefing_success_title: "Briefing Request Received!",
+    briefing_success_desc: "Tomás Medina will reach out directly to coordinate the Google Meet link according to your preferred time window.",
+
+    // Executive Brief (One-Pager Whitepaper)
+    brief_doc_print: "🖨️ Print / Save as PDF",
+    eb_tag: "EXECUTIVE BRIEF 2026",
+    eb_sub: "Autonomous Nighttime Territorial Surveillance",
+    eb_h1: "Autonomous Aerial Intelligence for Wildfire Fighting Across the Night Gap",
+    eb_summary: "Athene eliminates the 10-hour nighttime blind spot using 2.1 m lift+cruise VTOL uncrewed aircraft (MVP platform transitioning toward proprietary Noctua-01 airframe), onboard Edge AI thermal inference (NVIDIA Jetson), and 915 MHz FHSS tactical telemetry—displacing costly ground patrols and averting multi-million dollar firefighting aircraft sorties at dawn.",
+    eb_b1_title: "1. Operational Problem",
+    eb_b1_p1: "<strong>Nighttime blind window (20:00 to 06:00):</strong> Manned aircraft fight fires by day but are grounded at night by DGAC regulations and controlled flight into terrain (CFIT) risks.",
+    eb_b1_p2: "<strong>Massive industrial expenditure:</strong> Annual consolidated spending of US$130M on wildfire fighting and prevention in Chile (Source: CORMA).",
+    eb_b1_p3: "<strong>Ground patrol blind spots:</strong> 4x4 pickup patrols cover &lt; 12% of land holdings, blind to ravines and deep stands where campfires and arson fires ignite.",
+    eb_b2_title: "2. Technological Solution",
+    eb_b2_p1: "<strong>2.1 m Lift+Cruise VTOL Platform:</strong> Vertical takeoff from forest clearings, 90-min endurance, and 15 km operational patrol radius.",
+    eb_b2_p2: "<strong>Onboard Zero-Cloud Edge AI:</strong> NVIDIA Jetson compute + TensorRT acceleration; thermal threat detection in &lt; 5 s without internet or cell signal.",
+    eb_b2_p3: "<strong>915 MHz FHSS Tactical Telemetry:</strong> Acoustic siren and pinpoint GPS coordinates sent straight to ground 4x4 cabs (&gt;20 km LOS).",
+    eb_b3_title: "3. IaaS Economic Framework (0 CAPEX)",
+    eb_b3_p1: "<strong>Ground Status Quo:</strong> 2 4x4 pickup patrols with 7x7 guards = US$64,000 / 5-month season for 25,000 ha.",
+    eb_b3_p2: "<strong>Athene IaaS Subscription:</strong> 1 Nest Alpha Base + VTOL = US$37,500 / season. <strong>Direct savings of US$26,500 (-41%)</strong>.",
+    eb_b3_p3: "<strong>Air Attack Defense Shield:</strong> Intercepting 1 ignition precursor averts ~20 h of Air Tractor AT-802F tankers and helicopters (&gt;US$44,000).",
+    eb_b4_title: "4. 2026 Operational Validation",
+    eb_b4_p1: "<strong>Institutional Backing:</strong> CORFO Semilla Inicia awardee backed by Universidad de Concepción (UdeC).",
+    eb_b4_p2: "<strong>South-Central Chile Pilot Program:</strong> 4-phase deployment methodology (Surveying, Calibration, Nighttime Surveillance, ROI Audit).",
+    eb_b4_p3: "<strong>Direct Contact:</strong> Tomás Medina (Technical Lead) | <code>tmedina@strigsystems.tech</code> | <code>strigsystems.tech</code>",
 
     // Footer
     footer_tagline: "Autonomous uncrewed aircraft systems and Edge AI computing for proactive critical risk mitigation.",
@@ -547,8 +679,10 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initHeaderScroll();
 
-  // Initialize Pilot Modal
+  // Initialize Pilot & Conversion Modals
   initPilotModal();
+  initBriefingModal();
+  initExecutiveBriefModal();
 
   // Initialize C2 Tactical Simulator
   initC2Simulator();
@@ -774,6 +908,205 @@ function initPilotModal() {
         if (arrowIcon) arrowIcon.style.display = 'inline-block';
         if (btnText) btnText.textContent = dict.f_submit_btn || "Enviar Postulación a Piloto";
       }
+    });
+  }
+}
+
+/**
+ * Controller for 15-Minute Technical Briefing Modal
+ */
+function initBriefingModal() {
+  const modal = document.getElementById('briefing-modal');
+  if (!modal) return;
+
+  const openBtns = document.querySelectorAll('[data-open-modal="briefing-modal"]');
+  const closeBtns = modal.querySelectorAll('[data-close-modal]');
+  const form = document.getElementById('briefing-form');
+  const successState = document.getElementById('briefing-success');
+  const netError = document.getElementById('briefing-error');
+  const submitBtn = document.getElementById('b-submit-btn');
+  const btnText = submitBtn ? submitBtn.querySelector('.btn-text') : null;
+  const btnSpinner = submitBtn ? submitBtn.querySelector('.btn-spinner') : null;
+  const arrowIcon = submitBtn ? submitBtn.querySelector('.arrow-icon') : null;
+
+  function openModal() {
+    modal.classList.add('active');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+    const firstInput = modal.querySelector('#b-name');
+    if (firstInput) {
+      setTimeout(() => firstInput.focus(), 120);
+    }
+  }
+
+  function closeModal() {
+    modal.classList.remove('active');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+  }
+
+  openBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openModal();
+    });
+  });
+
+  closeBtns.forEach(btn => {
+    btn.addEventListener('click', closeModal);
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+
+  if (form) {
+    const inputsToWatch = form.querySelectorAll('.form-input, .form-select');
+    inputsToWatch.forEach(input => {
+      input.addEventListener('input', () => {
+        input.classList.remove('input-invalid');
+        if (netError) netError.style.display = 'none';
+      });
+      input.addEventListener('change', () => {
+        input.classList.remove('input-invalid');
+        if (netError) netError.style.display = 'none';
+      });
+    });
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (netError) netError.style.display = 'none';
+
+      const name = form.querySelector('#b-name');
+      const contact = form.querySelector('#b-contact');
+      const time = form.querySelector('#b-time');
+
+      let isValid = true;
+      if (!name || !name.value.trim()) {
+        if (name) name.classList.add('input-invalid');
+        isValid = false;
+      }
+      if (!contact || !contact.value.trim()) {
+        if (contact) contact.classList.add('input-invalid');
+        isValid = false;
+      }
+
+      if (!isValid) return;
+
+      const payload = {
+        Nombre: name.value.trim(),
+        Contacto: contact.value.trim(),
+        Horario_Preferente: time ? time.value : 'Mañana (09:00 - 13:00 CLT)',
+        _subject: `Solicitud Briefing Técnico 15 min - ${name.value.trim()}`,
+        _template: 'table',
+        _captcha: 'false'
+      };
+
+      const currentLang = document.documentElement.getAttribute('data-lang') || 'es';
+      const dict = translations[currentLang] || translations.es;
+
+      if (submitBtn) submitBtn.disabled = true;
+      if (btnSpinner) btnSpinner.style.display = 'inline-block';
+      if (arrowIcon) arrowIcon.style.display = 'none';
+      if (btnText) btnText.textContent = dict.f_submitting || "Enviando...";
+
+      try {
+        const response = await fetch('https://formsubmit.co/ajax/tmedina@strigsystems.tech', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        });
+
+        if (response.ok) {
+          form.style.display = 'none';
+          if (successState) successState.style.display = 'flex';
+          form.reset();
+        } else {
+          throw new Error(`Server returned HTTP ${response.status}`);
+        }
+      } catch (err) {
+        console.warn('Briefing FormSubmit request failed:', err);
+        if (netError) {
+          netError.style.display = 'block';
+          const fallbackSub = encodeURIComponent(`Solicitud Briefing Técnico - ${name.value.trim()}`);
+          const fallbackBody = encodeURIComponent(
+            `Nombre: ${name.value.trim()}\nContacto: ${contact.value.trim()}\nHorario Preferente: ${time ? time.value : ''}`
+          );
+          const mailLink = netError.querySelector('.alert-link');
+          if (mailLink) {
+            mailLink.href = `mailto:tmedina@strigsystems.tech?subject=${fallbackSub}&body=${fallbackBody}`;
+          }
+        }
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
+        if (btnSpinner) btnSpinner.style.display = 'none';
+        if (arrowIcon) arrowIcon.style.display = 'inline-block';
+        if (btnText) btnText.textContent = dict.f_briefing_submit || "Solicitar Briefing Técnico";
+      }
+    });
+  }
+}
+
+/**
+ * Controller for Executive Brief One-Pager Whitepaper Modal & Print
+ */
+function initExecutiveBriefModal() {
+  const modal = document.getElementById('brief-modal');
+  if (!modal) return;
+
+  const openBtns = document.querySelectorAll('[data-open-modal="brief-modal"]');
+  const closeBtns = modal.querySelectorAll('[data-close-modal]');
+  const printBtn = document.getElementById('brief-print-btn');
+
+  function openModal() {
+    modal.classList.add('active');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+  }
+
+  function closeModal() {
+    modal.classList.remove('active');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+  }
+
+  openBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openModal();
+    });
+  });
+
+  closeBtns.forEach(btn => {
+    btn.addEventListener('click', closeModal);
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+
+  if (printBtn) {
+    printBtn.addEventListener('click', () => {
+      window.print();
     });
   }
 }
