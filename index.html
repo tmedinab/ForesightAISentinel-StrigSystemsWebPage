@@ -748,6 +748,52 @@
           </div>
         </div>
 
+        <!-- Interactive Territorial ROI Calculator -->
+        <div class="roi-calculator-box glass-panel" id="roi-calculator">
+          <div class="roi-header">
+            <span class="roi-badge" data-i18n="roi_badge">MODELO ECONÓMICO</span>
+            <h3 class="roi-title" data-i18n="roi_title">Calculadora de Retorno Operativo Territorial</h3>
+            <p class="roi-sub" data-i18n="roi_sub">Estima el ahorro económico y la reducción de huella de carbono según la superficie de tus predios.</p>
+          </div>
+
+          <div class="roi-slider-container">
+            <div class="roi-slider-top">
+              <span class="roi-slider-lbl" data-i18n="roi_lbl_area">Superficie a Proteger:</span>
+              <span class="roi-slider-val" id="roi-area-readout">25.000 ha</span>
+            </div>
+            <input type="range" id="roi-slider" min="5000" max="100000" step="2500" value="25000" class="roi-range-slider" aria-label="Superficie a Proteger en hectáreas">
+            <div class="roi-presets">
+              <button type="button" class="roi-preset-btn" data-preset="10000">10k ha</button>
+              <button type="button" class="roi-preset-btn active" data-preset="25000">25k ha</button>
+              <button type="button" class="roi-preset-btn" data-preset="50000">50k ha</button>
+              <button type="button" class="roi-preset-btn" data-preset="100000">100k ha</button>
+            </div>
+          </div>
+
+          <div class="roi-metrics-grid">
+            <div class="roi-metric-card">
+              <span class="roi-metric-k" data-i18n="roi_lbl_manned">Costo Aviación Tripulada Estimado:</span>
+              <span class="roi-metric-v roi-v-manned" id="roi-manned-val">US$ 162.500 / año</span>
+              <span class="roi-metric-sub" data-i18n="roi_sub_manned">Avioneta diurna + cuadrilla</span>
+            </div>
+            <div class="roi-metric-card">
+              <span class="roi-metric-k" data-i18n="roi_lbl_strig">Suscripción Athene (0 CAPEX):</span>
+              <span class="roi-metric-v roi-v-strig" id="roi-strig-val">US$ 23.750 / año</span>
+              <span class="roi-metric-sub" data-i18n="roi_sub_strig">Patrullaje nocturno autónomo</span>
+            </div>
+            <div class="roi-metric-card roi-highlight-card">
+              <span class="roi-metric-k" data-i18n="roi_lbl_savings">Ahorro Neto Operacional:</span>
+              <span class="roi-metric-v roi-v-savings" id="roi-savings-val">US$ 138.750</span>
+              <span class="roi-metric-badge" id="roi-savings-pct">-85% COSTO</span>
+            </div>
+            <div class="roi-metric-card">
+              <span class="roi-metric-k" data-i18n="roi_lbl_co2">Huella CO2 Evitada:</span>
+              <span class="roi-metric-v roi-v-co2" id="roi-co2-val">48,5 t CO2e</span>
+              <span class="roi-metric-sub" data-i18n="roi_sub_co2">Cero emisiones fósiles de vuelo</span>
+            </div>
+          </div>
+        </div>
+
         <!-- Pilot Callout Bar -->
         <div class="callout-box glass-panel">
           <div class="callout-info">

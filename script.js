@@ -140,6 +140,19 @@ const translations = {
     salute_val_eq: "Bidón Combustible (VLM Edge)",
     c2_pip_swap: "⇄ CLIC PARA EXPANDIR",
 
+    // ROI Calculator
+    roi_badge: "MODELO ECONÓMICO",
+    roi_title: "Calculadora de Retorno Operativo Territorial",
+    roi_sub: "Estima el ahorro económico y la reducción de huella de carbono según la superficie de tus predios.",
+    roi_lbl_area: "Superficie a Proteger:",
+    roi_lbl_manned: "Costo Aviación Tripulada Estimado:",
+    roi_sub_manned: "Avioneta diurna + cuadrilla",
+    roi_lbl_strig: "Suscripción Athene (0 CAPEX):",
+    roi_sub_strig: "Patrullaje nocturno autónomo",
+    roi_lbl_savings: "Ahorro Neto Operacional:",
+    roi_lbl_co2: "Huella CO2 Evitada:",
+    roi_sub_co2: "Cero emisiones fósiles de vuelo",
+
     // Pilot Program
     pilot_tag: "Validación en Terreno",
     pilot_title: "Programa Piloto para Empresas del Sector",
@@ -363,6 +376,19 @@ const translations = {
     salute_val_eq: "Accelerant Canister (Edge VLM)",
     c2_pip_swap: "⇄ CLICK TO EXPAND",
 
+    // ROI Calculator
+    roi_badge: "ECONOMIC MODEL",
+    roi_title: "Territorial Operational ROI Calculator",
+    roi_sub: "Estimate operational savings and carbon footprint reduction based on your land acreage.",
+    roi_lbl_area: "Acreage to Protect:",
+    roi_lbl_manned: "Estimated Manned Aviation Cost:",
+    roi_sub_manned: "Daytime aircraft + ground crew",
+    roi_lbl_strig: "Athene Subscription (0 CAPEX):",
+    roi_sub_strig: "Autonomous nighttime patrol",
+    roi_lbl_savings: "Net Operational Savings:",
+    roi_lbl_co2: "Carbon Footprint Avoided:",
+    roi_sub_co2: "Zero fossil aviation emissions",
+
     // Pilot Program
     pilot_tag: "Field Validation",
     pilot_title: "Early Deployment Pilot Program",
@@ -514,6 +540,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize C2 Tactical Simulator
   initC2Simulator();
+
+  // Initialize Territorial ROI Calculator
+  initRoiCalculator();
 });
 
 /**
@@ -549,6 +578,9 @@ function setLanguage(lang) {
       span.classList.remove('active');
     }
   });
+
+  // Dispatch custom event for widgets that format dynamic numbers/units
+  window.dispatchEvent(new CustomEvent('strig-lang-change', { detail: { lang } }));
 }
 
 /**
@@ -798,6 +830,88 @@ function initHeaderScroll() {
 
   window.addEventListener('scroll', handleScroll, { passive: true });
   handleScroll();
+}
+
+/**
+ * Interactive Territorial Acreage ROI Calculator
+ */
+function initRoiCalculator() {
+  const slider = document.getElementById('roi-slider');
+  const areaReadout = document.getElementById('roi-area-readout');
+  const mannedVal = document.getElementById('roi-manned-val');
+  const strigVal = document.getElementById('roi-strig-val');
+  const savingsVal = document.getElementById('roi-savings-val');
+  const savingsPct = document.getElementById('roi-savings-pct');
+  const co2Val = document.getElementById('roi-co2-val');
+  const presetBtns = document.querySelectorAll('.roi-preset-btn');
+
+  if (!slider) return;
+
+  function updateRoi() {
+    const ha = parseInt(slider.value, 10);
+    const lang = document.documentElement.getAttribute('data-lang') || 'es';
+    const isEs = lang === 'es';
+
+    // Financial model:
+    // Manned Aviation: US$ 6.50 / ha / year
+    // Athene Autonomous VTOL IaaS: US$ 0.95 / ha / year
+    // Carbon Footprint Avoided: 0.00194 metric tons CO2e / ha / year
+    const mannedCost = ha * 6.5;
+    const strigCost = ha * 0.95;
+    const savings = mannedCost - strigCost;
+    const co2Avoided = ha * 0.00194;
+
+    const locale = isEs ? 'es-CL' : 'en-US';
+    const perYear = isEs ? 'año' : 'yr';
+    const costWord = isEs ? 'COSTO' : 'COST';
+
+    if (areaReadout) {
+      areaReadout.textContent = `${ha.toLocaleString(locale)} ha`;
+    }
+    if (mannedVal) {
+      mannedVal.textContent = `US$ ${Math.round(mannedCost).toLocaleString(locale)} / ${perYear}`;
+    }
+    if (strigVal) {
+      strigVal.textContent = `US$ ${Math.round(strigCost).toLocaleString(locale)} / ${perYear}`;
+    }
+    if (savingsVal) {
+      savingsVal.textContent = `US$ ${Math.round(savings).toLocaleString(locale)}`;
+    }
+    if (savingsPct) {
+      savingsPct.textContent = `-85% ${costWord}`;
+    }
+    if (co2Val) {
+      co2Val.textContent = `${co2Avoided.toLocaleString(locale, { minimumFractionDigits: 1, maximumFractionDigits: 1 })} t CO2e`;
+    }
+
+    // Sync preset buttons active state
+    presetBtns.forEach(btn => {
+      const pVal = parseInt(btn.getAttribute('data-preset'), 10);
+      if (pVal === ha) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+  }
+
+  slider.addEventListener('input', updateRoi);
+
+  presetBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const preset = btn.getAttribute('data-preset');
+      if (preset) {
+        slider.value = preset;
+        updateRoi();
+      }
+    });
+  });
+
+  // Listen for language changes to update localized suffixes
+  window.addEventListener('strig-lang-change', updateRoi);
+
+  // Initial calculation
+  updateRoi();
 }
 
 /**
