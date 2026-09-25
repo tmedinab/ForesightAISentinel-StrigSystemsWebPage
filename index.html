@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Strig Systems | Athene — Inteligencia Aérea Autónoma</title>
-  <meta name="description" content="Strig Systems desarrolla Athene: plataforma de vigilancia territorial autónoma con drones VTOL y Edge AI. Cierra la ventana nocturna de 10 horas en detección de incendios forestales. Ahorro de hasta el 40% vs patrullaje terrestre 4x4.">
+  <meta name="description" content="Strig Systems desarrolla Athene: plataforma de vigilancia territorial autónoma con drones e inferencia Edge AI a bordo para la detección temprana y disuasión de precursores de incendios forestales en la brecha nocturna.">
   <meta name="keywords" content="Strig Systems, Athene, Noctua, Incendios Forestales, Vigilancia Aérea Autónoma, Drones VTOL, Edge AI, Detección Temprana, Monitoreo Nocturno, CORFO, UdeC">
   <meta name="author" content="Strig Systems SpA">
   <link rel="canonical" href="https://strigsystems.tech/">
@@ -12,8 +12,8 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://strigsystems.tech/">
-  <meta property="og:title" content="Strig Systems | Athene">
-  <meta property="og:description" content="Vigilancia aérea autónoma nocturna con Edge AI para protección de activos territoriales críticos.">
+  <meta property="og:title" content="Strig Systems | Athene — Inteligencia Aérea Autónoma">
+  <meta property="og:description" content="Vigilancia aérea nocturna con Edge AI para detección de actividad humana y disuasión temprana de incendios forestales.">
   <meta property="og:image" content="https://strigsystems.tech/assets/img/tech/vtol_payload.png">
 
   <!-- Favicon SVG -->
@@ -22,7 +22,7 @@
   <!-- Google Fonts: Space Grotesk & Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -46,9 +46,12 @@
         <a href="#problema" class="nav-item" data-i18n="nav_problem">Problema</a>
         <a href="#comparativa" class="nav-item" data-i18n="nav_compare">Comparativa</a>
         <a href="#tecnologia" class="nav-item" data-i18n="nav_tech">Tecnología</a>
-        <a href="#piloto" class="nav-item" data-i18n="nav_pilot">Programa Piloto</a>
+        <a href="#roadmap" class="nav-item" data-i18n="nav_roadmap">Hoja de Ruta</a>
+        <a href="#impacto" class="nav-item" data-i18n="nav_impact">Impacto</a>
+        <a href="#piloto" class="nav-item" data-i18n="nav_pilot">Validación 2026-27</a>
         <a href="#alianzas" class="nav-item" data-i18n="nav_alliances">I+D & Alianzas</a>
         <a href="#equipo" class="nav-item" data-i18n="nav_team">Equipo</a>
+        <a href="#faq" class="nav-item" data-i18n="nav_faq">FAQ</a>
       </nav>
 
       <div class="header-actions">
@@ -58,7 +61,7 @@
           <span class="lang-divider">/</span>
           <span class="lang-option" data-lang-val="en">EN</span>
         </button>
-        <button type="button" class="btn-primary btn-header" data-open-modal="pilot-modal" data-i18n="nav_cta">Postular a Piloto</button>
+        <button type="button" class="btn-primary btn-header" data-open-modal="pilot-modal" data-i18n="nav_cta">Sumarse a Validación</button>
         <!-- Mobile Menu Toggle Button -->
         <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobile-drawer">
           <span class="hamburger-bar"></span>
@@ -74,12 +77,15 @@
         <a href="#problema" class="mobile-nav-item" data-i18n="nav_problem">Problema</a>
         <a href="#comparativa" class="mobile-nav-item" data-i18n="nav_compare">Comparativa</a>
         <a href="#tecnologia" class="mobile-nav-item" data-i18n="nav_tech">Tecnología</a>
-        <a href="#piloto" class="mobile-nav-item" data-i18n="nav_pilot">Programa Piloto</a>
+        <a href="#roadmap" class="mobile-nav-item" data-i18n="nav_roadmap">Hoja de Ruta</a>
+        <a href="#impacto" class="mobile-nav-item" data-i18n="nav_impact">Impacto</a>
+        <a href="#piloto" class="mobile-nav-item" data-i18n="nav_pilot">Validación 2026-27</a>
         <a href="#alianzas" class="mobile-nav-item" data-i18n="nav_alliances">I+D & Alianzas</a>
         <a href="#equipo" class="mobile-nav-item" data-i18n="nav_team">Equipo</a>
+        <a href="#faq" class="mobile-nav-item" data-i18n="nav_faq">FAQ</a>
       </nav>
       <div class="mobile-drawer-cta">
-        <button type="button" class="btn-primary btn-mobile-cta" data-open-modal="pilot-modal" data-i18n="nav_cta">Postular a Piloto</button>
+        <button type="button" class="btn-primary btn-mobile-cta" data-open-modal="pilot-modal" data-i18n="nav_cta">Sumarse a Validación</button>
       </div>
     </div>
   </header>
@@ -88,6 +94,12 @@
     <!-- HERO SECTION -->
     <section class="hero-section">
       <div class="container hero-content">
+        <!-- TRL 3 Engineering Status Strip -->
+        <div class="hero-status-strip">
+          <span class="status-pulse-dot"></span>
+          <span data-i18n="hero_status">Prototipo en desarrollo • TRL 3 • Demo técnica Gearbox Ene 2027</span>
+        </div>
+
         <div class="badge-tag">
           <span class="badge-dot"></span>
           <span data-i18n="hero_badge">Proyecto Semilla Inicia CORFO • UdeC • Combate de Incendios en Primera Línea</span>
@@ -99,45 +111,44 @@
         </h1>
 
         <p class="hero-subtitle" data-i18n="hero_sub">
-          Plataforma de vigilancia territorial autónoma con drones VTOL e inferencia Edge AI a bordo. Cerramos la brecha nocturna de 10 horas detectando actividad humana no autorizada y precursores térmicos antes de la ignición — optimizando el gasto en patrullaje terrestre hasta en un 40% y evitando el despliegue millonario de aviones de combate al amanecer.
+          Plataforma de vigilancia territorial autónoma con drones e inferencia Edge AI a bordo. Diseñada para cubrir la brecha nocturna detectando actividad humana no autorizada y disuadiéndola mediante estrobo y sirena con autorización del operador humano, antes del inicio del fuego.
         </p>
 
         <div class="hero-actions">
           <button type="button" class="btn-primary" data-open-modal="pilot-modal">
-            <span data-i18n="hero_cta_primary">Postular a Piloto Operativo</span>
+            <span data-i18n="hero_cta_primary">Sumarse al Programa de Validación 2026-27</span>
             <span class="arrow-icon">→</span>
           </button>
-          <a href="#tecnologia" class="btn-ghost">
-            <span data-i18n="hero_cta_secondary">Ver Capacidades del Sistema</span>
+          <a href="#roadmap" class="btn-ghost">
+            <span data-i18n="hero_cta_secondary">Ver Hoja de Ruta & Capacidades</span>
           </a>
         </div>
 
-        <!-- Metrics Grid (Compact & Elegant) -->
+        <!-- Metrics Grid (Compact & Honest Taxonomy) -->
         <div class="metrics-grid">
           <div class="metric-card glass-panel">
-            <div class="metric-value">10 h</div>
-            <div class="metric-title" data-i18n="m1_title">Ventana Crítica Nocturna</div>
-            <div class="metric-sub" data-i18n="m1_sub">Vigilancia autónoma continua (20:00 a 06:00)</div>
+            <div class="metric-value">Noche</div>
+            <span class="tax-badge tax-badge-problem" data-i18n="m1_tax">[PROBLEMA]</span>
+            <div class="metric-title" data-i18n="m1_title">Brecha Nocturna</div>
+            <div class="metric-sub" data-i18n="m1_sub">Vigilancia aérea mientras la aviación tripulada está en tierra</div>
           </div>
           <div class="metric-card glass-panel">
-            <div class="metric-value">100%</div>
-            <div class="metric-title" data-i18n="m2_title">Visión Aérea Total</div>
-            <div class="metric-sub" data-i18n="m2_sub">Visión térmica en quebradas invisibles para 4x4</div>
+            <div class="metric-value">15 km</div>
+            <span class="tax-badge tax-badge-goal" data-i18n="m2_tax">Objetivo de Producto</span>
+            <div class="metric-title" data-i18n="m2_title">Radio de Misión</div>
+            <div class="metric-sub" data-i18n="m2_sub">Meta de diseño para 50.000 ha • Hoy: 1 km en predio experimental (VLOS)</div>
           </div>
           <div class="metric-card glass-panel">
-            <div class="metric-value">&lt; 5 s</div>
-            <div class="metric-title" data-i18n="m3_title">Alerta Preignición</div>
-            <div class="metric-sub" data-i18n="m3_sub">Edge AI a bordo (&lt;5% falsas alarmas)</div>
+            <div class="metric-value">Segundos</div>
+            <span class="tax-badge tax-badge-goal" data-i18n="m3_tax">Meta MVP: &lt;10% Falsas Alarmas</span>
+            <div class="metric-title" data-i18n="m3_title">Detección Térmica</div>
+            <div class="metric-sub" data-i18n="m3_sub">Inferencia local a bordo • Alerta a operador en minutos (meta ≤ 3 min)</div>
           </div>
           <div class="metric-card glass-panel">
-            <div class="metric-value">-40%</div>
-            <div class="metric-header-row">
-              <div class="metric-title" data-i18n="m4_title">Gasto Operacional Nocturno</div>
-              <span class="metric-info-trigger" tabindex="0" role="button" aria-label="Ver desglose del ahorro operacional">ⓘ
-                <span class="metric-tooltip" role="tooltip" data-i18n="m4_tooltip">Ahorro neto directo estimado al reemplazar 2 camionetas 4x4 terrestres por 1 base autónoma Athene IaaS Nest Alpha en clústeres de 25.000 ha durante la temporada crítica de 5 meses.</span>
-              </span>
-            </div>
-            <div class="metric-sub" data-i18n="m4_sub">Ahorro directo vs patrullas 4x4 terrestres</div>
+            <div class="metric-value">HITL</div>
+            <span class="tax-badge tax-badge-today" data-i18n="m4_tax">Diferenciador Clave</span>
+            <div class="metric-title" data-i18n="m4_title">Disuasión Autorizada</div>
+            <div class="metric-sub" data-i18n="m4_sub">Estrobo de alta intensidad y sirena activados por el operador ante actividad humana</div>
           </div>
         </div>
       </div>
@@ -149,14 +160,14 @@
         <div class="section-header">
           <span class="section-tag" data-i18n="prob_tag">El Diagnóstico Territorial</span>
           <h2 class="section-title">
-            <span data-i18n="prob_title">La brecha nocturna que cuesta US$130M al año</span>
-            <span class="source-badge-wrap" tabindex="0" role="button" aria-label="Ver fuente oficial de la estimación">
-              <span class="source-badge">Fuente: CORMA <span class="badge-info-icon">ⓘ</span></span>
-              <span class="source-tooltip" role="tooltip" data-i18n="corma_tooltip">Dato oficial Corporación Chilena de la Madera (CORMA): Gasto consolidado anual de la industria y el Estado en combate y prevención de incendios forestales en Chile.</span>
+            <span data-i18n="prob_title">La brecha nocturna en la protección forestal</span>
+            <span class="source-badge-wrap" tabindex="0" role="button" aria-label="Ver fuente oficial de la estadística">
+              <span class="source-badge">Fuente: CONAF (2003-2023) <span class="badge-info-icon">ⓘ</span></span>
+              <span class="source-tooltip" role="tooltip" data-i18n="corma_tooltip">Estadística histórica oficial de CONAF: el 99,7% de los incendios forestales en Chile tienen origen en la acción humana (negligencia o intencionalidad).</span>
             </span>
           </h2>
           <p class="section-subtitle" data-i18n="prob_sub">
-            El 99,7% de los incendios forestales son causados por el ser humano. La aviación tripulada combate de día, pero por seguridad y normativa DGAC no vuela de noche. Cuando el viento y el riesgo de intencionalidad son más altos, el cielo queda vacío y las camionetas en tierra no tienen visibilidad en el bosque profundo.
+            El 99,7% de los incendios forestales son causados por el ser humano. La aviación tripulada combate de día, pero por seguridad y normativa DGAC no vuela de noche. Cuando el viento y el riesgo son más altos, el cielo queda vacío y las camionetas en tierra tienen visibilidad reducida fuera de los caminos principales.
           </p>
         </div>
 
@@ -193,7 +204,7 @@
         <div class="quote-strip glass-panel">
           <span class="quote-symbol">“</span>
           <p class="quote-text" data-i18n="quote_text">
-            Satélites sufren latencia orbital; torres fijas tienen puntos ciegos orográficos; las patrullas en camioneta 4x4 solo ven lo que tocan sus focos en el camino; y los aviones cisterna quedan en tierra al atardecer por seguridad. Athene es el centinela aéreo nocturno que detecta la fogata o el precursor antes de que nazca el incendio, evitando el despliegue millonario de aeronaves de combate al amanecer.
+            Satélites sufren latencia orbital; torres fijas tienen puntos ciegos orográficos; las patrullas en camioneta 4x4 solo ven lo que tocan sus focos en el camino; y los aviones cisterna quedan en tierra al atardecer por seguridad. Athene detecta actividad humana no autorizada visible desde 100 m de altura para disuadir antes de la ignición, dejando el fuego incipiente como objetivo secundario.
           </p>
         </div>
       </div>
@@ -221,8 +232,8 @@
                 <th class="th-tech" data-i18n="th_tower">Torres Térmicas Fijas<br><span class="th-sub">Mástiles Ópticos</span></th>
                 <th class="th-tech" data-i18n="th_drone">Vigilancia Tripulada<br><span class="th-sub">Avionetas Diurnas + Cuadrillas/Drones</span></th>
                 <th class="th-tech th-highlight">
-                  <div class="winner-badge" data-i18n="strig_badge">Nuestra Arquitectura</div>
-                  <div data-i18n="th_strig">Strig Systems<br><span class="th-sub">Athene (VTOL Noctua-01 + Edge AI)</span></div>
+                  <div class="winner-badge" data-i18n="strig_badge">Nuestra Propuesta</div>
+                  <div data-i18n="th_strig">Strig Systems<br><span class="th-sub">Athene (Plataforma + Edge AI)</span></div>
                 </th>
               </tr>
             </thead>
@@ -232,42 +243,42 @@
                 <td class="td-tech" data-i18n="r1_sat">Pasos orbitales discretos (1 a 4 h). Estándar macrocontinental indiscutido de día, pero con ventana ciega crítica durante la noche.</td>
                 <td class="td-tech" data-i18n="r1_tower">Continuo 24/7 de alta confiabilidad, pero estrictamente limitado a la línea de vista directa (LOS) de su cuenca visible.</td>
                 <td class="td-tech" data-i18n="r1_drone">Inoperante de noche. Los aviones cisterna y de coordinación quedan en tierra al atardecer por normativa DGAC/VFR nocturno (riesgo de colisión contra el relieve CFIT). En tierra, las camionetas 4x4 sufren fatiga, lentitud en ripio y nula visibilidad fuera del camino.</td>
-                <td class="td-tech td-highlight" data-i18n="r1_strig"><strong>Patrullaje autónomo programado</strong> en las 10 horas de vulnerabilidad nocturna con aeronave VTOL Noctua-01 y estación de acople.</td>
+                <td class="td-tech td-highlight" data-i18n="r1_strig"><strong>Patrullaje aéreo nocturno</strong> en predio piloto con operador calificado (VLOS). <span class="tax-badge tax-badge-vision">Visión: Estación Nest Autónoma</span></td>
               </tr>
               <tr>
                 <td class="td-dim" data-i18n="r2_dim">Latencia de Detección & Alerta</td>
                 <td class="td-tech" data-i18n="r2_sat"><span class="badge-negative">30 a 90 minutos</span> (descarga orbital, procesamiento en la nube y distribución de alertas a centrales).</td>
                 <td class="td-tech" data-i18n="r2_tower">Instantánea en sensor óptico; requiere operador humano 24/7 en central para verificación y filtrado de falsas alarmas.</td>
                 <td class="td-tech" data-i18n="r2_drone">Instantánea para el piloto u operador local; demorada hacia la central de despacho si no existe cobertura 4G/5G en la quebrada o predio.</td>
-                <td class="td-tech td-highlight" data-i18n="r2_strig"><span class="badge-positive">&lt; 5 segundos</span> (Inferencia Edge AI local a bordo + radioenlace táctico de telemetría de largo alcance).</td>
+                <td class="td-tech td-highlight" data-i18n="r2_strig"><span class="badge-positive">Detección en segundos</span> con Edge AI a bordo. Alerta a la estación de operador en minutos (meta MVP ≤ 3 min).</td>
               </tr>
               <tr>
                 <td class="td-dim" data-i18n="r3_dim">Detección de Precursores (Humanos / Vehículos)</td>
                 <td class="td-tech" data-i18n="r3_sat"><span class="badge-negative">0%</span> (Resolución espacial de 375m a 1km. Diseñado para incendios activos, incapaz de ver personas o fogatas).</td>
                 <td class="td-tech" data-i18n="r3_tower">Nula en senderos boscosos densos o bajo dosel arbóreo fuera del ángulo visual del mástil.</td>
                 <td class="td-tech" data-i18n="r3_drone">Severamente limitada. Las avionetas no vuelan de noche para detectar campamentos o fogatas tempranas; las patrullas en camioneta solo vigilan caminos habilitados, dejando el interior ciego.</td>
-                <td class="td-tech td-highlight" data-i18n="r3_strig"><span class="badge-positive">Detección óptica/térmica</span> de presencia humana y vehículos antes de la ignición (causa del 99,7% de los incendios).</td>
+                <td class="td-tech td-highlight" data-i18n="r3_strig"><span class="badge-positive">Detección óptica/térmica</span> de presencia humana visible desde 100 m para disuasión antes del inicio del fuego.</td>
               </tr>
               <tr>
                 <td class="td-dim" data-i18n="r4_dim">Puntos Ciegos Topográficos</td>
                 <td class="td-tech" data-i18n="r4_sat">Afectado por nubosidad baja, humo denso e inversión térmica que absorben la radiación infrarroja.</td>
                 <td class="td-tech" data-i18n="r4_tower"><span class="badge-negative">Crítico:</span> Puntos ciegos físicos insalvables tras cerros, quebradas y laderas opuestas.</td>
                 <td class="td-tech" data-i18n="r4_drone">Crítico. Las cuadrillas terrestres no tienen visibilidad tras cerros ni en quebradas profundas; las aeronaves diurnas sufren con nubosidad baja y humo denso.</td>
-                <td class="td-tech td-highlight" data-i18n="r4_strig"><span class="badge-positive">Mapeo adaptativo:</span> Vuelo autónomo por debajo del techo nuboso, perfilando quebradas y laderas sin sombra topográfica.</td>
+                <td class="td-tech td-highlight" data-i18n="r4_strig"><span class="badge-positive">Perspectiva cenital:</span> Vuelo adaptado sobre quebradas que reduce drásticamente los puntos ciegos de torres fijas y patrullas terrestres.</td>
               </tr>
               <tr>
-                <td class="td-dim" data-i18n="r5_dim">Riesgo Humano & Apalancamiento Operativo</td>
+                <td class="td-dim" data-i18n="r5_dim">Riesgo Humano & Supervisión</td>
                 <td class="td-tech" data-i18n="r5_sat">Cero exposición humana directa.</td>
                 <td class="td-tech" data-i18n="r5_tower">Cero exposición humana directa (salvo mantenimiento en cumbres aisladas).</td>
-                <td class="td-tech" data-i18n="r5_drone"><span class="badge-negative">Alto riesgo vital & Ratio 1:1:</span> Requiere 1 piloto + 1 observador certificado por aeronave. Peligro de accidentes aéreos en vuelo rasante sobre relieve agreste, y cuadrillas terrestres expuestas en caminos forestales aislados en horario nocturno crítico.</td>
-                <td class="td-tech td-highlight" data-i18n="r5_strig"><span class="badge-positive">Cero exposición & Multiplicador 1:N:</span> Misión, despegue y aterrizaje 100% autónomos desde estación de acople. Un solo operador táctico C2 supervisa hasta 5 cuadrículas de vuelo automatizado simultáneamente.</td>
+                <td class="td-tech" data-i18n="r5_drone"><span class="badge-negative">Alto riesgo vital & Ratio 1:1:</span> Requiere 1 piloto + 1 observador certificado por aeronave. Peligro de accidentes en vuelo rasante sobre relieve agreste, y cuadrillas terrestres expuestas en caminos forestales aislados en horario nocturno.</td>
+                <td class="td-tech td-highlight" data-i18n="r5_strig"><span class="badge-positive">Supervisión en tierra (HITL):</span> Operador en tierra autoriza la disuasión desde una posición segura. <span class="tax-badge tax-badge-vision">Visión: 1 operador supervisa N cuadrículas</span></td>
               </tr>
               <tr>
-                <td class="td-dim" data-i18n="r6_dim">Modelo Económico & Estructura de Costo</td>
-                <td class="td-tech" data-i18n="r6_sat">Suscripción SaaS (US$15k-$60k/año). Accesible para escala macro; no sustituye la vigilancia táctica.</td>
-                <td class="td-tech" data-i18n="r6_tower"><span class="badge-negative">Altísimo CAPEX:</span> US$40k-$100k por torre instalada (mástil, óptica militar, energía solar y caminos de acceso).</td>
-                <td class="td-tech" data-i18n="r6_drone"><span class="badge-negative">Costos Desarticulados:</span> Extinción diurna masiva: US$2.000-$3.500/hora de vuelo (aviones cisterna y helicópteros). Patrullaje terrestre nocturno: ~US$6.400/mes por camioneta 4x4 (2 vigilantes 7x7 + combustible + arriendo) con menos del 12% de cobertura predial.</td>
-                <td class="td-tech td-highlight" data-i18n="r6_strig"><span class="badge-positive">Intelligence as a Service (IaaS):</span> Suscripción modular (~US$7.500/mes por base Nest Alpha en temporada de riesgo). ~40% menor costo que patrullas 4x4 terrestres, 100% de cobertura en quebradas y prevención activa que ahorra decenas de miles de dólares en combate aéreo al amanecer.</td>
+                <td class="td-dim" data-i18n="r6_dim">Modelo Operativo & Acceso</td>
+                <td class="td-tech" data-i18n="r6_sat">Suscripción SaaS global. Accesible para escala macro; no sustituye la vigilancia táctica local.</td>
+                <td class="td-tech" data-i18n="r6_tower"><span class="badge-negative">Altísimo CAPEX:</span> Inversión en torres instaladas (mástil, óptica militar, energía solar y caminos de acceso).</td>
+                <td class="td-tech" data-i18n="r6_drone"><span class="badge-negative">Costos Desarticulados:</span> Extinción diurna masiva por hora de vuelo (aviones cisterna y helicópteros). Patrullaje terrestre nocturno en camioneta 4x4 con menos del 12% de cobertura predial.</td>
+                <td class="td-tech td-highlight" data-i18n="r6_strig"><span class="badge-positive">Modelo IaaS:</span> Sin adquisición de flota ni activos de capital (0 CAPEX). Co-diseño y validación técnica en terreno con empresas del sector.</td>
               </tr>
             </tbody>
           </table>
@@ -282,7 +293,7 @@
           <span class="section-tag" data-i18n="tech_tag">Capacidades Operativas</span>
           <h2 class="section-title" data-i18n="tech_title">Vigilancia Territorial con Inteligencia A Bordo</h2>
           <p class="section-subtitle" data-i18n="tech_sub">
-            Arquitectura autónoma de alta disponibilidad. La aeronave VTOL detecta, clasifica y georreferencia en el borde sin requerir enlace continuo a internet ni servidores en tierra.
+            Arquitectura de alta disponibilidad. La aeronave procesa, clasifica y georreferencia en el borde sin requerir enlace continuo a internet ni servidores en la nube.
           </p>
         </div>
 
@@ -291,8 +302,8 @@
             <div class="tech-avatar-circle">
               <img src="assets/img/tech/aerial_scan_loop.webp" alt="Visión Térmica Biespectral en Tiempo Real" class="circle-thumb" loading="lazy">
             </div>
-            <h3 class="tech-title" data-i18n="t1_title">Gimbal Biespectral Noctua-Optics</h3>
-            <p class="tech-desc" data-i18n="t1_desc">Payload giroestabilizado de 3 ejes con sensor microbolómetro LWIR radiométrico no refrigerado (640×512) y cámara óptica diurna 4K. Identificación térmica precisa en oscuridad total con algoritmo de discriminación multi-frame (&lt;5% falsas alarmas).</p>
+            <h3 class="tech-title" data-i18n="t1_title">Gimbal Biespectral</h3>
+            <p class="tech-desc" data-i18n="t1_desc">Payload giroestabilizado con sensor microbolómetro LWIR radiométrico no refrigerado (640×512) y cámara óptica diurna. Detección térmica en oscuridad con filtrado multi-frame para discriminación de fuentes térmicas (meta &lt; 5% falsas alarmas; criterio de aceptación de MVP &lt; 10%).</p>
           </div>
 
           <div class="tech-card glass-panel">
@@ -311,7 +322,7 @@
               </svg>
             </div>
             <h3 class="tech-title" data-i18n="t2_title">Inferencia Edge AI Zero-Cloud (NVIDIA Jetson)</h3>
-            <p class="tech-desc" data-i18n="t2_desc">Cómputo a bordo basado en arquitectura NVIDIA Jetson (Orin Nano Super) con pipeline cuantizado FP16 acelerado por NVIDIA TensorRT sobre JetPack SDK / ROS2. Ejecución local de visión computacional y modelos multimodales ligeros para clasificación y validación de amenazas en tiempo real (&lt;40 ms), operando con autonomía total Zero-Cloud en zonas sin internet ni señal celular.</p>
+            <p class="tech-desc" data-i18n="t2_desc">Cómputo a bordo basado en arquitectura NVIDIA Jetson (Orin Nano) con pipeline cuantizado FP16 acelerado por NVIDIA TensorRT. Ejecución local de visión computacional y modelos de detección térmica en tiempo real, operando con autonomía Zero-Cloud en zonas sin internet ni señal celular.</p>
           </div>
 
           <div class="tech-card glass-panel">
@@ -324,15 +335,15 @@
               </svg>
             </div>
             <h3 class="tech-title" data-i18n="t3_title">Telemetría Táctica en Zonas Desconectadas</h3>
-            <p class="tech-desc" data-i18n="t3_desc">Emisión de fichas de alerta y coordenadas exactas en menos de 5 segundos vía radioenlace táctico FHSS 915 MHz (&gt;20 km LOS con Link Margin &gt;6 dB), garantizando enlace de telemetría ininterrumpido más allá del perímetro físico de patrulla sin dependencia celular.</p>
+            <p class="tech-desc" data-i18n="t3_desc">Emisión de fichas de alerta y telemetría hacia la estación de operador en tierra vía radioenlace FHSS 915 MHz en línea de vista (LOS). El despacho hacia brigadas se coordina e integra directamente con el partner de pilotaje.</p>
           </div>
 
           <div class="tech-card glass-panel">
             <div class="tech-avatar-circle">
               <img src="assets/img/tech/territorial_hud_grid.webp" alt="Vigilancia Territorial Continua" class="circle-thumb" loading="lazy">
             </div>
-            <h3 class="tech-title" data-i18n="t4_title">Aeronave VTOL & Hoja de Ruta de Ingeniería</h3>
-            <p class="tech-desc" data-i18n="t4_desc">Plataforma de validación VTOL 4+1 lift+cruise (2,1 m de envergadura) en transición hacia la célula propietaria industrial Noctua-01. Diseñada para despegue y aterrizaje vertical independiente de pista, hasta 90 min de autonomía, crucero de ala fija de alta eficiencia, envolvente de viento de 45 km/h (24 kt) y radio operacional seguro de 15 km (cobertura de clústeres de hasta 50.000 ha por estación).</p>
+            <h3 class="tech-title" data-i18n="t4_title">Plataforma Aérea & Primer Dron Noctua</h3>
+            <p class="tech-desc" data-i18n="t4_desc">Validación inicial sobre célula comercial adaptada en transición hacia Noctua (primer dron de la plataforma, diseñado o integrado). Autonomía de diseño de 45–60 min (meta 45 min), envolvente de viento de hasta 10 m/s (~36 km/h) y radio operacional de 1 km en predio piloto (VLOS). <span class="tax-badge tax-badge-goal">Objetivo: 15 km</span></p>
           </div>
 
           <div class="tech-card glass-panel">
@@ -346,8 +357,8 @@
                 <circle cx="12" cy="12" r="3"></circle>
               </svg>
             </div>
-            <h3 class="tech-title" data-i18n="t5_title">Georreferenciación Quirúrgica</h3>
-            <p class="tech-desc" data-i18n="t5_desc">Proyección angular instantánea hacia el terreno asistida por posicionamiento centimétrico RTK/GNSS de alta precisión, calculando coordenadas exactas para el despacho inmediato de brigadas.</p>
+            <h3 class="tech-title" data-i18n="t5_title">Georreferenciación Asistida</h3>
+            <p class="tech-desc" data-i18n="t5_desc">Proyección angular hacia el terreno asistida por posicionamiento GNSS/RTK, calculando coordenadas estimadas con precisión objetivo de metros (requiere modelo digital de elevación DEM cargado de la zona).</p>
           </div>
 
           <div class="tech-card glass-panel">
@@ -357,29 +368,29 @@
                 <path d="m9 12 2 2 4-4"></path>
               </svg>
             </div>
-            <h3 class="tech-title" data-i18n="t6_title">Operación Segura & Marco DGAC</h3>
-            <p class="tech-desc" data-i18n="t6_desc">Diseñada bajo estándares de ingeniería aeroespacial. Arquitectura 4+1 lift+cruise con tolerancia a pérdida de motor sustentador, paracaídas balístico pirotécnico autónomo y protocolos operacionales bajo marco DAN 151 / DAN 91 (DGAC Chile) para BVLOS segregado con retorno automático ante contingencia (Auto-RTH).</p>
+            <h3 class="tech-title" data-i18n="t6_title">Operación Segura & Evidencia Auditable</h3>
+            <p class="tech-desc" data-i18n="t6_desc">Paracaídas balístico de recuperación (en diseño) y protocolos de retorno seguro (Auto-RTH). Operación bajo marco DAN 151 / DAN 91 (DGAC Chile) en predio privado segregado (VLOS) y registro auditable de cada misión para aseguradoras y centrales.</p>
           </div>
         </div>
 
         <!-- Hardware & Engineering Capabilities Specs Bar -->
         <div class="specs-bar glass-panel">
-          <div class="spec-pill" data-i18n="spec_1"><span class="spec-name">Plataforma MVP:</span> VTOL Lift+Cruise 2,1 m (Hacia Noctua-01)</div>
-          <div class="spec-pill" data-i18n="spec_2"><span class="spec-name">Envolvente:</span> Viento 45 km/h | -5°C a +45°C</div>
-          <div class="spec-pill" data-i18n="spec_3"><span class="spec-name">Respuesta:</span> Alerta Táctica &lt; 5 s (FHSS)</div>
-          <div class="spec-pill" data-i18n="spec_4"><span class="spec-name">Normativa:</span> Marco DGAC DAN 151 / BVLOS</div>
+          <div class="spec-pill" data-i18n="spec_1"><span class="spec-name">Plataforma MVP:</span> Célula Comercial Adaptada (Hacia Noctua)</div>
+          <div class="spec-pill" data-i18n="spec_2"><span class="spec-name">Envolvente:</span> Viento hasta 10 m/s (36 km/h)</div>
+          <div class="spec-pill" data-i18n="spec_3"><span class="spec-name">Respuesta:</span> Alerta en minutos (Meta ≤ 3 min)</div>
+          <div class="spec-pill" data-i18n="spec_4"><span class="spec-name">Operación:</span> Vuelo VLOS en predio privado (DGAC)</div>
           <div class="spec-pill" data-i18n="spec_5"><span class="spec-name">Modelo:</span> Intelligence as a Service (0 CAPEX)</div>
         </div>
 
         <!-- Off-Grid Tactical Datalink Architecture (Diagrama del Triángulo Táctico) -->
-        <div class="tactical-flow-box glass-panel">
+        <div class="tactical-flow-box glass-panel" id="datalink">
           <div class="flow-header">
             <span class="flow-tag" data-i18n="flow_tag">ARQUITECTURA DE ENLACE OFF-GRID</span>
             <h3 class="flow-title" data-i18n="flow_title">Cómo se cierra el circuito táctico en zonas sin señal celular</h3>
-            <p class="flow-sub" data-i18n="flow_sub">El 80% de los predios forestales y cordilleranos son zonas oscuras de conectividad. Athene opera sin depender de torres 4G/5G mediante radioenlaces tácticos bilaterales directos.</p>
+            <p class="flow-sub" data-i18n="flow_sub">Gran parte de los predios forestales y cordilleranos son zonas de baja cobertura. Athene opera con radioenlaces tácticos locales entre la aeronave y la estación en tierra.</p>
           </div>
           <div class="flow-grid flow-grid-bilateral">
-            <!-- Nodo 2: Recepción Táctica en Terreno (Camioneta 4x4) -->
+            <!-- Nodo 2: Recepción Táctica en Terreno (Estación de Operador) -->
             <div class="flow-step-card flow-step-flank">
               <div class="step-num">02</div>
               <div class="step-icon-wrap">
@@ -388,18 +399,18 @@
                   <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                 </svg>
               </div>
-              <h4 class="step-title" data-i18n="flow_s2_title">Cuadrilla 4x4 en Terreno</h4>
-              <p class="step-desc" data-i18n="flow_s2_desc">Receptor táctico de cabina emite alarma acústica y coordenadas GPS directas. La cuadrilla confirma recepción y retroalimenta el estado de intercepción vía enlace directo FHSS.</p>
-              <span class="step-badge badge-green" data-i18n="flow_s2_badge">Receptor Táctico & Retorno Táctico</span>
+              <h4 class="step-title" data-i18n="flow_s2_title">Estación de Operador (Terreno)</h4>
+              <p class="step-desc" data-i18n="flow_s2_desc">Recepción táctica de alertas y telemetría en tiempo real. El operador evalúa y autoriza la activación de estrobo y sirena de disuasión desde una posición segura.</p>
+              <span class="step-badge badge-green" data-i18n="flow_s2_badge">Supervisión Humana (HITL)</span>
             </div>
 
-            <!-- Conector Bilateral 1: Cuadrilla ⇄ Aeronave -->
+            <!-- Conector Bilateral 1: Operador ⇄ Aeronave -->
             <div class="flow-connector flow-connector-left" aria-hidden="true">
               <div class="connector-line">
                 <div class="connector-pulse-out"></div>
                 <div class="connector-pulse-in"></div>
               </div>
-              <span class="connector-label" data-i18n="flow_c1_label">⇄ Enlace Bilateral FHSS 915 MHz (&gt;20 km LOS)</span>
+              <span class="connector-label" data-i18n="flow_c1_label">⇄ Radioenlace FHSS 915 MHz (Línea de Vista)</span>
             </div>
 
             <!-- Nodo 1: Aeronave VTOL (Nodo Central Aéreo) -->
@@ -412,21 +423,21 @@
                   <path d="M2 12l10 5 10-5"></path>
                 </svg>
               </div>
-              <h4 class="step-title" data-i18n="flow_s1_title">Aeronave VTOL (Nodo Central Aéreo)</h4>
-              <p class="step-desc" data-i18n="flow_s1_desc">La aeronave procesa el espectro térmico en tiempo real con NVIDIA Jetson a bordo. Emite telemetría táctica simultánea hacia la cuadrilla y la central, y recibe comandos de misión y acuse de recibo en tiempo real.</p>
-              <span class="step-badge" data-i18n="flow_s1_badge">Inferencia Edge AI Bilateral</span>
+              <h4 class="step-title" data-i18n="flow_s1_title">Aeronave VTOL (Nodo Aéreo)</h4>
+              <p class="step-desc" data-i18n="flow_s1_desc">Inferencia térmica Edge AI a bordo con NVIDIA Jetson. Detecta precursores y presencia humana, emite alertas a la estación en tierra y ejecuta retorno de emergencia ante pérdida de enlace.</p>
+              <span class="step-badge" data-i18n="flow_s1_badge">Edge AI a Bordo</span>
             </div>
 
-            <!-- Conector Bilateral 2: Aeronave ⇄ Central C2 -->
+            <!-- Conector Bilateral 2: Estación ⇄ Central C2 -->
             <div class="flow-connector flow-connector-right" aria-hidden="true">
               <div class="connector-line">
                 <div class="connector-pulse-out"></div>
                 <div class="connector-pulse-in"></div>
               </div>
-              <span class="connector-label" data-i18n="flow_c2_label">⇄ Enlace Bilateral Satelital Starlink / C2</span>
+              <span class="connector-label" data-i18n="flow_c2_label">⇄ Enlace Red Local / IP Disponible</span>
             </div>
 
-            <!-- Nodo 3: Base Nest & Central C2 -->
+            <!-- Nodo 3: Central C2 / Despacho -->
             <div class="flow-step-card flow-step-flank">
               <div class="step-num">03</div>
               <div class="step-icon-wrap">
@@ -435,23 +446,73 @@
                   <line x1="4" y1="22" x2="4" y2="15"></line>
                 </svg>
               </div>
-              <h4 class="step-title" data-i18n="flow_s3_title">Estación Base Nest & Central C2</h4>
-              <p class="step-desc" data-i18n="flow_s3_desc">La estación base sincroniza telemetría completa vía satélite Starlink hacia la central de despacho del cliente (GIS / Webhook), permitiendo monitoreo global y reasignación dinámica de vuelo.</p>
-              <span class="step-badge" data-i18n="flow_s3_badge">Gateway Satelital C2 Bidireccional</span>
+              <h4 class="step-title" data-i18n="flow_s3_title">Central C2 / Despacho del Partner</h4>
+              <p class="step-desc" data-i18n="flow_s3_desc">Recepción de fichas de alerta georreferenciadas y logs de misión para coordinación de brigadas y auditoría (integración GIS / Webhook).</p>
+              <span class="step-badge" data-i18n="flow_s3_badge">Integración Operacional</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION: PROGRAMA PILOTO B2B/B2G -->
+    <!-- SECTION: HOJA DE RUTA & ESTADO DEL PROYECTO -->
+    <section class="section section-border" id="roadmap">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="roadmap_tag">Hoja de Ruta de Ingeniería</span>
+          <h2 class="section-title" data-i18n="roadmap_title">Estado del Proyecto y Próximos Hitos</h2>
+          <p class="section-subtitle" data-i18n="roadmap_sub">
+            Desarrollo riguroso por etapas verificables. Diferenciamos lo que está resuelto hoy, los ensayos en marcha y los objetivos de escalamiento industrial.
+          </p>
+        </div>
+
+        <div class="roadmap-timeline">
+          <!-- Hito 1: Hoy (TRL 3) -->
+          <div class="roadmap-card card-today glass-panel">
+            <span class="roadmap-phase-label" data-i18n="rm1_phase">Estado Actual · TRL 3</span>
+            <h3 class="roadmap-card-title" data-i18n="rm1_title">Diseño de Sistema y Prototipo en Análisis</h3>
+            <p class="roadmap-card-desc" data-i18n="rm1_desc">Requisitos de ingeniería, arquitectura de sistemas y plan de pruebas definidos. Validación de concepto analítico y selección de componentes críticos.</p>
+          </div>
+
+          <!-- Hito 2: Oct–Dic 2026 -->
+          <div class="roadmap-card card-inprogress glass-panel">
+            <span class="roadmap-phase-label" data-i18n="rm2_phase">Oct – Dic 2026 · Ensayos</span>
+            <h3 class="roadmap-card-title" data-i18n="rm2_title">Plataforma Hexarrotor y Demo Gearbox</h3>
+            <p class="roadmap-card-desc" data-i18n="rm2_desc">Integración en plataforma hexarrotor de pruebas para validación de sensórica y procesamiento. Demostración técnica en Gearbox UdeC programada para enero de 2027.</p>
+          </div>
+
+          <!-- Hito 3: Feb 2027 -->
+          <div class="roadmap-card card-next glass-panel">
+            <span class="roadmap-phase-label" data-i18n="rm3_phase">Feb 2027 · Simulación</span>
+            <h3 class="roadmap-card-title" data-i18n="rm3_title">Validación Human-in-the-Loop (HITL)</h3>
+            <p class="roadmap-card-desc" data-i18n="rm3_desc">Pruebas en entorno simulado de la interfaz de operador táctico, protocolo de autorización de estrobo/sirena y cadena de decisión en tiempo real.</p>
+          </div>
+
+          <!-- Hito 4: Jun 2027 -->
+          <div class="roadmap-card card-corfo glass-panel">
+            <span class="roadmap-phase-label" data-i18n="rm4_phase">Jun 2027 · Validación en Terreno</span>
+            <h3 class="roadmap-card-title" data-i18n="rm4_title">Validación Técnica y Operacional (CORFO)</h3>
+            <p class="roadmap-card-desc" data-i18n="rm4_desc">Campaña de vuelos experimentales diurnos/nocturnos en predio piloto privado (VLOS) bajo proyecto Semilla Inicia CORFO y retroalimentación de la industria forestal.</p>
+          </div>
+
+          <!-- Hito 5: Visión de Plataforma -->
+          <div class="roadmap-card card-vision glass-panel">
+            <span class="roadmap-phase-label" data-i18n="rm5_phase">Visión de Plataforma</span>
+            <h3 class="roadmap-card-title" data-i18n="rm5_title">Noctua VTOL, Nest Automatizado & BVLOS</h3>
+            <p class="roadmap-card-desc" data-i18n="rm5_desc">Integración o diseño de célula VTOL Noctua, estación Nest de aterrizaje y carga automatizada, supervisión 1:N de múltiples cuadrículas, enlaces satelitales y radio de 15 km bajo certificación BVLOS.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: PROGRAMA DE VALIDACIÓN CONJUNTA 2026-27 -->
     <section class="section section-border" id="piloto">
       <div class="container">
         <div class="section-header">
           <span class="section-tag" data-i18n="pilot_tag">Validación en Terreno</span>
-          <h2 class="section-title" data-i18n="pilot_title">Programa Piloto para Empresas del Sector</h2>
+          <h2 class="section-title" data-i18n="pilot_title">Programa de Validación Conjunta 2026-27</h2>
           <p class="section-subtitle" data-i18n="pilot_sub">
-            Estructurado en 4 fases metodológicas para empresas forestales, mineras, utilities e instituciones que buscan verificar en terreno la efectividad de la vigilancia nocturna.
+            Estructurado en 4 fases metodológicas para empresas forestales, mineras e instituciones que buscan co-diseñar y verificar en terreno la efectividad de la vigilancia nocturna.
           </p>
         </div>
 
@@ -474,7 +535,7 @@
             <div class="phase-number-badge">03</div>
             <div class="phase-time">Semanas 5 - 8</div>
             <h3 class="phase-title" data-i18n="ph3_title">Vigilancia Nocturna Activa</h3>
-            <p class="phase-desc" data-i18n="ph3_desc">Patrullaje autónomo programado en las horas de mayor vulnerabilidad con telemetría en vivo y soporte al C2 del cliente.</p>
+            <p class="phase-desc" data-i18n="ph3_desc">Patrullaje aéreo programado en las horas de mayor vulnerabilidad con telemetría en vivo y soporte al C2 del cliente.</p>
           </div>
 
           <div class="pilot-phase-card glass-panel">
@@ -485,93 +546,56 @@
           </div>
         </div>
 
-        <!-- Interactive Territorial ROI Calculator -->
-        <div class="roi-calculator-box glass-panel" id="roi-calculator">
-          <div class="roi-header">
-            <span class="roi-badge" data-i18n="roi_badge">MODELO ECONÓMICO</span>
-            <h3 class="roi-title" data-i18n="roi_title">Calculadora de Retorno Operativo Territorial</h3>
-            <p class="roi-sub" data-i18n="roi_sub">Modelo Intelligence as a Service (0 CAPEX). Compara el costo del patrullaje terrestre nocturno en camionetas 4x4 (Fuente: estándares de faena forestal en Chile) frente al despliegue autónomo de estaciones Nest Alpha durante la temporada crítica de 5 meses (noviembre a marzo), sumado al ahorro en horas de aviones cisterna al amanecer.</p>
+        <!-- Operational Impact Framework (Replaces ROI Calculator) -->
+        <div class="impact-framework-box glass-panel" id="impacto">
+          <div class="impact-header">
+            <span class="impact-badge" data-i18n="impact_badge">MODELO DE IMPACTO OPERACIONAL</span>
+            <h3 class="impact-title" data-i18n="impact_title">Valor Operacional en la Brecha Crítica</h3>
+            <p class="impact-sub" data-i18n="impact_sub">Enfoque cualitativo centrado en la reducción del riesgo humano y el daño territorial, sin promesas comerciales arbitrarias en fase de prototipo.</p>
           </div>
 
-          <div class="roi-slider-container">
-            <div class="roi-slider-top">
-              <span class="roi-slider-lbl" data-i18n="roi_lbl_area">Superficie a Proteger:</span>
-              <span class="roi-slider-val" id="roi-area-readout">25.000 ha</span>
+          <div class="impact-cards-grid">
+            <div class="impact-card glass-panel">
+              <div class="impact-card-icon">🛡️</div>
+              <h4 class="impact-card-title" data-i18n="imp1_title">Seguridad Nocturna y Cero Exposición Innecesaria</h4>
+              <p class="impact-card-desc" data-i18n="imp1_desc">Evita el desplazamiento a ciegas de brigadistas y cuadrillas terrestres en camionetas 4x4 por caminos forestales y quebradas aisladas durante la noche. El reconocimiento aéreo confirma o descarta la amenaza antes de movilizar personal.</p>
             </div>
-            <input type="range" id="roi-slider" min="10000" max="100000" step="2500" value="25000" class="roi-range-slider" aria-label="Superficie a Proteger en hectáreas">
-            <div class="roi-presets">
-              <button type="button" class="roi-preset-btn" data-preset="12500">12.5k ha</button>
-              <button type="button" class="roi-preset-btn active" data-preset="25000">25k ha (1 Base)</button>
-              <button type="button" class="roi-preset-btn" data-preset="50000">50k ha (2 Bases)</button>
-              <button type="button" class="roi-preset-btn" data-preset="100000">100k ha (4 Bases)</button>
-            </div>
-          </div>
 
-          <div class="roi-metrics-grid">
-            <div class="roi-metric-card">
-              <div class="roi-card-header">
-                <span class="roi-metric-k" data-i18n="roi_lbl_manned">Patrullaje Terrestre 4x4 (Status Quo):</span>
-                <span class="roi-info-trigger" tabindex="0" role="button" aria-label="Ver desglose de costos de patrullaje terrestre">ⓘ
-                  <span class="roi-tooltip" role="tooltip" data-i18n="roi_tt_manned">Estándar de faena forestal en Chile (5 meses): 2 vigilantes en rol 7x7 (~US$4.200/mes) + arriendo 4x4 equipada (~US$1.400/mes) + diésel y mantención en ripio (~US$800/mes) = US$6.400/mes por camioneta. 2 camionetas cubren ~25k ha con &lt;12% de visión efectiva.</span>
-                </span>
-              </div>
-              <span class="roi-metric-v roi-v-manned" id="roi-manned-val">US$ 64.000 / temporada (5 m)</span>
-              <span class="roi-metric-sub" id="roi-manned-sub" data-i18n="roi_sub_manned">2 camionetas c/guardias 7x7 • Cobertura &lt; 12%</span>
+            <div class="impact-card glass-panel">
+              <div class="impact-card-icon">🚨</div>
+              <h4 class="impact-card-title" data-i18n="imp2_title">Detección Previa y Disuasión Autorizada</h4>
+              <p class="impact-card-desc" data-i18n="imp2_desc">Detección óptica y térmica de actividad humana no autorizada visible desde 100 m de altura. Ante una anomalía, el operador humano en tierra puede autorizar la activación del estrobo luminoso y la sirena acústica para disuadir antes de la ignición.</p>
             </div>
-            <div class="roi-metric-card">
-              <div class="roi-card-header">
-                <span class="roi-metric-k" data-i18n="roi_lbl_strig">Suscripción Athene IaaS (0 CAPEX):</span>
-                <span class="roi-info-trigger" tabindex="0" role="button" aria-label="Ver desglose del modelo IaaS">ⓘ
-                  <span class="roi-tooltip" role="tooltip" data-i18n="roi_tt_strig">Suscripción IaaS temporada de riesgo (5 meses): US$7.500/mes por base Nest Alpha. Incluye estación autónoma, VTOL Noctua-01, recambios, mantenimiento y software C2. Cero inversión en compra de flota (0 CAPEX).</span>
-                </span>
-              </div>
-              <span class="roi-metric-v roi-v-strig" id="roi-strig-val">US$ 37.500 / temporada (5 m)</span>
-              <span class="roi-metric-sub" id="roi-sub-strig" data-i18n="roi_sub_strig">1 Base Nest Alpha + VTOL • Cobertura 100%</span>
-            </div>
-            <div class="roi-metric-card roi-highlight-card">
-              <div class="roi-card-header">
-                <span class="roi-metric-k" data-i18n="roi_lbl_savings">Ahorro Directo de Vigilancia:</span>
-                <span class="roi-info-trigger" tabindex="0" role="button" aria-label="Ver desglose del ahorro directo">ⓘ
-                  <span class="roi-tooltip" role="tooltip" data-i18n="roi_tt_savings">Ahorro neto directo de US$26.500 (-41%) por cada clúster de 25.000 ha durante la temporada de 5 meses al optimizar el gasto operacional fijo de patrullaje terrestre.</span>
-                </span>
-              </div>
-              <span class="roi-metric-v roi-v-savings" id="roi-savings-val">US$ 26.500</span>
-              <span class="roi-metric-badge" id="roi-savings-pct">-41% DIRECTO</span>
-            </div>
-            <div class="roi-metric-card">
-              <div class="roi-card-header">
-                <span class="roi-metric-k" data-i18n="roi_lbl_co2">Escudo Preventivo de Combate:</span>
-                <span class="roi-info-trigger" tabindex="0" role="button" aria-label="Ver estimación de combate aéreo evitado">ⓘ
-                  <span class="roi-tooltip" role="tooltip" data-i18n="roi_tt_co2">Horas de combate aéreo evitadas: Interceptar 1 foco en fase de preignición ahorra ~20 h de vuelo de extinción al amanecer (aviones cisterna Air Tractor AT-802F a US$2.200/h + helicópteros a US$2.500/h = &gt;US$44.000), sin contar la madera comercial salvada.</span>
-                </span>
-              </div>
-              <span class="roi-metric-v roi-v-co2" id="roi-co2-val">&gt; US$ 44.000</span>
-              <span class="roi-metric-sub" id="roi-co2-sub" data-i18n="roi_sub_co2">Aviones cisterna evitados al amanecer (1 foco)</span>
+
+            <div class="impact-card glass-panel">
+              <div class="impact-card-icon">✈️</div>
+              <h4 class="impact-card-title" data-i18n="imp3_title">Optimización del Ataque Aéreo al Amanecer</h4>
+              <p class="impact-card-desc" data-i18n="imp3_desc">Al georreferenciar y contener focos o fogatas tempranas en plena noche, se entrega a las centrales de despacho información precisa de coordenadas y perímetro, evitando horas críticas de vuelo de aviones y helicópteros cisterna al inicio del día.</p>
             </div>
           </div>
 
           <!-- IaaS Operational Framework & Commitments -->
           <div class="iaas-framework-box">
             <div class="iaas-framework-header">
-              <span class="iaas-tag" data-i18n="iaas_tag">MARCO OPERACIONAL IAAS</span>
-              <h4 class="iaas-title" data-i18n="iaas_title">Condiciones y Compromiso del Modelo Intelligence as a Service</h4>
-              <p class="iaas-sub" data-i18n="iaas_sub">Estructurado para que las empresas del sector incorporen vigilancia aérea nocturna sin adquirir activos fijos ni asumir pasivos operacionales.</p>
+              <span class="iaas-tag" data-i18n="iaas_tag">MARCO DE CO-DISEÑO IAAS</span>
+              <h4 class="iaas-title" data-i18n="iaas_title">Condiciones y Principios del Modelo Intelligence as a Service</h4>
+              <p class="iaas-sub" data-i18n="iaas_sub">Estructurado para que las empresas del sector participen en la validación técnica sin adquirir activos fijos de capital ni asumir pasivos operacionales.</p>
             </div>
             <div class="iaas-pillars-grid">
               <div class="iaas-pillar-card">
                 <div class="pillar-icon">🛡️</div>
                 <h5 class="pillar-title" data-i18n="iaas_p1_title">0 CAPEX & Cero Pasivo de Flota</h5>
-                <p class="pillar-desc" data-i18n="iaas_p1_desc">La empresa no compra drones ni asume depreciación de aeronaves. Se contrata disponibilidad operativa por temporada de riesgo forestal como gasto operacional (OPEX).</p>
+                <p class="pillar-desc" data-i18n="iaas_p1_desc">Sin adquisición de drones ni depreciación de activos. El acceso al servicio se proyecta como gasto operacional (OPEX) por temporada o campaña de vigilancia.</p>
               </div>
               <div class="iaas-pillar-card">
                 <div class="pillar-icon">⚙️</div>
-                <h5 class="pillar-title" data-i18n="iaas_p2_title">Mantenimiento & Soporte Técnico Integral</h5>
-                <p class="pillar-desc" data-i18n="iaas_p2_desc">Recambios preventivos de hélices, baterías, sensores y actualización de modelos de IA a bordo gestionados directamente por el equipo de ingeniería de Strig Systems.</p>
+                <h5 class="pillar-title" data-i18n="iaas_p2_title">Soporte Técnico & Mantenimiento Integral</h5>
+                <p class="pillar-desc" data-i18n="iaas_p2_desc">Aseguramiento de mantenimiento de componentes, baterías, calibración sensorial y actualización continua de algoritmos gestionados por el equipo de ingeniería de Strig Systems.</p>
               </div>
               <div class="iaas-pillar-card">
                 <div class="pillar-icon">📜</div>
-                <h5 class="pillar-title" data-i18n="iaas_p3_title">Gestión de Cumplimiento DGAC</h5>
-                <p class="pillar-desc" data-i18n="iaas_p3_desc">Operación conducida bajo protocolos de seguridad operacional conforme a normativa DAN 151 / DAN 91 para operaciones BVLOS segregadas y zonas de contingencia.</p>
+                <h5 class="pillar-title" data-i18n="iaas_p3_title">Protocolos Operacionales & Marco de Seguridad</h5>
+                <p class="pillar-desc" data-i18n="iaas_p3_desc">Operación conducida bajo estándares de seguridad operacional conforme a normativa DAN 151 / DAN 91 para vuelos de prueba y validación segregada en predio privado.</p>
               </div>
             </div>
           </div>
@@ -580,13 +604,83 @@
         <!-- Pilot Callout Bar (Tri-Action Funnel) -->
         <div class="callout-box glass-panel">
           <div class="callout-info">
-            <h3 class="callout-title" data-i18n="callout_title">Convocatoria de Validación 2026</h3>
-            <p class="callout-desc" data-i18n="callout_desc">Cupos limitados por temporada de incendios en la Macrozona Centro-Sur. Evaluación de factibilidad territorial e interoperabilidad C2 sin costo para predios forestales e industriales.</p>
+            <h3 class="callout-title" data-i18n="callout_title">Convocatoria de Validación 2026-27</h3>
+            <p class="callout-desc" data-i18n="callout_desc">Cupos limitados por temporada en la Macrozona Centro-Sur para empresas forestales e industriales que deseen co-diseñar y evaluar la factibilidad en terreno.</p>
           </div>
           <div class="callout-actions">
-            <button type="button" class="btn-primary" data-open-modal="pilot-modal" data-i18n="callout_cta">Solicitar Factibilidad de Piloto</button>
+            <button type="button" class="btn-primary" data-open-modal="pilot-modal" data-i18n="callout_cta">Sumarse al Programa de Validación</button>
             <button type="button" class="btn-secondary" data-open-modal="briefing-modal" data-i18n="callout_briefing">Agendar Briefing Técnico (15 min)</button>
             <button type="button" class="btn-outline-pdf" data-open-modal="brief-modal" data-i18n="callout_brief_pdf">Executive Brief (PDF)</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: PREGUNTAS FRECUENTES TÉCNICAS (FAQ) -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="faq_tag">Resolución Técnica</span>
+          <h2 class="section-title" data-i18n="faq_title">Preguntas Frecuentes de Operación</h2>
+          <p class="section-subtitle" data-i18n="faq_sub">
+            Criterios de ingeniería, límites operacionales actuales y respuestas directas para equipos técnicos y gerencias de protección.
+          </p>
+        </div>
+
+        <div class="faq-accordion">
+          <!-- Q1: Humo y Niebla -->
+          <div class="faq-item glass-panel">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span data-i18n="faq_q1">¿Cómo opera la visión térmica ante humo denso o niebla?</span>
+              <span class="faq-icon" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a1">La banda infrarroja LWIR (8–14 µm) penetra humo óptico no ionizado y partículas en suspensión que bloquean por completo las cámaras visuales. Sin embargo, no lo resuelve todo: en presencia de niebla densa (dispersión Mie por gotas de agua) o condiciones meteorológicas que reduzcan la visibilidad mínima requerida bajo reglas VLOS, la operación de vuelo se suspende por estrictos protocolos de seguridad operacional.</p>
+            </div>
+          </div>
+
+          <!-- Q2: Envolvente de Viento -->
+          <div class="faq-item glass-panel">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span data-i18n="faq_q2">¿Cuál es la envolvente de viento máxima de la plataforma?</span>
+              <span class="faq-icon" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a2">La plataforma de validación actual está diseñada para operar con seguridad en vientos sostenidos de hasta 10 m/s (~36 km/h). Si las condiciones locales de ráfaga superan este umbral, el sistema activa automáticamente protocolos de descenso o aborto de misión hacia la zona de aterrizaje segura.</p>
+            </div>
+          </div>
+
+          <!-- Q3: Falsas Alarmas -->
+          <div class="faq-item glass-panel">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span data-i18n="faq_q3">¿Cómo se gestionan las falsas alarmas térmicas causadas por rocas o ganado?</span>
+              <span class="faq-icon" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a3">El pipeline de Edge AI integra algoritmos de discriminación multi-frame y umbrales radiométricos de gradiente térmico (meta de diseño &lt; 5% falsas alarmas; criterio de aceptación de MVP &lt; 10%). Además, la plataforma opera bajo supervisión humana (Human-in-the-Loop): toda alerta emitida a la estación en tierra debe ser revisada visualmente por el operador antes de activar medidas de disuasión o despacho.</p>
+            </div>
+          </div>
+
+          <!-- Q4: Responsabilidad y Pilotaje -->
+          <div class="faq-item glass-panel">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span data-i18n="faq_q4">¿Quién es responsable de la operación y el pilotaje en terreno?</span>
+              <span class="faq-icon" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a4">Durante el Programa de Validación 2026-27, todos los vuelos son ejecutados y supervisados en terreno por personal calificado de Strig Systems bajo certificación y normativa aeronáutica chilena (DAN 151 / DAN 91). El cliente o partner territorial no requiere pilotos propios ni asume responsabilidad técnica sobre la aeronave.</p>
+            </div>
+          </div>
+
+          <!-- Q5: Qué no hace hoy el sistema -->
+          <div class="faq-item glass-panel">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span data-i18n="faq_q5">¿Qué alcance y capacidades NO tiene el sistema hoy?</span>
+              <span class="faq-icon" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a5">Con total transparencia: hoy el sistema no opera vuelos más allá de la línea de vista visual (BVLOS), no cuenta con estación de acople automatizada no asistida, ni ofrece un radio de 15 km de servicio comercial. Actualmente nos encontramos en TRL 3 realizando ensayos controlados en predio piloto privado (VLOS ~1 km). Dichas capacidades forman parte de la visión y hoja de ruta futura.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -665,7 +759,7 @@
             </div>
             <h3 class="founder-name">Tomás Medina</h3>
             <span class="founder-role">CEO & Co-founder</span>
-            <p class="founder-bio" data-i18n="bio_tomas">Ingeniero Civil Aeroespacial • Visión Computacional, Machine Learning, CAD/CAM e Ingeniería de Sistemas C4ISR.</p>
+            <p class="founder-bio" data-i18n="bio_tomas">Ingeniero Civil Aeroespacial • Visión Computacional, Machine Learning y CAD/CAM.</p>
           </div>
 
           <!-- Carlos Gutiérrez -->
@@ -737,7 +831,7 @@
 
           <div class="contact-btn-group">
             <button type="button" class="btn-primary btn-large" data-open-modal="pilot-modal">
-              <span data-i18n="cta_btn1">Postular a Piloto Operativo</span>
+              <span data-i18n="cta_btn1">Sumarse al Programa de Validación</span>
               <span class="arrow-icon">→</span>
             </button>
             <a href="mailto:tomas@strigsystems.tech?subject=Consulta%20Inversi%C3%B3n%20y%20Alianzas%20-%20Strig%20Systems" class="btn-ghost btn-large">
@@ -775,7 +869,10 @@
           <a href="#problema" data-i18n="nav_problem">Problema</a>
           <a href="#comparativa" data-i18n="nav_compare">Comparativa</a>
           <a href="#tecnologia" data-i18n="nav_tech">Tecnología</a>
-          <a href="#piloto" data-i18n="nav_pilot">Programa Piloto</a>
+          <a href="#roadmap" data-i18n="nav_roadmap">Hoja de Ruta</a>
+          <a href="#piloto" data-i18n="nav_pilot">Programa de Validación</a>
+          <a href="#impacto" data-i18n="nav_impact">Impacto Operacional</a>
+          <a href="#faq" data-i18n="nav_faq">FAQ Técnica</a>
           <a href="#alianzas" data-i18n="nav_alliances">I+D & Alianzas</a>
         </div>
         <div class="footer-col">
@@ -792,7 +889,7 @@
   </footer>
 
   <!-- PILOT APPLICATION MODAL -->
-  <div id="pilot-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div id="pilot-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
     <div class="modal-window glass-panel">
       <!-- Close button -->
       <button type="button" class="modal-close-btn" data-close-modal aria-label="Cerrar modal">
@@ -807,11 +904,11 @@
         <div class="modal-header">
           <div class="modal-badge">
             <span class="badge-dot"></span>
-            <span data-i18n="modal_badge">Validación Territorial 2026</span>
+            <span data-i18n="modal_badge">Validación Territorial 2026-27</span>
           </div>
-          <h2 id="modal-title" class="modal-title" data-i18n="modal_title">Postulación al Programa Piloto</h2>
+          <h2 id="modal-title" class="modal-title" data-i18n="modal_title">Sumarse al Programa de Validación 2026-27</h2>
           <p class="modal-subtitle" data-i18n="modal_sub">
-            Completa los datos de tu entidad. Evaluamos factibilidad operativa e interoperabilidad C2 para la temporada de riesgo.
+            Completa los datos de tu entidad para evaluar conjuntamente la factibilidad territorial y requerimientos de validación en terreno.
           </p>
         </div>
 
@@ -871,7 +968,7 @@
               <label for="form-interest" class="form-label" data-i18n="f_interest_label">Tipo de Interés *</label>
               <select id="form-interest" name="Tipo_Interes" class="form-select" required>
                 <option value="" disabled selected data-i18n="f_interest_default">Selecciona el tipo de interés...</option>
-                <option value="Piloto Forestal/Industrial" data-i18n="opt_interest_1">Programa Piloto Operativo (Forestal / Industrial)</option>
+                <option value="Piloto Forestal/Industrial" data-i18n="opt_interest_1">Programa de Validación Técnica (Forestal / Industrial)</option>
                 <option value="Alianza I+D/Academia" data-i18n="opt_interest_2">Alianzas de I+D / Validación Técnica</option>
                 <option value="Inversión Deep Tech" data-i18n="opt_interest_3">Inversión / Fondos de Capital Deep Tech</option>
                 <option value="Consulta General" data-i18n="opt_interest_4">Consulta General / Demostración C2</option>
@@ -889,7 +986,7 @@
           <div class="form-group form-checkbox-group">
             <label class="form-checkbox-label" for="form-consent">
               <input type="checkbox" id="form-consent" name="Consentimiento" required class="form-checkbox">
-              <span class="checkbox-text" data-i18n="f_consent_label">Acepto el tratamiento de mis datos de contacto para la evaluación técnica del piloto y declaro conocer los <a href="terms.html" target="_blank" class="legal-inline-link">Términos de Servicio B2B</a> y la <a href="privacy.html" target="_blank" class="legal-inline-link">Política de Privacidad</a> (Ley N° 19.628).</span>
+              <span class="checkbox-text" data-i18n="f_consent_label">Acepto el tratamiento de mis datos de contacto para la evaluación técnica de la validación y declaro conocer los <a href="terms.html" target="_blank" class="legal-inline-link">Términos de Servicio B2B</a> y la <a href="privacy.html" target="_blank" class="legal-inline-link">Política de Privacidad</a> (Ley N° 19.628 / Ley N° 21.719).</span>
             </label>
           </div>
 
@@ -906,7 +1003,7 @@
           <!-- Submit Button -->
           <div class="form-actions">
             <button type="submit" id="form-submit-btn" class="btn-primary btn-submit">
-              <span class="btn-text" data-i18n="f_submit_btn">Enviar Postulación a Piloto</span>
+              <span class="btn-text" data-i18n="f_submit_btn">Enviar Solicitud de Validación</span>
               <span class="btn-spinner" style="display: none;" aria-hidden="true"></span>
               <span class="arrow-icon">→</span>
             </button>
@@ -990,7 +1087,7 @@
           <div class="form-group form-checkbox-group">
             <label class="form-checkbox-label" for="b-consent">
               <input type="checkbox" id="b-consent" name="Consentimiento" required class="form-checkbox">
-              <span class="checkbox-text" data-i18n="f_consent_label">Acepto el tratamiento de mis datos de contacto para la evaluación técnica del piloto y declaro conocer los <a href="terms.html" target="_blank" class="legal-inline-link">Términos de Servicio B2B</a> y la <a href="privacy.html" target="_blank" class="legal-inline-link">Política de Privacidad</a> (Ley N° 19.628).</span>
+              <span class="checkbox-text" data-i18n="f_consent_label">Acepto el tratamiento de mis datos de contacto para la evaluación técnica del piloto y declaro conocer los <a href="terms.html" target="_blank" class="legal-inline-link">Términos de Servicio B2B</a> y la <a href="privacy.html" target="_blank" class="legal-inline-link">Política de Privacidad</a> (Ley N° 19.628 / Ley N° 21.719).</span>
             </label>
           </div>
 
@@ -1048,15 +1145,15 @@
             <span class="brief-product">PLATAFORMA ATHENE</span>
           </div>
           <div class="brief-meta-area">
-            <span class="brief-doc-tag" data-i18n="eb_tag">EXECUTIVE BRIEF 2026</span>
+            <span class="brief-doc-tag" data-i18n="eb_tag">EXECUTIVE BRIEF 2026-27</span>
             <span class="brief-doc-sub" data-i18n="eb_sub">Vigilancia Territorial Autónoma Nocturna</span>
           </div>
         </div>
 
         <div class="brief-paper-lead">
-          <h1 id="brief-doc-title" class="brief-h1" data-i18n="eb_h1">Inteligencia Aérea Autónoma para el Combate de Incendios en la Brecha Nocturna</h1>
+          <h1 id="brief-doc-title" class="brief-h1" data-i18n="eb_h1">Inteligencia Aérea Autónoma para la Brecha Nocturna de Incendios</h1>
           <p class="brief-summary" data-i18n="eb_summary">
-            Athene cierra la ventana ciega nocturna de 10 horas mediante aeronaves VTOL lift+cruise de 2,1 m (plataforma MVP en transición hacia la célula propietaria Noctua-01), inferencia térmica Edge AI a bordo (NVIDIA Jetson) y telemetría táctica FHSS 915 MHz, sustituyendo el costoso patrullaje terrestre y evitando el despliegue millonario de aeronaves de combate al amanecer.
+            Athene aborda la brecha nocturna mediante aeronaves VTOL (plataforma de validación en transición hacia Noctua), inferencia térmica Edge AI a bordo (NVIDIA Jetson) y telemetría táctica FHSS 915 MHz, sustituyendo la exposición terrestre a ciegas y optimizando el despacho aéreo al amanecer.
           </p>
         </div>
 
@@ -1065,8 +1162,8 @@
           <div class="brief-box">
             <h3 class="brief-box-title" data-i18n="eb_b1_title">1. El Problema Operacional</h3>
             <ul class="brief-list">
-              <li data-i18n="eb_b1_p1"><strong>Ventana ciega nocturna (20:00 a 06:00):</strong> La aviación tripulada combate de día, pero no vuela de noche por normativa DGAC y riesgo de choque con el relieve (CFIT).</li>
-              <li data-i18n="eb_b1_p2"><strong>Costo industrial masivo:</strong> Gasto consolidado anual de US$130M en combate y prevención en Chile (Fuente: CORMA).</li>
+              <li data-i18n="eb_b1_p1"><strong>Ventana ciega nocturna:</strong> La aviación tripulada combate de día, pero no vuela de noche por normativa DGAC y riesgo de choque con el relieve (CFIT).</li>
+              <li data-i18n="eb_b1_p2"><strong>99,7% de origen humano:</strong> La casi totalidad de los incendios derivan de acción humana intencional o negligente (Fuente: CONAF).</li>
               <li data-i18n="eb_b1_p3"><strong>Puntos ciegos terrestres:</strong> Patrullas en 4x4 cubren &lt; 12% del predio, ciegas ante quebradas y rodales interiores donde se inician fogatas y focos intencionales.</li>
             </ul>
           </div>
@@ -1074,27 +1171,27 @@
           <div class="brief-box">
             <h3 class="brief-box-title" data-i18n="eb_b2_title">2. Solución Tecnológica</h3>
             <ul class="brief-list">
-              <li data-i18n="eb_b2_p1"><strong>Aeronave VTOL Lift+Cruise (2,1 m):</strong> Despegue vertical en un claro de bosque, 90 min de patrulla y 15 km de radio operativo.</li>
-              <li data-i18n="eb_b2_p2"><strong>Edge AI Zero-Cloud a Bordo:</strong> Cómputo NVIDIA Jetson + aceleración TensorRT; detección térmica en &lt; 5 s sin conexión a internet ni señal celular.</li>
-              <li data-i18n="eb_b2_p3"><strong>Telemetría Táctica FHSS 915 MHz:</strong> Alerta acústica y coordenadas GPS directas a la cabina de la camioneta en terreno (&gt;20 km LOS).</li>
+              <li data-i18n="eb_b2_p1"><strong>Plataforma VTOL & Dron Noctua:</strong> Validación inicial sobre célula comercial adaptada; autonomía de diseño 45–60 min y despegue vertical sin pista.</li>
+              <li data-i18n="eb_b2_p2"><strong>Edge AI Zero-Cloud a Bordo:</strong> Cómputo local NVIDIA Jetson; detección térmica en segundos sin conexión a internet ni señal celular.</li>
+              <li data-i18n="eb_b2_p3"><strong>Disuasión con Autorización Humana:</strong> Activación de estrobo luminoso y sirena acústica siempre autorizada por el operador en tierra (Human-in-the-Loop).</li>
             </ul>
           </div>
 
           <div class="brief-box">
-            <h3 class="brief-box-title" data-i18n="eb_b3_title">3. Modelo Económico IaaS (0 CAPEX)</h3>
+            <h3 class="brief-box-title" data-i18n="eb_b3_title">3. Modelo de Impacto Operacional IaaS</h3>
             <ul class="brief-list">
-              <li data-i18n="eb_b3_p1"><strong>Status Quo Terrestre:</strong> 2 camionetas 4x4 con guardias 7x7 = US$64.000 / temporada de 5 meses para 25.000 ha.</li>
-              <li data-i18n="eb_b3_p2"><strong>Suscripción Athene IaaS:</strong> 1 Base Nest Alpha + VTOL = US$37.500 / temporada. <strong>Ahorro directo de US$26.500 (-41%)</strong>.</li>
-              <li data-i18n="eb_b3_p3"><strong>Escudo de Combate Aéreo:</strong> Interceptar 1 foco en preignición evita ~20 h de vuelo de aviones cisterna Air Tractor AT-802F y helicópteros (&gt;US$44.000).</li>
+              <li data-i18n="eb_b3_p1"><strong>Seguridad del Personal:</strong> Cero exposición humana innecesaria en quebradas y caminos aislados en horario nocturno crítico.</li>
+              <li data-i18n="eb_b3_p2"><strong>Detección Temprana & Disuasión:</strong> Detección de actividad humana a 100 m de altura y disuasión autorizada por el operador antes de la ignición.</li>
+              <li data-i18n="eb_b3_p3"><strong>Optimización al Amanecer:</strong> Georreferenciación temprana de coordenadas y perímetro que ahorra horas críticas de combate aéreo al inicio del día.</li>
             </ul>
           </div>
 
           <div class="brief-box">
-            <h3 class="brief-box-title" data-i18n="eb_b4_title">4. Validación Operativa 2026</h3>
+            <h3 class="brief-box-title" data-i18n="eb_b4_title">4. Programa de Validación 2026-27</h3>
             <ul class="brief-list">
-              <li data-i18n="eb_b4_p1"><strong>Respaldo Institucional:</strong> Proyecto Semilla Inicia CORFO y apoyo de la Universidad de Concepción (UdeC).</li>
-              <li data-i18n="eb_b4_p2"><strong>Programa Piloto Macrozona Centro-Sur:</strong> Despliegue en 4 fases metodológicas (Levantamiento, Calibración, Vigilancia Nocturna, Auditoría ROI).</li>
-              <li data-i18n="eb_b4_p3"><strong>Contacto Directo:</strong> Tomás Medina (Technical Lead) | <code>tmedina@strigsystems.tech</code> | <code>strigsystems.tech</code></li>
+              <li data-i18n="eb_b4_p1"><strong>Estado Actual TRL 3:</strong> Proyecto Semilla Inicia CORFO, apoyo UdeC y demostración técnica programada en Gearbox (Enero 2027).</li>
+              <li data-i18n="eb_b4_p2"><strong>Campaña en Predio Piloto:</strong> 4 fases metodológicas (Levantamiento, Calibración, Vigilancia Nocturna, Auditoría Operacional).</li>
+              <li data-i18n="eb_b4_p3"><strong>Contacto Directo:</strong> Tomás Medina (Technical Lead) | <code>contacto@strigsystems.tech</code> | <code>strigsystems.tech</code></li>
             </ul>
           </div>
         </div>
