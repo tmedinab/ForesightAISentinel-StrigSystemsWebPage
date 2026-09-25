@@ -44,14 +44,92 @@
 
       <nav class="nav-links">
         <a href="#problema" class="nav-item" data-i18n="nav_problem">Problema</a>
-        <a href="#comparativa" class="nav-item" data-i18n="nav_compare">Comparativa</a>
-        <a href="#tecnologia" class="nav-item" data-i18n="nav_tech">Tecnología</a>
-        <a href="#roadmap" class="nav-item" data-i18n="nav_roadmap">Hoja de Ruta</a>
-        <a href="#impacto" class="nav-item" data-i18n="nav_impact">Impacto</a>
-        <a href="#piloto" class="nav-item" data-i18n="nav_pilot">Validación 2026-27</a>
-        <a href="#alianzas" class="nav-item" data-i18n="nav_alliances">I+D & Alianzas</a>
-        <a href="#equipo" class="nav-item" data-i18n="nav_team">Equipo</a>
-        <a href="#faq" class="nav-item" data-i18n="nav_faq">FAQ</a>
+
+        <!-- Dropdown: Tecnología -->
+        <div class="nav-dropdown-wrap">
+          <button type="button" class="nav-item nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+            <span data-i18n="nav_tech_menu">Tecnología</span>
+            <span class="nav-arrow" aria-hidden="true">▾</span>
+          </button>
+          <div class="nav-dropdown-menu glass-panel" role="menu">
+            <a href="#tecnologia" class="dropdown-link" role="menuitem">
+              <span class="dropdown-link-icon">⚙️</span>
+              <div class="dropdown-link-text">
+                <span class="dropdown-link-title" data-i18n="nav_tech">Arquitectura & Sensores</span>
+                <span class="dropdown-link-desc" data-i18n="nav_tech_desc">Gimbal EO/IR, Edge AI Jetson y telemetría FHSS</span>
+              </div>
+            </a>
+            <a href="#roadmap" class="dropdown-link" role="menuitem">
+              <span class="dropdown-link-icon">🗺️</span>
+              <div class="dropdown-link-text">
+                <span class="dropdown-link-title" data-i18n="nav_roadmap">Hoja de Ruta (TRL 3)</span>
+                <span class="dropdown-link-desc" data-i18n="nav_roadmap_desc">Hitos 2026-27 y Visión de Plataforma</span>
+              </div>
+            </a>
+            <a href="#comparativa" class="dropdown-link" role="menuitem">
+              <span class="dropdown-link-icon">📊</span>
+              <div class="dropdown-link-text">
+                <span class="dropdown-link-title" data-i18n="nav_compare">Benchmark Táctico</span>
+                <span class="dropdown-link-desc" data-i18n="nav_compare_desc">Athene vs Satélites, Torres y Brigadas</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Dropdown: Validación -->
+        <div class="nav-dropdown-wrap">
+          <button type="button" class="nav-item nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+            <span data-i18n="nav_val_menu">Validación</span>
+            <span class="nav-arrow" aria-hidden="true">▾</span>
+          </button>
+          <div class="nav-dropdown-menu glass-panel" role="menu">
+            <a href="#piloto" class="dropdown-link" role="menuitem">
+              <span class="dropdown-link-icon">🌲</span>
+              <div class="dropdown-link-text">
+                <span class="dropdown-link-title" data-i18n="nav_pilot">Programa 2026-27</span>
+                <span class="dropdown-link-desc" data-i18n="nav_pilot_desc">Validación conjunta en predio piloto privado</span>
+              </div>
+            </a>
+            <a href="#impacto" class="dropdown-link" role="menuitem">
+              <span class="dropdown-link-icon">🛡️</span>
+              <div class="dropdown-link-text">
+                <span class="dropdown-link-title" data-i18n="nav_impact">Impacto Operacional</span>
+                <span class="dropdown-link-desc" data-i18n="nav_impact_desc">Seguridad nocturna, disuasión y ataque al amanecer</span>
+              </div>
+            </a>
+            <a href="#faq" class="dropdown-link" role="menuitem">
+              <span class="dropdown-link-icon">❓</span>
+              <div class="dropdown-link-text">
+                <span class="dropdown-link-title" data-i18n="nav_faq">FAQ Técnica</span>
+                <span class="dropdown-link-desc" data-i18n="nav_faq_desc">Límites operacionales, niebla y falsas alarmas</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Dropdown: Compañía -->
+        <div class="nav-dropdown-wrap">
+          <button type="button" class="nav-item nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+            <span data-i18n="nav_company_menu">Compañía</span>
+            <span class="nav-arrow" aria-hidden="true">▾</span>
+          </button>
+          <div class="nav-dropdown-menu glass-panel" role="menu">
+            <a href="#equipo" class="dropdown-link" role="menuitem">
+              <span class="dropdown-link-icon">👥</span>
+              <div class="dropdown-link-text">
+                <span class="dropdown-link-title" data-i18n="nav_team">Equipo Fundador</span>
+                <span class="dropdown-link-desc" data-i18n="nav_team_desc">5 ingenieros civiles aeroespaciales UdeC</span>
+              </div>
+            </a>
+            <a href="#alianzas" class="dropdown-link" role="menuitem">
+              <span class="dropdown-link-icon">🤝</span>
+              <div class="dropdown-link-text">
+                <span class="dropdown-link-title" data-i18n="nav_alliances">I+D & Alianzas</span>
+                <span class="dropdown-link-desc" data-i18n="nav_alliances_desc">CORFO, Gearbox, UdeC, Arauco</span>
+              </div>
+            </a>
+          </div>
+        </div>
       </nav>
 
       <div class="header-actions">

@@ -7,14 +7,25 @@ const translations = {
   es: {
     // Nav
     nav_problem: "Problema",
-    nav_compare: "Comparativa",
-    nav_tech: "Tecnología",
-    nav_roadmap: "Hoja de Ruta",
+    nav_tech_menu: "Tecnología",
+    nav_tech: "Arquitectura & Sensores",
+    nav_tech_desc: "Gimbal EO/IR, Edge AI Jetson y telemetría FHSS",
+    nav_roadmap: "Hoja de Ruta (TRL 3)",
+    nav_roadmap_desc: "Hitos 2026-27 y Visión de Plataforma",
+    nav_compare: "Benchmark Táctico",
+    nav_compare_desc: "Athene vs Satélites, Torres y Brigadas",
+    nav_val_menu: "Validación",
     nav_pilot: "Programa de Validación",
+    nav_pilot_desc: "Validación conjunta en predio piloto privado",
     nav_impact: "Impacto Operacional",
+    nav_impact_desc: "Seguridad nocturna, disuasión y ataque al amanecer",
     nav_faq: "FAQ Técnica",
+    nav_faq_desc: "Límites operacionales, niebla y falsas alarmas",
+    nav_company_menu: "Compañía",
+    nav_team: "Equipo Fundador",
+    nav_team_desc: "5 ingenieros civiles aeroespaciales UdeC",
     nav_alliances: "I+D & Alianzas",
-    nav_team: "Equipo",
+    nav_alliances_desc: "CORFO, Gearbox, UdeC, Arauco",
     nav_cta: "Sumarse a Validación",
 
     // Hero
@@ -363,14 +374,25 @@ const translations = {
   en: {
     // Nav
     nav_problem: "The Problem",
-    nav_compare: "Benchmark",
-    nav_tech: "Technology",
-    nav_roadmap: "Roadmap",
+    nav_tech_menu: "Technology",
+    nav_tech: "Architecture & Sensors",
+    nav_tech_desc: "EO/IR Gimbal, Edge AI Jetson & FHSS telemetry",
+    nav_roadmap: "Roadmap (TRL 3)",
+    nav_roadmap_desc: "2026-27 Milestones & Platform Vision",
+    nav_compare: "Tactical Benchmark",
+    nav_compare_desc: "Athene vs Satellites, Towers & Ground Crews",
+    nav_val_menu: "Validation",
     nav_pilot: "Validation Program",
+    nav_pilot_desc: "Joint operational trial on private pilot site",
     nav_impact: "Operational Impact",
+    nav_impact_desc: "Night surveillance, deterrence & dawn strike",
     nav_faq: "Technical FAQ",
+    nav_faq_desc: "Operational limits, fog & false alarm filtering",
+    nav_company_menu: "Company",
+    nav_team: "Founding Team",
+    nav_team_desc: "5 aerospace engineers from UdeC",
     nav_alliances: "R&D & Alliances",
-    nav_team: "Team",
+    nav_alliances_desc: "CORFO, Gearbox, UdeC, Arauco",
     nav_cta: "Join Validation",
 
     // Hero
@@ -771,7 +793,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   });
 
-  // Initialize Mobile Menu & Header Scroll
+  // Initialize Navigation Dropdowns, Mobile Menu & Header Scroll
+  initNavDropdowns();
   initMobileMenu();
   initHeaderScroll();
 
@@ -1266,6 +1289,63 @@ function initMobileMenu() {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && drawer.classList.contains('open')) {
       toggleDrawer(false);
+    }
+  });
+}
+
+/**
+ * Controller for Desktop Navigation Dropdowns
+ */
+function initNavDropdowns() {
+  const dropdownWraps = document.querySelectorAll('.nav-dropdown-wrap');
+  if (!dropdownWraps.length) return;
+
+  function closeAllDropdowns(exceptWrap = null) {
+    dropdownWraps.forEach(wrap => {
+      if (wrap !== exceptWrap) {
+        wrap.classList.remove('active');
+        const btn = wrap.querySelector('.nav-dropdown-btn');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  dropdownWraps.forEach(wrap => {
+    const btn = wrap.querySelector('.nav-dropdown-btn');
+    if (!btn) return;
+
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isActive = wrap.classList.contains('active');
+      closeAllDropdowns(wrap);
+      if (!isActive) {
+        wrap.classList.add('active');
+        btn.setAttribute('aria-expanded', 'true');
+      } else {
+        wrap.classList.remove('active');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Close when clicking any dropdown link inside
+    wrap.querySelectorAll('.dropdown-link').forEach(link => {
+      link.addEventListener('click', () => {
+        closeAllDropdowns();
+      });
+    });
+  });
+
+  // Close when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav-dropdown-wrap')) {
+      closeAllDropdowns();
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeAllDropdowns();
     }
   });
 }
