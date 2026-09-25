@@ -34,6 +34,29 @@
   box-sizing: border-box;
 }
 
+/* WCAG 2.1 AA Keyboard Focus Visibility */
+:focus-visible {
+  outline: 2px solid var(--accent-cyan);
+  outline-offset: 3px;
+}
+
+button:focus:not(:focus-visible),
+a:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Vestibular Motion Safety */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 html {
   scroll-behavior: smooth;
   font-family: var(--font-body);
@@ -484,8 +507,19 @@ body {
 }
 
 .mobile-drawer.open {
-  max-height: 480px;
+  max-height: calc(100vh - 4.6rem);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   opacity: 1;
+}
+
+.mobile-drawer::-webkit-scrollbar {
+  width: 4px;
+}
+
+.mobile-drawer::-webkit-scrollbar-thumb {
+  background: rgba(0, 240, 255, 0.25);
+  border-radius: 4px;
 }
 
 .mobile-nav-links {
@@ -545,15 +579,21 @@ body {
 .badge-tag {
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
-  padding: 0.4rem 1.1rem;
+  gap: 0.55rem;
+  padding: 0.35rem 0.95rem;
   border-radius: 100px;
-  background: rgba(0, 240, 255, 0.08);
-  border: 1px solid rgba(0, 240, 255, 0.25);
-  font-size: 0.84rem;
-  color: var(--accent-cyan);
-  font-weight: 600;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  font-weight: 500;
   margin-bottom: 1.8rem;
+  transition: var(--transition-smooth);
+}
+
+.badge-tag:hover {
+  border-color: rgba(0, 240, 255, 0.3);
+  color: var(--text-primary);
 }
 
 .badge-dot {
@@ -684,18 +724,18 @@ body {
 
 .metric-tooltip {
   position: absolute;
-  bottom: calc(100% + 10px);
+  top: calc(100% + 12px);
   left: 50%;
-  transform: translateX(-50%) translateY(5px);
-  width: 295px;
+  transform: translateX(-50%) translateY(-5px);
+  width: 300px;
   max-width: 86vw;
-  background: rgba(7, 13, 26, 0.97);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: rgba(7, 13, 26, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(0, 240, 255, 0.4);
-  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.75), 0 0 20px rgba(0, 240, 255, 0.18);
-  border-radius: 10px;
-  padding: 0.85rem 1rem;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 240, 255, 0.2);
+  border-radius: 12px;
+  padding: 0.95rem 1.1rem;
   font-family: var(--font-body);
   font-size: 0.78rem;
   font-weight: 400;
@@ -712,12 +752,13 @@ body {
 .metric-tooltip::after {
   content: "";
   position: absolute;
-  top: 100%;
+  bottom: 100%;
+  top: auto;
   left: 50%;
   transform: translateX(-50%);
   border-width: 7px;
   border-style: solid;
-  border-color: rgba(7, 13, 26, 0.97) transparent transparent transparent;
+  border-color: transparent transparent rgba(7, 13, 26, 0.98) transparent;
 }
 
 /* Reveal tooltip on card hover, focus-within, or active state */
@@ -765,7 +806,7 @@ body {
 @media (min-width: 861px) {
   .metric-card:first-child .metric-tooltip {
     left: 0;
-    transform: translateX(0) translateY(5px);
+    transform: translateX(0) translateY(-5px);
   }
   .metric-card:first-child .metric-tooltip::after {
     left: 20%;
@@ -779,7 +820,7 @@ body {
   .metric-card:last-child .metric-tooltip {
     left: auto;
     right: 0;
-    transform: translateX(0) translateY(5px);
+    transform: translateX(0) translateY(-5px);
   }
   .metric-card:last-child .metric-tooltip::after {
     left: 80%;
@@ -794,7 +835,7 @@ body {
 @media (max-width: 860px) {
   .metric-card:nth-child(odd) .metric-tooltip {
     left: 0;
-    transform: translateX(0) translateY(5px);
+    transform: translateX(0) translateY(-5px);
   }
   .metric-card:nth-child(odd) .metric-tooltip::after {
     left: 25%;
@@ -807,7 +848,7 @@ body {
   .metric-card:nth-child(even) .metric-tooltip {
     left: auto;
     right: 0;
-    transform: translateX(0) translateY(5px);
+    transform: translateX(0) translateY(-5px);
   }
   .metric-card:nth-child(even) .metric-tooltip::after {
     left: 75%;
@@ -3966,14 +4007,15 @@ body.modal-open {
   align-items: center;
   gap: 8px;
   background: rgba(0, 240, 255, 0.08);
-  border: 1px solid rgba(0, 240, 255, 0.3);
+  border: 1px solid rgba(0, 240, 255, 0.35);
   padding: 6px 14px;
   border-radius: 9999px;
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.78rem;
   color: var(--accent-cyan);
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.65rem;
   backdrop-filter: blur(8px);
+  box-shadow: 0 4px 14px -3px rgba(0, 240, 255, 0.25);
 }
 
 .status-pulse-dot {
