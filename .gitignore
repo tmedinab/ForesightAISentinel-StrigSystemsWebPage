@@ -33,3 +33,6 @@ scratch/
 .first-reader*
 
 build/
+
+# Diagramas HTML compilados locales de documentacion
+docs/**/*.html

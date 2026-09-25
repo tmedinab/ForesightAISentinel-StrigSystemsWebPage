@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Foresight AI Sentinel — Tactical Architecture",
+    "output": "foresight_tactical_architecture.html",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "edge-detection",
+        "label": "Airborne Edge Inference",
+        "focus": ["payload_sensor", "edge_ai", "flight_controller"],
+        "note": "Onboard sensor acquisition, TensorRT inference, and autonomous flight tracking."
+      },
+      {
+        "id": "hitl-loop",
+        "label": "HITL Authorization Loop",
+        "focus": ["flight_controller", "rf_transceiver", "gcs_hitl", "deterrence_payload"],
+        "note": "Field telemetry downlink, operator verification, and authorized deterrence actuation."
+      },
+      {
+        "id": "dispatch-chain",
+        "label": "Incident Dispatch & Audit",
+        "focus": ["gcs_hitl", "dispatch_gateway", "dispatch_c2", "incident_store"],
+        "note": "Long-range cellular dispatch to central operations and immutable audit persistence."
+      }
+    ]
+  },
+  "components": [
+    {
+      "id": "payload_sensor",
+      "type": "external",
+      "label": "EO/IR Sensor Payload",
+      "sublabel": "FLIR Boson + 4K Optical",
+      "pos": [60, 150],
+      "size": [140, 60]
+    },
+    {
+      "id": "edge_ai",
+      "type": "backend",
+      "label": "Jetson Edge AI",
+      "sublabel": "YOLOv8 FP16 TensorRT",
+      "pos": [300, 150],
+      "size": [140, 60],
+      "tag": "<150ms Latency"
+    },
+    {
+      "id": "flight_controller",
+      "type": "backend",
+      "label": "Flight Controller",
+      "sublabel": "PX4 / MAVLink Autopilot",
+      "pos": [300, 330],
+      "size": [140, 60],
+      "tag": "Fail-safe RTH"
+    },
+    {
+      "id": "deterrence_payload",
+      "type": "security",
+      "label": "Deterrence Actuators",
+      "sublabel": "Strobe & 110dB Siren",
+      "pos": [60, 330],
+      "size": [140, 60],
+      "tag": "Hardware Interlocked"
+    },
+    {
+      "id": "rf_transceiver",
+      "type": "messagebus",
+      "label": "Tactical RF Link",
+      "sublabel": "915 MHz FHSS Datalink",
+      "pos": [540, 240],
+      "size": [140, 60],
+      "tag": "AES-128 LOS"
+    },
+    {
+      "id": "gcs_hitl",
+      "type": "frontend",
+      "label": "Tactical GCS (HITL)",
+      "sublabel": "Operator Mission Console",
+      "pos": [760, 240],
+      "size": [150, 60],
+      "tag": "Mandatory Human Gate"
+    },
+    {
+      "id": "dispatch_gateway",
+      "type": "cloud",
+      "label": "Field Gateway",
+      "sublabel": "4G-LTE / Starlink Link",
+      "pos": [760, 380],
+      "size": [150, 60]
+    },
+    {
+      "id": "dispatch_c2",
+      "type": "backend",
+      "label": "Central Dispatch",
+      "sublabel": "CAD & Incident Engine",
+      "pos": [1000, 240],
+      "size": [140, 60]
+    },
+    {
+      "id": "incident_store",
+      "type": "database",
+      "label": "Evidence Store",
+      "sublabel": "Tamper-evident Logs",
+      "pos": [1000, 380],
+      "size": [140, 60]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "Airborne VTOL Platform (Athene UAS)",
+      "wraps": ["payload_sensor", "edge_ai", "flight_controller", "deterrence_payload"]
+    },
+    {
+      "kind": "region",
+      "label": "Field Tactical Segment (Ground LOS)",
+      "wraps": ["rf_transceiver", "gcs_hitl", "dispatch_gateway"]
+    },
+    {
+      "kind": "region",
+      "label": "Central Infrastructure & Audit",
+      "wraps": ["dispatch_c2", "incident_store"]
+    }
+  ],
+  "connections": [
+    {
+      "id": "video-stream",
+      "from": "payload_sensor",
+      "to": "edge_ai",
+      "label": "RTSP Stream",
+      "variant": "emphasis"
+    },
+    {
+      "id": "detection-track",
+      "from": "edge_ai",
+      "to": "flight_controller",
+      "label": "MAVLink Track",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "labelDy": 55
+    },
+    {
+      "id": "flight-to-deterrence",
+      "from": "flight_controller",
+      "to": "deterrence_payload",
+      "label": "GPIO Trigger",
+      "variant": "dashed"
+    },
+    {
+      "id": "telemetry-downlink",
+      "from": "flight_controller",
+      "to": "rf_transceiver",
+      "label": "Telemetry Alert",
+      "variant": "emphasis"
+    },
+    {
+      "id": "datalink-to-gcs",
+      "from": "rf_transceiver",
+      "to": "gcs_hitl",
+      "label": "Downlink"
+    },
+    {
+      "id": "gcs-to-gateway",
+      "from": "gcs_hitl",
+      "to": "dispatch_gateway",
+      "label": "Incident Trigger",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "labelDy": 55
+    },
+    {
+      "id": "gateway-to-c2",
+      "from": "dispatch_gateway",
+      "to": "dispatch_c2",
+      "label": "Encrypted Webhook",
+      "variant": "emphasis"
+    },
+    {
+      "id": "c2-to-store",
+      "from": "dispatch_c2",
+      "to": "incident_store",
+      "label": "Audit Logs",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "labelDy": 55
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Airborne Edge Computing",
+      "items": [
+        "Onboard Jetson Orin Nano running YOLOv8 FP16 TensorRT inference",
+        "Direct thermal and daylight video processing without cloud latency (<150ms)",
+        "Autonomous trajectory adjustments via PX4 autopilot MAVLink commands"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Tactical Telemetry & HITL",
+      "items": [
+        "915 MHz FHSS encrypted datalink resistant to field RF interference",
+        "Strict Human-in-the-Loop requirement before activating deterrents",
+        "Hardware-interlocked strobe and 110dB acoustic siren payload"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Dispatch & Evidence Retention",
+      "items": [
+        "Field gateway fails over to cellular 4G-LTE or Starlink satellite uplink",
+        "Automated encrypted webhook integration with CAD and security dispatch",
+        "Immutable audit logging of every detection, authorization, and flight path"
+      ]
+    }
+  ]
+}
