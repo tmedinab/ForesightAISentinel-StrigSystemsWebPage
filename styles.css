@@ -465,8 +465,51 @@ body {
 }
 
 .metric-card {
+  position: relative;
   padding: 1.5rem 1rem;
   text-align: center;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.metric-card:hover,
+.metric-card:focus-visible,
+.metric-card.active {
+  border-color: rgba(0, 240, 255, 0.45);
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.12);
+  transform: translateY(-2px);
+}
+
+.metric-info-trigger {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  font-size: 0.72rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--accent-cyan);
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid rgba(0, 240, 255, 0.28);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  line-height: 1;
+  z-index: 2;
+}
+
+.metric-card:hover .metric-info-trigger,
+.metric-info-trigger:hover,
+.metric-info-trigger:focus,
+.metric-info-trigger.active {
+  background: var(--accent-cyan);
+  color: #050811;
+  box-shadow: 0 0 10px var(--accent-cyan);
 }
 
 .metric-value {
@@ -490,69 +533,30 @@ body {
   color: var(--text-muted);
 }
 
-.metric-header-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.35rem;
-  margin-bottom: 0.25rem;
-  position: relative;
-}
-
-.metric-header-row .metric-title {
-  margin-bottom: 0;
-}
-
-.metric-info-trigger {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 17px;
-  height: 17px;
-  border-radius: 50%;
-  font-size: 0.7rem;
-  color: var(--accent-cyan);
-  background: rgba(0, 240, 255, 0.1);
-  border: 1px solid rgba(0, 240, 255, 0.3);
-  cursor: pointer;
-  transition: all 0.2s ease;
-  position: relative;
-  outline: none;
-  line-height: 1;
-}
-
-.metric-info-trigger:hover,
-.metric-info-trigger:focus,
-.metric-info-trigger.active {
-  background: var(--accent-cyan);
-  color: #050811;
-  box-shadow: 0 0 10px var(--accent-cyan);
-}
-
 .metric-tooltip {
   position: absolute;
-  bottom: calc(100% + 8px);
+  bottom: calc(100% + 10px);
   left: 50%;
-  transform: translateX(-50%) translateY(4px);
-  width: 280px;
-  max-width: 80vw;
-  background: rgba(8, 14, 28, 0.96);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(0, 240, 255, 0.35);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7), 0 0 16px rgba(0, 240, 255, 0.2);
-  border-radius: 8px;
-  padding: 0.75rem 0.9rem;
+  transform: translateX(-50%) translateY(5px);
+  width: 295px;
+  max-width: 86vw;
+  background: rgba(7, 13, 26, 0.97);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 240, 255, 0.4);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.75), 0 0 20px rgba(0, 240, 255, 0.18);
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
   font-family: var(--font-body);
-  font-size: 0.76rem;
+  font-size: 0.78rem;
   font-weight: 400;
-  line-height: 1.45;
+  line-height: 1.48;
   color: var(--text-primary);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
-  z-index: 100;
+  z-index: 120;
   text-align: left;
 }
 
@@ -562,18 +566,107 @@ body {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  border-width: 6px;
+  border-width: 7px;
   border-style: solid;
-  border-color: rgba(8, 14, 28, 0.96) transparent transparent transparent;
+  border-color: rgba(7, 13, 26, 0.97) transparent transparent transparent;
 }
 
-.metric-info-trigger:hover .metric-tooltip,
-.metric-info-trigger:focus .metric-tooltip,
-.metric-info-trigger.active .metric-tooltip {
+/* Reveal tooltip on card hover, focus-within, or active state */
+.metric-card:hover .metric-tooltip,
+.metric-card:focus-within .metric-tooltip,
+.metric-card.active .metric-tooltip,
+.metric-info-trigger:hover ~ .metric-tooltip,
+.metric-info-trigger.active ~ .metric-tooltip {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
   transform: translateX(-50%) translateY(0);
+}
+
+.metric-tooltip-title {
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent-cyan);
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.metric-tooltip-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: rgba(0, 240, 255, 0.15);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  color: var(--accent-cyan);
+}
+
+.metric-tooltip-body {
+  font-size: 0.78rem;
+  color: #cbd5e1;
+  line-height: 1.48;
+  margin: 0;
+}
+
+/* Edge alignments for desktop */
+@media (min-width: 861px) {
+  .metric-card:first-child .metric-tooltip {
+    left: 0;
+    transform: translateX(0) translateY(5px);
+  }
+  .metric-card:first-child .metric-tooltip::after {
+    left: 20%;
+  }
+  .metric-card:first-child:hover .metric-tooltip,
+  .metric-card:first-child:focus-within .metric-tooltip,
+  .metric-card:first-child.active .metric-tooltip {
+    transform: translateX(0) translateY(0);
+  }
+
+  .metric-card:last-child .metric-tooltip {
+    left: auto;
+    right: 0;
+    transform: translateX(0) translateY(5px);
+  }
+  .metric-card:last-child .metric-tooltip::after {
+    left: 80%;
+  }
+  .metric-card:last-child:hover .metric-tooltip,
+  .metric-card:last-child:focus-within .metric-tooltip,
+  .metric-card:last-child.active .metric-tooltip {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@media (max-width: 860px) {
+  .metric-card:nth-child(odd) .metric-tooltip {
+    left: 0;
+    transform: translateX(0) translateY(5px);
+  }
+  .metric-card:nth-child(odd) .metric-tooltip::after {
+    left: 25%;
+  }
+  .metric-card:nth-child(odd):hover .metric-tooltip,
+  .metric-card:nth-child(odd).active .metric-tooltip {
+    transform: translateX(0) translateY(0);
+  }
+
+  .metric-card:nth-child(even) .metric-tooltip {
+    left: auto;
+    right: 0;
+    transform: translateX(0) translateY(5px);
+  }
+  .metric-card:nth-child(even) .metric-tooltip::after {
+    left: 75%;
+  }
+  .metric-card:nth-child(even):hover .metric-tooltip,
+  .metric-card:nth-child(even).active .metric-tooltip {
+    transform: translateX(0) translateY(0);
+  }
 }
 
 /* ==========================================================================

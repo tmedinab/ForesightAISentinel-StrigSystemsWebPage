@@ -27,19 +27,26 @@ const translations = {
     hero_cta_secondary: "Ver Hoja de Ruta & Tecnología",
 
     // Metrics & Taxonomy
-    m1_title: "Brecha Crítica Nocturna",
-    m1_sub: "Vigilancia en horas sin aviación tripulada",
+    m1_title: "Brecha Nocturna",
+    m1_sub: "Vigilancia aérea mientras la aviación tripulada está en tierra",
     m1_tax: "[PROBLEMA]",
-    m2_title: "1 km Radio VLOS",
-    m2_sub: "Ensayos en predio piloto privado",
-    m2_tax: "[HOY]",
-    m3_title: "≤ 3 min Alerta Total",
-    m3_sub: "Detección térmica en segundos con Edge AI",
-    m3_tax: "[OBJETIVO]",
-    m4_title: "15 km Radio BVLOS",
-    m4_sub: "Escalamiento multi-predio en hoja de ruta",
-    m4_tax: "[VISIÓN]",
-    m4_tooltip: "Objetivo de producto para la fase de escalamiento industrial bajo certificación de operaciones BVLOS, cubriendo clústeres forestales de escala territorial.",
+    m1_tip_title: "Brecha Nocturna · ¿Por qué aquí?",
+    m1_tooltip: "Es el origen del problema: por normativa DGAC y riesgo de relieve (CFIT), aviones cisterna y helicópteros quedan en tierra al atardecer. Athene vigila esa ventana ciega donde el 99,7% de los incendios se inician por causa humana.",
+    m2_title: "Radio de Misión",
+    m2_sub: "Meta de diseño para 50.000 ha • Hoy: 1 km en predio experimental (VLOS)",
+    m2_tax: "Objetivo de Producto",
+    m2_tip_title: "Radio 15 km · ¿Por qué aquí?",
+    m2_tooltip: "Es nuestro objetivo de producto a escala territorial: alcanzar 15 km de radio bajo certificación BVLOS para proteger clústeres de 50.000 ha. En la fase actual de validación operamos en predios piloto a 1 km en línea de vista (VLOS).",
+    m3_title: "Detección Térmica",
+    m3_sub: "Inferencia local a bordo • Alerta a operador en minutos (meta ≤ 3 min)",
+    m3_tax: "Meta MVP: <10% Falsas Alarmas",
+    m3_tip_title: "Detección Térmica · ¿Por qué aquí?",
+    m3_tooltip: "Frente a la latencia satelital (30 a 90 minutos) y la lentitud terrestre, la inferencia Edge AI a bordo detecta precursores térmicos en segundos y despacha la alerta a la estación en minutos (meta de diseño ≤ 3 min con <10% falsas alarmas).",
+    m4_title: "Disuasión Autorizada",
+    m4_sub: "Estrobo de alta intensidad y sirena activados por el operador ante actividad humana",
+    m4_tax: "Diferenciador Clave",
+    m4_tip_title: "Human-in-the-Loop · ¿Por qué aquí?",
+    m4_tooltip: "Seguridad y criterio humano: la IA a bordo detecta precursores y presencia humana, pero el estrobo y la sirena solo se activan con autorización expresa del operador en tierra, protegiendo a las brigadas de emboscadas o exposición a ciegas.",
 
     // Problem
     prob_tag: "El Diagnóstico Territorial",
@@ -376,19 +383,26 @@ const translations = {
     hero_cta_secondary: "View Roadmap & Technology",
 
     // Metrics & Taxonomy
-    m1_title: "Critical Night Gap",
-    m1_sub: "Surveillance during hours without manned aviation",
+    m1_title: "Nighttime Gap",
+    m1_sub: "Aerial surveillance while manned aviation remains grounded",
     m1_tax: "[PROBLEM]",
-    m2_title: "1 km VLOS Radius",
-    m2_sub: "Private pilot site trials",
-    m2_tax: "[TODAY]",
-    m3_title: "≤ 3 min Total Alert",
-    m3_sub: "Onboard Edge AI detection in seconds",
-    m3_tax: "[GOAL]",
-    m4_title: "15 km BVLOS Radius",
-    m4_sub: "Multi-property scaling on roadmap",
-    m4_tax: "[VISION]",
-    m4_tooltip: "Product target for industrial scaling under BVLOS operational certification, covering regional forestry clusters.",
+    m1_tip_title: "Nighttime Gap · Why is this here?",
+    m1_tooltip: "This is the root problem: under aviation regulations and terrain risk (CFIT), manned tankers and helicopters are grounded at dusk. Athene monitors this blind window where 99.7% of wildfires ignite due to human activity.",
+    m2_title: "Mission Radius",
+    m2_sub: "Design target for 50,000 ha • Today: 1 km in experimental estate (VLOS)",
+    m2_tax: "Product Target",
+    m2_tip_title: "15 km Radius · Why is this here?",
+    m2_tooltip: "It is our territorial product goal: achieving a 15 km operational radius under BVLOS certification to safeguard 50,000 ha clusters. In our current validation phase, we operate in pilot estates at 1 km VLOS.",
+    m3_title: "Thermal Detection",
+    m3_sub: "On-board local inference • Alert to operator in minutes (target ≤ 3 min)",
+    m3_tax: "MVP Target: <10% False Alarms",
+    m3_tip_title: "Thermal Detection · Why is this here?",
+    m3_tooltip: "Compared to satellite latency (30–90 min) and slow ground patrols, on-board Edge AI detects thermal precursors in seconds and delivers alerts to the station in minutes (MVP design target ≤ 3 min with <10% false alarms).",
+    m4_title: "Authorized Deterrence",
+    m4_sub: "High-intensity strobe and siren activated by the operator upon detecting human activity",
+    m4_tax: "Key Differentiator",
+    m4_tip_title: "Human-in-the-Loop · Why is this here?",
+    m4_tooltip: "Operational safety and human oversight: on-board AI detects precursors and human presence, but high-intensity strobes and sirens are only triggered with explicit authorization from the ground operator, eliminating blind crew exposure.",
 
     // Problem
     prob_tag: "Territorial Diagnostic",
@@ -1313,29 +1327,34 @@ function initFaq() {
  * Controller for interactive tooltips and source badges (click/tap toggling & click-outside dismissal)
  */
 function initTooltips() {
-  const triggers = document.querySelectorAll('.source-badge-wrap, .metric-info-trigger, .roi-info-trigger');
+  const triggers = document.querySelectorAll('.source-badge-wrap, .metric-card, .metric-info-trigger');
   if (!triggers.length) return;
 
   triggers.forEach(trigger => {
     // Handle click/tap for mobile & touchscreens
     trigger.addEventListener('click', (e) => {
+      // Don't toggle off if clicking inside the tooltip popup text itself
+      if (e.target.closest('.metric-tooltip, .source-tooltip')) return;
+
       e.stopPropagation();
-      const isActive = trigger.classList.contains('active');
+      const card = trigger.closest('.metric-card') || trigger;
+      const infoBtn = card.querySelector ? card.querySelector('.metric-info-trigger') : null;
+      const isActive = card.classList.contains('active');
 
       // Close all other open tooltips
-      triggers.forEach(t => {
-        if (t !== trigger) {
+      document.querySelectorAll('.source-badge-wrap, .metric-card, .metric-info-trigger').forEach(t => {
+        if (t !== card && t !== infoBtn) {
           t.classList.remove('active');
-          t.setAttribute('aria-expanded', 'false');
+          if (t.setAttribute) t.setAttribute('aria-expanded', 'false');
         }
       });
 
       if (isActive) {
-        trigger.classList.remove('active');
-        trigger.setAttribute('aria-expanded', 'false');
+        card.classList.remove('active');
+        if (infoBtn) infoBtn.setAttribute('aria-expanded', 'false');
       } else {
-        trigger.classList.add('active');
-        trigger.setAttribute('aria-expanded', 'true');
+        card.classList.add('active');
+        if (infoBtn) infoBtn.setAttribute('aria-expanded', 'true');
       }
     });
 
@@ -1345,19 +1364,24 @@ function initTooltips() {
         e.preventDefault();
         trigger.click();
       } else if (e.key === 'Escape') {
-        trigger.classList.remove('active');
-        trigger.setAttribute('aria-expanded', 'false');
-        trigger.blur();
+        const card = trigger.closest('.metric-card') || trigger;
+        const infoBtn = card.querySelector ? card.querySelector('.metric-info-trigger') : null;
+        card.classList.remove('active');
+        if (infoBtn) {
+          infoBtn.setAttribute('aria-expanded', 'false');
+          infoBtn.blur();
+        }
+        card.blur();
       }
     });
   });
 
   // Close when clicking anywhere outside
   document.addEventListener('click', (e) => {
-    triggers.forEach(trigger => {
+    document.querySelectorAll('.source-badge-wrap, .metric-card, .metric-info-trigger').forEach(trigger => {
       if (!trigger.contains(e.target)) {
         trigger.classList.remove('active');
-        trigger.setAttribute('aria-expanded', 'false');
+        if (trigger.setAttribute) trigger.setAttribute('aria-expanded', 'false');
       }
     });
   });
@@ -1365,9 +1389,9 @@ function initTooltips() {
   // Close on Escape key globally
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
-      triggers.forEach(trigger => {
+      document.querySelectorAll('.source-badge-wrap, .metric-card, .metric-info-trigger').forEach(trigger => {
         trigger.classList.remove('active');
-        trigger.setAttribute('aria-expanded', 'false');
+        if (trigger.setAttribute) trigger.setAttribute('aria-expanded', 'false');
       });
     }
   });

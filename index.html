@@ -124,31 +124,78 @@
           </a>
         </div>
 
-        <!-- Metrics Grid (Compact & Honest Taxonomy) -->
+        <!-- Metrics Grid (Compact & Honest Taxonomy with Hover Explanations) -->
         <div class="metrics-grid">
-          <div class="metric-card glass-panel">
+          <!-- Card 1: Noche -->
+          <div class="metric-card glass-panel" tabindex="0" role="region" aria-label="Métrica Noche">
+            <button type="button" class="metric-info-trigger" aria-label="Más información sobre métrica Noche" aria-expanded="false">
+              <span aria-hidden="true">ℹ</span>
+            </button>
             <div class="metric-value">Noche</div>
             <span class="tax-badge tax-badge-problem" data-i18n="m1_tax">[PROBLEMA]</span>
             <div class="metric-title" data-i18n="m1_title">Brecha Nocturna</div>
             <div class="metric-sub" data-i18n="m1_sub">Vigilancia aérea mientras la aviación tripulada está en tierra</div>
+            <div class="metric-tooltip" role="tooltip">
+              <div class="metric-tooltip-title">
+                <span class="metric-tooltip-badge" data-i18n="m1_tax">[PROBLEMA]</span>
+                <span data-i18n="m1_tip_title">Brecha Nocturna · ¿Por qué aquí?</span>
+              </div>
+              <p class="metric-tooltip-body" data-i18n="m1_tooltip">Es el origen del problema: por normativa DGAC y riesgo de relieve (CFIT), aviones cisterna y helicópteros quedan en tierra al atardecer. Athene vigila esa ventana ciega donde el 99,7% de los incendios se inician por causa humana.</p>
+            </div>
           </div>
-          <div class="metric-card glass-panel">
+
+          <!-- Card 2: 15 km -->
+          <div class="metric-card glass-panel" tabindex="0" role="region" aria-label="Métrica 15 km">
+            <button type="button" class="metric-info-trigger" aria-label="Más información sobre métrica 15 km" aria-expanded="false">
+              <span aria-hidden="true">ℹ</span>
+            </button>
             <div class="metric-value">15 km</div>
             <span class="tax-badge tax-badge-goal" data-i18n="m2_tax">Objetivo de Producto</span>
             <div class="metric-title" data-i18n="m2_title">Radio de Misión</div>
             <div class="metric-sub" data-i18n="m2_sub">Meta de diseño para 50.000 ha • Hoy: 1 km en predio experimental (VLOS)</div>
+            <div class="metric-tooltip" role="tooltip">
+              <div class="metric-tooltip-title">
+                <span class="metric-tooltip-badge" data-i18n="m2_tax">Objetivo de Producto</span>
+                <span data-i18n="m2_tip_title">Radio 15 km · ¿Por qué aquí?</span>
+              </div>
+              <p class="metric-tooltip-body" data-i18n="m2_tooltip">Es nuestro objetivo de producto a escala territorial: alcanzar 15 km de radio bajo certificación BVLOS para proteger clústeres de 50.000 ha. En la fase actual de validación operamos en predios piloto a 1 km en línea de vista (VLOS).</p>
+            </div>
           </div>
-          <div class="metric-card glass-panel">
+
+          <!-- Card 3: Segundos -->
+          <div class="metric-card glass-panel" tabindex="0" role="region" aria-label="Métrica Segundos">
+            <button type="button" class="metric-info-trigger" aria-label="Más información sobre métrica Segundos" aria-expanded="false">
+              <span aria-hidden="true">ℹ</span>
+            </button>
             <div class="metric-value">Segundos</div>
             <span class="tax-badge tax-badge-goal" data-i18n="m3_tax">Meta MVP: &lt;10% Falsas Alarmas</span>
             <div class="metric-title" data-i18n="m3_title">Detección Térmica</div>
             <div class="metric-sub" data-i18n="m3_sub">Inferencia local a bordo • Alerta a operador en minutos (meta ≤ 3 min)</div>
+            <div class="metric-tooltip" role="tooltip">
+              <div class="metric-tooltip-title">
+                <span class="metric-tooltip-badge" data-i18n="m3_tax">Meta MVP: &lt;10% Falsas Alarmas</span>
+                <span data-i18n="m3_tip_title">Detección Térmica · ¿Por qué aquí?</span>
+              </div>
+              <p class="metric-tooltip-body" data-i18n="m3_tooltip">Frente a la latencia satelital (30 a 90 minutos) y la lentitud terrestre, la inferencia Edge AI a bordo detecta precursores térmicos en segundos y despacha la alerta a la estación en minutos (meta de diseño ≤ 3 min con &lt;10% falsas alarmas).</p>
+            </div>
           </div>
-          <div class="metric-card glass-panel">
+
+          <!-- Card 4: HITL -->
+          <div class="metric-card glass-panel" tabindex="0" role="region" aria-label="Métrica HITL">
+            <button type="button" class="metric-info-trigger" aria-label="Más información sobre métrica HITL" aria-expanded="false">
+              <span aria-hidden="true">ℹ</span>
+            </button>
             <div class="metric-value">HITL</div>
             <span class="tax-badge tax-badge-today" data-i18n="m4_tax">Diferenciador Clave</span>
             <div class="metric-title" data-i18n="m4_title">Disuasión Autorizada</div>
             <div class="metric-sub" data-i18n="m4_sub">Estrobo de alta intensidad y sirena activados por el operador ante actividad humana</div>
+            <div class="metric-tooltip" role="tooltip">
+              <div class="metric-tooltip-title">
+                <span class="metric-tooltip-badge" data-i18n="m4_tax">Diferenciador Clave</span>
+                <span data-i18n="m4_tip_title">Human-in-the-Loop · ¿Por qué aquí?</span>
+              </div>
+              <p class="metric-tooltip-body" data-i18n="m4_tooltip">Seguridad y criterio humano: la IA a bordo detecta precursores y presencia humana, pero el estrobo y la sirena solo se activan con autorización expresa del operador en tierra, protegiendo a las brigadas de emboscadas o exposición a ciegas.</p>
+            </div>
           </div>
         </div>
       </div>
