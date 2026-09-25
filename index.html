@@ -365,45 +365,45 @@
             <tbody>
               <tr>
                 <td class="td-dim" data-i18n="r1_dim">Patrullaje Nocturno Continuo</td>
-                <td class="td-tech" data-i18n="r1_sat">Pasos orbitales discretos (1 a 4 h). Estándar macrocontinental indiscutido de día, pero con ventana ciega crítica durante la noche.</td>
-                <td class="td-tech" data-i18n="r1_tower">Continuo 24/7 de alta confiabilidad, pero estrictamente limitado a la línea de vista directa (LOS) de su cuenca visible.</td>
-                <td class="td-tech" data-i18n="r1_drone">Inoperante de noche. Los aviones cisterna y de coordinación quedan en tierra al atardecer por normativa DGAC/VFR nocturno (riesgo de colisión contra el relieve CFIT). En tierra, las camionetas 4x4 sufren fatiga, lentitud en ripio y nula visibilidad fuera del camino.</td>
-                <td class="td-tech td-highlight" data-i18n="r1_strig"><strong>Patrullaje aéreo nocturno</strong> en predio piloto con operador calificado (VLOS). <span class="tax-badge tax-badge-vision">Visión: Estación Nest Autónoma</span></td>
+                <td class="td-tech" data-i18n="r1_sat"><span class="badge-negative">Ventana ciega nocturna:</span> Pasos orbitales discretos (1 a 4 h). Estándar macrocontinental de día, sin cobertura continua de noche.</td>
+                <td class="td-tech" data-i18n="r1_tower"><strong>Cobertura continua pero estática:</strong> Alta confiabilidad 24/7, pero estrictamente limitada a la línea de vista directa (LOS) de su cuenca visible.</td>
+                <td class="td-tech" data-i18n="r1_drone"><span class="badge-negative">Inoperante de noche:</span> Aviones y helicópteros en tierra por norma DGAC/VFR nocturno. Camionetas con fatiga y &lt;12% de cobertura.</td>
+                <td class="td-tech td-highlight" data-i18n="r1_strig"><span class="badge-positive">Patrullaje aéreo nocturno:</span> Operación en predio piloto con operador calificado (VLOS). <span class="tax-badge tax-badge-vision">Visión: Estación Nest Autónoma</span></td>
               </tr>
               <tr>
                 <td class="td-dim" data-i18n="r2_dim">Latencia de Detección & Alerta</td>
-                <td class="td-tech" data-i18n="r2_sat"><span class="badge-negative">30 a 90 minutos</span> (descarga orbital, procesamiento en la nube y distribución de alertas a centrales).</td>
-                <td class="td-tech" data-i18n="r2_tower">Instantánea en sensor óptico; requiere operador humano 24/7 en central para verificación y filtrado de falsas alarmas.</td>
-                <td class="td-tech" data-i18n="r2_drone">Instantánea para el piloto u operador local; demorada hacia la central de despacho si no existe cobertura 4G/5G en la quebrada o predio.</td>
-                <td class="td-tech td-highlight" data-i18n="r2_strig"><span class="badge-positive">Detección en segundos</span> con Edge AI a bordo. Alerta a la estación de operador en minutos (meta MVP ≤ 3 min).</td>
+                <td class="td-tech" data-i18n="r2_sat"><span class="badge-negative">30 a 90 minutos:</span> Descarga orbital, procesamiento en la nube y distribución de alertas a centrales.</td>
+                <td class="td-tech" data-i18n="r2_tower"><strong>Instantánea pero manual:</strong> En sensor óptico directo; requiere operador humano 24/7 en central para verificación y filtrado de falsas alarmas.</td>
+                <td class="td-tech" data-i18n="r2_drone"><strong>Instantánea pero aislada:</strong> Directa para el piloto u operador local; demorada a central si no existe cobertura 4G/5G en la quebrada.</td>
+                <td class="td-tech td-highlight" data-i18n="r2_strig"><span class="badge-positive">Detección en segundos:</span> Inferencia Edge AI a bordo. Alerta a la estación de operador en minutos (meta MVP ≤ 3 min).</td>
               </tr>
               <tr>
                 <td class="td-dim" data-i18n="r3_dim">Detección de Precursores (Humanos / Vehículos)</td>
-                <td class="td-tech" data-i18n="r3_sat"><span class="badge-negative">0%</span> (Resolución espacial de 375m a 1km. Diseñado para incendios activos, incapaz de ver personas o fogatas).</td>
-                <td class="td-tech" data-i18n="r3_tower">Nula en senderos boscosos densos o bajo dosel arbóreo fuera del ángulo visual del mástil.</td>
-                <td class="td-tech" data-i18n="r3_drone">Severamente limitada. Las avionetas no vuelan de noche para detectar campamentos o fogatas tempranas; las patrullas en camioneta solo vigilan caminos habilitados, dejando el interior ciego.</td>
-                <td class="td-tech td-highlight" data-i18n="r3_strig"><span class="badge-positive">Detección óptica/térmica</span> de presencia humana visible desde 100 m para disuasión antes del inicio del fuego.</td>
+                <td class="td-tech" data-i18n="r3_sat"><span class="badge-negative">0% resolución:</span> Píxeles de 375m a 1km. Diseñado para incendios activos, incapaz de ver personas o fogatas tempranas.</td>
+                <td class="td-tech" data-i18n="r3_tower"><span class="badge-negative">Casi nula:</span> Ineficaz en senderos boscosos densos o bajo dosel arbóreo fuera del ángulo visual del mástil.</td>
+                <td class="td-tech" data-i18n="r3_drone"><span class="badge-negative">Severamente limitada:</span> Avionetas no vuelan de noche; patrullas en camioneta solo vigilan caminos principales, dejando el interior ciego.</td>
+                <td class="td-tech td-highlight" data-i18n="r3_strig"><span class="badge-positive">Detección óptica/térmica:</span> Presencia humana visible desde 100 m para disuasión autorizada antes del inicio del fuego.</td>
               </tr>
               <tr>
                 <td class="td-dim" data-i18n="r4_dim">Puntos Ciegos Topográficos</td>
-                <td class="td-tech" data-i18n="r4_sat">Afectado por nubosidad baja, humo denso e inversión térmica que absorben la radiación infrarroja.</td>
+                <td class="td-tech" data-i18n="r4_sat"><span class="badge-negative">Bloqueo atmosférico:</span> Afectado por nubosidad baja, humo denso e inversión térmica que absorben la radiación infrarroja.</td>
                 <td class="td-tech" data-i18n="r4_tower"><span class="badge-negative">Crítico:</span> Puntos ciegos físicos insalvables tras cerros, quebradas y laderas opuestas.</td>
-                <td class="td-tech" data-i18n="r4_drone">Crítico. Las cuadrillas terrestres no tienen visibilidad tras cerros ni en quebradas profundas; las aeronaves diurnas sufren con nubosidad baja y humo denso.</td>
+                <td class="td-tech" data-i18n="r4_drone"><span class="badge-negative">Crítico en terreno:</span> Sin visibilidad tras cerros ni en quebradas profundas; aeronaves diurnas afectadas por humo y niebla.</td>
                 <td class="td-tech td-highlight" data-i18n="r4_strig"><span class="badge-positive">Perspectiva cenital:</span> Vuelo adaptado sobre quebradas que reduce drásticamente los puntos ciegos de torres fijas y patrullas terrestres.</td>
               </tr>
               <tr>
                 <td class="td-dim" data-i18n="r5_dim">Riesgo Humano & Supervisión</td>
-                <td class="td-tech" data-i18n="r5_sat">Cero exposición humana directa.</td>
-                <td class="td-tech" data-i18n="r5_tower">Cero exposición humana directa (salvo mantenimiento en cumbres aisladas).</td>
-                <td class="td-tech" data-i18n="r5_drone"><span class="badge-negative">Alto riesgo vital & Ratio 1:1:</span> Requiere 1 piloto + 1 observador certificado por aeronave. Peligro de accidentes en vuelo rasante sobre relieve agreste, y cuadrillas terrestres expuestas en caminos forestales aislados en horario nocturno.</td>
+                <td class="td-tech" data-i18n="r5_sat"><strong>Cero exposición directa:</strong> Operación orbital remota sin presencia humana en terreno.</td>
+                <td class="td-tech" data-i18n="r5_tower"><strong>Cero exposición directa:</strong> Salvo mantenimiento preventivo en cumbres aisladas de alto riesgo.</td>
+                <td class="td-tech" data-i18n="r5_drone"><span class="badge-negative">Alto riesgo vital & Ratio 1:1:</span> 1 piloto + 1 observador por dron. Riesgo en vuelo rasante sobre relieve y brigadas expuestas de noche en caminos aislados.</td>
                 <td class="td-tech td-highlight" data-i18n="r5_strig"><span class="badge-positive">Supervisión en tierra (HITL):</span> Operador en tierra autoriza la disuasión desde una posición segura. <span class="tax-badge tax-badge-vision">Visión: 1 operador supervisa N cuadrículas</span></td>
               </tr>
               <tr>
                 <td class="td-dim" data-i18n="r6_dim">Modelo Operativo & Acceso</td>
-                <td class="td-tech" data-i18n="r6_sat">Suscripción SaaS global. Accesible para escala macro; no sustituye la vigilancia táctica local.</td>
-                <td class="td-tech" data-i18n="r6_tower"><span class="badge-negative">Altísimo CAPEX:</span> Inversión en torres instaladas (mástil, óptica militar, energía solar y caminos de acceso).</td>
-                <td class="td-tech" data-i18n="r6_drone"><span class="badge-negative">Costos Desarticulados:</span> Extinción diurna masiva por hora de vuelo (aviones cisterna y helicópteros). Patrullaje terrestre nocturno en camioneta 4x4 con menos del 12% de cobertura predial.</td>
-                <td class="td-tech td-highlight" data-i18n="r6_strig"><span class="badge-positive">Modelo IaaS:</span> Sin adquisición de flota ni activos de capital (0 CAPEX). Co-diseño y validación técnica en terreno con empresas del sector.</td>
+                <td class="td-tech" data-i18n="r6_sat"><strong>SaaS global:</strong> Suscripción por plataforma; accesible para escala macro, no sustituye la vigilancia táctica local predial.</td>
+                <td class="td-tech" data-i18n="r6_tower"><span class="badge-negative">Altísimo CAPEX:</span> Inversión intensiva en torres fijas instaladas (mástil, óptica militar, energía solar y caminos de acceso).</td>
+                <td class="td-tech" data-i18n="r6_drone"><span class="badge-negative">Costos desarticulados:</span> Alto costo por hora de vuelo diurno (aviones/helicópteros) y patrullaje nocturno en 4x4 con &lt;12% de cobertura.</td>
+                <td class="td-tech td-highlight" data-i18n="r6_strig"><span class="badge-positive">Modelo IaaS (0 CAPEX):</span> Sin adquisición de flota ni activos de capital. Co-diseño y validación técnica en terreno con empresas del sector.</td>
               </tr>
             </tbody>
           </table>
@@ -553,7 +553,7 @@
               <span class="step-badge" data-i18n="flow_s1_badge">Edge AI a Bordo</span>
             </div>
 
-            <!-- Conector Bilateral 2: Estación ⇄ Central C2 -->
+            <!-- Conector Bilateral 2: Estación ⇄ Central de Despacho -->
             <div class="flow-connector flow-connector-right" aria-hidden="true">
               <div class="connector-line">
                 <div class="connector-pulse-out"></div>
@@ -562,7 +562,7 @@
               <span class="connector-label" data-i18n="flow_c2_label">⇄ Enlace Red Local / IP Disponible</span>
             </div>
 
-            <!-- Nodo 3: Central C2 / Despacho -->
+            <!-- Nodo 3: Central de Despacho / Coordinación -->
             <div class="flow-step-card flow-step-flank">
               <div class="step-num">03</div>
               <div class="step-icon-wrap">
@@ -571,7 +571,7 @@
                   <line x1="4" y1="22" x2="4" y2="15"></line>
                 </svg>
               </div>
-              <h4 class="step-title" data-i18n="flow_s3_title">Central C2 / Despacho del Partner</h4>
+              <h4 class="step-title" data-i18n="flow_s3_title">Central de Despacho / Coordinación del Partner</h4>
               <p class="step-desc" data-i18n="flow_s3_desc">Recepción de fichas de alerta georreferenciadas y logs de misión para coordinación de brigadas y auditoría (integración GIS / Webhook).</p>
               <span class="step-badge" data-i18n="flow_s3_badge">Integración Operacional</span>
             </div>
@@ -660,14 +660,14 @@
             <div class="phase-number-badge">03</div>
             <div class="phase-time">Semanas 5 - 8</div>
             <h3 class="phase-title" data-i18n="ph3_title">Vigilancia Nocturna Activa</h3>
-            <p class="phase-desc" data-i18n="ph3_desc">Patrullaje aéreo programado en las horas de mayor vulnerabilidad con telemetría en vivo y soporte al C2 del cliente.</p>
+            <p class="phase-desc" data-i18n="ph3_desc">Patrullaje aéreo programado en las horas de mayor vulnerabilidad con telemetría en vivo y soporte a la central de operaciones del cliente.</p>
           </div>
 
           <div class="pilot-phase-card glass-panel">
             <div class="phase-number-badge">04</div>
             <div class="phase-time">Cierre</div>
             <h3 class="phase-title" data-i18n="ph4_title">Auditoría & Retorno Operativo</h3>
-            <p class="phase-desc" data-i18n="ph4_desc">Informe técnico con tiempos de respuesta, falsas alarmas filtradas, horas de vuelo ahorradas e integración auditada con el centro de operaciones (C2) del cliente.</p>
+            <p class="phase-desc" data-i18n="ph4_desc">Informe técnico con tiempos de respuesta, falsas alarmas filtradas, horas de vuelo ahorradas e integración auditada con el centro de operaciones y despacho del cliente.</p>
           </div>
         </div>
 
@@ -1096,7 +1096,7 @@
                 <option value="Piloto Forestal/Industrial" data-i18n="opt_interest_1">Programa de Validación Técnica (Forestal / Industrial)</option>
                 <option value="Alianza I+D/Academia" data-i18n="opt_interest_2">Alianzas de I+D / Validación Técnica</option>
                 <option value="Inversión Deep Tech" data-i18n="opt_interest_3">Inversión / Fondos de Capital Deep Tech</option>
-                <option value="Consulta General" data-i18n="opt_interest_4">Consulta General / Demostración C2</option>
+                <option value="Consulta General" data-i18n="opt_interest_4">Consulta General / Demostración Técnica</option>
               </select>
             </div>
           </div>
@@ -1173,7 +1173,7 @@
           </div>
           <h2 id="briefing-title" class="modal-title" data-i18n="briefing_modal_title">Agendar Briefing Técnico de 15 Minutos</h2>
           <p class="modal-subtitle" data-i18n="briefing_modal_sub">
-            Conversación técnica directa con Tomás Medina (Technical Lead): evaluamos la orografía de tus predios, viabilidad de radioenlace y requerimientos C2.
+            Conversación técnica directa con Tomás Medina (Technical Lead): evaluamos la orografía de tus predios, viabilidad de radioenlace y requerimientos de integración territorial.
           </p>
         </div>
 

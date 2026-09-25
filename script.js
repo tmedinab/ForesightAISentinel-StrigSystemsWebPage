@@ -87,35 +87,35 @@ const translations = {
     strig_badge: "Nuestra Arquitectura",
     th_strig: "Strig Systems<br><span class=\"th-sub\">Athene (Plataforma VTOL + Edge AI)</span>",
     r1_dim: "Patrullaje Nocturno Continuo",
-    r1_sat: "Pasos orbitales discretos (1 a 4 h). Estándar macrocontinental indiscutido de día, pero con ventana ciega crítica durante la noche.",
-    r1_tower: "Continuo 24/7 de alta confiabilidad, pero estrictamente limitado a la línea de vista directa (LOS) de su cuenca visible.",
-    r1_drone: "Inoperante de noche. Los aviones cisterna y de coordinación quedan en tierra al atardecer por normativa DGAC/VFR nocturno (riesgo de colisión contra el relieve CFIT). En tierra, las cuadrillas terrestres sufren fatiga, lentitud en ripio y nula visibilidad fuera del camino.",
-    r1_strig: "<strong>Patrullaje aéreo nocturno</strong> en predio piloto con operador calificado (VLOS). <span class=\"tax-badge tax-badge-vision\">Visión: Estación Nest Autónoma</span>",
+    r1_sat: "<span class=\"badge-negative\">Ventana ciega nocturna:</span> Pasos orbitales discretos (1 a 4 h). Estándar macrocontinental de día, sin cobertura continua de noche.",
+    r1_tower: "<strong>Cobertura continua pero estática:</strong> Alta confiabilidad 24/7, pero estrictamente limitada a la línea de vista directa (LOS) de su cuenca visible.",
+    r1_drone: "<span class=\"badge-negative\">Inoperante de noche:</span> Aviones y helicópteros en tierra por norma DGAC/VFR nocturno. Camionetas con fatiga y &lt;12% de cobertura.",
+    r1_strig: "<span class=\"badge-positive\">Patrullaje aéreo nocturno:</span> Operación en predio piloto con operador calificado (VLOS). <span class=\"tax-badge tax-badge-vision\">Visión: Estación Nest Autónoma</span>",
     r2_dim: "Latencia de Detección & Alerta",
-    r2_sat: "<span class=\"badge-negative\">30 a 90 minutos</span> (descarga orbital, procesamiento en la nube y distribución de alertas a centrales).",
-    r2_tower: "Instantánea en sensor óptico; requiere operador humano 24/7 en central para verificación y filtrado de falsas alarmas.",
-    r2_drone: "Instantánea para el piloto u operador local; demorada hacia la central de despacho si no existe cobertura 4G/5G en la quebrada o predio.",
-    r2_strig: "<span class=\"badge-positive\">Detección en segundos</span> con Edge AI a bordo. Alerta a la estación de operador en minutos (meta MVP ≤ 3 min).",
+    r2_sat: "<span class=\"badge-negative\">30 a 90 minutos:</span> Descarga orbital, procesamiento en la nube y distribución de alertas a centrales.",
+    r2_tower: "<strong>Instantánea pero manual:</strong> En sensor óptico directo; requiere operador humano 24/7 en central para verificación y filtrado de falsas alarmas.",
+    r2_drone: "<strong>Instantánea pero aislada:</strong> Directa para el piloto u operador local; demorada a central si no existe cobertura 4G/5G en la quebrada.",
+    r2_strig: "<span class=\"badge-positive\">Detección en segundos:</span> Inferencia Edge AI a bordo. Alerta a la estación de operador en minutos (meta MVP ≤ 3 min).",
     r3_dim: "Detección de Precursores (Humanos / Vehículos)",
-    r3_sat: "<span class=\"badge-negative\">0%</span> (Resolución espacial de 375m a 1km. Diseñado para incendios activos, incapaz de ver personas o fogatas).",
-    r3_tower: "Nula en senderos boscosos densos o bajo dosel arbóreo fuera del ángulo visual del mástil.",
-    r3_drone: "Severamente limitada. Las avionetas no vuelan de noche para detectar campamentos o fogatas tempranas; las patrullas en camioneta solo vigilan caminos habilitados, dejando el interior ciego.",
-    r3_strig: "<span class=\"badge-positive\">Detección óptica/térmica</span> de presencia humana visible desde 100 m para disuasión antes del inicio del fuego.",
+    r3_sat: "<span class=\"badge-negative\">0% resolución:</span> Píxeles de 375m a 1km. Diseñado para incendios activos, incapaz de ver personas o fogatas tempranas.",
+    r3_tower: "<span class=\"badge-negative\">Casi nula:</span> Ineficaz en senderos boscosos densos o bajo dosel arbóreo fuera del ángulo visual del mástil.",
+    r3_drone: "<span class=\"badge-negative\">Severamente limitada:</span> Avionetas no vuelan de noche; patrullas en camioneta solo vigilan caminos principales, dejando el interior ciego.",
+    r3_strig: "<span class=\"badge-positive\">Detección óptica/térmica:</span> Presencia humana visible desde 100 m para disuasión autorizada antes del inicio del fuego.",
     r4_dim: "Puntos Ciegos Topográficos",
-    r4_sat: "Afectado por nubosidad baja, humo denso e inversión térmica que absorben la radiación infrarroja.",
+    r4_sat: "<span class=\"badge-negative\">Bloqueo atmosférico:</span> Afectado por nubosidad baja, humo denso e inversión térmica que absorben la radiación infrarroja.",
     r4_tower: "<span class=\"badge-negative\">Crítico:</span> Puntos ciegos físicos insalvables tras cerros, quebradas y laderas opuestas.",
-    r4_drone: "Crítico. Las cuadrillas terrestres no tienen visibilidad tras cerros ni en quebradas profundas; las aeronaves diurnas sufren con nubosidad baja y humo denso.",
+    r4_drone: "<span class=\"badge-negative\">Crítico en terreno:</span> Sin visibilidad tras cerros ni en quebradas profundas; aeronaves diurnas afectadas por humo y niebla.",
     r4_strig: "<span class=\"badge-positive\">Perspectiva cenital:</span> Vuelo adaptado sobre quebradas que reduce drásticamente los puntos ciegos de torres fijas y patrullas terrestres.",
     r5_dim: "Riesgo Humano & Supervisión",
-    r5_sat: "Cero exposición humana directa.",
-    r5_tower: "Cero exposición humana directa (salvo mantenimiento en cumbres aisladas).",
-    r5_drone: "<span class=\"badge-negative\">Alto riesgo vital & Ratio 1:1:</span> Requiere 1 piloto + 1 observador certificado por aeronave. Peligro de accidentes en vuelo rasante sobre relieve agreste, y cuadrillas terrestres expuestas en caminos forestales aislados en horario nocturno.",
+    r5_sat: "<strong>Cero exposición directa:</strong> Operación orbital remota sin presencia humana en terreno.",
+    r5_tower: "<strong>Cero exposición directa:</strong> Salvo mantenimiento preventivo en cumbres aisladas de alto riesgo.",
+    r5_drone: "<span class=\"badge-negative\">Alto riesgo vital & Ratio 1:1:</span> 1 piloto + 1 observador por dron. Riesgo en vuelo rasante sobre relieve y brigadas expuestas de noche en caminos aislados.",
     r5_strig: "<span class=\"badge-positive\">Supervisión en tierra (HITL):</span> Operador en tierra autoriza la disuasión desde una posición segura. <span class=\"tax-badge tax-badge-vision\">Visión: 1 operador supervisa N cuadrículas</span>",
     r6_dim: "Modelo Operativo & Acceso",
-    r6_sat: "Suscripción SaaS global. Accesible para escala macro; no sustituye la vigilancia táctica local.",
-    r6_tower: "<span class=\"badge-negative\">Altísimo CAPEX:</span> Inversión en torres instaladas (mástil, óptica militar, energía solar y caminos de acceso).",
-    r6_drone: "<span class=\"badge-negative\">Costos Desarticulados:</span> Extinción diurna masiva por hora de vuelo (aviones cisterna y helicópteros). Patrullaje terrestre nocturno en camioneta 4x4 con menos del 12% de cobertura predial.",
-    r6_strig: "<span class=\"badge-positive\">Modelo IaaS:</span> Sin adquisición de flota ni activos de capital (0 CAPEX). Co-diseño y validación técnica en terreno con empresas del sector.",
+    r6_sat: "<strong>SaaS global:</strong> Suscripción por plataforma; accesible para escala macro, no sustituye la vigilancia táctica local predial.",
+    r6_tower: "<span class=\"badge-negative\">Altísimo CAPEX:</span> Inversión intensiva en torres fijas instaladas (mástil, óptica militar, energía solar y caminos de acceso).",
+    r6_drone: "<span class=\"badge-negative\">Costos desarticulados:</span> Alto costo por hora de vuelo diurno (aviones/helicópteros) y patrullaje nocturno en 4x4 con &lt;12% de cobertura.",
+    r6_strig: "<span class=\"badge-positive\">Modelo IaaS (0 CAPEX):</span> Sin adquisición de flota ni activos de capital. Co-diseño y validación técnica en terreno con empresas del sector.",
 
     // Technology
     tech_tag: "Capacidades Operativas",
@@ -151,38 +151,9 @@ const translations = {
     flow_s2_desc: "Recepción táctica de alertas y telemetría en tiempo real. El operador evalúa y autoriza la activación de estrobo y sirena de disuasión desde una posición segura.",
     flow_s2_badge: "Supervisión Humana (HITL)",
     flow_c2_label: "⇄ Enlace Red Local / IP Disponible",
-    flow_s3_title: "Central C2 / Despacho del Partner",
+    flow_s3_title: "Central de Despacho / Coordinación del Partner",
     flow_s3_desc: "Recepción de fichas de alerta georreferenciadas y logs de misión para coordinación de brigadas y auditoría (integración GIS / Webhook).",
     flow_s3_badge: "Integración Operacional",
-
-    // C2 Tactical Console & Dual Views
-    c2_tag: "◈ Consola C2 Athene",
-    c2_title: "Simulador de Enlace Táctico & Misión Nocturna",
-    c2_sub: "Experimenta en tiempo real la telemetría embarcada de la aeronave Noctua-01 y la inferencia biespectral de Edge AI con discriminación térmica de precursores.",
-    c2_status_link: "TELEMETRÍA LINK: ACTIVO (915 MHz FHSS)",
-    c2_view_gimbal: "SENSOR GIMBAL (FLIR)",
-    c2_view_map: "MANDO SITUACIONAL C2",
-    c2_lbl_palette: "PALETA:",
-    c2_lbl_zoom: "ZOOM:",
-    c2_hint: "💡 Haz clic sobre el cuadrante térmico o el mapa táctico para reorientar el sensor y calcular coordenadas georreferenciadas.",
-    c2_btn_dispatch: "Despachar Dossier Táctico C2",
-    c2_poly_label: "POLÍGONO PROTEGIDO: PREDIO SAN IGNACIO (12.400 HA)",
-    c2_nest_label: "ESTACIÓN BASE NEST [ALPHA]",
-    c2_nest_sub: "ACOPLE AUTÓNOMO OK",
-    c2_anomaly_label: "⚠️ ANOMALÍA TÉRMICA",
-    c2_vtol_label: "NOCTUA-01 [PATRULLA]",
-    c2_salute_intel: "INTELIGENCIA TÁCTICA (SALUTE)",
-    salute_lbl_size: "S (SIZE):",
-    salute_val_size: "2 Personas en sendero",
-    salute_lbl_act: "A (ACTIVITY):",
-    salute_val_act: "Precursor / Foco Incipiente",
-    salute_lbl_loc: "L (LOCATION):",
-    salute_lbl_unit: "U (UNIT):",
-    salute_val_unit: "Noctua-01 (EO/IR FLIR)",
-    salute_lbl_time: "T (TIME):",
-    salute_lbl_eq: "E (EQUIPMENT):",
-    salute_val_eq: "Bidón de Combustible (VLM Edge)",
-    c2_pip_swap: "⇄ CLIC PARA EXPANDIR",
 
     // Roadmap
     roadmap_tag: "Hoja de Ruta de Ingeniería",
@@ -213,9 +184,9 @@ const translations = {
     ph2_title: "Calibración Sensorial",
     ph2_desc: "Pruebas en terreno de firmas térmicas, validación de telemetría táctica en zonas sin cobertura y simulacros controlados.",
     ph3_title: "Vigilancia Nocturna Activa",
-    ph3_desc: "Patrullaje aéreo programado en las horas de mayor vulnerabilidad con telemetría en vivo y soporte al C2 del cliente.",
+    ph3_desc: "Patrullaje aéreo programado en las horas de mayor vulnerabilidad con telemetría en vivo y soporte a la central de operaciones del cliente.",
     ph4_title: "Auditoría & Retorno Operativo",
-    ph4_desc: "Informe técnico con tiempos de respuesta, falsas alarmas filtradas, horas de vuelo ahorradas e integración auditada con el centro de operaciones (C2) del cliente.",
+    ph4_desc: "Informe técnico con tiempos de respuesta, falsas alarmas filtradas, horas de vuelo ahorradas e integración auditada con el centro de operaciones y despacho del cliente.",
 
     // Operational Impact Framework
     impact_badge: "MODELO DE IMPACTO OPERACIONAL",
@@ -313,7 +284,7 @@ const translations = {
     opt_interest_1: "Programa de Validación Técnica (Forestal / Industrial)",
     opt_interest_2: "Alianzas de I+D / Validación Técnica",
     opt_interest_3: "Inversión / Fondos de Capital Deep Tech",
-    opt_interest_4: "Consulta General / Demostración C2",
+    opt_interest_4: "Consulta General / Demostración Técnica",
     f_message_label: "Detalles Adicionales o Necesidad Específica (Opcional)",
     f_message_ph: "Describe brevemente el tipo de predio, zona geográfica o consulta técnica...",
     f_submit_btn: "Enviar Solicitud de Validación",
@@ -329,7 +300,7 @@ const translations = {
     // Briefing Modal (15 min)
     briefing_badge: "Ingeniería & Operaciones",
     briefing_modal_title: "Agendar Briefing Técnico de 15 Minutos",
-    briefing_modal_sub: "Conversación técnica directa con Tomás Medina (Technical Lead): evaluamos la orografía de tus predios, viabilidad de radioenlace y requerimientos C2.",
+    briefing_modal_sub: "Conversación técnica directa con Tomás Medina (Technical Lead): evaluamos la orografía de tus predios, viabilidad de radioenlace y requerimientos de integración territorial.",
     f_contact_label: "Correo Corporativo o WhatsApp *",
     f_contact_ph: "correo@empresa.cl o +56 9...",
     f_briefing_time_label: "Horario Preferente *",
@@ -453,36 +424,36 @@ const translations = {
     th_drone: "Conventional Manned Patrol<br><span class=\"th-sub\">Daytime Planes + Night Crews/Drones</span>",
     strig_badge: "Our Architecture",
     th_strig: "Strig Systems<br><span class=\"th-sub\">Athene (VTOL Platform + Edge AI)</span>",
-    r1_dim: "Continuous Night Patrol",
-    r1_sat: "Discrete orbital passes (1 to 4 h). Uncontested daytime macro standard, but leaves a critical blind window throughout the night.",
-    r1_tower: "Continuous 24/7 with high reliability, but strictly restricted to direct line of sight (LOS) within its visible basin.",
-    r1_drone: "Inoperable at night. Water-dropping air tankers and spotters are grounded at dusk under DGAC/night-VFR rules (controlled flight into terrain / CFIT hazard). On the ground, 4x4 patrol trucks face fatigue, slow speeds on gravel roads, and zero visibility off the track.",
-    r1_strig: "<strong>Nighttime aerial patrol</strong> in pilot site with qualified operator (VLOS). <span class=\"tax-badge tax-badge-vision\">Vision: Autonomous Nest Base</span>",
+    r1_dim: "Continuous Nighttime Patrol",
+    r1_sat: "<span class=\"badge-negative\">Nighttime blind window:</span> Discrete orbital passes (1 to 4 h). Indisputable daytime standard, but critical blind gap at night.",
+    r1_tower: "<strong>Continuous but static:</strong> 24/7 high reliability, but strictly confined to direct line of sight (LOS) within its visible watershed.",
+    r1_drone: "<span class=\"badge-negative\">Grounded at night:</span> Tanker aircraft and spotters grounded at dusk by DGAC/VFR rules. 4x4 trucks suffer fatigue and &lt;12% parcel coverage.",
+    r1_strig: "<span class=\"badge-positive\">Nighttime aerial patrol:</span> Flight operations on pilot site with qualified operator (VLOS). <span class=\"tax-badge tax-badge-vision\">Vision: Autonomous Nest Base</span>",
     r2_dim: "Detection & Alert Latency",
-    r2_sat: "<span class=\"badge-negative\">30 to 90 minutes</span> (orbital downlink, cloud processing, and regional alert dissemination lag).",
-    r2_tower: "Instantaneous at optical sensor; requires 24/7 human console operator for verification and false alarm filtering.",
-    r2_drone: "Instantaneous for local pilot or crew; significantly delayed to central dispatch without reliable 4G/5G coverage in remote terrain.",
-    r2_strig: "<span class=\"badge-positive\">Detection in seconds</span> with onboard Edge AI. Alert to operator station in minutes (MVP goal ≤ 3 min).",
+    r2_sat: "<span class=\"badge-negative\">30 to 90 minutes:</span> Orbital downlink, cloud processing, and regional alert dissemination lag.",
+    r2_tower: "<strong>Instantaneous but manual:</strong> Direct at optical sensor; requires 24/7 console operator for verification and false alarm triage.",
+    r2_drone: "<strong>Instantaneous but isolated:</strong> Immediate for local crew; significantly delayed to central dispatch without reliable 4G/5G coverage in remote terrain.",
+    r2_strig: "<span class=\"badge-positive\">Detection in seconds:</span> Onboard Edge AI inference. Alert to ground operator station in minutes (MVP goal ≤ 3 min).",
     r3_dim: "Precursor Detection (Humans / Vehicles)",
-    r3_sat: "<span class=\"badge-negative\">0%</span> (375m to 1km spatial resolution; engineered for active fires, incapable of spotting individuals or small campfires).",
-    r3_tower: "Zero under dense canopy, forest trails, or blind ravines outside direct mast sightline.",
-    r3_drone: "Severamente limited. Patrol planes cannot fly at night to detect early campfires; 4x4 ground patrols can only monitor main logging roads, leaving dense stands blind.",
-    r3_strig: "<span class=\"badge-positive\">Optical & thermal detection</span> of human presence visible from 100 m altitude for deterrence before fire starts.",
+    r3_sat: "<span class=\"badge-negative\">0% resolution:</span> 375m to 1km spatial resolution; engineered for active fires, incapable of spotting individuals or campfires.",
+    r3_tower: "<span class=\"badge-negative\">Near zero:</span> Ineffective under dense canopy, forest trails, or blind ravines outside direct mast sightline.",
+    r3_drone: "<span class=\"badge-negative\">Severely limited:</span> Patrol planes cannot fly at night to detect early campfires; 4x4 trucks only monitor roads, leaving interior blind.",
+    r3_strig: "<span class=\"badge-positive\">Optical & thermal detection:</span> Human presence visible from 100 m altitude for authorized deterrence before fire starts.",
     r4_dim: "Topographic Blind Spots",
-    r4_sat: "Severely degraded by low cloud cover, thick smoke plumes, and thermal inversions absorbing infrared radiation.",
+    r4_sat: "<span class=\"badge-negative\">Atmospheric attenuation:</span> Severely degraded by low clouds, thick smoke plumes, and thermal inversions absorbing IR radiation.",
     r4_tower: "<span class=\"badge-negative\">Critical:</span> Irrecoverable physical blind spots behind ridgelines, valleys, and opposing slopes.",
-    r4_drone: "Critical. Ground crews have zero line of sight behind ridges or deep ravines; daytime aircraft face severe degradation in low clouds and heavy smoke.",
+    r4_drone: "<span class=\"badge-negative\">Critical in rugged terrain:</span> Ground crews have zero line of sight behind ridges; daytime aircraft face severe degradation in low clouds and heavy smoke.",
     r4_strig: "<span class=\"badge-positive\">Zenith perspective:</span> Adapted flight over ravines drastically reducing blind spots of fixed watchtowers and ground patrols.",
     r5_dim: "Human Risk & Supervision",
-    r5_sat: "Zero direct human exposure.",
-    r5_tower: "Zero direct human exposure (except maintenance on isolated peaks).",
-    r5_drone: "<span class=\"badge-negative\">High life risk & 1:1 ratio:</span> Requires 1 pilot + 1 certified spotter per airborne asset. Crash hazard in low flight over rough relief, and ground crews exposed on isolated logging tracks at night.",
+    r5_sat: "<strong>Zero direct human exposure:</strong> Remote orbital operation without personnel in the field.",
+    r5_tower: "<strong>Zero direct human exposure:</strong> Except hazardous maintenance on isolated mountain peaks.",
+    r5_drone: "<span class=\"badge-negative\">High life risk & 1:1 ratio:</span> 1 pilot + 1 certified spotter per asset. Crash hazard in low flight, and ground crews exposed on isolated tracks at night.",
     r5_strig: "<span class=\"badge-positive\">Ground supervision (HITL):</span> Ground operator authorizes deterrence from a safe position. <span class=\"tax-badge tax-badge-vision\">Vision: 1 operator supervises N grids</span>",
     r6_dim: "Operating Model & Access",
-    r6_sat: "Global SaaS subscription. Accessible at macro scale; does not replace tactical parcel surveillance.",
-    r6_tower: "<span class=\"badge-negative\">Extremely High CAPEX:</span> Investment in installed watchtowers (mast, military optics, solar power, and access roads).",
-    r6_drone: "<span class=\"badge-negative\">Fragmented Heavy OPEX:</span> Daytime mass suppression flight hourly costs. Nocturnal 4x4 ground patrol covering under 12% of holding.",
-    r6_strig: "<span class=\"badge-positive\">IaaS Model:</span> No fleet acquisition or capital assets (0 CAPEX). Co-design and technical field validation with forestry enterprises.",
+    r6_sat: "<strong>Global SaaS:</strong> Platform subscription; accessible at macro scale, does not replace parcel-level tactical surveillance.",
+    r6_tower: "<span class=\"badge-negative\">Extremely High CAPEX:</span> Intensive capital investment in fixed watchtowers (mast, military optics, solar power, and access roads).",
+    r6_drone: "<span class=\"badge-negative\">Fragmented heavy costs:</span> High hourly costs for daytime suppression flight (tankers/choppers) and nocturnal 4x4 patrols covering &lt;12% of holding.",
+    r6_strig: "<span class=\"badge-positive\">IaaS Model (0 CAPEX):</span> No fleet acquisition or capital assets. Joint co-design and technical field validation with forestry enterprises.",
 
     // Technology
     tech_tag: "Operational Capabilities",
@@ -518,38 +489,9 @@ const translations = {
     flow_s2_desc: "Real-time reception of tactical alerts and telemetry. The operator evaluates and authorizes the activation of the deterrence strobe and siren from a safe position.",
     flow_s2_badge: "Human Supervision (HITL)",
     flow_c2_label: "⇄ Local Network / Available IP Link",
-    flow_s3_title: "Central C2 / Partner Dispatch",
+    flow_s3_title: "Partner Dispatch & Operations Center",
     flow_s3_desc: "Reception of georeferenced alert dossiers and mission logs for crew coordination and audit trails (GIS / Webhook integration).",
     flow_s3_badge: "Operational Integration",
-
-    // C2 Tactical Console & Dual Views
-    c2_tag: "◈ Athene C2 Console",
-    c2_title: "Tactical Datalink & Night Mission Simulator",
-    c2_sub: "Experience real-time onboard telemetry from the Noctua-01 airframe and Edge AI bi-spectral inference with thermal precursor discrimination.",
-    c2_status_link: "TELEMETRY LINK: ACTIVE (915 MHz FHSS)",
-    c2_view_gimbal: "GIMBAL SENSOR (FLIR)",
-    c2_view_map: "C2 SITUATIONAL MAP",
-    c2_lbl_palette: "PALETTE:",
-    c2_lbl_zoom: "ZOOM:",
-    c2_hint: "💡 Click anywhere on the thermal quadrant or tactical map to slew the gimbal sensor and compute target coordinates.",
-    c2_btn_dispatch: "Dispatch Tactical C2 Dossier",
-    c2_poly_label: "PROTECTED POLYGON: SAN IGNACIO SECTOR (12,400 HA)",
-    c2_nest_label: "NEST ALPHA DOCKING BASE",
-    c2_nest_sub: "AUTONOMOUS DOCK OK",
-    c2_anomaly_label: "⚠️ THERMAL ANOMALY",
-    c2_vtol_label: "NOCTUA-01 [PATROL]",
-    c2_salute_intel: "TACTICAL INTEL DOSSIER (SALUTE)",
-    salute_lbl_size: "S (SIZE):",
-    salute_val_size: "2 Individuals on trail",
-    salute_lbl_act: "A (ACTIVITY):",
-    salute_val_act: "Thermal Precursor / Fire Spot",
-    salute_lbl_loc: "L (LOCATION):",
-    salute_lbl_unit: "U (UNIT):",
-    salute_val_unit: "Noctua-01 (EO/IR FLIR)",
-    salute_lbl_time: "T (TIME):",
-    salute_lbl_eq: "E (EQUIPMENT):",
-    salute_val_eq: "Accelerant Canister (Edge VLM)",
-    c2_pip_swap: "⇄ CLICK TO EXPAND",
 
     // Roadmap
     roadmap_tag: "Engineering Roadmap",
@@ -580,9 +522,9 @@ const translations = {
     ph2_title: "Sensor Calibration & Field Trials",
     ph2_desc: "Controlled ground trials for thermal signature calibration, tactical telemetry verification, and simulated incident scenarios.",
     ph3_title: "Active Nighttime Surveillance",
-    ph3_desc: "Scheduled aerial patrol throughout hours of maximum vulnerability with live structured telemetry and C2 integration.",
+    ph3_desc: "Scheduled aerial patrol throughout hours of maximum vulnerability with live structured telemetry and client dispatch center integration.",
     ph4_title: "Audit & Operational ROI",
-    ph4_desc: "Technical evaluation report detailing response latency, filtered false alarms, flight hours saved, and audited integration with the client's operations center (C2).",
+    ph4_desc: "Technical evaluation report detailing response latency, filtered false alarms, flight hours saved, and audited integration with the client's operations and dispatch center.",
 
     // Operational Impact Framework
     impact_badge: "OPERATIONAL IMPACT MODEL",
@@ -680,7 +622,7 @@ const translations = {
     opt_interest_1: "Technical Validation Program (Forestry / Industrial)",
     opt_interest_2: "R&D Alliances / Academic Validation",
     opt_interest_3: "Deep Tech / Dual-Use Investment",
-    opt_interest_4: "General Inquiry / C2 Demonstration",
+    opt_interest_4: "General Inquiry / Technical Demonstration",
     f_message_label: "Additional Details or Specific Requirements (Optional)",
     f_message_ph: "Briefly outline your acreage, geographic zone, or tactical technical inquiry...",
     f_submit_btn: "Submit Validation Request",
@@ -696,7 +638,7 @@ const translations = {
     // Briefing Modal (15 min)
     briefing_badge: "Engineering & Operations",
     briefing_modal_title: "Schedule a 15-Minute Technical Briefing",
-    briefing_modal_sub: "Direct technical session with Tomás Medina (Technical Lead): evaluating terrain orography, tactical radio link margins, and C2 requirements.",
+    briefing_modal_sub: "Direct technical session with Tomás Medina (Technical Lead): evaluating terrain orography, tactical radio link margins, and operational integration requirements.",
     f_contact_label: "Corporate Email or WhatsApp *",
     f_contact_ph: "email@company.com or +56 9...",
     f_briefing_time_label: "Preferred Time Window *",
@@ -803,8 +745,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initBriefingModal();
   initExecutiveBriefModal();
 
-  // Initialize C2 Tactical Simulator
-  initC2Simulator();
 
   // Initialize Technical FAQ Accordion
   initFaq();
@@ -1552,531 +1492,3 @@ function initTooltips() {
     }
   });
 }
-
-/**
- * Controller for Tactical C2 FLIR Mission Simulator & Dual Situational Map
- */
-function initC2Simulator() {
-  const canvas = document.getElementById('c2-flir-canvas');
-  if (!canvas) return;
-  const ctx = canvas.getContext('2d');
-  const screenWrapper = document.getElementById('c2-screen-wrapper');
-
-  // Interactive controls
-  const paletteBtns = document.querySelectorAll('.c2-mode-btn');
-  const zoomBtns = document.querySelectorAll('.c2-zoom-btn');
-  const btnGimbal = document.getElementById('c2-btn-gimbal');
-  const btnMap = document.getElementById('c2-btn-map');
-
-  // Panels & Views
-  const panelGimbal = document.getElementById('c2-gimbal-panel');
-  const panelMap = document.getElementById('c2-map-panel');
-  const pipWindow = document.getElementById('c2-pip-window');
-  const pipViewport = document.getElementById('c2-pip-viewport');
-  const pipBadge = document.getElementById('c2-pip-badge');
-
-  // Tactical Map SVG Elements
-  const mapSvg = document.getElementById('c2-map-svg');
-  const mapTarget = document.getElementById('c2-map-target');
-  const mapTargetTemp = document.getElementById('c2-map-target-temp');
-  const mapTargetCoords = document.getElementById('c2-map-target-coords');
-  const mapVtol = document.getElementById('c2-map-vtol');
-  const saluteLocation = document.getElementById('salute-location');
-
-  // Readouts
-  const headingVal = document.getElementById('c2-heading-val');
-  const pitchLadder = document.getElementById('c2-pitch-ladder');
-  const targetBox = document.getElementById('c2-target-box');
-  const targetTag = document.getElementById('c2-target-tag');
-  const targetTemp = document.getElementById('c2-target-temp');
-  const latVal = document.getElementById('c2-lat-val');
-  const lonVal = document.getElementById('c2-lon-val');
-  const fovVal = document.getElementById('c2-fov-val');
-  const bufferTxt = document.getElementById('c2-buffer-txt');
-  const bufferFill = document.getElementById('c2-buffer-fill');
-  const gimbalVal = document.getElementById('c2-gimbal-val');
-
-  // Dossier modal
-  const dispatchBtn = document.getElementById('c2-dispatch-btn');
-  const dossierModal = document.getElementById('c2-dossier-modal');
-  const dossierClose = document.getElementById('c2-dossier-close');
-  const dossierCoords = document.getElementById('dossier-coords');
-  const dossierTemp = document.getElementById('dossier-temp');
-  const copyBtn = document.getElementById('dossier-copy-btn');
-  const exportBtn = document.getElementById('dossier-sim-export-btn');
-  const alertStatus = document.getElementById('dossier-alert-status');
-
-  // State
-  let currentView = 'gimbal'; // 'gimbal' | 'map'
-  let currentPalette = 'ironbow';
-  let currentZoom = 1.0;
-  const vtol = { x: 390, y: 180 };
-  let target = {
-    x: 485,
-    y: 235,
-    temp: 284,
-    lat: -37.24238,
-    lon: -72.68450
-  };
-  let isBufferRunning = false;
-  let t = 0;
-
-  // Setup PiP internal elements
-  let pipCanvas = null;
-  let pipCtx = null;
-  let pipMapClone = null;
-
-  if (pipViewport) {
-    // 1. Mini canvas for live FLIR mirror (when in map view)
-    pipCanvas = document.createElement('canvas');
-    pipCanvas.width = 210;
-    pipCanvas.height = 118;
-    pipCanvas.className = 'c2-pip-canvas';
-    pipCanvas.style.display = 'none';
-    pipCtx = pipCanvas.getContext('2d');
-    pipViewport.appendChild(pipCanvas);
-
-    // 2. Mini Map SVG container for map preview (when in gimbal view)
-    if (mapSvg) {
-      pipMapClone = mapSvg.cloneNode(true);
-      pipMapClone.id = 'c2-pip-map-clone';
-      pipMapClone.style.display = 'block';
-      pipMapClone.style.width = '100%';
-      pipMapClone.style.height = '100%';
-      pipViewport.appendChild(pipMapClone);
-    }
-  }
-
-  function setConsoleView(view) {
-    currentView = view;
-    const isEn = (document.documentElement.getAttribute('data-lang') || 'es') === 'en';
-
-    if (view === 'gimbal') {
-      if (panelGimbal) panelGimbal.classList.add('active');
-      if (panelMap) panelMap.classList.remove('active');
-      if (btnGimbal) btnGimbal.classList.add('active');
-      if (btnMap) btnMap.classList.remove('active');
-      if (pipCanvas) pipCanvas.style.display = 'none';
-      if (pipMapClone) pipMapClone.style.display = 'block';
-      if (pipBadge) {
-        pipBadge.textContent = isEn ? "⇄ C2 MAP (CLICK)" : "⇄ MAPA C2 (CLIC)";
-      }
-    } else {
-      if (panelMap) panelMap.classList.add('active');
-      if (panelGimbal) panelGimbal.classList.remove('active');
-      if (btnMap) btnMap.classList.add('active');
-      if (btnGimbal) btnGimbal.classList.remove('active');
-      if (pipMapClone) pipMapClone.style.display = 'none';
-      if (pipCanvas) pipCanvas.style.display = 'block';
-      if (pipBadge) {
-        pipBadge.textContent = isEn ? "⇄ FLIR GIMBAL (CLICK)" : "⇄ GIMBAL FLIR (CLIC)";
-      }
-    }
-  }
-
-  if (btnGimbal) btnGimbal.addEventListener('click', () => setConsoleView('gimbal'));
-  if (btnMap) btnMap.addEventListener('click', () => setConsoleView('map'));
-  if (pipWindow) {
-    pipWindow.addEventListener('click', () => {
-      setConsoleView(currentView === 'gimbal' ? 'map' : 'gimbal');
-    });
-    pipWindow.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        setConsoleView(currentView === 'gimbal' ? 'map' : 'gimbal');
-      }
-    });
-  }
-
-  // Generate 256-color LUTs for true radiometric rendering
-  const luts = {
-    ironbow: createIronbowLUT(),
-    whitehot: createWhiteHotLUT(),
-    blackhot: createBlackHotLUT()
-  };
-
-  function createIronbowLUT() {
-    const lut = new Uint8ClampedArray(256 * 3);
-    for (let i = 0; i < 256; i++) {
-      const p = i / 255;
-      let r = 0, g = 0, b = 0;
-      if (p < 0.25) {
-        const f = p / 0.25;
-        r = Math.floor(18 + f * 72);
-        g = 0;
-        b = Math.floor(40 + f * 90);
-      } else if (p < 0.5) {
-        const f = (p - 0.25) / 0.25;
-        r = Math.floor(90 + f * 110);
-        g = Math.floor(f * 25);
-        b = Math.floor(130 - f * 80);
-      } else if (p < 0.75) {
-        const f = (p - 0.5) / 0.25;
-        r = Math.floor(200 + f * 55);
-        g = Math.floor(25 + f * 115);
-        b = Math.floor(50 - f * 50);
-      } else if (p < 0.92) {
-        const f = (p - 0.75) / 0.17;
-        r = 255;
-        g = Math.floor(140 + f * 90);
-        b = Math.floor(f * 20);
-      } else {
-        const f = (p - 0.92) / 0.08;
-        r = 255;
-        g = Math.min(255, Math.floor(230 + f * 25));
-        b = Math.min(255, Math.floor(20 + f * 235));
-      }
-      lut[i * 3] = r;
-      lut[i * 3 + 1] = g;
-      lut[i * 3 + 2] = b;
-    }
-    return lut;
-  }
-
-  function createWhiteHotLUT() {
-    const lut = new Uint8ClampedArray(256 * 3);
-    for (let i = 0; i < 256; i++) {
-      lut[i * 3] = i;
-      lut[i * 3 + 1] = i;
-      lut[i * 3 + 2] = i;
-    }
-    return lut;
-  }
-
-  function createBlackHotLUT() {
-    const lut = new Uint8ClampedArray(256 * 3);
-    for (let i = 0; i < 256; i++) {
-      const inv = 255 - i;
-      lut[i * 3] = inv;
-      lut[i * 3 + 1] = inv;
-      lut[i * 3 + 2] = inv;
-    }
-    return lut;
-  }
-
-  // Pre-generate thermal intensity grid (offscreen 400x225)
-  const gw = 400;
-  const gh = 225;
-  const rawIntensity = new Float32Array(gw * gh);
-
-  for (let y = 0; y < gh; y++) {
-    for (let x = 0; x < gw; x++) {
-      const nx = x / gw;
-      const ny = y / gh;
-      const mountain = Math.sin(nx * 5.2 + ny * 2.1) * 0.15 + Math.cos(nx * 3.1 - ny * 4.2) * 0.12;
-      let val = 0.22 + ny * 0.1 + mountain;
-      const roadX = 0.35 + Math.sin(ny * 6) * 0.12 + ny * 0.25;
-      const distToRoad = Math.abs(nx - roadX);
-      if (distToRoad < 0.012) {
-        val -= 0.08;
-      }
-      const treeNoise = ((x * 17 + y * 31) % 19) / 19 * 0.04;
-      val += treeNoise;
-      rawIntensity[y * gw + x] = Math.max(0.05, Math.min(0.55, val));
-    }
-  }
-
-  const offCanvas = document.createElement('canvas');
-  offCanvas.width = gw;
-  offCanvas.height = gh;
-  const offCtx = offCanvas.getContext('2d');
-  const imgData = offCtx.createImageData(gw, gh);
-  const data = imgData.data;
-
-  // Lifecycle visibility tracking to pause RAF when off-screen (battery & Core Web Vitals)
-  let isC2Visible = true;
-  let isRendering = false;
-  const c2Section = document.getElementById('c2-console');
-  if (c2Section && 'IntersectionObserver' in window) {
-    const c2Observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        isC2Visible = entry.isIntersecting;
-        if (isC2Visible && !isRendering) {
-          isRendering = true;
-          requestAnimationFrame(render);
-        }
-      });
-    }, { threshold: 0.05 });
-    c2Observer.observe(c2Section);
-  }
-
-  // Main Render Loop
-  function render() {
-    if (!isC2Visible) {
-      isRendering = false;
-      return;
-    }
-    isRendering = true;
-    t += 0.025;
-    const activeLut = luts[currentPalette] || luts.ironbow;
-
-    const tx = (target.x / 800) * gw;
-    const ty = (target.y / 450) * gh;
-
-    // Secondary human presence walking near campfire
-    const hx = tx + Math.cos(t * 1.5) * 12;
-    const hy = ty + Math.sin(t * 1.2) * 8;
-
-    let pIdx = 0;
-    for (let y = 0; y < gh; y++) {
-      for (let x = 0; x < gw; x++) {
-        let intensity = rawIntensity[y * gw + x];
-
-        // Main fire precursor heat bloom
-        const dx1 = x - tx;
-        const dy1 = y - ty;
-        const distSq1 = dx1 * dx1 + dy1 * dy1;
-        if (distSq1 < 400) {
-          const bloom = Math.exp(-distSq1 / 55);
-          const flicker = 1.0 + Math.sin(t * 8 + x * 0.5) * 0.06;
-          intensity += bloom * 0.75 * flicker;
-        }
-
-        // Secondary human heat signature
-        const dx2 = x - hx;
-        const dy2 = y - hy;
-        const distSq2 = dx2 * dx2 + dy2 * dy2;
-        if (distSq2 < 120) {
-          const humanBloom = Math.exp(-distSq2 / 20);
-          intensity += humanBloom * 0.38;
-        }
-
-        const lutIdx = Math.max(0, Math.min(255, Math.floor(intensity * 255)));
-        const lPos = lutIdx * 3;
-
-        data[pIdx] = activeLut[lPos];
-        data[pIdx + 1] = activeLut[lPos + 1];
-        data[pIdx + 2] = activeLut[lPos + 2];
-        data[pIdx + 3] = 255;
-        pIdx += 4;
-      }
-    }
-
-    offCtx.putImageData(imgData, 0, 0);
-
-    ctx.imageSmoothingEnabled = true;
-    ctx.imageSmoothingQuality = 'medium';
-    ctx.drawImage(offCanvas, 0, 0, 800, 450);
-
-    // If map view is active, live-mirror the FLIR canvas into the PiP window!
-    if (currentView === 'map' && pipCtx && pipCanvas) {
-      pipCtx.drawImage(canvas, 0, 0, 210, 118);
-    }
-
-    // Dynamic rotation of VTOL vector towards target
-    const dx = target.x - vtol.x;
-    const dy = target.y - vtol.y;
-    const targetAngleDeg = (Math.atan2(dy, dx) * 180 / Math.PI);
-    const flightWobble = Math.sin(t * 0.8) * 1.5;
-    const currentHeadingAngle = targetAngleDeg + flightWobble;
-
-    if (mapVtol) {
-      mapVtol.setAttribute('transform', `translate(${vtol.x}, ${vtol.y}) rotate(${currentHeadingAngle.toFixed(1)})`);
-    }
-    if (pipMapClone) {
-      const cloneVtol = pipMapClone.querySelector('#c2-map-vtol');
-      if (cloneVtol) {
-        cloneVtol.setAttribute('transform', `translate(${vtol.x}, ${vtol.y}) rotate(${currentHeadingAngle.toFixed(1)})`);
-      }
-    }
-
-    // Update Telemetry dynamics
-    const curHeading = (68.4 + Math.sin(t * 0.6) * 3.2).toFixed(1);
-    const curRoll = (Math.sin(t * 0.8) * 1.8).toFixed(1);
-    const curPitch = (-2.1 + Math.cos(t * 0.5) * 0.8).toFixed(1);
-
-    if (headingVal) headingVal.textContent = `${curHeading}° ENE`;
-    if (gimbalVal) gimbalVal.textContent = `AZ +${(14.2 + Math.sin(t * 0.7) * 1.5).toFixed(1)}° | EL -32.8°`;
-
-    if (pitchLadder) {
-      pitchLadder.style.transform = `translate(-50%, -50%) rotate(${curRoll}deg) translateY(${curPitch * 3}px)`;
-    }
-
-    updateTargetBoxPosition();
-    if (isC2Visible) {
-      requestAnimationFrame(render);
-    } else {
-      isRendering = false;
-    }
-  }
-
-  function updateTargetBoxPosition() {
-    if (!targetBox || !screenWrapper) return;
-    const rect = screenWrapper.getBoundingClientRect();
-    const scaleX = rect.width / 800;
-    const scaleY = rect.height / 450;
-
-    targetBox.style.left = `${target.x * scaleX}px`;
-    targetBox.style.top = `${target.y * scaleY}px`;
-  }
-
-  // Palette button interactions
-  paletteBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      paletteBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      currentPalette = btn.getAttribute('data-palette') || 'ironbow';
-    });
-  });
-
-  // Digital Zoom buttons
-  zoomBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      zoomBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      currentZoom = parseFloat(btn.getAttribute('data-zoom') || '1.0');
-
-      if (canvas) {
-        canvas.style.transform = `scale(${currentZoom})`;
-      }
-
-      if (fovVal) {
-        if (currentZoom === 1.0) fovVal.textContent = "45.0° HFOV";
-        else if (currentZoom === 2.5) fovVal.textContent = "18.0° HFOV";
-        else if (currentZoom === 5.0) fovVal.textContent = "9.0° HFOV";
-      }
-    });
-  });
-
-  // Centralized Target Update (Works for both Gimbal click & Map click)
-  function updateTargetPosition(normX, normY) {
-    target.x = normX;
-    target.y = normY;
-
-    const dLat = (normY - 225) * 0.00018;
-    const dLon = (normX - 400) * 0.00022;
-    target.lat = -37.24238 + dLat;
-    target.lon = -72.68450 + dLon;
-
-    const randomTemp = Math.floor(190 + Math.random() * 140);
-    target.temp = randomTemp;
-
-    if (targetTemp) targetTemp.textContent = `T_MAX: ${randomTemp}°C (ΔT +${randomTemp - 16}°C)`;
-    if (latVal) latVal.textContent = `${Math.abs(target.lat).toFixed(5)}° S`;
-    if (lonVal) lonVal.textContent = `${Math.abs(target.lon).toFixed(5)}° W`;
-
-    // Update Tactical Map SVG elements
-    if (mapTarget) {
-      mapTarget.setAttribute('transform', `translate(${target.x}, ${target.y})`);
-    }
-    if (mapTargetTemp) {
-      mapTargetTemp.textContent = `T_MAX: ${randomTemp}°C [PRECURSOR]`;
-    }
-    const easting = Math.round(724000 + (normX / 800) * 4000);
-    const northing = Math.round(5875000 + ((450 - normY) / 450) * 4000);
-    const utmStr = `18H WE ${Math.round(easting / 100)} ${Math.round(northing / 100)}`;
-    if (mapTargetCoords) {
-      mapTargetCoords.textContent = `UTM: ${utmStr}`;
-    }
-    if (saluteLocation) {
-      saluteLocation.textContent = `UTM ${utmStr}`;
-    }
-
-    // Mirror to PiP clone if present
-    if (pipMapClone) {
-      const cloneTarget = pipMapClone.querySelector('#c2-map-target');
-      if (cloneTarget) cloneTarget.setAttribute('transform', `translate(${target.x}, ${target.y})`);
-    }
-
-    runBufferAnimation();
-  }
-
-  // Click-to-Lock Target Position
-  if (screenWrapper) {
-    screenWrapper.addEventListener('click', (e) => {
-      // Do not intercept clicks on PiP or SALUTE card
-      if (e.target.closest('#c2-pip-window') || e.target.closest('#c2-salute-card')) return;
-
-      const rect = screenWrapper.getBoundingClientRect();
-      const clickX = e.clientX - rect.left;
-      const clickY = e.clientY - rect.top;
-
-      const normX = Math.max(40, Math.min(760, (clickX / rect.width) * 800));
-      const normY = Math.max(40, Math.min(410, (clickY / rect.height) * 450));
-
-      updateTargetPosition(normX, normY);
-    });
-  }
-
-  function runBufferAnimation() {
-    if (isBufferRunning) return;
-    isBufferRunning = true;
-    let frame = 0;
-    if (bufferFill) bufferFill.style.width = '0%';
-    if (bufferTxt) bufferTxt.textContent = "BUFFERING (0/16)";
-
-    const interval = setInterval(() => {
-      frame++;
-      const pct = (frame / 16) * 100;
-      if (bufferFill) bufferFill.style.width = `${pct}%`;
-      if (bufferTxt) bufferTxt.textContent = `BUFFERING (${frame}/16)`;
-
-      if (frame >= 16) {
-        clearInterval(interval);
-        isBufferRunning = false;
-        if (bufferTxt) bufferTxt.textContent = "CONFIRMED (16/16)";
-        if (targetTag) {
-          targetTag.textContent = "TARGET LOCKED [PRECURSOR]";
-          targetTag.style.background = "rgba(245, 158, 11, 0.9)";
-        }
-      }
-    }, 45);
-  }
-
-  // Dossier Modal Logic
-  if (dispatchBtn && dossierModal) {
-    dispatchBtn.addEventListener('click', () => {
-      if (dossierCoords) dossierCoords.textContent = `${target.lat.toFixed(5)}, ${target.lon.toFixed(5)}`;
-      if (dossierTemp) dossierTemp.textContent = `${target.temp}°C (Punto Anómalo Crítico)`;
-      if (alertStatus) alertStatus.style.display = 'none';
-      dossierModal.classList.add('active');
-      dossierModal.setAttribute('aria-hidden', 'false');
-    });
-
-    if (dossierClose) {
-      dossierClose.addEventListener('click', () => {
-        dossierModal.classList.remove('active');
-        dossierModal.setAttribute('aria-hidden', 'true');
-      });
-    }
-
-    dossierModal.addEventListener('click', (e) => {
-      if (e.target === dossierModal) {
-        dossierModal.classList.remove('active');
-        dossierModal.setAttribute('aria-hidden', 'true');
-      }
-    });
-
-    if (copyBtn) {
-      copyBtn.addEventListener('click', () => {
-        const text = `${target.lat.toFixed(5)}, ${target.lon.toFixed(5)}`;
-        navigator.clipboard.writeText(text).then(() => {
-          copyBtn.textContent = "¡Coordenadas Copiadas!";
-          setTimeout(() => { copyBtn.textContent = "Copiar Coordenadas GPS"; }, 2000);
-        });
-      });
-    }
-
-    if (exportBtn) {
-      exportBtn.addEventListener('click', () => {
-        if (alertStatus) {
-          const isEn = (document.documentElement.getAttribute('data-lang') || 'es') === 'en';
-          alertStatus.style.display = 'block';
-          alertStatus.innerHTML = isEn
-            ? `✓ Multichannel tactical package transmitted (2.1s): FHSS 915 MHz to Ground Station (Operator HITL) + Local Network / IP Webhook to Central C2 GIS Dispatch.`
-            : `✓ Paquete táctico multicanal transmitido (2,1s): Radioenlace FHSS 915 MHz a Estación de Operador en terreno (HITL) + Webhook Central GIS / Despacho por red local/IP.`;
-        }
-      });
-    }
-  }
-
-  // Start rendering
-  render();
-
-  // Resize handler
-  window.addEventListener('resize', updateTargetBoxPosition, { passive: true });
-}
-
-
-
-
