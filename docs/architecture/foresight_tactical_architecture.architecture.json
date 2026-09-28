@@ -39,7 +39,7 @@
       "id": "edge_ai",
       "type": "backend",
       "label": "Jetson Edge AI",
-      "sublabel": "YOLOv8 FP16 TensorRT",
+      "sublabel": "TensorRT Edge Inference",
       "pos": [300, 150],
       "size": [140, 60],
       "tag": "<150ms Latency"
@@ -84,7 +84,7 @@
       "id": "dispatch_gateway",
       "type": "cloud",
       "label": "Field Gateway",
-      "sublabel": "4G-LTE / Starlink Link",
+      "sublabel": "Local IP / Cellular Link",
       "pos": [760, 380],
       "size": [150, 60]
     },
@@ -190,7 +190,7 @@
       "dot": "cyan",
       "title": "Airborne Edge Computing",
       "items": [
-        "Onboard Jetson Orin Nano running YOLOv8 FP16 TensorRT inference",
+        "Onboard Jetson Orin Nano running quantized FP16 TensorRT inference",
         "Direct thermal and daylight video processing without cloud latency (<150ms)",
         "Autonomous trajectory adjustments via PX4 autopilot MAVLink commands"
       ]
@@ -208,7 +208,7 @@
       "dot": "amber",
       "title": "Dispatch & Evidence Retention",
       "items": [
-        "Field gateway fails over to cellular 4G-LTE or Starlink satellite uplink",
+        "Field gateway fails over to local network IP or available cellular uplink",
         "Automated encrypted webhook integration with CAD and security dispatch",
         "Immutable audit logging of every detection, authorization, and flight path"
       ]

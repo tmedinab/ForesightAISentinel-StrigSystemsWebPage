@@ -8,219 +8,295 @@ const translations = {
     // Nav
     nav_problem: "Problema",
     nav_tech_menu: "Tecnología",
-    nav_tech: "Arquitectura & Sensores",
+    nav_tech: "Arquitectura y sensores",
     nav_tech_desc: "Gimbal EO/IR, Edge AI Jetson y telemetría FHSS",
-    nav_roadmap: "Hoja de Ruta (TRL 3)",
+    nav_roadmap: "Hoja de ruta (TRL 3)",
     nav_roadmap_desc: "Hitos 2026-27 y Visión de Plataforma",
-    nav_compare: "Benchmark Táctico",
+    nav_compare: "Benchmark táctico",
     nav_compare_desc: "Athene vs Satélites, Torres y Brigadas",
     nav_val_menu: "Validación",
-    nav_pilot: "Programa de Validación",
+    nav_pilot: "Programa de validación",
     nav_pilot_desc: "Validación conjunta en predio piloto privado",
-    nav_impact: "Impacto Operacional",
+    nav_impact: "Impacto operacional",
     nav_impact_desc: "Seguridad nocturna, disuasión y ataque al amanecer",
-    nav_faq: "FAQ Técnica",
+    nav_faq: "FAQ técnica",
     nav_faq_desc: "Límites operacionales, niebla y falsas alarmas",
     nav_company_menu: "Compañía",
-    nav_team: "Equipo Fundador",
+    nav_team: "Equipo fundador",
     nav_team_desc: "5 ingenieros civiles aeroespaciales UdeC",
-    nav_alliances: "I+D & Alianzas",
+    nav_alliances: "I+D y alianzas",
     nav_alliances_desc: "CORFO, Gearbox, UdeC, Arauco",
-    nav_cta: "Sumarse a Validación",
+    nav_cta: "Sumarse a validación",
+
+    // Dynamic Values & Media Tags
+    m1_metric_val: "Noche",
+    m3_metric_val: "Segundos",
+    btn_matrix_compact: "Resumen táctico",
+    btn_matrix_detailed: "+ Análisis detallado",
+    media_bench_tag: "[Integración de sistemas de aviónica · Banco de pruebas]",
+    media_video_tag: "[Validación de visión térmica e IA a bordo]",
+    media_video_meta: "LWIR 640×512 radiométrica · 30 FPS",
+    media_hud_target: "PRECURSOR DETECTADO",
+    ph1_time: "Fase 01 · Coordinación",
+    ph2_time: "Fase 02 · Calibración",
+    ph3_time: "Fase 03 · Ensayos nocturnos",
+    ph4_time: "Fase 04 · Evaluación conjunta",
+    contact_nda_pill: "🔒 Acuerdos de confidencialidad (NDA) disponibles",
+    footer_copyright: "© 2026 Strig Systems SpA. Todos los derechos reservados.",
+    eb_product: "PLATAFORMA ATHENE",
 
     // Hero
-    hero_status: "Prototipo en desarrollo · TRL 3 · Demo técnica Gearbox Ene 2027",
-    hero_badge: "Proyecto Semilla Inicia CORFO • UdeC • Combate de Incendios en Primera Línea",
+    hero_status: "Prototipo en desarrollo · TRL 3 · Demo técnica Gearbox ene 2027",
+    hero_badge: "Proyecto Semilla Inicia CORFO • UdeC • Combate de incendios en primera línea",
     hero_title_1: "Los riesgos se mueven rápido.",
     hero_title_2: "Nosotros los vemos venir.",
     hero_sub: "Plataforma de inteligencia aérea para la brecha nocturna de incendios mediante aeronaves VTOL e inferencia térmica Edge AI a bordo. Detectamos precursores y actividad humana no autorizada antes de la ignición, reduciendo la exposición en terreno y optimizando la respuesta al amanecer.",
-    hero_cta_primary: "Sumarse al Programa de Validación 2026-27",
-    hero_cta_secondary: "Ver Hoja de Ruta & Tecnología",
+    hero_cta_primary: "Sumarse al programa de validación 2026-27",
+    hero_cta_secondary: "Ver hoja de ruta y tecnología",
 
-    // Metrics & Taxonomy
-    m1_title: "Brecha Nocturna",
-    m1_sub: "Vigilancia aérea mientras la aviación tripulada está en tierra",
-    m1_tax: "[PROBLEMA]",
-    m1_tip_title: "Brecha Nocturna · ¿Por qué aquí?",
-    m1_tooltip: "Es el origen del problema: por normativa DGAC y riesgo de relieve (CFIT), aviones cisterna y helicópteros quedan en tierra al atardecer. Athene vigila esa ventana ciega donde el 99,7% de los incendios se inician por causa humana.",
-    m2_title: "Radio de Misión",
-    m2_sub: "Meta de diseño para 50.000 ha • Hoy: 1 km en predio experimental (VLOS)",
-    m2_tax: "Objetivo de Producto",
-    m2_tip_title: "Radio 15 km · ¿Por qué aquí?",
-    m2_tooltip: "Es nuestro objetivo de producto a escala territorial: alcanzar 15 km de radio bajo certificación BVLOS para proteger clústeres de 50.000 ha. En la fase actual de validación operamos en predios piloto a 1 km en línea de vista (VLOS).",
-    m3_title: "Detección Térmica",
-    m3_sub: "Inferencia local a bordo • Alerta a operador en minutos (meta ≤ 3 min)",
-    m3_tax: "Meta MVP: <10% Falsas Alarmas",
-    m3_tip_title: "Detección Térmica · ¿Por qué aquí?",
-    m3_tooltip: "Frente a la latencia satelital (30 a 90 minutos) y la lentitud terrestre, la inferencia Edge AI a bordo detecta precursores térmicos en segundos y despacha la alerta a la estación en minutos (meta de diseño ≤ 3 min con <10% falsas alarmas).",
-    m4_title: "Disuasión Autorizada",
-    m4_sub: "Estrobo de alta intensidad y sirena activados por el operador ante actividad humana",
-    m4_tax: "Diferenciador Clave",
-    m4_tip_title: "Human-in-the-Loop · ¿Por qué aquí?",
-    m4_tooltip: "Seguridad y criterio humano: la IA a bordo detecta precursores y presencia humana, pero el estrobo y la sirena solo se activan con autorización expresa del operador en tierra, protegiendo a las brigadas de emboscadas o exposición a ciegas.",
+    // Metrics & Progressive Disclosure Micro-Fichas
+    m1_title: "Brecha nocturna",
+    m1_sub: "Vigilancia aérea en la ventana donde la aviación tripulada está en tierra",
+    m1_tax: "[ORIGEN DEL PROBLEMA]",
+    m1_tip_title: "Brecha nocturna y riesgo humano",
+    m1_val_today: "Monitoreo térmico aéreo en la ventana crítica nocturna mientras brigadas y avionetas están inactivas por riesgo de relieve (CFIT).",
+    m1_val_context: "El 99,7% de los incendios forestales en Chile se originan por causa humana intencional o accidental (CONAF, 2003-2023).",
+    m2_title: "Radio de misión proyectado",
+    m2_sub: "Meta de diseño para 50.000 ha (Noctua) • Hoy: Rango acotado en predio piloto (VLOS)",
+    m2_tax: "Objetivo de producto",
+    m2_tip_title: "Radio de cobertura territorial",
+    m2_val_today: "Operación en rango acotado en línea de vista visual (VLOS) sobre predio piloto privado con operador en sitio.",
+    m2_val_goal: "Radio de 15 km (BVLOS). Aeronave VTOL con capacidad aerodinámica de 45–60 min de crucero para proteger clústeres de 50.000 ha.",
+    m2_val_framework: "Escalamiento sujeto a certificación de riesgo operacional SORA (JARUS) y segregación aérea DGAC.",
+    m3_title: "Detección térmica",
+    m3_sub: "Inferencia Edge AI local a bordo • Alerta consolidada a estación en minutos (meta ≤ 3 min)",
+    m3_tax: "Meta: <10% falsas alarmas",
+    m3_tip_title: "Inferencia térmica local Edge AI",
+    m3_val_today: "Detección de fuentes térmicas y personas en microsegundos a bordo (NVIDIA Jetson) y alerta consolidada a estación en minutos (meta ≤ 3 min).",
+    m3_val_goal: "Despacho de coordenadas verificadas con tasa de falsas alarmas < 5% (criterio de aceptación técnica MVP < 10%).",
+    m3_val_framework: "Arquitectura Zero-Cloud: no requiere internet ni nube para detectar en tiempo real.",
+    m4_title: "Disuasión autorizada",
+    m4_sub: "Foco de alta intensidad y sirena acústica activados exclusivamente con autorización del operador",
+    m4_tax: "Diferenciador clave",
+    m4_tip_title: "Human-in-the-Loop · Protocolo de seguridad",
+    m4_val_today: "Cero disuasión autónoma. El sistema clasifica el precursor pero la activación de la baliza física requiere la orden expresa del operador.",
+    m4_val_framework: "Control de seguridad estricto que protege a las brigadas de emboscadas o desorientación en terreno profundo.",
+    lbl_today: "HOY (MVP 2026-27):",
+    lbl_goal: "OBJETIVO:",
+    lbl_framework: "CONDICIÓN / MARCO:",
+    lbl_context: "EVIDENCIA:",
 
     // Problem
-    prob_tag: "El Diagnóstico Territorial",
+    prob_tag: "El diagnóstico territorial",
     prob_title: "La brecha nocturna de combate y vigilancia",
     corma_tooltip: "Dato oficial CONAF (2003-2023): El 99,7% de los incendios forestales en Chile se inician por causa humana, ya sea intencional o accidental.",
     prob_sub: "El 99,7% de los incendios forestales son causados por el ser humano (CONAF, 2003-2023). La aviación tripulada combate de día, pero por seguridad y normativa DGAC no vuela de noche. Cuando el viento y el riesgo de intencionalidad son más altos, el cielo queda vacío y las cuadrillas en tierra no tienen visibilidad en el bosque profundo.",
-    p1_head: "Centrales de Operaciones",
+    p1_head: "Centrales de operaciones",
     p1_desc: "Incertidumbre constante. Cuando los satélites reportan calor, el foco ya ha alcanzado escala incontrolable.",
     p1_tag: "Información fragmentada",
-    p2_head: "Empresas & Propietarios",
+    p2_head: "Empresas y propietarios",
     p2_desc: "Riesgo permanente de pérdidas patrimoniales catastróficas en madera, biomasa e infraestructura productiva.",
-    p2_tag: "Pérdidas millonarias",
-    p3_head: "Brigadistas en Terreno",
+    p2_tag: "Daño patrimonial crítico",
+    p3_head: "Brigadistas en terreno",
     p3_desc: "Exposición extrema a emboscadas, cortes de camino o accidentes al ingresar de noche a ciegas por caminos de ripio, con escasa visibilidad efectiva fuera de la huella.",
     p3_tag: "Riesgo vital innecesario",
-    quote_text: "Satélites sufren latencia orbital; torres fijas tienen puntos ciegos orográficos; las patrullas en camioneta 4x4 solo ven lo que tocan sus focos en el camino; y los aviones cisterna quedan en tierra al atardecer por seguridad. Athene es el centinela aéreo nocturno que detecta la actividad humana y el precursor térmico antes de que se inicie el fuego, optimizando el despliegue al amanecer.",
+    quote_text: "Los satélites sufren retrasos de órbita, las torres fijas tienen puntos ciegos tras los cerros y quebradas, y las patrullas en camioneta solo ven lo que alcanzan sus focos en el camino. Al atardecer, los aviones cisterna quedan en tierra por seguridad. <span class=\"hl-cyan\">Athene</span> cambia esta realidad: patrulla el cielo nocturno y <span class=\"hl-green\">detecta la presencia humana antes de que se inicie el fuego</span>, protegiendo a las brigadas y cortando la amenaza en su origen.",
 
     // Tactical Benchmark
-    comp_tag: "Benchmark Táctico",
-    comp_title: "Por Qué las Soluciones Tradicionales Fallan de Noche",
+    comp_tag: "Benchmark táctico",
+    comp_title: "Por qué las soluciones tradicionales fallan de noche",
     comp_sub: "Análisis técnico comparativo entre satélites de órbita baja, torres térmicas fijas, vigilancia tripulada convencional y la plataforma Athene.",
     matrix_scroll_hint: "⇄ Desliza horizontalmente para comparar tecnologías",
-    th_dim: "Dimensión Operativa",
+    th_dim: "Dimensión operativa",
     th_sat: "Satélites LEO<br><span class=\"th-sub\">FIRMS / OroraTech</span>",
-    th_tower: "Torres Térmicas Fijas<br><span class=\"th-sub\">Mástiles Ópticos</span>",
-    th_drone: "Vigilancia Tripulada<br><span class=\"th-sub\">Avionetas Diurnas + Cuadrillas/Drones</span>",
-    strig_badge: "Nuestra Arquitectura",
-    th_strig: "Strig Systems<br><span class=\"th-sub\">Athene (Plataforma VTOL + Edge AI)</span>",
-    r1_dim: "Patrullaje Nocturno Continuo",
-    r1_sat: "<span class=\"badge-negative\">Ventana ciega nocturna:</span> Pasos orbitales discretos (1 a 4 h). Estándar macrocontinental de día, sin cobertura continua de noche.",
-    r1_tower: "<strong>Cobertura continua pero estática:</strong> Alta confiabilidad 24/7, pero estrictamente limitada a la línea de vista directa (LOS) de su cuenca visible.",
-    r1_drone: "<span class=\"badge-negative\">Inoperante de noche:</span> Aviones y helicópteros en tierra por norma DGAC/VFR nocturno. Camionetas con fatiga y &lt;12% de cobertura.",
-    r1_strig: "<span class=\"badge-positive\">Patrullaje aéreo nocturno:</span> Operación en predio piloto con operador calificado (VLOS). <span class=\"tax-badge tax-badge-vision\">Visión: Estación Nest Autónoma</span>",
-    r2_dim: "Latencia de Detección & Alerta",
-    r2_sat: "<span class=\"badge-negative\">30 a 90 minutos:</span> Descarga orbital, procesamiento en la nube y distribución de alertas a centrales.",
-    r2_tower: "<strong>Instantánea pero manual:</strong> En sensor óptico directo; requiere operador humano 24/7 en central para verificación y filtrado de falsas alarmas.",
-    r2_drone: "<strong>Instantánea pero aislada:</strong> Directa para el piloto u operador local; demorada a central si no existe cobertura 4G/5G en la quebrada.",
-    r2_strig: "<span class=\"badge-positive\">Detección en segundos:</span> Inferencia Edge AI a bordo. Alerta a la estación de operador en minutos (meta MVP ≤ 3 min).",
-    r3_dim: "Detección de Precursores (Humanos / Vehículos)",
-    r3_sat: "<span class=\"badge-negative\">0% resolución:</span> Píxeles de 375m a 1km. Diseñado para incendios activos, incapaz de ver personas o fogatas tempranas.",
-    r3_tower: "<span class=\"badge-negative\">Casi nula:</span> Ineficaz en senderos boscosos densos o bajo dosel arbóreo fuera del ángulo visual del mástil.",
-    r3_drone: "<span class=\"badge-negative\">Severamente limitada:</span> Avionetas no vuelan de noche; patrullas en camioneta solo vigilan caminos principales, dejando el interior ciego.",
-    r3_strig: "<span class=\"badge-positive\">Detección óptica/térmica:</span> Presencia humana visible desde 100 m para disuasión autorizada antes del inicio del fuego.",
-    r4_dim: "Puntos Ciegos Topográficos",
-    r4_sat: "<span class=\"badge-negative\">Bloqueo atmosférico:</span> Afectado por nubosidad baja, humo denso e inversión térmica que absorben la radiación infrarroja.",
-    r4_tower: "<span class=\"badge-negative\">Crítico:</span> Puntos ciegos físicos insalvables tras cerros, quebradas y laderas opuestas.",
-    r4_drone: "<span class=\"badge-negative\">Crítico en terreno:</span> Sin visibilidad tras cerros ni en quebradas profundas; aeronaves diurnas afectadas por humo y niebla.",
-    r4_strig: "<span class=\"badge-positive\">Perspectiva cenital:</span> Vuelo adaptado sobre quebradas que reduce drásticamente los puntos ciegos de torres fijas y patrullas terrestres.",
-    r5_dim: "Riesgo Humano & Supervisión",
-    r5_sat: "<strong>Cero exposición directa:</strong> Operación orbital remota sin presencia humana en terreno.",
-    r5_tower: "<strong>Cero exposición directa:</strong> Salvo mantenimiento preventivo en cumbres aisladas de alto riesgo.",
-    r5_drone: "<span class=\"badge-negative\">Alto riesgo vital & Ratio 1:1:</span> 1 piloto + 1 observador por dron. Riesgo en vuelo rasante sobre relieve y brigadas expuestas de noche en caminos aislados.",
-    r5_strig: "<span class=\"badge-positive\">Supervisión en tierra (HITL):</span> Operador en tierra autoriza la disuasión desde una posición segura. <span class=\"tax-badge tax-badge-vision\">Visión: 1 operador supervisa N cuadrículas</span>",
-    r6_dim: "Modelo Operativo & Acceso",
-    r6_sat: "<strong>SaaS global:</strong> Suscripción por plataforma; accesible para escala macro, no sustituye la vigilancia táctica local predial.",
-    r6_tower: "<span class=\"badge-negative\">Altísimo CAPEX:</span> Inversión intensiva en torres fijas instaladas (mástil, óptica militar, energía solar y caminos de acceso).",
-    r6_drone: "<span class=\"badge-negative\">Costos desarticulados:</span> Alto costo por hora de vuelo diurno (aviones/helicópteros) y patrullaje nocturno en 4x4 con &lt;12% de cobertura.",
-    r6_strig: "<span class=\"badge-positive\">Modelo IaaS (0 CAPEX):</span> Sin adquisición de flota ni activos de capital. Co-diseño y validación técnica en terreno con empresas del sector.",
+    th_tower: "Torres térmicas fijas<br><span class=\"th-sub\">Mástiles ópticos</span>",
+    th_drone: "Vigilancia tripulada<br><span class=\"th-sub\">Avionetas diurnas + cuadrillas/drones</span>",
+    strig_badge: "Nuestra arquitectura",
+    th_strig: "Strig Systems<br><span class=\"th-sub\">Athene (plataforma VTOL + Edge AI)</span>",
+    r1_dim: "Patrullaje nocturno continuo",
+    r1_sat: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-negative\">Ventana ciega (1–4 h):</span> Pasos orbitales no continuos.</div><div class=\"cell-detail\">Estándar macrocontinental de día, sin cobertura continua durante los turnos nocturnos en faena.</div></div>",
+    r1_tower: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><strong>Continua pero estática:</strong> Limitada a línea visual directa.</div><div class=\"cell-detail\">Alta confiabilidad 24/7, pero limitada a la línea de vista directa (LOS) desde la torre, vulnerable a puntos ciegos tras quebradas y cerros.</div></div>",
+    r1_drone: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-negative\">Sin vuelo nocturno:</span> Aeronaves en tierra por norma VFR.</div><div class=\"cell-detail\">Aeronaves tripuladas impedidas de operar de noche por DGAC. Camionetas con fatiga y &lt;12% de cobertura.</div></div>",
+    r1_strig: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-positive\">Patrullaje aéreo activo:</span> Vuelo nocturno en predio piloto.</div><div class=\"cell-detail\">Operación táctica programada con operador calificado en terreno (VLOS) bajo normativa DGAC.</div></div>",
+    r2_dim: "Latencia de detección y alerta",
+    r2_sat: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-negative\">30 a 90 min:</span> Descarga y cola de procesamiento orbital.</div><div class=\"cell-detail\">Tiempo acumulado entre paso del satélite, procesamiento en servidor en la nube y distribución a centrales.</div></div>",
+    r2_tower: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><strong>Instantánea pero manual:</strong> Depende de operador 24/7 en pantalla.</div><div class=\"cell-detail\">Detección óptica directa que requiere personal dedicado para verificar en video y filtrar falsas alarmas.</div></div>",
+    r2_drone: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><strong>Local en terreno:</strong> Sin retransmisión rápida si no hay 4G/5G.</div><div class=\"cell-detail\">Alerta inmediata solo para la cuadrilla en sitio; demorada a central en quebradas sin cobertura celular.</div></div>",
+    r2_strig: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-positive\">Inferida en segundos:</span> Alerta a estación en ≤ 3 min.</div><div class=\"cell-detail\">Edge AI clasifica a bordo en microsegundos. Despacho de ficha sintética a la estación en ≤ 3 min desde la detección en vuelo.</div></div>",
+    r3_dim: "Detección de precursores (humanos / vehículos)",
+    r3_sat: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-negative\">Sin resolución:</span> Píxeles de 375 m a 1 km.</div><div class=\"cell-detail\">Diseñado para frentes de fuego activos masivos, incapaz de ver personas, fogatas tempranas o vehículos.</div></div>",
+    r3_tower: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-negative\">Ángulo rasante:</span> Bloqueada por copas de árboles y relieve.</div><div class=\"cell-detail\">Ineficaz en senderos bajo dosel arbóreo denso o quebradas fuera del ángulo de inclinación del mástil.</div></div>",
+    r3_drone: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-negative\">Muy limitada:</span> Camionetas restringidas a caminos.</div><div class=\"cell-detail\">Aeronaves no vuelan de noche; patrullas en camioneta solo vigilan caminos principales, dejando el interior a oscuras.</div></div>",
+    r3_strig: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-positive\">Detección óptica/térmica:</span> Siluetas y calor desde 100 m.</div><div class=\"cell-detail\">Identifica anomalías térmicas y siluetas humanas en claros y senderos para autorizar disuasión antes del fuego.</div></div>",
+    r4_dim: "Puntos ciegos topográficos",
+    r4_sat: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-negative\">Bloqueo atmosférico:</span> Ciegas ante nubosidad o humo.</div><div class=\"cell-detail\">Afectado severamente por nubosidad baja, humo denso e inversión térmica que absorben la radiación infrarroja.</div></div>",
+    r4_tower: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-negative\">Puntos ciegos críticos:</span> Invisibilidad tras cerros y laderas.</div><div class=\"cell-detail\">Sombra topográfica física insalvable tras filos, quebradas profundas y laderas opuestas.</div></div>",
+    r4_drone: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-negative\">Relieve adverso:</span> Sin visión de fondo de quebrada.</div><div class=\"cell-detail\">Cuadrillas en camioneta sin línea visual en quebradas profundas; aeronaves diurnas afectadas por humo rasante.</div></div>",
+    r4_strig: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-positive\">Perspectiva cenital:</span> Vuelo superior que elimina sombras.</div><div class=\"cell-detail\">Patrullaje aéreo con vista cenital sobre laderas, quebradas y caminos forestales, eliminando los puntos ciegos que ocultan las torres fijas y brigadas terrestres.</div></div>",
+    r5_dim: "Riesgo humano y supervisión",
+    r5_sat: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><strong>Cero exposición directa:</strong> Operación orbital remota.</div><div class=\"cell-detail\">Vigilancia desde el espacio sin riesgo físico para personal en terreno.</div></div>",
+    r5_tower: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><strong>Baja exposición:</strong> Riesgo acotado a accesos y cumbres.</div><div class=\"cell-detail\">Operación remota desde central; riesgo limitado al mantenimiento en cumbres aisladas de difícil acceso.</div></div>",
+    r5_drone: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-negative\">Alto riesgo en terreno:</span> Brigadas nocturnas expuestas.</div><div class=\"cell-detail\">1 piloto + 1 observador por dron convencional; brigadistas en 4x4 expuestos de noche en rutas forestales aisladas.</div></div>",
+    r5_strig: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-positive\">Supervisión en tierra (HITL):</span> Operador en base segura.</div><div class=\"cell-detail\">Control y autorización de disuasión desde consola protegida, sin brigadistas expuestos en zonas de riesgo.</div></div>",
+    r6_dim: "Modelo operativo y acceso",
+    r6_sat: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><strong>SaaS macro:</strong> Suscripción de datos globales.</div><div class=\"cell-detail\">Suscripción de datos satelitales; útil para análisis macrocontinental, pero no sustituye la vigilancia y respuesta táctica directa en terreno.</div></div>",
+    r6_tower: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-negative\">Alto CAPEX:</span> Inversión intensiva en infraestructura fija.</div><div class=\"cell-detail\">Alto costo inicial por torre instalada (mástil estructural, óptica militar, respaldo solar y caminos de acceso).</div></div>",
+    r6_drone: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-negative\">Alto costo operativo:</span> Horas de vuelo caras y baja cobertura.</div><div class=\"cell-detail\">Costo elevado por hora de vuelo diurno y patrullas terrestres nocturnas de baja cobertura (&lt;12%).</div></div>",
+    r6_strig: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-positive\">Servicio táctico llave en mano:</span> Cero carga operativa y máxima disponibilidad.</div><div class=\"cell-detail\">Modelo por servicio: vigilancia nocturna lista para operar, mantenimiento aeronáutico preventivo, disponibilidad de vuelo garantizada y actualización continua de sensores e IA sin inmovilizar capital ni cargar a sus equipos.</div></div>",
 
-    // Technology
-    tech_tag: "Capacidades Operativas",
-    tech_title: "Vigilancia Territorial con Inteligencia A Bordo",
-    tech_sub: "Arquitectura de alta disponibilidad. La aeronave procesa, clasifica y georreferencia en el borde sin requerir enlace continuo a internet ni servidores en la nube.",
-    t1_title: "Gimbal Biespectral",
-    t1_desc: "Payload giroestabilizado con sensor microbolómetro LWIR radiométrico no refrigerado (640×512) y cámara óptica diurna. Detección térmica en oscuridad con filtrado multi-frame para discriminación de fuentes térmicas (meta < 5% falsas alarmas; criterio de aceptación de MVP < 10%).",
-    t2_title: "Inferencia Edge AI Zero-Cloud (NVIDIA Jetson)",
-    t2_desc: "Cómputo a bordo basado en arquitectura NVIDIA Jetson (Orin Nano) con pipeline cuantizado FP16 acelerado por NVIDIA TensorRT. Ejecución local de visión computacional y modelos de detección térmica en tiempo real, operando con autonomía Zero-Cloud en zonas sin internet ni señal celular.",
-    t3_title: "Telemetría Táctica en Zonas Desconectadas",
-    t3_desc: "Emisión de fichas de alerta y telemetría hacia la estación de operador en tierra vía radioenlace FHSS 915 MHz en línea de vista (LOS). El despacho hacia brigadas se coordina e integra directamente con el partner de pilotaje.",
-    t4_title: "Plataforma Aérea & Primer Dron Noctua",
-    t4_desc: "Validación inicial sobre célula comercial adaptada en transición hacia Noctua (primer dron de la plataforma, diseñado o integrado). Autonomía de diseño de 45–60 min (meta 45 min), envolvente de viento de hasta 10 m/s (~36 km/h) y radio operacional de 1 km en predio piloto (VLOS). <span class=\"tax-badge tax-badge-goal\">Objetivo: 15 km</span>",
-    t5_title: "Georreferenciación Asistida",
-    t5_desc: "Proyección angular hacia el terreno asistida por posicionamiento GNSS/RTK, calculando coordenadas estimadas con precisión objetivo de metros (requiere modelo digital de elevación DEM cargado de la zona).",
-    t6_title: "Operación Segura & Evidencia Auditable",
-    t6_desc: "Paracaídas balístico de recuperación (en diseño) y protocolos de retorno seguro (Auto-RTH). Operación bajo marco DAN 151 / DAN 91 (DGAC Chile) en predio privado segregado (VLOS) y registro auditable de cada misión para aseguradoras y centrales.",
-    spec_1: "<span class=\"spec-name\">Plataforma MVP:</span> Célula Comercial Adaptada (Hacia Noctua)",
-    spec_2: "<span class=\"spec-name\">Envolvente:</span> Viento hasta 10 m/s (36 km/h)",
-    spec_3: "<span class=\"spec-name\">Respuesta:</span> Alerta en minutos (Meta ≤ 3 min)",
-    spec_4: "<span class=\"spec-name\">Operación:</span> Vuelo VLOS en predio privado (DGAC)",
-    spec_5: "<span class=\"spec-name\">Modelo:</span> Intelligence as a Service (0 CAPEX)",
+    // Technology - 4 Athene Pillars
+    tech_tag: "Pilares del sistema Athene",
+    tech_title: "Vigilancia territorial con inteligencia a bordo",
+    tech_sub: "Arquitectura de alta disponibilidad y tolerancia a fallos. Procesamiento, clasificación y georreferenciación en el borde sin requerir enlace continuo a internet ni servidores en la nube.",
+    p1_status_badge: "[MVP: Aeronave adaptada · TRL 3-4]",
+    p1_title: "Plataforma VTOL y navegación táctica",
+    p1_desc: "Aeronave híbrida con despegue vertical sin pista y crucero horizontal de ala fija. Diseñada para cubrir radios de hasta 15 km con 45–60 min de autonomía y navegación determinista bajo geocerca.",
+    p1_s1_lbl: "Configuración:",
+    p1_s1_val: "QuadPlane Lift + Cruise (4 motores verticales + 1 de crucero).",
+    p1_s2_lbl: "Frontera C-2 (Safety):",
+    p1_s2_val: "El controlador de vuelo primario retiene el 100% de la autoridad de vuelo y contención FDIR, aislado del cómputo IA.",
+    p1_s3_lbl: "Envolvente:",
+    p1_s3_val: "Viento hasta 10 m/s (~36 km/h). Respaldo con paracaídas balístico de recuperación.",
+    p1_s4_lbl: "Operación Hoy:",
+    p1_s4_val: "Predio privado en línea de vista (VLOS ~1 km). Objetivo: BVLOS (15 km) bajo SORA.",
+    p2_status_badge: "[NVIDIA Jetson · Zero-Cloud]",
+    p2_title: "Carga útil optrónica e inferencia a bordo",
+    p2_desc: "Cámara biespectral con estabilización activa en 3 ejes, sensor térmico radiométrico LWIR y óptica 4K. La inferencia local procesa a bordo en microsegundos sin requerir internet ni servidores en la nube.",
+    p2_s1_lbl: "Sensor Térmico:",
+    p2_s1_val: "Microbolómetro LWIR radiométrico (640×512) no refrigerado + sensor óptico 4K en gimbal 3 ejes.",
+    p2_s2_lbl: "Georreferenciación:",
+    p2_s2_val: "Fusión computacional de GPS centimétrico (RTK) y modelo de elevación del terreno (DEM), calculando coordenadas del foco con precisión métrica en tiempo real.",
+    p2_s3_lbl: "Pipeline IA:",
+    p2_s3_val: "NVIDIA Jetson Orin Nano Dev Kit con aceleración TensorRT FP16 para detección de siluetas humanas y precursores térmicos.",
+    p2_s4_lbl: "Precisión:",
+    p2_s4_val: "Filtrado multi-frame para discriminación de falsos positivos (meta < 5%; aceptación MVP < 10%).",
+    p3_status_badge: "[UHF LoRa · Resiliente off-grid]",
+    p3_title: "Comunicaciones tácticas para zonas oscuras",
+    p3_desc: "Arquitectura de enlace dual para operar en quebradas y faenas forestales sin cobertura celular ni internet móvil, asegurando la entrega ininterrumpida de telemetría y alertas críticas.",
+    p3_s1_lbl: "Radioenlace Alerta:",
+    p3_s1_val: "Transceptor UHF 902–928 MHz @ 500 mW para reporte de telemetría y vectores de alerta en zonas sin 4G.",
+    p3_s2_lbl: "C2 de Seguridad:",
+    p3_s2_val: "Enlace primario C2 en 2,4 GHz con diversidad de antenas para control de vuelo y telemetría crítica.",
+    p3_s3_lbl: "Formato Alerta:",
+    p3_s3_val: "Paquete binario comprimido con coordenadas UTM, timestamp, clase de objetivo y nivel de confianza.",
+    p3_s4_lbl: "Transmisión Video:",
+    p3_s4_val: "Streaming RTSP bajo demanda condicionado a disponibilidad de ancho de banda local.",
+    p4_status_badge: "[Human-in-the-Loop · Auditable]",
+    p4_title: "Centro de mando C2 y cadena de evidencia",
+    p4_desc: "Consola táctica para supervisión humana continua, triaje de alertas y generación de Reportes Digitales con valor probatorio pericial, estampa de tiempo y anonimización de privacidad.",
+    p4_s1_lbl: "Doctrina HITL:",
+    p4_s1_val: "El sistema de disuasión física (foco destellante de alta potencia y sirena acústica) solo se activa con autorización previa y deliberada del operador.",
+    p4_s2_lbl: "Reporte Pericial:",
+    p4_s2_val: "Generación de expediente digital de incidente con firma criptográfica, sellado de tiempo y captura biespectral para aseguradoras y fiscalía.",
+    p4_s3_lbl: "Privacidad por Diseño:",
+    p4_s3_val: "Difuminado y anonimización automática de rostros y propiedad privada no involucrada (Ley 19.628 / Ley 21.719).",
+    p4_s4_lbl: "Operación Offline:",
+    p4_s4_val: "Estación de operador con cartografía precargada localmente para despliegue autónomo en faenas remotas.",
+    spec_toggle_txt: "+ Detalles",
+    media_bench_caption: "Banco de pruebas de laboratorio: integración funcional de aviónica de vuelo redundante, computador de misión Edge AI y módulos de radioenlace táctico interconectados.",
+    media_video_caption: "Procesamiento térmico en tiempo real: detección y seguimiento de anomalías calóricas y siluetas humanas mediante modelos optimizados a bordo.",
+    hud_alt_tip: "Altitud relativa sobre el terreno (AGL) mediante sensor barométrico y LIDAR",
+    hud_gs_tip: "Velocidad respecto al suelo (~66,6 km/h) optimizada para estabilidad del gimbal",
+    hud_hdg_tip: "Rumbo magnético con triple brújula redundante compensada",
+    hud_target_tip: "Clasificación local de precursor térmico y silueta humana con inferencia a bordo",
+    hud_link_tip: "Enlace de telemetría y C2 activo mediante salto de frecuencia FHSS",
+    hud_rtk_tip: "Posicionamiento GNSS cinemático en tiempo real con precisión centimétrica",
+
 
     // Off-Grid Tactical Datalink Architecture
-    flow_tag: "ARQUITECTURA DE ENLACE OFF-GRID",
+    flow_tag: "Arquitectura de enlace off-grid",
     flow_title: "Cómo se cierra el circuito táctico en zonas sin señal celular",
     flow_sub: "Gran parte de los predios forestales y cordilleranos son zonas de baja cobertura. Athene opera con radioenlaces tácticos locales entre la aeronave y la estación en tierra.",
-    flow_s1_title: "Aeronave VTOL (Nodo Aéreo)",
+    flow_s1_title: "Aeronave VTOL (nodo aéreo)",
     flow_s1_desc: "Inferencia térmica Edge AI a bordo con NVIDIA Jetson. Detecta precursores y presencia humana, emite alertas a la estación en tierra y ejecuta retorno de emergencia ante pérdida de enlace.",
-    flow_s1_badge: "Edge AI a Bordo",
+    flow_s1_badge: "Edge AI a bordo",
+    flow_s1_f1_lbl: "Aviónica y cómputo:",
+    flow_s1_f1_val: "Controlador de vuelo de arquitectura redundante y procesador Edge AI acoplados por enlace serie optoaislado con telemetría MAVLink v2.",
+    flow_s1_f2_lbl: "Geoposicionamiento:",
+    flow_s1_f2_val: "Fusión a bordo de GPS centimétrico (RTK) y modelo de elevación del terreno (DEM) para cálculo de coordenadas del foco con precisión métrica.",
     flow_c1_label: "⇄ Radioenlace FHSS 915 MHz (Línea de Vista)",
-    flow_s2_title: "Estación de Operador (Terreno)",
-    flow_s2_desc: "Recepción táctica de alertas y telemetría en tiempo real. El operador evalúa y autoriza la activación de estrobo y sirena de disuasión desde una posición segura.",
-    flow_s2_badge: "Supervisión Humana (HITL)",
+    flow_s2_title: "Estación de operador (terreno)",
+    flow_s2_desc: "Recepción táctica de alertas y telemetría en tiempo real. El operador evalúa y autoriza la activación del foco disuasivo y sirena desde una posición segura.",
+    flow_s2_badge: "Supervisión humana (HITL)",
+    flow_s2_f1_lbl: "Consola táctica:",
+    flow_s2_f1_val: "Laptop IP65 rugerizada para faenas forestales con cartografía vectorial offline precargada.",
+    flow_s2_f2_lbl: "Autorización HITL:",
+    flow_s2_f2_val: "Doble confirmación de seguridad en consola antes de activar el foco o sirena disuasiva.",
     flow_c2_label: "⇄ Enlace Red Local / IP Disponible",
-    flow_s3_title: "Central de Despacho / Coordinación del Partner",
+    flow_s3_title: "Central de despacho y coordinación del partner",
     flow_s3_desc: "Recepción de fichas de alerta georreferenciadas y logs de misión para coordinación de brigadas y auditoría (integración GIS / Webhook).",
-    flow_s3_badge: "Integración Operacional",
+    flow_s3_badge: "Integración operacional",
+    flow_s3_f1_lbl: "Interoperabilidad:",
+    flow_s3_f1_val: "Integración mediante formatos estándar (GeoJSON/API) compatibles con software GIS forestal (ArcGIS, QGIS).",
+    flow_s3_f2_lbl: "Trazabilidad legal:",
+    flow_s3_f2_val: "Ficha de incidente con estampa de tiempo y coordenadas verificadas para trazabilidad pericial.",
 
     // Roadmap
-    roadmap_tag: "Hoja de Ruta de Ingeniería",
-    roadmap_title: "Estado del Proyecto y Próximos Hitos",
+    roadmap_tag: "Roadmap",
+    roadmap_title: "Estado del proyecto y próximos hitos",
     roadmap_sub: "Desarrollo riguroso por etapas verificables. Diferenciamos lo que está resuelto hoy, los ensayos en marcha y los objetivos de escalamiento industrial.",
-    rm1_phase: "Estado Actual · TRL 3",
-    rm1_title: "Diseño de Sistema y Prototipo en Análisis",
+    rm1_phase: "Estado actual · TRL 3",
+    rm1_title: "Diseño de sistema y prototipo en análisis",
     rm1_desc: "Requisitos de ingeniería, arquitectura de sistemas y plan de pruebas definidos. Validación de concepto analítico y selección de componentes críticos.",
-    rm2_phase: "Oct – Dic 2026 · Ensayos",
-    rm2_title: "Plataforma Hexarrotor y Demo Gearbox",
-    rm2_desc: "Integración en plataforma hexarrotor de pruebas para validación de sensórica y procesamiento. Demostración técnica en Gearbox UdeC programada para enero de 2027.",
+    rm2_phase: "Oct – dic 2026 · Ensayos",
+    rm2_title: "Plataforma multirrotor y demo técnica",
+    rm2_desc: "Integración de aviónica, sensores y Edge AI en una plataforma multirrotor adaptada para la primera demostración técnica funcional y validación de procesamiento en terreno (diciembre 2026 – enero 2027).",
     rm3_phase: "Feb 2027 · Simulación",
-    rm3_title: "Validación Human-in-the-Loop (HITL)",
-    rm3_desc: "Pruebas en entorno simulado de la interfaz de operador táctico, protocolo de autorización de estrobo/sirena y cadena de decisión en tiempo real.",
-    rm4_phase: "Jun 2027 · Validación en Terreno",
-    rm4_title: "Validación Técnica y Operacional (CORFO)",
-    rm4_desc: "Campaña de vuelos experimentales diurnos/nocturnos en predio piloto privado (VLOS) bajo proyecto Semilla Inicia CORFO y retroalimentación de la industria forestal.",
-    rm5_phase: "Visión de Plataforma",
-    rm5_title: "Noctua VTOL, Nest Automatizado & BVLOS",
-    rm5_desc: "Integración o diseño de célula VTOL Noctua, estación Nest de aterrizaje y carga automatizada, supervisión 1:N de múltiples cuadrículas, enlaces satelitales y radio de 15 km bajo certificación BVLOS.",
+    rm3_title: "Validación human-in-the-loop (HITL)",
+    rm3_desc: "Pruebas en entorno simulado de la interfaz de operador táctico, protocolo de autorización de foco/sirena y cadena de decisión en tiempo real.",
+    rm4_phase: "Jun 2027 · Validación en terreno",
+    rm4_title: "Validación técnica y operacional en terreno",
+    rm4_desc: "Campaña de vuelos diurnos y nocturnos con aeronave comercial VTOL adaptada desplegada desde bases de brigadas o pistas forestales existentes (recambio rápido de baterías en tierra), validando patrullaje en predio privado (VLOS), detección térmica e integración operacional antes de escalar a estaciones automatizadas.",
+    rm5_phase: "Visión a futuro",
+    rm5_title: "Noctua VTOL, Nest automatizado y BVLOS",
+    rm5_desc: "Integración o diseño de la aeronave VTOL Noctua, estación Nest de aterrizaje y carga automatizada, supervisión de flota 1:N (un operador para múltiples aeronaves en simultáneo), enlaces de respaldo y radio de 15 km bajo certificación BVLOS.",
 
     // Pilot / Validation Program
-    pilot_tag: "Validación en Terreno",
-    pilot_title: "Programa de Validación Conjunta 2026-27",
+    pilot_tag: "Validación en terreno",
+    pilot_title: "Programa de validación conjunta 2026-27",
     pilot_sub: "Estructurado en 4 fases metodológicas para empresas forestales, mineras e instituciones que buscan co-diseñar y verificar en terreno la efectividad de la vigilancia nocturna.",
-    ph1_title: "Levantamiento & Topografía",
-    ph1_desc: "Mapeo de predios prioritarios, modelado de zonas ciegas y calibración de rutas según la probabilidad histórica de focos.",
-    ph2_title: "Calibración Sensorial",
-    ph2_desc: "Pruebas en terreno de firmas térmicas, validación de telemetría táctica en zonas sin cobertura y simulacros controlados.",
-    ph3_title: "Vigilancia Nocturna Activa",
-    ph3_desc: "Patrullaje aéreo programado en las horas de mayor vulnerabilidad con telemetría en vivo y soporte a la central de operaciones del cliente.",
-    ph4_title: "Auditoría & Retorno Operativo",
-    ph4_desc: "Informe técnico con tiempos de respuesta, falsas alarmas filtradas, horas de vuelo ahorradas e integración auditada con el centro de operaciones y despacho del cliente.",
+    ph1_title: "Levantamiento territorial y coordinación",
+    ph1_desc: "Definición de predios prioritarios, levantamiento de zonas ciegas y coordinación con equipos de protección patrimonial y despacho.",
+    ph2_title: "Calibración sensorial en terreno",
+    ph2_desc: "Validación de firmas térmicas en condiciones reales, comprobación de radioenlace off-grid y calibración de umbrales radiométricos.",
+    ph3_title: "Ensayos nocturnos y patrullaje activo",
+    ph3_desc: "Vuelos programados en la brecha nocturna con transmisión táctica local e integración asistida con el operador en tierra.",
+    ph4_title: "Auditoría y retorno operativo conjunto",
+    ph4_desc: "Evaluación conjunta de tiempos de respuesta, falsas alarmas filtradas, horas de vuelo ahorradas e integración con la central del cliente.",
 
     // Operational Impact Framework
-    impact_badge: "MODELO DE IMPACTO OPERACIONAL",
-    impact_title: "Valor Operacional en la Brecha Crítica",
+    impact_badge: "Modelo de impacto operacional",
+    impact_title: "Valor operacional en la brecha crítica",
     impact_sub: "Enfoque cualitativo centrado en la reducción del riesgo humano y el daño territorial, sin promesas comerciales arbitrarias en fase de prototipo.",
-    imp1_title: "Seguridad Nocturna y Cero Exposición Innecesaria",
+    imp1_title: "Seguridad nocturna y menor exposición innecesaria",
     imp1_desc: "Evita el desplazamiento a ciegas de brigadistas y cuadrillas terrestres en camionetas 4x4 por caminos forestales y quebradas aisladas durante la noche. El reconocimiento aéreo confirma o descarta la amenaza antes de movilizar personal.",
-    imp2_title: "Detección Previa y Disuasión Autorizada",
-    imp2_desc: "Detección óptica y térmica de actividad humana no autorizada visible desde 100 m de altura. Ante una anomalía, el operador humano en tierra puede autorizar la activación del estrobo luminoso y la sirena acústica para disuadir antes de la ignición.",
-    imp3_title: "Optimización del Ataque Aéreo al Amanecer",
+    imp2_title: "Detección previa y disuasión autorizada",
+    imp2_desc: "Detección óptica y térmica de actividad humana no autorizada visible desde 100 m de altura. Ante una anomalía, el operador humano en tierra puede autorizar la activación del foco destellante de alta intensidad y la sirena acústica para disuadir antes de la ignición.",
+    imp3_title: "Optimización del ataque aéreo al amanecer",
     imp3_desc: "Al georreferenciar y contener focos o fogatas tempranas en plena noche, se entrega a las centrales de despacho información precisa de coordenadas y perímetro, evitando horas críticas de vuelo de aviones y helicópteros cisterna al inicio del día.",
 
     // IaaS Operational Framework
-    iaas_tag: "MARCO DE CO-DISEÑO IAAS",
-    iaas_title: "Condiciones y Principios del Modelo Intelligence as a Service",
-    iaas_sub: "Estructurado para que las empresas del sector participen en la validación técnica sin adquirir activos fijos de capital ni asumir pasivos operacionales.",
-    iaas_p1_title: "0 CAPEX & Cero Pasivo de Flota",
-    iaas_p1_desc: "Sin adquisición de drones ni depreciación de activos. El acceso al servicio se proyecta como gasto operacional (OPEX) por temporada o campaña de vigilancia.",
-    iaas_p2_title: "Soporte Técnico & Mantenimiento Integral",
-    iaas_p2_desc: "Aseguramiento de mantenimiento de componentes, baterías, calibración sensorial y actualización continua de algoritmos gestionados por el equipo de ingeniería de Strig Systems.",
-    iaas_p3_title: "Protocolos Operacionales & Marco de Seguridad",
-    iaas_p3_desc: "Operación conducida bajo estándares de seguridad operacional conforme a normativa DAN 151 / DAN 91 para vuelos de prueba y validación segregada en predio privado.",
+    iaas_tag: "Adaptación de misión y servicio (IaaS)",
+    iaas_title: "Adaptación de plataforma y principios del servicio (IaaS)",
+    iaas_sub: "Trabajamos de forma colaborativa para calibrar sensores, adaptar la aeronave a las variables críticas de cada faena y operar sin compra de flotas ni pasivos de capital.",
+    iaas_p1_title: "Sin compra de flota aérea ni pasivo operacional",
+    iaas_p1_desc: "Sin adquisición de drones ni depreciación de activos. El acceso al servicio se contrata como gasto operacional (OPEX) por temporada o campaña de vigilancia nocturna.",
+    iaas_p2_title: "Adaptación de carga útil y calibración continua",
+    iaas_p2_desc: "Configuramos sensores y algoritmos térmicos según las variables críticas de su predio o faena. Strig Systems asume el mantenimiento, reposición de baterías y actualización de software a bordo.",
+    iaas_p3_title: "Seguridad operacional y marco normativo",
+    iaas_p3_desc: "Vuelos ejecutados bajo estándares estrictos de seguridad operacional conforme a normativa DGAC DAN 151 / DAN 91 para vuelos de prueba y validación segregada en predio privado.",
 
     // Pilot Callout Bar
-    callout_title: "Convocatoria de Validación 2026-27",
+    callout_title: "Convocatoria de validación 2026-27",
     callout_desc: "Cupos limitados por temporada en la Macrozona Centro-Sur para empresas forestales e industriales que deseen co-diseñar y evaluar la factibilidad en terreno.",
-    callout_cta: "Sumarse al Programa de Validación",
-    callout_briefing: "Agendar Briefing Técnico (15 min)",
+    callout_cta: "Sumarse al programa de validación",
+    callout_briefing: "Agendar briefing técnico (15 min)",
     callout_brief_pdf: "Executive Brief (PDF)",
 
     // FAQ Section
-    faq_tag: "Resolución Técnica",
-    faq_title: "Preguntas Frecuentes de Operación",
-    faq_sub: "Criterios de ingeniería, límites operacionales actuales y respuestas directas para equipos técnicos y gerencias de protección.",
+    faq_tag: "Preguntas frecuentes",
+    faq_title: "Criterios técnicos, operacionales y límites del sistema",
+    faq_sub: "Límites operacionales actuales, condiciones de vuelo y respuestas claras para equipos técnicos y gerencias de protección.",
     faq_q1: "¿Cómo opera la visión térmica ante humo denso o niebla?",
     faq_a1: "La banda infrarroja LWIR (8–14 µm) penetra humo óptico no ionizado y partículas en suspensión que bloquean por completo las cámaras visuales. Sin embargo, no lo resuelve todo: en presencia de niebla densa (dispersión Mie por gotas de agua) o condiciones meteorológicas que reduzcan la visibilidad mínima requerida bajo reglas VLOS, la operación de vuelo se suspende por estrictos protocolos de seguridad operacional.",
     faq_q2: "¿Cuál es la envolvente de viento máxima de la plataforma?",
@@ -230,26 +306,28 @@ const translations = {
     faq_q4: "¿Quién es responsable de la operación y el pilotaje en terreno?",
     faq_a4: "Durante el Programa de Validación 2026-27, todos los vuelos son ejecutados y supervisados en terreno por personal calificado de Strig Systems bajo certificación y normativa aeronáutica chilena (DAN 151 / DAN 91). El cliente o partner territorial no requiere pilotos propios ni asume responsabilidad técnica sobre la aeronave.",
     faq_q5: "¿Qué alcance y capacidades NO tiene el sistema hoy?",
-    faq_a5: "Con total transparencia: hoy el sistema no opera vuelos más allá de la línea de vista visual (BVLOS), no cuenta con estación de acople automatizada no asistida, ni ofrece un radio de 15 km de servicio comercial. Actualmente nos encontramos en TRL 3 realizando ensayos controlados en predio piloto privado (VLOS ~1 km). Dichas capacidades forman parte de la visión y hoja de ruta futura.",
+    faq_a5: "Con total transparencia: hoy el sistema no opera vuelos más allá de la línea de vista visual (BVLOS), no cuenta con estación de acople automatizada no asistida, ni ofrece un radio de 15 km de servicio comercial. Actualmente nos encontramos en TRL 3 realizando ensayos controlados en predio piloto privado en rango acotado bajo reglas de línea de vista visual (VLOS). Dichas capacidades forman parte de la visión y hoja de ruta futura.",
+    faq_q6: "¿Cómo opera la recarga de energía y logística en predios forestales remotos?",
+    faq_a6: "En la fase actual de validación y despliegue temprano, no dependemos de costosas estaciones robóticas off-grid no probadas. Operamos de forma pragmática aprovechando la infraestructura existente de las empresas e instituciones: bases de brigadas terrestres, helipistas o pistas de aviación tripulada que ya cuentan con energía y perímetro seguro. El equipo en tierra realiza recambios rápidos de baterías (hot-swap) entre misiones consecutivas. A futuro, este aprendizaje en terreno guiará el diseño e instalación de las estaciones de acople y recarga autónoma (Nest).",
 
     // Alliances & R&D
-    alliances_tag: "Ecosistema & Tracción",
-    alliances_title: "I+D Aplicada y Alianzas Estratégicas",
+    alliances_tag: "Ecosistema y tracción",
+    alliances_title: "I+D aplicada y alianzas estratégicas",
     alliances_sub: "Combinamos ingeniería aeroespacial rigurosa con validación en el mercado real, respaldados por las instituciones líderes en innovación y transferencia tecnológica.",
     p_corfo: "Proyecto Semilla Inicia CORFO",
     p_udec: "Apoyo de la UdeC",
     p_industry: "Validación & Entrevistas Forestales",
     p_thermal: "Contraste Ecosistema Térmico",
-    collab1_head: "💼 Inversionistas & Fondos Deep Tech",
+    collab1_head: "Inversionistas y fondos deep tech",
     collab1_p: "Apertura a conversaciones con fondos de capital de riesgo enfocados en robótica aérea, dual-use, mitigación climática y tecnologías de defensa territorial.",
-    collab2_head: "🔬 Centros de Investigación & Academia",
+    collab2_head: "Centros de investigación y academia",
     collab2_p: "Cooperación técnica en visión computacional nocturna, algoritmos de detección en humo denso y modelos aerodinámicos de alta eficiencia.",
-    collab3_head: "🏛️ Agencias Públicas & Municipalidades",
+    collab3_head: "Agencias públicas y municipalidades",
     collab3_p: "Modelos de colaboración B2G para protección de comunidades en la interfaz urbano-forestal y optimización de presupuestos de emergencia.",
 
     // Team
-    team_tag: "Equipo Fundador",
-    team_title: "Ingeniería Aeroespacial & Operaciones Tácticas",
+    team_tag: "Equipo fundador",
+    team_title: "Ingeniería aeroespacial y operaciones tácticas",
     team_sub: "5 ingenieros civiles aeroespaciales de la Universidad de Concepción, combinando diseño aeronáutico, visión computacional, combate de incendios en primera línea y certificación aeronáutica.",
     bio_tomas: "Ingeniero Civil Aeroespacial • Visión Computacional, Machine Learning y CAD/CAM.",
     bio_carlos: "Bombero Operativo • Ingeniero Civil Aeroespacial. Análisis CFD, logística operacional y arquitectura de interfaz táctica.",
@@ -259,35 +337,56 @@ const translations = {
     bio_advisor: "PhD Space Systems Engineering and Management. Asesor senior en arquitectura de sistemas espaciales y escalamiento aeroespacial.",
 
     // CTA
-    cta_tag: "Contacto Estratégico",
-    cta_title: "Coordinemos una Evaluación Territorial",
+    cta_tag: "Contacto estratégico",
+    cta_title: "Coordinemos una evaluación territorial",
     cta_desc: "Si representas a una empresa con activos territoriales de alto valor, un consorcio de respuesta a emergencias o un fondo de inversión, nuestro equipo técnico responderá directamente tu requerimiento.",
-    cta_btn1: "Sumarse al Programa de Validación",
-    cta_btn2: "Consultar por Alianzas / Inversión",
+    cta_btn1: "Sumarse al programa de validación",
+    cta_btn2: "Consultar por alianzas e inversión",
 
-    // Pilot Modal
-    modal_badge: "Validación Territorial 2026-27",
-    modal_title: "Sumarse al Programa de Validación 2026-27",
+    // Contact Modal & Intent Selector
+    intent_tab_pilot: "Validación territorial (2026-27)",
+    intent_tab_briefing: "Briefing técnico (15 min)",
+    intent_tab_alliances: "I+D & Alianzas",
+    modal_badge: "Validación territorial 2026-27",
+    modal_title: "Sumarse al programa de validación 2026-27",
     modal_sub: "Completa los datos de tu entidad para evaluar conjuntamente la factibilidad territorial y requerimientos de validación en terreno.",
-    f_name_label: "Nombre y Apellido *",
+    alliances_badge: "Ecosistema & Inversión",
+    alliances_modal_title: "Alianzas de I+D e inversión estratégica",
+    alliances_modal_sub: "Contacto directo con el equipo fundador para fondos de capital deep tech, centros de investigación aeroespacial o cooperación técnico-operacional.",
+    f_alliance_type_label: "Tipo de colaboración *",
+    opt_alliance_1: "Fondo de inversión / Venture Capital",
+    opt_alliance_2: "Centro de I+D / Cooperación académica",
+    opt_alliance_3: "Agencia pública / Municipalidad / B2G",
+    f_submit_alliances: "Enviar propuesta de alianza",
+    f_name_label: "Nombre y apellido *",
     f_name_ph: "Ej: Marcela Soto",
-    f_email_label: "Correo Corporativo / Institucional *",
+    f_email_label: "Correo corporativo o institucional *",
     f_email_ph: "nombre@empresa.cl",
-    f_company_label: "Empresa u Organización *",
+    f_company_label: "Empresa u organización *",
     f_company_ph: "Ej: Forestal / Minera / Institución",
-    f_phone_label: "Teléfono / WhatsApp (Opcional)",
+    f_phone_label: "Teléfono / WhatsApp (opcional)",
     f_phone_ph: "+56 9 1234 5678",
-    f_region_label: "Región Territorial *",
+    f_region_label: "Región territorial *",
     f_region_default: "Selecciona una región...",
-    f_interest_label: "Tipo de Interés *",
+    f_reg_biobio: "Región del Biobío",
+    f_reg_araucania: "Región de La Araucanía",
+    f_reg_maule: "Región del Maule",
+    f_reg_nuble: "Región de Ñuble",
+    f_reg_rios: "Región de Los Ríos",
+    f_reg_lagos: "Región de Los Lagos",
+    f_reg_valparaiso: "Región de Valparaíso",
+    f_reg_metro: "Región Metropolitana",
+    f_reg_other: "Otra región de Chile",
+    f_reg_intl: "Internacional (fuera de Chile)",
+    f_interest_label: "Tipo de interés *",
     f_interest_default: "Selecciona el tipo de interés...",
-    opt_interest_1: "Programa de Validación Técnica (Forestal / Industrial)",
-    opt_interest_2: "Alianzas de I+D / Validación Técnica",
-    opt_interest_3: "Inversión / Fondos de Capital Deep Tech",
-    opt_interest_4: "Consulta General / Demostración Técnica",
-    f_message_label: "Detalles Adicionales o Necesidad Específica (Opcional)",
+    opt_interest_1: "Programa de validación técnica (forestal / industrial)",
+    opt_interest_2: "Alianzas de I+D y validación técnica",
+    opt_interest_3: "Inversión y fondos de capital deep tech",
+    opt_interest_4: "Consulta general y demostración técnica",
+    f_message_label: "Detalles adicionales o necesidad específica (opcional)",
     f_message_ph: "Describe brevemente el tipo de predio, zona geográfica o consulta técnica...",
-    f_submit_btn: "Enviar Solicitud de Validación",
+    f_submit_btn: "Enviar solicitud de validación",
     f_submitting: "Enviando solicitud...",
     f_privacy: "Tus datos serán tratados bajo estricta confidencialidad técnica (NDA disponible).",
     f_consent_label: "Acepto el tratamiento de mis datos de contacto para la evaluación técnica de la validación y declaro conocer los <a href=\"terms.html\" target=\"_blank\" class=\"legal-inline-link\">Términos de Servicio B2B</a> y la <a href=\"privacy.html\" target=\"_blank\" class=\"legal-inline-link\">Política de Privacidad</a> (Ley N° 19.628 / Ley N° 21.719).",
@@ -298,9 +397,9 @@ const translations = {
     success_close_btn: "Cerrar Ventana",
 
     // Briefing Modal (15 min)
-    briefing_badge: "Ingeniería & Operaciones",
-    briefing_modal_title: "Agendar Briefing Técnico de 15 Minutos",
-    briefing_modal_sub: "Conversación técnica directa con Tomás Medina (Technical Lead): evaluamos la orografía de tus predios, viabilidad de radioenlace y requerimientos de integración territorial.",
+    briefing_badge: "Ingeniería y operaciones",
+    briefing_modal_title: "Agendar briefing técnico de 15 minutos",
+    briefing_modal_sub: "Conversación técnica directa con Tomás Medina (Technical Lead): evaluamos el relieve y la topografía de tus predios, viabilidad de radioenlace y requerimientos de integración territorial.",
     f_contact_label: "Correo Corporativo o WhatsApp *",
     f_contact_ph: "correo@empresa.cl o +56 9...",
     f_briefing_time_label: "Horario Preferente *",
@@ -322,9 +421,9 @@ const translations = {
     eb_b1_p2: "<strong>99,7% de origen humano:</strong> La casi totalidad de los incendios derivan de acción humana intencional o negligente (Fuente: CONAF).",
     eb_b1_p3: "<strong>Puntos ciegos terrestres:</strong> Patrullas en 4x4 cubren &lt; 12% del predio, ciegas ante quebradas y rodales interiores donde se inician fogatas y focos intencionales.",
     eb_b2_title: "2. Solución Tecnológica",
-    eb_b2_p1: "<strong>Plataforma VTOL & Dron Noctua:</strong> Validación inicial sobre célula comercial adaptada; autonomía de diseño 45–60 min y despegue vertical sin pista.",
+    eb_b2_p1: "<strong>Plataforma VTOL y dron Noctua:</strong> Validación inicial sobre aeronave comercial adaptada; autonomía de diseño 45–60 min y despegue vertical sin pista.",
     eb_b2_p2: "<strong>Edge AI Zero-Cloud a Bordo:</strong> Cómputo local NVIDIA Jetson; detección térmica en segundos sin conexión a internet ni señal celular.",
-    eb_b2_p3: "<strong>Disuasión con Autorización Humana:</strong> Activación de estrobo luminoso y sirena acústica siempre autorizada por el operador en tierra (Human-in-the-Loop).",
+    eb_b2_p3: "<strong>Disuasión con Autorización Humana:</strong> Activación de foco de alta intensidad y sirena acústica siempre autorizada por el operador en tierra (Human-in-the-Loop).",
     eb_b3_title: "3. Modelo de Impacto Operacional IaaS",
     eb_b3_p1: "<strong>Seguridad del Personal:</strong> Cero exposición humana innecesaria en quebradas y caminos aislados en horario nocturno crítico.",
     eb_b3_p2: "<strong>Detección Temprana & Disuasión:</strong> Detección de actividad humana a 100 m de altura y disuasión autorizada por el operador antes de la ignición.",
@@ -366,6 +465,23 @@ const translations = {
     nav_alliances_desc: "CORFO, Gearbox, UdeC, Arauco",
     nav_cta: "Join Validation",
 
+    // Dynamic Values & Media Tags
+    m1_metric_val: "Night",
+    m3_metric_val: "Seconds",
+    btn_matrix_compact: "Tactical Summary",
+    btn_matrix_detailed: "+ Detailed Analysis",
+    media_bench_tag: "[Avionics & Sensor Integration · Testbench]",
+    media_video_tag: "[Thermal Vision & Onboard AI Validation]",
+    media_video_meta: "LWIR 640×512 Radiometric · 30 FPS",
+    media_hud_target: "PRECURSOR DETECTED",
+    ph1_time: "Phase 01 · Alignment",
+    ph2_time: "Phase 02 · Calibration",
+    ph3_time: "Phase 03 · Night Trials",
+    ph4_time: "Phase 04 · Joint Evaluation",
+    contact_nda_pill: "🔒 Non-Disclosure Agreements (NDA) Available",
+    footer_copyright: "© 2026 Strig Systems SpA. All rights reserved.",
+    eb_product: "ATHENE PLATFORM",
+
     // Hero
     hero_status: "Prototype under development · TRL 3 · Gearbox technical demo Jan 2027",
     hero_badge: "CORFO Seed Grant Awarded • Backed by UdeC • Frontline Firefighting Experience",
@@ -375,27 +491,37 @@ const translations = {
     hero_cta_primary: "Join 2026-27 Validation Program",
     hero_cta_secondary: "View Roadmap & Technology",
 
-    // Metrics & Taxonomy
+    // Metrics & Progressive Disclosure Micro-Fichas
     m1_title: "Nighttime Gap",
     m1_sub: "Aerial surveillance while manned aviation remains grounded",
-    m1_tax: "[PROBLEM]",
-    m1_tip_title: "Nighttime Gap · Why is this here?",
-    m1_tooltip: "This is the root problem: under aviation regulations and terrain risk (CFIT), manned tankers and helicopters are grounded at dusk. Athene monitors this blind window where 99.7% of wildfires ignite due to human activity.",
-    m2_title: "Mission Radius",
-    m2_sub: "Design target for 50,000 ha • Today: 1 km in experimental estate (VLOS)",
+    m1_tax: "[ROOT PROBLEM]",
+    m1_tip_title: "Nighttime Gap & Human Risk",
+    m1_val_today: "Aerial thermal monitoring during the critical night window while ground crews and airplanes are inactive due to terrain collision risk (CFIT).",
+    m1_val_context: "99.7% of forest fires in Chile originate from intentional or accidental human causes (CONAF, 2003-2023).",
+    m2_title: "Projected Mission Radius",
+    m2_sub: "Design target for 50,000 ha (Noctua) • Today: Bounded range on pilot acreage (VLOS)",
     m2_tax: "Product Target",
-    m2_tip_title: "15 km Radius · Why is this here?",
-    m2_tooltip: "It is our territorial product goal: achieving a 15 km operational radius under BVLOS certification to safeguard 50,000 ha clusters. In our current validation phase, we operate in pilot estates at 1 km VLOS.",
+    m2_tip_title: "Territorial Coverage Radius",
+    m2_val_today: "Bounded-range Visual Line of Sight (VLOS) flight operations on private pilot acreage with on-site operator.",
+    m2_val_goal: "15 km radius (BVLOS). VTOL airframe with 45–60 min cruise capacity to protect 50,000 ha clusters.",
+    m2_val_framework: "Scaling subject to SORA operational risk certification (JARUS) and DGAC airspace segregation.",
     m3_title: "Thermal Detection",
-    m3_sub: "On-board local inference • Alert to operator in minutes (target ≤ 3 min)",
-    m3_tax: "MVP Target: <10% False Alarms",
-    m3_tip_title: "Thermal Detection · Why is this here?",
-    m3_tooltip: "Compared to satellite latency (30–90 min) and slow ground patrols, on-board Edge AI detects thermal precursors in seconds and delivers alerts to the station in minutes (MVP design target ≤ 3 min with <10% false alarms).",
+    m3_sub: "Onboard Edge AI local inference • Consolidated alert to station in minutes (target ≤ 3 min)",
+    m3_tax: "Target: <10% False Alarms",
+    m3_tip_title: "Local Edge AI Thermal Inference",
+    m3_val_today: "Detection of thermal sources and humans in microseconds onboard (NVIDIA Jetson) with consolidated alert to station in minutes (target ≤ 3 min).",
+    m3_val_goal: "Dispatch of verified coordinates with false alarm rate < 5% (MVP technical acceptance criterion < 10%).",
+    m3_val_framework: "Zero-Cloud Architecture: requires no internet or cloud connectivity for real-time edge detection.",
     m4_title: "Authorized Deterrence",
-    m4_sub: "High-intensity strobe and siren activated by the operator upon detecting human activity",
+    m4_sub: "High-intensity light and acoustic siren activated exclusively with operator authorization",
     m4_tax: "Key Differentiator",
-    m4_tip_title: "Human-in-the-Loop · Why is this here?",
-    m4_tooltip: "Operational safety and human oversight: on-board AI detects precursors and human presence, but high-intensity strobes and sirens are only triggered with explicit authorization from the ground operator, eliminating blind crew exposure.",
+    m4_tip_title: "Human-in-the-Loop · Safety Doctrine",
+    m4_val_today: "Zero autonomous deterrence. The system classifies precursors, but triggering the physical beacon requires deliberate operator authorization.",
+    m4_val_framework: "Strict safety control protocol protecting ground crews from ambushes or disoriented entry in deep forest.",
+    lbl_today: "TODAY (MVP 2026-27):",
+    lbl_goal: "TARGET:",
+    lbl_framework: "CONDITION / FRAMEWORK:",
+    lbl_context: "EVIDENCE:",
 
     // Problem
     prob_tag: "Territorial Diagnostic",
@@ -411,7 +537,7 @@ const translations = {
     p3_head: "Ground Firefighters",
     p3_desc: "Extreme exposure to road blockages, ambushes, or roll-over hazards entering deep forests on gravel tracks at night, with negligible visibility off the road.",
     p3_tag: "Avoidable human risk",
-    quote_text: "Satellites suffer orbital latency; fixed towers face orographic blind spots; 4x4 truck patrols only see what headlights touch on the dirt road; and water bombers are grounded at dusk for safety. Athene is the autonomous night sentinel that detects human activity and thermal precursors before fire ignites, optimizing deployment at dawn.",
+    quote_text: "Satellites face orbital delays, fixed towers face blind spots behind ridges and ravines, and ground patrols only see what headlights reach on the road. At dusk, firefighting aircraft are grounded for safety. <span class=\"hl-cyan\">Athene</span> changes this paradigm: patrolling nocturnal skies to <span class=\"hl-green\">detect human presence before fire ignites</span>, safeguarding ground crews and stopping the threat at its source.",
 
     // Tactical Benchmark
     comp_tag: "Tactical Benchmark",
@@ -425,57 +551,94 @@ const translations = {
     strig_badge: "Our Architecture",
     th_strig: "Strig Systems<br><span class=\"th-sub\">Athene (VTOL Platform + Edge AI)</span>",
     r1_dim: "Continuous Nighttime Patrol",
-    r1_sat: "<span class=\"badge-negative\">Nighttime blind window:</span> Discrete orbital passes (1 to 4 h). Indisputable daytime standard, but critical blind gap at night.",
-    r1_tower: "<strong>Continuous but static:</strong> 24/7 high reliability, but strictly confined to direct line of sight (LOS) within its visible watershed.",
-    r1_drone: "<span class=\"badge-negative\">Grounded at night:</span> Tanker aircraft and spotters grounded at dusk by DGAC/VFR rules. 4x4 trucks suffer fatigue and &lt;12% parcel coverage.",
-    r1_strig: "<span class=\"badge-positive\">Nighttime aerial patrol:</span> Flight operations on pilot site with qualified operator (VLOS). <span class=\"tax-badge tax-badge-vision\">Vision: Autonomous Nest Base</span>",
+    r1_sat: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-negative\">Blind window (1–4 h):</span> Non-continuous orbital passes.</div><div class=\"cell-detail\">Continental standard by day, with no continuous coverage during nighttime field shifts.</div></div>",
+    r1_tower: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><strong>Continuous but static:</strong> Limited to direct line of sight.</div><div class=\"cell-detail\">High 24/7 reliability, but strictly confined to direct line-of-sight (LOS) from the tower, vulnerable to blind spots behind ravines and ridges.</div></div>",
+    r1_drone: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-negative\">Grounded at night:</span> Aircraft grounded by VFR regulations.</div><div class=\"cell-detail\">Manned aircraft prevented from night flights by DGAC. Ground trucks face fatigue and &lt;12% parcel coverage.</div></div>",
+    r1_strig: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-positive\">Active aerial patrol:</span> Night flight on pilot site.</div><div class=\"cell-detail\">Scheduled tactical flight with qualified ground operator (VLOS) under DGAC aviation regulations.</div></div>",
     r2_dim: "Detection & Alert Latency",
-    r2_sat: "<span class=\"badge-negative\">30 to 90 minutes:</span> Orbital downlink, cloud processing, and regional alert dissemination lag.",
-    r2_tower: "<strong>Instantaneous but manual:</strong> Direct at optical sensor; requires 24/7 console operator for verification and false alarm triage.",
-    r2_drone: "<strong>Instantaneous but isolated:</strong> Immediate for local crew; significantly delayed to central dispatch without reliable 4G/5G coverage in remote terrain.",
-    r2_strig: "<span class=\"badge-positive\">Detection in seconds:</span> Onboard Edge AI inference. Alert to ground operator station in minutes (MVP goal ≤ 3 min).",
+    r2_sat: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-negative\">30 to 90 min:</span> Downlink and cloud processing queue.</div><div class=\"cell-detail\">Cumulative lag between satellite overpass, cloud computing ingestion, and regional alert dispatch.</div></div>",
+    r2_tower: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><strong>Instant but manual:</strong> Requires 24/7 console operator.</div><div class=\"cell-detail\">Direct optical sensor alert requiring human watchstander to verify video and filter false alarms.</div></div>",
+    r2_drone: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><strong>Local on-site:</strong> Delayed dispatch without 4G/5G signal.</div><div class=\"cell-detail\">Immediate for local crew; delayed to command center when operating in ravines with zero cellular signal.</div></div>",
+    r2_strig: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-positive\">Inferred in seconds:</span> Station alert in ≤ 3 min.</div><div class=\"cell-detail\">Onboard Edge AI classifies in microseconds. Synthetic alert dispatched to station within ≤ 3 min from in-flight sighting.</div></div>",
     r3_dim: "Precursor Detection (Humans / Vehicles)",
-    r3_sat: "<span class=\"badge-negative\">0% resolution:</span> 375m to 1km spatial resolution; engineered for active fires, incapable of spotting individuals or campfires.",
-    r3_tower: "<span class=\"badge-negative\">Near zero:</span> Ineffective under dense canopy, forest trails, or blind ravines outside direct mast sightline.",
-    r3_drone: "<span class=\"badge-negative\">Severely limited:</span> Patrol planes cannot fly at night to detect early campfires; 4x4 trucks only monitor roads, leaving interior blind.",
-    r3_strig: "<span class=\"badge-positive\">Optical & thermal detection:</span> Human presence visible from 100 m altitude for authorized deterrence before fire starts.",
+    r3_sat: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-negative\">No fine resolution:</span> 375m to 1km pixel footprint.</div><div class=\"cell-detail\">Engineered for active fire fronts, incapable of spotting individuals, early campfires, or vehicles.</div></div>",
+    r3_tower: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-negative\">Grazing angle:</span> Blocked by tree canopy and ridges.</div><div class=\"cell-detail\">Ineffective on trails beneath dense forest canopy or ravines outside direct optical mast line of sight.</div></div>",
+    r3_drone: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-negative\">Severely limited:</span> Ground patrols confined to roads.</div><div class=\"cell-detail\">Patrol planes do not fly at night; trucks only patrol logging roads, leaving forest interiors unmonitored.</div></div>",
+    r3_strig: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-positive\">Optical & thermal:</span> Silhouettes and heat from 100 m.</div><div class=\"cell-detail\">Identifies thermal anomalies and human silhouettes in clearings and trails to authorize deterrence before fire starts.</div></div>",
     r4_dim: "Topographic Blind Spots",
-    r4_sat: "<span class=\"badge-negative\">Atmospheric attenuation:</span> Severely degraded by low clouds, thick smoke plumes, and thermal inversions absorbing IR radiation.",
-    r4_tower: "<span class=\"badge-negative\">Critical:</span> Irrecoverable physical blind spots behind ridgelines, valleys, and opposing slopes.",
-    r4_drone: "<span class=\"badge-negative\">Critical in rugged terrain:</span> Ground crews have zero line of sight behind ridges; daytime aircraft face severe degradation in low clouds and heavy smoke.",
-    r4_strig: "<span class=\"badge-positive\">Zenith perspective:</span> Adapted flight over ravines drastically reducing blind spots of fixed watchtowers and ground patrols.",
+    r4_sat: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-negative\">Atmospheric blockage:</span> Degraded by clouds and smoke.</div><div class=\"cell-detail\">Severely degraded by low overcast, thick smoke layers, and thermal inversions absorbing infrared radiation.</div></div>",
+    r4_tower: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-negative\">Critical blind spots:</span> Hidden behind ridges and slopes.</div><div class=\"cell-detail\">Permanent physical blind spots behind ridgelines, deep ravines, and opposing mountain faces.</div></div>",
+    r4_drone: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-negative\">Rugged terrain:</span> No visibility into deep ravines.</div><div class=\"cell-detail\">Ground crews lack line of sight in steep canyons; daytime planes suffer low-altitude turbulence and smoke.</div></div>",
+    r4_strig: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-positive\">Zenith perspective:</span> Overhead flight eliminating shadows.</div><div class=\"cell-detail\">Overhead aerial patrol across forestry slopes, ravines, and roads, eliminating blind spots hidden from fixed towers and ground crews.</div></div>",
     r5_dim: "Human Risk & Supervision",
-    r5_sat: "<strong>Zero direct human exposure:</strong> Remote orbital operation without personnel in the field.",
-    r5_tower: "<strong>Zero direct human exposure:</strong> Except hazardous maintenance on isolated mountain peaks.",
-    r5_drone: "<span class=\"badge-negative\">High life risk & 1:1 ratio:</span> 1 pilot + 1 certified spotter per asset. Crash hazard in low flight, and ground crews exposed on isolated tracks at night.",
-    r5_strig: "<span class=\"badge-positive\">Ground supervision (HITL):</span> Ground operator authorizes deterrence from a safe position. <span class=\"tax-badge tax-badge-vision\">Vision: 1 operator supervises N grids</span>",
+    r5_sat: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><strong>Zero direct exposure:</strong> Remote orbital operation.</div><div class=\"cell-detail\">Surveillance conducted from orbit with no physical exposure for field personnel.</div></div>",
+    r5_tower: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><strong>Low direct exposure:</strong> Confined to maintenance trips.</div><div class=\"cell-detail\">Remote operation from ops center; physical hazard limited to maintenance runs on isolated peaks.</div></div>",
+    r5_drone: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-negative\">High field hazard:</span> Night crews exposed on logging roads.</div><div class=\"cell-detail\">1 pilot + 1 certified spotter per drone; ground patrol crews exposed at night in remote timberlands.</div></div>",
+    r5_strig: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-positive\">Ground supervision (HITL):</span> Operator at safe base.</div><div class=\"cell-detail\">Deterrence authorized from safe field workstation; zero personnel exposed in dangerous frontlines.</div></div>",
     r6_dim: "Operating Model & Access",
-    r6_sat: "<strong>Global SaaS:</strong> Platform subscription; accessible at macro scale, does not replace parcel-level tactical surveillance.",
-    r6_tower: "<span class=\"badge-negative\">Extremely High CAPEX:</span> Intensive capital investment in fixed watchtowers (mast, military optics, solar power, and access roads).",
-    r6_drone: "<span class=\"badge-negative\">Fragmented heavy costs:</span> High hourly costs for daytime suppression flight (tankers/choppers) and nocturnal 4x4 patrols covering &lt;12% of holding.",
-    r6_strig: "<span class=\"badge-positive\">IaaS Model (0 CAPEX):</span> No fleet acquisition or capital assets. Joint co-design and technical field validation with forestry enterprises.",
+    r6_sat: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><strong>Macro SaaS:</strong> Global data subscription.</div><div class=\"cell-detail\">Satellite data subscription; useful for macro-continental monitoring, but cannot replace direct tactical surveillance and response on the ground.</div></div>",
+    r6_tower: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-negative\">High CAPEX:</span> Heavy capital in fixed infrastructure.</div><div class=\"cell-detail\">Steep initial capital per watchtower (structural mast, military optics, solar backup, and access roads).</div></div>",
+    r6_drone: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-negative\">High operating cost:</span> Pricey flight hours & low coverage.</div><div class=\"cell-detail\">Heavier hourly costs for daytime flight and nocturnal 4x4 patrols covering &lt;12% of the forest parcel.</div></div>",
+    r6_strig: "<div class=\"matrix-cell-content\"><div class=\"cell-verdict\"><span class=\"badge-positive\">Full Turnkey Service:</span> Zero operational overhead and ready-to-deploy patrol.</div><div class=\"cell-detail\">As-a-service model: turnkey night surveillance, certified preventive maintenance, guaranteed aerial availability, and continuous sensor and AI upgrades without capital lockup or operational burden on internal teams.</div></div>",
 
-    // Technology
-    tech_tag: "Operational Capabilities",
+    // Technology - 4 Athene Pillars
+    tech_tag: "Athene System Pillars",
     tech_title: "Territorial Surveillance with Onboard Edge Intelligence",
-    tech_sub: "High-availability architecture. The aircraft processes, classifies, and georeferences at the edge without requiring persistent internet or cloud servers.",
-    t1_title: "Bi-Spectral Gimbal",
-    t1_desc: "Gyro-stabilized payload with uncooled radiometric LWIR microbolometer (640×512) and daytime optical sensor. Thermal detection in darkness with multi-frame filtering for heat source discrimination (target < 5% false alarms; MVP acceptance < 10%).",
-    t2_title: "Zero-Cloud Edge AI Inference (NVIDIA Jetson)",
-    t2_desc: "Onboard computing powered by NVIDIA Jetson (Orin Nano) architecture with an FP16 quantized inference pipeline accelerated by NVIDIA TensorRT. Real-time local execution of computer vision and thermal detection models, operating offline Zero-Cloud in areas without internet or cell coverage.",
-    t3_title: "Tactical Telemetry in Disconnected Areas",
-    t3_desc: "Alert dossier and telemetry transmission to ground operator station via 915 MHz FHSS line-of-sight (LOS) radio link. Crew dispatch is coordinated and integrated directly with the pilot partner.",
-    t4_title: "Aerial Platform & Noctua First Drone",
-    t4_desc: "Initial validation on modified commercial airframe transitioning toward Noctua (first platform drone, designed or integrated). 45–60 min design endurance (target 45 min), wind envelope up to 10 m/s (~36 km/h), and 1 km operational radius in pilot site (VLOS). <span class=\"tax-badge tax-badge-goal\">Goal: 15 km</span>",
-    t5_title: "Assisted Georeferencing",
-    t5_desc: "Angular terrain projection assisted by GNSS/RTK positioning, computing estimated target coordinates with meter-level target accuracy (requires loaded digital elevation model DEM of the area).",
-    t6_title: "Safe Operations & Auditable Records",
-    t6_desc: "Ballistic recovery parachute (in design) and safe return contingency protocols (Auto-RTH). Operations under DGAC DAN 151 / DAN 91 framework in segregated private site (VLOS) with auditable mission logging for insurers and operations centers.",
-    spec_1: "<span class=\"spec-name\">MVP Platform:</span> Modified Commercial Airframe (Towards Noctua)",
-    spec_2: "<span class=\"spec-name\">Flight Envelope:</span> Wind up to 10 m/s (36 km/h)",
-    spec_3: "<span class=\"spec-name\">Response:</span> Alert in minutes (Goal ≤ 3 min)",
-    spec_4: "<span class=\"spec-name\">Operation:</span> VLOS flight on private site (DGAC)",
-    spec_5: "<span class=\"spec-name\">Model:</span> Intelligence as a Service (0 CAPEX)",
+    tech_sub: "High-availability, fault-tolerant architecture. Edge processing, classification, and georeferencing without requiring continuous internet connection or cloud servers.",
+    p1_status_badge: "[MVP: MODIFIED AIRFRAME · TRL 3-4]",
+    p1_title: "VTOL Platform & Tactical Navigation",
+    p1_desc: "Hybrid airframe with runway-free vertical takeoff and fixed-wing cruise. Engineered for mission radii up to 15 km with 45–60 min endurance and deterministic geofenced navigation.",
+    p1_s1_lbl: "Configuration:",
+    p1_s1_val: "QuadPlane Lift + Cruise (4 vertical lift motors + 1 horizontal pusher).",
+    p1_s2_lbl: "C-2 Safety Boundary:",
+    p1_s2_val: "The primary flight controller retains 100% flight authority and FDIR containment, isolated from mission AI.",
+    p1_s3_lbl: "Envelope:",
+    p1_s3_val: "Wind resilience up to 10 m/s (~36 km/h). Protected with ballistic recovery parachute.",
+    p1_s4_lbl: "Operations Today:",
+    p1_s4_val: "Private pilot site in Visual Line of Sight (VLOS ~1 km). Goal: BVLOS (15 km) under SORA.",
+    p2_status_badge: "[NVIDIA JETSON · ZERO-CLOUD]",
+    p2_title: "Optronic Payload & Onboard Edge AI",
+    p2_desc: "3-axis actively stabilized bispectral camera with LWIR radiometric thermal sensor and 4K optical camera. Onboard inference processes in microseconds without requiring internet or cloud servers.",
+    p2_s1_lbl: "Thermal Sensor:",
+    p2_s1_val: "Uncooled radiometric LWIR microbolometer (640×512) + 4K optical sensor on 3-axis gimbal.",
+    p2_s2_lbl: "Georeferencing:",
+    p2_s2_val: "Computational fusion of centimetric GPS (RTK) and digital elevation models (DEM), estimating fire coordinates with metric accuracy in real time.",
+    p2_s3_lbl: "AI Pipeline:",
+    p2_s3_val: "NVIDIA Jetson Orin Nano Dev Kit with TensorRT FP16 acceleration for human silhouettes and thermal precursor detection.",
+    p2_s4_lbl: "Filtering:",
+    p2_s4_val: "Multi-frame temporal filtering for false alarm rejection (target < 5%; MVP acceptance < 10%).",
+    p3_status_badge: "[UHF LORA · OFF-GRID RESILIENT]",
+    p3_title: "Tactical Communications for Dark Zones",
+    p3_desc: "Dual-link tactical datalink architecture to operate across deep ravines and forestry holdings without cellular 4G/5G or mobile internet, ensuring alert delivery.",
+    p3_s1_lbl: "Alert Radio Link:",
+    p3_s1_val: "UHF transceiver 902–928 MHz @ 500 mW delivering telemetry and alert vectors in 4G dark zones.",
+    p3_s2_lbl: "Safety C2 Link:",
+    p3_s2_val: "Primary C2 2.4 GHz diversity datalink for flight control authority and critical telemetry.",
+    p3_s3_lbl: "Alert Format:",
+    p3_s3_val: "Compressed binary telemetry packet with UTM coordinates, timestamp, object class, and confidence score.",
+    p3_s4_lbl: "Video Downlink:",
+    p3_s4_val: "On-demand RTSP streaming conditioned on available local link bandwidth.",
+    p4_status_badge: "[HUMAN-IN-THE-LOOP · AUDITABLE]",
+    p4_title: "C2 Command Center & Chain of Evidence",
+    p4_desc: "Tactical ground console for continuous human supervision, alert triage, and generation of forensically auditable Digital Incident Reports with cryptographic timestamps and privacy masking.",
+    p4_s1_lbl: "HITL Doctrine:",
+    p4_s1_val: "The physical deterrence payload (high-intensity light and acoustic siren) only activates upon explicit, deliberate operator authorization.",
+    p4_s2_lbl: "Forensic Report:",
+    p4_s2_val: "Digital incident dossier with cryptographic signature, timestamp, and bi-spectral capture for insurers and prosecutors.",
+    p4_s3_lbl: "Privacy by Design:",
+    p4_s3_val: "Automated blurring and anonymization of non-involved human faces and private property (Law 19,628 / 21,719 compliance).",
+    p4_s4_lbl: "Offline Operation:",
+    p4_s4_val: "Ground operator console with locally preloaded offline GIS maps for autonomous deployment in remote locations.",
+    spec_toggle_txt: "+ Details",
+    media_bench_caption: "Functional laboratory integration bench: redundant flight avionics, Edge AI mission computer, and tactical datalink modules interconnected.",
+    media_video_caption: "Real-time thermal processing: detection and tracking of caloric anomalies and human silhouettes using onboard optimized models.",
+    hud_alt_tip: "Above Ground Level (AGL) altitude via barometric sensor and LIDAR",
+    hud_gs_tip: "Ground Speed (~66.6 km/h) optimized for gimbal imaging stability",
+    hud_hdg_tip: "Magnetic heading with triple redundant calibrated compasses",
+    hud_target_tip: "Local classification of thermal precursor and human silhouette with onboard inference",
+    hud_link_tip: "Active telemetry & C2 link secured via FHSS frequency hopping",
+    hud_rtk_tip: "Real-time kinematic GNSS positioning with centimeter precision",
+
 
     // Off-Grid Tactical Datalink Architecture
     flow_tag: "OFF-GRID DATALINK ARCHITECTURE",
@@ -484,69 +647,81 @@ const translations = {
     flow_s1_title: "VTOL Aircraft (Aerial Node)",
     flow_s1_desc: "Onboard Edge AI thermal inference with NVIDIA Jetson. Detects precursors and human presence, sends alerts to the ground station, and triggers emergency return upon link loss.",
     flow_s1_badge: "Onboard Edge AI",
+    flow_s1_f1_lbl: "Avionics & Compute:",
+    flow_s1_f1_val: "Redundant-architecture flight controller and Edge AI computer coupled via opto-isolated serial link with MAVLink v2 telemetry.",
+    flow_s1_f2_lbl: "Geopositioning:",
+    flow_s1_f2_val: "Onboard fusion of centimetric GPS (RTK) and digital elevation models (DEM) for metric fire coordinate estimation.",
     flow_c1_label: "⇄ 915 MHz FHSS Tactical Link (Line-of-Sight)",
     flow_s2_title: "Operator Station (Field)",
-    flow_s2_desc: "Real-time reception of tactical alerts and telemetry. The operator evaluates and authorizes the activation of the deterrence strobe and siren from a safe position.",
+    flow_s2_desc: "Real-time reception of tactical alerts and telemetry. The operator evaluates and authorizes deterrence light and siren activation from a safe position.",
     flow_s2_badge: "Human Supervision (HITL)",
+    flow_s2_f1_lbl: "Tactical Console:",
+    flow_s2_f1_val: "IP65 ruggedized laptop for forestry field ops with offline preloaded vector cartography.",
+    flow_s2_f2_lbl: "HITL Authorization:",
+    flow_s2_f2_val: "Dual safety confirmation on console before triggering deterrence light or siren.",
     flow_c2_label: "⇄ Local Network / Available IP Link",
     flow_s3_title: "Partner Dispatch & Operations Center",
     flow_s3_desc: "Reception of georeferenced alert dossiers and mission logs for crew coordination and audit trails (GIS / Webhook integration).",
     flow_s3_badge: "Operational Integration",
+    flow_s3_f1_lbl: "Interoperability:",
+    flow_s3_f1_val: "Integration via standard formats (GeoJSON/API) compatible with forestry GIS software (ArcGIS, QGIS).",
+    flow_s3_f2_lbl: "Legal Traceability:",
+    flow_s3_f2_val: "Incident dossier with timestamp and verified coordinates for forensic traceability.",
 
     // Roadmap
-    roadmap_tag: "Engineering Roadmap",
+    roadmap_tag: "Roadmap",
     roadmap_title: "Project Status & Upcoming Milestones",
     roadmap_sub: "Rigorous development across verifiable stages. We differentiate what is solved today, active trials, and industrial scaling goals.",
     rm1_phase: "Current Status · TRL 3",
     rm1_title: "System Design & Prototype in Analysis",
     rm1_desc: "Engineering requirements, systems architecture, and test plans defined. Analytical concept validation and selection of critical components.",
     rm2_phase: "Oct – Dec 2026 · Trials",
-    rm2_title: "Hexacopter Platform & Gearbox Demo",
-    rm2_desc: "Integration into hexacopter testbed for sensor and processing validation. Technical demo at Gearbox UdeC scheduled for January 2027.",
+    rm2_title: "Adapted Multirotor Platform & Technical Demo",
+    rm2_desc: "Integration of avionics, sensors, and Edge AI onto an adapted multirotor platform for the first functional technical demonstration and edge processing validation in the field (December 2026 – January 2027).",
     rm3_phase: "Feb 2027 · Simulation",
     rm3_title: "Human-in-the-Loop (HITL) Validation",
-    rm3_desc: "Simulation environment testing of tactical operator interface, strobe/siren authorization protocol, and real-time decision loop.",
+    rm3_desc: "Simulation environment testing of tactical operator interface, deterrent light/siren authorization protocol, and real-time decision loop.",
     rm4_phase: "Jun 2027 · Field Validation",
-    rm4_title: "Technical & Operational Validation (CORFO)",
-    rm4_desc: "Day/night experimental flight campaign in private pilot site (VLOS) under CORFO Semilla Inicia grant with forestry industry feedback.",
-    rm5_phase: "Platform Vision",
+    rm4_title: "Field Technical & Operational Validation",
+    rm4_desc: "Day and night flight campaign using an adapted commercial VTOL aircraft deployed from existing brigade bases or airstrips (rapid ground battery hot-swaps), validating private acreage patrol (VLOS), thermal detection, and operational integration before scaling to automated stations.",
+    rm5_phase: "Future Vision",
     rm5_title: "Noctua VTOL, Automated Nest & BVLOS",
-    rm5_desc: "Integration or design of Noctua VTOL airframe, automated landing/charging Nest station, 1:N multi-grid supervision, satellite links, and 15 km radius under BVLOS certification.",
+    rm5_desc: "Integration or design of Noctua VTOL airframe, automated landing/charging Nest station, 1:N fleet supervision (one operator for multiple aircraft in parallel), backup links, and 15 km radius under BVLOS certification.",
 
     // Pilot / Validation Program
     pilot_tag: "Field Validation",
     pilot_title: "Joint Validation Program 2026-27",
     pilot_sub: "Structured into 4 methodological phases for forestry, mining, and institutional partners seeking to co-design and verify nocturnal surveillance in the field.",
-    ph1_title: "Survey & Topographic Analysis",
-    ph1_desc: "Mapping priority acreage, modeling line-of-sight blind spots, and tuning flight routes based on historical incident heatmaps.",
-    ph2_title: "Sensor Calibration & Field Trials",
-    ph2_desc: "Controlled ground trials for thermal signature calibration, tactical telemetry verification, and simulated incident scenarios.",
-    ph3_title: "Active Nighttime Surveillance",
-    ph3_desc: "Scheduled aerial patrol throughout hours of maximum vulnerability with live structured telemetry and client dispatch center integration.",
-    ph4_title: "Audit & Operational ROI",
-    ph4_desc: "Technical evaluation report detailing response latency, filtered false alarms, flight hours saved, and audited integration with the client's operations and dispatch center.",
+    ph1_title: "Territory Mapping & Operational Alignment",
+    ph1_desc: "Defining priority acreage, modeling blind spots, and coordinating protocols with property protection and dispatch teams.",
+    ph2_title: "On-Site Sensor Calibration",
+    ph2_desc: "Real-world validation of thermal signatures, testing off-grid tactical datalinks, and tuning radiometric thresholds.",
+    ph3_title: "Night Trials & Active Patrol",
+    ph3_desc: "Scheduled night flights during peak vulnerability hours with local tactical datalinks and assisted operator verification.",
+    ph4_title: "Audit & Joint Operational Review",
+    ph4_desc: "Joint technical assessment of response times, filtered false alarms, avoided flight hours, and dispatch integration.",
 
     // Operational Impact Framework
-    impact_badge: "OPERATIONAL IMPACT MODEL",
+    impact_badge: "Operational Impact Model",
     impact_title: "Operational Value in the Critical Gap",
     impact_sub: "Qualitative approach focused on reducing human risk and territorial damage, free of unbacked commercial figures during the prototype stage.",
     imp1_title: "Nighttime Safety & Zero Unnecessary Exposure",
     imp1_desc: "Avoids blind nighttime deployment of ground crews and firefighters in 4x4 trucks across isolated forest roads and ravines. Aerial reconnaissance confirms or rules out threats before moving personnel.",
     imp2_title: "Prior Detection & Authorized Deterrence",
-    imp2_desc: "Optical and thermal detection of unauthorized human activity visible from 100 m altitude. Upon detecting an anomaly, the ground operator can authorize strobe and siren deterrence before ignition.",
+    imp2_desc: "Optical and thermal detection of unauthorized human activity visible from 100 m altitude. Upon detecting an anomaly, the ground operator can authorize high-intensity light and acoustic siren deterrence before ignition.",
     imp3_title: "Dawn Air Attack Optimization",
     imp3_desc: "By georeferencing and containing early fires or campfires during the night, dispatch centers receive accurate coordinates and perimeter data, avoiding critical tanker flight hours at daybreak.",
 
     // IaaS Operational Framework
-    iaas_tag: "IAAS CO-DESIGN FRAMEWORK",
-    iaas_title: "Conditions and Principles of the Intelligence as a Service Model",
-    iaas_sub: "Structured for industry partners to participate in technical validation without acquiring fixed capital assets or carrying development liabilities.",
-    iaas_p1_title: "0 CAPEX & Zero Fleet Liability",
-    iaas_p1_desc: "No drone purchases or asset depreciation. Service access is projected as an operational expenditure (OPEX) per surveillance season or campaign.",
-    iaas_p2_title: "Technical Support & Comprehensive Maintenance",
-    iaas_p2_desc: "Component maintenance, battery management, sensor calibration, and continuous algorithmic updates managed directly by the Strig Systems engineering team.",
-    iaas_p3_title: "Operational Protocols & Safety Framework",
-    iaas_p3_desc: "Operations conducted under operational safety standards conforming to Chilean DGAC DAN 151 / DAN 91 regulations for segregated test flights on private property.",
+    iaas_tag: "Mission Adaptation & Service Model (IaaS)",
+    iaas_title: "Airframe Adaptation & Intelligence-as-a-Service Principles",
+    iaas_sub: "We collaborate closely to calibrate sensors, tailor the airframe to each operation's critical variables, and deliver turnkey intelligence without fleet purchases or capital liabilities.",
+    iaas_p1_title: "Zero Fleet Purchase & Zero Capital Liabilities",
+    iaas_p1_desc: "No drone purchases or asset depreciation. Service access is structured as operational expenditure (OPEX) per fire season or surveillance campaign.",
+    iaas_p2_title: "Payload Tailoring & Continuous Mission Tuning",
+    iaas_p2_desc: "We configure thermal sensors and onboard algorithms according to your site's critical variables. Strig Systems handles maintenance, battery cycles, and continuous software updates.",
+    iaas_p3_title: "Operational Safety & Regulatory Compliance",
+    iaas_p3_desc: "Flights executed under strict operational safety standards conforming to Chilean DGAC DAN 151 / DAN 91 regulations for segregated test flights on private property.",
 
     // Pilot Callout Bar
     callout_title: "2026-27 Validation Cohort",
@@ -556,9 +731,9 @@ const translations = {
     callout_brief_pdf: "Executive Brief (PDF)",
 
     // FAQ Section
-    faq_tag: "Technical Resolution",
-    faq_title: "Operational Frequently Asked Questions",
-    faq_sub: "Engineering criteria, current operational boundaries, and direct answers for technical and land protection teams.",
+    faq_tag: "FAQ",
+    faq_title: "Technical Criteria, Operational Limits & Capabilities",
+    faq_sub: "Current operational boundaries, flight conditions, and candid answers for technical teams and operations managers.",
     faq_q1: "How does thermal vision perform in dense smoke or fog?",
     faq_a1: "The LWIR (8–14 µm) band penetrates non-ionized optical smoke and suspended particulates that blind visual cameras. However, it is not an all-weather panacea: in dense fog (Mie scattering from water droplets) or weather conditions reducing visibility below VLOS legal minimums, flight operations are suspended under strict safety protocols.",
     faq_q2: "What is the maximum wind envelope of the platform?",
@@ -568,7 +743,9 @@ const translations = {
     faq_q4: "Who is responsible for flight operations and piloting in the field?",
     faq_a4: "During the 2026-27 Validation Program, all flights are conducted and supervised in the field by qualified Strig Systems personnel under Chilean civil aviation regulations (DAN 151 / DAN 91). Partners do not need internal pilots or aircraft liability.",
     faq_q5: "What capabilities and scope does the system NOT have today?",
-    faq_a5: "With complete transparency: the system does not currently operate beyond visual line of sight (BVLOS), does not feature an automated unattended docking base, and does not offer a 15 km commercial radius. We are currently at TRL 3 executing controlled trials on a private pilot site (VLOS ~1 km). These expanded capabilities belong to our platform roadmap and vision.",
+    faq_a5: "With total transparency: today the system does not operate beyond visual line of sight (BVLOS), does not have an unassisted automated docking station, nor does it offer a 15 km commercial service radius. We are currently at TRL 3 conducting controlled trials on private pilot acreage within a bounded range under visual line of sight (VLOS) rules. These capabilities are part of our future roadmap and vision.",
+    faq_q6: "How does recharging and logistics work in remote forest zones?",
+    faq_a6: "In the current validation and early deployment phase, we do not rely on expensive, unproven off-grid robotic boxes. We operate pragmatically leveraging our partners' existing infrastructure: ground brigade bases, helipads, or forward airstrips that already possess power, secure perimeters, and logistics. Ground crew performs rapid battery hot-swaps between consecutive patrol sorties. In the future, operational lessons learned from this field campaign will directly guide the engineering and deployment of automated docking and charging stations (Nest).",
 
     // Alliances & R&D
     alliances_tag: "Ecosystem & Traction",
@@ -578,11 +755,11 @@ const translations = {
     p_udec: "Backed by UdeC",
     p_industry: "Field Validation & Forestry Interviews",
     p_thermal: "Thermal Ecosystem Industry Contrast",
-    collab1_head: "💼 Deep Tech Venture Capital",
+    collab1_head: "Deep Tech Venture Capital",
     collab1_p: "Open discussions with venture funds focused on autonomous robotics, dual-use technologies, climate resilience, and territorial defense.",
-    collab2_head: "🔬 Research Institutes & Academia",
+    collab2_head: "Research Institutes & Academia",
     collab2_p: "Technical cooperation in nighttime computer vision, thermal inference in dense smoke, and high-efficiency aerodynamic models.",
-    collab3_head: "🏛️ Public Agencies & Municipalities",
+    collab3_head: "Public Agencies & Municipalities",
     collab3_p: "B2G operational frameworks designed for wildland-urban interface defense and stabilization of emergency response expenditures.",
 
     // Team
@@ -603,10 +780,21 @@ const translations = {
     cta_btn1: "Join Validation Program",
     cta_btn2: "Inquire for Alliances / Investment",
 
-    // Pilot Modal
+    // Contact Modal & Intent Selector
+    intent_tab_pilot: "Field Validation (2026-27)",
+    intent_tab_briefing: "Technical Briefing (15 min)",
+    intent_tab_alliances: "R&D & Alliances",
     modal_badge: "2026-27 Territorial Validation",
     modal_title: "Join the 2026-27 Validation Program",
     modal_sub: "Submit your organization's details to jointly evaluate territorial feasibility and field validation requirements.",
+    alliances_badge: "Ecosystem & Investment",
+    alliances_modal_title: "R&D Alliances & Strategic Investment",
+    alliances_modal_sub: "Direct contact with the founding team for deep tech venture funds, aerospace research centers, or operational partnerships.",
+    f_alliance_type_label: "Collaboration Type *",
+    opt_alliance_1: "Investment Fund / Venture Capital",
+    opt_alliance_2: "R&D Center / Academic Collaboration",
+    opt_alliance_3: "Public Agency / Municipality / B2G",
+    f_submit_alliances: "Submit Alliance Inquiry",
     f_name_label: "Full Name *",
     f_name_ph: "e.g., Jane Smith",
     f_email_label: "Corporate / Institutional Email *",
@@ -617,6 +805,16 @@ const translations = {
     f_phone_ph: "+56 9 1234 5678",
     f_region_label: "Territorial Region *",
     f_region_default: "Select a region...",
+    f_reg_biobio: "Biobío Region",
+    f_reg_araucania: "La Araucanía Region",
+    f_reg_maule: "Maule Region",
+    f_reg_nuble: "Ñuble Region",
+    f_reg_rios: "Los Ríos Region",
+    f_reg_lagos: "Los Lagos Region",
+    f_reg_valparaiso: "Valparaíso Region",
+    f_reg_metro: "Metropolitan Region (Santiago)",
+    f_reg_other: "Other Chilean Region",
+    f_reg_intl: "International (Outside Chile)",
     f_interest_label: "Area of Interest *",
     f_interest_default: "Select area of interest...",
     opt_interest_1: "Technical Validation Program (Forestry / Industrial)",
@@ -638,7 +836,7 @@ const translations = {
     // Briefing Modal (15 min)
     briefing_badge: "Engineering & Operations",
     briefing_modal_title: "Schedule a 15-Minute Technical Briefing",
-    briefing_modal_sub: "Direct technical session with Tomás Medina (Technical Lead): evaluating terrain orography, tactical radio link margins, and operational integration requirements.",
+    briefing_modal_sub: "Direct technical session with Tomás Medina (Technical Lead): evaluating terrain topography, tactical radio link margins, and operational integration requirements.",
     f_contact_label: "Corporate Email or WhatsApp *",
     f_contact_ph: "email@company.com or +56 9...",
     f_briefing_time_label: "Preferred Time Window *",
@@ -662,7 +860,7 @@ const translations = {
     eb_b2_title: "2. Technological Solution",
     eb_b2_p1: "<strong>VTOL Platform & Noctua Drone:</strong> Initial validation on adapted commercial airframe; 45–60 min design endurance and runway-independent vertical takeoff.",
     eb_b2_p2: "<strong>Onboard Zero-Cloud Edge AI:</strong> NVIDIA Jetson local compute; thermal detection in seconds without internet or cell coverage.",
-    eb_b2_p3: "<strong>Deterrence with Human Authorization:</strong> Luminous strobe and acoustic siren activation always authorized by ground operator (Human-in-the-Loop).",
+    eb_b2_p3: "<strong>Deterrence with Human Authorization:</strong> High-intensity light and acoustic siren activation always authorized by ground operator (Human-in-the-Loop).",
     eb_b3_title: "3. IaaS Operational Impact Model",
     eb_b3_p1: "<strong>Personnel Safety:</strong> Zero unnecessary human exposure in ravines and isolated logging roads during critical night hours.",
     eb_b3_p2: "<strong>Early Detection & Deterrence:</strong> Detection of human activity at 100 m altitude and authorized deterrence before ignition.",
@@ -740,9 +938,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initHeaderScroll();
 
-  // Initialize Pilot & Conversion Modals
-  initPilotModal();
-  initBriefingModal();
+  // Initialize Unified Contact Modal & Executive Brief Modal
+  initContactModal();
   initExecutiveBriefModal();
 
 
@@ -751,6 +948,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize Interactive Tooltips & Source Badges
   initTooltips();
+
+  // Initialize Interactive Tech Spec Drawers
+  initTechSpecDrawers();
+
+  // Initialize Tactical Benchmark Progressive Disclosure Matrix Controls
+  initMatrixViewToggle();
 });
 
 /**
@@ -761,6 +964,11 @@ function setLanguage(lang) {
   document.documentElement.setAttribute('data-lang', lang);
   document.documentElement.setAttribute('lang', lang);
   localStorage.setItem('strig_lang', lang);
+
+  // Update document title
+  document.title = lang === 'en'
+    ? "Strig Systems | Athene — Autonomous Aerial Intelligence"
+    : "Strig Systems | Athene — Inteligencia Aérea Autónoma";
 
   // Update translatable nodes (innerHTML)
   document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -792,31 +1000,161 @@ function setLanguage(lang) {
 }
 
 /**
- * Controller for Pilot Application Modal & Resilient Submission
+ * Controller for Unified Contact Modal with Multi-Intent Switching
+ * Supports Validation, Briefing, and Alliances with dynamic fields
  */
-function initPilotModal() {
-  const modal = document.getElementById('pilot-modal');
+function initContactModal() {
+  const modal = document.getElementById('contact-modal');
   if (!modal) return;
 
-  const openBtns = document.querySelectorAll('[data-open-modal="pilot-modal"]');
+  const openBtns = document.querySelectorAll('[data-open-modal="contact-modal"], [data-open-modal="pilot-modal"], [data-open-modal="briefing-modal"]');
   const closeBtns = modal.querySelectorAll('[data-close-modal]');
-  const form = document.getElementById('pilot-form');
-  const successState = document.getElementById('form-success');
-  const valError = document.getElementById('form-validation-error');
-  const netError = document.getElementById('form-error');
-  const submitBtn = document.getElementById('form-submit-btn');
+  const form = document.getElementById('contact-form');
+  const successState = document.getElementById('contact-success');
+  const valError = document.getElementById('contact-validation-error');
+  const netError = document.getElementById('contact-error');
+  const submitBtn = document.getElementById('contact-submit-btn');
   const btnText = submitBtn ? submitBtn.querySelector('.btn-text') : null;
   const btnSpinner = submitBtn ? submitBtn.querySelector('.btn-spinner') : null;
   const arrowIcon = submitBtn ? submitBtn.querySelector('.arrow-icon') : null;
 
+  const badgeText = document.getElementById('contact-badge-text');
+  const modalTitle = document.getElementById('contact-modal-title');
+  const modalSub = document.getElementById('contact-modal-sub');
+  const intentInput = document.getElementById('form-intent-input');
+  const directNote = document.getElementById('contact-direct-note');
+  const privacyNote = document.getElementById('contact-privacy-note');
+  const successTitle = document.getElementById('contact-success-title');
+  const successDesc = document.getElementById('contact-success-desc');
+
+  const intentPills = modal.querySelectorAll('[data-intent-target]');
+  const pilotFields = modal.querySelectorAll('.intent-field-pilot');
+  const briefingFields = modal.querySelectorAll('.intent-field-briefing');
+  const alliancesFields = modal.querySelectorAll('.intent-field-alliances');
+
+  let currentIntent = 'pilot';
   let lastActiveElement = null;
 
-  function openModal() {
+  function getDict() {
+    const lang = document.documentElement.getAttribute('data-lang') || 'es';
+    return translations[lang] || translations.es;
+  }
+
+  function setIntent(intent) {
+    currentIntent = intent;
+    const dict = getDict();
+
+    intentPills.forEach(pill => {
+      const target = pill.getAttribute('data-intent-target');
+      if (target === intent) {
+        pill.classList.add('active');
+        pill.setAttribute('aria-selected', 'true');
+      } else {
+        pill.classList.remove('active');
+        pill.setAttribute('aria-selected', 'false');
+      }
+    });
+
+    if (valError) valError.style.display = 'none';
+    if (netError) netError.style.display = 'none';
+
+    if (intent === 'briefing') {
+      pilotFields.forEach(el => {
+        el.style.display = 'none';
+        const sel = el.querySelector('select, input');
+        if (sel) sel.removeAttribute('required');
+      });
+      alliancesFields.forEach(el => {
+        el.style.display = 'none';
+        const sel = el.querySelector('select, input');
+        if (sel) sel.removeAttribute('required');
+      });
+      briefingFields.forEach(el => {
+        el.style.display = 'flex';
+        const sel = el.querySelector('select, input');
+        if (sel) sel.setAttribute('required', 'required');
+      });
+
+      if (badgeText) badgeText.innerHTML = dict.briefing_badge || "Ingeniería y operaciones";
+      if (modalTitle) modalTitle.innerHTML = dict.briefing_modal_title || "Agendar briefing técnico de 15 minutos";
+      if (modalSub) modalSub.innerHTML = dict.briefing_modal_sub || "Conversación técnica directa con Tomás Medina (Technical Lead)...";
+      if (btnText) btnText.innerHTML = dict.f_briefing_submit || "Solicitar briefing técnico";
+      if (directNote) directNote.style.display = 'block';
+      if (privacyNote) privacyNote.style.display = 'none';
+      if (intentInput) intentInput.value = "Briefing técnico (15 min)";
+
+    } else if (intent === 'alliances') {
+      pilotFields.forEach(el => {
+        el.style.display = 'none';
+        const sel = el.querySelector('select, input');
+        if (sel) sel.removeAttribute('required');
+      });
+      briefingFields.forEach(el => {
+        el.style.display = 'none';
+        const sel = el.querySelector('select, input');
+        if (sel) sel.removeAttribute('required');
+      });
+      alliancesFields.forEach(el => {
+        el.style.display = 'flex';
+        const sel = el.querySelector('select, input');
+        if (sel) sel.setAttribute('required', 'required');
+      });
+
+      if (badgeText) badgeText.innerHTML = dict.alliances_badge || "Ecosistema & Inversión";
+      if (modalTitle) modalTitle.innerHTML = dict.alliances_modal_title || "Alianzas de I+D e inversión estratégica";
+      if (modalSub) modalSub.innerHTML = dict.alliances_modal_sub || "Contacto directo con el equipo fundador...";
+      if (btnText) btnText.innerHTML = dict.f_submit_alliances || "Enviar propuesta de alianza";
+      if (directNote) directNote.style.display = 'none';
+      if (privacyNote) privacyNote.style.display = 'block';
+      if (intentInput) intentInput.value = "I+D & Alianzas";
+
+    } else {
+      // Default: pilot
+      briefingFields.forEach(el => {
+        el.style.display = 'none';
+        const sel = el.querySelector('select, input');
+        if (sel) sel.removeAttribute('required');
+      });
+      alliancesFields.forEach(el => {
+        el.style.display = 'none';
+        const sel = el.querySelector('select, input');
+        if (sel) sel.removeAttribute('required');
+      });
+      pilotFields.forEach(el => {
+        el.style.display = 'flex';
+        const sel = el.querySelector('select, input');
+        if (sel) sel.setAttribute('required', 'required');
+      });
+
+      if (badgeText) badgeText.innerHTML = dict.modal_badge || "Validación territorial 2026-27";
+      if (modalTitle) modalTitle.innerHTML = dict.modal_title || "Sumarse al programa de validación 2026-27";
+      if (modalSub) modalSub.innerHTML = dict.modal_sub || "Completa los datos de tu entidad...";
+      if (btnText) btnText.innerHTML = dict.f_submit_btn || "Enviar solicitud de validación";
+      if (directNote) directNote.style.display = 'none';
+      if (privacyNote) privacyNote.style.display = 'block';
+      if (intentInput) intentInput.value = "Validación territorial (2026-27)";
+    }
+  }
+
+  intentPills.forEach(pill => {
+    pill.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = pill.getAttribute('data-intent-target');
+      if (target) setIntent(target);
+    });
+  });
+
+  window.addEventListener('strig-lang-change', () => {
+    setIntent(currentIntent);
+  });
+
+  function openModal(intent = 'pilot') {
     lastActiveElement = document.activeElement;
+    setIntent(intent);
     modal.classList.add('active');
     modal.setAttribute('aria-hidden', 'false');
     document.body.classList.add('modal-open');
-    const firstInput = modal.querySelector('#form-name');
+    const firstInput = modal.querySelector('#contact-name');
     if (firstInput) {
       setTimeout(() => firstInput.focus(), 120);
     }
@@ -834,7 +1172,10 @@ function initPilotModal() {
   openBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      openModal();
+      const explicitIntent = btn.getAttribute('data-intent');
+      const modalTarget = btn.getAttribute('data-open-modal');
+      const intent = explicitIntent || (modalTarget === 'briefing-modal' ? 'briefing' : 'pilot');
+      openModal(intent);
     });
   });
 
@@ -871,7 +1212,6 @@ function initPilotModal() {
   });
 
   if (form) {
-    // Clear validation styling upon interaction
     const inputsToWatch = form.querySelectorAll('.form-input, .form-select, .form-textarea');
     inputsToWatch.forEach(input => {
       input.addEventListener('input', () => {
@@ -890,16 +1230,21 @@ function initPilotModal() {
       if (valError) valError.style.display = 'none';
       if (netError) netError.style.display = 'none';
 
-      const name = form.querySelector('#form-name');
-      const email = form.querySelector('#form-email');
-      const company = form.querySelector('#form-company');
-      const phone = form.querySelector('#form-phone');
-      const region = form.querySelector('#form-region');
-      const interest = form.querySelector('#form-interest');
-      const message = form.querySelector('#form-message');
+      const name = form.querySelector('#contact-name');
+      const email = form.querySelector('#contact-email');
+      const company = form.querySelector('#contact-company');
+      const phone = form.querySelector('#contact-phone');
+      const region = form.querySelector('#contact-region');
+      const interest = form.querySelector('#contact-interest');
+      const briefingTime = form.querySelector('#contact-briefing-time');
+      const allianceType = form.querySelector('#contact-alliance-type');
+      const message = form.querySelector('#contact-message');
+      const consent = form.querySelector('#contact-consent');
 
       let isValid = true;
-      [name, email, company, region, interest].forEach(input => {
+
+      // Base fields validation
+      [name, email, company].forEach(input => {
         if (!input || !input.value.trim()) {
           if (input) input.classList.add('input-invalid');
           isValid = false;
@@ -915,8 +1260,33 @@ function initPilotModal() {
         isValid = false;
       }
 
+      // Intent-specific validation
+      if (currentIntent === 'pilot') {
+        [region, interest].forEach(sel => {
+          if (!sel || !sel.value) {
+            if (sel) sel.classList.add('input-invalid');
+            isValid = false;
+          } else {
+            if (sel) sel.classList.remove('input-invalid');
+          }
+        });
+      } else if (currentIntent === 'briefing') {
+        if (!briefingTime || !briefingTime.value) {
+          if (briefingTime) briefingTime.classList.add('input-invalid');
+          isValid = false;
+        } else {
+          if (briefingTime) briefingTime.classList.remove('input-invalid');
+        }
+      } else if (currentIntent === 'alliances') {
+        if (!allianceType || !allianceType.value) {
+          if (allianceType) allianceType.classList.add('input-invalid');
+          isValid = false;
+        } else {
+          if (allianceType) allianceType.classList.remove('input-invalid');
+        }
+      }
+
       // Consent validation
-      const consent = form.querySelector('#form-consent');
       if (consent && !consent.checked) {
         if (consent.parentElement) consent.parentElement.classList.add('input-invalid');
         isValid = false;
@@ -930,24 +1300,33 @@ function initPilotModal() {
         return;
       }
 
-      // Collect data object
+      // Dynamic subject
+      let dynamicSubject = '';
+      if (currentIntent === 'briefing') {
+        dynamicSubject = `Solicitud Briefing Técnico 15 min: ${name.value.trim()} (${company.value.trim()}) - Strig Systems`;
+      } else if (currentIntent === 'alliances') {
+        dynamicSubject = `Propuesta de Alianza / Inversión: ${company.value.trim()} - Strig Systems`;
+      } else {
+        dynamicSubject = `Nueva Postulación Piloto: ${company.value.trim()} (${region ? region.value : ''}) - Strig Systems`;
+      }
+
       const payload = {
+        Intencion: currentIntent.toUpperCase(),
         Nombre: name.value.trim(),
         Email: email.value.trim(),
         Empresa_Organizacion: company.value.trim(),
         Telefono: phone ? phone.value.trim() : '',
-        Region: region.value,
-        Tipo_Interes: interest.value,
+        Region: currentIntent === 'pilot' && region ? region.value : 'N/A',
+        Tipo_Interes: currentIntent === 'pilot' && interest ? interest.value : 'N/A',
+        Horario_Preferente: currentIntent === 'briefing' && briefingTime ? briefingTime.value : 'N/A',
+        Tipo_Colaboracion: currentIntent === 'alliances' && allianceType ? allianceType.value : 'N/A',
         Mensaje: message ? message.value.trim() : '',
-        _subject: `Nueva Postulación Piloto: ${company.value.trim()} (${region.value}) - Strig Systems`,
+        _subject: dynamicSubject,
         _template: 'table',
         _captcha: 'false'
       };
 
-      // Button UI state
-      const currentLang = document.documentElement.getAttribute('data-lang') || 'es';
-      const dict = translations[currentLang] || translations.es;
-
+      const dict = getDict();
       if (submitBtn) submitBtn.disabled = true;
       if (btnSpinner) btnSpinner.style.display = 'inline-block';
       if (arrowIcon) arrowIcon.style.display = 'none';
@@ -965,7 +1344,16 @@ function initPilotModal() {
 
         if (response.ok) {
           form.style.display = 'none';
-          if (successState) successState.style.display = 'flex';
+          if (successState) {
+            successState.style.display = 'flex';
+            if (currentIntent === 'briefing') {
+              if (successTitle) successTitle.innerHTML = dict.briefing_success_title || "¡Solicitud de Briefing Recibida!";
+              if (successDesc) successDesc.innerHTML = dict.briefing_success_desc || "Tomás Medina se contactará contigo para coordinar el enlace de Google Meet.";
+            } else {
+              if (successTitle) successTitle.innerHTML = dict.success_title || "¡Postulación Recibida con Éxito!";
+              if (successDesc) successDesc.innerHTML = dict.success_desc || "Hemos recibido los antecedentes de tu entidad...";
+            }
+          }
           form.reset();
         } else {
           throw new Error(`Server returned HTTP ${response.status}`);
@@ -974,16 +1362,14 @@ function initPilotModal() {
         console.warn('FormSubmit AJAX request failed, showing fallback:', err);
         if (netError) {
           netError.style.display = 'block';
-          // Prepare mailto fallback link with pre-filled content
-          const fallbackSubject = encodeURIComponent(`Postulación Piloto - ${company.value.trim()}`);
+          const fallbackSubject = encodeURIComponent(dynamicSubject);
           const fallbackBody = encodeURIComponent(
+            `Intención: ${currentIntent}\n` +
             `Nombre: ${name.value.trim()}\n` +
             `Email: ${email.value.trim()}\n` +
             `Empresa: ${company.value.trim()}\n` +
             `Teléfono: ${phone ? phone.value.trim() : ''}\n` +
-            `Región: ${region.value}\n` +
-            `Interés: ${interest.value}\n` +
-            `Detalles: ${message ? message.value.trim() : ''}`
+            `Mensaje: ${message ? message.value.trim() : ''}`
           );
           const mailLink = netError.querySelector('.alert-link');
           if (mailLink) {
@@ -994,191 +1380,27 @@ function initPilotModal() {
         if (submitBtn) submitBtn.disabled = false;
         if (btnSpinner) btnSpinner.style.display = 'none';
         if (arrowIcon) arrowIcon.style.display = 'inline-block';
-        if (btnText) btnText.textContent = dict.f_submit_btn || "Enviar Postulación a Piloto";
-      }
-    });
-  }
-}
-
-/**
- * Controller for 15-Minute Technical Briefing Modal
- */
-function initBriefingModal() {
-  const modal = document.getElementById('briefing-modal');
-  if (!modal) return;
-
-  const openBtns = document.querySelectorAll('[data-open-modal="briefing-modal"]');
-  const closeBtns = modal.querySelectorAll('[data-close-modal]');
-  const form = document.getElementById('briefing-form');
-  const successState = document.getElementById('briefing-success');
-  const netError = document.getElementById('briefing-error');
-  const submitBtn = document.getElementById('b-submit-btn');
-  const btnText = submitBtn ? submitBtn.querySelector('.btn-text') : null;
-  const btnSpinner = submitBtn ? submitBtn.querySelector('.btn-spinner') : null;
-  const arrowIcon = submitBtn ? submitBtn.querySelector('.arrow-icon') : null;
-
-  let lastActiveElement = null;
-
-  function openModal() {
-    lastActiveElement = document.activeElement;
-    modal.classList.add('active');
-    modal.setAttribute('aria-hidden', 'false');
-    document.body.classList.add('modal-open');
-    const firstInput = modal.querySelector('#b-name');
-    if (firstInput) {
-      setTimeout(() => firstInput.focus(), 120);
-    }
-  }
-
-  function closeModal() {
-    modal.classList.remove('active');
-    modal.setAttribute('aria-hidden', 'true');
-    document.body.classList.remove('modal-open');
-    if (lastActiveElement && typeof lastActiveElement.focus === 'function') {
-      lastActiveElement.focus();
-    }
-  }
-
-  openBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      openModal();
-    });
-  });
-
-  closeBtns.forEach(btn => {
-    btn.addEventListener('click', closeModal);
-  });
-
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      closeModal();
-    }
-  });
-
-  modal.addEventListener('keydown', (e) => {
-    if (e.key === 'Tab') {
-      const focusables = modal.querySelectorAll('button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])');
-      if (!focusables.length) return;
-      const first = focusables[0];
-      const last = focusables[focusables.length - 1];
-      if (e.shiftKey && document.activeElement === first) {
-        e.preventDefault();
-        last.focus();
-      } else if (!e.shiftKey && document.activeElement === last) {
-        e.preventDefault();
-        first.focus();
-      }
-    }
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('active')) {
-      closeModal();
-    }
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('active')) {
-      closeModal();
-    }
-  });
-
-  if (form) {
-    const inputsToWatch = form.querySelectorAll('.form-input, .form-select');
-    inputsToWatch.forEach(input => {
-      input.addEventListener('input', () => {
-        input.classList.remove('input-invalid');
-        if (netError) netError.style.display = 'none';
-      });
-      input.addEventListener('change', () => {
-        input.classList.remove('input-invalid');
-        if (netError) netError.style.display = 'none';
-      });
-    });
-
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      if (netError) netError.style.display = 'none';
-
-      const name = form.querySelector('#b-name');
-      const contact = form.querySelector('#b-contact');
-      const time = form.querySelector('#b-time');
-
-      let isValid = true;
-      if (!name || !name.value.trim()) {
-        if (name) name.classList.add('input-invalid');
-        isValid = false;
-      }
-      if (!contact || !contact.value.trim()) {
-        if (contact) contact.classList.add('input-invalid');
-        isValid = false;
-      }
-
-      const consent = form.querySelector('#b-consent');
-      if (consent && !consent.checked) {
-        if (consent.parentElement) consent.parentElement.classList.add('input-invalid');
-        isValid = false;
-      }
-
-      if (!isValid) return;
-
-      const payload = {
-        Nombre: name.value.trim(),
-        Contacto: contact.value.trim(),
-        Horario_Preferente: time ? time.value : 'Mañana (09:00 - 13:00 CLT)',
-        _subject: `Solicitud Briefing Técnico 15 min - ${name.value.trim()}`,
-        _template: 'table',
-        _captcha: 'false'
-      };
-
-      const currentLang = document.documentElement.getAttribute('data-lang') || 'es';
-      const dict = translations[currentLang] || translations.es;
-
-      if (submitBtn) submitBtn.disabled = true;
-      if (btnSpinner) btnSpinner.style.display = 'inline-block';
-      if (arrowIcon) arrowIcon.style.display = 'none';
-      if (btnText) btnText.textContent = dict.f_submitting || "Enviando...";
-
-      try {
-        const response = await fetch('https://formsubmit.co/ajax/tmedina@strigsystems.tech', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          },
-          body: JSON.stringify(payload)
-        });
-
-        if (response.ok) {
-          form.style.display = 'none';
-          if (successState) successState.style.display = 'flex';
-          form.reset();
-        } else {
-          throw new Error(`Server returned HTTP ${response.status}`);
-        }
-      } catch (err) {
-        console.warn('Briefing FormSubmit request failed:', err);
-        if (netError) {
-          netError.style.display = 'block';
-          const fallbackSub = encodeURIComponent(`Solicitud Briefing Técnico - ${name.value.trim()}`);
-          const fallbackBody = encodeURIComponent(
-            `Nombre: ${name.value.trim()}\nContacto: ${contact.value.trim()}\nHorario Preferente: ${time ? time.value : ''}`
-          );
-          const mailLink = netError.querySelector('.alert-link');
-          if (mailLink) {
-            mailLink.href = `mailto:tmedina@strigsystems.tech?subject=${fallbackSub}&body=${fallbackBody}`;
+        if (btnText) {
+          if (currentIntent === 'briefing') {
+            btnText.textContent = dict.f_briefing_submit || "Solicitar Briefing Técnico";
+          } else if (currentIntent === 'alliances') {
+            btnText.textContent = dict.f_submit_alliances || "Enviar Propuesta de Alianza";
+          } else {
+            btnText.textContent = dict.f_submit_btn || "Enviar Solicitud de Validación";
           }
         }
-      } finally {
-        if (submitBtn) submitBtn.disabled = false;
-        if (btnSpinner) btnSpinner.style.display = 'none';
-        if (arrowIcon) arrowIcon.style.display = 'inline-block';
-        if (btnText) btnText.textContent = dict.f_briefing_submit || "Solicitar Briefing Técnico";
       }
     });
   }
 }
+
+// Backward-compatibility alias
+function initPilotModal() { /* Handled by initContactModal */ }
+
+/**
+ * Controller for 15-Minute Technical Briefing Modal (Handled by initContactModal)
+ */
+function initBriefingModal() { /* Handled by initContactModal */ }
 
 /**
  * Controller for Executive Brief One-Pager Whitepaper Modal & Print
@@ -1423,22 +1645,22 @@ function initFaq() {
  * Controller for interactive tooltips and source badges (click/tap toggling & click-outside dismissal)
  */
 function initTooltips() {
-  const triggers = document.querySelectorAll('.source-badge-wrap, .metric-card, .metric-info-trigger');
+  const triggers = document.querySelectorAll('.source-badge-wrap, .metric-card, .metric-info-trigger, .hud-stat-trigger');
   if (!triggers.length) return;
 
   triggers.forEach(trigger => {
     // Handle click/tap for mobile & touchscreens
     trigger.addEventListener('click', (e) => {
       // Don't toggle off if clicking inside the tooltip popup text itself
-      if (e.target.closest('.metric-tooltip, .source-tooltip')) return;
+      if (e.target.closest('.metric-tooltip, .source-tooltip, .hud-micro-tip')) return;
 
       e.stopPropagation();
-      const card = trigger.closest('.metric-card') || trigger;
+      const card = trigger.closest('.metric-card, .hud-stat-trigger') || trigger;
       const infoBtn = card.querySelector ? card.querySelector('.metric-info-trigger') : null;
       const isActive = card.classList.contains('active');
 
       // Close all other open tooltips
-      document.querySelectorAll('.source-badge-wrap, .metric-card, .metric-info-trigger').forEach(t => {
+      document.querySelectorAll('.source-badge-wrap, .metric-card, .metric-info-trigger, .hud-stat-trigger').forEach(t => {
         if (t !== card && t !== infoBtn) {
           t.classList.remove('active');
           if (t.setAttribute) t.setAttribute('aria-expanded', 'false');
@@ -1448,9 +1670,11 @@ function initTooltips() {
       if (isActive) {
         card.classList.remove('active');
         if (infoBtn) infoBtn.setAttribute('aria-expanded', 'false');
+        if (card.setAttribute) card.setAttribute('aria-expanded', 'false');
       } else {
         card.classList.add('active');
         if (infoBtn) infoBtn.setAttribute('aria-expanded', 'true');
+        if (card.setAttribute) card.setAttribute('aria-expanded', 'true');
       }
     });
 
@@ -1460,13 +1684,14 @@ function initTooltips() {
         e.preventDefault();
         trigger.click();
       } else if (e.key === 'Escape') {
-        const card = trigger.closest('.metric-card') || trigger;
+        const card = trigger.closest('.metric-card, .hud-stat-trigger') || trigger;
         const infoBtn = card.querySelector ? card.querySelector('.metric-info-trigger') : null;
         card.classList.remove('active');
         if (infoBtn) {
           infoBtn.setAttribute('aria-expanded', 'false');
           infoBtn.blur();
         }
+        if (card.setAttribute) card.setAttribute('aria-expanded', 'false');
         card.blur();
       }
     });
@@ -1474,7 +1699,7 @@ function initTooltips() {
 
   // Close when clicking anywhere outside
   document.addEventListener('click', (e) => {
-    document.querySelectorAll('.source-badge-wrap, .metric-card, .metric-info-trigger').forEach(trigger => {
+    document.querySelectorAll('.source-badge-wrap, .metric-card, .metric-info-trigger, .hud-stat-trigger').forEach(trigger => {
       if (!trigger.contains(e.target)) {
         trigger.classList.remove('active');
         if (trigger.setAttribute) trigger.setAttribute('aria-expanded', 'false');
@@ -1485,10 +1710,73 @@ function initTooltips() {
   // Close on Escape key globally
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
-      document.querySelectorAll('.source-badge-wrap, .metric-card, .metric-info-trigger').forEach(trigger => {
+      document.querySelectorAll('.source-badge-wrap, .metric-card, .metric-info-trigger, .hud-stat-trigger').forEach(trigger => {
         trigger.classList.remove('active');
         if (trigger.setAttribute) trigger.setAttribute('aria-expanded', 'false');
       });
     }
+  });
+}
+
+/**
+ * Controller for interactive technology & flow specification drawers (progressive disclosure)
+ */
+function initTechSpecDrawers() {
+  const toggles = document.querySelectorAll('.tech-spec-toggle, .flow-spec-toggle');
+  if (!toggles.length) return;
+
+  toggles.forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const card = toggle.closest('.tech-card, .flow-step-card');
+      if (!card) return;
+
+      const drawer = card.querySelector('.tech-spec-drawer, .flow-spec-drawer');
+      const isExpanded = card.classList.contains('expanded');
+
+      if (isExpanded) {
+        card.classList.remove('expanded');
+        toggle.setAttribute('aria-expanded', 'false');
+        if (drawer) drawer.setAttribute('aria-hidden', 'true');
+      } else {
+        card.classList.add('expanded');
+        toggle.setAttribute('aria-expanded', 'true');
+        if (drawer) drawer.setAttribute('aria-hidden', 'false');
+      }
+    });
+
+    // Keyboard accessibility (Enter / Space)
+    toggle.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggle.click();
+      }
+    });
+  });
+}
+
+/**
+ * Controller for Tactical Benchmark Matrix progressive disclosure view modes (Compact vs Detailed)
+ */
+function initMatrixViewToggle() {
+  const btnCompact = document.getElementById('btnMatrixCompact');
+  const btnDetailed = document.getElementById('btnMatrixDetailed');
+  const wrapper = document.querySelector('.matrix-table-wrapper');
+  if (!btnCompact || !btnDetailed || !wrapper) return;
+
+  btnCompact.addEventListener('click', () => {
+    btnCompact.classList.add('active');
+    btnCompact.setAttribute('aria-pressed', 'true');
+    btnDetailed.classList.remove('active');
+    btnDetailed.setAttribute('aria-pressed', 'false');
+    wrapper.classList.remove('detailed-mode');
+  });
+
+  btnDetailed.addEventListener('click', () => {
+    btnDetailed.classList.add('active');
+    btnDetailed.setAttribute('aria-pressed', 'true');
+    btnCompact.classList.remove('active');
+    btnCompact.setAttribute('aria-pressed', 'false');
+    wrapper.classList.add('detailed-mode');
   });
 }

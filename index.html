@@ -11,10 +11,19 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Strig Systems">
   <meta property="og:url" content="https://strigsystems.tech/">
   <meta property="og:title" content="Strig Systems | Athene — Inteligencia Aérea Autónoma">
   <meta property="og:description" content="Vigilancia aérea nocturna con Edge AI para detección de actividad humana y disuasión temprana de incendios forestales.">
   <meta property="og:image" content="https://strigsystems.tech/assets/img/tech/vtol_payload.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Strig Systems | Athene — Inteligencia Aérea Autónoma">
+  <meta name="twitter:description" content="Vigilancia aérea nocturna con Edge AI para detección de actividad humana y disuasión temprana de incendios forestales.">
+  <meta name="twitter:image" content="https://strigsystems.tech/assets/img/tech/vtol_payload.png">
 
   <!-- Favicon SVG -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>">
@@ -139,7 +148,7 @@
           <span class="lang-divider">/</span>
           <span class="lang-option" data-lang-val="en">EN</span>
         </button>
-        <button type="button" class="btn-primary btn-header" data-open-modal="pilot-modal" data-i18n="nav_cta">Sumarse a Validación</button>
+        <button type="button" class="btn-primary btn-header" data-open-modal="contact-modal" data-intent="pilot" data-i18n="nav_cta">Sumarse a Validación</button>
         <!-- Mobile Menu Toggle Button -->
         <button type="button" id="mobile-toggle" class="mobile-toggle-btn" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobile-drawer">
           <span class="hamburger-bar"></span>
@@ -163,7 +172,7 @@
         <a href="#faq" class="mobile-nav-item" data-i18n="nav_faq">FAQ</a>
       </nav>
       <div class="mobile-drawer-cta">
-        <button type="button" class="btn-primary btn-mobile-cta" data-open-modal="pilot-modal" data-i18n="nav_cta">Sumarse a Validación</button>
+        <button type="button" class="btn-primary btn-mobile-cta" data-open-modal="contact-modal" data-intent="pilot" data-i18n="nav_cta">Sumarse a Validación</button>
       </div>
     </div>
   </header>
@@ -175,12 +184,12 @@
         <!-- TRL 3 Engineering Status Strip -->
         <div class="hero-status-strip">
           <span class="status-pulse-dot"></span>
-          <span data-i18n="hero_status">Prototipo en desarrollo • TRL 3 • Demo técnica Gearbox Ene 2027</span>
+          <span data-i18n="hero_status">Prototipo en desarrollo • TRL 3 • Demo técnica Gearbox ene 2027</span>
         </div>
 
         <div class="badge-tag">
           <span class="badge-dot"></span>
-          <span data-i18n="hero_badge">Proyecto Semilla Inicia CORFO • UdeC • Combate de Incendios en Primera Línea</span>
+          <span data-i18n="hero_badge">Proyecto Semilla Inicia CORFO • UdeC • Combate de incendios en primera línea</span>
         </div>
 
         <h1 class="hero-title">
@@ -189,36 +198,45 @@
         </h1>
 
         <p class="hero-subtitle" data-i18n="hero_sub">
-          Plataforma de vigilancia territorial autónoma con drones e inferencia Edge AI a bordo. Diseñada para cubrir la brecha nocturna detectando actividad humana no autorizada y disuadiéndola mediante estrobo y sirena con autorización del operador humano, antes del inicio del fuego.
+          Plataforma de inteligencia aérea para la brecha nocturna de incendios mediante aeronaves VTOL e inferencia térmica Edge AI a bordo. Detectamos precursores y actividad humana no autorizada antes de la ignición, reduciendo la exposición en terreno y optimizando la respuesta al amanecer.
         </p>
 
         <div class="hero-actions">
-          <button type="button" class="btn-primary" data-open-modal="pilot-modal">
-            <span data-i18n="hero_cta_primary">Sumarse al Programa de Validación 2026-27</span>
+          <button type="button" class="btn-primary" data-open-modal="contact-modal" data-intent="pilot">
+            <span data-i18n="hero_cta_primary">Sumarse al programa de validación 2026-27</span>
             <span class="arrow-icon">→</span>
           </button>
           <a href="#roadmap" class="btn-ghost">
-            <span data-i18n="hero_cta_secondary">Ver Hoja de Ruta & Capacidades</span>
+            <span data-i18n="hero_cta_secondary">Ver hoja de ruta y capacidades</span>
           </a>
         </div>
 
-        <!-- Metrics Grid (Compact & Honest Taxonomy with Hover Explanations) -->
+        <!-- Metrics Grid (Compact & Honest Taxonomy with Progressive Disclosure Micro-Fichas) -->
         <div class="metrics-grid">
           <!-- Card 1: Noche -->
           <div class="metric-card glass-panel" tabindex="0" role="region" aria-label="Métrica Noche">
             <button type="button" class="metric-info-trigger" aria-label="Más información sobre métrica Noche" aria-expanded="false">
               <span aria-hidden="true">ℹ</span>
             </button>
-            <div class="metric-value">Noche</div>
-            <span class="tax-badge tax-badge-problem" data-i18n="m1_tax">[PROBLEMA]</span>
-            <div class="metric-title" data-i18n="m1_title">Brecha Nocturna</div>
-            <div class="metric-sub" data-i18n="m1_sub">Vigilancia aérea mientras la aviación tripulada está en tierra</div>
+            <div class="metric-value" data-i18n="m1_metric_val">Noche</div>
+            <span class="tax-badge tax-badge-problem" data-i18n="m1_tax">[ORIGEN DEL PROBLEMA]</span>
+            <div class="metric-title" data-i18n="m1_title">Brecha nocturna</div>
+            <div class="metric-sub" data-i18n="m1_sub">Vigilancia aérea en la ventana donde la aviación tripulada está en tierra</div>
             <div class="metric-tooltip" role="tooltip">
-              <div class="metric-tooltip-title">
-                <span class="metric-tooltip-badge" data-i18n="m1_tax">[PROBLEMA]</span>
-                <span data-i18n="m1_tip_title">Brecha Nocturna · ¿Por qué aquí?</span>
+              <div class="metric-tooltip-header">
+                <span class="metric-tooltip-badge" data-i18n="m1_tax">[ORIGEN DEL PROBLEMA]</span>
+                <span class="metric-tooltip-title" data-i18n="m1_tip_title">Brecha nocturna y riesgo humano</span>
               </div>
-              <p class="metric-tooltip-body" data-i18n="m1_tooltip">Es el origen del problema: por normativa DGAC y riesgo de relieve (CFIT), aviones cisterna y helicópteros quedan en tierra al atardecer. Athene vigila esa ventana ciega donde el 99,7% de los incendios se inician por causa humana.</p>
+              <div class="metric-tooltip-grid">
+                <div class="metric-tooltip-row">
+                  <span class="tooltip-label" data-i18n="lbl_today">HOY:</span>
+                  <span class="tooltip-val" data-i18n="m1_val_today">Monitoreo térmico aéreo en la ventana crítica nocturna mientras brigadas y avionetas están inactivas por riesgo de relieve (CFIT).</span>
+                </div>
+                <div class="metric-tooltip-row">
+                  <span class="tooltip-label" data-i18n="lbl_context">EVIDENCIA:</span>
+                  <span class="tooltip-val" data-i18n="m1_val_context">El 99,7% de los incendios forestales en Chile se originan por causa humana intencional o accidental (CONAF, 2003-2023).</span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -228,15 +246,28 @@
               <span aria-hidden="true">ℹ</span>
             </button>
             <div class="metric-value">15 km</div>
-            <span class="tax-badge tax-badge-goal" data-i18n="m2_tax">Objetivo de Producto</span>
-            <div class="metric-title" data-i18n="m2_title">Radio de Misión</div>
-            <div class="metric-sub" data-i18n="m2_sub">Meta de diseño para 50.000 ha • Hoy: 1 km en predio experimental (VLOS)</div>
+            <span class="tax-badge tax-badge-goal" data-i18n="m2_tax">Objetivo de producto</span>
+            <div class="metric-title" data-i18n="m2_title">Radio de misión proyectado</div>
+            <div class="metric-sub" data-i18n="m2_sub">Meta de diseño para 50.000 ha (Noctua) • Hoy: Rango acotado en predio piloto (VLOS)</div>
             <div class="metric-tooltip" role="tooltip">
-              <div class="metric-tooltip-title">
+              <div class="metric-tooltip-header">
                 <span class="metric-tooltip-badge" data-i18n="m2_tax">Objetivo de Producto</span>
-                <span data-i18n="m2_tip_title">Radio 15 km · ¿Por qué aquí?</span>
+                <span class="metric-tooltip-title" data-i18n="m2_tip_title">Radio de cobertura territorial</span>
               </div>
-              <p class="metric-tooltip-body" data-i18n="m2_tooltip">Es nuestro objetivo de producto a escala territorial: alcanzar 15 km de radio bajo certificación BVLOS para proteger clústeres de 50.000 ha. En la fase actual de validación operamos en predios piloto a 1 km en línea de vista (VLOS).</p>
+              <div class="metric-tooltip-grid">
+                <div class="metric-tooltip-row">
+                  <span class="tooltip-label" data-i18n="lbl_today">HOY (MVP 2026-27):</span>
+                  <span class="tooltip-val" data-i18n="m2_val_today">Operación en rango acotado en línea de vista visual (VLOS) sobre predio piloto privado con operador en sitio.</span>
+                </div>
+                <div class="metric-tooltip-row">
+                  <span class="tooltip-label" data-i18n="lbl_goal">OBJETIVO:</span>
+                  <span class="tooltip-val" data-i18n="m2_val_goal">Radio de 15 km (BVLOS). Aeronave VTOL con capacidad aerodinámica de 45–60 min de crucero para proteger clústeres de 50.000 ha.</span>
+                </div>
+                <div class="metric-tooltip-row">
+                  <span class="tooltip-label" data-i18n="lbl_framework">CONDICIÓN:</span>
+                  <span class="tooltip-val" data-i18n="m2_val_framework">Escalamiento sujeto a certificación de riesgo operacional SORA (JARUS) y segregación aérea DGAC.</span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -245,16 +276,29 @@
             <button type="button" class="metric-info-trigger" aria-label="Más información sobre métrica Segundos" aria-expanded="false">
               <span aria-hidden="true">ℹ</span>
             </button>
-            <div class="metric-value">Segundos</div>
-            <span class="tax-badge tax-badge-goal" data-i18n="m3_tax">Meta MVP: &lt;10% Falsas Alarmas</span>
-            <div class="metric-title" data-i18n="m3_title">Detección Térmica</div>
-            <div class="metric-sub" data-i18n="m3_sub">Inferencia local a bordo • Alerta a operador en minutos (meta ≤ 3 min)</div>
+            <div class="metric-value" data-i18n="m3_metric_val">Segundos</div>
+            <span class="tax-badge tax-badge-goal" data-i18n="m3_tax">Meta: &lt;10% falsas alarmas</span>
+            <div class="metric-title" data-i18n="m3_title">Detección térmica</div>
+            <div class="metric-sub" data-i18n="m3_sub">Inferencia Edge AI local a bordo • Alerta consolidada a estación en minutos (meta ≤ 3 min)</div>
             <div class="metric-tooltip" role="tooltip">
-              <div class="metric-tooltip-title">
-                <span class="metric-tooltip-badge" data-i18n="m3_tax">Meta MVP: &lt;10% Falsas Alarmas</span>
-                <span data-i18n="m3_tip_title">Detección Térmica · ¿Por qué aquí?</span>
+              <div class="metric-tooltip-header">
+                <span class="metric-tooltip-badge" data-i18n="m3_tax">Meta: &lt;10% Falsas Alarmas</span>
+                <span class="metric-tooltip-title" data-i18n="m3_tip_title">Inferencia térmica local Edge AI</span>
               </div>
-              <p class="metric-tooltip-body" data-i18n="m3_tooltip">Frente a la latencia satelital (30 a 90 minutos) y la lentitud terrestre, la inferencia Edge AI a bordo detecta precursores térmicos en segundos y despacha la alerta a la estación en minutos (meta de diseño ≤ 3 min con &lt;10% falsas alarmas).</p>
+              <div class="metric-tooltip-grid">
+                <div class="metric-tooltip-row">
+                  <span class="tooltip-label" data-i18n="lbl_today">HOY (MVP 2026-27):</span>
+                  <span class="tooltip-val" data-i18n="m3_val_today">Detección de fuentes térmicas y personas en microsegundos a bordo (NVIDIA Jetson) y alerta consolidada a estación en minutos (meta ≤ 3 min).</span>
+                </div>
+                <div class="metric-tooltip-row">
+                  <span class="tooltip-label" data-i18n="lbl_goal">OBJETIVO:</span>
+                  <span class="tooltip-val" data-i18n="m3_val_goal">Despacho de coordenadas verificadas con tasa de falsas alarmas &lt; 5% (criterio de aceptación técnica MVP &lt; 10%).</span>
+                </div>
+                <div class="metric-tooltip-row">
+                  <span class="tooltip-label" data-i18n="lbl_framework">VENTAJA:</span>
+                  <span class="tooltip-val" data-i18n="m3_val_framework">Arquitectura Zero-Cloud: no requiere internet ni nube para detectar en tiempo real.</span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -264,15 +308,24 @@
               <span aria-hidden="true">ℹ</span>
             </button>
             <div class="metric-value">HITL</div>
-            <span class="tax-badge tax-badge-today" data-i18n="m4_tax">Diferenciador Clave</span>
-            <div class="metric-title" data-i18n="m4_title">Disuasión Autorizada</div>
-            <div class="metric-sub" data-i18n="m4_sub">Estrobo de alta intensidad y sirena activados por el operador ante actividad humana</div>
+            <span class="tax-badge tax-badge-today" data-i18n="m4_tax">Diferenciador clave</span>
+            <div class="metric-title" data-i18n="m4_title">Disuasión autorizada</div>
+            <div class="metric-sub" data-i18n="m4_sub">Foco de alta intensidad y sirena acústica activados exclusivamente con autorización del operador</div>
             <div class="metric-tooltip" role="tooltip">
-              <div class="metric-tooltip-title">
+              <div class="metric-tooltip-header">
                 <span class="metric-tooltip-badge" data-i18n="m4_tax">Diferenciador Clave</span>
-                <span data-i18n="m4_tip_title">Human-in-the-Loop · ¿Por qué aquí?</span>
+                <span class="metric-tooltip-title" data-i18n="m4_tip_title">Human-in-the-Loop · Protocolo de seguridad</span>
               </div>
-              <p class="metric-tooltip-body" data-i18n="m4_tooltip">Seguridad y criterio humano: la IA a bordo detecta precursores y presencia humana, pero el estrobo y la sirena solo se activan con autorización expresa del operador en tierra, protegiendo a las brigadas de emboscadas o exposición a ciegas.</p>
+              <div class="metric-tooltip-grid">
+                <div class="metric-tooltip-row">
+                  <span class="tooltip-label" data-i18n="lbl_today">DOCTRINA:</span>
+                  <span class="tooltip-val" data-i18n="m4_val_today">Cero disuasión autónoma. El sistema clasifica el precursor pero la activación de la baliza física requiere la orden expresa del operador.</span>
+                </div>
+                <div class="metric-tooltip-row">
+                  <span class="tooltip-label" data-i18n="lbl_framework">SEGURIDAD:</span>
+                  <span class="tooltip-val" data-i18n="m4_val_framework">Control de seguridad estricto que protege a las brigadas de emboscadas o desorientación en terreno profundo.</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -283,7 +336,7 @@
     <section class="section section-border" id="problema">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag" data-i18n="prob_tag">El Diagnóstico Territorial</span>
+          <span class="section-tag" data-i18n="prob_tag">El diagnóstico territorial</span>
           <h2 class="section-title">
             <span data-i18n="prob_title">La brecha nocturna en la protección forestal</span>
             <span class="source-badge-wrap" tabindex="0" role="button" aria-label="Ver fuente oficial de la estadística">
@@ -301,7 +354,7 @@
             <div class="avatar-icon-circle">
               <img src="assets/img/tech/monitoring_center.png" alt="Centrales de monitoreo" class="circle-thumb" loading="lazy">
             </div>
-            <h3 class="card-heading" data-i18n="p1_head">Centrales de Operaciones</h3>
+            <h3 class="card-heading" data-i18n="p1_head">Centrales de operaciones</h3>
             <p class="card-desc" data-i18n="p1_desc">Incertidumbre constante. Cuando los satélites reportan calor, el foco ya ha alcanzado escala incontrolable.</p>
             <span class="card-tag" data-i18n="p1_tag">Información fragmentada</span>
           </div>
@@ -310,16 +363,16 @@
             <div class="avatar-icon-circle">
               <img src="assets/img/tech/forest_landowners.png" alt="Dueños de tierras" class="circle-thumb" loading="lazy">
             </div>
-            <h3 class="card-heading" data-i18n="p2_head">Empresas & Propietarios</h3>
+            <h3 class="card-heading" data-i18n="p2_head">Empresas y propietarios</h3>
             <p class="card-desc" data-i18n="p2_desc">Riesgo permanente de pérdidas patrimoniales catastróficas en madera, biomasa e infraestructura productiva.</p>
-            <span class="card-tag" data-i18n="p2_tag">Pérdidas millonarias</span>
+            <span class="card-tag" data-i18n="p2_tag">Daño patrimonial crítico</span>
           </div>
 
           <div class="problem-card glass-panel highlight-alert">
             <div class="avatar-icon-circle alert">
               <img src="assets/img/tech/firefighters_danger.png" alt="Brigadistas en peligro" class="circle-thumb" loading="lazy">
             </div>
-            <h3 class="card-heading" data-i18n="p3_head">Brigadistas en Terreno</h3>
+            <h3 class="card-heading" data-i18n="p3_head">Brigadistas en terreno</h3>
             <p class="card-desc" data-i18n="p3_desc">Exposición extrema a emboscadas, cortes de camino o accidentes al ingresar de noche a ciegas por caminos de ripio, con menos del 12% de visibilidad efectiva fuera de la huella.</p>
             <span class="card-tag alert" data-i18n="p3_tag">Riesgo vital innecesario</span>
           </div>
@@ -329,7 +382,7 @@
         <div class="quote-strip glass-panel">
           <span class="quote-symbol">“</span>
           <p class="quote-text" data-i18n="quote_text">
-            Satélites sufren latencia orbital; torres fijas tienen puntos ciegos orográficos; las patrullas en camioneta 4x4 solo ven lo que tocan sus focos en el camino; y los aviones cisterna quedan en tierra al atardecer por seguridad. Athene detecta actividad humana no autorizada visible desde 100 m de altura para disuadir antes de la ignición, dejando el fuego incipiente como objetivo secundario.
+            Los satélites sufren retrasos de órbita, las torres fijas tienen puntos ciegos tras los cerros y quebradas, y las patrullas en camioneta solo ven lo que alcanzan sus focos en el camino. Al atardecer, los aviones cisterna quedan en tierra por seguridad. <span class="hl-cyan">Athene</span> cambia esta realidad: patrulla el cielo nocturno y <span class="hl-green">detecta la presencia humana antes de que se inicie el fuego</span>, protegiendo a las brigadas y cortando la amenaza en su origen.
           </p>
         </div>
       </div>
@@ -339,71 +392,78 @@
     <section class="section section-border" id="comparativa">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag" data-i18n="comp_tag">Benchmark Táctico</span>
-          <h2 class="section-title" data-i18n="comp_title">Por Qué las Soluciones Tradicionales Fallan de Noche</h2>
+          <span class="section-tag" data-i18n="comp_tag">Benchmark táctico</span>
+          <h2 class="section-title" data-i18n="comp_title">Por qué las soluciones tradicionales fallan de noche</h2>
           <p class="section-subtitle" data-i18n="comp_sub">
             Análisis técnico comparativo entre satélites de órbita baja, torres térmicas fijas, vigilancia tripulada convencional y la plataforma autónoma Athene.
           </p>
         </div>
 
         <!-- Responsive Matrix Container -->
+        <!-- Responsive Matrix Container -->
         <div class="matrix-table-wrapper glass-panel">
-          <div class="matrix-scroll-hint" data-i18n="matrix_scroll_hint">⇄ Desliza horizontalmente para comparar tecnologías</div>
+          <div class="matrix-controls-bar">
+            <div class="matrix-scroll-hint" data-i18n="matrix_scroll_hint">⇄ Desliza horizontalmente para comparar tecnologías</div>
+            <div class="matrix-view-toggle" role="group" aria-label="Nivel de detalle de la comparativa">
+              <button type="button" class="btn-matrix-view active" id="btnMatrixCompact" data-matrix-mode="compact" data-i18n="btn_matrix_compact">Resumen táctico</button>
+              <button type="button" class="btn-matrix-view" id="btnMatrixDetailed" data-matrix-mode="detailed" data-i18n="btn_matrix_detailed">+ Análisis detallado</button>
+            </div>
+          </div>
           <table class="benchmark-table">
             <thead>
               <tr>
-                <th class="th-dim" data-i18n="th_dim">Dimensión Operativa</th>
+                <th class="th-dim" data-i18n="th_dim">Dimensión operativa</th>
                 <th class="th-tech" data-i18n="th_sat">Satélites LEO<br><span class="th-sub">FIRMS / OroraTech</span></th>
-                <th class="th-tech" data-i18n="th_tower">Torres Térmicas Fijas<br><span class="th-sub">Mástiles Ópticos</span></th>
-                <th class="th-tech" data-i18n="th_drone">Vigilancia Tripulada<br><span class="th-sub">Avionetas Diurnas + Cuadrillas/Drones</span></th>
+                <th class="th-tech" data-i18n="th_tower">Torres térmicas fijas<br><span class="th-sub">Mástiles ópticos</span></th>
+                <th class="th-tech" data-i18n="th_drone">Vigilancia tripulada<br><span class="th-sub">Avionetas diurnas + cuadrillas/drones</span></th>
                 <th class="th-tech th-highlight">
-                  <div class="winner-badge" data-i18n="strig_badge">Nuestra Propuesta</div>
-                  <div data-i18n="th_strig">Strig Systems<br><span class="th-sub">Athene (Plataforma + Edge AI)</span></div>
+                  <div class="winner-badge" data-i18n="strig_badge">Nuestra propuesta</div>
+                  <div data-i18n="th_strig">Strig Systems<br><span class="th-sub">Athene (plataforma VTOL + Edge AI)</span></div>
                 </th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="td-dim" data-i18n="r1_dim">Patrullaje Nocturno Continuo</td>
-                <td class="td-tech" data-i18n="r1_sat"><span class="badge-negative">Ventana ciega nocturna:</span> Pasos orbitales discretos (1 a 4 h). Estándar macrocontinental de día, sin cobertura continua de noche.</td>
-                <td class="td-tech" data-i18n="r1_tower"><strong>Cobertura continua pero estática:</strong> Alta confiabilidad 24/7, pero estrictamente limitada a la línea de vista directa (LOS) de su cuenca visible.</td>
-                <td class="td-tech" data-i18n="r1_drone"><span class="badge-negative">Inoperante de noche:</span> Aviones y helicópteros en tierra por norma DGAC/VFR nocturno. Camionetas con fatiga y &lt;12% de cobertura.</td>
-                <td class="td-tech td-highlight" data-i18n="r1_strig"><span class="badge-positive">Patrullaje aéreo nocturno:</span> Operación en predio piloto con operador calificado (VLOS). <span class="tax-badge tax-badge-vision">Visión: Estación Nest Autónoma</span></td>
+                <td class="td-dim" data-i18n="r1_dim">Patrullaje nocturno continuo</td>
+                <td class="td-tech" data-i18n="r1_sat"><div class="matrix-cell-content"><div class="cell-verdict"><span class="badge-negative">Ventana ciega (1–4 h):</span> Pasos orbitales no continuos.</div><div class="cell-detail">Estándar macrocontinental de día, sin cobertura continua durante los turnos nocturnos en faena.</div></div></td>
+                <td class="td-tech" data-i18n="r1_tower"><div class="matrix-cell-content"><div class="cell-verdict"><strong>Continua pero estática:</strong> Limitada a línea visual directa.</div><div class="cell-detail">Alta confiabilidad 24/7, pero limitada a la línea de vista directa (LOS) desde la torre, vulnerable a puntos ciegos tras quebradas y cerros.</div></div></td>
+                <td class="td-tech" data-i18n="r1_drone"><div class="matrix-cell-content"><div class="cell-verdict"><span class="badge-negative">Sin vuelo nocturno:</span> Aeronaves en tierra por norma VFR.</div><div class="cell-detail">Aeronaves tripuladas impedidas de operar de noche por DGAC. Camionetas con fatiga y &lt;12% de cobertura.</div></div></td>
+                <td class="td-tech td-highlight" data-i18n="r1_strig"><div class="matrix-cell-content"><div class="cell-verdict"><span class="badge-positive">Patrullaje aéreo activo:</span> Vuelo nocturno en predio piloto.</div><div class="cell-detail">Operación táctica programada con operador calificado en terreno (VLOS) bajo normativa DGAC.</div></div></td>
               </tr>
               <tr>
-                <td class="td-dim" data-i18n="r2_dim">Latencia de Detección & Alerta</td>
-                <td class="td-tech" data-i18n="r2_sat"><span class="badge-negative">30 a 90 minutos:</span> Descarga orbital, procesamiento en la nube y distribución de alertas a centrales.</td>
-                <td class="td-tech" data-i18n="r2_tower"><strong>Instantánea pero manual:</strong> En sensor óptico directo; requiere operador humano 24/7 en central para verificación y filtrado de falsas alarmas.</td>
-                <td class="td-tech" data-i18n="r2_drone"><strong>Instantánea pero aislada:</strong> Directa para el piloto u operador local; demorada a central si no existe cobertura 4G/5G en la quebrada.</td>
-                <td class="td-tech td-highlight" data-i18n="r2_strig"><span class="badge-positive">Detección en segundos:</span> Inferencia Edge AI a bordo. Alerta a la estación de operador en minutos (meta MVP ≤ 3 min).</td>
+                <td class="td-dim" data-i18n="r2_dim">Latencia de detección y alerta</td>
+                <td class="td-tech" data-i18n="r2_sat"><div class="matrix-cell-content"><div class="cell-verdict"><span class="badge-negative">30 a 90 min:</span> Descarga y cola de procesamiento orbital.</div><div class="cell-detail">Tiempo acumulado entre paso del satélite, procesamiento en servidor en la nube y distribución a centrales.</div></div></td>
+                <td class="td-tech" data-i18n="r2_tower"><div class="matrix-cell-content"><div class="cell-verdict"><strong>Instantánea pero manual:</strong> Depende de operador 24/7 en pantalla.</div><div class="cell-detail">Detección óptica directa que requiere personal dedicado para verificar en video y filtrar falsas alarmas.</div></div></td>
+                <td class="td-tech" data-i18n="r2_drone"><div class="matrix-cell-content"><div class="cell-verdict"><strong>Local en terreno:</strong> Sin retransmisión rápida si no hay 4G/5G.</div><div class="cell-detail">Alerta inmediata solo para la cuadrilla en sitio; demorada a central en quebradas sin cobertura celular.</div></div></td>
+                <td class="td-tech td-highlight" data-i18n="r2_strig"><div class="matrix-cell-content"><div class="cell-verdict"><span class="badge-positive">Inferida en segundos:</span> Alerta a estación en ≤ 3 min.</div><div class="cell-detail">Edge AI clasifica a bordo en microsegundos. Despacho de ficha sintética a la estación en ≤ 3 min desde la detección en vuelo.</div></div></td>
               </tr>
               <tr>
-                <td class="td-dim" data-i18n="r3_dim">Detección de Precursores (Humanos / Vehículos)</td>
-                <td class="td-tech" data-i18n="r3_sat"><span class="badge-negative">0% resolución:</span> Píxeles de 375m a 1km. Diseñado para incendios activos, incapaz de ver personas o fogatas tempranas.</td>
-                <td class="td-tech" data-i18n="r3_tower"><span class="badge-negative">Casi nula:</span> Ineficaz en senderos boscosos densos o bajo dosel arbóreo fuera del ángulo visual del mástil.</td>
-                <td class="td-tech" data-i18n="r3_drone"><span class="badge-negative">Severamente limitada:</span> Avionetas no vuelan de noche; patrullas en camioneta solo vigilan caminos principales, dejando el interior ciego.</td>
-                <td class="td-tech td-highlight" data-i18n="r3_strig"><span class="badge-positive">Detección óptica/térmica:</span> Presencia humana visible desde 100 m para disuasión autorizada antes del inicio del fuego.</td>
+                <td class="td-dim" data-i18n="r3_dim">Detección de precursores (humanos / vehículos)</td>
+                <td class="td-tech" data-i18n="r3_sat"><div class="matrix-cell-content"><div class="cell-verdict"><span class="badge-negative">Sin resolución:</span> Píxeles de 375 m a 1 km.</div><div class="cell-detail">Diseñado para frentes de fuego activos masivos, incapaz de ver personas, fogatas tempranas o vehículos.</div></div></td>
+                <td class="td-tech" data-i18n="r3_tower"><div class="matrix-cell-content"><div class="cell-verdict"><span class="badge-negative">Ángulo rasante:</span> Bloqueada por copas de árboles y relieve.</div><div class="cell-detail">Ineficaz en senderos bajo dosel arbóreo denso o quebradas fuera del ángulo de inclinación del mástil.</div></div></td>
+                <td class="td-tech" data-i18n="r3_drone"><div class="matrix-cell-content"><div class="cell-verdict"><span class="badge-negative">Muy limitada:</span> Camionetas restringidas a caminos.</div><div class="cell-detail">Aeronaves no vuelan de noche; patrullas en camioneta solo vigilan caminos principales, dejando el interior a oscuras.</div></div></td>
+                <td class="td-tech td-highlight" data-i18n="r3_strig"><div class="matrix-cell-content"><div class="cell-verdict"><span class="badge-positive">Detección óptica/térmica:</span> Siluetas y calor desde 100 m.</div><div class="cell-detail">Identifica anomalías térmicas y siluetas humanas en claros y senderos para autorizar disuasión antes del fuego.</div></div></td>
               </tr>
               <tr>
-                <td class="td-dim" data-i18n="r4_dim">Puntos Ciegos Topográficos</td>
-                <td class="td-tech" data-i18n="r4_sat"><span class="badge-negative">Bloqueo atmosférico:</span> Afectado por nubosidad baja, humo denso e inversión térmica que absorben la radiación infrarroja.</td>
-                <td class="td-tech" data-i18n="r4_tower"><span class="badge-negative">Crítico:</span> Puntos ciegos físicos insalvables tras cerros, quebradas y laderas opuestas.</td>
-                <td class="td-tech" data-i18n="r4_drone"><span class="badge-negative">Crítico en terreno:</span> Sin visibilidad tras cerros ni en quebradas profundas; aeronaves diurnas afectadas por humo y niebla.</td>
-                <td class="td-tech td-highlight" data-i18n="r4_strig"><span class="badge-positive">Perspectiva cenital:</span> Vuelo adaptado sobre quebradas que reduce drásticamente los puntos ciegos de torres fijas y patrullas terrestres.</td>
+                <td class="td-dim" data-i18n="r4_dim">Puntos ciegos topográficos</td>
+                <td class="td-tech" data-i18n="r4_sat"><div class="matrix-cell-content"><div class="cell-verdict"><span class="badge-negative">Bloqueo atmosférico:</span> Ciegas ante nubosidad o humo.</div><div class="cell-detail">Afectado severamente por nubosidad baja, humo denso e inversión térmica que absorben la radiación infrarroja.</div></div></td>
+                <td class="td-tech" data-i18n="r4_tower"><div class="matrix-cell-content"><div class="cell-verdict"><span class="badge-negative">Puntos ciegos críticos:</span> Invisibilidad tras cerros y laderas.</div><div class="cell-detail">Sombra topográfica física insalvable tras filos, quebradas profundas y laderas opuestas.</div></div></td>
+                <td class="td-tech" data-i18n="r4_drone"><div class="matrix-cell-content"><div class="cell-verdict"><span class="badge-negative">Relieve adverso:</span> Sin visión de fondo de quebrada.</div><div class="cell-detail">Cuadrillas en camioneta sin línea visual en quebradas profundas; aeronaves diurnas afectadas por humo rasante.</div></div></td>
+                <td class="td-tech td-highlight" data-i18n="r4_strig"><div class="matrix-cell-content"><div class="cell-verdict"><span class="badge-positive">Perspectiva cenital:</span> Vuelo superior que elimina sombras.</div><div class="cell-detail">Patrullaje aéreo con vista cenital sobre laderas, quebradas y caminos forestales, eliminando los puntos ciegos que ocultan las torres fijas y brigadas terrestres.</div></div></td>
               </tr>
               <tr>
-                <td class="td-dim" data-i18n="r5_dim">Riesgo Humano & Supervisión</td>
-                <td class="td-tech" data-i18n="r5_sat"><strong>Cero exposición directa:</strong> Operación orbital remota sin presencia humana en terreno.</td>
-                <td class="td-tech" data-i18n="r5_tower"><strong>Cero exposición directa:</strong> Salvo mantenimiento preventivo en cumbres aisladas de alto riesgo.</td>
-                <td class="td-tech" data-i18n="r5_drone"><span class="badge-negative">Alto riesgo vital & Ratio 1:1:</span> 1 piloto + 1 observador por dron. Riesgo en vuelo rasante sobre relieve y brigadas expuestas de noche en caminos aislados.</td>
-                <td class="td-tech td-highlight" data-i18n="r5_strig"><span class="badge-positive">Supervisión en tierra (HITL):</span> Operador en tierra autoriza la disuasión desde una posición segura. <span class="tax-badge tax-badge-vision">Visión: 1 operador supervisa N cuadrículas</span></td>
+                <td class="td-dim" data-i18n="r5_dim">Riesgo humano y supervisión</td>
+                <td class="td-tech" data-i18n="r5_sat"><div class="matrix-cell-content"><div class="cell-verdict"><strong>Cero exposición directa:</strong> Operación orbital remota.</div><div class="cell-detail">Vigilancia desde el espacio sin riesgo físico para personal en terreno.</div></div></td>
+                <td class="td-tech" data-i18n="r5_tower"><div class="matrix-cell-content"><div class="cell-verdict"><strong>Baja exposición:</strong> Riesgo acotado a accesos y cumbres.</div><div class="cell-detail">Operación remota desde central; riesgo limitado al mantenimiento en cumbres aisladas de difícil acceso.</div></div></td>
+                <td class="td-tech" data-i18n="r5_drone"><div class="matrix-cell-content"><div class="cell-verdict"><span class="badge-negative">Alto riesgo en terreno:</span> Brigadas nocturnas expuestas.</div><div class="cell-detail">1 piloto + 1 observador por dron convencional; brigadistas en 4x4 expuestos de noche en rutas forestales aisladas.</div></div></td>
+                <td class="td-tech td-highlight" data-i18n="r5_strig"><div class="matrix-cell-content"><div class="cell-verdict"><span class="badge-positive">Supervisión en tierra (HITL):</span> Operador en base segura.</div><div class="cell-detail">Control y autorización de disuasión desde consola protegida, sin brigadistas expuestos en zonas de riesgo.</div></div></td>
               </tr>
               <tr>
-                <td class="td-dim" data-i18n="r6_dim">Modelo Operativo & Acceso</td>
-                <td class="td-tech" data-i18n="r6_sat"><strong>SaaS global:</strong> Suscripción por plataforma; accesible para escala macro, no sustituye la vigilancia táctica local predial.</td>
-                <td class="td-tech" data-i18n="r6_tower"><span class="badge-negative">Altísimo CAPEX:</span> Inversión intensiva en torres fijas instaladas (mástil, óptica militar, energía solar y caminos de acceso).</td>
-                <td class="td-tech" data-i18n="r6_drone"><span class="badge-negative">Costos desarticulados:</span> Alto costo por hora de vuelo diurno (aviones/helicópteros) y patrullaje nocturno en 4x4 con &lt;12% de cobertura.</td>
-                <td class="td-tech td-highlight" data-i18n="r6_strig"><span class="badge-positive">Modelo IaaS (0 CAPEX):</span> Sin adquisición de flota ni activos de capital. Co-diseño y validación técnica en terreno con empresas del sector.</td>
+                <td class="td-dim" data-i18n="r6_dim">Modelo operativo y acceso</td>
+                <td class="td-tech" data-i18n="r6_sat"><div class="matrix-cell-content"><div class="cell-verdict"><strong>SaaS macro:</strong> Suscripción de datos globales.</div><div class="cell-detail">Suscripción de datos satelitales; útil para análisis macrocontinental, pero no sustituye la vigilancia y respuesta táctica directa en terreno.</div></div></td>
+                <td class="td-tech" data-i18n="r6_tower"><div class="matrix-cell-content"><div class="cell-verdict"><span class="badge-negative">Alto CAPEX:</span> Inversión intensiva en infraestructura fija.</div><div class="cell-detail">Alto costo inicial por torre instalada (mástil estructural, óptica militar, respaldo solar y caminos de acceso).</div></div></td>
+                <td class="td-tech" data-i18n="r6_drone"><div class="matrix-cell-content"><div class="cell-verdict"><span class="badge-negative">Alto costo operativo:</span> Horas de vuelo caras y baja cobertura.</div><div class="cell-detail">Costo elevado por hora de vuelo diurno y patrullas terrestres nocturnas de baja cobertura (&lt;12%).</div></div></td>
+                <td class="td-tech td-highlight" data-i18n="r6_strig"><div class="matrix-cell-content"><div class="cell-verdict"><span class="badge-positive">Servicio táctico llave en mano:</span> Cero carga operativa y máxima disponibilidad.</div><div class="cell-detail">Modelo por servicio: vigilancia nocturna lista para operar, mantenimiento aeronáutico preventivo, disponibilidad de vuelo garantizada y actualización continua de sensores e IA sin inmovilizar capital ni cargar a sus equipos.</div></div></td>
               </tr>
             </tbody>
           </table>
@@ -415,108 +475,236 @@
     <section class="section" id="tecnologia">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag" data-i18n="tech_tag">Capacidades Operativas</span>
-          <h2 class="section-title" data-i18n="tech_title">Vigilancia Territorial con Inteligencia A Bordo</h2>
+          <span class="section-tag" data-i18n="tech_tag">Capacidades operativas</span>
+          <h2 class="section-title" data-i18n="tech_title">Vigilancia territorial con inteligencia a bordo</h2>
           <p class="section-subtitle" data-i18n="tech_sub">
             Arquitectura de alta disponibilidad. La aeronave procesa, clasifica y georreferencia en el borde sin requerir enlace continuo a internet ni servidores en la nube.
           </p>
         </div>
 
-        <div class="tech-cards-grid">
-          <div class="tech-card glass-panel">
-            <div class="tech-avatar-circle">
-              <img src="assets/img/tech/aerial_scan_loop.webp" alt="Visión Térmica Biespectral en Tiempo Real" class="circle-thumb" loading="lazy">
+        <div class="tech-cards-grid tech-pillars-grid">
+          <!-- Pillar 1: Plataforma VTOL & Navegación Táctica (PBS-1.1) -->
+          <div class="tech-card tech-pillar-card glass-panel" tabindex="0">
+            <div class="tech-card-header">
+              <div class="tech-avatar-circle">
+                <svg class="tech-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                  <path d="M2 17l10 5 10-5"></path>
+                  <path d="M2 12l10 5 10-5"></path>
+                </svg>
+              </div>
+              <span class="pillar-status-badge" data-i18n="p1_status_badge">[MVP: Aeronave adaptada · TRL 3-4]</span>
             </div>
-            <h3 class="tech-title" data-i18n="t1_title">Gimbal Biespectral</h3>
-            <p class="tech-desc" data-i18n="t1_desc">Payload giroestabilizado con sensor microbolómetro LWIR radiométrico no refrigerado (640×512) y cámara óptica diurna. Detección térmica en oscuridad con filtrado multi-frame para discriminación de fuentes térmicas (meta &lt; 5% falsas alarmas; criterio de aceptación de MVP &lt; 10%).</p>
+            <h3 class="tech-title" data-i18n="p1_title">Plataforma VTOL y navegación táctica</h3>
+            <p class="tech-desc" data-i18n="p1_desc">Aeronave híbrida con despegue vertical sin pista y crucero horizontal de ala fija. Diseñada para cubrir radios de hasta 15 km con 45–60 min de autonomía y navegación determinista bajo geocerca.</p>
+
+            <button type="button" class="tech-spec-toggle" aria-expanded="false" aria-controls="spec-drawer-1">
+              <span class="spec-toggle-text" data-i18n="spec_toggle_txt">+ Detalles</span>
+              <span class="spec-toggle-arrow" aria-hidden="true">▾</span>
+            </button>
+
+            <div class="tech-spec-drawer" id="spec-drawer-1" aria-hidden="true">
+              <div class="spec-item">
+                <span class="spec-lbl" data-i18n="p1_s1_lbl">Configuración:</span>
+                <span class="spec-val" data-i18n="p1_s1_val">QuadPlane Lift + Cruise (4 motores verticales + 1 de crucero).</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-lbl" data-i18n="p1_s2_lbl">Frontera C-2 (Safety):</span>
+                <span class="spec-val" data-i18n="p1_s2_val">El controlador de vuelo primario retiene el 100% de la autoridad de vuelo y contención FDIR, aislado del cómputo IA.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-lbl" data-i18n="p1_s3_lbl">Envolvente:</span>
+                <span class="spec-val" data-i18n="p1_s3_val">Viento hasta 10 m/s (~36 km/h). Respaldo con paracaídas balístico de recuperación.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-lbl" data-i18n="p1_s4_lbl">Operación Hoy:</span>
+                <span class="spec-val" data-i18n="p1_s4_val">Predio privado en línea de vista (VLOS ~1 km). Objetivo: BVLOS (15 km) bajo SORA.</span>
+              </div>
+            </div>
           </div>
 
-          <div class="tech-card glass-panel">
-            <div class="tech-avatar-circle">
-              <svg class="tech-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="4" y="4" width="16" height="16" rx="2"></rect>
-                <rect x="9" y="9" width="6" height="6"></rect>
-                <line x1="9" y1="1" x2="9" y2="4"></line>
-                <line x1="15" y1="1" x2="15" y2="4"></line>
-                <line x1="9" y1="20" x2="9" y2="23"></line>
-                <line x1="15" y1="20" x2="15" y2="23"></line>
-                <line x1="20" y1="9" x2="23" y2="9"></line>
-                <line x1="20" y1="14" x2="23" y2="14"></line>
-                <line x1="1" y1="9" x2="4" y2="9"></line>
-                <line x1="1" y1="14" x2="4" y2="14"></line>
-              </svg>
+          <!-- Pillar 2: Carga Útil Optrónica & Edge AI a Bordo (PBS-1.2) -->
+          <div class="tech-card tech-pillar-card glass-panel" tabindex="0">
+            <div class="tech-card-header">
+              <div class="tech-avatar-circle">
+                <img src="assets/img/tech/aerial_scan_loop.webp" alt="Visión Térmica Biespectral" class="circle-thumb" loading="lazy">
+              </div>
+              <span class="pillar-status-badge" data-i18n="p2_status_badge">[NVIDIA Jetson · Zero-Cloud]</span>
             </div>
-            <h3 class="tech-title" data-i18n="t2_title">Inferencia Edge AI Zero-Cloud (NVIDIA Jetson)</h3>
-            <p class="tech-desc" data-i18n="t2_desc">Cómputo a bordo basado en arquitectura NVIDIA Jetson (Orin Nano) con pipeline cuantizado FP16 acelerado por NVIDIA TensorRT. Ejecución local de visión computacional y modelos de detección térmica en tiempo real, operando con autonomía Zero-Cloud en zonas sin internet ni señal celular.</p>
+            <h3 class="tech-title" data-i18n="p2_title">Carga útil optrónica e inferencia a bordo</h3>
+            <p class="tech-desc" data-i18n="p2_desc">Cámara biespectral con estabilización activa en 3 ejes, sensor térmico radiométrico LWIR y óptica 4K. La inferencia local procesa a bordo en microsegundos sin requerir internet ni servidores en la nube.</p>
+
+            <button type="button" class="tech-spec-toggle" aria-expanded="false" aria-controls="spec-drawer-2">
+              <span class="spec-toggle-text" data-i18n="spec_toggle_txt">+ Detalles</span>
+              <span class="spec-toggle-arrow" aria-hidden="true">▾</span>
+            </button>
+
+            <div class="tech-spec-drawer" id="spec-drawer-2" aria-hidden="true">
+              <div class="spec-item">
+                <span class="spec-lbl" data-i18n="p2_s1_lbl">Sensor Térmico:</span>
+                <span class="spec-val" data-i18n="p2_s1_val">Microbolómetro LWIR radiométrico (640×512) no refrigerado + sensor óptico 4K en gimbal 3 ejes.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-lbl" data-i18n="p2_s2_lbl">Georreferenciación:</span>
+                <span class="spec-val" data-i18n="p2_s2_val">Fusión computacional de GPS centimétrico (RTK) y modelo de elevación del terreno (DEM), calculando coordenadas del foco con precisión métrica en tiempo real.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-lbl" data-i18n="p2_s3_lbl">Pipeline IA:</span>
+                <span class="spec-val" data-i18n="p2_s3_val">NVIDIA Jetson Orin Nano Dev Kit con aceleración TensorRT FP16 para detección de siluetas humanas y precursores térmicos.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-lbl" data-i18n="p2_s4_lbl">Precisión:</span>
+                <span class="spec-val" data-i18n="p2_s4_val">Filtrado multi-frame para discriminación de falsos positivos (meta &lt; 5%; aceptación MVP &lt; 10%).</span>
+              </div>
+            </div>
           </div>
 
-          <div class="tech-card glass-panel">
-            <div class="tech-avatar-circle">
-              <svg class="tech-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4.93 4.93a10 10 0 0 1 14.14 0"></path>
-                <path d="M7.76 7.76a6 6 0 0 1 8.48 0"></path>
-                <circle cx="12" cy="12" r="2"></circle>
-                <path d="M12 14v7"></path>
-              </svg>
+          <!-- Pillar 3: Comunicaciones Tácticas en Zonas Oscuras (PBS-1.1.5) -->
+          <div class="tech-card tech-pillar-card glass-panel" tabindex="0">
+            <div class="tech-card-header">
+              <div class="tech-avatar-circle">
+                <svg class="tech-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4.93 4.93a10 10 0 0 1 14.14 0"></path>
+                  <path d="M7.76 7.76a6 6 0 0 1 8.48 0"></path>
+                  <circle cx="12" cy="12" r="2"></circle>
+                  <path d="M12 14v7"></path>
+                </svg>
+              </div>
+              <span class="pillar-status-badge" data-i18n="p3_status_badge">[UHF LoRa · Resiliente off-grid]</span>
             </div>
-            <h3 class="tech-title" data-i18n="t3_title">Telemetría Táctica en Zonas Desconectadas</h3>
-            <p class="tech-desc" data-i18n="t3_desc">Emisión de fichas de alerta y telemetría hacia la estación de operador en tierra vía radioenlace FHSS 915 MHz en línea de vista (LOS). El despacho hacia brigadas se coordina e integra directamente con el partner de pilotaje.</p>
+            <h3 class="tech-title" data-i18n="p3_title">Comunicaciones tácticas para zonas oscuras</h3>
+            <p class="tech-desc" data-i18n="p3_desc">Arquitectura de enlace dual para operar en quebradas y faenas forestales sin cobertura celular ni internet móvil, asegurando la entrega ininterrumpida de telemetría y alertas críticas.</p>
+
+            <button type="button" class="tech-spec-toggle" aria-expanded="false" aria-controls="spec-drawer-3">
+              <span class="spec-toggle-text" data-i18n="spec_toggle_txt">+ Detalles</span>
+              <span class="spec-toggle-arrow" aria-hidden="true">▾</span>
+            </button>
+
+            <div class="tech-spec-drawer" id="spec-drawer-3" aria-hidden="true">
+              <div class="spec-item">
+                <span class="spec-lbl" data-i18n="p3_s1_lbl">Radioenlace Alerta:</span>
+                <span class="spec-val" data-i18n="p3_s1_val">Transceptor UHF 902–928 MHz @ 500 mW para reporte de telemetría y vectores de alerta en zonas sin 4G.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-lbl" data-i18n="p3_s2_lbl">C2 de Seguridad:</span>
+                <span class="spec-val" data-i18n="p3_s2_val">Enlace primario C2 en 2,4 GHz con diversidad de antenas para control de vuelo y telemetría crítica.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-lbl" data-i18n="p3_s3_lbl">Formato Alerta:</span>
+                <span class="spec-val" data-i18n="p3_s3_val">Paquete binario comprimido con coordenadas UTM, timestamp, clase de objetivo y nivel de confianza.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-lbl" data-i18n="p3_s4_lbl">Transmisión Video:</span>
+                <span class="spec-val" data-i18n="p3_s4_val">Streaming RTSP bajo demanda condicionado a disponibilidad de ancho de banda local.</span>
+              </div>
+            </div>
           </div>
 
-          <div class="tech-card glass-panel">
-            <div class="tech-avatar-circle">
-              <img src="assets/img/tech/territorial_hud_grid.webp" alt="Vigilancia Territorial Continua" class="circle-thumb" loading="lazy">
+          <!-- Pillar 4: Centro de Mando C2 & Cadena de Evidencia (PBS-2 / PBS-3) -->
+          <div class="tech-card tech-pillar-card glass-panel" tabindex="0">
+            <div class="tech-card-header">
+              <div class="tech-avatar-circle">
+                <svg class="tech-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+              </div>
+              <span class="pillar-status-badge" data-i18n="p4_status_badge">[Human-in-the-Loop · Auditable]</span>
             </div>
-            <h3 class="tech-title" data-i18n="t4_title">Plataforma Aérea & Primer Dron Noctua</h3>
-            <p class="tech-desc" data-i18n="t4_desc">Validación inicial sobre célula comercial adaptada en transición hacia Noctua (primer dron de la plataforma, diseñado o integrado). Autonomía de diseño de 45–60 min (meta 45 min), envolvente de viento de hasta 10 m/s (~36 km/h) y radio operacional de 1 km en predio piloto (VLOS). <span class="tax-badge tax-badge-goal">Objetivo: 15 km</span></p>
-          </div>
+            <h3 class="tech-title" data-i18n="p4_title">Centro de mando C2 y cadena de evidencia</h3>
+            <p class="tech-desc" data-i18n="p4_desc">Consola táctica para supervisión humana continua, triaje de alertas y generación de Reportes Digitales con valor probatorio pericial, estampa de tiempo y anonimización de privacidad.</p>
 
-          <div class="tech-card glass-panel">
-            <div class="tech-avatar-circle">
-              <svg class="tech-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="22" y1="12" x2="18" y2="12"></line>
-                <line x1="6" y1="12" x2="2" y2="12"></line>
-                <line x1="12" y1="6" x2="12" y2="2"></line>
-                <line x1="12" y1="22" x2="12" y2="18"></line>
-                <circle cx="12" cy="12" r="3"></circle>
-              </svg>
-            </div>
-            <h3 class="tech-title" data-i18n="t5_title">Georreferenciación Asistida</h3>
-            <p class="tech-desc" data-i18n="t5_desc">Proyección angular hacia el terreno asistida por posicionamiento GNSS/RTK, calculando coordenadas estimadas con precisión objetivo de metros (requiere modelo digital de elevación DEM cargado de la zona).</p>
-          </div>
+            <button type="button" class="tech-spec-toggle" aria-expanded="false" aria-controls="spec-drawer-4">
+              <span class="spec-toggle-text" data-i18n="spec_toggle_txt">+ Detalles</span>
+              <span class="spec-toggle-arrow" aria-hidden="true">▾</span>
+            </button>
 
-          <div class="tech-card glass-panel">
-            <div class="tech-avatar-circle">
-              <svg class="tech-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                <path d="m9 12 2 2 4-4"></path>
-              </svg>
+            <div class="tech-spec-drawer" id="spec-drawer-4" aria-hidden="true">
+              <div class="spec-item">
+                <span class="spec-lbl" data-i18n="p4_s1_lbl">Doctrina HITL:</span>
+                <span class="spec-val" data-i18n="p4_s1_val">El sistema de disuasión física (foco destellante de alta potencia y sirena acústica) solo se activa con autorización previa y deliberada del operador.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-lbl" data-i18n="p4_s2_lbl">Reporte Pericial:</span>
+                <span class="spec-val" data-i18n="p4_s2_val">Generación de expediente digital de incidente con firma criptográfica, sellado de tiempo y captura biespectral para aseguradoras y fiscalía.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-lbl" data-i18n="p4_s3_lbl">Privacidad por Diseño:</span>
+                <span class="spec-val" data-i18n="p4_s3_val">Difuminado y anonimización automática de rostros y propiedad privada no involucrada (Ley 19.628 / Ley 21.719).</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-lbl" data-i18n="p4_s4_lbl">Operación Offline:</span>
+                <span class="spec-val" data-i18n="p4_s4_val">Estación de operador con cartografía precargada localmente para despliegue autónomo en faenas remotas.</span>
+              </div>
             </div>
-            <h3 class="tech-title" data-i18n="t6_title">Operación Segura & Evidencia Auditable</h3>
-            <p class="tech-desc" data-i18n="t6_desc">Paracaídas balístico de recuperación (en diseño) y protocolos de retorno seguro (Auto-RTH). Operación bajo marco DAN 151 / DAN 91 (DGAC Chile) en predio privado segregado (VLOS) y registro auditable de cada misión para aseguradoras y centrales.</p>
           </div>
         </div>
 
-        <!-- Hardware & Engineering Capabilities Specs Bar -->
-        <div class="specs-bar glass-panel">
-          <div class="spec-pill" data-i18n="spec_1"><span class="spec-name">Plataforma MVP:</span> Célula Comercial Adaptada (Hacia Noctua)</div>
-          <div class="spec-pill" data-i18n="spec_2"><span class="spec-name">Envolvente:</span> Viento hasta 10 m/s (36 km/h)</div>
-          <div class="spec-pill" data-i18n="spec_3"><span class="spec-name">Respuesta:</span> Alerta en minutos (Meta ≤ 3 min)</div>
-          <div class="spec-pill" data-i18n="spec_4"><span class="spec-name">Operación:</span> Vuelo VLOS en predio privado (DGAC)</div>
-          <div class="spec-pill" data-i18n="spec_5"><span class="spec-name">Modelo:</span> Intelligence as a Service (0 CAPEX)</div>
+        <!-- Phase 2: Technical Media Showcase (Bench & Video Containers with Avionics HUD Frames) -->
+        <div class="tech-media-showcase">
+          <div class="tech-media-card glass-panel">
+            <div class="media-frame-header">
+              <span class="media-frame-tag" data-i18n="media_bench_tag">[Integración de sistemas de aviónica · Banco de pruebas]</span>
+              <span class="media-frame-meta">AVIÓNICA REDUNDANTE · PROCESADOR EDGE AI · GIMBAL EO/IR</span>
+            </div>
+            <div class="media-frame-content">
+              <div class="technical-photo-container">
+                <div class="tech-crop-mark top-left"></div>
+                <div class="tech-crop-mark top-right"></div>
+                <div class="tech-crop-mark bottom-left"></div>
+                <div class="tech-crop-mark bottom-right"></div>
+                <img src="assets/img/tech/territorial_hud_grid.webp" alt="Banco de integración de hardware y aviónica" class="tech-photo-asset" loading="lazy">
+                <div class="tech-photo-overlay">
+                  <span class="photo-reticle-label">HWIL FLATSAT INTEGRATION · TRL 3-4</span>
+                </div>
+              </div>
+            </div>
+            <div class="media-frame-footer">
+              <span class="footer-caption" data-i18n="media_bench_caption">Banco de pruebas de laboratorio: integración funcional de aviónica de vuelo redundante, computador de misión Edge AI y módulos de radioenlace táctico interconectados.</span>
+            </div>
+          </div>
+
+          <div class="tech-media-card glass-panel">
+            <div class="media-frame-header">
+              <span class="media-frame-tag" data-i18n="media_video_tag">[Validación de visión térmica e IA a bordo]</span>
+              <span class="media-frame-meta" data-i18n="media_video_meta">LWIR 640×512 radiométrica · 30 FPS</span>
+            </div>
+            <div class="media-frame-content">
+              <div class="tactical-video-container">
+                <div class="hud-reticle hud-center"></div>
+                <div class="hud-telemetry-strip top">
+                  <span class="hud-stat-trigger" tabindex="0" role="button" aria-label="Altitud AGL: 100 metros" aria-describedby="hud-alt-tip">ALT: 100m AGL<span class="hud-micro-tip" id="hud-alt-tip" role="tooltip" data-i18n="hud_alt_tip">Altitud relativa sobre el terreno (AGL) mediante sensor barométrico y LIDAR</span></span>
+                  <span class="hud-stat-trigger" tabindex="0" role="button" aria-label="Velocidad Ground Speed: 18.5 metros por segundo" aria-describedby="hud-gs-tip">GS: 18.5 m/s<span class="hud-micro-tip" id="hud-gs-tip" role="tooltip" data-i18n="hud_gs_tip">Velocidad respecto al suelo (~66,6 km/h) optimizada para estabilidad del gimbal</span></span>
+                  <span class="hud-stat-trigger" tabindex="0" role="button" aria-label="Rumbo Magnético: 042 grados" aria-describedby="hud-hdg-tip">HDG: 042°<span class="hud-micro-tip" id="hud-hdg-tip" role="tooltip" data-i18n="hud_hdg_tip">Rumbo magnético con triple brújula redundante compensada</span></span>
+                </div>
+                <div class="hud-telemetry-strip bottom">
+                  <span class="hud-stat-trigger" tabindex="0" role="button" aria-label="Objetivo: Verificado por modelo de inferencia" aria-describedby="hud-target-tip">TARGET: VERIFIED<span class="hud-micro-tip" id="hud-target-tip" role="tooltip" data-i18n="hud_target_tip">Clasificación local de precursor térmico y silueta humana con inferencia a bordo</span></span>
+                  <span class="hud-stat-trigger" tabindex="0" role="button" aria-label="Enlace de datos: Enganchado con salto FHSS" aria-describedby="hud-link-tip">DATALINK: FHSS LOCK<span class="hud-micro-tip" id="hud-link-tip" role="tooltip" data-i18n="hud_link_tip">Enlace de telemetría y C2 activo mediante salto de frecuencia FHSS</span></span>
+                  <span class="hud-stat-trigger" tabindex="0" role="button" aria-label="Posicionamiento RTK: Fijado centimétrico" aria-describedby="hud-rtk-tip">RTK: FIXED<span class="hud-micro-tip" id="hud-rtk-tip" role="tooltip" data-i18n="hud_rtk_tip">Posicionamiento GNSS cinemático en tiempo real con precisión centimétrica</span></span>
+                </div>
+                <img src="assets/img/tech/aerial_scan_loop.webp" alt="Validación de detección térmica cenital" class="tech-video-asset" loading="lazy">
+                <div class="hud-target-box">
+                  <span class="hud-target-label" data-i18n="media_hud_target">PRECURSOR DETECTADO</span>
+                </div>
+              </div>
+            </div>
+            <div class="media-frame-footer">
+              <span class="footer-caption" data-i18n="media_video_caption">Procesamiento térmico en tiempo real: detección y seguimiento de anomalías calóricas y siluetas humanas mediante modelos optimizados a bordo.</span>
+            </div>
+          </div>
         </div>
+
 
         <!-- Off-Grid Tactical Datalink Architecture (Diagrama del Triángulo Táctico) -->
         <div class="tactical-flow-box glass-panel" id="datalink">
           <div class="flow-header">
-            <span class="flow-tag" data-i18n="flow_tag">ARQUITECTURA DE ENLACE OFF-GRID</span>
+            <span class="flow-tag" data-i18n="flow_tag">Arquitectura de enlace off-grid</span>
             <h3 class="flow-title" data-i18n="flow_title">Cómo se cierra el circuito táctico en zonas sin señal celular</h3>
             <p class="flow-sub" data-i18n="flow_sub">Gran parte de los predios forestales y cordilleranos son zonas de baja cobertura. Athene opera con radioenlaces tácticos locales entre la aeronave y la estación en tierra.</p>
           </div>
           <div class="flow-grid flow-grid-bilateral">
             <!-- Nodo 2: Recepción Táctica en Terreno (Estación de Operador) -->
-            <div class="flow-step-card flow-step-flank">
+            <div class="flow-step-card flow-step-flank" tabindex="0">
               <div class="step-num">02</div>
               <div class="step-icon-wrap">
                 <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -524,9 +712,24 @@
                   <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                 </svg>
               </div>
-              <h4 class="step-title" data-i18n="flow_s2_title">Estación de Operador (Terreno)</h4>
-              <p class="step-desc" data-i18n="flow_s2_desc">Recepción táctica de alertas y telemetría en tiempo real. El operador evalúa y autoriza la activación de estrobo y sirena de disuasión desde una posición segura.</p>
-              <span class="step-badge badge-green" data-i18n="flow_s2_badge">Supervisión Humana (HITL)</span>
+              <h4 class="step-title" data-i18n="flow_s2_title">Estación de operador (terreno)</h4>
+              <p class="step-desc" data-i18n="flow_s2_desc">Recepción táctica de alertas y telemetría en tiempo real. El operador evalúa y autoriza la activación del foco disuasivo y sirena desde una posición segura.</p>
+              <span class="step-badge badge-green" data-i18n="flow_s2_badge">Supervisión humana (HITL)</span>
+
+              <button type="button" class="flow-spec-toggle" aria-expanded="false" aria-controls="flow-drawer-2">
+                <span class="flow-toggle-txt" data-i18n="spec_toggle_txt">+ Detalles</span>
+                <span class="flow-toggle-arrow" aria-hidden="true">▾</span>
+              </button>
+              <div class="flow-spec-drawer" id="flow-drawer-2" aria-hidden="true">
+                <div class="flow-spec-item">
+                  <span class="flow-spec-lbl" data-i18n="flow_s2_f1_lbl">Consola táctica:</span>
+                  <span class="flow-spec-val" data-i18n="flow_s2_f1_val">Laptop IP65 rugerizada para faenas forestales con cartografía vectorial offline precargada.</span>
+                </div>
+                <div class="flow-spec-item">
+                  <span class="flow-spec-lbl" data-i18n="flow_s2_f2_lbl">Autorización HITL:</span>
+                  <span class="flow-spec-val" data-i18n="flow_s2_f2_val">Doble confirmación de seguridad en consola antes de activar el foco o sirena disuasiva.</span>
+                </div>
+              </div>
             </div>
 
             <!-- Conector Bilateral 1: Operador ⇄ Aeronave -->
@@ -539,7 +742,7 @@
             </div>
 
             <!-- Nodo 1: Aeronave VTOL (Nodo Central Aéreo) -->
-            <div class="flow-step-card flow-step-center">
+            <div class="flow-step-card flow-step-center" tabindex="0">
               <div class="step-num">01</div>
               <div class="step-icon-wrap">
                 <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -548,9 +751,24 @@
                   <path d="M2 12l10 5 10-5"></path>
                 </svg>
               </div>
-              <h4 class="step-title" data-i18n="flow_s1_title">Aeronave VTOL (Nodo Aéreo)</h4>
+              <h4 class="step-title" data-i18n="flow_s1_title">Aeronave VTOL (nodo aéreo)</h4>
               <p class="step-desc" data-i18n="flow_s1_desc">Inferencia térmica Edge AI a bordo con NVIDIA Jetson. Detecta precursores y presencia humana, emite alertas a la estación en tierra y ejecuta retorno de emergencia ante pérdida de enlace.</p>
-              <span class="step-badge" data-i18n="flow_s1_badge">Edge AI a Bordo</span>
+              <span class="step-badge" data-i18n="flow_s1_badge">Edge AI a bordo</span>
+
+              <button type="button" class="flow-spec-toggle" aria-expanded="false" aria-controls="flow-drawer-1">
+                <span class="flow-toggle-txt" data-i18n="spec_toggle_txt">+ Detalles</span>
+                <span class="flow-toggle-arrow" aria-hidden="true">▾</span>
+              </button>
+              <div class="flow-spec-drawer" id="flow-drawer-1" aria-hidden="true">
+                <div class="flow-spec-item">
+                  <span class="flow-spec-lbl" data-i18n="flow_s1_f1_lbl">Aviónica y cómputo:</span>
+                  <span class="flow-spec-val" data-i18n="flow_s1_f1_val">Controlador de vuelo de arquitectura redundante y procesador Edge AI acoplados por enlace serie optoaislado con telemetría MAVLink v2.</span>
+                </div>
+                <div class="flow-spec-item">
+                  <span class="flow-spec-lbl" data-i18n="flow_s1_f2_lbl">Geoposicionamiento:</span>
+                  <span class="flow-spec-val" data-i18n="flow_s1_f2_val">Fusión a bordo de GPS centimétrico (RTK) y modelo de elevación del terreno (DEM) para cálculo de coordenadas del foco con precisión métrica.</span>
+                </div>
+              </div>
             </div>
 
             <!-- Conector Bilateral 2: Estación ⇄ Central de Despacho -->
@@ -563,7 +781,7 @@
             </div>
 
             <!-- Nodo 3: Central de Despacho / Coordinación -->
-            <div class="flow-step-card flow-step-flank">
+            <div class="flow-step-card flow-step-flank" tabindex="0">
               <div class="step-num">03</div>
               <div class="step-icon-wrap">
                 <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -571,9 +789,24 @@
                   <line x1="4" y1="22" x2="4" y2="15"></line>
                 </svg>
               </div>
-              <h4 class="step-title" data-i18n="flow_s3_title">Central de Despacho / Coordinación del Partner</h4>
+              <h4 class="step-title" data-i18n="flow_s3_title">Central de despacho y coordinación del partner</h4>
               <p class="step-desc" data-i18n="flow_s3_desc">Recepción de fichas de alerta georreferenciadas y logs de misión para coordinación de brigadas y auditoría (integración GIS / Webhook).</p>
-              <span class="step-badge" data-i18n="flow_s3_badge">Integración Operacional</span>
+              <span class="step-badge" data-i18n="flow_s3_badge">Integración operacional</span>
+
+              <button type="button" class="flow-spec-toggle" aria-expanded="false" aria-controls="flow-drawer-3">
+                <span class="flow-toggle-txt" data-i18n="spec_toggle_txt">+ Detalles</span>
+                <span class="flow-toggle-arrow" aria-hidden="true">▾</span>
+              </button>
+              <div class="flow-spec-drawer" id="flow-drawer-3" aria-hidden="true">
+                <div class="flow-spec-item">
+                  <span class="flow-spec-lbl" data-i18n="flow_s3_f1_lbl">Interoperabilidad:</span>
+                  <span class="flow-spec-val" data-i18n="flow_s3_f1_val">Integración mediante formatos estándar (GeoJSON/API) compatibles con software GIS forestal (ArcGIS, QGIS).</span>
+                </div>
+                <div class="flow-spec-item">
+                  <span class="flow-spec-lbl" data-i18n="flow_s3_f2_lbl">Trazabilidad legal:</span>
+                  <span class="flow-spec-val" data-i18n="flow_s3_f2_val">Ficha de incidente con estampa de tiempo y coordenadas verificadas para trazabilidad pericial.</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -584,8 +817,8 @@
     <section class="section section-border" id="roadmap">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag" data-i18n="roadmap_tag">Hoja de Ruta de Ingeniería</span>
-          <h2 class="section-title" data-i18n="roadmap_title">Estado del Proyecto y Próximos Hitos</h2>
+          <span class="section-tag" data-i18n="roadmap_tag">Roadmap</span>
+          <h2 class="section-title" data-i18n="roadmap_title">Estado del proyecto y próximos hitos</h2>
           <p class="section-subtitle" data-i18n="roadmap_sub">
             Desarrollo riguroso por etapas verificables. Diferenciamos lo que está resuelto hoy, los ensayos en marcha y los objetivos de escalamiento industrial.
           </p>
@@ -593,38 +826,43 @@
 
         <div class="roadmap-timeline">
           <!-- Hito 1: Hoy (TRL 3) -->
-          <div class="roadmap-card card-today glass-panel">
-            <span class="roadmap-phase-label" data-i18n="rm1_phase">Estado Actual · TRL 3</span>
-            <h3 class="roadmap-card-title" data-i18n="rm1_title">Diseño de Sistema y Prototipo en Análisis</h3>
+          <div class="roadmap-card card-today glass-panel" tabindex="0">
+            <span class="roadmap-phase-label" data-i18n="rm1_phase">Estado actual · TRL 3</span>
+            <h3 class="roadmap-card-title" data-i18n="rm1_title">Diseño de sistema y prototipo en análisis</h3>
+            <span class="roadmap-card-hint" aria-hidden="true">+ Detalle</span>
             <p class="roadmap-card-desc" data-i18n="rm1_desc">Requisitos de ingeniería, arquitectura de sistemas y plan de pruebas definidos. Validación de concepto analítico y selección de componentes críticos.</p>
           </div>
 
           <!-- Hito 2: Oct–Dic 2026 -->
-          <div class="roadmap-card card-inprogress glass-panel">
-            <span class="roadmap-phase-label" data-i18n="rm2_phase">Oct – Dic 2026 · Ensayos</span>
-            <h3 class="roadmap-card-title" data-i18n="rm2_title">Plataforma Hexarrotor y Demo Gearbox</h3>
-            <p class="roadmap-card-desc" data-i18n="rm2_desc">Integración en plataforma hexarrotor de pruebas para validación de sensórica y procesamiento. Demostración técnica en Gearbox UdeC programada para enero de 2027.</p>
+          <div class="roadmap-card card-inprogress glass-panel" tabindex="0">
+            <span class="roadmap-phase-label" data-i18n="rm2_phase">Oct – dic 2026 · Ensayos</span>
+            <h3 class="roadmap-card-title" data-i18n="rm2_title">Plataforma multirrotor y demo técnica</h3>
+            <span class="roadmap-card-hint" aria-hidden="true">+ Detalle</span>
+            <p class="roadmap-card-desc" data-i18n="rm2_desc">Integración de aviónica, sensores y Edge AI en una plataforma multirrotor adaptada para la primera demostración técnica funcional y validación de procesamiento en terreno (diciembre 2026 – enero 2027).</p>
           </div>
 
           <!-- Hito 3: Feb 2027 -->
-          <div class="roadmap-card card-next glass-panel">
+          <div class="roadmap-card card-next glass-panel" tabindex="0">
             <span class="roadmap-phase-label" data-i18n="rm3_phase">Feb 2027 · Simulación</span>
-            <h3 class="roadmap-card-title" data-i18n="rm3_title">Validación Human-in-the-Loop (HITL)</h3>
-            <p class="roadmap-card-desc" data-i18n="rm3_desc">Pruebas en entorno simulado de la interfaz de operador táctico, protocolo de autorización de estrobo/sirena y cadena de decisión en tiempo real.</p>
+            <h3 class="roadmap-card-title" data-i18n="rm3_title">Validación human-in-the-loop (HITL)</h3>
+            <span class="roadmap-card-hint" aria-hidden="true">+ Detalle</span>
+            <p class="roadmap-card-desc" data-i18n="rm3_desc">Pruebas en entorno simulado de la interfaz de operador táctico, protocolo de autorización de foco/sirena y cadena de decisión en tiempo real.</p>
           </div>
 
           <!-- Hito 4: Jun 2027 -->
-          <div class="roadmap-card card-corfo glass-panel">
-            <span class="roadmap-phase-label" data-i18n="rm4_phase">Jun 2027 · Validación en Terreno</span>
-            <h3 class="roadmap-card-title" data-i18n="rm4_title">Validación Técnica y Operacional (CORFO)</h3>
-            <p class="roadmap-card-desc" data-i18n="rm4_desc">Campaña de vuelos experimentales diurnos/nocturnos en predio piloto privado (VLOS) bajo proyecto Semilla Inicia CORFO y retroalimentación de la industria forestal.</p>
+          <div class="roadmap-card card-corfo glass-panel" tabindex="0">
+            <span class="roadmap-phase-label" data-i18n="rm4_phase">Jun 2027 · Validación en terreno</span>
+            <h3 class="roadmap-card-title" data-i18n="rm4_title">Validación técnica y operacional en terreno</h3>
+            <span class="roadmap-card-hint" aria-hidden="true">+ Detalle</span>
+            <p class="roadmap-card-desc" data-i18n="rm4_desc">Campaña de vuelos diurnos y nocturnos con aeronave comercial VTOL adaptada desplegada desde bases de brigadas o pistas forestales existentes (recambio rápido de baterías en tierra), validando patrullaje en predio privado (VLOS), detección térmica e integración operacional antes de escalar a estaciones automatizadas.</p>
           </div>
 
-          <!-- Hito 5: Visión de Plataforma -->
-          <div class="roadmap-card card-vision glass-panel">
-            <span class="roadmap-phase-label" data-i18n="rm5_phase">Visión de Plataforma</span>
-            <h3 class="roadmap-card-title" data-i18n="rm5_title">Noctua VTOL, Nest Automatizado & BVLOS</h3>
-            <p class="roadmap-card-desc" data-i18n="rm5_desc">Integración o diseño de célula VTOL Noctua, estación Nest de aterrizaje y carga automatizada, supervisión 1:N de múltiples cuadrículas, enlaces satelitales y radio de 15 km bajo certificación BVLOS.</p>
+          <!-- Hito 5: Visión a futuro -->
+          <div class="roadmap-card card-vision glass-panel" tabindex="0">
+            <span class="roadmap-phase-label" data-i18n="rm5_phase">Visión a futuro</span>
+            <h3 class="roadmap-card-title" data-i18n="rm5_title">Noctua VTOL, Nest automatizado y BVLOS</h3>
+            <span class="roadmap-card-hint" aria-hidden="true">+ Detalle</span>
+            <p class="roadmap-card-desc" data-i18n="rm5_desc">Integración o diseño de la aeronave VTOL Noctua, estación Nest de aterrizaje y carga automatizada, supervisión de flota 1:N (un operador para múltiples aeronaves en simultáneo), enlaces de respaldo y radio de 15 km bajo certificación BVLOS.</p>
           </div>
         </div>
       </div>
@@ -634,8 +872,8 @@
     <section class="section section-border" id="piloto">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag" data-i18n="pilot_tag">Validación en Terreno</span>
-          <h2 class="section-title" data-i18n="pilot_title">Programa de Validación Conjunta 2026-27</h2>
+          <span class="section-tag" data-i18n="pilot_tag">Validación en terreno</span>
+          <h2 class="section-title" data-i18n="pilot_title">Programa de validación conjunta 2026-27</h2>
           <p class="section-subtitle" data-i18n="pilot_sub">
             Estructurado en 4 fases metodológicas para empresas forestales, mineras e instituciones que buscan co-diseñar y verificar en terreno la efectividad de la vigilancia nocturna.
           </p>
@@ -644,57 +882,70 @@
         <div class="pilot-timeline-grid">
           <div class="pilot-phase-card glass-panel">
             <div class="phase-number-badge">01</div>
-            <div class="phase-time">Semanas 1 - 2</div>
-            <h3 class="phase-title" data-i18n="ph1_title">Levantamiento & Topografía</h3>
-            <p class="phase-desc" data-i18n="ph1_desc">Mapeo de predios prioritarios, modelado de zonas ciegas y calibración de rutas según la probabilidad histórica de focos.</p>
+            <div class="phase-time" data-i18n="ph1_time">Fase 01 · Coordinación</div>
+            <h3 class="phase-title" data-i18n="ph1_title">Levantamiento territorial y coordinación</h3>
+            <p class="phase-desc" data-i18n="ph1_desc">Definición de predios prioritarios, levantamiento de zonas ciegas y coordinación con equipos de protección patrimonial y despacho.</p>
           </div>
 
           <div class="pilot-phase-card glass-panel">
             <div class="phase-number-badge">02</div>
-            <div class="phase-time">Semanas 3 - 4</div>
-            <h3 class="phase-title" data-i18n="ph2_title">Calibración Sensorial</h3>
-            <p class="phase-desc" data-i18n="ph2_desc">Pruebas en terreno de firmas térmicas, validación de telemetría táctica en zonas sin cobertura y simulacros controlados.</p>
+            <div class="phase-time" data-i18n="ph2_time">Fase 02 · Calibración</div>
+            <h3 class="phase-title" data-i18n="ph2_title">Calibración sensorial en terreno</h3>
+            <p class="phase-desc" data-i18n="ph2_desc">Validación de firmas térmicas en condiciones reales, comprobación de radioenlace off-grid y calibración de umbrales radiométricos.</p>
           </div>
 
           <div class="pilot-phase-card glass-panel">
             <div class="phase-number-badge">03</div>
-            <div class="phase-time">Semanas 5 - 8</div>
-            <h3 class="phase-title" data-i18n="ph3_title">Vigilancia Nocturna Activa</h3>
-            <p class="phase-desc" data-i18n="ph3_desc">Patrullaje aéreo programado en las horas de mayor vulnerabilidad con telemetría en vivo y soporte a la central de operaciones del cliente.</p>
+            <div class="phase-time" data-i18n="ph3_time">Fase 03 · Ensayos nocturnos</div>
+            <h3 class="phase-title" data-i18n="ph3_title">Ensayos nocturnos y patrullaje activo</h3>
+            <p class="phase-desc" data-i18n="ph3_desc">Vuelos programados en la brecha nocturna con transmisión táctica local e integración asistida con el operador en tierra.</p>
           </div>
 
           <div class="pilot-phase-card glass-panel">
             <div class="phase-number-badge">04</div>
-            <div class="phase-time">Cierre</div>
-            <h3 class="phase-title" data-i18n="ph4_title">Auditoría & Retorno Operativo</h3>
-            <p class="phase-desc" data-i18n="ph4_desc">Informe técnico con tiempos de respuesta, falsas alarmas filtradas, horas de vuelo ahorradas e integración auditada con el centro de operaciones y despacho del cliente.</p>
+            <div class="phase-time" data-i18n="ph4_time">Fase 04 · Evaluación conjunta</div>
+            <h3 class="phase-title" data-i18n="ph4_title">Auditoría y retorno operativo conjunto</h3>
+            <p class="phase-desc" data-i18n="ph4_desc">Evaluación conjunta de tiempos de respuesta, falsas alarmas filtradas, horas de vuelo ahorradas e integración con la central del cliente.</p>
           </div>
         </div>
 
         <!-- Operational Impact Framework (Replaces ROI Calculator) -->
         <div class="impact-framework-box glass-panel" id="impacto">
           <div class="impact-header">
-            <span class="impact-badge" data-i18n="impact_badge">MODELO DE IMPACTO OPERACIONAL</span>
-            <h3 class="impact-title" data-i18n="impact_title">Valor Operacional en la Brecha Crítica</h3>
+            <span class="impact-badge" data-i18n="impact_badge">Modelo de impacto operacional</span>
+            <h3 class="impact-title" data-i18n="impact_title">Valor operacional en la brecha crítica</h3>
             <p class="impact-sub" data-i18n="impact_sub">Enfoque cualitativo centrado en la reducción del riesgo humano y el daño territorial, sin promesas comerciales arbitrarias en fase de prototipo.</p>
           </div>
 
           <div class="impact-cards-grid">
             <div class="impact-card glass-panel">
-              <div class="impact-card-icon">🛡️</div>
-              <h4 class="impact-card-title" data-i18n="imp1_title">Seguridad Nocturna y Cero Exposición Innecesaria</h4>
+              <div class="impact-card-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <h4 class="impact-card-title" data-i18n="imp1_title">Seguridad nocturna y menor exposición innecesaria</h4>
               <p class="impact-card-desc" data-i18n="imp1_desc">Evita el desplazamiento a ciegas de brigadistas y cuadrillas terrestres en camionetas 4x4 por caminos forestales y quebradas aisladas durante la noche. El reconocimiento aéreo confirma o descarta la amenaza antes de movilizar personal.</p>
             </div>
 
             <div class="impact-card glass-panel">
-              <div class="impact-card-icon">🚨</div>
-              <h4 class="impact-card-title" data-i18n="imp2_title">Detección Previa y Disuasión Autorizada</h4>
-              <p class="impact-card-desc" data-i18n="imp2_desc">Detección óptica y térmica de actividad humana no autorizada visible desde 100 m de altura. Ante una anomalía, el operador humano en tierra puede autorizar la activación del estrobo luminoso y la sirena acústica para disuadir antes de la ignición.</p>
+              <div class="impact-card-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                </svg>
+              </div>
+              <h4 class="impact-card-title" data-i18n="imp2_title">Detección previa y disuasión autorizada</h4>
+              <p class="impact-card-desc" data-i18n="imp2_desc">Detección óptica y térmica de actividad humana no autorizada visible desde 100 m de altura. Ante una anomalía, el operador humano en tierra puede autorizar la activación del foco destellante de alta intensidad y la sirena acústica para disuadir antes de la ignición.</p>
             </div>
 
             <div class="impact-card glass-panel">
-              <div class="impact-card-icon">✈️</div>
-              <h4 class="impact-card-title" data-i18n="imp3_title">Optimización del Ataque Aéreo al Amanecer</h4>
+              <div class="impact-card-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>
+                </svg>
+              </div>
+              <h4 class="impact-card-title" data-i18n="imp3_title">Optimización del ataque aéreo al amanecer</h4>
               <p class="impact-card-desc" data-i18n="imp3_desc">Al georreferenciar y contener focos o fogatas tempranas en plena noche, se entrega a las centrales de despacho información precisa de coordenadas y perímetro, evitando horas críticas de vuelo de aviones y helicópteros cisterna al inicio del día.</p>
             </div>
           </div>
@@ -702,25 +953,41 @@
           <!-- IaaS Operational Framework & Commitments -->
           <div class="iaas-framework-box">
             <div class="iaas-framework-header">
-              <span class="iaas-tag" data-i18n="iaas_tag">MARCO DE CO-DISEÑO IAAS</span>
-              <h4 class="iaas-title" data-i18n="iaas_title">Condiciones y Principios del Modelo Intelligence as a Service</h4>
-              <p class="iaas-sub" data-i18n="iaas_sub">Estructurado para que las empresas del sector participen en la validación técnica sin adquirir activos fijos de capital ni asumir pasivos operacionales.</p>
+              <span class="iaas-tag" data-i18n="iaas_tag">Adaptación de misión y servicio (IaaS)</span>
+              <h4 class="iaas-title" data-i18n="iaas_title">Adaptación de plataforma y principios del servicio (IaaS)</h4>
+              <p class="iaas-sub" data-i18n="iaas_sub">Trabajamos de forma colaborativa para calibrar sensores, adaptar la aeronave a las variables críticas de cada faena y operar sin compra de flotas ni pasivos de capital.</p>
             </div>
             <div class="iaas-pillars-grid">
               <div class="iaas-pillar-card">
-                <div class="pillar-icon">🛡️</div>
-                <h5 class="pillar-title" data-i18n="iaas_p1_title">0 CAPEX & Cero Pasivo de Flota</h5>
-                <p class="pillar-desc" data-i18n="iaas_p1_desc">Sin adquisición de drones ni depreciación de activos. El acceso al servicio se proyecta como gasto operacional (OPEX) por temporada o campaña de vigilancia.</p>
+                <div class="pillar-icon-wrap" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                  </svg>
+                </div>
+                <h5 class="pillar-title" data-i18n="iaas_p1_title">Sin compra de flota aérea ni pasivo operacional</h5>
+                <p class="pillar-desc" data-i18n="iaas_p1_desc">Sin adquisición de drones ni depreciación de activos. El acceso al servicio se contrata como gasto operacional (OPEX) por temporada o campaña de vigilancia nocturna.</p>
               </div>
               <div class="iaas-pillar-card">
-                <div class="pillar-icon">⚙️</div>
-                <h5 class="pillar-title" data-i18n="iaas_p2_title">Soporte Técnico & Mantenimiento Integral</h5>
-                <p class="pillar-desc" data-i18n="iaas_p2_desc">Aseguramiento de mantenimiento de componentes, baterías, calibración sensorial y actualización continua de algoritmos gestionados por el equipo de ingeniería de Strig Systems.</p>
+                <div class="pillar-icon-wrap" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                  </svg>
+                </div>
+                <h5 class="pillar-title" data-i18n="iaas_p2_title">Adaptación de carga útil y calibración continua</h5>
+                <p class="pillar-desc" data-i18n="iaas_p2_desc">Configuramos sensores y algoritmos térmicos según las variables críticas de su predio o faena. Strig Systems asume el mantenimiento, reposición de baterías y actualización de software a bordo.</p>
               </div>
               <div class="iaas-pillar-card">
-                <div class="pillar-icon">📜</div>
-                <h5 class="pillar-title" data-i18n="iaas_p3_title">Protocolos Operacionales & Marco de Seguridad</h5>
-                <p class="pillar-desc" data-i18n="iaas_p3_desc">Operación conducida bajo estándares de seguridad operacional conforme a normativa DAN 151 / DAN 91 para vuelos de prueba y validación segregada en predio privado.</p>
+                <div class="pillar-icon-wrap" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <path d="m9 15 2 2 4-4"/>
+                  </svg>
+                </div>
+                <h5 class="pillar-title" data-i18n="iaas_p3_title">Seguridad operacional y marco normativo</h5>
+                <p class="pillar-desc" data-i18n="iaas_p3_desc">Vuelos ejecutados bajo estándares estrictos de seguridad operacional conforme a normativa DGAC DAN 151 / DAN 91 para vuelos de prueba y validación segregada en predio privado.</p>
               </div>
             </div>
           </div>
@@ -729,12 +996,12 @@
         <!-- Pilot Callout Bar (Tri-Action Funnel) -->
         <div class="callout-box glass-panel">
           <div class="callout-info">
-            <h3 class="callout-title" data-i18n="callout_title">Convocatoria de Validación 2026-27</h3>
+            <h3 class="callout-title" data-i18n="callout_title">Convocatoria de validación 2026-27</h3>
             <p class="callout-desc" data-i18n="callout_desc">Cupos limitados por temporada en la Macrozona Centro-Sur para empresas forestales e industriales que deseen co-diseñar y evaluar la factibilidad en terreno.</p>
           </div>
           <div class="callout-actions">
-            <button type="button" class="btn-primary" data-open-modal="pilot-modal" data-i18n="callout_cta">Sumarse al Programa de Validación</button>
-            <button type="button" class="btn-secondary" data-open-modal="briefing-modal" data-i18n="callout_briefing">Agendar Briefing Técnico (15 min)</button>
+            <button type="button" class="btn-primary" data-open-modal="contact-modal" data-intent="pilot" data-i18n="callout_cta">Sumarse al programa de validación</button>
+            <button type="button" class="btn-secondary" data-open-modal="contact-modal" data-intent="briefing" data-i18n="callout_briefing">Agendar briefing técnico (15 min)</button>
             <button type="button" class="btn-outline-pdf" data-open-modal="brief-modal" data-i18n="callout_brief_pdf">Executive Brief (PDF)</button>
           </div>
         </div>
@@ -745,10 +1012,10 @@
     <section class="section" id="faq">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag" data-i18n="faq_tag">Resolución Técnica</span>
-          <h2 class="section-title" data-i18n="faq_title">Preguntas Frecuentes de Operación</h2>
+          <span class="section-tag" data-i18n="faq_tag">Preguntas frecuentes</span>
+          <h2 class="section-title" data-i18n="faq_title">Criterios técnicos, operacionales y límites del sistema</h2>
           <p class="section-subtitle" data-i18n="faq_sub">
-            Criterios de ingeniería, límites operacionales actuales y respuestas directas para equipos técnicos y gerencias de protección.
+            Límites operacionales actuales, condiciones de vuelo y respuestas claras para equipos técnicos y gerencias de protección.
           </p>
         </div>
 
@@ -804,7 +1071,18 @@
               <span class="faq-icon" aria-hidden="true">▼</span>
             </button>
             <div class="faq-answer">
-              <p data-i18n="faq_a5">Con total transparencia: hoy el sistema no opera vuelos más allá de la línea de vista visual (BVLOS), no cuenta con estación de acople automatizada no asistida, ni ofrece un radio de 15 km de servicio comercial. Actualmente nos encontramos en TRL 3 realizando ensayos controlados en predio piloto privado (VLOS ~1 km). Dichas capacidades forman parte de la visión y hoja de ruta futura.</p>
+              <p data-i18n="faq_a5">Con total transparencia: hoy el sistema no opera vuelos más allá de la línea de vista visual (BVLOS), no cuenta con estación de acople automatizada no asistida, ni ofrece un radio de 15 km de servicio comercial. Actualmente nos encontramos en TRL 3 realizando ensayos controlados en predio piloto privado en rango acotado bajo reglas de línea de vista visual (VLOS). Dichas capacidades forman parte de la visión y hoja de ruta futura.</p>
+            </div>
+          </div>
+
+          <!-- Q6: Recarga y logística en bases de brigadas -->
+          <div class="faq-item glass-panel">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span data-i18n="faq_q6">¿Cómo opera la recarga de energía y logística en predios forestales remotos?</span>
+              <span class="faq-icon" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a6">En la fase actual de validación y despliegue temprano, no dependemos de costosas estaciones robóticas off-grid no probadas. Operamos de forma pragmática aprovechando la infraestructura existente de las empresas e instituciones: bases de brigadas terrestres, helipistas o pistas de aviación tripulada que ya cuentan con energía y perímetro seguro. El equipo en tierra realiza recambios rápidos de baterías (hot-swap) entre misiones consecutivas. A futuro, este aprendizaje en terreno guiará el diseño e instalación de las estaciones de acople y recarga autónoma (Nest).</p>
             </div>
           </div>
         </div>
@@ -815,8 +1093,8 @@
     <section class="section" id="alianzas">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag" data-i18n="alliances_tag">Ecosistema & Tracción</span>
-          <h2 class="section-title" data-i18n="alliances_title">I+D Aplicada y Alianzas Estratégicas</h2>
+          <span class="section-tag" data-i18n="alliances_tag">Ecosistema y tracción</span>
+          <h2 class="section-title" data-i18n="alliances_title">I+D aplicada y alianzas estratégicas</h2>
           <p class="section-subtitle" data-i18n="alliances_sub">
             Combinamos ingeniería aeroespacial rigurosa con validación en el mercado real, respaldados por las instituciones líderes en innovación y transferencia tecnológica.
           </p>
@@ -850,15 +1128,35 @@
         <!-- Investor & Collaboration Opportunities Grid -->
         <div class="collab-grid glass-panel">
           <div class="collab-item">
-            <h3 class="collab-head" data-i18n="collab1_head">💼 Inversionistas & Fondos Deep Tech</h3>
+            <div class="collab-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+              </svg>
+            </div>
+            <h3 class="collab-head" data-i18n="collab1_head">Inversionistas y fondos deep tech</h3>
             <p class="collab-p" data-i18n="collab1_p">Apertura a conversaciones con fondos de capital de riesgo enfocados en robótica aérea, dual-use, mitigación climática y tecnologías de defensa territorial.</p>
           </div>
           <div class="collab-item">
-            <h3 class="collab-head" data-i18n="collab2_head">🔬 Centros de Investigación & Academia</h3>
+            <div class="collab-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 2v7.31M14 2v7.31M8.5 2h7M14 9.3a6.5 6.5 0 1 1-4 0"/>
+                <circle cx="12" cy="15" r="1"/>
+              </svg>
+            </div>
+            <h3 class="collab-head" data-i18n="collab2_head">Centros de investigación y academia</h3>
             <p class="collab-p" data-i18n="collab2_p">Cooperación técnica en visión computacional nocturna, algoritmos de detección en humo denso y modelos aerodinámicos de alta eficiencia.</p>
           </div>
           <div class="collab-item">
-            <h3 class="collab-head" data-i18n="collab3_head">🏛️ Agencias Públicas & Municipalidades</h3>
+            <div class="collab-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="21" x2="21" y2="21"/>
+                <line x1="9" y1="8" x2="15" y2="8"/>
+                <path d="M4 21V10a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v11"/>
+                <path d="M12 2 2 7h20z"/>
+              </svg>
+            </div>
+            <h3 class="collab-head" data-i18n="collab3_head">Agencias públicas y municipalidades</h3>
             <p class="collab-p" data-i18n="collab3_p">Modelos de colaboración B2G para protección de comunidades en la interfaz urbano-forestal y optimización de presupuestos de emergencia.</p>
           </div>
         </div>
@@ -869,8 +1167,8 @@
     <section class="section section-border" id="equipo">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag" data-i18n="team_tag">Equipo Fundador</span>
-          <h2 class="section-title" data-i18n="team_title">Ingeniería Aeroespacial & Operaciones Tácticas</h2>
+          <span class="section-tag" data-i18n="team_tag">Equipo fundador</span>
+          <h2 class="section-title" data-i18n="team_title">Ingeniería aeroespacial y operaciones tácticas</h2>
           <p class="section-subtitle" data-i18n="team_sub">
             5 ingenieros civiles aeroespaciales de la Universidad de Concepción, combinando diseño aeronáutico, visión computacional, combate de incendios en primera línea y certificación aeronáutica.
           </p>
@@ -885,6 +1183,13 @@
             <h3 class="founder-name">Tomás Medina</h3>
             <span class="founder-role">CEO & Co-founder</span>
             <p class="founder-bio" data-i18n="bio_tomas">Ingeniero Civil Aeroespacial • Visión Computacional, Machine Learning y CAD/CAM.</p>
+            <div class="founder-social-links">
+              <span class="founder-social-placeholder" title="LinkedIn · Próximamente disponible" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                </svg>
+              </span>
+            </div>
           </div>
 
           <!-- Carlos Gutiérrez -->
@@ -895,6 +1200,13 @@
             <h3 class="founder-name">Carlos Gutiérrez</h3>
             <span class="founder-role">Co-founder</span>
             <p class="founder-bio" data-i18n="bio_carlos">Bombero Operativo • Ingeniero Civil Aeroespacial. Análisis CFD, logística operacional y arquitectura de interfaz táctica.</p>
+            <div class="founder-social-links">
+              <span class="founder-social-placeholder" title="LinkedIn · Próximamente disponible" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                </svg>
+              </span>
+            </div>
           </div>
 
           <!-- Ananda Glaria -->
@@ -905,6 +1217,13 @@
             <h3 class="founder-name">Ananda Glaria</h3>
             <span class="founder-role">Co-founder</span>
             <p class="founder-bio" data-i18n="bio_ananda">Ingeniera Civil Aeroespacial • Integración y ensayos de vuelo RPAS, CAD, análisis estructural (FEA) y CFD.</p>
+            <div class="founder-social-links">
+              <span class="founder-social-placeholder" title="LinkedIn · Próximamente disponible" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                </svg>
+              </span>
+            </div>
           </div>
 
           <!-- Richard Solís -->
@@ -915,6 +1234,13 @@
             <h3 class="founder-name">Richard Solís</h3>
             <span class="founder-role">Co-founder</span>
             <p class="founder-bio" data-i18n="bio_richard">Ingeniero Civil Aeroespacial • Ingeniería de sistemas, aseguramiento normativo, control de calidad y certificación aeronáutica.</p>
+            <div class="founder-social-links">
+              <span class="founder-social-placeholder" title="LinkedIn · Próximamente disponible" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                </svg>
+              </span>
+            </div>
           </div>
 
           <!-- Pablo Alarcón -->
@@ -925,6 +1251,13 @@
             <h3 class="founder-name">Pablo Alarcón</h3>
             <span class="founder-role">Co-founder</span>
             <p class="founder-bio" data-i18n="bio_pablo">Ingeniero Civil Aeroespacial • Arquitectura de sistemas, lógica e integración de flujo de datos, validación y verificación.</p>
+            <div class="founder-social-links">
+              <span class="founder-social-placeholder" title="LinkedIn · Próximamente disponible" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                </svg>
+              </span>
+            </div>
           </div>
         </div>
 
@@ -938,6 +1271,13 @@
               <h3 class="founder-name">Dr. Alejandro López T.</h3>
               <span class="founder-role">Senior Advisor</span>
               <p class="founder-bio" data-i18n="bio_advisor">PhD Space Systems Engineering and Management. Asesor senior en arquitectura de sistemas espaciales y escalamiento aeroespacial.</p>
+              <div class="founder-social-links">
+                <span class="founder-social-placeholder" title="LinkedIn · Próximamente disponible" aria-label="LinkedIn">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                  </svg>
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -948,26 +1288,26 @@
     <section class="section section-border" id="contacto">
       <div class="container">
         <div class="contact-card glass-panel">
-          <span class="section-tag" data-i18n="cta_tag">Contacto Estratégico</span>
-          <h2 class="contact-title" data-i18n="cta_title">Coordinemos una Evaluación Territorial</h2>
+          <span class="section-tag" data-i18n="cta_tag">Contacto estratégico</span>
+          <h2 class="contact-title" data-i18n="cta_title">Coordinemos una evaluación territorial</h2>
           <p class="contact-desc" data-i18n="cta_desc">
             Si representas a una empresa con activos territoriales de alto valor, un consorcio de respuesta a emergencias o un fondo de inversión, nuestro equipo técnico responderá directamente tu requerimiento.
           </p>
 
           <div class="contact-btn-group">
-            <button type="button" class="btn-primary btn-large" data-open-modal="pilot-modal">
-              <span data-i18n="cta_btn1">Sumarse al Programa de Validación</span>
+            <button type="button" class="btn-primary btn-large" data-open-modal="contact-modal" data-intent="pilot">
+              <span data-i18n="cta_btn1">Sumarse al programa de validación</span>
               <span class="arrow-icon">→</span>
             </button>
-            <a href="mailto:tomas@strigsystems.tech?subject=Consulta%20Inversi%C3%B3n%20y%20Alianzas%20-%20Strig%20Systems" class="btn-ghost btn-large">
-              <span data-i18n="cta_btn2">Consultar por Alianzas / Inversión</span>
-            </a>
+            <button type="button" class="btn-ghost btn-large" data-open-modal="contact-modal" data-intent="alliances">
+              <span data-i18n="cta_btn2">Consultar por alianzas e inversión</span>
+            </button>
           </div>
 
           <div class="contact-footer-pills">
             <span class="pill-item">📍 Concepción, Chile</span>
             <span class="pill-item">✉️ contacto@strigsystems.tech</span>
-            <span class="pill-item">🔒 Acuerdos de Confidencialidad (NDA) Disponibles</span>
+            <span class="pill-item" data-i18n="contact_nda_pill">🔒 Acuerdos de confidencialidad (NDA) disponibles</span>
           </div>
         </div>
       </div>
@@ -985,7 +1325,7 @@
         <p class="footer-tagline" data-i18n="footer_tagline">
           Desarrollo de sistemas aéreos autónomos e inteligencia computacional para la mitigación anticipada de riesgos críticos.
         </p>
-        <p class="footer-copyright">© 2026 Strig Systems SpA. Todos los derechos reservados.</p>
+        <p class="footer-copyright" data-i18n="footer_copyright">© 2026 Strig Systems SpA. Todos los derechos reservados.</p>
       </div>
 
       <div class="footer-links-side">
@@ -1013,8 +1353,8 @@
     </div>
   </footer>
 
-  <!-- PILOT APPLICATION MODAL -->
-  <div id="pilot-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+  <!-- UNIFIED CONTACT MODAL WITH INTENT SELECTOR -->
+  <div id="contact-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="contact-modal-title">
     <div class="modal-window glass-panel">
       <!-- Close button -->
       <button type="button" class="modal-close-btn" data-close-modal aria-label="Cerrar modal">
@@ -1026,218 +1366,166 @@
 
       <!-- Modal Body / Form Container -->
       <div class="modal-content">
+        <!-- Interactive Intent Selector Tabs -->
+        <div class="intent-selector-wrap" role="tablist" aria-label="Tipo de requerimiento">
+          <button type="button" class="intent-pill active" data-intent-target="pilot" role="tab" aria-selected="true">
+            <span class="intent-pill-icon" aria-hidden="true">🚁</span>
+            <span data-i18n="intent_tab_pilot">Validación territorial (2026-27)</span>
+          </button>
+          <button type="button" class="intent-pill" data-intent-target="briefing" role="tab" aria-selected="false">
+            <span class="intent-pill-icon" aria-hidden="true">⏱️</span>
+            <span data-i18n="intent_tab_briefing">Briefing técnico (15 min)</span>
+          </button>
+          <button type="button" class="intent-pill" data-intent-target="alliances" role="tab" aria-selected="false">
+            <span class="intent-pill-icon" aria-hidden="true">🤝</span>
+            <span data-i18n="intent_tab_alliances">I+D & Alianzas</span>
+          </button>
+        </div>
+
         <div class="modal-header">
           <div class="modal-badge">
             <span class="badge-dot"></span>
-            <span data-i18n="modal_badge">Validación Territorial 2026-27</span>
+            <span id="contact-badge-text" data-i18n="modal_badge">Validación territorial 2026-27</span>
           </div>
-          <h2 id="modal-title" class="modal-title" data-i18n="modal_title">Sumarse al Programa de Validación 2026-27</h2>
-          <p class="modal-subtitle" data-i18n="modal_sub">
+          <h2 id="contact-modal-title" class="modal-title" data-i18n="modal_title">Sumarse al programa de validación 2026-27</h2>
+          <p id="contact-modal-sub" class="modal-subtitle" data-i18n="modal_sub">
             Completa los datos de tu entidad para evaluar conjuntamente la factibilidad territorial y requerimientos de validación en terreno.
           </p>
         </div>
 
-        <form id="pilot-form" class="pilot-form" novalidate>
+        <form id="contact-form" class="pilot-form" novalidate>
           <!-- Honeypot anti-spam -->
           <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
           <!-- FormSubmit configuration -->
-          <input type="hidden" name="_subject" value="Nueva Postulación Programa Piloto - Strig Systems">
+          <input type="hidden" id="form-subject" name="_subject" value="Nueva Postulación Programa Piloto - Strig Systems">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" id="form-intent-input" name="Intencion" value="Validación territorial (2026-27)">
 
           <div class="form-grid">
             <!-- Nombre -->
             <div class="form-group">
-              <label for="form-name" class="form-label" data-i18n="f_name_label">Nombre y Apellido *</label>
-              <input type="text" id="form-name" name="Nombre" class="form-input" required placeholder="Ej: Marcela Soto" data-i18n-ph="f_name_ph">
+              <label for="contact-name" class="form-label" data-i18n="f_name_label">Nombre y apellido *</label>
+              <input type="text" id="contact-name" name="Nombre" class="form-input" required placeholder="Ej: Marcela Soto" data-i18n-ph="f_name_ph">
             </div>
 
-            <!-- Email Corporativo -->
+            <!-- Email Corporativo / Institucional -->
             <div class="form-group">
-              <label for="form-email" class="form-label" data-i18n="f_email_label">Correo Corporativo / Institucional *</label>
-              <input type="email" id="form-email" name="Email" class="form-input" required placeholder="nombre@empresa.cl" data-i18n-ph="f_email_ph">
+              <label for="contact-email" class="form-label" data-i18n="f_email_label">Correo corporativo o institucional *</label>
+              <input type="email" id="contact-email" name="Email" class="form-input" required placeholder="nombre@empresa.cl" data-i18n-ph="f_email_ph">
             </div>
 
             <!-- Empresa u Organización -->
             <div class="form-group">
-              <label for="form-company" class="form-label" data-i18n="f_company_label">Empresa u Organización *</label>
-              <input type="text" id="form-company" name="Empresa_Organizacion" class="form-input" required placeholder="Ej: Forestal / Minera / Institución" data-i18n-ph="f_company_ph">
+              <label for="contact-company" class="form-label" data-i18n="f_company_label">Empresa u organización *</label>
+              <input type="text" id="contact-company" name="Empresa_Organizacion" class="form-input" required placeholder="Ej: Forestal / Minera / Institución" data-i18n-ph="f_company_ph">
             </div>
 
             <!-- Teléfono / WhatsApp -->
             <div class="form-group">
-              <label for="form-phone" class="form-label" data-i18n="f_phone_label">Teléfono / WhatsApp (Opcional)</label>
-              <input type="tel" id="form-phone" name="Telefono" class="form-input" placeholder="+56 9 1234 5678" data-i18n-ph="f_phone_ph">
+              <label for="contact-phone" class="form-label" data-i18n="f_phone_label">Teléfono / WhatsApp (opcional)</label>
+              <input type="tel" id="contact-phone" name="Telefono" class="form-input" placeholder="+56 9 1234 5678" data-i18n-ph="f_phone_ph">
             </div>
 
-            <!-- Región -->
-            <div class="form-group">
-              <label for="form-region" class="form-label" data-i18n="f_region_label">Región Territorial *</label>
-              <select id="form-region" name="Region" class="form-select" required>
+            <!-- DYNAMIC FIELD: Región (Pilot) -->
+            <div class="form-group intent-field-pilot">
+              <label for="contact-region" class="form-label" data-i18n="f_region_label">Región territorial *</label>
+              <select id="contact-region" name="Region" class="form-select" required>
                 <option value="" disabled selected data-i18n="f_region_default">Selecciona una región...</option>
-                <option value="Biobío">Región del Biobío</option>
-                <option value="La Araucanía">Región de La Araucanía</option>
-                <option value="Maule">Región del Maule</option>
-                <option value="Ñuble">Región de Ñuble</option>
-                <option value="Los Ríos">Región de Los Ríos</option>
-                <option value="Los Lagos">Región de Los Lagos</option>
-                <option value="Valparaíso">Región de Valparaíso</option>
-                <option value="Metropolitana">Región Metropolitana</option>
-                <option value="Otra Región de Chile">Otra Región de Chile</option>
-                <option value="Internacional">Internacional (Fuera de Chile)</option>
+                <option value="Biobío" data-i18n="f_reg_biobio">Región del Biobío</option>
+                <option value="La Araucanía" data-i18n="f_reg_araucania">Región de La Araucanía</option>
+                <option value="Maule" data-i18n="f_reg_maule">Región del Maule</option>
+                <option value="Ñuble" data-i18n="f_reg_nuble">Región de Ñuble</option>
+                <option value="Los Ríos" data-i18n="f_reg_rios">Región de Los Ríos</option>
+                <option value="Los Lagos" data-i18n="f_reg_lagos">Región de Los Lagos</option>
+                <option value="Valparaíso" data-i18n="f_reg_valparaiso">Región de Valparaíso</option>
+                <option value="Metropolitana" data-i18n="f_reg_metro">Región Metropolitana</option>
+                <option value="Otra Región de Chile" data-i18n="f_reg_other">Otra región de Chile</option>
+                <option value="Internacional" data-i18n="f_reg_intl">Internacional (fuera de Chile)</option>
               </select>
             </div>
 
-            <!-- Tipo de Interés -->
-            <div class="form-group">
-              <label for="form-interest" class="form-label" data-i18n="f_interest_label">Tipo de Interés *</label>
-              <select id="form-interest" name="Tipo_Interes" class="form-select" required>
+            <!-- DYNAMIC FIELD: Tipo de Interés (Pilot) -->
+            <div class="form-group intent-field-pilot">
+              <label for="contact-interest" class="form-label" data-i18n="f_interest_label">Tipo de interés *</label>
+              <select id="contact-interest" name="Tipo_Interes" class="form-select" required>
                 <option value="" disabled selected data-i18n="f_interest_default">Selecciona el tipo de interés...</option>
-                <option value="Piloto Forestal/Industrial" data-i18n="opt_interest_1">Programa de Validación Técnica (Forestal / Industrial)</option>
-                <option value="Alianza I+D/Academia" data-i18n="opt_interest_2">Alianzas de I+D / Validación Técnica</option>
-                <option value="Inversión Deep Tech" data-i18n="opt_interest_3">Inversión / Fondos de Capital Deep Tech</option>
-                <option value="Consulta General" data-i18n="opt_interest_4">Consulta General / Demostración Técnica</option>
+                <option value="Piloto Forestal/Industrial" data-i18n="opt_interest_1">Programa de validación técnica (forestal / industrial)</option>
+                <option value="Alianza I+D/Academia" data-i18n="opt_interest_2">Alianzas de I+D y validación técnica</option>
+                <option value="Inversión Deep Tech" data-i18n="opt_interest_3">Inversión y fondos de capital deep tech</option>
+                <option value="Consulta General" data-i18n="opt_interest_4">Consulta general y demostración técnica</option>
+              </select>
+            </div>
+
+            <!-- DYNAMIC FIELD: Horario Preferente (Briefing) -->
+            <div class="form-group full-width intent-field-briefing" style="display: none;">
+              <label for="contact-briefing-time" class="form-label" data-i18n="f_briefing_time_label">Horario preferente *</label>
+              <select id="contact-briefing-time" name="Horario_Preferente" class="form-select">
+                <option value="Mañana (09:00 - 13:00 CLT)" selected data-i18n="f_briefing_time_morn">Mañana (09:00 - 13:00 CLT)</option>
+                <option value="Tarde (14:00 - 18:00 CLT)" data-i18n="f_briefing_time_aft">Tarde (14:00 - 18:00 CLT)</option>
+              </select>
+            </div>
+
+            <!-- DYNAMIC FIELD: Tipo de Colaboración (Alliances) -->
+            <div class="form-group full-width intent-field-alliances" style="display: none;">
+              <label for="contact-alliance-type" class="form-label" data-i18n="f_alliance_type_label">Tipo de colaboración *</label>
+              <select id="contact-alliance-type" name="Tipo_Colaboracion" class="form-select">
+                <option value="Fondo de inversión / Venture Capital" selected data-i18n="opt_alliance_1">Fondo de inversión / Venture Capital</option>
+                <option value="Centro de I+D / Cooperación académica" data-i18n="opt_alliance_2">Centro de I+D / Cooperación académica</option>
+                <option value="Agencia pública / Municipalidad / B2G" data-i18n="opt_alliance_3">Agencia pública / Municipalidad / B2G</option>
               </select>
             </div>
           </div>
 
           <!-- Mensaje / Detalles -->
           <div class="form-group full-width">
-            <label for="form-message" class="form-label" data-i18n="f_message_label">Detalles Adicionales o Necesidad Específica (Opcional)</label>
-            <textarea id="form-message" name="Mensaje" class="form-textarea" rows="3" placeholder="Describe brevemente el tipo de predio, zona geográfica o consulta técnica..." data-i18n-ph="f_message_ph"></textarea>
+            <label for="contact-message" class="form-label" data-i18n="f_message_label">Detalles adicionales o necesidad específica (opcional)</label>
+            <textarea id="contact-message" name="Mensaje" class="form-textarea" rows="3" placeholder="Describe brevemente el tipo de predio, zona geográfica o consulta técnica..." data-i18n-ph="f_message_ph"></textarea>
           </div>
 
           <!-- Consent Checkbox -->
           <div class="form-group form-checkbox-group">
-            <label class="form-checkbox-label" for="form-consent">
-              <input type="checkbox" id="form-consent" name="Consentimiento" required class="form-checkbox">
+            <label class="form-checkbox-label" for="contact-consent">
+              <input type="checkbox" id="contact-consent" name="Consentimiento" required class="form-checkbox">
               <span class="checkbox-text" data-i18n="f_consent_label">Acepto el tratamiento de mis datos de contacto para la evaluación técnica de la validación y declaro conocer los <a href="terms.html" target="_blank" class="legal-inline-link">Términos de Servicio B2B</a> y la <a href="privacy.html" target="_blank" class="legal-inline-link">Política de Privacidad</a> (Ley N° 19.628 / Ley N° 21.719).</span>
             </label>
           </div>
 
           <!-- Feedback Alerts -->
-          <div id="form-validation-error" class="form-alert alert-warning" style="display: none;" role="alert">
+          <div id="contact-validation-error" class="form-alert alert-warning" style="display: none;" role="alert">
             <span data-i18n="form_val_error">Por favor completa todos los campos obligatorios (*) con un formato válido.</span>
           </div>
 
-          <div id="form-error" class="form-alert alert-error" style="display: none;" role="alert">
+          <div id="contact-error" class="form-alert alert-error" style="display: none;" role="alert">
             <span data-i18n="form_error_msg">Hubo un problema al enviar la solicitud. Puedes escribirnos directamente a</span>
             <a href="mailto:contacto@strigsystems.tech" class="alert-link">contacto@strigsystems.tech</a>.
           </div>
 
           <!-- Submit Button -->
           <div class="form-actions">
-            <button type="submit" id="form-submit-btn" class="btn-primary btn-submit">
-              <span class="btn-text" data-i18n="f_submit_btn">Enviar Solicitud de Validación</span>
+            <button type="submit" id="contact-submit-btn" class="btn-primary btn-submit">
+              <span class="btn-text" data-i18n="f_submit_btn">Enviar solicitud de validación</span>
               <span class="btn-spinner" style="display: none;" aria-hidden="true"></span>
               <span class="arrow-icon">→</span>
             </button>
-            <span class="form-privacy-note" data-i18n="f_privacy">Tus datos serán tratados bajo estricta confidencialidad técnica (NDA disponible).</span>
-          </div>
-        </form>
-
-        <!-- Success Container -->
-        <div id="form-success" class="form-success-state" style="display: none;">
-          <div class="success-icon-circle">
-            <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="var(--accent-cyan)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
-          </div>
-          <h3 class="success-title" data-i18n="success_title">¡Postulación Recibida con Éxito!</h3>
-          <p class="success-desc" data-i18n="success_desc">
-            Hemos recibido los antecedentes de tu entidad. Nuestro equipo de ingeniería aeroespacial revisará la factibilidad territorial y se contactará directamente dentro de 24 horas hábiles.
-          </p>
-          <div class="success-actions">
-            <button type="button" class="btn-ghost" data-close-modal data-i18n="success_close_btn">Cerrar Ventana</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- MODAL: AGENDAR BRIEFING TÉCNICO (15 MIN) -->
-  <div id="briefing-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="briefing-title">
-    <div class="modal-dialog glass-panel briefing-dialog">
-      <button type="button" class="modal-close" data-close-modal aria-label="Cerrar ventana">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-      </button>
-
-      <div class="modal-content">
-        <div class="modal-header">
-          <div class="modal-badge">
-            <span class="badge-dot"></span>
-            <span data-i18n="briefing_badge">Ingeniería & Operaciones</span>
-          </div>
-          <h2 id="briefing-title" class="modal-title" data-i18n="briefing_modal_title">Agendar Briefing Técnico de 15 Minutos</h2>
-          <p class="modal-subtitle" data-i18n="briefing_modal_sub">
-            Conversación técnica directa con Tomás Medina (Technical Lead): evaluamos la orografía de tus predios, viabilidad de radioenlace y requerimientos de integración territorial.
-          </p>
-        </div>
-
-        <form id="briefing-form" class="pilot-form" novalidate>
-          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-          <input type="hidden" name="_subject" value="Solicitud de Briefing Técnico 15 min - Strig Systems">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="false">
-
-          <div class="form-grid">
-            <div class="form-group">
-              <label for="b-name" class="form-label" data-i18n="f_name_label">Nombre y Apellido *</label>
-              <input type="text" id="b-name" name="Nombre" class="form-input" required placeholder="Ej: Carlos Silva" data-i18n-ph="f_name_ph">
-            </div>
-
-            <div class="form-group">
-              <label for="b-contact" class="form-label" data-i18n="f_contact_label">Correo Corporativo o WhatsApp *</label>
-              <input type="text" id="b-contact" name="Contacto" class="form-input" required placeholder="correo@empresa.cl o +56 9..." data-i18n-ph="f_contact_ph">
-            </div>
-
-            <div class="form-group full-width">
-              <label for="b-time" class="form-label" data-i18n="f_briefing_time_label">Horario Preferente *</label>
-              <select id="b-time" name="Horario_Preferente" class="form-select" required>
-                <option value="Mañana (09:00 - 13:00 CLT)" selected data-i18n="f_briefing_time_morn">Mañana (09:00 - 13:00 CLT)</option>
-                <option value="Tarde (14:00 - 18:00 CLT)" data-i18n="f_briefing_time_aft">Tarde (14:00 - 18:00 CLT)</option>
-              </select>
-            </div>
-          </div>
-
-          <div id="briefing-error" class="form-alert alert-error" style="display: none;" role="alert">
-            <span data-i18n="form_error_msg">Hubo un problema al enviar la solicitud. Puedes escribirnos directamente a</span>
-            <a href="mailto:tmedina@strigsystems.tech" class="alert-link">tmedina@strigsystems.tech</a>.
-          </div>
-
-          <!-- Briefing Consent Checkbox -->
-          <div class="form-group form-checkbox-group">
-            <label class="form-checkbox-label" for="b-consent">
-              <input type="checkbox" id="b-consent" name="Consentimiento" required class="form-checkbox">
-              <span class="checkbox-text" data-i18n="f_consent_label">Acepto el tratamiento de mis datos de contacto para la evaluación técnica del piloto y declaro conocer los <a href="terms.html" target="_blank" class="legal-inline-link">Términos de Servicio B2B</a> y la <a href="privacy.html" target="_blank" class="legal-inline-link">Política de Privacidad</a> (Ley N° 19.628 / Ley N° 21.719).</span>
-            </label>
-          </div>
-
-          <div class="form-actions">
-            <button type="submit" id="b-submit-btn" class="btn-primary btn-submit">
-              <span class="btn-text" data-i18n="f_briefing_submit">Solicitar Briefing Técnico</span>
-              <span class="btn-spinner" style="display: none;" aria-hidden="true"></span>
-              <span class="arrow-icon">→</span>
-            </button>
-            <div class="direct-contact-note">
+            <span id="contact-privacy-note" class="form-privacy-note" data-i18n="f_privacy">Tus datos serán tratados bajo estricta confidencialidad técnica (NDA disponible).</span>
+            <div id="contact-direct-note" class="direct-contact-note" style="display: none;">
               <span data-i18n="f_briefing_direct">O escribe directamente al Technical Lead:</span>
               <a href="mailto:tmedina@strigsystems.tech" class="highlight-link">tmedina@strigsystems.tech</a>
             </div>
           </div>
         </form>
 
-        <div id="briefing-success" class="form-success-state" style="display: none;">
+        <!-- Success Container -->
+        <div id="contact-success" class="form-success-state" style="display: none;">
           <div class="success-icon-circle">
-            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--accent-cyan)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="var(--accent-cyan)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
           </div>
-          <h3 class="success-title" data-i18n="briefing_success_title">¡Solicitud de Briefing Recibida!</h3>
-          <p class="success-desc" data-i18n="briefing_success_desc">
-            Tomás Medina se contactará contigo para coordinar el enlace de Google Meet según tu preferencia horaria.
+          <h3 id="contact-success-title" class="success-title" data-i18n="success_title">¡Postulación Recibida con Éxito!</h3>
+          <p id="contact-success-desc" class="success-desc" data-i18n="success_desc">
+            Hemos recibido los antecedentes de tu entidad. Nuestro equipo de ingeniería aeroespacial revisará la factibilidad territorial y se contactará directamente dentro de 24 horas hábiles.
           </p>
           <div class="success-actions">
             <button type="button" class="btn-ghost" data-close-modal data-i18n="success_close_btn">Cerrar Ventana</button>
@@ -1267,7 +1555,7 @@
         <div class="brief-paper-header">
           <div class="brief-logo-area">
             <span class="brief-brand">STRIG SYSTEMS</span>
-            <span class="brief-product">PLATAFORMA ATHENE</span>
+            <span class="brief-product" data-i18n="eb_product">PLATAFORMA ATHENE</span>
           </div>
           <div class="brief-meta-area">
             <span class="brief-doc-tag" data-i18n="eb_tag">EXECUTIVE BRIEF 2026-27</span>
@@ -1296,9 +1584,9 @@
           <div class="brief-box">
             <h3 class="brief-box-title" data-i18n="eb_b2_title">2. Solución Tecnológica</h3>
             <ul class="brief-list">
-              <li data-i18n="eb_b2_p1"><strong>Plataforma VTOL & Dron Noctua:</strong> Validación inicial sobre célula comercial adaptada; autonomía de diseño 45–60 min y despegue vertical sin pista.</li>
+              <li data-i18n="eb_b2_p1"><strong>Plataforma VTOL & Dron Noctua:</strong> Validación inicial sobre aeronave comercial adaptada; autonomía de diseño 45–60 min y despegue vertical sin pista.</li>
               <li data-i18n="eb_b2_p2"><strong>Edge AI Zero-Cloud a Bordo:</strong> Cómputo local NVIDIA Jetson; detección térmica en segundos sin conexión a internet ni señal celular.</li>
-              <li data-i18n="eb_b2_p3"><strong>Disuasión con Autorización Humana:</strong> Activación de estrobo luminoso y sirena acústica siempre autorizada por el operador en tierra (Human-in-the-Loop).</li>
+              <li data-i18n="eb_b2_p3"><strong>Disuasión con Autorización Humana:</strong> Activación de foco de alta intensidad y sirena acústica siempre autorizada por el operador en tierra (Human-in-the-Loop).</li>
             </ul>
           </div>
 
