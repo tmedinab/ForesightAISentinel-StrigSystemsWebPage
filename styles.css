@@ -1861,8 +1861,9 @@ body {
 }
 
 .media-frame-meta {
-  color: var(--text-muted);
+  color: #cbd5e1;
   font-size: 0.68rem;
+  letter-spacing: 0.04em;
 }
 
 .technical-photo-container,
@@ -2898,6 +2899,23 @@ body.modal-open {
   grid-column: 1 / -1;
 }
 
+@keyframes intentFieldFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intent-field-pilot,
+.intent-field-briefing,
+.intent-field-alliances {
+  animation: intentFieldFadeIn 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
 .form-label {
   font-family: var(--font-heading);
   font-size: 0.82rem;
@@ -3538,29 +3556,63 @@ body.modal-open {
 }
 
 .iaas-pillar-card {
-  background: rgba(5, 10, 22, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 10px;
-  padding: 1.2rem;
+  position: relative;
+  background: rgba(10, 15, 28, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 2px solid rgba(0, 229, 255, 0.45);
+  border-radius: var(--radius-card);
+  padding: 1.35rem 1.25rem;
   display: flex;
   flex-direction: column;
-  transition: border-color 0.2s ease;
+  transition: var(--transition-smooth);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .iaas-pillar-card:hover {
-  border-color: rgba(0, 240, 255, 0.3);
+  border-color: rgba(0, 229, 255, 0.45);
+  border-top-color: var(--accent-cyan);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55), 0 0 16px rgba(0, 229, 255, 0.12);
+  transform: translateY(-2px);
+}
+
+.iaas-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.iaas-card-tag {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--accent-cyan);
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid rgba(0, 240, 255, 0.22);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+}
+
+.iaas-card-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent-cyan);
+  box-shadow: 0 0 6px var(--accent-cyan);
 }
 
 .pillar-icon-wrap {
   width: 42px;
   height: 42px;
-  border-radius: 10px;
+  border-radius: 8px;
   background: rgba(0, 240, 255, 0.08);
   border: 1px solid rgba(0, 240, 255, 0.22);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0.9rem;
+  margin-bottom: 0.85rem;
   color: var(--accent-cyan);
   transition: all 0.25s ease;
 }
@@ -3580,9 +3632,9 @@ body.modal-open {
 }
 
 .pillar-desc {
-  font-size: 0.78rem;
-  color: var(--text-muted);
-  line-height: 1.45;
+  font-size: 0.82rem;
+  color: #cbd5e1;
+  line-height: 1.5;
 }
 
 @media (max-width: 800px) {

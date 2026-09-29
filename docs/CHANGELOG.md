@@ -4,6 +4,18 @@ Todas las modificaciones notables realizadas en la plataforma web de **Strig Sys
 
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y respeta las decisiones de arquitectura registradas en `docs/adr/`.
 
+## [1.3.2] — 2026-09-29
+### Añadido
+* **Encabezados Tácticos en Bloque IaaS (`.iaas-pillar-card`):** Incorporación de tags tácticos mono (`IAAS // 01`, `IAAS // 02`, `IAAS // 03`) con micro-led cian (`.iaas-card-dot`), borde superior acentuado (`border-top: 2px solid rgba(0, 229, 255, 0.45)`) y efecto hover lift para diferenciación visual nítida frente a tarjetas de impacto operativo.
+* **Micro-transición Cinemática en Modal (`#contact-modal`):** Animación suave `@keyframes intentFieldFadeIn` (0.28s cubic-bezier) para los campos dinámicos condicionales al alternar el selector de intención.
+* **Titularidad de Propiedad Intelectual (`p4_s5_lbl`, `p4_s5_val`, `eb_b4_p3`):** Declaración formal de gobernanza y titularidad exclusiva de Strig Systems SpA sobre arquitectura, software de misión y modelos de inferencia entrenados.
+
+### Modificado
+* **Doctrina Operacional Dual HITL (`p4_s1_lbl`, `p4_s1_val`):** Especificación nítida en el Pilar 4 de la Consola Táctica entre *Modo Centinela Silencioso* (vigilancia térmica pasiva sin emisiones acústicas/lumínicas para acopio de evidencia forense) y *Modo Disuasión Activa* (foco estroboscópico y sirena acústica disuasiva para disuadir ignición intencional), ambos bajo doctrina estricta Human-in-the-Loop.
+* **Privacidad y Cumplimiento Legal (`p4_s3_lbl`, `p4_s3_val`):** Refuerzo del protocolo de anonimización y difuminado local en el borde (Edge AI Zero-Cloud) para rostros y patentes vehiculares previo a la entrega de fichas periciales, conforme a la Ley N° 19.628 y Ley N° 21.719.
+* **Taxonomía Hardware Athene™ vs Noctua™:** Homogeneización de nomenclatura en métricas (`m2_sub`), roadmap (`rm5_title`, `rm5_desc`) y Executive Brief (`eb_summary`, `eb_b2_p1`), distinguiendo con claridad Athene™ (sistema centinela autónomo / suite de misión) y Noctua™ (carga útil optrónica biespectral radiométrica y célula VTOL avanzada futura).
+* **Contraste Accesible (WCAG AA):** Elevación de micro-textos en `.media-frame-meta` y `.pillar-desc` desde opacidad atenuada a `#cbd5e1` (ratio >11:1 sobre fondo `#07090e`), garantizando legibilidad en displays industriales y tabletas en terreno.
+
 ## [1.3.1] — 2026-09-28
 ### Modificado
 * **Envolvente de Vuelo (Criterio de Diseño TRL 3-4):** Reformulación transparente de la tolerancia al viento en la ficha técnica de Athene y en el FAQ (`p1_s3_lbl`, `p1_s3_val`, `faq_q2`, `faq_a2`) como *criterio u objetivo de diseño aerodinámico* para régimen de viento Puelche (10–12 m/s / ~36–43 km/h), erradicando claims prematuros de catálogo o certificación comercial.

@@ -338,7 +338,7 @@
             <div class="metric-value">15 km</div>
             <span class="tax-badge tax-badge-goal" data-i18n="m2_tax">Objetivo de producto</span>
             <div class="metric-title" data-i18n="m2_title">Radio de misión proyectado</div>
-            <div class="metric-sub" data-i18n="m2_sub">Meta de diseño para 50.000 ha (Noctua) • Hoy: Rango acotado en predio piloto (VLOS)</div>
+            <div class="metric-sub" data-i18n="m2_sub">Meta de diseño para 50.000 ha con carga útil Noctua™ • Hoy: Rango acotado en predio piloto (VLOS)</div>
             <div class="metric-tooltip" role="tooltip">
               <div class="metric-tooltip-header">
                 <span class="metric-tooltip-badge" data-i18n="m2_tax">Objetivo de Producto</span>
@@ -711,20 +711,24 @@
 
             <div class="tech-spec-drawer" id="spec-drawer-4" aria-hidden="true">
               <div class="spec-item">
-                <span class="spec-lbl" data-i18n="p4_s1_lbl">Doctrina HITL:</span>
-                <span class="spec-val" data-i18n="p4_s1_val">El sistema de disuasión física (foco destellante de alta potencia y sirena acústica) solo se activa con autorización previa y deliberada del operador.</span>
+                <span class="spec-lbl" data-i18n="p4_s1_lbl">Doctrina Operacional Dual (HITL):</span>
+                <span class="spec-val" data-i18n="p4_s1_val">Modo Centinela Silencioso (vigilancia térmica pasiva sin emisiones acústicas ni lumínicas para evidencia legal pericial) o Modo Disuasión Activa (foco estroboscópico y sirena para frustrar la ignición en interfaz). Toda activación física requiere autorización expresa y deliberada del operador humano.</span>
               </div>
               <div class="spec-item">
                 <span class="spec-lbl" data-i18n="p4_s2_lbl">Reporte Pericial:</span>
                 <span class="spec-val" data-i18n="p4_s2_val">Generación de expediente digital de incidente con firma criptográfica, sellado de tiempo y captura biespectral para aseguradoras y fiscalía.</span>
               </div>
               <div class="spec-item">
-                <span class="spec-lbl" data-i18n="p4_s3_lbl">Privacidad por Diseño:</span>
-                <span class="spec-val" data-i18n="p4_s3_val">Difuminado y anonimización automática de rostros y propiedad privada no involucrada (Ley 19.628 / Ley 21.719).</span>
+                <span class="spec-lbl" data-i18n="p4_s3_lbl">Privacidad y Cumplimiento Legal:</span>
+                <span class="spec-val" data-i18n="p4_s3_val">Difuminado y anonimización automática de rostros y patentes vehiculares en el borde (Edge AI Zero-Cloud) previo a la generación de fichas forenses, conforme a la Ley N° 19.628 y Ley N° 21.719.</span>
               </div>
               <div class="spec-item">
                 <span class="spec-lbl" data-i18n="p4_s4_lbl">Operación Offline:</span>
                 <span class="spec-val" data-i18n="p4_s4_val">Estación de operador con cartografía precargada localmente para despliegue autónomo en faenas remotas.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-lbl" data-i18n="p4_s5_lbl">Propiedad Intelectual:</span>
+                <span class="spec-val" data-i18n="p4_s5_val">Arquitectura de sistemas, modelos de inferencia entrenados y software de misión desarrollados bajo titularidad y gobernanza exclusiva de Strig Systems SpA.</span>
               </div>
             </div>
           </div>
@@ -950,9 +954,9 @@
           <!-- Hito 5: Visión a futuro -->
           <div class="roadmap-card card-vision glass-panel" tabindex="0">
             <span class="roadmap-phase-label" data-i18n="rm5_phase">Visión a futuro</span>
-            <h3 class="roadmap-card-title" data-i18n="rm5_title">Noctua VTOL, Nest automatizado y BVLOS</h3>
+            <h3 class="roadmap-card-title" data-i18n="rm5_title">Célula VTOL avanzada, carga útil Noctua™, Nest automatizado y BVLOS</h3>
             <span class="roadmap-card-hint" aria-hidden="true" data-i18n="rm_card_hint">+ Detalle</span>
-            <p class="roadmap-card-desc" data-i18n="rm5_desc">Integración o diseño de la aeronave VTOL Noctua, estación Nest de aterrizaje y carga automatizada, supervisión de flota 1:N (un operador para múltiples aeronaves en simultáneo), enlaces de respaldo y radio de 15 km bajo certificación BVLOS.</p>
+            <p class="roadmap-card-desc" data-i18n="rm5_desc">Evolución de plataforma: integración de célula aerodinámica VTOL de largo alcance portando la carga útil optrónica Noctua™, estación robotizada Nest para escalamiento a supervisión de flotas 1:N (un operador para múltiples aeronaves sin personal en terreno), enlaces satelitales de respaldo y radio extendido de 15 km bajo certificación BVLOS.</p>
           </div>
         </div>
       </div>
@@ -1116,6 +1120,10 @@
             </div>
             <div class="iaas-pillars-grid">
               <div class="iaas-pillar-card">
+                <div class="iaas-card-header">
+                  <span class="iaas-card-tag">IAAS // 01</span>
+                  <span class="iaas-card-dot" aria-hidden="true"></span>
+                </div>
                 <div class="pillar-icon-wrap" aria-hidden="true">
                   <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
@@ -1126,6 +1134,10 @@
                 <p class="pillar-desc" data-i18n="iaas_p1_desc">Sin adquisición de drones ni depreciación de activos. El acceso al servicio se contrata como gasto operacional (OPEX) por temporada o campaña de vigilancia nocturna.</p>
               </div>
               <div class="iaas-pillar-card">
+                <div class="iaas-card-header">
+                  <span class="iaas-card-tag">IAAS // 02</span>
+                  <span class="iaas-card-dot" aria-hidden="true"></span>
+                </div>
                 <div class="pillar-icon-wrap" aria-hidden="true">
                   <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="12" cy="12" r="3"/>
@@ -1136,6 +1148,10 @@
                 <p class="pillar-desc" data-i18n="iaas_p2_desc">Configuramos sensores y algoritmos térmicos según las variables críticas de su predio o faena. Strig Systems asume el mantenimiento, reposición de baterías y actualización de software a bordo.</p>
               </div>
               <div class="iaas-pillar-card">
+                <div class="iaas-card-header">
+                  <span class="iaas-card-tag">IAAS // 03</span>
+                  <span class="iaas-card-dot" aria-hidden="true"></span>
+                </div>
                 <div class="pillar-icon-wrap" aria-hidden="true">
                   <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
@@ -1810,7 +1826,7 @@
         <div class="brief-paper-lead">
           <h2 id="brief-doc-title" class="brief-h1" data-i18n="eb_h1">Inteligencia Aérea Autónoma para la Brecha Nocturna de Incendios</h2>
           <p class="brief-summary" data-i18n="eb_summary">
-            Athene aborda la brecha nocturna mediante aeronaves VTOL (plataforma de validación en transición hacia Noctua), inferencia térmica Edge AI a bordo (NVIDIA Jetson) y telemetría táctica FHSS 915 MHz, sustituyendo la exposición terrestre a ciegas y optimizando el despacho aéreo al amanecer.
+            Athene aborda la brecha nocturna mediante aeronaves VTOL portando la carga útil optrónica Noctua™, inferencia térmica Edge AI a bordo (NVIDIA Jetson) y telemetría táctica FHSS 915 MHz, sustituyendo la exposición terrestre a ciegas y optimizando el despacho aéreo al amanecer.
           </p>
         </div>
 
@@ -1828,7 +1844,7 @@
           <div class="brief-box">
             <h3 class="brief-box-title" data-i18n="eb_b2_title">2. Solución Tecnológica</h3>
             <ul class="brief-list">
-              <li data-i18n="eb_b2_p1"><strong>Plataforma VTOL & Dron Noctua:</strong> Validación inicial sobre aeronave comercial adaptada; autonomía de diseño 45–60 min y despegue vertical sin pista.</li>
+              <li data-i18n="eb_b2_p1"><strong>Plataforma VTOL & Carga Útil Noctua™:</strong> Validación inicial sobre aeronave adaptada portando subsistema sensor Noctua™; autonomía de diseño 45–60 min y despegue vertical sin pista.</li>
               <li data-i18n="eb_b2_p2"><strong>Edge AI Zero-Cloud a Bordo:</strong> Cómputo local NVIDIA Jetson; detección térmica en segundos sin conexión a internet ni señal celular.</li>
               <li data-i18n="eb_b2_p3"><strong>Disuasión con Autorización Humana:</strong> Activación de foco de alta intensidad y sirena acústica siempre autorizada por el operador en tierra (Human-in-the-Loop).</li>
             </ul>
@@ -1848,7 +1864,7 @@
             <ul class="brief-list">
               <li data-i18n="eb_b4_p1"><strong>Estado Actual TRL 3:</strong> Proyecto Semilla Inicia CORFO, apoyo UdeC y demostración técnica programada en Gearbox (Enero 2027).</li>
               <li data-i18n="eb_b4_p2"><strong>Campaña en Predio Piloto:</strong> 4 fases metodológicas (Levantamiento, Calibración, Vigilancia Nocturna, Auditoría Operacional).</li>
-              <li data-i18n="eb_b4_p3"><strong>Contacto Directo:</strong> Tomás Medina (Technical Lead) | <code>contacto@strigsystems.tech</code> | <code>strigsystems.tech</code></li>
+              <li data-i18n="eb_b4_p3"><strong>Gobernanza & Contacto:</strong> Modelos y software bajo titularidad exclusiva de Strig Systems SpA • Tomás Medina (Technical Lead) | <code>contacto@strigsystems.tech</code></li>
             </ul>
           </div>
         </div>
