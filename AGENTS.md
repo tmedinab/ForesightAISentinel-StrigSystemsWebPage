@@ -65,10 +65,13 @@ Antes de modificar o proponer cualquier línea de código, el agente debe memori
 
 ## 2. Nivel 2: Arquitectura de Marca y Dominio DeepTech
 
-### 2.1. Nomenclatura Oficial del Ecosistema
-1. **Compañía Matriz:** `Strig Systems` — Startup deeptech de ingeniería aeroespacial y defensa, fundada por ingenieros civiles aeroespaciales de la Universidad de Concepción (UdeC).
-2. **Plataforma Principal:** `Athene™` (Sistema Centinela Aéreo Autónomo) — Aeronave UAV VTOL / ala fija autónoma equipada con Edge AI para vigilancia perimetral nocturna continua y alerta temprana de incendios forestales e intrusiones críticas.
-3. **Carga Útil / Subsistema Óptico:** `Noctua™` — Gimbal estabilizado en 2 ejes con sensor dual electro-óptico e infrarrojo térmico (EO/IR) y telemetría FHSS anti-interferencia.
+### 2.1. Nomenclatura Oficial del Ecosistema (Taxonomía Blindada)
+1. **Compañía Matriz:** `Strig Systems` (`Strig Systems SpA`) — Startup deeptech chilena de ingeniería aeroespacial y defensa, fundada por ingenieros civiles aeroespaciales de la Universidad de Concepción (UdeC).
+2. **Sistema y Plataforma Principal:** `Athene™` (Sistema Centinela Aéreo Autónomo) — Plataforma centinela integral de inteligencia aérea, alerta temprana y comando C2. Abarca la suite de software de misión, los modelos de inferencia térmica Edge AI a bordo (NVIDIA Jetson / Zero-Cloud), la consola táctica de supervisión humana continua (HITL) y los protocolos de enlace táctico.
+3. **Aeronave UAV VTOL:** `Noctua™` — Aeronave autónoma de despegue y aterrizaje vertical (VTOL) y ala fija de largo alcance desarrollada por Strig Systems. Integra célula aerodinámica de alta eficiencia, bahía de aviónica interna con unidad Edge AI integrada y torreta optrónica biespectral (LWIR radiométrico <50 mK + visible 4K).
+   * *Estado actual (TRL 3-4):* Validación experimental del sistema Athene sobre plataforma aérea comercial adaptada (mula de pruebas) en predio piloto acotado bajo régimen VLOS.
+   * *Horizonte industrial (Hito 5 / BVLOS):* Integración de la aeronave propia **Noctua™ VTOL**, diseñada desde cero para resistencia a vientos severos (Puelche 10–12 m/s), 90+ min de autonomía y operación con estación robotizada Nest.
+4. **Estación de Despliegue en Tierra:** `Nest™` — Estación base terrestre robotizada proyectada para recarga rápida o sustitución automática de baterías, resguardo meteorológico de la aeronave Noctua™ y operación desatendida 1:N.
 
 ### 2.2. Parámetros Técnicos Clave de la Plataforma
 * **Autonomía:** 90+ minutos de patrullaje continuo continuo por ciclo de batería.
