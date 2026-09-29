@@ -970,6 +970,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const currentLang = document.documentElement.getAttribute('data-lang') || 'es';
       const nextLang = currentLang === 'es' ? 'en' : 'es';
       setLanguage(nextLang);
+      if (window.umami) {
+        window.umami.track('Switch-Language', { lang: nextLang });
+      }
     });
   }
 
@@ -1032,6 +1035,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize Live Avionics HUD Telemetry Micro-Fluctuations (Resource & Battery Aware)
   initLiveHudTelemetry();
+
+  // Initialize Umami Virtual Pages & Section Reading Telemetry (Privacy-First)
+  initUmamiSectionAndScrollTelemetry();
 });
 
 /**
@@ -1232,6 +1238,9 @@ function initContactModal() {
     modal.classList.add('active');
     modal.setAttribute('aria-hidden', 'false');
     document.body.classList.add('modal-open');
+    if (window.umami) {
+      window.umami.track('Open-Contact-Modal', { intent: intent });
+    }
     const firstInput = modal.querySelector('#contact-name');
     if (firstInput) {
       setTimeout(() => firstInput.focus(), 120);
@@ -1422,6 +1431,9 @@ function initContactModal() {
 
         if (response.ok) {
           form.style.display = 'none';
+          if (window.umami) {
+            window.umami.track('Submit-Contact-Success', { intent: currentIntent });
+          }
           if (successState) {
             successState.style.display = 'flex';
             if (currentIntent === 'briefing') {
@@ -1498,6 +1510,9 @@ function initExecutiveBriefModal() {
     modal.classList.add('active');
     modal.setAttribute('aria-hidden', 'false');
     document.body.classList.add('modal-open');
+    if (window.umami) {
+      window.umami.track('Open-Executive-Brief');
+    }
     const closeBtn = modal.querySelector('[data-close-modal]');
     if (closeBtn) {
       setTimeout(() => closeBtn.focus(), 120);
@@ -1554,6 +1569,9 @@ function initExecutiveBriefModal() {
 
   if (printBtn) {
     printBtn.addEventListener('click', () => {
+      if (window.umami) {
+        window.umami.track('Print-Executive-Brief-PDF');
+      }
       window.print();
     });
   }
@@ -1870,6 +1888,10 @@ function initTechSpecDrawers() {
         card.classList.add('expanded');
         toggle.setAttribute('aria-expanded', 'true');
         if (drawer) drawer.setAttribute('aria-hidden', 'false');
+        if (window.umami && typeof window.umami.track === 'function') {
+          const drawerId = drawer ? drawer.id : 'unknown';
+          window.umami.track('Tech-Drawer-Open', { drawer: drawerId });
+        }
       }
     });
 
@@ -1898,6 +1920,9 @@ function initMatrixViewToggle() {
     btnDetailed.classList.remove('active');
     btnDetailed.setAttribute('aria-pressed', 'false');
     wrapper.classList.remove('detailed-mode');
+    if (window.umami && typeof window.umami.track === 'function') {
+      window.umami.track('Matrix-View-Compact');
+    }
   });
 
   btnDetailed.addEventListener('click', () => {
@@ -1906,6 +1931,9 @@ function initMatrixViewToggle() {
     btnCompact.classList.remove('active');
     btnCompact.setAttribute('aria-pressed', 'false');
     wrapper.classList.add('detailed-mode');
+    if (window.umami && typeof window.umami.track === 'function') {
+      window.umami.track('Matrix-View-Detailed');
+    }
   });
 }
 
@@ -1986,4 +2014,123 @@ function initLiveHudTelemetry() {
     }
   });
 }
+
+/**
+ * Controller for Umami Virtual Pages & Section Reading Telemetry (Privacy-First & Performance-Aware)
+ */
+function initUmamiSectionAndScrollTelemetry() {
+  const sections = document.querySelectorAll('section[id]');
+  if (!sections.length) return;
+
+  const sectionTitles = {
+    problema: 'Problema · Brecha Nocturna',
+    comparativa: 'Benchmark Táctico',
+    tecnologia: 'Arquitectura & Sensores',
+    roadmap: 'Hoja de Ruta (TRL 3)',
+    piloto: 'Programa Piloto 2026-27',
+    faq: 'Preguntas Frecuentes',
+    alianzas: 'Alianzas Estratégicas',
+    equipo: 'Equipo Fundador UdeC',
+    contacto: 'Contacto Institucional'
+  };
+
+  const trackedSections = new Set();
+  const sectionTimers = new Map();
+  const DWELL_TIME_MS = 3000;
+
+  function recordSectionView(sectionId) {
+    if (trackedSections.has(sectionId)) return;
+    trackedSections.add(sectionId);
+
+    if (window.umami && typeof window.umami.track === 'function') {
+      // Virtual pageview for Umami "Pages" tab
+      window.umami.track((props) => ({
+        ...props,
+        url: '/#' + sectionId,
+        title: 'Strig Systems | ' + (sectionTitles[sectionId] || sectionId)
+      }));
+      // Explicit engagement event for Umami "Events" tab
+      window.umami.track('Section-Read', { section: sectionId });
+    }
+  }
+
+  if ('IntersectionObserver' in window) {
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const id = entry.target.getAttribute('id');
+        if (!id) return;
+
+        if (entry.isIntersecting) {
+          if (!sectionTimers.has(id) && !trackedSections.has(id)) {
+            const timer = setTimeout(() => {
+              recordSectionView(id);
+              sectionTimers.delete(id);
+            }, DWELL_TIME_MS);
+            sectionTimers.set(id, timer);
+          }
+        } else {
+          if (sectionTimers.has(id)) {
+            clearTimeout(sectionTimers.get(id));
+            sectionTimers.delete(id);
+          }
+        }
+      });
+    }, {
+      threshold: 0.35
+    });
+
+    sections.forEach(sec => sectionObserver.observe(sec));
+  }
+
+  // Immediate tracking on explicit nav anchor clicks
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', () => {
+      const href = link.getAttribute('href');
+      if (href && href.length > 1) {
+        const targetId = href.substring(1);
+        if (sectionTitles[targetId]) {
+          recordSectionView(targetId);
+        }
+      }
+    });
+  });
+
+  // Scroll Depth Milestones (25%, 50%, 75%, 100%)
+  const milestones = { 25: false, 50: false, 75: false, 100: false };
+  let scrollTicking = false;
+
+  function checkScrollDepth() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    if (docHeight <= 0) return;
+
+    const scrollPercent = Math.round((scrollTop / docHeight) * 100);
+
+    [25, 50, 75, 100].forEach(mark => {
+      if (scrollPercent >= mark && !milestones[mark]) {
+        milestones[mark] = true;
+        if (window.umami && typeof window.umami.track === 'function') {
+          window.umami.track('Scroll-Depth', { depth: mark + '%' });
+        }
+      }
+    });
+
+    if (milestones[100]) {
+      window.removeEventListener('scroll', onScrollThrottled);
+    }
+  }
+
+  function onScrollThrottled() {
+    if (!scrollTicking) {
+      window.requestAnimationFrame(() => {
+        checkScrollDepth();
+        scrollTicking = false;
+      });
+      scrollTicking = true;
+    }
+  }
+
+  window.addEventListener('scroll', onScrollThrottled, { passive: true });
+}
+
 

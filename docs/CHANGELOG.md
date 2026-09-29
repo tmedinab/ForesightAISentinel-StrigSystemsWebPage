@@ -4,6 +4,21 @@ Todas las modificaciones notables realizadas en la plataforma web de **Strig Sys
 
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y respeta las decisiones de arquitectura registradas en `docs/adr/`.
 
+## [1.3.3] — 2026-09-29
+### Añadido
+* **Telemetría Web & Analítica Privacy-First (Umami Cloud):** Integración de baliza analítica sin cookies ni banners invasivos en [`index.html`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/index.html), [`privacy.html`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/privacy.html) y [`terms.html`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/terms.html) (`data-website-id="aa979513-3790-4797-99e5-03d4a57d74ee"`).
+* **Instrumentación de Eventos Tácticos Clave ([`script.js`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/script.js)):** Despacho programático y reactivo de eventos hacia Umami:
+  * `Switch-Language`: Registro de conmutación a inglés o español con propiedad de idioma.
+  * `Open-Contact-Modal`: Apertura del modal con registro de intención (`pilot`, `briefing`, `alliances`).
+  * `Submit-Contact-Success`: Envío exitoso de formulario de contacto/pilotaje.
+  * `Open-Executive-Brief`: Apertura del dossier ejecutivo en modal.
+  * `Print-Executive-Brief-PDF`: Clic en descarga/impresión del One-Pager en PDF.
+  * `Tech-Drawer-Open`: Apertura interactiva de drawers de especificaciones técnicas (sensores, enlace, Edge AI).
+  * `Matrix-View-Detailed` / `Matrix-View-Compact`: Conmutación de la matriz comparativa de benchmark.
+* **Páginas Virtuales y Telemetría de Retención por Sección:** Inyección dinámica de visitas virtuales hacia la pestaña *Pages* de Umami (`/#problema`, `/#comparativa`, `/#tecnologia`, `/#roadmap`, `/#piloto`, `/#equipo`, etc.) condicionadas a lectura efectiva ($\ge 3$ segundos en viewport vía `IntersectionObserver`) o navegación directa por ancla.
+* **Hitos de Profundidad de Desplazamiento (`Scroll-Depth`):** Registro de hitos al 25%, 50%, 75% y 100% de la página, con desvinculación automática del oyente de eventos al alcanzar el 100% para preservar batería y CPU.
+* **Cumplimiento de Privacidad y Rendimiento:** Cero almacenamiento de cookies en el navegador, cumplimiento normativo estricto (GDPR/CCPA/Ley N° 19.628) sin requerir banners de consentimiento, y carga asíncrona sin impacto en el rendimiento (<2 KB).
+
 ## [1.3.2] — 2026-09-29
 ### Añadido
 * **Encabezados Tácticos en Bloque IaaS (`.iaas-pillar-card`):** Incorporación de tags tácticos mono (`IAAS // 01`, `IAAS // 02`, `IAAS // 03`) con micro-led cian (`.iaas-card-dot`), borde superior acentuado (`border-top: 2px solid rgba(0, 229, 255, 0.45)`) y efecto hover lift para diferenciación visual nítida frente a tarjetas de impacto operativo.
