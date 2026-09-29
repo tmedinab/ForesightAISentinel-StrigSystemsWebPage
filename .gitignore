@@ -27,8 +27,9 @@ yarn-error.log*
 
 # Node modules (si se usan a futuro)
 node_modules/
-dist/
-scratch/
+scratch/*
+!scratch/preflight_check.js
+!scratch/verify_i18n.js
 .first-reader/
 .first-reader*
 
