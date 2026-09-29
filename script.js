@@ -473,7 +473,41 @@ const translations = {
     f_nav: "Navegación",
     f_corp: "Corporativo",
     f_privacy_link: "Política de Privacidad & Gobernanza",
-    f_terms_link: "Términos de Servicio & Pilotaje B2B"
+    f_terms_link: "Términos de Servicio & Pilotaje B2B",
+
+    // Talent Callout & Modal
+    talent_badge: "◈ CONVOCATORIA I+D & INGENIERÍA",
+    talent_status: "[Banco de Talento 2026-27]",
+    talent_title: "Construye la próxima generación de autonomía aérea con nosotros",
+    talent_desc: "Buscamos ingenieros, investigadores, tesistas y pilotos apasionados por visión computacional en el borde, diseño aerodinámico, aviónica embebida y misiones de vuelo tácticas en terreno.",
+    talent_btn: "Súmate a la Misión",
+    f_talent_link: "Convocatoria I+D & Talento",
+    t_modal_badge: "Convocatoria I+D & Talento",
+    t_modal_title: "Súmate a la Misión de Strig Systems",
+    t_modal_sub: "Buscamos ingenieros, investigadores, tesistas y pilotos apasionados por construir autonomía aérea de impacto real. Cuéntanos sobre tu experiencia y proyectos técnicos.",
+    t_name_label: "Nombre y apellido *",
+    t_name_ph: "Ej: Valentina Morales",
+    t_email_label: "Correo electrónico *",
+    t_email_ph: "nombre@correo.com",
+    t_phone_label: "Teléfono / WhatsApp",
+    t_phone_ph: "+56 9 1234 5678",
+    t_track_label: "Área técnica principal *",
+    t_track_opt_default: "Selecciona tu foco...",
+    t_track_opt_1: "Visión Computacional & Edge AI (PyTorch / TensorRT / Jetson)",
+    t_track_opt_2: "Diseño Aeronáutico, Mecánica & CFD (CAD / FEA / Aerodinámica)",
+    t_track_opt_3: "Aviónica Embebida, Firmware & Hardware (PX4 / STM32 / PCB)",
+    t_track_opt_4: "Operaciones de Vuelo, Mantenimiento & Piloto RPAS (DGAC)",
+    t_track_opt_5: "Memoria de Título / Práctica / Investigación UdeC",
+    t_track_opt_6: "Otra especialidad de ingeniería",
+    t_link_label: "Enlace a GitHub, LinkedIn, ResearchGate o Portafolio *",
+    t_link_ph: "https://github.com/tu-usuario o linkedin.com/in/tu-perfil",
+    t_projects_label: "¿Qué proyectos has construido o en qué subsistema de Athene te gustaría aportar? *",
+    t_projects_ph: "Cuéntanos brevemente sobre tus proyectos de ingeniería, herramientas que dominas o líneas de investigación que te apasionan...",
+    t_submit_btn: "Enviar credenciales de ingeniería",
+    t_submitting: "Transmitiendo antecedentes...",
+    t_privacy: "Tus antecedentes serán tratados con estricta confidencialidad por el equipo fundador de Strig Systems.",
+    t_success_title: "¡Antecedentes Recibidos con Éxito!",
+    t_success_desc: "Gracias por tu interés en sumarte a Strig Systems. El equipo técnico revisará tus antecedentes y proyectos para coordinar una reunión de ingeniería según las convocatorias y necesidades del proyecto."
   },
 
   en: {
@@ -945,7 +979,41 @@ const translations = {
     f_nav: "Navigation",
     f_corp: "Corporate",
     f_privacy_link: "Privacy Policy & Governance",
-    f_terms_link: "B2B Terms of Service & Pilotage"
+    f_terms_link: "B2B Terms of Service & Pilotage",
+
+    // Talent Callout & Modal
+    talent_badge: "◈ R&D & ENGINEERING CALL",
+    talent_status: "[Talent Pool 2026-27]",
+    talent_title: "Build the next generation of aerial autonomy with us",
+    talent_desc: "We are seeking engineers, researchers, thesis candidates, and pilots passionate about edge computer vision, aerodynamic airframe design, embedded avionics, and tactical flight operations.",
+    talent_btn: "Join the Mission",
+    f_talent_link: "R&D & Talent Call",
+    t_modal_badge: "R&D & Engineering Call",
+    t_modal_title: "Join the Mission at Strig Systems",
+    t_modal_sub: "We are seeking engineers, researchers, thesis candidates, and pilots passionate about building real-world aerial autonomy. Tell us about your background and technical projects.",
+    t_name_label: "Full Name *",
+    t_name_ph: "E.g., Valentina Morales",
+    t_email_label: "Email Address *",
+    t_email_ph: "name@domain.com",
+    t_phone_label: "Phone / WhatsApp",
+    t_phone_ph: "+56 9 1234 5678",
+    t_track_label: "Primary Technical Track *",
+    t_track_opt_default: "Select your primary track...",
+    t_track_opt_1: "Computer Vision & Edge AI (PyTorch / TensorRT / Jetson)",
+    t_track_opt_2: "Aeronautical Design, Mechanics & CFD (CAD / FEA / Aerodynamics)",
+    t_track_opt_3: "Embedded Avionics, Firmware & Hardware (PX4 / STM32 / PCB)",
+    t_track_opt_4: "Flight Operations, Maintenance & RPAS Pilot (DGAC)",
+    t_track_opt_5: "Thesis Project / Internship / UdeC Research",
+    t_track_opt_6: "Other engineering discipline",
+    t_link_label: "Link to GitHub, LinkedIn, ResearchGate or Portfolio *",
+    t_link_ph: "https://github.com/your-user or linkedin.com/in/your-profile",
+    t_projects_label: "What technical projects have you built or which Athene subsystem would you like to contribute to? *",
+    t_projects_ph: "Tell us briefly about your engineering projects, tools you master, or research areas that drive you...",
+    t_submit_btn: "Submit Engineering Credentials",
+    t_submitting: "Transmitting credentials...",
+    t_privacy: "Your background information will be handled with strict confidentiality by the Strig Systems founding engineering team.",
+    t_success_title: "Credentials Successfully Received!",
+    t_success_desc: "Thank you for your interest in joining Strig Systems. Our technical team will review your background and projects to coordinate an engineering session based on upcoming R&D phases."
   }
 };
 
@@ -1009,8 +1077,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeaderScroll();
   initScrollSpy();
 
-  // Initialize Unified Contact Modal & Executive Brief Modal
+  // Initialize Unified Contact Modal, Talent Modal & Executive Brief Modal
   initContactModal();
+  initTalentModal();
   initExecutiveBriefModal();
 
 
@@ -1475,6 +1544,197 @@ function initPilotModal() { /* Handled by initContactModal */ }
  * Controller for 15-Minute Technical Briefing Modal (Handled by initContactModal)
  */
 function initBriefingModal() { /* Handled by initContactModal */ }
+
+/**
+ * Controller for Dedicated R&D Talent & Engineering Call Modal
+ */
+function initTalentModal() {
+  const modal = document.getElementById('talent-modal');
+  if (!modal) return;
+
+  const openBtns = document.querySelectorAll('[data-open-modal="talent-modal"]');
+  const closeBtns = modal.querySelectorAll('[data-close-modal]');
+  const form = document.getElementById('talent-form');
+  const successState = document.getElementById('talent-success');
+  const valError = document.getElementById('talent-validation-error');
+  const netError = document.getElementById('talent-error');
+  const submitBtn = document.getElementById('talent-submit-btn');
+  const btnText = submitBtn ? submitBtn.querySelector('.btn-text') : null;
+  const btnSpinner = submitBtn ? submitBtn.querySelector('.btn-spinner') : null;
+  const arrowIcon = submitBtn ? submitBtn.querySelector('.arrow-icon') : null;
+
+  let lastActiveElement = null;
+
+  function getDict() {
+    const lang = document.documentElement.getAttribute('data-lang') || 'es';
+    return translations[lang] || translations.es;
+  }
+
+  function openModal() {
+    lastActiveElement = document.activeElement;
+    modal.classList.add('active');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+
+    if (valError) valError.style.display = 'none';
+    if (netError) netError.style.display = 'none';
+
+    const firstInput = form ? form.querySelector('input:not([type="hidden"]), select, textarea') : null;
+    if (firstInput) {
+      setTimeout(() => firstInput.focus(), 120);
+    }
+  }
+
+  function closeModal() {
+    modal.classList.remove('active');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+    if (lastActiveElement && typeof lastActiveElement.focus === 'function') {
+      lastActiveElement.focus();
+    }
+  }
+
+  openBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openModal();
+    });
+  });
+
+  closeBtns.forEach(btn => {
+    btn.addEventListener('click', closeModal);
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+  modal.addEventListener('keydown', (e) => {
+    if (e.key === 'Tab') {
+      const focusables = modal.querySelectorAll('button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])');
+      if (!focusables.length) return;
+      const first = focusables[0];
+      const last = focusables[focusables.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      if (valError) valError.style.display = 'none';
+      if (netError) netError.style.display = 'none';
+
+      const name = document.getElementById('talent-name');
+      const email = document.getElementById('talent-email');
+      const phone = document.getElementById('talent-phone');
+      const track = document.getElementById('talent-track');
+      const link = document.getElementById('talent-link');
+      const projects = document.getElementById('talent-projects');
+
+      let isValid = true;
+
+      [name, email, track, link, projects].forEach(input => {
+        if (!input) return;
+        if (!input.checkValidity() || !input.value.trim()) {
+          input.classList.add('input-invalid');
+          isValid = false;
+        } else {
+          input.classList.remove('input-invalid');
+        }
+      });
+
+      if (!isValid) {
+        if (valError) {
+          valError.style.display = 'block';
+          valError.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+        return;
+      }
+
+      const trackText = track && track.options[track.selectedIndex] ? track.options[track.selectedIndex].text : 'General';
+      const dynamicSubject = `[TALENTO I+D] Postulación: ${name.value.trim()} (${trackText}) - Strig Systems`;
+
+      const payload = {
+        Tipo: 'POSTULACION_TALENTO_ID',
+        Nombre: name.value.trim(),
+        Email: email.value.trim(),
+        Telefono: phone ? phone.value.trim() : 'N/A',
+        Area_Tecnica: trackText,
+        Portafolio_Perfil: link.value.trim(),
+        Proyectos_Aporte: projects.value.trim(),
+        _subject: dynamicSubject,
+        _template: 'table',
+        _captcha: 'false'
+      };
+
+      const dict = getDict();
+      if (submitBtn) submitBtn.disabled = true;
+      if (btnSpinner) btnSpinner.style.display = 'inline-block';
+      if (arrowIcon) arrowIcon.style.display = 'none';
+      if (btnText) btnText.textContent = dict.t_submitting || "Transmitiendo antecedentes...";
+
+      try {
+        const response = await fetch('https://formsubmit.co/ajax/contacto@strigsystems.tech', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        });
+
+        if (response.ok) {
+          form.style.display = 'none';
+          if (successState) {
+            successState.style.display = 'flex';
+          }
+          form.reset();
+        } else {
+          throw new Error(`Server returned HTTP ${response.status}`);
+        }
+      } catch (err) {
+        console.warn('FormSubmit Talent AJAX request failed, showing fallback:', err);
+        if (netError) {
+          netError.style.display = 'block';
+          const fallbackSubject = encodeURIComponent(dynamicSubject);
+          const fallbackBody = encodeURIComponent(
+            `Nombre: ${name.value.trim()}\n` +
+            `Email: ${email.value.trim()}\n` +
+            `Teléfono: ${phone ? phone.value.trim() : ''}\n` +
+            `Área Técnica: ${trackText}\n` +
+            `Portafolio / GitHub: ${link.value.trim()}\n\n` +
+            `Proyectos y Aporte:\n${projects.value.trim()}`
+          );
+          const mailLink = netError.querySelector('.alert-link');
+          if (mailLink) {
+            mailLink.href = `mailto:contacto@strigsystems.tech?cc=tmedina@strigsystems.tech&subject=${fallbackSubject}&body=${fallbackBody}`;
+          }
+        }
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
+        if (btnSpinner) btnSpinner.style.display = 'none';
+        if (arrowIcon) arrowIcon.style.display = 'inline-block';
+        if (btnText) btnText.textContent = dict.t_submit_btn || "Enviar credenciales de ingeniería";
+      }
+    });
+  }
+}
 
 /**
  * Controller for Executive Brief One-Pager Whitepaper Modal & Print

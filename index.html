@@ -1458,6 +1458,25 @@
                 </span>
               </div>
             </div>
+        </div>
+
+        <!-- Talent & I+D Callout -->
+        <div class="talent-callout glass-panel">
+          <div class="talent-callout-content">
+            <div class="talent-callout-header">
+              <span class="talent-badge" data-i18n="talent_badge">◈ CONVOCATORIA I+D & INGENIERÍA</span>
+              <span class="talent-status" data-i18n="talent_status">[Banco de Talento 2026-27]</span>
+            </div>
+            <h3 class="talent-title" data-i18n="talent_title">Construye la próxima generación de autonomía aérea con nosotros</h3>
+            <p class="talent-desc" data-i18n="talent_desc">
+              Buscamos ingenieros, investigadores, tesistas y pilotos apasionados por visión computacional en el borde, diseño aerodinámico, aviónica embebida y misiones de vuelo tácticas en terreno.
+            </p>
+          </div>
+          <div class="talent-callout-action">
+            <button type="button" class="btn-primary btn-talent" data-open-modal="talent-modal">
+              <span data-i18n="talent_btn">Súmate a la Misión</span>
+              <span class="arrow-icon">→</span>
+            </button>
           </div>
         </div>
       </div>
@@ -1568,6 +1587,7 @@
           <a href="mailto:tmedina@strigsystems.tech">tmedina@strigsystems.tech</a>
           <a href="privacy.html" data-i18n="f_privacy_link">Política de Privacidad & Gobernanza</a>
           <a href="terms.html" data-i18n="f_terms_link">Términos de Servicio & Pilotaje B2B</a>
+          <a href="#" data-open-modal="talent-modal" data-i18n="f_talent_link">Convocatoria I+D & Talento</a>
           <a href="https://strigsystems.tech">strigsystems.tech</a>
         </div>
       </div>
@@ -1765,6 +1785,121 @@
           <h3 id="contact-success-title" class="success-title" data-i18n="success_title">¡Postulación Recibida con Éxito!</h3>
           <p id="contact-success-desc" class="success-desc" data-i18n="success_desc">
             Hemos recibido los antecedentes de tu entidad. Nuestro equipo de ingeniería aeroespacial revisará la factibilidad territorial y se contactará directamente dentro de 24 horas hábiles.
+          </p>
+          <div class="success-actions">
+            <button type="button" class="btn-ghost" data-close-modal data-i18n="success_close_btn">Cerrar Ventana</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: TALENTO & I+D (SÚMATE A LA MISIÓN) -->
+  <div id="talent-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="talent-modal-title">
+    <div class="modal-window glass-panel">
+      <!-- Close button -->
+      <button type="button" class="modal-close-btn" data-close-modal aria-label="Cerrar modal">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-badge">
+            <span class="badge-dot"></span>
+            <span data-i18n="t_modal_badge">Convocatoria I+D & Talento</span>
+          </div>
+          <h2 id="talent-modal-title" class="modal-title" data-i18n="t_modal_title">Súmate a la Misión de Strig Systems</h2>
+          <p id="talent-modal-sub" class="modal-subtitle" data-i18n="t_modal_sub">
+            Buscamos ingenieros, investigadores, tesistas y pilotos apasionados por construir autonomía aérea de impacto real. Cuéntanos sobre tu experiencia y proyectos técnicos.
+          </p>
+        </div>
+
+        <form id="talent-form" class="pilot-form" novalidate>
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="_subject" value="[TALENTO I+D] Nueva Postulación Técnica - Strig Systems">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+
+          <div class="form-grid">
+            <!-- Nombre -->
+            <div class="form-group">
+              <label for="talent-name" class="form-label" data-i18n="t_name_label">Nombre y apellido *</label>
+              <input type="text" id="talent-name" name="Nombre" class="form-input" required placeholder="Ej: Valentina Morales" data-i18n-ph="t_name_ph">
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <label for="talent-email" class="form-label" data-i18n="t_email_label">Correo electrónico *</label>
+              <input type="email" id="talent-email" name="Email" class="form-input" required placeholder="nombre@correo.com" data-i18n-ph="t_email_ph">
+            </div>
+
+            <!-- Teléfono / WhatsApp -->
+            <div class="form-group">
+              <label for="talent-phone" class="form-label" data-i18n="t_phone_label">Teléfono / WhatsApp</label>
+              <input type="tel" id="talent-phone" name="Telefono" class="form-input" placeholder="+56 9 1234 5678" data-i18n-ph="t_phone_ph">
+            </div>
+
+            <!-- Foco / Especialidad -->
+            <div class="form-group">
+              <label for="talent-track" class="form-label" data-i18n="t_track_label">Área técnica principal *</label>
+              <select id="talent-track" name="Area_Tecnica" class="form-select" required>
+                <option value="" disabled selected data-i18n="t_track_opt_default">Selecciona tu foco...</option>
+                <option value="vision_edge" data-i18n="t_track_opt_1">Visión Computacional & Edge AI (PyTorch / TensorRT / Jetson)</option>
+                <option value="aero_cfd" data-i18n="t_track_opt_2">Diseño Aeronáutico, Mecánica & CFD (CAD / FEA / Aerodinámica)</option>
+                <option value="avionics_firmware" data-i18n="t_track_opt_3">Aviónica Embebida, Firmware & Hardware (PX4 / STM32 / PCB)</option>
+                <option value="ops_pilot" data-i18n="t_track_opt_4">Operaciones de Vuelo, Mantenimiento & Piloto RPAS (DGAC)</option>
+                <option value="thesis_udec" data-i18n="t_track_opt_5">Memoria de Título / Práctica / Investigación UdeC</option>
+                <option value="other" data-i18n="t_track_opt_6">Otra especialidad de ingeniería</option>
+              </select>
+            </div>
+
+            <!-- Enlace Portafolio / GitHub / LinkedIn -->
+            <div class="form-group full-width">
+              <label for="talent-link" class="form-label" data-i18n="t_link_label">Enlace a GitHub, LinkedIn, ResearchGate o Portafolio *</label>
+              <input type="url" id="talent-link" name="Portafolio_Perfil" class="form-input" required placeholder="https://github.com/tu-usuario o linkedin.com/in/tu-perfil" data-i18n-ph="t_link_ph">
+            </div>
+
+            <!-- Experiencia y Proyectos -->
+            <div class="form-group full-width">
+              <label for="talent-projects" class="form-label" data-i18n="t_projects_label">¿Qué proyectos has construido o en qué subsistema de Athene te gustaría aportar? *</label>
+              <textarea id="talent-projects" name="Proyectos_Aporte" class="form-textarea" rows="3" required placeholder="Cuéntanos brevemente sobre tus proyectos de ingeniería, herramientas que dominas o líneas de investigación que te apasionan..." data-i18n-ph="t_projects_ph"></textarea>
+            </div>
+          </div>
+
+          <!-- Feedback Alerts -->
+          <div id="talent-validation-error" class="form-alert alert-warning" style="display: none;" role="alert">
+            <span data-i18n="form_val_error">Por favor completa todos los campos obligatorios (*) con un formato válido.</span>
+          </div>
+
+          <div id="talent-error" class="form-alert alert-error" style="display: none;" role="alert">
+            <span data-i18n="form_error_msg">Hubo un problema al enviar la solicitud. Puedes escribirnos directamente a</span>
+            <a href="mailto:contacto@strigsystems.tech" class="alert-link">contacto@strigsystems.tech</a>.
+          </div>
+
+          <!-- Submit Button -->
+          <div class="form-actions">
+            <button type="submit" id="talent-submit-btn" class="btn-primary btn-submit">
+              <span class="btn-text" data-i18n="t_submit_btn">Enviar credenciales de ingeniería</span>
+              <span class="btn-spinner" style="display: none;" aria-hidden="true"></span>
+              <span class="arrow-icon">→</span>
+            </button>
+            <span class="form-privacy-note" data-i18n="t_privacy">Tus antecedentes serán tratados con estricta confidencialidad por el equipo fundador de Strig Systems.</span>
+          </div>
+        </form>
+
+        <!-- Success Container -->
+        <div id="talent-success" class="form-success-state" style="display: none;">
+          <div class="success-icon-circle">
+            <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="var(--accent-cyan)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <h3 class="success-title" data-i18n="t_success_title">¡Antecedentes Recibidos con Éxito!</h3>
+          <p class="success-desc" data-i18n="t_success_desc">
+            Gracias por tu interés en sumarte a Strig Systems. El equipo técnico revisará tus antecedentes y proyectos para coordinar una reunión de ingeniería según las convocatorias y necesidades del proyecto.
           </p>
           <div class="success-actions">
             <button type="button" class="btn-ghost" data-close-modal data-i18n="success_close_btn">Cerrar Ventana</button>

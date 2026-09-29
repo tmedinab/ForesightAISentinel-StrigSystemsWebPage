@@ -205,6 +205,12 @@ El contacto con gerencias forestales, fondos de inversión y contrapartes indust
 1. **Contrato de Fallback `mailto:`:** Si la llamada AJAX a `formsubmit.co` falla por restricciones de red corporativa, políticas CORS o bloqueadores de anuncios, el formulario DEBE exponer inmediatamente un enlace directo `mailto:contacto@strigsystems.tech?cc=tmedina@strigsystems.tech&subject=...&body=...` con todos los campos ya rellenados, garantizando que ninguna oportunidad se pierda.
 2. **Acceso Inmediato al Executive Brief:** El botón de descarga/visualización del *Executive Briefing One-Pager* debe estar disponible tanto en el primer pliegue (Hero Actions) como en la llamada a la acción final, permitiendo a los directores técnicos imprimir o guardar el documento en PDF de inmediato.
 
+### 4.8. Arquitectura Desacoplada de Embudos (B2B vs Talento I+D)
+Queda terminantemente prohibido mezclar el formulario de captación comercial/pilotos (`#contact-modal`) con la postulación de ingenieros, investigadores, tesistas o pilotos (`#talent-modal`):
+1. **Diferenciación de Audiencias:** El embudo B2B requiere campos de empresa, hectáreas territoriales y tipo de misión de validación, mientras que el embudo de talento evalúa especialidad de ingeniería (Edge AI, CFD, Aviónica Embebida, Operaciones RPAS, Memoria UdeC), repositorio/portafolio técnico (GitHub, LinkedIn) y aportes a subsistemas de Athene.
+2. **Ubicación Estratégica:** El callout de talento (`.talent-callout`) reside al pie de la sección `#equipo`, activándose tras la inspección de credenciales de los fundadores.
+3. **Enrutamiento y Asunto:** Los envíos de talento se identifican con `_subject="[TALENTO I+D] Nueva Postulación Técnica - Strig Systems"` garantizando triaje ágil por el equipo técnico.
+
 ---
 
 ## 5. Nivel 5: Protocolos Formales de Documentación

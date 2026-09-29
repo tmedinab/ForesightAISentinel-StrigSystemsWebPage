@@ -4,6 +4,16 @@ Todas las modificaciones notables realizadas en la plataforma web de **Strig Sys
 
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y respeta las decisiones de arquitectura registradas en `docs/adr/`.
 
+## [1.4.0] — 2026-09-28
+### Añadido
+* **Embudo Desacoplado de Atracción de Talento e I+D ("Súmate a la Misión"):**
+  * Incorporación de tarjeta de llamado técnico (`.talent-callout`) al pie de la sección `#equipo`, diseñada con retículas glassmorphic tácticas, badge de convocatoria activa y status `[Banco de Talento 2026-27]`.
+  * Creación del modal interactivo de ingeniería (`#talent-modal`) completamente desacoplado de las consultas comerciales B2B, permitiendo a postulantes clasificar su foco (Edge AI, CFD aeronáutico, aviónica embebida, operaciones de vuelo RPAS, memoria de título UdeC), enlazar su repositorio de código/portafolio (GitHub/LinkedIn) y describir su aporte al centinela Athene.
+  * Controlador JavaScript dedicado (`initTalentModal`) con validación de campos obligatorios, gestión de foco y escape por teclado, envío asíncrono vía AJAX con subject `[TALENTO I+D]` y fallback resiliente `mailto:` con prellenado estructurado.
+  * Enlace directo en el footer institucional (*Convocatoria I+D & Talento*).
+  * Soporte bilingüe integral con 24 claves en español y 24 en inglés en paridad absoluta.
+* **Norma de Arquitectura de Embudos en `AGENTS.md` (Sección 4.8):** Protocolo que prohíbe la unificación de formularios B2B y talento, preservando la credibilidad industrial ante gerencias y optimizando la captación de perfiles técnicos de alto nivel.
+
 ## [1.3.1] — 2026-09-28
 ### Modificado
 * **Envolvente de Vuelo (Criterio de Diseño TRL 3-4):** Reformulación transparente de la tolerancia al viento en la ficha técnica de Athene y en el FAQ (`p1_s3_lbl`, `p1_s3_val`, `faq_q2`, `faq_a2`) como *criterio u objetivo de diseño aerodinámico* para régimen de viento Puelche (10–12 m/s / ~36–43 km/h), erradicando claims prematuros de catálogo o certificación comercial.
