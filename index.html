@@ -505,7 +505,7 @@
                 <th class="th-dim" data-i18n="th_dim">Dimensión operativa</th>
                 <th class="th-tech" data-i18n="th_sat">Satélites LEO<br><span class="th-sub">FIRMS / OroraTech</span></th>
                 <th class="th-tech" data-i18n="th_tower">Torres térmicas fijas<br><span class="th-sub">Mástiles ópticos</span></th>
-                <th class="th-tech" data-i18n="th_drone">Vigilancia tripulada<br><span class="th-sub">Avionetas diurnas + cuadrillas/drones</span></th>
+                <th class="th-tech" data-i18n="th_drone">Vigilancia convencional<br><span class="th-sub">Avionetas diurnas + cuadrillas 4x4 / drones manuales</span></th>
                 <th class="th-tech th-highlight">
                   <div class="winner-badge" data-i18n="strig_badge">Nuestra propuesta</div>
                   <div data-i18n="th_strig">Strig Systems<br><span class="th-sub">Athene (plataforma VTOL + Edge AI)</span></div>
@@ -545,7 +545,7 @@
                 <td class="td-dim" data-i18n="r5_dim">Riesgo humano y supervisión</td>
                 <td class="td-tech" data-i18n="r5_sat"><div class="matrix-cell-content"><div class="cell-verdict"><strong>Cero exposición directa:</strong> Operación orbital remota.</div><div class="cell-detail">Vigilancia desde el espacio sin riesgo físico para personal en terreno.</div></div></td>
                 <td class="td-tech" data-i18n="r5_tower"><div class="matrix-cell-content"><div class="cell-verdict"><strong>Baja exposición:</strong> Riesgo acotado a accesos y cumbres.</div><div class="cell-detail">Operación remota desde central; riesgo limitado al mantenimiento en cumbres aisladas de difícil acceso.</div></div></td>
-                <td class="td-tech" data-i18n="r5_drone"><div class="matrix-cell-content"><div class="cell-verdict"><span class="badge-negative">Alto riesgo en terreno:</span> Brigadas nocturnas expuestas.</div><div class="cell-detail">1 piloto + 1 observador por dron convencional; brigadistas en 4x4 expuestos de noche en rutas forestales aisladas.</div></div></td>
+                <td class="td-tech" data-i18n="r5_drone"><div class="matrix-cell-content"><div class="cell-verdict"><span class="badge-negative">Alto desgaste humano:</span> Operador manual nocturno.</div><div class="cell-detail">1 piloto dedicado mirando pantalla continuamente en la oscuridad por cada dron manual; brigadistas en 4x4 expuestos de noche en rutas forestales aisladas.</div></div></td>
                 <td class="td-tech td-highlight" data-i18n="r5_strig"><div class="matrix-cell-content"><div class="cell-verdict"><span class="badge-positive">Supervisión en tierra (HITL):</span> Operador en base segura.</div><div class="cell-detail">Control y autorización de disuasión desde consola protegida, sin brigadistas expuestos en zonas de riesgo.</div></div></td>
               </tr>
               <tr>
@@ -603,8 +603,8 @@
                 <span class="spec-val" data-i18n="p1_s2_val">El controlador de vuelo primario retiene el 100% de la autoridad de vuelo y contención FDIR, aislado del cómputo IA.</span>
               </div>
               <div class="spec-item">
-                <span class="spec-lbl" data-i18n="p1_s3_lbl">Envolvente:</span>
-                <span class="spec-val" data-i18n="p1_s3_val">Viento hasta 10 m/s (~36 km/h). Respaldo con paracaídas balístico de recuperación.</span>
+                <span class="spec-lbl" data-i18n="p1_s3_lbl">Criterio de diseño:</span>
+                <span class="spec-val" data-i18n="p1_s3_val">Objetivo aerodinámico: resistencia a ráfagas de hasta 10–12 m/s (~36–43 km/h, representativo de viento Puelche). Respaldo con paracaídas balístico de recuperación.</span>
               </div>
               <div class="spec-item">
                 <span class="spec-lbl" data-i18n="p1_s4_lbl">Operación Hoy:</span>
@@ -889,8 +889,8 @@
               </button>
               <div class="flow-spec-drawer" id="flow-drawer-3" aria-hidden="true">
                 <div class="flow-spec-item">
-                  <span class="flow-spec-lbl" data-i18n="flow_s3_f1_lbl">Interoperabilidad:</span>
-                  <span class="flow-spec-val" data-i18n="flow_s3_f1_val">Integración mediante formatos estándar (GeoJSON/API) compatibles con software GIS forestal (ArcGIS, QGIS).</span>
+                  <span class="flow-spec-lbl" data-i18n="flow_s3_f1_lbl">Interoperabilidad proyectada:</span>
+                  <span class="flow-spec-val" data-i18n="flow_s3_f1_val">Objetivo de arquitectura: exportación de datos en formatos abiertos (GeoJSON / KML / REST API) proyectada para compatibilidad futura con sistemas GIS y centrales de despacho forestal (ArcGIS, QGIS).</span>
                 </div>
                 <div class="flow-spec-item">
                   <span class="flow-spec-lbl" data-i18n="flow_s3_f2_lbl">Trazabilidad legal:</span>
@@ -1191,11 +1191,11 @@
           <!-- Q2: Envolvente de Viento -->
           <div class="faq-item glass-panel">
             <button type="button" class="faq-question" aria-expanded="false">
-              <span data-i18n="faq_q2">¿Cuál es la envolvente de viento máxima de la plataforma?</span>
+              <span data-i18n="faq_q2">¿Cuál es el objetivo de diseño para la envolvente de viento?</span>
               <span class="faq-icon" aria-hidden="true">▼</span>
             </button>
             <div class="faq-answer">
-              <p data-i18n="faq_a2">La plataforma de validación actual está diseñada para operar con seguridad en vientos sostenidos de hasta 10 m/s (~36 km/h). Si las condiciones locales de ráfaga superan este umbral, el sistema activa automáticamente protocolos de descenso o aborto de misión hacia la zona de aterrizaje segura.</p>
+              <p data-i18n="faq_a2">Como objetivo de diseño aerodinámico para la plataforma experimental, se apunta a una envolvente capaz de tolerar ráfagas de hasta 10–12 m/s (~36–43 km/h), representativas de las condiciones estivales y de viento Puelche en la Macrozona Centro-Sur. En los ensayos actuales de validación (TRL 3-4), ante ráfagas que comprometan los márgenes de seguridad en predio piloto, el protocolo operacional ordena descenso y aborto preventivo inmediato.</p>
             </div>
           </div>
 
@@ -1240,6 +1240,28 @@
             </button>
             <div class="faq-answer">
               <p data-i18n="faq_a6">En la fase actual de validación y despliegue temprano, no dependemos de costosas estaciones robóticas off-grid no probadas. Operamos de forma pragmática aprovechando la infraestructura existente de las empresas e instituciones: bases de brigadas terrestres, helipistas o pistas de aviación tripulada que ya cuentan con energía y perímetro seguro. El equipo en tierra realiza recambios rápidos de baterías (hot-swap) entre misiones consecutivas. A futuro, este aprendizaje en terreno guiará el diseño e instalación de las estaciones de acople y recarga autónoma (Nest).</p>
+            </div>
+          </div>
+
+          <!-- Q7: Integración con Centrales de Despacho -->
+          <div class="faq-item glass-panel">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span data-i18n="faq_q7">¿Cómo se proyecta la integración con centrales de despacho y software GIS existente?</span>
+              <span class="faq-icon" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a7">Aunque actualmente nos encontramos en fase experimental (TRL 3), la arquitectura de datos se diseña bajo estándares abiertos. La hoja de ruta técnica contempla la exportación de alertas y telemetría en formatos normalizados (GeoJSON, KML y API REST) para facilitar la interoperabilidad futura con centrales de monitoreo forestal (Arauco, CMPC, CONAF) sin imponer software cerrado ni silos de información.</p>
+            </div>
+          </div>
+
+          <!-- Q8: Foso Tecnológico vs Drones Comerciales -->
+          <div class="faq-item glass-panel">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span data-i18n="faq_q8">¿En qué se diferencia Athene de adquirir un dron comercial con cámara térmica?</span>
+              <span class="faq-icon" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a8">Un dron comercial convencional (multirrotor tipo quadcopter) requiere un piloto humano con radiocontrol mirando activamente una pantalla en la oscuridad durante 25–30 minutos de batería, con alcance acotado y alto riesgo de fatiga. Athene se concibe como una plataforma autónoma de ala fija/VTOL diseñada para patrullaje nocturno continuo de largo alcance (25+ km / 90+ min), con inferencia Edge AI a bordo (Zero-Cloud). La aeronave procesa el espectro térmico en vuelo y solo alerta al operador ante precursores reales (doctrina Human-in-the-Loop), multiplicando la cobertura territorial sin desgastar cuadrillas humanas en terreno.</p>
             </div>
           </div>
         </div>

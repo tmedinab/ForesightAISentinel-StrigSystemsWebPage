@@ -4,7 +4,12 @@ Todas las modificaciones notables realizadas en la plataforma web de **Strig Sys
 
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y respeta las decisiones de arquitectura registradas en `docs/adr/`.
 
----
+## [1.3.1] — 2026-09-28
+### Modificado
+* **Envolvente de Vuelo (Criterio de Diseño TRL 3-4):** Reformulación transparente de la tolerancia al viento en la ficha técnica de Athene y en el FAQ (`p1_s3_lbl`, `p1_s3_val`, `faq_q2`, `faq_a2`) como *criterio u objetivo de diseño aerodinámico* para régimen de viento Puelche (10–12 m/s / ~36–43 km/h), erradicando claims prematuros de catálogo o certificación comercial.
+* **Interoperabilidad de Centrales de Despacho (C2 / GIS):** Definición de la salida de datos abierta (GeoJSON / KML / API REST) como *objetivo de arquitectura proyectada* (`flow_s3_f1_lbl`, `flow_s3_f1_val`, `faq_q7`, `faq_a7`) para vinculación futura con centrales forestales (CONAF, Arauco, CMPC).
+* **Foso Tecnológico (Moat vs Drones Comerciales):** Refuerzo en el benchmark táctico (`th_drone`, `r5_drone`) e incorporación de pregunta técnica en el FAQ (`faq_q8`, `faq_a8`) detallando la ventaja operativa de la autonomía VTOL de 25+ km con inferencia Edge AI a bordo (Zero-Cloud) frente a quadcopters manuales que atan a operadores a pantallas nocturnas.
+* **Política de Honestidad en `AGENTS.md` (Sección 1.3):** Incorporación de directrices explícitas que norman la presentación de envolventes de vuelo e interoperabilidad C2 durante la etapa TRL 3.
 
 ## [1.3.0] — 2026-09-28
 ### Añadido

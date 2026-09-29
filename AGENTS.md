@@ -49,7 +49,10 @@ Antes de modificar o proponer cualquier línea de código, el agente debe memori
 * **Hitos Reales Comprometidos:**
   * *Enero 2027:* Demo Day Gearbox (vuelo autónomo de prueba de concepto).
   * *Junio 2027:* Validación operacional en predio piloto privado forestal.
-* **Prohibición de Claims Falsos:** NUNCA afirmar que el sistema tiene "flotas activas en servicio comercial", "patrullando millones de hectáreas", ni vender disponibilidad inmediata de anaquel. La narrativa se orienta a invitar a actores industriales (Arauco, CMPC, CONAF) a sumarse al **Programa de Validación Piloto Temprano 2026-27**.
+* **Prohibición de Claims Falsos y Venta de Humo:** NUNCA afirmar que el sistema tiene "flotas activas en servicio comercial", "patrullando millones de hectáreas", ni vender disponibilidad inmediata de anaquel. La narrativa se orienta a invitar a actores industriales (Arauco, CMPC, CONAF) a sumarse al **Programa de Validación Piloto Temprano 2026-27**.
+* **Envolvente de Vuelo y Viento:** Toda cifra de tolerancia a vientos o ráfagas (ej: 10–12 m/s / ~36–43 km/h, representativo de viento Puelche) DEBE formularse estrictamente como *"Criterio u objetivo de diseño aerodinámico para la plataforma experimental (TRL 3-4)"*. Queda prohibido presentarlo como una envolvente operacional garantizada de catálogo.
+* **Interoperabilidad de Centrales de Despacho (C2 / GIS):** La compatibilidad con centrales de monitoreo (CONAF, Arauco, CMPC) debe describirse siempre como *"Objetivo de arquitectura de datos abierta proyectada (exportación normalizada en GeoJSON / KML / REST API)"*, declarando con transparencia que nos encontramos en fase experimental de laboratorio y predio piloto.
+* **Foso Tecnológico (Moat vs Drones Manuales de Consumo):** La narrativa debe subrayar la diferenciación estructural de Athene (centinela autónomo VTOL de largo alcance con inferencia Edge AI a bordo y doctrina Human-in-the-Loop) frente a drones comerciales convencionales (cuadricópteros que exigen piloto humano dedicado mirando una pantalla en la oscuridad durante 25 minutos).
 
 ### 1.4. Arquitectura Pura Vanilla (Zero Runtime Dependencies)
 * **Stack:** HTML5 semántico, CSS3 moderno con variables y Grid/Flexbox, JavaScript ES6+ modular sin dependencias externas (sin React, Vue, Next.js, Tailwind, ni Bootstrap).
