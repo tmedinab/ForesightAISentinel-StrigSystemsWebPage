@@ -2147,7 +2147,7 @@ function initBackToTop() {
   if (!btn) return;
 
   let ticking = false;
-  const SCROLL_THRESHOLD = 450;
+  const SCROLL_THRESHOLD = 300;
 
   function updateVisibility() {
     const scrollY = window.pageYOffset || document.documentElement.scrollTop;
@@ -2172,6 +2172,9 @@ function initBackToTop() {
       behavior: 'smooth'
     });
   });
+
+  // Evaluate initial scroll state immediately on mount
+  updateVisibility();
 }
 
 

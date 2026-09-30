@@ -4,6 +4,12 @@ Todas las modificaciones notables realizadas en la plataforma web de **Strig Sys
 
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y respeta las decisiones de arquitectura registradas en `docs/adr/`.
 
+## [1.3.5] — 2026-09-30
+### Corregido
+* **Fijación Viewport del Botón Flotante (`#back-to-top`):** Corrección de especificidad CSS en [`styles.css`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/styles.css) donde la regla `.glass-panel:not(.nav-dropdown-menu)` sobreescribía `position: fixed` con `position: relative`, haciendo que el botón quedara retenido al final del flujo del DOM en lugar de flotar en la esquina inferior del viewport. Se aplicó `position: fixed !important`, `z-index: 950`, `pointer-events: none/auto` y exclusión en el selector de panel.
+* **Invocación Reactiva e Inmediata en Montaje:** En [`script.js`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/script.js), ajuste del umbral de aparición a 300px (justo tras rebasar el pliegue del hero) y llamada inmediata a `updateVisibility()` durante la inicialización para evaluar el estado si el usuario entra a través de un ancla.
+* **Renovación Forzada de Caché de Navegador (Cache-Busting):** Actualización de strings de versión a `?v=1.3.5` en [`index.html`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/index.html), [`privacy.html`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/privacy.html), [`terms.html`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/terms.html) y [`404.html`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/404.html) para forzar a navegadores con copia local en caché a descargar los nuevos estilos y scripts sin requerir vaciado manual de historial.
+
 ## [1.3.4] — 2026-09-30
 ### Añadido
 * **Botón Flotante Táctico "Back to Top" (`#back-to-top`):** Control flotante estilizado con micro-icono SVG táctico, tipografía mono HUD (`TOP`), animación suave de retorno al origen (`window.scrollTo({ top: 0, behavior: 'smooth' })`), visibilidad reactiva (>450px de scroll) y throttling vía `requestAnimationFrame` para máximo rendimiento.
