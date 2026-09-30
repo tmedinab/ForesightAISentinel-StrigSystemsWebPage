@@ -1038,6 +1038,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize Umami Virtual Pages & Section Reading Telemetry (Privacy-First)
   initUmamiSectionAndScrollTelemetry();
+
+  // Initialize Tactical Back-to-Top Floating Button
+  initBackToTop();
 });
 
 /**
@@ -1235,6 +1238,8 @@ function initContactModal() {
   function openModal(intent = 'pilot') {
     lastActiveElement = document.activeElement;
     setIntent(intent);
+    if (form) form.style.display = '';
+    if (successState) successState.style.display = 'none';
     modal.classList.add('active');
     modal.setAttribute('aria-hidden', 'false');
     document.body.classList.add('modal-open');
@@ -1299,16 +1304,17 @@ function initContactModal() {
   });
 
   if (form) {
-    const inputsToWatch = form.querySelectorAll('.form-input, .form-select, .form-textarea');
+    const inputsToWatch = form.querySelectorAll('.form-input, .form-select, .form-textarea, .form-checkbox');
     inputsToWatch.forEach(input => {
-      input.addEventListener('input', () => {
+      const clearError = () => {
         input.classList.remove('input-invalid');
+        if (input.type === 'checkbox' && input.parentElement) {
+          input.parentElement.classList.remove('input-invalid');
+        }
         if (valError) valError.style.display = 'none';
-      });
-      input.addEventListener('change', () => {
-        input.classList.remove('input-invalid');
-        if (valError) valError.style.display = 'none';
-      });
+      };
+      input.addEventListener('input', clearError);
+      input.addEventListener('change', clearError);
     });
 
     form.addEventListener('submit', async (e) => {
@@ -2040,9 +2046,9 @@ function initUmamiSectionAndScrollTelemetry() {
 
   function recordSectionView(sectionId) {
     if (trackedSections.has(sectionId)) return;
-    trackedSections.add(sectionId);
 
     if (window.umami && typeof window.umami.track === 'function') {
+      trackedSections.add(sectionId);
       // Virtual pageview for Umami "Pages" tab
       window.umami.track((props) => ({
         ...props,
@@ -2132,5 +2138,41 @@ function initUmamiSectionAndScrollTelemetry() {
 
   window.addEventListener('scroll', onScrollThrottled, { passive: true });
 }
+
+/**
+ * Controller for Tactical Back-to-Top Floating Button
+ */
+function initBackToTop() {
+  const btn = document.getElementById('back-to-top');
+  if (!btn) return;
+
+  let ticking = false;
+  const SCROLL_THRESHOLD = 450;
+
+  function updateVisibility() {
+    const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollY > SCROLL_THRESHOLD) {
+      btn.classList.add('visible');
+    } else {
+      btn.classList.remove('visible');
+    }
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(updateVisibility);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}
+
 
 

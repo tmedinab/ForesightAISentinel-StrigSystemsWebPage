@@ -153,3 +153,32 @@
   *(Debe devolver estrictamente 0 en todos los archivos).*
 - [ ] **Step 3: Documentar los cambios en `docs/CHANGELOG.md` bajo la versión correspondiente.**
 - [ ] **Step 4: Redactar `docs/adr/0005-first-reader-technical-and-operational-improvements.md` según el protocolo de arquitectura.**
+
+---
+
+## 7. Backlog de Hallazgos First-Reader (Pendientes para Potencial Inclusión)
+
+> **Estado:** Registrados como pendientes para definición interna previa a cualquier publicación en la web pública.
+
+* [ ] **FR-01 (Eje Técnico/Forestal): Detección Bajo Dosel Cerrado:**  
+  *Contexto:* Los clientes forestales (Arauco/CMPC) se preguntan cómo el sensor térmico LWIR penetra plantaciones de pino/eucalipto denso.  
+  *Propuesta:* Explicar en el drawer del Pilar 2 que la detección se fundamenta en la captación de **plumas convectivas térmicas ascendentes** (calor que asciende entre las ramas) y el **banqueo aerodinámico multi-ángulo** de la aeronave al orbitar, descartando la idea errónea de transparencia a través de madera.
+* [ ] **FR-02 (Eje Coherencia de Datos): Armonización de Radio y Autonomía:**  
+  *Contexto:* Hero y Tecnología mencionan 15 km y 45–60 min, mientras FAQ Q8 cita 25+ km y 90+ min.  
+  *Propuesta:* Declarar con transparencia que **15 km y 45–60 min** corresponden a la envolvente objetivo de la aeronave Noctua™ MVP (TRL 4-5), mientras que **25+ km y 90+ min** representan el horizonte de escalamiento industrial de largo plazo (TRL 6+ con estación Nest).
+* [ ] **FR-03 (Eje Inversionista/VC): Foso Defensivo de Datos (Data Moat):**  
+  *Contexto:* La plataforma no resalta el valor del software y la IA como barrera de entrada frente a fabricantes de drones comerciales.  
+  *Propuesta:* Formalizar en el Pilar 2 y Alianzas la acumulación del banco propietario de firmas térmicas y falsos positivos de biomasa sudamericana (*Data Moat*) como barrera defensiva de software.
+* [ ] **FR-04 (Eje Regulatorio/DGAC): Metodología SORA (JARUS):**  
+  *Contexto:* La transición hacia vuelos BVLOS (15 km) requiere un marco metodológico explícito.  
+  *Propuesta:* Incorporar la metodología SORA (*Specific Operations Risk Assessment*) y niveles SAIL en los Hitos 4 y 5 del Roadmap y en el Pilar 1.
+* [ ] **FR-05 (Eje UI/UX): Homogeneización de Micro-Iconos en el Hero:**  
+  *Contexto:* La métrica 1 usa un SVG inline (`14x14`), mientras que las métricas 2, 3 y 4 usan un glifo Unicode crudo `ℹ`.  
+  *Propuesta:* Reemplazar los 3 glifos Unicode por el micro-SVG vectorial estandarizado.
+* [ ] **FR-06 (Eje Telecomunicaciones): Confirmación Visual en Zonas sin Cobertura 4G:**  
+  *Contexto:* En quebradas profundas sin señal celular, el operador necesita verificar la alerta antes de autorizar disuasión física.  
+  *Propuesta:* Aclarar en el Pilar 3 que el enlace UHF 915 MHz es capaz de transmitir micro-capturas térmicas comprimidas en ráfaga (thumbnails radiométricos) para triaje visual en consola antes del despacho.
+* [ ] **FR-07 (Eje Gobernanza & Equipo): Balance de Roles en el Equipo Fundador:**  
+  *Contexto:* 5 ingenieros aeroespaciales transmiten alta capacidad técnica pero dejan dudas sobre la gestión comercial/financiera B2B.  
+  *Propuesta:* Precisar y formalizar las áreas de liderazgo comercial, financiero y regulatorio dentro del equipo fundador UdeC.
+

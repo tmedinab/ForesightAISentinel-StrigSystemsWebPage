@@ -4,6 +4,19 @@ Todas las modificaciones notables realizadas en la plataforma web de **Strig Sys
 
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y respeta las decisiones de arquitectura registradas en `docs/adr/`.
 
+## [1.3.4] — 2026-09-30
+### Añadido
+* **Botón Flotante Táctico "Back to Top" (`#back-to-top`):** Control flotante estilizado con micro-icono SVG táctico, tipografía mono HUD (`TOP`), animación suave de retorno al origen (`window.scrollTo({ top: 0, behavior: 'smooth' })`), visibilidad reactiva (>450px de scroll) y throttling vía `requestAnimationFrame` para máximo rendimiento.
+* **Página de Error Personalizada 404 (`404.html`):** Interfaz para GitHub Pages con estética Aerospace HUD (`ERR // 404 - SECTOR NO ENCONTRADO`), enlaces de retorno al centro de comando (`/`), motor i18n reactivo y baliza de telemetría Umami.
+* **Metadatos Semánticos Schema.org JSON-LD & `theme-color`:** Inyección de marcado estructurado `Organization` deeptech aeroespacial en [`index.html`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/index.html) y meta tag de color para navegadores móviles (`#07090e`).
+* **Optimización de Exportación/Impresión PDF para Executive Brief:** Reglas CSS `@page { size: A4 portrait; margin: 0.6cm 0.8cm; }` y `break-inside: avoid;` en `.brief-box`, garantizando que el One-Pager ejecutivo se imprima o exporte en exactamente una sola página A4 sin saltos indeseados.
+* **Backlog de Mejoras First-Reader:** Registro de mejoras operativas y narrativas (FR-01 a FR-07) en [`docs/superpowers/plans/2026-09-29-first-reader-improvements.md`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/docs/superpowers/plans/2026-09-29-first-reader-improvements.md) para desarrollo futuro.
+
+### Corregido
+* **Restauración de Estado en Reapertura de Modales (`openModal`):** Corrección lógica en [`script.js`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/script.js) asegurando que al reabrir `#contact-modal` tras un envío previo, el formulario se restaure automáticamente (`form.style.display = ''`) y el estado de éxito se oculte (`successState.style.display = 'none'`).
+* **Eliminación Reactiva de Errores en Consentimiento (`form-checkbox`):** Inclusión de casillas de verificación en los listeners de cambio para remover el error de validación en tiempo real al marcarlas.
+* **Telemetría Asíncrona Resiliente en Umami:** Verificación defensiva previa de `window.umami.track` antes de marcar secciones como registradas, evitando omisiones por carga diferida de la baliza.
+
 ## [1.3.3] — 2026-09-29
 ### Añadido
 * **Telemetría Web & Analítica Privacy-First (Umami Cloud):** Integración de baliza analítica sin cookies ni banners invasivos en [`index.html`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/index.html), [`privacy.html`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/privacy.html) y [`terms.html`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/terms.html) (`data-website-id="aa979513-3790-4797-99e5-03d4a57d74ee"`).

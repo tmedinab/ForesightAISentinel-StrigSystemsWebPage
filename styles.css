@@ -2510,6 +2510,74 @@ body {
 }
 
 /* ==========================================================================
+   Tactical Back-To-Top Button
+   ========================================================================== */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 900;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 48px;
+  padding: 4px;
+  background: rgba(12, 16, 23, 0.9);
+  border: 1px solid var(--border-glass);
+  border-radius: 8px;
+  color: var(--accent-cyan);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity 0.28s ease, transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease, color 0.28s ease;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.back-to-top-btn.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top-btn:hover {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 16px rgba(0, 229, 255, 0.35);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.back-to-top-svg {
+  transition: transform 0.2s ease;
+}
+
+.back-to-top-btn:hover .back-to-top-svg {
+  transform: translateY(-2px);
+}
+
+.back-to-top-hud {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  margin-top: 2px;
+  opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+  .back-to-top-btn {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 40px;
+    height: 44px;
+  }
+}
+
+/* ==========================================================================
    Responsive Breakpoints
    ========================================================================== */
 @media (max-width: 1180px) {
@@ -3914,6 +3982,11 @@ body.modal-open {
 }
 
 /* Print Optimization */
+@page {
+  size: A4 portrait;
+  margin: 0.6cm 0.8cm;
+}
+
 @media print {
   body * {
     visibility: hidden;
@@ -3944,7 +4017,13 @@ body.modal-open {
     background: #fff !important;
     color: #0f172a !important;
     border: none !important;
-    padding: 0.5cm !important;
+    padding: 0.3cm !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .brief-paper-grid, .brief-box {
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
   .brief-brand, .brief-h1, .brief-box-title {
     color: #0f172a !important;

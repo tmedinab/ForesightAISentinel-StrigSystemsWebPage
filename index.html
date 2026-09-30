@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07090e">
   <title>Strig Systems | Athene — Inteligencia Aérea Autónoma</title>
   <meta name="description" content="Strig Systems desarrolla Athene: plataforma de vigilancia territorial autónoma con drones e inferencia Edge AI a bordo para la detección temprana y disuasión de precursores de incendios forestales en la brecha nocturna.">
   <meta name="keywords" content="Strig Systems, Athene, Noctua, Incendios Forestales, Vigilancia Aérea Autónoma, Drones VTOL, Edge AI, Detección Temprana, Monitoreo Nocturno, CORFO, UdeC">
@@ -37,6 +38,38 @@
 
   <!-- Umami Analytics (Privacy-First & Cookie-less) -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="aa979513-3790-4797-99e5-03d4a57d74ee"></script>
+
+  <!-- Structured Data: Organization & DeepTech Platform (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Strig Systems",
+    "legalName": "Strig Systems SpA",
+    "url": "https://strigsystems.tech/",
+    "logo": "https://strigsystems.tech/assets/img/tech/vtol_payload.png",
+    "description": "Startup chilena de ingeniería aeroespacial y defensa deeptech. Desarrolladores del sistema centinela aéreo autónomo Athene.",
+    "foundingDate": "2025",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Concepción",
+      "addressRegion": "Biobío",
+      "addressCountry": "CL"
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "email": "contacto@strigsystems.tech",
+        "contactType": "operations"
+      },
+      {
+        "@type": "ContactPoint",
+        "email": "tmedina@strigsystems.tech",
+        "contactType": "technical lead"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Ambient Grids and Lights -->
@@ -1592,6 +1625,14 @@
       </div>
     </div>
   </footer>
+
+  <!-- TACTICAL BACK-TO-TOP BUTTON -->
+  <button type="button" id="back-to-top" class="back-to-top-btn glass-panel" aria-label="Volver al inicio" title="Volver al inicio">
+    <svg class="back-to-top-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+    <span class="back-to-top-hud">TOP</span>
+  </button>
 
   <!-- UNIFIED CONTACT MODAL WITH INTENT SELECTOR -->
   <div id="contact-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="contact-modal-title">
