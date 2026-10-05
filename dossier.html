@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07090e">
+  <title data-i18n="dossier_meta_title">Strig Systems | Dossier Técnico Operacional [ACCESO RESTRINGIDO]</title>
+  
+  <!-- Strict No-Index for Private Gated Access -->
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="googlebot" content="noindex, nofollow">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css?v=2.0.0">
+
+  <style>
+    /* Security Gate Overlay Styles */
+    .gate-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: rgba(7, 9, 14, 0.96);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+    }
+    .gate-overlay.unlocked {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    .gate-dialog {
+      max-width: 520px;
+      width: 100%;
+      padding: 2.5rem;
+      border-radius: 8px;
+      background: rgba(14, 19, 29, 0.95);
+      border: 1px solid rgba(0, 229, 255, 0.35);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9), 0 0 35px rgba(0, 229, 255, 0.12);
+      text-align: center;
+    }
+    .gate-shield {
+      font-size: 2.2rem;
+      color: var(--accent-cyan);
+      margin-bottom: 1rem;
+      display: inline-block;
+      animation: pulseNodeCyan 3s infinite ease-in-out;
+    }
+    .gate-badge {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      color: var(--accent-amber);
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      padding: 0.3rem 0.75rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+      letter-spacing: 0.05em;
+    }
+    .gate-title {
+      font-family: var(--font-heading);
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.75rem;
+    }
+    .gate-desc {
+      font-size: 0.93rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 1.75rem;
+    }
+    .gate-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .gate-input {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: rgba(5, 8, 17, 0.9);
+      color: var(--accent-cyan);
+      font-family: var(--font-mono);
+      font-size: 1.1rem;
+      text-align: center;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      transition: var(--transition-smooth);
+    }
+    .gate-input:focus {
+      outline: none;
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 15px rgba(0, 229, 255, 0.25);
+    }
+    .gate-input.gate-error {
+      border-color: var(--accent-rose);
+      box-shadow: 0 0 15px rgba(239, 68, 68, 0.3);
+      animation: shake 0.4s ease;
+    }
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-6px); }
+      40%, 80% { transform: translateX(6px); }
+    }
+    .gate-btn {
+      width: 100%;
+      justify-content: center;
+    }
+    .gate-msg {
+      font-size: 0.82rem;
+      font-family: var(--font-mono);
+      color: var(--accent-rose);
+      min-height: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    .gate-footer-actions {
+      margin-top: 1.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+    .gate-link {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: var(--transition-smooth);
+    }
+    .gate-link:hover {
+      color: var(--accent-cyan);
+    }
+
+    /* Protected Content Wrap */
+    .dossier-wrap {
+      filter: blur(20px);
+      transition: filter 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .dossier-wrap.unlocked {
+      filter: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Ambient Grids and Lights -->
+  <div class="background-grid" aria-hidden="true"></div>
+  <div class="glow-orb glow-top-left" aria-hidden="true"></div>
+  <div class="glow-orb glow-center-right" aria-hidden="true"></div>
+
+  <!-- SECURITY GATE MODAL -->
+  <div id="gate-overlay" class="gate-overlay" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+    <div class="gate-dialog glass-panel">
+      <span class="gate-shield">◈</span>
+      <div class="gate-badge">[ATHENE C2 // ACCESO TÉCNICO RESERVADO]</div>
+      <h1 id="gate-title" class="gate-title">Dossier Técnico Operacional 2026-27</h1>
+      <p class="gate-desc">
+        Este documento contiene especificaciones de predio piloto, arquitectura optrónica y protocolos horarios reservados de Strig Systems. Ingrese su clave de autorización institucional para desbloquear:
+      </p>
+
+      <form id="gate-form" class="gate-form">
+        <input type="password" id="gate-input" class="gate-input" placeholder="INGRESE CLAVE DE ACCESO" autocomplete="off" spellcheck="false" required>
+        <button type="submit" id="gate-submit" class="btn-primary gate-btn">
+          <span>Validar Credenciales & Desbloquear</span>
+          <span class="arrow-icon" aria-hidden="true">→</span>
+        </button>
+        <div id="gate-error-msg" class="gate-msg" role="alert"></div>
+      </form>
+
+      <div class="gate-footer-actions">
+        <a href="index.html" class="gate-link">← Volver a la portada pública</a>
+        <a href="mailto:contacto@strigsystems.tech?subject=Solicitud%20Clave%20Dossier%20T%C3%A9cnico%20Strig%20Systems" class="gate-link highlight-link">Solicitar Clave / NDA</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROTECTED DOSSIER CONTENT -->
+  <div id="dossier-content" class="dossier-wrap" aria-hidden="true">
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand" aria-label="Strig Systems Inicio">
+          <span class="brand-shield" aria-hidden="true">◈</span>
+          <span class="brand-name">STRIG<span class="accent-text">SYSTEMS</span></span>
+          <span class="brand-product-badge">
+            <span class="brand-product-dot" aria-hidden="true"></span>
+            <span class="brand-product-name">DOSSIER TÉCNICO</span>
+          </span>
+        </a>
+
+        <div class="header-actions" style="display: flex; align-items: center; gap: 1rem;">
+          <span class="tax-badge" style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-emerald);">[SESIÓN AUTORIZADA]</span>
+          <button type="button" class="btn-ghost" onclick="lockDossier()" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Bloquear</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container" style="padding: 4rem 1.5rem 6rem;">
+      <!-- Title & Context -->
+      <div class="glass-panel" style="padding: 2.5rem; margin-bottom: 2.5rem; border-color: rgba(0, 229, 255, 0.3);">
+        <div class="hero-credential-bar" style="margin-bottom: 1.5rem;">
+          <div class="cred-segment">
+            <span class="status-pulse-dot"></span>
+            <span class="cred-label">TRL 3 · Validación Experimental en Curso</span>
+          </div>
+          <span class="cred-separator">│</span>
+          <div class="cred-segment">
+            <span class="cred-sub-mark">◈</span>
+            <span class="cred-label">CORFO Semilla Inicia · Lab Aeroespacial UdeC · Gearbox</span>
+          </div>
+        </div>
+
+        <h1 style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 800; color: #fff; margin-bottom: 1rem;">
+          Dossier Técnico Operacional · Plataforma Centinela Athene™
+        </h1>
+        <p style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.6; max-width: 900px; margin-bottom: 1.5rem;">
+          Documento reservado para contrapartes industriales, jefes de despacho y comités técnicos. Describe el protocolo de misión nocturna, la metodología de validación en 4 fases para predio piloto forestal y los parámetros de arquitectura de sistemas.
+        </p>
+        <div style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--accent-amber); background: rgba(245, 158, 11, 0.08); padding: 0.75rem 1.25rem; border-radius: 4px; border-left: 3px solid var(--accent-amber);">
+          AVISO DE CONFIDENCIALIDAD: Este material contiene metodología y procedimientos operativos bajo titularidad exclusiva de Strig Systems SpA. Prohibida su distribución sin autorización escrita.
+        </div>
+      </div>
+
+      <!-- 1. PROTOCOLO OPERACIONAL 02:00 AM -->
+      <section class="glass-panel" style="padding: 2.5rem; margin-bottom: 2.5rem;">
+        <div class="pillar-tag">[PROTOCOLO TÁCTICO // 01]</div>
+        <h2 style="font-family: var(--font-heading); font-size: 1.6rem; color: #fff; margin-bottom: 1rem;">
+          El Ciclo de Misión Nocturna (Ventana Crítica 00:00 – 05:00 hrs)
+        </h2>
+        <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 2rem;">
+          Mientras la aviación cisterna tripulada permanece en tierra por normativa de visibilidad DGAC (riesgo CFIT), Athene ejecuta patrullajes deterministas bajo geocerca sobre rodales y quebradas:
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem;">
+          <div style="background: rgba(5, 8, 17, 0.7); padding: 1.5rem; border-radius: 6px; border: 1px solid var(--border-glass);">
+            <div style="font-family: var(--font-mono); color: var(--accent-cyan); font-size: 0.85rem; margin-bottom: 0.5rem;">01 // DESPEGUE VERTICAL</div>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Ascenso en 4 rotores desde base acotada sin pista hacia altitud de crucero segura (100 m AGL).</p>
+          </div>
+          <div style="background: rgba(5, 8, 17, 0.7); padding: 1.5rem; border-radius: 6px; border: 1px solid var(--border-glass);">
+            <div style="font-family: var(--font-mono); color: var(--accent-cyan); font-size: 0.85rem; margin-bottom: 0.5rem;">02 // CRUCERO Y DETECCIÓN</div>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Vuelo de ala fija eficiente. La unidad Jetson a bordo procesa el flujo LWIR radiométrico en microsegundos.</p>
+          </div>
+          <div style="background: rgba(5, 8, 17, 0.7); padding: 1.5rem; border-radius: 6px; border: 1px solid var(--border-glass);">
+            <div style="font-family: var(--font-mono); color: var(--accent-cyan); font-size: 0.85rem; margin-bottom: 0.5rem;">03 // TELEMETRÍA TÁCTICA</div>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Enlace 915 MHz FHSS despacha ficha sintética con coordenadas de silueta térmica al operador en ≤ 3 min.</p>
+          </div>
+          <div style="background: rgba(5, 8, 17, 0.7); padding: 1.5rem; border-radius: 6px; border: 1px solid var(--border-glass);">
+            <div style="font-family: var(--font-mono); color: var(--accent-cyan); font-size: 0.85rem; margin-bottom: 0.5rem;">04 // DISUASIÓN AUTORIZADA</div>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">El operador en tierra valida la ficha y autoriza la activación de foco estroboscópico de alta intensidad y sirena.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. METODOLOGÍA DE VALIDACIÓN EN 4 FASES (PREDIO PILOTO) -->
+      <section class="glass-panel" style="padding: 2.5rem; margin-bottom: 2.5rem;">
+        <div class="pillar-tag">[CAMPAÑA OPERACIONAL // 02]</div>
+        <h2 style="font-family: var(--font-heading); font-size: 1.6rem; color: #fff; margin-bottom: 1rem;">
+          Programa de Validación en Terreno 2026-27 (4 Fases Metodológicas)
+        </h2>
+        <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 2rem;">
+          Estructuración de campaña diseñada para predios piloto de empresas forestales e industriales:
+        </p>
+
+        <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+          <div style="border-left: 3px solid var(--accent-cyan); padding-left: 1.25rem;">
+            <h3 style="font-family: var(--font-heading); font-size: 1.15rem; color: #fff;">Fase 01 · Levantamiento Topográfico y Plan de Vuelo (Semanas 1–2)</h3>
+            <p style="font-size: 0.93rem; color: var(--text-muted); line-height: 1.5;">Análisis de relieve de quebradas, geocercas de seguridad, definición de zonas de aterrizaje de emergencia y evaluación de riesgos bajo metodología SORA.</p>
+          </div>
+          <div style="border-left: 3px solid var(--accent-cyan); padding-left: 1.25rem;">
+            <h3 style="font-family: var(--font-heading); font-size: 1.15rem; color: #fff;">Fase 02 · Calibración Térmica y Ensayos de Enlace (Semanas 3–4)</h3>
+            <p style="font-size: 0.93rem; color: var(--text-muted); line-height: 1.5;">Vuelos diurnos y crepusculares controlados con objetivos calóricos calibrados (fogatas controladas y vehículos) para ajustar umbrales de detección y filtrado de falsas alarmas.</p>
+          </div>
+          <div style="border-left: 3px solid var(--accent-cyan); padding-left: 1.25rem;">
+            <h3 style="font-family: var(--font-heading); font-size: 1.15rem; color: #fff;">Fase 03 · Campaña de Patrullaje Nocturno Activo (Semanas 5–8)</h3>
+            <p style="font-size: 0.93rem; color: var(--text-muted); line-height: 1.5;">Operación nocturna en predio piloto con piloto calificado en tierra (VLOS). Medición de tiempos de detección, tasa de falsos positivos y coordinación con centrales de despacho.</p>
+          </div>
+          <div style="border-left: 3px solid var(--accent-cyan); padding-left: 1.25rem;">
+            <h3 style="font-family: var(--font-heading); font-size: 1.15rem; color: #fff;">Fase 04 · Auditoría Operacional y Modelo de Despliegue (Semana 9)</h3>
+            <p style="font-size: 0.93rem; color: var(--text-muted); line-height: 1.5;">Entrega formal de informe técnico conjunto, análisis de rentabilidad IaaS y hoja de ruta para escalamiento a BVLOS (15 km) para la temporada 2027.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. ESPECIFICACIONES TÉCNICAS Y ENLACE -->
+      <section class="glass-panel" style="padding: 2.5rem; margin-bottom: 2.5rem;">
+        <div class="pillar-tag">[ARQUITECTURA DE SISTEMAS // 03]</div>
+        <h2 style="font-family: var(--font-heading); font-size: 1.6rem; color: #fff; margin-bottom: 1.5rem;">
+          Parámetros de Ingeniería & Carga Útil
+        </h2>
+
+        <div style="overflow-x: auto;">
+          <table style="width: 100%; border-collapse: collapse; font-size: 0.92rem; text-align: left;">
+            <thead>
+              <tr style="border-bottom: 1px solid var(--border-glass); color: var(--accent-cyan); font-family: var(--font-mono);">
+                <th style="padding: 0.75rem 1rem;">Subsistema</th>
+                <th style="padding: 0.75rem 1rem;">Especificación Técnica (TRL 3-4)</th>
+                <th style="padding: 0.75rem 1rem;">Criterio Operacional</th>
+              </tr>
+            </thead>
+            <tbody style="color: var(--text-secondary);">
+              <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+                <td style="padding: 0.75rem 1rem; font-weight: 600; color: #fff;">Sensor Térmico</td>
+                <td style="padding: 0.75rem 1rem;">LWIR Radiométrico 640×512 (< 50 mK) no refrigerado</td>
+                <td style="padding: 0.75rem 1rem;">Detección de conatos incipientes y calor residual bajo dosel</td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+                <td style="padding: 0.75rem 1rem; font-weight: 600; color: #fff;">Sensor Visible</td>
+                <td style="padding: 0.75rem 1rem;">Cámara 4K en gimbal estabilizado 3 ejes</td>
+                <td style="padding: 0.75rem 1rem;">Confirmación visual y registro pericial georreferenciado</td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+                <td style="padding: 0.75rem 1rem; font-weight: 600; color: #fff;">Cómputo a Bordo</td>
+                <td style="padding: 0.75rem 1rem;">Unidad Edge AI NVIDIA Jetson de bajo consumo</td>
+                <td style="padding: 0.75rem 1rem;">Inferencia local Zero-Cloud sin dependencia de internet</td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+                <td style="padding: 0.75rem 1rem; font-weight: 600; color: #fff;">Enlace de Datos C2</td>
+                <td style="padding: 0.75rem 1rem;">Banda ISM 915 MHz FHSS (Salto de Frecuencia)</td>
+                <td style="padding: 0.75rem 1rem;">Telemetría táctica y comando seguro anti-interferencia (SUBTEL)</td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+                <td style="padding: 0.75rem 1rem; font-weight: 600; color: #fff;">Seguridad de Vuelo</td>
+                <td style="padding: 0.75rem 1rem;">FDIR aislado del cómputo de IA + Paracaídas balístico</td>
+                <td style="padding: 0.75rem 1rem;">Contención estricta ante contingencias y geocerca determinista</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Contact Footer for Authorized Evaluator -->
+      <div class="glass-panel" style="padding: 2rem; text-align: center; border-color: rgba(245, 158, 11, 0.3);">
+        <h3 style="font-family: var(--font-heading); font-size: 1.3rem; color: #fff; margin-bottom: 0.5rem;">
+          Coordinación de Sesión Técnica 1:1
+        </h3>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.25rem;">
+          Para coordinar visitas técnicas al Laboratorio Aeroespacial UdeC o formalizar acuerdos de validación en predio:
+        </p>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="mailto:contacto@strigsystems.tech?subject=Coordinacion%20Predio%20Piloto%20Athene" class="btn-primary" style="padding: 0.75rem 1.5rem;">
+            <span>Contactar Mesa Técnica</span>
+            <span class="arrow-icon" aria-hidden="true">→</span>
+          </a>
+          <a href="mailto:tmedina@strigsystems.tech?subject=Consulta%20Tecnica%20Fundador%20Athene" class="btn-ghost" style="padding: 0.75rem 1.5rem;">
+            <span>Escribir a Tomás Medina (Technical Lead)</span>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" style="margin-top: 4rem;">
+      <div class="container footer-layout">
+        <div class="footer-brand-side">
+          <span class="brand">
+            <span class="brand-shield" aria-hidden="true">◈</span>
+            <span class="brand-name">STRIG<span class="accent-text">SYSTEMS</span></span>
+          </span>
+          <p class="footer-tagline">
+            Strig Systems SpA · Plataforma Centinela Athene™ · Documento Reservado bajo Protocolo NDA.
+          </p>
+        </div>
+        <div class="footer-links-side">
+          <p class="copyright-text">© 2026 Strig Systems SpA. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- GATE VALIDATION SCRIPT (SHA-256 HASH VERIFICATION) -->
+  <script>
+    // SHA-256 Hash of approved access codes:
+    // 1. "ATHENE2026" -> 8b763ec70f4d02330f6e1f0e42cf760086bc0529d4fc0280eb4c1c90f230da3f
+    // 2. "STRIG-PILOTO" -> 06c3a1b63eb70a9314dd60fae24be704db63f6a27e77bfa5db2f4bead8e51921
+    // 3. "CORFO-VAL" -> d9c06fcbc65922eb79fae7c9927cfc5ae5d6a8940bb2beff57f1e582847a6f27
+    const APPROVED_HASHES = [
+      "8b763ec70f4d02330f6e1f0e42cf760086bc0529d4fc0280eb4c1c90f230da3f",
+      "06c3a1b63eb70a9314dd60fae24be704db63f6a27e77bfa5db2f4bead8e51921",
+      "d9c06fcbc65922eb79fae7c9927cfc5ae5d6a8940bb2beff57f1e582847a6f27"
+    ];
+
+    async function sha256(str) {
+      const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(str.trim().toUpperCase()));
+      return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+
+    function unlockDossier() {
+      sessionStorage.setItem('strig_dossier_auth', 'approved');
+      document.getElementById('gate-overlay').classList.add('unlocked');
+      const content = document.getElementById('dossier-content');
+      content.classList.add('unlocked');
+      content.setAttribute('aria-hidden', 'false');
+    }
+
+    function lockDossier() {
+      sessionStorage.removeItem('strig_dossier_auth');
+      document.getElementById('gate-overlay').classList.remove('unlocked');
+      const content = document.getElementById('dossier-content');
+      content.classList.remove('unlocked');
+      content.setAttribute('aria-hidden', 'true');
+      const input = document.getElementById('gate-input');
+      if (input) {
+        input.value = '';
+        input.focus();
+      }
+    }
+
+    // Auto-check on load (SessionStorage or URL parameter)
+    document.addEventListener('DOMContentLoaded', async () => {
+      // 1. Check existing session
+      if (sessionStorage.getItem('strig_dossier_auth') === 'approved') {
+        unlockDossier();
+        return;
+      }
+
+      // 2. Check URL query param (?access=... or ?key=...)
+      const urlParams = new URLSearchParams(window.location.search);
+      const queryKey = urlParams.get('access') || urlParams.get('key');
+      if (queryKey) {
+        const hash = await sha256(queryKey);
+        if (APPROVED_HASHES.includes(hash)) {
+          unlockDossier();
+          // Clean URL parameter without reload for privacy
+          window.history.replaceState({}, document.title, window.location.pathname);
+          return;
+        }
+      }
+
+      // If not approved, focus input
+      const input = document.getElementById('gate-input');
+      if (input) input.focus();
+    });
+
+    // Form submission validation
+    const form = document.getElementById('gate-form');
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const input = document.getElementById('gate-input');
+        const errorMsg = document.getElementById('gate-error-msg');
+        const val = input ? input.value : '';
+
+        if (!val) return;
+
+        const hash = await sha256(val);
+        if (APPROVED_HASHES.includes(hash)) {
+          if (errorMsg) errorMsg.textContent = '';
+          unlockDossier();
+        } else {
+          input.classList.add('gate-error');
+          if (errorMsg) errorMsg.textContent = '[ERROR: CLAVE NO AUTORIZADA O EXPIRADA]';
+          setTimeout(() => input.classList.remove('gate-error'), 800);
+          input.value = '';
+          input.focus();
+        }
+      });
+    }
+  </script>
+</body>
+</html>
