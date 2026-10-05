@@ -1,144 +1,205 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07090e">
   <title>Política de Privacidad & Gobernanza de Datos | Strig Systems</title>
   <meta name="description" content="Política de privacidad, gobernanza de datos y seguridad de la información de Strig Systems para operaciones tácticas B2B y programas de pilotaje industrial.">
+  <link rel="canonical" href="https://strigsystems.tech/privacy.html">
+
+  <!-- Favicon SVG -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>">
+
+  <!-- Fonts: Space Grotesk, Outfit & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=1.3.5">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css?v=2.0.1">
+
   <!-- Umami Analytics (Privacy-First & Cookie-less) -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="aa979513-3790-4797-99e5-03d4a57d74ee"></script>
-  <style>
-    .legal-page-wrapper {
-      max-width: 860px;
-      margin: 120px auto 80px;
-      padding: 0 24px;
-    }
-    .legal-card {
-      padding: 48px;
-      background: rgba(15, 23, 42, 0.7);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 16px;
-      backdrop-filter: blur(16px);
-    }
-    .legal-title {
-      font-size: 2.2rem;
-      font-weight: 700;
-      color: #fff;
-      margin-bottom: 8px;
-    }
-    .legal-meta {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.85rem;
-      color: var(--accent-cyan);
-      margin-bottom: 32px;
-      display: block;
-    }
-    .legal-section {
-      margin-bottom: 32px;
-    }
-    .legal-section h3 {
-      font-size: 1.25rem;
-      font-weight: 600;
-      color: #fff;
-      margin-bottom: 12px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      padding-bottom: 6px;
-    }
-    .legal-section p, .legal-section li {
-      color: var(--text-secondary);
-      font-size: 0.95rem;
-      line-height: 1.7;
-    }
-    .legal-section ul {
-      margin-left: 20px;
-      margin-top: 8px;
-    }
-    .legal-section li {
-      margin-bottom: 6px;
-    }
-    .legal-back-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 24px;
-      color: var(--accent-cyan);
-      text-decoration: none;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.9rem;
-      transition: opacity 0.2s;
-    }
-    .legal-back-btn:hover {
-      opacity: 0.8;
-    }
-  </style>
 </head>
-<body class="theme-dark">
-  <div class="legal-page-wrapper">
-    <a href="index.html" class="legal-back-btn">← Volver a Strig Systems</a>
-    
-    <div class="legal-card">
-      <h1 class="legal-title">Política de Privacidad & Gobernanza de Datos</h1>
-      <span class="legal-meta">ÚLTIMA ACTUALIZACIÓN: SEPTIEMBRE 2026 • REVISIÓN TÉCNICA v2.4</span>
+<body>
+  <!-- Ambient Grids and Lights -->
+  <div class="background-grid" aria-hidden="true"></div>
+  <div class="glow-orb glow-top-left" aria-hidden="true"></div>
+  <div class="glow-orb glow-center-right" aria-hidden="true"></div>
 
-      <div class="legal-section">
-        <h3>1. Identidad y Compromiso</h3>
-        <p>
-          <strong>Strig Systems</strong> (desarrolladora de la plataforma de inteligencia aérea autónoma <em>Athene</em>) está comprometida con la protección de la privacidad, confidencialidad comercial y seguridad de la información de sus clientes industriales, colaboradores de investigación y visitantes.
-        </p>
-      </div>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Strig Systems Inicio">
+        <span class="brand-shield" aria-hidden="true">◈</span>
+        <span class="brand-name">STRIG<span class="accent-text">SYSTEMS</span></span>
+        <span class="brand-product-badge">
+          <span class="brand-product-dot" aria-hidden="true"></span>
+          <span class="brand-product-name">ATHENE</span>
+        </span>
+      </a>
 
-      <div class="legal-section">
-        <h3>2. Alcance del Tratamiento de Datos</h3>
-        <p>Esta política cubre tres esferas operacionales:</p>
-        <ul>
-          <li><strong>Datos Corporativos y de Contacto:</strong> Información provista voluntariamente a través de formularios de validación técnica, solicitudes de demostración C2 o correspondencia comercial (nombres, correos institucionales, entidad y requerimientos territoriales). El envío de formularios web se canaliza de forma segura mediante el procesador técnico FormSubmit hacia casillas corporativas de Strig Systems, sin almacenamiento comercial por terceros.</li>
-          <li><strong>Telemetría Operacional y Datos Sensoriales:</strong> En el marco de acuerdos de validación y pilotaje conjunto B2B, los datos generados por la aeronave (coordenadas de vuelo, firmas térmicas radiométricas y registros de eventos) son tratados bajo estrictos acuerdos de confidencialidad (NDA) y pertenecen a la entidad asociada.</li>
-          <li><strong>Captura de Imágenes y Protección de la Privacidad (REQ-FAI-COR-002):</strong> El sistema está orientado a la detección de precursores térmicos y actividad no autorizada. Ante la eventual aparición incidental de personas en el canal visual, el diseño de ingeniería exige el difuminado automático de rostros (requisito REQ-FAI-COR-002), prohibiendo el uso de modelos de biometría o identificación facial sin base legal ni consentimiento.</li>
-        </ul>
-      </div>
-
-      <div class="legal-section">
-        <h3>3. Procesamiento en el Borde (Zero-Cloud Data Governance)</h3>
-        <p>
-          A diferencia de arquitecturas comerciales que transmiten feeds continuos de video a nubes externas, la arquitectura <strong>Athene</strong> ejecuta la inferencia de inteligencia artificial de manera local a bordo de la aeronave mediante módulos <strong>NVIDIA Jetson</strong>. 
-          Los feeds de video no son almacenados en servidores de terceros ni utilizados para entrenamiento público sin consentimiento expreso por escrito.
-        </p>
-      </div>
-
-      <div class="legal-section">
-        <h3>4. Seguridad, Cifrado y Retención</h3>
-        <p>
-          Las comunicaciones de telemetría entre la aeronave y la estación en tierra emplean radioenlaces tácticos en espectro seguro (FHSS 915 MHz) y protocolos de red seguros (TLS 1.3). Las grabaciones de validación y logs de misión se retienen exclusivamente durante el periodo acordado para auditoría de vuelo, informes operacionales y análisis ante eventuales siniestros.
-        </p>
-      </div>
-
-      <div class="legal-section">
-        <h3>5. Política de Cookies y Almacenamiento Local</h3>
-        <p>
-          <strong>Strig Systems no utiliza cookies de rastreo publicitario, píxeles de retargeting ni herramientas de perfilamiento comercial de terceros.</strong>
-        </p>
-        <p>
-          Este sitio web únicamente utiliza tecnologías de almacenamiento estrictamente funcionales (como <code>localStorage</code> del navegador) para conservar la preferencia de idioma del usuario (español o inglés) durante su navegación. Al no realizarse seguimiento de hábitos de navegación ni cesión de datos a redes publicitarias, la experiencia del usuario no se ve interrumpida por banners invasivos de consentimiento, cumpliendo los más altos estándares de privacidad por diseño.
-        </p>
-      </div>
-
-      <div class="legal-section">
-        <h3>6. Marco Legal Chileno y Derechos del Titular</h3>
-        <p>
-          El tratamiento de datos de carácter personal se efectúa conforme a la <strong>Ley N° 19.628 sobre Protección de la Vida Privada</strong> y a la nueva <strong>Ley N° 21.719 sobre Protección de Datos Personales (vigente a partir de diciembre de 2026)</strong> de la República de Chile, junto con estándares internacionales de ciberseguridad. Los titulares podrán solicitar en cualquier momento el acceso, rectificación, cancelación o bloqueo de sus datos comunicándose a:
-        </p>
-        <ul>
-          <li><strong>Canal Corporativo:</strong> <a href="mailto:contacto@strigsystems.tech" style="color:var(--accent-cyan);">contacto@strigsystems.tech</a></li>
-          <li><strong>Liderazgo Técnico & Normativo:</strong> <a href="mailto:tmedina@strigsystems.tech" style="color:var(--accent-cyan);">tmedina@strigsystems.tech</a> (Revisión técnica interna: Tomás Medina & Richard Solís)</li>
-          <li><strong>Sitio Web Oficial:</strong> <a href="https://strigsystems.tech" style="color:var(--accent-cyan);">https://strigsystems.tech</a></li>
-        </ul>
+      <div class="header-actions">
+        <a href="index.html" class="btn-ghost btn-header">
+          <span class="arrow-icon" style="transform: rotate(180deg); margin-right: 0.4rem;" aria-hidden="true">→</span>
+          <span>Volver al Inicio</span>
+        </a>
       </div>
     </div>
-  </div>
+  </header>
+
+  <!-- Main Legal Document -->
+  <main class="legal-main">
+    <div class="container legal-container">
+      <!-- Breadcrumb Navigation Bar -->
+      <div class="legal-nav-bar">
+        <a href="index.html" class="legal-back-nav">
+          <span class="arrow-icon" style="transform: rotate(180deg);" aria-hidden="true">→</span>
+          <span>Volver al centro de comando</span>
+        </a>
+        <div class="legal-doc-badges">
+          <span class="legal-doc-pill">[DOC // PRIVACY-GOV]</span>
+          <span class="legal-doc-pill status-active">◈ VIGENTE</span>
+        </div>
+      </div>
+
+      <!-- Legal Card with HUD Aerospace Styling -->
+      <article class="legal-card glass-panel">
+        <header class="legal-header">
+          <h1 class="legal-title">Política de Privacidad & Gobernanza de Datos</h1>
+          <div class="legal-meta">
+            <span>ÚLTIMA ACTUALIZACIÓN: SEPTIEMBRE 2026</span>
+            <span class="legal-meta-dot">│</span>
+            <span>REVISIÓN TÉCNICA v2.4</span>
+            <span class="legal-meta-dot">│</span>
+            <span>ARQUITECTURA ZERO-CLOUD</span>
+          </div>
+        </header>
+
+        <section class="legal-section">
+          <h2 class="legal-section-title">1. Identidad y Compromiso Institucional</h2>
+          <p>
+            <strong>Strig Systems SpA</strong> (desarrolladora de la plataforma de inteligencia aérea autónoma <strong>Athene™</strong>) asume el compromiso ético y normativo de proteger la privacidad, la confidencialidad de la información operativa y los secretos industriales de sus contrapartes del sector forestal, minero, energético, comités de interfaz y visitantes institucionales.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2 class="legal-section-title">2. Alcance del Tratamiento de Datos</h2>
+          <p>Esta política cubre tres esferas operacionales diferenciadas:</p>
+          <ul>
+            <li><strong>Datos Corporativos y de Contacto Institucional:</strong> Información provista voluntariamente a través del formulario de validación técnica, solicitudes de briefing o correspondencia comercial (nombres, cargos, correos corporativos, entidad y características del predio). El canal web se transmite de forma cifrada mediante FormSubmit directamente hacia las casillas corporativas de Strig Systems, sin venta, arriendo ni cesión comercial a terceros.</li>
+            <li><strong>Telemetría Operacional y Datos Sensoriales B2B:</strong> En el marco de acuerdos de validación y pilotaje conjunto en predios privados, los datos generados por la aeronave (coordenadas de vuelo, firmas térmicas radiométricas LWIR y registros de conatos) son tratados bajo estricto Acuerdo de Confidencialidad (NDA) y son de titularidad de la entidad asociada.</li>
+            <li><strong>Captura de Imágenes y Protección de la Privacidad (Requisito REQ-FAI-COR-002):</strong> El sistema está concebido para la detección temprana de anomalías calóricas y prevención de incendios. Ante la aparición incidental de personas en el canal optrónico visible, la arquitectura impone el difuminado y anonimización automática de rostros y patentes a bordo, prohibiendo de forma taxativa el uso de biometría o reconocimiento facial individual.</li>
+          </ul>
+        </section>
+
+        <section class="legal-section">
+          <h2 class="legal-section-title">3. Procesamiento en el Borde (Zero-Cloud Data Governance)</h2>
+          <p>
+            A diferencia de sistemas comerciales que transmiten flujos continuos de video sin procesar hacia servidores en nubes públicas, la arquitectura <strong>Athene™</strong> ejecuta la inferencia de inteligencia artificial de manera local a bordo mediante unidades <strong>NVIDIA Jetson</strong> (Zero-Cloud).
+          </p>
+          <div class="legal-callout">
+            <div class="legal-callout-title">[ARQUITECTURA ZERO-CLOUD // SEGURIDAD INDUSTRIAL]</div>
+            El flujo de video crudo no viaja por internet abierta ni se almacena en granjas de servidores externas. Solo se transmiten paquetes sintéticos de telemetría y metadatos georreferenciados cifrados directamente a la consola local del operador humano en tierra (Human-in-the-Loop).
+          </div>
+          <p>
+            Los registros de vuelo y firmas térmicas no son utilizados para entrenamiento público ni compartidos con plataformas de terceros sin consentimiento expreso por escrito.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2 class="legal-section-title">4. Seguridad, Cifrado y Retención</h2>
+          <p>
+            Las comunicaciones tácticas entre la aeronave y la estación terrestre emplean enlaces seguros en banda 900 MHz FHSS (Frequency-Hopping Spread Spectrum) con cifrado táctico y canales web seguros (TLS 1.3). Las grabaciones de prueba y bitácoras de misión se retienen exclusivamente durante el periodo acordado contractualmente para auditoría técnica de vuelo, calibración de sensores e informes periciales.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2 class="legal-section-title">5. Política de Cookies y Almacenamiento Local</h2>
+          <p>
+            <strong>Strig Systems no utiliza cookies de rastreo publicitario, píxeles de retargeting ni herramientas de perfilamiento comercial de terceros.</strong>
+          </p>
+          <p>
+            Este sitio web únicamente utiliza tecnologías de almacenamiento estrictamente funcionales (como <code>localStorage</code> del navegador) para conservar la preferencia de idioma del usuario (español o inglés) durante su navegación. Al no realizarse seguimiento de hábitos de navegación ni cesión de datos a redes publicitarias, la experiencia del usuario no se ve interrumpida por banners invasivos de consentimiento, cumpliendo los más altos estándares de privacidad por diseño.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2 class="legal-section-title">6. Marco Legal Chileno y Ejercicio de Derechos</h2>
+          <p>
+            El tratamiento de datos personales se rige de conformidad con la <strong>Ley N° 19.628 sobre Protección de la Vida Privada</strong> y las disposiciones de la nueva <strong>Ley N° 21.719 sobre Protección de Datos Personales</strong> de la República de Chile, junto con estándares internacionales de ciberseguridad.
+          </p>
+          <p>
+            Los titulares de datos podrán solicitar en cualquier momento el acceso, rectificación, cancelación o bloqueo de sus datos de contacto comunicándose a nuestros canales oficiales:
+          </p>
+          <div class="legal-contact-list">
+            <div class="legal-contact-item">
+              <strong>Canal Institucional & Operaciones:</strong>
+              <a href="mailto:contacto@strigsystems.tech" class="legal-link-inline">contacto@strigsystems.tech</a>
+            </div>
+            <div class="legal-contact-item">
+              <strong>Liderazgo Técnico (Founder & Lead):</strong>
+              <a href="mailto:tmedina@strigsystems.tech" class="legal-link-inline">tmedina@strigsystems.tech</a>
+            </div>
+            <div class="legal-contact-item">
+              <strong>Sede Operativa:</strong>
+              <span>Concepción, Región del Biobío, Chile (Universidad de Concepción · Facultad de Ingeniería)</span>
+            </div>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container holding-footer-container">
+      <div class="holding-footer-top">
+        <div class="footer-brand-side">
+          <a href="index.html" class="brand" aria-label="Strig Systems Inicio">
+            <span class="brand-shield" aria-hidden="true">◈</span>
+            <span class="brand-name">STRIG<span class="accent-text">SYSTEMS</span></span>
+          </a>
+          <p class="footer-tagline">
+            Startup chilena de ingeniería aeroespacial y defensa deeptech. Desarrolladores del sistema centinela aéreo autónomo Athene™.
+          </p>
+        </div>
+
+        <div class="contact-footer-pills">
+          <div class="pill-item">
+            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path d="M2 17l10 5 10-5"></path>
+              <path d="M2 12l10 5 10-5"></path>
+            </svg>
+            <span>Strig Systems SpA</span>
+          </div>
+          <div class="pill-item">
+            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Concepción, Chile · Universidad de Concepción</span>
+          </div>
+          <a href="mailto:contacto@strigsystems.tech" class="pill-item pill-link">
+            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>contacto@strigsystems.tech</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="holding-footer-bottom">
+        <p class="footer-copyright">© 2026 Strig Systems SpA. Todos los derechos reservados.</p>
+        <div class="footer-legal-links">
+          <a href="terms.html" class="legal-link">Términos de Servicio B2B</a>
+          <span class="legal-sep" aria-hidden="true">·</span>
+          <a href="privacy.html" class="legal-link" style="color: var(--accent-cyan);">Política de Privacidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

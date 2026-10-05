@@ -13,6 +13,13 @@ El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/
   * **Pilares de Capacidad Operativa:** Rediseño de `.holding-pillar-card` incorporando micro-iconos SVG en línea (`.pillar-icon-wrap`), cabeceras estructuradas con tags tácticos (`[AERONÁUTICA // 01]`, etc.) y micro-leds de estado.
   * **Purga de Estilos Inline:** Eliminación de declaraciones CSS en línea en `.header-actions`, `.holding-ip-card` y `.site-footer`, migrando a clases semánticas dedicadas (`.ip-protocol-tag`, `.ip-footer-note`, `.holding-footer-container`, `.holding-footer-top`, `.holding-footer-bottom`).
   * **Normalización de Píldoras de Contacto:** Corrección de clases en el footer para utilizar las reglas predefinidas `.pill-item`, `.pill-icon` y `.pill-link`, garantizando alineación, espaciado y bordes vidriados correctos.
+* **Formateo y Arquitectura HUD en Páginas Legales (`terms.html` y `privacy.html`):** Rediseño e integración completa con el ecosistema visual de la plataforma:
+  * Inyección del encabezado canónico `.site-header` con marca, badge de producto y botón de navegación de retorno al centro de comando.
+  * Incorporación del fondo dinámico `.background-grid` y orbes de iluminación ambiental cian (`.glow-orb`).
+  * Barra de navegación y clasificación documental (`[DOC // B2B-TERMS]`, `[DOC // PRIVACY-GOV]`, `◈ VIGENTE`).
+  * Estructuración del contenido en tarjetas tácticas `.legal-card.glass-panel` con retículas milimétricas, títulos semánticos con glifo `◈`, y callouts operacionales para el modelo IaaS 0 CAPEX, honestidad TRL 3 y arquitectura Zero-Cloud.
+  * Pie de página `.site-footer` unificado con píldoras de contacto institucionales y enlaces legales recíprocos.
+  * Centralización de reglas CSS en [`styles.css`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/styles.css), erradicando bloques `<style>` locales obsoletos y referencias de versión antiguas.
 
 ## [1.3.5] — 2026-09-30
 ### Corregido
