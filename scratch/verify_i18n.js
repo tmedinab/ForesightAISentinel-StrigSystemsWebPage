@@ -33,8 +33,16 @@ const missingInEs = enKeys.filter(k => !esKeys.includes(k));
 console.log('Missing in EN:', missingInEn);
 console.log('Missing in ES:', missingInEs);
 
-const html = fs.readFileSync('index.html', 'utf8');
-const i18nMatches = [...html.matchAll(/data-i18n="([^"]+)"/g)].map(m => m[1]);
-console.log('Total data-i18n in HTML:', i18nMatches.length);
-const missingHtml = i18nMatches.filter(k => !esKeys.includes(k));
-console.log('HTML keys missing in translations:', [...new Set(missingHtml)]);
+const htmlFiles = ['index.html', 'venture.html', 'programa.html', 'nosotros.html', 'terms.html', 'privacy.html', '404.html'].filter(f => fs.existsSync(f));
+let allI18nMatches = [];
+htmlFiles.forEach(file => {
+  const content = fs.readFileSync(file, 'utf8');
+  const matches = [...content.matchAll(/data-i18n="([^"]+)"/g)].map(m => m[1]);
+  console.log(`Found ${matches.length} data-i18n in ${file}`);
+  allI18nMatches.push(...matches);
+});
+console.log('Total data-i18n in all HTML files:', allI18nMatches.length);
+const missingHtml = allI18nMatches.filter(k => !esKeys.includes(k));
+console.log('HTML keys missing in translations:');
+console.dir([...new Set(missingHtml)], { maxArrayLength: null });
+

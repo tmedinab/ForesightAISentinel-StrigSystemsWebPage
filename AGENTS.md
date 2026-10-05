@@ -237,6 +237,7 @@ Consultar la plantilla detallada y el ciclo de vida en [`docs/adr/0000-adr-proto
 * [`ADR-0002`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/docs/adr/0002-strict-bilingual-parity-system.md): Sistema de Paridad Bilingüe Estricta (Strict i18n Parity).
 * [`ADR-0003`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/docs/adr/0003-aerospace-zero-emoji-design-language.md): Lenguaje Visual DeepTech y Política Estricta de Cero Emojis.
 * [`ADR-0004`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/docs/adr/0004-navigation-dropdown-geometry-and-hover-bridge.md): Geometría de Navegación, Posicionamiento de Menús Desplegables y Puente de Hover.
+* [`ADR-0005`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/docs/adr/0005-multi-page-audience-focused-architecture.md): Arquitectura Multi-Página Segmentada por Audiencia y Embudo de Conversión.
 
 ---
 

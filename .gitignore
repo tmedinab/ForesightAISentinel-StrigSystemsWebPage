@@ -30,6 +30,7 @@ node_modules/
 scratch/*
 !scratch/preflight_check.js
 !scratch/verify_i18n.js
+!scratch/verify_emojis.js
 .first-reader/
 .first-reader*
 
