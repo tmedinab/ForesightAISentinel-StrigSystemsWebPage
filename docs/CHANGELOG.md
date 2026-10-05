@@ -4,6 +4,16 @@ Todas las modificaciones notables realizadas en la plataforma web de **Strig Sys
 
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y respeta las decisiones de arquitectura registradas en `docs/adr/`.
 
+## [2.0.1] — 2026-10-05
+### Corregido
+* **Alineación Visual y Arquitectura HUD en Portada Institucional (`index.html`):** Restauración de la jerarquía canónica y geometría de componentes aeroespaciales conforme a `AGENTS.md` y `styles.css`:
+  * **Kicker de Producto Hero:** Incorporación del componente `.hero-product-eyebrow` con diamantina táctica `◈`, wordmark `ATHENE™` y descriptor `SISTEMA CENTINELA AÉREO AUTÓNOMO`.
+  * **Gradiente Metálico en Titular:** Sustitución de color plano `hl-cyan` por `.gradient-text` aeroespacial brushed metal en la línea secundaria del hero headline.
+  * **Selector Dual de Idioma:** Reemplazo de botón plano ad-hoc por `.lang-btn` con estados activos `.lang-option.active` (`ES / EN`) y soporte reactivo en `script.js`.
+  * **Pilares de Capacidad Operativa:** Rediseño de `.holding-pillar-card` incorporando micro-iconos SVG en línea (`.pillar-icon-wrap`), cabeceras estructuradas con tags tácticos (`[AERONÁUTICA // 01]`, etc.) y micro-leds de estado.
+  * **Purga de Estilos Inline:** Eliminación de declaraciones CSS en línea en `.header-actions`, `.holding-ip-card` y `.site-footer`, migrando a clases semánticas dedicadas (`.ip-protocol-tag`, `.ip-footer-note`, `.holding-footer-container`, `.holding-footer-top`, `.holding-footer-bottom`).
+  * **Normalización de Píldoras de Contacto:** Corrección de clases en el footer para utilizar las reglas predefinidas `.pill-item`, `.pill-icon` y `.pill-link`, garantizando alineación, espaciado y bordes vidriados correctos.
+
 ## [1.3.5] — 2026-09-30
 ### Corregido
 * **Fijación Viewport del Botón Flotante (`#back-to-top`):** Corrección de especificidad CSS en [`styles.css`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/styles.css) donde la regla `.glass-panel:not(.nav-dropdown-menu)` sobreescribía `position: fixed` con `position: relative`, haciendo que el botón quedara retenido al final del flujo del DOM en lugar de flotar en la esquina inferior del viewport. Se aplicó `position: fixed !important`, `z-index: 950`, `pointer-events: none/auto` y exclusión en el selector de panel.

@@ -89,10 +89,12 @@
         </span>
       </a>
 
-      <div class="header-actions" style="display: flex; align-items: center; gap: 1rem;">
-        <!-- Language Switcher Button -->
-        <button type="button" id="lang-toggle" class="lang-toggle-btn" aria-label="Cambiar idioma entre Español e Inglés">
-          <span class="lang-code" data-i18n="lang_code">EN</span>
+      <div class="header-actions">
+        <!-- Dual Aerospace HUD Language Switcher -->
+        <button type="button" class="lang-btn" id="lang-toggle" aria-label="Cambiar idioma entre Español e Inglés">
+          <span class="lang-option active" data-lang-val="es">ES</span>
+          <span class="lang-divider" aria-hidden="true">/</span>
+          <span class="lang-option" data-lang-val="en">EN</span>
         </button>
 
         <button type="button" class="btn-primary btn-header" data-open-modal="contact-modal" data-intent="briefing" data-i18n="h_nav_cta">Solicitar Briefing</button>
@@ -103,50 +105,72 @@
   <main class="holding-main">
     <div class="container">
       <!-- HERO AREA -->
-      <div class="holding-hero-wrap">
-        <!-- Unified Institutional & Engineering Telemetry HUD Bar -->
-        <div class="hero-credential-bar glass-panel" role="region" aria-label="Credenciales y estado técnico del proyecto">
-          <div class="cred-segment">
-            <span class="status-pulse-dot" aria-hidden="true"></span>
-            <span class="cred-label" data-i18n="h_status">TRL 3 · Prototipo en desarrollo · Demo técnica ene 2027</span>
+      <section class="hero-section" style="padding: 2.2rem 0 3.2rem;">
+        <div class="hero-content" style="margin: 0 auto;">
+          <!-- Unified Institutional & Engineering Telemetry HUD Bar -->
+          <div class="hero-credential-bar glass-panel" role="region" aria-label="Credenciales y estado técnico del proyecto">
+            <div class="cred-segment">
+              <span class="status-pulse-dot" aria-hidden="true"></span>
+              <span class="cred-label" data-i18n="h_status">TRL 3 · Prototipo en desarrollo · Demo técnica ene 2027</span>
+            </div>
+            <span class="cred-separator" aria-hidden="true">│</span>
+            <div class="cred-segment">
+              <span class="cred-sub-mark" aria-hidden="true">◈</span>
+              <span class="cred-label" data-i18n="h_badge">Semilla Inicia CORFO • Lab Aeroespacial UdeC • Gearbox</span>
+            </div>
           </div>
-          <span class="cred-separator" aria-hidden="true">│</span>
-          <div class="cred-segment">
-            <span class="cred-sub-mark" aria-hidden="true">◈</span>
-            <span class="cred-label" data-i18n="h_badge">Semilla Inicia CORFO • Lab Aeroespacial UdeC • Gearbox</span>
+
+          <!-- Dedicated Athene Product Eyebrow -->
+          <div class="hero-product-eyebrow">
+            <span class="eyebrow-tactical-mark" aria-hidden="true">◈</span>
+            <span class="eyebrow-product-name">ATHENE<span class="eyebrow-tm">™</span></span>
+            <span class="eyebrow-sep" aria-hidden="true">│</span>
+            <span class="eyebrow-tagline" data-i18n="h_eyebrow_tag">SISTEMA CENTINELA AÉREO AUTÓNOMO</span>
+          </div>
+
+          <!-- Hero Headline with Metallic Aerospace Gradient -->
+          <h1 class="hero-title">
+            <span data-i18n="h_title_1">Los riesgos se mueven rápido.</span><br>
+            <span class="gradient-text" data-i18n="h_title_2">Nosotros los vemos venir.</span>
+          </h1>
+
+          <!-- Hero Subtitle -->
+          <p class="hero-subtitle" data-i18n="h_desc">
+            Plataforma centinela aérea autónoma con inferencia térmica Edge AI a bordo. Diseñada para cubrir la brecha nocturna de incendios forestales mediante la detección temprana de precursores y actividad humana no autorizada antes de la ignición.
+          </p>
+
+          <!-- Hero Actions -->
+          <div class="hero-actions">
+            <button type="button" class="btn-primary btn-large" data-open-modal="contact-modal" data-intent="pilot">
+              <span data-i18n="h_cta_pilot">Solicitar Acceso a Dossier & Validación Piloto</span>
+              <span class="arrow-icon" aria-hidden="true">→</span>
+            </button>
+            <button type="button" class="btn-ghost btn-large btn-hero-brief" data-open-modal="brief-modal">
+              <svg class="btn-svg-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <rect x="6" y="14" width="12" height="8"></rect>
+              </svg>
+              <span data-i18n="h_cta_brief">Executive Briefing (PDF)</span>
+            </button>
           </div>
         </div>
-
-        <h1 class="holding-title">
-          <span data-i18n="h_title_1">Los riesgos se mueven rápido.</span><br>
-          <span class="hl-cyan" data-i18n="h_title_2">Nosotros los vemos venir.</span>
-        </h1>
-
-        <p class="holding-desc" data-i18n="h_desc">
-          Plataforma centinela aérea autónoma con inferencia térmica Edge AI a bordo. Diseñada para cubrir la brecha nocturna de incendios forestales mediante la detección temprana de precursores y actividad humana no autorizada antes de la ignición.
-        </p>
-
-        <!-- CTA Buttons -->
-        <div class="holding-actions">
-          <button type="button" class="btn-primary btn-large" data-open-modal="contact-modal" data-intent="pilot">
-            <span data-i18n="h_cta_pilot">Solicitar Acceso a Dossier & Validación Piloto</span>
-            <span class="arrow-icon" aria-hidden="true">→</span>
-          </button>
-          <button type="button" class="btn-ghost btn-large" data-open-modal="brief-modal">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 0.5rem;">
-              <polyline points="6 9 6 2 18 2 18 9"></polyline>
-              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
-              <rect x="6" y="14" width="12" height="8"></rect>
-            </svg>
-            <span data-i18n="h_cta_brief">Executive Briefing (PDF)</span>
-          </button>
-        </div>
-      </div>
+      </section>
 
       <!-- 3 FUNCTIONAL CAPABILITY PILLARS -->
       <div class="holding-pillars-grid">
         <div class="holding-pillar-card glass-panel">
-          <div class="pillar-tag" data-i18n="h_p1_tag">[AERONÁUTICA // 01]</div>
+          <div class="pillar-card-header">
+            <span class="pillar-tag" data-i18n="h_p1_tag">[AERONÁUTICA // 01]</span>
+            <span class="pillar-status-dot" aria-hidden="true"></span>
+          </div>
+          <div class="pillar-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path d="M2 17l10 5 10-5"></path>
+              <path d="M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
           <h2 class="pillar-title" data-i18n="h_p1_title">Célula Aérea VTOL Autónoma</h2>
           <p class="pillar-desc" data-i18n="h_p1_desc">
             Aeronave de despegue vertical sin pista y crucero eficiente de ala fija. Diseñada para patrullaje nocturno continuo sobre quebradas y topografía forestal compleja.
@@ -154,7 +178,24 @@
         </div>
 
         <div class="holding-pillar-card glass-panel">
-          <div class="pillar-tag" data-i18n="h_p2_tag">[ZERO-CLOUD // 02]</div>
+          <div class="pillar-card-header">
+            <span class="pillar-tag" data-i18n="h_p2_tag">[ZERO-CLOUD // 02]</span>
+            <span class="pillar-status-dot" aria-hidden="true"></span>
+          </div>
+          <div class="pillar-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+              <rect x="9" y="9" width="6" height="6"></rect>
+              <path d="M9 1v3"></path>
+              <path d="M15 1v3"></path>
+              <path d="M9 20v3"></path>
+              <path d="M15 20v3"></path>
+              <path d="M20 9h3"></path>
+              <path d="M20 14h3"></path>
+              <path d="M1 9h3"></path>
+              <path d="M1 14h3"></path>
+            </svg>
+          </div>
           <h2 class="pillar-title" data-i18n="h_p2_title">Inferencia Edge AI a Bordo</h2>
           <p class="pillar-desc" data-i18n="h_p2_desc">
             Cómputo local de visión térmica radiométrica LWIR a bordo. Detección y clasificación de precursores en microsegundos sin requerir internet satelital ni 4G/5G.
@@ -162,7 +203,20 @@
         </div>
 
         <div class="holding-pillar-card glass-panel">
-          <div class="pillar-tag" data-i18n="h_p3_tag">[HITL // 03]</div>
+          <div class="pillar-card-header">
+            <span class="pillar-tag" data-i18n="h_p3_tag">[HITL // 03]</span>
+            <span class="pillar-status-dot" aria-hidden="true"></span>
+          </div>
+          <div class="pillar-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <circle cx="12" cy="11" r="3"></circle>
+              <path d="M12 8v-1"></path>
+              <path d="M12 15v-1"></path>
+              <path d="M8 11H7"></path>
+              <path d="M17 11h-1"></path>
+            </svg>
+          </div>
           <h2 class="pillar-title" data-i18n="h_p3_title">Doctrina Human-in-the-Loop</h2>
           <p class="pillar-desc" data-i18n="h_p3_desc">
             Alerta inmediata y georreferenciada a la estación de mando. Disuasión activa mediante foco de alta intensidad y sirena autorizada exclusivamente por el operador humano.
@@ -174,14 +228,14 @@
       <div class="holding-ip-card glass-panel">
         <div class="holding-ip-header">
           <span class="holding-ip-badge" data-i18n="h_ip_tag">◈ DIVULGACIÓN CONTROLADA & RESERVA TÉCNICA // LEY N° 19.039</span>
-          <span class="tax-badge" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-cyan); letter-spacing: 0.05em;" data-i18n="h_ip_protocol">[PROTOCOLO NDA DISPONIBLE]</span>
+          <span class="ip-protocol-tag" data-i18n="h_ip_protocol">[PROTOCOLO NDA DISPONIBLE]</span>
         </div>
         <h2 class="holding-ip-title" data-i18n="h_ip_title">Resguardo de Propiedad Intelectual & Especificaciones de Ingeniería</h2>
         <p class="holding-ip-body" data-i18n="h_ip_body">
           La arquitectura de sistemas, diseño aerodinámico, algoritmos de visión computacional y modelos analíticos de Athene™ son propiedad intelectual y tecnológica exclusiva de Strig Systems SpA. Por motivos de reserva estratégica y resguardo de propiedad industrial durante la fase de desarrollo y validación experimental (TRL 3), las especificaciones técnicas completas, planos de célula y dossier operativo se suministran de manera confidencial y bajo Acuerdo de Confidencialidad (NDA) a empresas forestales calificadas, agencias públicas y fondos de inversión acreditados.
         </p>
         <div class="holding-ip-footer">
-          <span style="font-size: 0.88rem; color: var(--text-muted);" data-i18n="h_ip_footer_note">Mesa técnica de evaluación y coordinación: Concepción, Chile.</span>
+          <span class="ip-footer-note" data-i18n="h_ip_footer_note">Mesa técnica de evaluación y coordinación: Concepción, Chile.</span>
           <button type="button" class="btn-ghost" data-open-modal="contact-modal" data-intent="alliances" data-i18n="h_ip_btn">Solicitar Acuerdo de Confidencialidad (NDA)</button>
         </div>
       </div>
@@ -210,56 +264,57 @@
 
   <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="container footer-layout">
-      <div class="footer-brand-side">
-        <a href="#" class="brand" aria-label="Strig Systems Inicio">
-          <span class="brand-shield" aria-hidden="true">◈</span>
-          <span class="brand-name">STRIG<span class="accent-text">SYSTEMS</span></span>
-        </a>
-        <p class="footer-tagline" data-i18n="f_tagline">
-          Startup chilena de ingeniería aeroespacial y defensa deeptech. Desarrolladores del sistema centinela aéreo autónomo Athene™.
-        </p>
-      </div>
+    <div class="container holding-footer-container">
+      <div class="holding-footer-top">
+        <div class="footer-brand-side">
+          <a href="#" class="brand" aria-label="Strig Systems Inicio">
+            <span class="brand-shield" aria-hidden="true">◈</span>
+            <span class="brand-name">STRIG<span class="accent-text">SYSTEMS</span></span>
+          </a>
+          <p class="footer-tagline" data-i18n="f_tagline">
+            Startup chilena de ingeniería aeroespacial y defensa deeptech. Desarrolladores del sistema centinela aéreo autónomo Athene™.
+          </p>
+        </div>
 
-      <div class="footer-links-side">
         <div class="contact-footer-pills">
-          <div class="contact-footer-pill">
-            <svg class="contact-pill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <div class="pill-item">
+            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
               <path d="M2 17l10 5 10-5"></path>
               <path d="M2 12l10 5 10-5"></path>
             </svg>
             <span>Strig Systems SpA</span>
           </div>
-          <div class="contact-footer-pill">
-            <svg class="contact-pill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <div class="pill-item">
+            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
               <circle cx="12" cy="10" r="3"></circle>
             </svg>
             <span data-i18n="f_location">Concepción, Chile · Universidad de Concepción</span>
           </div>
-          <a href="mailto:contacto@strigsystems.tech" class="contact-footer-pill">
-            <svg class="contact-pill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <a href="mailto:contacto@strigsystems.tech" class="pill-item pill-link">
+            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
               <polyline points="22,6 12,13 2,6"></polyline>
             </svg>
             <span>contacto@strigsystems.tech</span>
           </a>
-          <a href="mailto:tmedina@strigsystems.tech" class="contact-footer-pill">
-            <svg class="contact-pill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <a href="mailto:tmedina@strigsystems.tech" class="pill-item pill-link">
+            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
               <circle cx="12" cy="7" r="4"></circle>
             </svg>
             <span>tmedina@strigsystems.tech</span>
           </a>
         </div>
+      </div>
 
-        <div class="footer-legal-bar" style="margin-top: 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
-          <p class="copyright-text" data-i18n="f_copyright">© 2026 Strig Systems SpA. Todos los derechos reservados.</p>
-          <div class="footer-legal-links" style="display: flex; gap: 1.25rem;">
-            <a href="terms.html" class="legal-link" data-i18n="f_terms">Términos de Servicio B2B</a>
-            <a href="privacy.html" class="legal-link" data-i18n="f_privacy_link">Política de Privacidad</a>
-          </div>
+      <div class="holding-footer-bottom">
+        <p class="footer-copyright" data-i18n="f_copyright">© 2026 Strig Systems SpA. Todos los derechos reservados.</p>
+        <div class="footer-legal-links">
+          <a href="terms.html" class="legal-link" data-i18n="f_terms">Términos de Servicio B2B</a>
+          <span class="legal-sep" aria-hidden="true">·</span>
+          <a href="privacy.html" class="legal-link" data-i18n="f_privacy_link">Política de Privacidad</a>
         </div>
       </div>
     </div>

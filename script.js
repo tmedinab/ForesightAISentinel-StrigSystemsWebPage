@@ -14,6 +14,7 @@ const translations = {
     // Hero Section
     h_status: "TRL 3 · Prototipo en desarrollo · Demo técnica ene 2027",
     h_badge: "Semilla Inicia CORFO • Lab Aeroespacial UdeC • Gearbox",
+    h_eyebrow_tag: "SISTEMA CENTINELA AÉREO AUTÓNOMO",
     h_title_1: "Los riesgos se mueven rápido.",
     h_title_2: "Nosotros los vemos venir.",
     h_desc: "Plataforma centinela aérea autónoma con inferencia térmica Edge AI a bordo. Diseñada para cubrir la brecha nocturna de incendios forestales mediante la detección temprana de precursores y actividad humana no autorizada antes de la ignición.",
@@ -149,6 +150,7 @@ const translations = {
     // Hero Section
     h_status: "TRL 3 · Prototype under development · Technical demo Jan 2027",
     h_badge: "CORFO Semilla Inicia Grant • UdeC Aerospace Lab • Gearbox",
+    h_eyebrow_tag: "AUTONOMOUS AERIAL SENTINEL SYSTEM",
     h_title_1: "Wildfires move fast.",
     h_title_2: "We see them coming.",
     h_desc: "Autonomous aerial sentinel platform with onboard Edge AI thermal inference. Designed to close the nocturnal gap by detecting precursors and unauthorized human activity before ignition.",
@@ -317,6 +319,15 @@ function setLanguage(lang) {
       codeSpan.textContent = (currentLang === 'es') ? 'EN' : 'ES';
     }
   }
+
+  // Update dual-option lang button active highlight
+  document.querySelectorAll('.lang-btn .lang-option').forEach(opt => {
+    if (opt.getAttribute('data-lang-val') === currentLang) {
+      opt.classList.add('active');
+    } else {
+      opt.classList.remove('active');
+    }
+  });
 
   window.dispatchEvent(new CustomEvent('strig-lang-change', { detail: { lang: currentLang } }));
 }
