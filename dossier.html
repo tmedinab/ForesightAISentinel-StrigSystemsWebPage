@@ -154,6 +154,32 @@
     .dossier-wrap.unlocked {
       filter: none;
     }
+
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #0f172a !important;
+      }
+      .background-grid, .glow-orb, .site-header, .gate-overlay, .site-footer {
+        display: none !important;
+      }
+      .dossier-wrap {
+        filter: none !important;
+      }
+      .glass-panel {
+        background: #ffffff !important;
+        border: 1px solid #cbd5e1 !important;
+        box-shadow: none !important;
+        color: #0f172a !important;
+        break-inside: avoid;
+      }
+      h1, h2, h3 {
+        color: #0f172a !important;
+      }
+      p, td, th, span, div {
+        color: #334155 !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -204,6 +230,14 @@
 
         <div class="header-actions" style="display: flex; align-items: center; gap: 1rem;">
           <span class="tax-badge" style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-emerald);">[SESIÓN AUTORIZADA]</span>
+          <button type="button" class="btn-ghost" onclick="window.print()" style="padding: 0.5rem 1rem; font-size: 0.85rem;" aria-label="Guardar dossier como PDF">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.4rem; vertical-align: -2px;" aria-hidden="true">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Guardar PDF</span>
+          </button>
           <button type="button" class="btn-ghost" onclick="lockDossier()" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Bloquear</button>
         </div>
       </div>
