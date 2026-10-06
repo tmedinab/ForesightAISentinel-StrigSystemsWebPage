@@ -7,6 +7,7 @@ El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/
 ## [2.0.3] — 2026-10-05
 ### Añadido
 * **Plan Estratégico de Identidad Visual, Arquitectura de Marca y Assets Técnicos (`docs/PLAN_ESTRATEGICO_MARCA_Y_ASSETS_VISUALES.md`):** Documento exhaustivo de dirección de arte deeptech para Strig Systems y Athene™, detallando la filosofía visual anti-SaaS, la metáfora biológica de las rapaces nocturnas (Strigiformes), la evolución del isotipo angular, las especificaciones de 4 familias de assets (Blueprint 3-vistas de Noctua™, feed sintético LWIR Edge AI, CONOPS isométrico y enmarcado HUD de sensores) y la hoja de ruta de implementación del Frente 1.
+* **Interoperabilidad Multi-Agente de Skills (`.agents/skills/`):** Exportación de 12 skills fundamentales de ingeniería, diseño y arquitectura (`frontend-ui-engineering`, `documentation-and-adrs`, `idea-refine`, `brainstorming`, `code-review-and-quality`, `planning-and-task-breakdown`, `writing-plans`, `systematic-debugging`, `security-and-hardening`, `git-workflow-and-versioning`, `using-agent-skills`, `verification-before-completion`) directamente al repositorio local en `.agents/skills/`, garantizando que cualquier otro agente (Claude Code, Cursor, Windsurf, Aider, OpenHands) pueda descubrirlas y ejecutarlas nativamente sin depender de la configuración global de Antigravity.
 
 ### Modificado
 * **Ajuste de Nomenclatura Táctica en Invitación Técnica (`index.html` y `script.js`):**
