@@ -23,7 +23,7 @@ const translations = {
 
     // 3 Capability Pillars
     h_p1_tag: "[AERONÁUTICA // 01]",
-    h_p1_title: "Célula Aérea VTOL Autónoma",
+    h_p1_title: "Plataforma Aérea VTOL Autónoma",
     h_p1_desc: "Aeronave de despegue vertical sin pista y crucero eficiente de ala fija. Diseñada para patrullaje nocturno continuo sobre quebradas y topografía forestal compleja.",
 
     h_p2_tag: "[ZERO-CLOUD // 02]",
@@ -32,15 +32,15 @@ const translations = {
 
     h_p3_tag: "[HITL // 03]",
     h_p3_title: "Doctrina Human-in-the-Loop",
-    h_p3_desc: "Alerta inmediata y georreferenciada a la estación de mando. Disuasión activa mediante foco de alta intensidad y sirena autorizada exclusivamente por el operador humano.",
+    h_p3_desc: "Alerta inmediata y georreferenciada a la estación de mando. Disuasión activa mediante iluminación táctica de alta intensidad autorizada exclusivamente por el operador humano.",
 
-    // Controlled Disclosure & IP Box
-    h_ip_tag: "◈ DIVULGACIÓN CONTROLADA & RESERVA TÉCNICA // LEY N° 19.039",
-    h_ip_protocol: "[PROTOCOLO NDA DISPONIBLE]",
-    h_ip_title: "Resguardo de Propiedad Intelectual & Especificaciones de Ingeniería",
-    h_ip_body: "La arquitectura de sistemas, diseño aerodinámico, algoritmos de visión computacional y modelos analíticos de Athene™ son propiedad intelectual y tecnológica exclusiva de Strig Systems SpA. Por motivos de reserva estratégica y resguardo de propiedad industrial durante la fase de desarrollo y validación experimental (TRL 3), las especificaciones técnicas completas, planos de célula y dossier operativo se suministran de manera confidencial y bajo Acuerdo de Confidencialidad (NDA) a empresas forestales calificadas, agencias públicas y fondos de inversión acreditados.",
-    h_ip_footer_note: "Mesa técnica de evaluación y coordinación: Concepción, Chile.",
-    h_ip_btn: "Solicitar Acuerdo de Confidencialidad (NDA)",
+    // Technical Specifications & Pilot Card
+    h_ip_tag: "◈ ESPECIFICACIONES TÉCNICAS & PREDIO PILOTO",
+    h_ip_protocol: "[VALIDACIÓN 2026-27]",
+    h_ip_title: "¿Interesado en conocer la arquitectura técnica o evaluar un despliegue en tus predios?",
+    h_ip_body: "Compartimos especificaciones técnicas de vuelo, análisis de cobertura territorial y el plan de validación operacional de Athene™ con equipos de protección forestal, entidades de emergencia y colaboradores estratégicos. Contáctanos para coordinar un briefing técnico directo o evaluar la incorporación de tus predios al programa piloto 2026-27.",
+    h_ip_footer_note: "Equipo Strig Systems · Concepción, Chile.",
+    h_ip_btn: "Conversar con el Equipo Técnico",
 
     // Backing strip
     h_b1: "5 Ingenieros Civiles Aeroespaciales UdeC",
@@ -105,7 +105,7 @@ const translations = {
     badge_pilot: "Validación territorial 2026-27",
     title_pilot: "Sumarse al programa de validación 2026-27",
     sub_pilot: "Completa los datos de tu entidad para evaluar conjuntamente la factibilidad territorial y requerimientos de validación en terreno.",
-    badge_briefing: "Mesa Técnica · 15 Minutos",
+    badge_briefing: "Equipo Strig Systems · 15 Minutos",
     title_briefing: "Agendar Briefing Técnico Operacional",
     sub_briefing: "Coordinación directa de 15 minutos por Google Meet con el equipo de ingeniería para revisar alcance, arquitectura y capacidades.",
     badge_alliances: "Reserva Técnica & NDA",
@@ -128,9 +128,9 @@ const translations = {
     eb_b1_p2: "99,7% de origen humano: La casi totalidad de los incendios derivan de acción humana intencional o negligente (Fuente: CONAF).",
     eb_b1_p3: "Puntos ciegos terrestres: Patrullas en 4x4 cubren < 12% del predio, ciegas ante quebradas y rodales interiores donde se inician fogatas y focos intencionales.",
     eb_b2_title: "2. Solución Tecnológica",
-    eb_b2_p1: "Aeronave VTOL Noctua™: Validación inicial sobre plataforma adaptada; autonomía de diseño 45–60 min y despegue vertical sin pista hacia la célula VTOL dedicada.",
+    eb_b2_p1: "Aeronave VTOL Noctua™: Validación inicial sobre plataforma adaptada; autonomía de diseño 45–60 min y despegue vertical sin pista hacia la plataforma VTOL dedicada.",
     eb_b2_p2: "Edge AI Zero-Cloud a Bordo: Cómputo local NVIDIA Jetson; detección térmica en segundos sin conexión a internet ni señal celular.",
-    eb_b2_p3: "Disuasión con Autorización Humana: Activación de foco de alta intensidad y sirena acústica siempre autorizada por el operador en tierra (Human-in-the-Loop).",
+    eb_b2_p3: "Disuasión con Autorización Humana: Activación de iluminación táctica de alta potencia siempre autorizada por el operador en tierra (Human-in-the-Loop).",
     eb_b3_title: "3. Modelo de Impacto Operacional IaaS",
     eb_b3_p1: "Seguridad del Personal: Cero exposición humana innecesaria en quebradas y caminos aislados en horario nocturno crítico.",
     eb_b3_p2: "Detección Temprana & Disuasión: Detección de actividad humana a 100 m de altura y disuasión autorizada por el operador antes de la ignición.",
@@ -159,7 +159,7 @@ const translations = {
 
     // 3 Capability Pillars
     h_p1_tag: "[AEROSPACE // 01]",
-    h_p1_title: "Autonomous VTOL Airframe",
+    h_p1_title: "Autonomous VTOL Aerial Platform",
     h_p1_desc: "Runway-free vertical takeoff and high-efficiency fixed-wing cruising. Engineered for continuous nocturnal patrol over ravines and rugged forestry terrain.",
 
     h_p2_tag: "[ZERO-CLOUD // 02]",
@@ -168,15 +168,15 @@ const translations = {
 
     h_p3_tag: "[HITL // 03]",
     h_p3_title: "Human-in-the-Loop Doctrine",
-    h_p3_desc: "Instant geo-referenced telemetry dispatched to ground command. Active deterrents (strobe light and acoustic siren) strictly authorized by a human operator.",
+    h_p3_desc: "Instant geo-referenced telemetry dispatched to ground command. Active deterrence via high-intensity tactical illumination strictly authorized by a human operator.",
 
-    // Controlled Disclosure & IP Box
-    h_ip_tag: "◈ CONTROLLED DISCLOSURE & TECHNICAL RESERVE // LAW NO. 19,039",
-    h_ip_protocol: "[NDA PROTOCOL AVAILABLE]",
-    h_ip_title: "Intellectual Property Safeguard & Engineering Specifications",
-    h_ip_body: "System architecture, aerodynamic airframe design, computer vision algorithms, and mission logic of Athene™ are the exclusive intellectual property of Strig Systems SpA. To safeguard strategic engineering assets during the experimental laboratory phase (TRL 3), comprehensive technical specifications and operational dossiers are shared strictly under Non-Disclosure Agreement (NDA) with qualified forestry operators, defense agencies, and accredited venture capital funds.",
-    h_ip_footer_note: "Technical evaluation & operations desk: Concepción, Chile.",
-    h_ip_btn: "Request Non-Disclosure Agreement (NDA)",
+    // Technical Specifications & Pilot Card
+    h_ip_tag: "◈ TECHNICAL SPECIFICATIONS & PILOT SITES",
+    h_ip_protocol: "[2026-27 VALIDATION]",
+    h_ip_title: "Interested in technical architecture details or evaluating deployment on your land?",
+    h_ip_body: "We share detailed flight specifications, territorial coverage models, and operational validation plans with forestry protection teams, emergency agencies, and strategic partners. Contact us to schedule a direct technical briefing or evaluate incorporating your properties into the 2026-27 pilot program.",
+    h_ip_footer_note: "Strig Systems Team · Concepción, Chile.",
+    h_ip_btn: "Connect with Engineering Team",
 
     // Backing strip
     h_b1: "5 UdeC Aerospace Engineers",
@@ -241,7 +241,7 @@ const translations = {
     badge_pilot: "Territorial Validation 2026-27",
     title_pilot: "Join the 2026-27 Validation Program",
     sub_pilot: "Submit your organization's details to evaluate joint territorial feasibility and field validation requirements.",
-    badge_briefing: "Technical Desk · 15 Minutes",
+    badge_briefing: "Strig Systems Team · 15 Minutes",
     title_briefing: "Schedule Operational Technical Briefing",
     sub_briefing: "Direct 15-minute Google Meet call with the engineering team to review system scope, architecture, and capabilities.",
     badge_alliances: "Technical Reserve & NDA",
@@ -264,9 +264,9 @@ const translations = {
     eb_b1_p2: "99.7% human origin: Almost all forest fires stem from intentional or negligent human activity (Source: CONAF historical records).",
     eb_b1_p3: "Ground blind spots: Ground 4x4 patrols cover < 12% of forestry acreage, completely blind to ravines and deep interior stands where fires are initiated.",
     eb_b2_title: "2. Technological Solution",
-    eb_b2_p1: "Noctua™ VTOL Aircraft: Initial validation on adapted testbed; 45–60 min design endurance and runway-free vertical takeoff transitioning into dedicated VTOL cell.",
+    eb_b2_p1: "Noctua™ VTOL Aircraft: Initial validation on adapted testbed; 45–60 min design endurance and runway-free vertical takeoff transitioning into dedicated VTOL platform.",
     eb_b2_p2: "Onboard Zero-Cloud Edge AI: NVIDIA Jetson edge compute; instant thermal threat classification without cellular or internet dependency.",
-    eb_b2_p3: "Authorized Deterrence: High-intensity strobe illumination and acoustic siren strictly activated upon human operator ground authorization (Human-in-the-Loop).",
+    eb_b2_p3: "Authorized Deterrence: High-intensity tactical illumination strictly activated upon human operator ground authorization (Human-in-the-Loop).",
     eb_b3_title: "3. Operational Impact & IaaS Model",
     eb_b3_p1: "Personnel Safety: Zero unnecessary ground firefighter exposure in isolated ravines during critical night hours.",
     eb_b3_p2: "Early Detection & Deterrence: Detection of human activity at 100 m AGL and operator-authorized deterrence prior to ignition.",
@@ -387,7 +387,7 @@ function initContactModal() {
     alliancesFields.forEach(f => f.style.display = (intent === 'alliances') ? 'block' : 'none');
 
     if (intent === 'briefing') {
-      if (badgeText) badgeText.textContent = dict.badge_briefing || "Mesa Técnica · 15 Minutos";
+      if (badgeText) badgeText.textContent = dict.badge_briefing || "Equipo Strig Systems · 15 Minutos";
       if (modalTitle) modalTitle.textContent = dict.title_briefing || "Agendar Briefing Técnico";
       if (modalSub) modalSub.textContent = dict.sub_briefing || "Coordinación directa de 15 minutos por Google Meet.";
       if (btnText) btnText.textContent = dict.f_briefing_submit || "Solicitar Briefing Técnico";

@@ -68,13 +68,13 @@ Antes de modificar o proponer cualquier línea de código, el agente debe memori
 ### 2.1. Nomenclatura Oficial del Ecosistema (Taxonomía Blindada)
 1. **Compañía Matriz:** `Strig Systems` (`Strig Systems SpA`) — Startup deeptech chilena de ingeniería aeroespacial y defensa, fundada por ingenieros civiles aeroespaciales de la Universidad de Concepción (UdeC).
 2. **Sistema y Plataforma Principal:** `Athene™` (Sistema Centinela Aéreo Autónomo) — Plataforma centinela integral de inteligencia aérea, alerta temprana y comando C2. Abarca la suite de software de misión, los modelos de inferencia térmica Edge AI a bordo (NVIDIA Jetson / Zero-Cloud), la consola táctica de supervisión humana continua (HITL) y los protocolos de enlace táctico.
-3. **Aeronave UAV VTOL:** `Noctua™` — Aeronave autónoma de despegue y aterrizaje vertical (VTOL) y ala fija de largo alcance desarrollada por Strig Systems. Integra célula aerodinámica de alta eficiencia, bahía de aviónica interna con unidad Edge AI integrada y torreta optrónica biespectral (LWIR radiométrico <50 mK + visible 4K).
+3. **Aeronave UAV VTOL:** `Noctua™` — Aeronave autónoma de despegue y aterrizaje vertical (VTOL) y ala fija de largo alcance desarrollada por Strig Systems. Integra aerodinámica de alta eficiencia, bahía de aviónica interna con unidad Edge AI integrada y torreta optrónica biespectral (LWIR radiométrico <50 mK + visible 4K).
    * *Estado actual (TRL 3-4):* Validación experimental del sistema Athene sobre plataforma aérea comercial adaptada (mula de pruebas) en predio piloto acotado bajo régimen VLOS.
-   * *Horizonte industrial (Hito 5 / BVLOS):* Integración de la aeronave propia **Noctua™ VTOL**, diseñada desde cero para resistencia a vientos severos (Puelche 10–12 m/s), 90+ min de autonomía y operación con estación robotizada Nest.
+   * *Horizonte industrial (Hito 5 / BVLOS):* Integración de la plataforma aérea propia **Noctua™ VTOL**, diseñada desde cero para resistencia a vientos severos (Puelche 10–12 m/s), 90+ min de autonomía y operación con estación robotizada Nest.
 4. **Estación de Despliegue en Tierra:** `Nest™` — Estación base terrestre robotizada proyectada para recarga rápida o sustitución automática de baterías, resguardo meteorológico de la aeronave Noctua™ y operación desatendida 1:N.
 
 ### 2.2. Parámetros Técnicos Clave de la Plataforma
-* **Autonomía:** 90+ minutos de patrullaje continuo continuo por ciclo de batería.
+* **Autonomía:** 90+ minutos de patrullaje continuo por ciclo de batería.
 * **Radio Táctico de Cobertura:** 25+ km de enlace seguro en banda 900 MHz FHSS (Frequency-Hopping Spread Spectrum).
 * **Computación de Bordo:** Unidad Edge AI de bajo consumo (NVIDIA Jetson) ejecutando inferencia en tiempo real en la aeronave, sin dependencia de conectividad satelital ni 4G/5G para detectar amenazas térmicas.
 * **Cámara Térmica:** Sensor LWIR (Long-Wave Infrared) con sensibilidad térmica <50 mK para detección de conatos subsuperficiales e incendios nacientes invisibles al ojo humano.
@@ -85,11 +85,11 @@ Antes de modificar o proponer cualquier línea de código, el agente debe memori
   * *Regla:* NUNCA emplear coordenadas geográficas crudas (e.g. `36°49'S 73°03'W`) en la interfaz; referir siempre formalmente a la ciudad y a la Universidad de Concepción.
 * **Canales de Correo y Enrutamiento Oficial:**
   * **Lead & Fundador Principal:** `tmedina@strigsystems.tech` (Tomás Medina — Lead Técnico y Fundador).
-  * **Mesa Técnica y Contacto General:** `contacto@strigsystems.tech` (Canal institucional y de operaciones, recibido y gestionado por Carlos Gutiérrez).
-  * *Regla de Presentación Pública:* En la interfaz pública (píldoras de contacto, footer, dropdowns), mostrar los correos de forma directa y limpia (`contacto@strigsystems.tech` y `tmedina@strigsystems.tech`) sin añadir paréntesis personales ni aclaraciones redundantes como `(Mesa técnica · Carlos)`. La distinción entre canal general y personal se sobreentiende por la dirección.
+  * **Canal General y Operaciones:** `contacto@strigsystems.tech` (Canal institucional y de operaciones, recibido y gestionado por Carlos Gutiérrez).
+  * *Regla de Presentación Pública:* En la interfaz pública (píldoras de contacto, footer, dropdowns), mostrar los correos de forma directa y limpia (`contacto@strigsystems.tech` y `tmedina@strigsystems.tech`) sin añadir paréntesis personales ni aclaraciones redundantes como `(Equipo Strig Systems · Carlos)`. La distinción entre canal general y personal se sobreentiende por la dirección.
 * **Equipo Fundador (5 Ingenieros Civiles Aeroespaciales UdeC):**
   1. **Tomás Medina:** Founder & Lead.
-  2. **Carlos Gutiérrez:** Co-founder & Operaciones / Mesa Técnica.
+  2. **Carlos Gutiérrez:** Co-founder & Operaciones.
   3. **Ananda Glaria:** Co-founder.
   4. **Richard Solís:** Co-founder.
   5. **Pablo Alarcón:** Co-founder.
@@ -98,17 +98,27 @@ Antes de modificar o proponer cualquier línea de código, el agente debe memori
   * El nombre de producto **Athene** en subtítulos y bloques destacados debe utilizar el gradiente metálico institucional:
     `background: linear-gradient(135deg, #ffffff 40%, var(--accent-cyan) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;` (`.hl-product`), prohibiendo el uso de celeste plano invariable (`hl-cyan` sólido).
 
-### 2.4. Glosario Táctico Obligatorio y Prohibición de Jerga de Marketing (Tactical Nomenclature)
-El lenguaje técnico de Strig Systems refleja la precisión de ingeniería aeroespacial y el combate de incendios real en terreno. Queda terminantemente prohibido el uso de afirmaciones vagas o vocabulario publicitario genérico ("marketing fluff"):
+### 2.4. Glosario Táctico Obligatorio y Localización Chilena / Latinoamericana (Tactical Nomenclature)
+El lenguaje técnico de Strig Systems refleja la precisión de ingeniería aeroespacial y el combate de incendios real en terreno chileno. Queda terminantemente prohibido el uso de afirmaciones vagas o vocabulario publicitario genérico ("marketing fluff"), así como calcos peninsulares o traducciones literales descontextualizadas:
 
-| Concepto Operativo | Término Prohibido (Vago / Inflado) | Término Técnico Obligatorio |
+| Concepto Operativo | Término Prohibido (Vago / Ajeno / Fluff) | Término Técnico Obligatorio (Chile / LATAM) |
 |---|---|---|
-| Detección térmica | "Detecta pequeños fuegos" / "cámara de calor" | **Detección de conatos incipientes y anomalías calóricas subsuperficiales vía sensor LWIR radiométrico (640×512)** |
-| Plataforma de vuelo | "Dron inteligente" / "dron que patrulla solo" | **Sistema centinela aéreo autónomo UAV VTOL / ala fija** |
+| Detección térmica | "Detecta pequeños fuegos" / "cámara de calor" | **Detección de conatos incipientes y anomalías calóricas subsuperficiales vía sensor LWIR radiométrico** |
+| Plataforma de vuelo | "Célula" / "célula aérea" / "dron inteligente" | **Aeronave VTOL autónoma / Plataforma aérea VTOL / Dron autónomo de patrullaje** *(Jamás usar "célula" para referirse a la aeronave)* |
+| Disuasión física | "Sirena" / "sirena acústica" / "luz estroboscópica" | **Iluminación táctica de alta potencia / Proyector de luz disuasivo** *(Sin sirenas policiales ni términos como "estroboscópico")* |
 | Computación local | "IA en la nube rápida" / "algoritmos mágicos" | **Inferencia local Edge AI a bordo (NVIDIA Jetson) con arquitectura Zero-Cloud** |
 | Enlace de datos | "Radio satelital potente" / "Starlink" | **Telemetría táctica y C2 en banda UHF / FHSS 900 MHz anti-interferencia** |
-| Doctrina de disuasión | "Ataque autónomo" / "disuasión automática" | **Disuasión física disuasiva con doctrina HITL (Human-in-the-Loop: activación exclusivamente autorizada por el operador humano)** |
-| Cobertura y seguridad | "100% de cobertura" / "Cero riesgo absoluto" | **Vigilancia complementaria para reducción drástica de la brecha ciega nocturna y mitigación de exposición humana en terreno** |
+| Doctrina operativa | "Ataque autónomo" / "disuasión automática" | **Disuasión física disuasiva con doctrina HITL (Human-in-the-Loop: activación autorizada por el operador humano)** |
+| Cobertura de terreno | "100% de cobertura" / "Cero riesgo absoluto" | **Vigilancia complementaria para reducción de la brecha ciega nocturna y mitigación de exposición humana en quebradas** |
+| Confidencialidad en web | Citas intimidantes a "Ley 19.039" / "Divulgación controlada" | **Invitación técnica sobria y directa a reunión u onboarding de predio piloto (NDA disponible a solicitud)** |
+
+### 2.5. Doctrina Narrativa DeepTech de Élite y Adquisición B2B Anti-Fluff
+1. **Tono de Pares de Ingeniería:** La comunicación no busca "vender humo" ni impresionar con adjetivos vacíos. Se habla de igual a igual con gerentes de operaciones forestales, brigadistas experimentados y evaluadores técnicos.
+2. **Reserva Técnica con Elegancia y Naturalidad:** En la interfaz pública no se proyecta paranoia legal ni se colocan advertencias punitivas sobre leyes de propiedad industrial. La confidencialidad y el resguardo de propiedad intelectual se manejan como una práctica estándar de la industria aeroespacial: una invitación cordial a revisar especificaciones detalladas en una reunión técnica directa o bajo NDA si corresponde.
+3. **Cero "Fluff" en Formularios y Calificaciones:** Se prohíbe implementar quizzes o pseudo-calculadoras de descarte ("¿Tiene 4G tu predio?", "¿Cuántas hectáreas tienes?"). La tecnología Athene está diseñada justamente para operar donde no hay conectividad y en topografía compleja. Los puntos de contacto deben ser formularios ejecutivos, limpios y respetuosos del tiempo del usuario, con respuesta personalizada por parte de los fundadores.
+4. **Estrategia de Doble Rama (`main` vs `dev`):**
+   * **Rama `main` (Portal de Recepción & Holding Institucional):** Tarjeta de presentación sobria y blindada. Comunica la misión, los 3 pilares tecnológicos, credenciales institucionales (CORFO, UdeC) y un canal directo de contacto para el Programa de Validación Piloto 2026-27.
+   * **Rama `dev` (Plataforma Completa & Centro de Misión):** Alberga la experiencia interactiva extendida (telemetría en vivo, matriz comparativa densa, simulador de vuelo y dossier privado), desplegándose progresivamente hacia `main` a medida que se alcancen y validen los hitos experimentales de vuelo.
 
 ---
 

@@ -4,6 +4,20 @@ Todas las modificaciones notables realizadas en la plataforma web de **Strig Sys
 
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y respeta las decisiones de arquitectura registradas en `docs/adr/`.
 
+## [2.0.2] — 2026-10-05
+### Modificado
+* **Doctrina Narrativa DeepTech y Localización Técnica Chilena/Latinoamericana (`AGENTS.md`):**
+  * Actualización formal del Glosario Táctico Obligatorio en la Sección 2.4 y adición de la Sección 2.5 ("Doctrina Narrativa DeepTech de Élite y Adquisición B2B Anti-Fluff").
+  * Erradicación de calcos peninsulares y anglicismos forzados: prohibición expresa del término "célula" para referirse a la aeronave (sustituido por "aeronave VTOL", "plataforma aérea"), erradicación de "estroboscópico" y "sirena" (sustituidos por "iluminación táctica de alta potencia / foco disuasivo").
+  * Eliminación de paranoia legalista pública: sustitución de menciones intimidantes a la Ley N° 19.039 y fórmulas de reserva punitivas por una invitación sobria y directa a reuniones técnicas de ingeniería y evaluación de predios piloto 2026-27.
+  * Regla anti-fluff en captación B2B: prohibición de quizzes y pseudo-calculadoras de descarte en formularios de contacto; la tecnología Athene está diseñada para operar sin internet celular y en relieve complejo, priorizando la conversación directa de ingeniería.
+* **Refinamiento de Portada y Textos Técnicos (`index.html` y `script.js`):**
+  * Pilar 01 renombrado a **"Plataforma Aérea VTOL Autónoma"** (`h_p1_title`).
+  * Pilar 03 y Executive Brief actualizados a **"iluminación táctica de alta intensidad"** en lugar de focos con sirena acústica.
+  * Bloque de reserva técnica transformado en tarjeta de invitación de alto estatus: **"◈ ESPECIFICACIONES TÉCNICAS & PREDIO PILOTO // ¿Interesado en conocer la arquitectura técnica o evaluar un despliegue en tus predios?"** con CTA a conversación técnica directa.
+  * **Normalización de Identidad Institucional:** Erradicación del término "mesa técnica" en la interfaz pública, modales y documentación técnica, sustituyéndolo formalmente por **"Equipo Strig Systems"** para un trato más cercano, sobrio y directo.
+  * Sincronización estricta de traducciones en `translations.es` y `translations.en` con pase 100% verde del pipeline automatizado `scratch/preflight_check.js`.
+
 ## [2.0.1] — 2026-10-05
 ### Corregido
 * **Alineación Visual y Arquitectura HUD en Portada Institucional (`index.html`):** Restauración de la jerarquía canónica y geometría de componentes aeroespaciales conforme a `AGENTS.md` y `styles.css`:
