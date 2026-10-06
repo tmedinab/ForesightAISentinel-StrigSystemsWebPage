@@ -4,6 +4,13 @@ Todas las modificaciones notables realizadas en la plataforma web de **Strig Sys
 
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y respeta las decisiones de arquitectura registradas en `docs/adr/`.
 
+## [2.0.3] — 2026-10-05
+### Modificado
+* **Ajuste de Nomenclatura Táctica en Invitación Técnica (`index.html` y `script.js`):**
+  * Sustitución del término "predio" por **"terreno"** en la tarjeta de contacto técnico: `◈ ESPECIFICACIONES TÉCNICAS & TERRENO PILOTO` (`h_ip_tag`), alineando el copy a un lenguaje más transversal y operacional.
+  * Renovación de versión de activos (cache-busting) a `?v=2.0.3` en `styles.css` y `script.js` para forzar la invalidación inmediata de caché de navegador.
+  * Inyección de encabezados `Cache-Control: no-store, no-cache, must-revalidate` en el servidor de desarrollo local (`scratch/serve.js`).
+
 ## [2.0.2] — 2026-10-05
 ### Modificado
 * **Doctrina Narrativa DeepTech y Localización Técnica Chilena/Latinoamericana (`AGENTS.md`):**

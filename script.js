@@ -35,10 +35,10 @@ const translations = {
     h_p3_desc: "Alerta inmediata y georreferenciada a la estación de mando. Disuasión activa mediante iluminación táctica de alta intensidad autorizada exclusivamente por el operador humano.",
 
     // Technical Specifications & Pilot Card
-    h_ip_tag: "◈ ESPECIFICACIONES TÉCNICAS & PREDIO PILOTO",
+    h_ip_tag: "◈ ESPECIFICACIONES TÉCNICAS & TERRENO PILOTO",
     h_ip_protocol: "[VALIDACIÓN 2026-27]",
-    h_ip_title: "¿Interesado en conocer la arquitectura técnica o evaluar un despliegue en tus predios?",
-    h_ip_body: "Compartimos especificaciones técnicas de vuelo, análisis de cobertura territorial y el plan de validación operacional de Athene™ con equipos de protección forestal, entidades de emergencia y colaboradores estratégicos. Contáctanos para coordinar un briefing técnico directo o evaluar la incorporación de tus predios al programa piloto 2026-27.",
+    h_ip_title: "¿Interesado en conocer la arquitectura técnica o evaluar un despliegue en tus terrenos?",
+    h_ip_body: "Compartimos especificaciones técnicas de vuelo, análisis de cobertura territorial y el plan de validación operacional de Athene™ con equipos de protección forestal, entidades de emergencia y colaboradores estratégicos. Contáctanos para coordinar un briefing técnico directo o evaluar la incorporación de tus terrenos al programa piloto 2026-27.",
     h_ip_footer_note: "Equipo Strig Systems · Concepción, Chile.",
     h_ip_btn: "Conversar con el Equipo Técnico",
 
@@ -171,10 +171,10 @@ const translations = {
     h_p3_desc: "Instant geo-referenced telemetry dispatched to ground command. Active deterrence via high-intensity tactical illumination strictly authorized by a human operator.",
 
     // Technical Specifications & Pilot Card
-    h_ip_tag: "◈ TECHNICAL SPECIFICATIONS & PILOT SITES",
+    h_ip_tag: "◈ TECHNICAL SPECIFICATIONS & PILOT TERRAIN",
     h_ip_protocol: "[2026-27 VALIDATION]",
-    h_ip_title: "Interested in technical architecture details or evaluating deployment on your land?",
-    h_ip_body: "We share detailed flight specifications, territorial coverage models, and operational validation plans with forestry protection teams, emergency agencies, and strategic partners. Contact us to schedule a direct technical briefing or evaluate incorporating your properties into the 2026-27 pilot program.",
+    h_ip_title: "Interested in technical architecture details or evaluating deployment on your terrain?",
+    h_ip_body: "We share detailed flight specifications, territorial coverage models, and operational validation plans with forestry protection teams, emergency agencies, and strategic partners. Contact us to schedule a direct technical briefing or evaluate incorporating your terrain into the 2026-27 pilot program.",
     h_ip_footer_note: "Strig Systems Team · Concepción, Chile.",
     h_ip_btn: "Connect with Engineering Team",
 
