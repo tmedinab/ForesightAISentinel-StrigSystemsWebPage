@@ -12,6 +12,7 @@ El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/
 * **Ajuste de Nomenclatura Táctica en Invitación Técnica (`index.html` y `script.js`):**
   * Sustitución del término "predio" por **"terreno"** en la tarjeta de contacto técnico: `◈ ESPECIFICACIONES TÉCNICAS & TERRENO PILOTO` (`h_ip_tag`), alineando el copy a un lenguaje más transversal y operacional.
   * Renovación de versión de activos (cache-busting) a `?v=2.0.3` en `styles.css` y `script.js` para forzar la invalidación inmediata de caché de navegador.
+  * **Documentación y Registro de Backlog en Briefing (`BRIEFING_AGENTE_WEB.md`):** Inyección de bloque formal de auditoría y advertencia de pendiente técnico para la sincronización completa del briefing inicial (2026-09-24) con la doctrina deeptech, nomenclatura chilena/LATAM y assets visuales consolidados en octubre de 2026.
   * Inyección de encabezados `Cache-Control: no-store, no-cache, must-revalidate` en el servidor de desarrollo local (`scratch/serve.js`).
 
 ## [2.0.2] — 2026-10-05

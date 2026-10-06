@@ -11,6 +11,15 @@ confidencialidad: INTERNO.
 
 > Documento autocontenido para pasar al agente que mantiene la web. Fuente: [`REVISION_WEB_2026-09-24.md`](REVISION_WEB_2026-09-24.md).
 
+> [!NOTE]
+> **ESTADO DE ACTUALIZACIÓN & AUDITORÍA PENDIENTE (Octubre 2026):**  
+> Este documento contiene valiosa información técnica, operativa y de claims iniciales fijados el 24 de septiembre de 2026.  
+> **Pendiente formal para próxima sesión de trabajo:** Sincronizar y actualizar integralmente este briefing con las decisiones consolidadas en octubre de 2026:
+> 1. **Doctrina Narrativa DeepTech y Vocabulario Chileno/LATAM:** Erradicación de "célula" (usar aeronave VTOL / plataforma aérea), "sirena" y "estroboscópico" (usar iluminación táctica de alta intensidad), según lo estipulado en `AGENTS.md` (Secciones 2.4 y 2.5).
+> 2. **Identidad de Interlocución:** Normalización a "Equipo Strig Systems" (en sustitución de "mesa técnica").
+> 3. **Estrategia de Activos Visuales:** Articulación con `docs/PLAN_ESTRATEGICO_MARCA_Y_ASSETS_VISUALES.md` (Blueprints 3-vistas, feeds LWIR sintéticos y diagramas CONOPS).
+> 4. **Trazabilidad de Tareas Cumplidas:** Marcar como completado el retiro de precios, Starlink, formularios B2B y honestidad TRL 3 ya en producción en `main`.
+
 ## 1. Contexto y decisiones (ya tomadas por el dueño)
 
 - **Marca:** Athene = plataforma; **Noctua** = primer dron que se diseñe o integre; **Nest** = estación en tierra (no está decidido si será automatizada algún día). Se mantienen estos nombres en la web.
