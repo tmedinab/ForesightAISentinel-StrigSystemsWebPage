@@ -30,9 +30,9 @@ Invitar a conversación técnica/piloto sin barrera legal intimidante ni cuestio
 | Arquitectura | `assets/img/tech/athene-architecture.svg`, paso 5 sobre candidata Astra. VTOL, cámara, inferencia, indicio y operador; representación conceptual. |
 | Credenciales | «Finalistas 7th Gear Challenge - Gearbox UdeC». No generar logo Gearbox. |
 | Apoyos | Logos completos de IncubaUdeC y Corfo publicados por autorización de Tomás, con incubación, mentorías y financiamiento explícitos. Validación gráfica IU p.18 pendiente; no declara aprobación institucional (ADR-0014). |
-| Equipo | Tomás Medina (Cofundador · Responsable técnico), Carlos Gutiérrez (Cofundador · Operaciones), Ananda Glaria, Richard Solís y Pablo Alarcón (Cofundadores). Cinco retratos locales. |
+| Equipo | Tomás Medina (Cofundador · Responsable técnico), Carlos Gutiérrez (Cofundador · Operaciones), Ananda Glaria (Cofundadora) y Richard Solís (Cofundador). Cuatro fichas públicas. |
 
-Tomás suministró perfiles de [Carlos](https://www.linkedin.com/in/cgutierrezsoto/), [Richard](https://www.linkedin.com/in/richard-solis-580ba0324/) y [Tomás](https://www.linkedin.com/in/tomasmedinab/). Ananda/Pablo sin URL confirmada: recuadros deshabilitados, sin enlaces inventados. No es verificación independiente de sus perfiles.
+Tomás suministró perfiles de [Carlos](https://www.linkedin.com/in/cgutierrezsoto/), [Richard](https://www.linkedin.com/in/richard-solis-580ba0324/) y [Tomás](https://www.linkedin.com/in/tomasmedinab/). Ananda sin URL confirmada: recuadro deshabilitado, sin enlaces inventados. No es verificación independiente de sus perfiles.
 
 Las relaciones Semilla Inicia/IncubaUdeC/Red IU fueron confirmadas por Tomás. Las reglas y pendientes estrictos se mantienen únicamente en la [biblioteca institucional](brand/institutional/README.md): validación gráfica IU p.18 pendiente; manual Corfo recibido de identidad antigua; no aislar el escudo ni reconstruir marcas. Los apoyos no certifican técnicamente el producto.
 
@@ -69,7 +69,7 @@ Primera lectura simulada y crítica visual: ambos lectores terminaron; la utilid
 
 Tomás aprobó adelantar el propósito preventivo y mantener detección de presencia sin atribuir identidad/intención; alinear CTA y formulario con conversación exploratoria; concentrar el estado experimental y simplificar caption/rótulos; armonizar terminología ES/EN; dejar Concepción, Chile como ubicación y explicar UdeC mediante formación/incubación. Familia A y titular se conservan como base. No divulgar condiciones de ensayo aún no definidas.
 
-Información de equipo precisada por Tomás: Ananda egresada; Richard y Tomás en penúltimo semestre; Carlos en memoria/último semestre. No describir al conjunto como cinco profesionales titulados: redacción pública «Equipo con formación en Ingeniería Civil Aeroespacial en la Universidad de Concepción». Pablo podría dejar el equipo fundador; aún no confirmado. La ficha permanece por ahora, pendiente de conversación y definición, sin cambiar su rol ni retirarla por inferencia.
+Información de equipo precisada por Tomás: Ananda egresada; Richard y Tomás en penúltimo semestre; Carlos en memoria/último semestre. No atribuir titulación a todos los integrantes: redacción pública «Equipo con formación en Ingeniería Civil Aeroespacial en la Universidad de Concepción». Tomás pidió retirar a Pablo de la presentación pública y dejar cuatro fichas el 2026-10-09. Esto actualiza la web; no determina su situación societaria ni altera los ADRs históricos.
 
 
 Contacto implementado (ADR-0016): formulario general de Strig, con Athene preseleccionado desde hero/invitación y consulta general desde cabecera. Motivos: Athene/vigilancia y pruebas, colaboración, consulta general. Nombre/correo/mensaje obligatorios; organización/teléfono opcionales y consentimiento para responder según privacidad. Sin región, clasificación del terreno, horarios, NDA ni promesa de reunión/plazo. Usar «terreno», no «predio». Correo directo y fallback con datos completos; éxito únicamente tras aceptación explícita del proveedor. La revisión automática simula respuestas y no acredita recepción real de correo.

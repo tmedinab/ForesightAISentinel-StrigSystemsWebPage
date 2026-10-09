@@ -5724,13 +5724,13 @@ body.modal-open {
 .public-team-tag { display: block; font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-cyan); margin-bottom: 0.5rem; }
 .public-team-heading h2 { font-family: var(--font-heading); font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.3; margin-bottom: 0.7rem; }
 .public-team-heading p { color: var(--text-secondary); font-size: 1rem; line-height: 1.7; }
-.public-team-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1rem; }
+.public-team-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
 .public-team-card { min-width: 0; display: flex; flex-direction: column; align-items: flex-start; padding: 1.25rem; }
 .public-team-card h3 { font-family: var(--font-heading); font-size: 1.125rem; line-height: 1.4; margin-bottom: 0.45rem; }
 .public-team-role { font-size: 0.875rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 1.25rem; }
 .team-linkedin { display: inline-flex; align-items: center; min-height: 36px; padding: 0.35rem 0.65rem; border: 1px solid var(--border-glass); border-radius: var(--radius-badge); font-size: 0.8rem; color: var(--text-muted); margin-top: auto; }
 .team-linkedin[aria-disabled="true"] { opacity: 0.65; pointer-events: none; }
-@media (max-width: 1000px) { .public-team-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 1000px) { .public-team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 650px) { .public-team-grid { grid-template-columns: minmax(0, 1fr); } .public-team-card { padding: 1rem 1.25rem; } .public-team-role { margin-bottom: 0.8rem; } }
 
 .public-team-photo { display: block; width: 80px; height: 80px; object-fit: cover; object-position: center; border-radius: 50%; margin-bottom: 1rem; }

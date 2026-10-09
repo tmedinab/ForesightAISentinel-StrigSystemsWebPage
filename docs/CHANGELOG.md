@@ -2,6 +2,10 @@
 
 El historial de versiones registra lo ocurrido, no especificaciones vigentes. Consultar el [índice](README.md) y el plan para el estado actual. Los documentos antiguos citados en las versiones están en la copia recuperable local descrita en el índice.
 
+## [2.4.2] — 2026-10-09
+
+- Retirada la ficha pública de Pablo por instrucción de Tomás. Equipo presentado con cuatro integrantes y cuadrícula de cuatro columnas en escritorio, dos en tablet y una en móvil.
+
 ## [2.4.1] — 2026-10-09
 
 - Modales abreviados y lenguaje más natural: contacto «Conversemos», invitación «Quiero colaborar» y envío «Enviar mensaje». Campos opcionales agrupados en desplegables nativos; notas repetidas retiradas y prácticas/memorias al final.
