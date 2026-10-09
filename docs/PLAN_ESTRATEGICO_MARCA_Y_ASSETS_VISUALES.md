@@ -8,7 +8,7 @@ Actualizado: 2026-10-09. Resume decisiones aprobadas y prioridades; fundamentos 
 
 **Hero:** «Los riesgos se mueven rápido. Nosotros los vemos venir.» Conservar su jerarquía y gradiente metálico en la segunda línea.
 
-**Definición vigente:** «Athene es una plataforma centinela aérea autónoma diseñada para apoyar la vigilancia forestal nocturna. Busca detectar presencia de personas e indicios de incendio mediante análisis térmico a bordo y revisión humana de las alertas.» Es una intención de diseño, sin garantía de anticipación a toda ignición o prevención de incendios.
+**Definición vigente:** «Athene es un sistema en desarrollo que utiliza plataformas aéreas autónomas con supervisión humana para apoyar la vigilancia forestal nocturna. Busca detectar presencia de personas e indicios de incendio mediante análisis térmico a bordo y revisión humana de las alertas.» Es una intención de diseño, sin garantía de anticipación a toda ignición o prevención de incendios.
 
 La portada pública es compacta: empresa, propósito de Athene, arquitectura conceptual, estado experimental, equipo, contacto y apoyos. Las páginas/componentes ampliados anteriores son referencia; no restaurarlos por defecto ni difundir detalles técnicos antes de tiempo. El gate de dossier del lado cliente no protege información confidencial.
 
@@ -67,9 +67,29 @@ Preflight e i18n, carga de assets, revisión ES/EN escritorio/móvil, teclado/fo
 
 Primera lectura simulada y crítica visual: ambos lectores terminaron; la utilidad se concretó en personas e indicios de incendio y aceptarían conversación exploratoria. Ronda local en `.first-reader/runs/2026-10-09-narrative-polish/`; no equivale a investigación con clientes.
 
-Tomás aprobó adelantar el propósito preventivo y mantener detección de presencia sin atribuir identidad/intención; alinear CTA y formulario con conversación exploratoria; concentrar el estado experimental y simplificar caption/rótulos; unificar sistema/plataforma aérea y terminología ES/EN; dejar Concepción, Chile como ubicación y explicar UdeC mediante formación/incubación. Familia A y titular se conservan como base. No divulgar condiciones de ensayo aún no definidas.
+Tomás aprobó adelantar el propósito preventivo y mantener detección de presencia sin atribuir identidad/intención; alinear CTA y formulario con conversación exploratoria; concentrar el estado experimental y simplificar caption/rótulos; armonizar terminología ES/EN; dejar Concepción, Chile como ubicación y explicar UdeC mediante formación/incubación. Familia A y titular se conservan como base. No divulgar condiciones de ensayo aún no definidas.
 
 Información de equipo precisada por Tomás: Ananda egresada; Richard y Tomás en penúltimo semestre; Carlos en memoria/último semestre. No describir al conjunto como cinco profesionales titulados: redacción pública «Equipo con formación en Ingeniería Civil Aeroespacial en la Universidad de Concepción». Pablo podría dejar el equipo fundador; aún no confirmado. La ficha permanece por ahora, pendiente de conversación y definición, sin cambiar su rol ni retirarla por inferencia.
 
 
 Contacto implementado (ADR-0016): formulario general de Strig, con Athene preseleccionado desde hero/invitación y consulta general desde cabecera. Motivos: Athene/vigilancia y pruebas, colaboración, consulta general. Nombre/correo/mensaje obligatorios; organización/teléfono opcionales y consentimiento para responder según privacidad. Sin región, clasificación del terreno, horarios, NDA ni promesa de reunión/plazo. Usar «terreno», no «predio». Correo directo y fallback con datos completos; éxito únicamente tras aceptación explícita del proveedor. La revisión automática simula respuestas y no acredita recepción real de correo.
+
+## Participación universitaria — planificación, 2026-10-09
+
+**Dirección confirmada por Tomás:** buscar principalmente colaboración extracurricular. Se contempla habilitar prácticas o memorias próximamente y, más adelante, compromisos laborales. No son convocatorias disponibles ni condiciones acordadas hoy. Las áreas se trabajarán aparte, a partir de las necesidades del repositorio de ingeniería.
+
+**Consideración interna:** Tomás explora una eventual participación societaria en la SpA para integrantes responsables de desarrollos clave y del cumplimiento de hitos. Figura, condiciones y procedimiento sin definir; no ofrecer equity ni vincular la colaboración actual con una promesa de participación futura en la web. Esta nota registra una intención, no establece condiciones laborales ni societarias.
+
+**Interfaz implementada localmente:** invitación discreta junto al equipo, «Colabora en el desarrollo de Athene», con botón «Cuéntanos cómo te gustaría aportar». Modal separado del contacto comercial, manteniendo el lenguaje visual, accesibilidad y tratamiento de errores del formulario vigente.
+
+Texto propuesto: «Estamos desarrollando Athene y queremos conocer a estudiantes, egresados e investigadores interesados en aportar al proyecto mediante colaboración extracurricular. Cuéntanos qué te interesa y cómo te gustaría contribuir. Las posibilidades de participación se conversarán según las necesidades del proyecto y tu disponibilidad.»
+
+Nota propuesta: «Más adelante esperamos abrir posibilidades de prácticas y memorias, sujetas a las necesidades del proyecto y la coordinación académica.» No declarar convenios académicos, plazas, remuneración, acompañamiento o plazos que aún no estén definidos. Antes de iniciar una colaboración, conversar tareas, disponibilidad, acompañamiento y condiciones concretas; el envío del formulario sólo inicia el contacto.
+
+Campos propuestos: nombre, correo y mensaje obligatorios; carrera/especialidad, institución, disponibilidad orientativa y enlace a portafolio/GitHub/LinkedIn opcionales; consentimiento según privacidad. Mensaje guiado: «¿Qué te interesa del proyecto y qué te gustaría aportar o aprender?». Sin CV ni adjuntos iniciales, y sin selector de áreas hasta definir necesidades. Adaptar privacidad a los datos efectivamente recogidos y mantener paridad ES/EN antes de publicar.
+
+**Trabajo separado para definir áreas:** contrastar tareas actuales, prioridad, responsable que pueda acompañar, entregable y criterio de cierre; dimensionar una primera contribución acotada. Fuentes iniciales del repo `foresight-ai-mvp-2026`: `docs/ALCANCE_UI_CORE_MVP.md`, `docs/INTERNAL_ENGINEERING_ROADMAP.md`, `queue.yaml`, `docs/gestion/CARTA_GANTT.md` y roadmaps de unidad. El alcance UI/Core distingue decisiones y propuestas; el roadmap remite pendientes accionables a `queue.yaml`. Ninguno equivale por sí solo a una vacante aprobada. No trasladar arquitectura, compras, socios exploratorios ni hitos técnicos internos al anuncio público.
+
+Implementación 2.4.0: modal de participación independiente del contacto general, con controlador compartido y borradores separados. Sin selector de áreas, CV ni oferta de empleo o participación societaria. Privacidad actualizada para los campos opcionales de participación. Tomás autorizó publicar mediante push a main; los despliegues automáticos deben confirmarse tras el envío.
+
+Precisión aprobada por Tomás: Athene es el sistema completo, que utiliza plataformas aéreas autónomas bajo supervisión humana; no es el nombre de una aeronave ni de un único componente (ADR-0017).

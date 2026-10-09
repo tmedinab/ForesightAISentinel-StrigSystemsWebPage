@@ -5785,3 +5785,11 @@ body.modal-open {
 .contact-dialog .pilot-form { gap: 1rem; }
 .contact-dialog .form-checkbox-group { margin-top: 0; }
 @media (max-width: 650px) { .modal-backdrop .contact-dialog { padding: 1.25rem; } }
+
+/* University participation invitation: subordinate to the founding team. */
+.team-collaboration { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; margin-top: 1.5rem; padding: 1.5rem; border: 1px solid var(--border-glass); border-radius: var(--radius-card, 12px); }
+.team-collaboration h3 { font-family: var(--font-heading); font-size: 1.125rem; margin-bottom: 0.5rem; }
+.team-collaboration p { color: var(--text-secondary); font-size: 1rem; line-height: 1.6; max-width: 62ch; }
+.team-collaboration .btn-ghost { flex-shrink: 0; white-space: normal; max-width: 280px; }
+.join-future { margin-bottom: 1rem; }
+@media (max-width: 768px) { .team-collaboration { flex-direction: column; align-items: flex-start; padding: 1.25rem; } .team-collaboration .btn-ghost { max-width: 100%; } }

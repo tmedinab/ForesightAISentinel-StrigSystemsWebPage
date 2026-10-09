@@ -2,6 +2,13 @@
 
 El historial de versiones registra lo ocurrido, no especificaciones vigentes. Consultar el [índice](README.md) y el plan para el estado actual. Los documentos antiguos citados en las versiones están en la copia recuperable local descrita en el índice.
 
+## [2.4.0] — 2026-10-09
+
+- Invitación de colaboración extracurricular junto al equipo y modal propio ES/EN; prácticas y memorias descritas como posibilidades futuras, sin ofertas laborales ni societarias.
+- Formulario con intereses, formación, institución, disponibilidad y portafolio opcionales; privacidad actualizada. Controlador compartido con borradores independientes, foco, validación y fallback de correo.
+- Definición de Athene corregida: sistema completo que utiliza plataformas aéreas autónomas con supervisión humana, en lugar de equipararlo a una plataforma aérea (ADR-0017).
+- Revisión ES/EN en cuatro anchos y pruebas simuladas de ambos formularios: borradores separados, URL opcional, foco, errores, fallback y confirmación. Sin envío externo. Publicación autorizada por Tomás mediante push a main y despliegues automáticos.
+
 ## [2.3.0] — 2026-10-09
 
 - Narrativa forestal preventiva adelantada: presencia de personas e indicios de incendio, con revisión humana y madurez concentrada. Titular y familia A conservados; rótulos superiores reducidos y credenciales junto al estado del proyecto.

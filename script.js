@@ -6,6 +6,21 @@
 
 const translations = {
   es: {
+    join_title: "Colabora en el desarrollo de Athene",
+    join_card_desc: "Queremos conocer a estudiantes, egresados e investigadores interesados en aportar al proyecto mediante colaboración extracurricular.",
+    join_cta: "Cuéntanos cómo te gustaría aportar",
+    join_intro: "Cuéntanos qué te interesa y cómo te gustaría contribuir. Las posibilidades de participación se conversarán según las necesidades del proyecto y tu disponibilidad.",
+    join_future: "Más adelante esperamos abrir posibilidades de prácticas y memorias, sujetas a las necesidades del proyecto y la coordinación académica.",
+    join_mode: "Colaboración extracurricular",
+    join_studies: "Carrera o especialidad (opcional)",
+    join_institution: "Universidad o institución (opcional)",
+    join_availability: "Disponibilidad orientativa (opcional)",
+    join_portfolio: "Portafolio, GitHub o LinkedIn (opcional)",
+    join_message: "Intereses y posibles aportes *",
+    join_hint: "¿Qué te interesa del proyecto y qué te gustaría aportar o aprender?",
+    join_submit: "Enviar interés",
+    join_note: "Este contacto inicia una conversación; las tareas y condiciones de participación se acordarán con el equipo.",
+
     contact_reason_label: "Motivo de la consulta",
     contact_reason_athene: "Athene · Vigilancia y pruebas",
     contact_reason_collaboration: "Colaboración",
@@ -42,7 +57,7 @@ const translations = {
     h_eyebrow_tag: "VIGILANCIA AÉREA PARA LA BRECHA NOCTURNA",
     h_title_1: "Los riesgos se mueven rápido.",
     h_title_2: "Nosotros los vemos venir.",
-    h_desc: "Athene es una plataforma centinela aérea autónoma diseñada para apoyar la vigilancia forestal nocturna. Busca detectar presencia de personas e indicios de incendio mediante análisis térmico a bordo y revisión humana de las alertas.",
+    h_desc: "Athene es un sistema en desarrollo que utiliza plataformas aéreas autónomas con supervisión humana para apoyar la vigilancia forestal nocturna. Busca detectar presencia de personas e indicios de incendio mediante análisis térmico a bordo y revisión humana de las alertas.",
     h_cta_pilot: "Conversar con el equipo",
     h_cta_brief: "Ver resumen del proyecto",
 
@@ -149,6 +164,21 @@ const translations = {
   },
 
   en: {
+    join_title: "Contribute to the development of Athene",
+    join_card_desc: "We would like to meet students, graduates and researchers interested in contributing to the project through extracurricular collaboration.",
+    join_cta: "Tell us how you would like to contribute",
+    join_intro: "Tell us what interests you and how you would like to contribute. We will discuss opportunities based on project needs and your availability.",
+    join_future: "We hope to offer internships and thesis opportunities in the future, subject to project needs and academic coordination.",
+    join_mode: "Extracurricular collaboration",
+    join_studies: "Degree programme or specialty (optional)",
+    join_institution: "University or institution (optional)",
+    join_availability: "Approximate availability (optional)",
+    join_portfolio: "Portfolio, GitHub or LinkedIn (optional)",
+    join_message: "Interests and possible contributions *",
+    join_hint: "What interests you about the project, and what would you like to contribute or learn?",
+    join_submit: "Send expression of interest",
+    join_note: "This contact starts a conversation; tasks and participation terms will be agreed with the team.",
+
     contact_reason_label: "Reason for contacting us",
     contact_reason_athene: "Athene · Surveillance and testing",
     contact_reason_collaboration: "Collaboration",
@@ -185,7 +215,7 @@ const translations = {
     h_eyebrow_tag: "AERIAL SURVEILLANCE FOR THE NIGHTTIME GAP",
     h_title_1: "Risks move fast.",
     h_title_2: "We see them coming.",
-    h_desc: "Athene is an autonomous aerial sentinel platform designed to support nighttime forestry surveillance. It aims to detect the presence of people and signs of fire through onboard thermal analysis and human review of alerts.",
+    h_desc: "Athene is a system under development that uses autonomous aerial platforms with human supervision to support nighttime forestry surveillance. It aims to detect the presence of people and signs of fire through onboard thermal analysis and human review of alerts.",
     h_cta_pilot: "Talk with the team",
     h_cta_brief: "View project overview",
 
@@ -354,19 +384,21 @@ function setLanguage(lang) {
 /**
  * Controller for exploratory company contact
  */
-function initContactModal() {
-  const modal = document.getElementById('contact-modal');
+function initContactModal(prefix = 'contact') {
+  const isJoin = prefix === 'join';
+  const element = suffix => document.getElementById(`${prefix}-${suffix}`);
+  const modal = element('modal');
   if (!modal) return;
-  const form = document.getElementById('contact-form');
-  const reason = document.getElementById('contact-reason');
-  const message = document.getElementById('contact-message');
-  const hint = document.getElementById('contact-message-hint');
-  const submit = document.getElementById('contact-submit-btn');
+  const form = element('form');
+  const reason = element('reason');
+  const message = element('message');
+  const hint = element('message-hint');
+  const submit = element('submit-btn');
   const buttonText = submit.querySelector('.btn-text');
   const spinner = submit.querySelector('.btn-spinner');
-  const error = document.getElementById('contact-error');
-  const validation = document.getElementById('contact-validation-error');
-  const success = document.getElementById('contact-success');
+  const error = element('error');
+  const validation = element('validation-error');
+  const success = element('success');
   let lastActiveElement;
   let focusFrame;
   let sending = false;
@@ -376,8 +408,8 @@ function initContactModal() {
   function updateReason() {
     const key = reasonKeys[reason.value] ? reason.value : 'general';
     reason.value = key;
-    hint.textContent = dict()[`contact_hint_${key}`];
-    buttonText.textContent = dict()[sending ? 'form_sending' : 'f_submit_btn'];
+    hint.textContent = dict()[isJoin ? 'join_hint' : `contact_hint_${key}`];
+    buttonText.textContent = dict()[sending ? 'form_sending' : (isJoin ? 'join_submit' : 'f_submit_btn')];
   }
   reason.addEventListener('change', updateReason);
   window.addEventListener('strig-lang-change', updateReason);
@@ -412,7 +444,7 @@ function initContactModal() {
     let remaining = 20;
     const focusVisible = () => {
       if (!modal.classList.contains('active') || modal.contains(document.activeElement)) return;
-      form.querySelector('#contact-name').focus({ preventScroll: true });
+      element('name').focus({ preventScroll: true });
       if (!modal.contains(document.activeElement) && remaining-- > 0) focusFrame = requestAnimationFrame(focusVisible);
     };
     focusFrame = requestAnimationFrame(focusVisible);
@@ -424,7 +456,7 @@ function initContactModal() {
     document.body.classList.remove('modal-open');
     lastActiveElement?.focus();
   }
-  document.querySelectorAll('[data-open-modal="contact-modal"]').forEach(button => {
+  document.querySelectorAll(`[data-open-modal="${prefix}-modal"]`).forEach(button => {
     button.addEventListener('click', event => {
       event.preventDefault();
       openModal(button.dataset.intent || 'general');
@@ -432,8 +464,9 @@ function initContactModal() {
   });
   modal.querySelectorAll('[data-close-modal]').forEach(button => button.addEventListener('click', closeModal));
   modal.addEventListener('click', event => { if (event.target === modal) closeModal(); });
-  modal.addEventListener('keydown', event => {
-    if (event.key === 'Escape') closeModal();
+  document.addEventListener('keydown', event => {
+    if (!modal.classList.contains('active')) return;
+    if (event.key === 'Escape') { event.preventDefault(); closeModal(); return; }
     if (event.key !== 'Tab') return;
     const focusables = [...modal.querySelectorAll('button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled])')]
       .filter(el => el.tabIndex >= 0 && el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden');
@@ -446,8 +479,8 @@ function initContactModal() {
     event.preventDefault();
     if (sending || form.elements._honey.value) return;
     clearErrors();
-    const fields = ['contact-name', 'contact-email', 'contact-message', 'contact-consent'].map(id => document.getElementById(id));
-    const invalid = fields.filter(el => !el.checkValidity() || (el.type !== 'checkbox' && !el.value.trim()));
+    const fields = [...form.querySelectorAll('[required]'), ...form.querySelectorAll('input[type="url"]')];
+    const invalid = fields.filter(el => !el.checkValidity() || (el.required && el.type !== 'checkbox' && !el.value.trim()));
     if (invalid.length) {
       invalid.forEach(el => {
         el.classList.add('input-invalid');
@@ -458,14 +491,18 @@ function initContactModal() {
       invalid[0].focus();
       return;
     }
-    const value = id => document.getElementById(id).value.trim();
+    const value = suffix => element(suffix)?.value.trim() || '';
     const intent = reason.value;
     const payload = {
-      Motivo: dict()[reasonKeys[intent]],
-      Nombre: value('contact-name'), Email: value('contact-email'),
-      Empresa_Organizacion: value('contact-company'), Telefono: value('contact-phone'),
+      Motivo: dict()[isJoin ? 'join_mode' : reasonKeys[intent]],
+      Nombre: value('name'), Email: value('email'),
+      Empresa_Organizacion: value('company'), Telefono: value('phone'),
       Mensaje: message.value.trim(), _template: 'table', _captcha: 'false'
     };
+    if (isJoin) {
+      delete payload.Empresa_Organizacion; delete payload.Telefono;
+      Object.assign(payload, {Formacion: value('studies'), Institucion: value('institution'), Disponibilidad: value('availability'), Portafolio: value('portfolio')});
+    }
     payload._subject = `${payload.Motivo}: ${payload.Empresa_Organizacion || payload.Nombre} - Strig Systems`;
     sending = true;
     submit.disabled = true;
@@ -485,7 +522,7 @@ function initContactModal() {
       if (result.success !== true && result.success !== 'true') throw new Error('Submission not accepted');
       form.style.display = 'none';
       success.style.display = 'flex';
-      if (modal.classList.contains('active')) document.getElementById('contact-success-title').focus();
+      if (modal.classList.contains('active')) element('success-title').focus();
       if (window.umami) window.umami.track('Submit-Contact-Success', { intent });
       form.reset();
       reason.value = intent;
@@ -661,5 +698,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize Modals
   initContactModal();
+  initContactModal('join');
   initExecutiveBriefModal();
 });
