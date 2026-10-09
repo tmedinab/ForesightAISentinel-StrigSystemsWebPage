@@ -1,55 +1,89 @@
 /**
  * Strig Systems — Athene™
- * Holding Page Client Controller (Controlled Disclosure & IP Protection Edition)
+ * Compact public landing controller
  * Zero Runtime Dependencies · Bilingual Parity (ES / EN) · Zero Emojis
  */
 
 const translations = {
   es: {
     // Page metadata & Header
+    h_company: "Ingeniería aeroespacial y sistemas autónomos · Chile",
     h_page_title: "Strig Systems | Athene — Inteligencia Aérea Autónoma",
     lang_code: "EN",
     h_nav_cta: "Solicitar Briefing",
 
     // Hero Section
-    h_status: "TRL 3 · Prototipo en desarrollo · Demo técnica ene 2027",
-    h_badge: "Semilla Inicia CORFO • Lab Aeroespacial UdeC • Gearbox",
-    h_eyebrow_tag: "SISTEMA CENTINELA AÉREO AUTÓNOMO",
+    h_visual_tag: "ARQUITECTURA CONCEPTUAL",
+    h_visual_title: "Un sistema. Tres funciones conectadas.",
+    h_visual_caption: "Arquitectura conceptual con aeronave genérica y componentes ampliados. La evidencia se enriquece durante la observación. No representa el diseño de Noctua ni resultados medidos.",
+    h_visual_boundary: "Aeronave VTOL · cámara y computador a bordo",
+    h_visual_delivery: "Imágenes y avisos al puesto de supervisión local",
+    h_flow_1: "Aeronave y cámara",
+    h_flow_2: "Inferencia a bordo",
+    h_flow_3: "Evaluación humana",
+    h_stage_label: "ESTADO DEL PROYECTO",
+    h_stage_now: "Hoy · TRL 3",
+    h_stage_now_desc: "Arquitectura y preparación de integración.",
+    h_stage_next: "Próximo · Demo 2027",
+    h_stage_next_desc: "Integración experimental prevista.",
+    h_stage_future: "Visión · Noctua / Nest",
+    h_stage_future_desc: "Plataforma aérea y estación proyectadas.",
+    h_capabilities_label: "ARQUITECTURA EN DESARROLLO",
+    h_status: "TRL 3 · Prototipo en desarrollo · Demo prevista ene 2027",
+    h_badge: "Semilla Inicia Corfo • IncubaUdeC • Finalistas 7th Gear Challenge - Gearbox UdeC",
+    h_eyebrow_tag: "VIGILANCIA AÉREA PARA LA BRECHA NOCTURNA",
     h_title_1: "Los riesgos se mueven rápido.",
     h_title_2: "Nosotros los vemos venir.",
-    h_desc: "Plataforma centinela aérea autónoma con inferencia térmica Edge AI a bordo. Diseñada para cubrir la brecha nocturna de incendios forestales mediante la detección temprana de precursores y actividad humana no autorizada antes de la ignición.",
-    h_cta_pilot: "Solicitar Acceso a Dossier & Validación Piloto",
-    h_cta_brief: "Executive Briefing (PDF)",
+    h_desc: "Plataforma centinela aérea autónoma diseñada para reducir la brecha nocturna de vigilancia forestal mediante análisis térmico a bordo y supervisión humana de las alertas.",
+    h_cta_pilot: "Conversar sobre un piloto",
+    h_cta_brief: "Ver resumen ejecutivo",
 
     // 3 Capability Pillars
     h_p1_tag: "[AERONÁUTICA // 01]",
-    h_p1_title: "Plataforma Aérea VTOL Autónoma",
-    h_p1_desc: "Aeronave de despegue vertical sin pista y crucero eficiente de ala fija. Diseñada para patrullaje nocturno continuo sobre quebradas y topografía forestal compleja.",
+    h_p1_title: "Plataforma aérea experimental",
+    h_p1_desc: "Validación inicial prevista sobre una aeronave comercial adaptada. Noctua es la plataforma VTOL de ala fija proyectada para la evolución del sistema.",
 
-    h_p2_tag: "[ZERO-CLOUD // 02]",
-    h_p2_title: "Inferencia Edge AI a Bordo",
-    h_p2_desc: "Cómputo local de visión térmica radiométrica LWIR a bordo. Detección y clasificación de precursores en microsegundos sin requerir internet satelital ni 4G/5G.",
+    h_p2_tag: "[ANÁLISIS // 02]",
+    h_p2_title: "Análisis térmico a bordo",
+    h_p2_desc: "Análisis térmico a bordo para detectar presencia de personas e indicios de incendio durante la noche. La precisión y los tiempos de respuesta se evaluarán en pruebas.",
 
-    h_p3_tag: "[HITL // 03]",
-    h_p3_title: "Doctrina Human-in-the-Loop",
-    h_p3_desc: "Alerta inmediata y georreferenciada a la estación de mando. Disuasión activa mediante iluminación táctica de alta intensidad autorizada exclusivamente por el operador humano.",
+    h_p3_tag: "[SUPERVISIÓN // 03]",
+    h_p3_title: "Supervisión humana de alertas",
+    h_p3_desc: "El operador revisa imágenes y alertas para evaluar actividad humana que podría generar riesgo de incendio y apoyar una respuesta temprana.",
 
     // Technical Specifications & Pilot Card
-    h_ip_tag: "◈ ESPECIFICACIONES TÉCNICAS & TERRENO PILOTO",
+    h_ip_tag: "CONVERSACIÓN TÉCNICA",
     h_ip_protocol: "[VALIDACIÓN 2026-27]",
-    h_ip_title: "¿Interesado en conocer la arquitectura técnica o evaluar un despliegue en tus terrenos?",
-    h_ip_body: "Compartimos especificaciones técnicas de vuelo, análisis de cobertura territorial y el plan de validación operacional de Athene™ con equipos de protección forestal, entidades de emergencia y colaboradores estratégicos. Contáctanos para coordinar un briefing técnico directo o evaluar la incorporación de tus terrenos al programa piloto 2026-27.",
+    h_ip_title: "¿Quieres explorar una validación en terreno?",
+    h_ip_body: "Conversemos sobre tus necesidades de vigilancia forestal y cómo podrían orientar las pruebas de Athene. Estamos preparando la integración experimental del sistema.",
     h_ip_footer_note: "Equipo Strig Systems · Concepción, Chile.",
-    h_ip_btn: "Conversar con el Equipo Técnico",
+    h_ip_btn: "Conversar con el equipo",
 
     // Backing strip
     h_b1: "5 Ingenieros Civiles Aeroespaciales UdeC",
-    h_b2: "CORFO · Adjudicatarios Semilla Inicia",
-    h_b3: "Aceleradora Gearbox UdeC",
-    h_b4: "Lab Aeroespacial UdeC",
+    h_b2: "Corfo · Adjudicatarios Semilla Inicia",
+    h_b3: "Finalistas 7th Gear Challenge - Gearbox UdeC",
+    h_b4: "IncubaUdeC",
+    team_tag: "Equipo fundador",
+    team_title: "El equipo detrás de Strig Systems",
+    team_intro: "Cinco ingenieros civiles aeroespaciales formados en la Universidad de Concepción, detrás del desarrollo de Strig Systems y Athene.",
+    team_role_lead: "Cofundador · Lead técnico",
+    team_role_ops: "Cofundador · Operaciones",
+    team_role_cofounder_f: "Cofundadora",
+    team_role_cofounder: "Cofundador",
+    team_linkedin: "LinkedIn",
+    team_name_tomas: "Tomás Medina",
+    team_name_carlos: "Carlos Gutiérrez",
+    team_name_ananda: "Ananda Glaria",
+    team_name_richard: "Richard Solís",
+    team_name_pablo: "Pablo Alarcón",
+    institutional_title: "Nos apoyan",
+    institutional_incuba: "Incubados en IncubaUdeC · Mentorías con Red de Mentores IU",
+    institutional_corfo: "Financiamiento · Semilla Inicia Corfo",
+
 
     // Footer
-    f_tagline: "Startup chilena de ingeniería aeroespacial y defensa deeptech. Desarrolladores del sistema centinela aéreo autónomo Athene™.",
+    f_tagline: "Empresa chilena de ingeniería aeroespacial y sistemas autónomos. Desarrollamos Athene™, un sistema centinela aéreo para vigilancia forestal nocturna.",
     f_location: "Concepción, Chile · Universidad de Concepción",
     f_copyright: "© 2026 Strig Systems SpA. Todos los derechos reservados.",
     f_terms: "Términos de Servicio B2B",
@@ -58,7 +92,7 @@ const translations = {
     // Modal tabs & headers
     intent_tab_pilot: "Predio Piloto 2026-27",
     intent_tab_briefing: "Briefing Técnico (15 min)",
-    intent_tab_alliances: "NDA & Inversión",
+    intent_tab_alliances: "Colaboración",
     modal_badge: "Validación territorial 2026-27",
     modal_title: "Sumarse al programa de validación 2026-27",
     modal_sub: "Completa los datos de tu entidad para evaluar conjuntamente la factibilidad territorial y requerimientos de validación en terreno.",
@@ -66,15 +100,15 @@ const translations = {
     // Form labels & placeholders
     f_name_label: "Nombre y apellido *",
     f_name_ph: "Ej: Marcela Soto",
-    f_email_label: "Correo corporativo o institucional *",
+    f_email_label: "Correo electrónico *",
     f_email_ph: "nombre@empresa.cl",
-    f_company_label: "Empresa u organización *",
+    f_company_label: "Empresa u organización (opcional)",
     f_company_ph: "Ej: Forestal / Minera / Institución",
     f_phone_label: "Teléfono / WhatsApp (opcional)",
     f_phone_ph: "+56 9 1234 5678",
-    f_region_label: "Región territorial *",
+    f_region_label: "Región del posible piloto (opcional)",
     opt_select_region: "Selecciona una región",
-    f_interest_label: "Tipo de entidad o predio *",
+    f_interest_label: "Tipo de entidad o predio (opcional)",
     opt_select_interest: "Selecciona tipo de interés",
     opt_interest_1: "Empresa forestal (Predio productivo)",
     opt_interest_2: "Organismo público de emergencia / B2G",
@@ -84,21 +118,22 @@ const translations = {
     opt_time_morning: "Mañana (09:00 - 12:00 CLT)",
     opt_time_afternoon: "Tarde (14:00 - 17:00 CLT)",
     opt_time_late: "Fin de tarde (17:00 - 19:00 CLT)",
-    f_alliance_type_label: "Naturaleza de la consulta / NDA *",
+    f_alliance_type_label: "Tipo de colaboración",
     opt_alliance_1: "Fondo de inversión / Venture Capital",
     opt_alliance_nda: "Solicitud de NDA para Evaluación Técnica",
     opt_alliance_2: "Centro de I+D / Cooperación académica",
     opt_alliance_3: "Agencia pública / Municipalidad / B2G",
     f_message_label: "Detalles adicionales o necesidad específica (opcional)",
     f_message_ph: "Describe brevemente el tipo de predio, zona geográfica o consulta técnica...",
-    f_consent_label: "Acepto el tratamiento de mis datos de contacto para la evaluación técnica y declaro conocer los Términos de Servicio y la Política de Privacidad (Ley N° 19.628 / 21.719).",
+    f_consent_label: "Acepto el tratamiento de mis datos para responder a esta consulta y declaro conocer:",
     form_val_error: "Por favor completa todos los campos obligatorios (*) con un formato válido.",
+    form_sending: "Enviando…",
     form_error_msg: "Hubo un problema al enviar la solicitud. Puedes escribirnos directamente a",
     f_submit_btn: "Enviar solicitud de validación",
-    f_privacy: "Tus datos serán tratados bajo estricta confidencialidad técnica (NDA disponible).",
+    f_privacy: "Usaremos estos datos para responder a tu consulta.",
     f_briefing_direct: "O escribe directamente al Technical Lead:",
     success_title: "¡Solicitud Recibida con Éxito!",
-    success_desc: "Hemos recibido los antecedentes de tu entidad. Nuestro equipo de ingeniería aeroespacial revisará la solicitud y se contactará directamente dentro de 24 horas hábiles.",
+    success_desc: "Hemos recibido tu consulta. El equipo se pondrá en contacto para conversar sobre los próximos pasos.",
     success_close_btn: "Cerrar Ventana",
 
     // Dynamic Intent Variations
@@ -106,13 +141,13 @@ const translations = {
     title_pilot: "Sumarse al programa de validación 2026-27",
     sub_pilot: "Completa los datos de tu entidad para evaluar conjuntamente la factibilidad territorial y requerimientos de validación en terreno.",
     badge_briefing: "Equipo Strig Systems · 15 Minutos",
-    title_briefing: "Agendar Briefing Técnico Operacional",
-    sub_briefing: "Coordinación directa de 15 minutos por Google Meet con el equipo de ingeniería para revisar alcance, arquitectura y capacidades.",
-    badge_alliances: "Reserva Técnica & NDA",
-    title_alliances: "Solicitud de NDA & Cooperación Estratégica",
-    sub_alliances: "Canal institucional para fondos de inversión, centros de I+D o entidades interesadas en firmar Acuerdo de Confidencialidad.",
+    title_briefing: "Conversar sobre Athene",
+    sub_briefing: "Una conversación con el equipo sobre el proyecto, su etapa actual y oportunidades de validación.",
+    badge_alliances: "Colaboración e I+D",
+    title_alliances: "Explorar una colaboración",
+    sub_alliances: "Cuéntanos cómo te gustaría colaborar con el desarrollo y la validación de Athene.",
     f_briefing_submit: "Solicitar Briefing Técnico",
-    f_submit_alliances: "Enviar Solicitud de NDA",
+    f_submit_alliances: "Enviar consulta",
     briefing_success_title: "¡Solicitud de Briefing Recibida!",
     briefing_success_desc: "Tomás Medina se contactará contigo para coordinar el enlace de Google Meet según el horario seleccionado.",
 
@@ -122,70 +157,104 @@ const translations = {
     eb_tag: "EXECUTIVE BRIEF 2026-27",
     eb_sub: "Vigilancia Territorial Autónoma Nocturna",
     eb_h1: "Inteligencia Aérea Autónoma para la Brecha Nocturna de Incendios",
-    eb_summary: "Athene aborda la brecha nocturna mediante aeronaves autónomas VTOL (validación inicial sobre plataforma adaptada), inferencia térmica Edge AI a bordo (NVIDIA Jetson) y telemetría táctica FHSS 915 MHz, sustituyendo la exposición terrestre a ciegas y optimizando el despacho aéreo al amanecer.",
+    eb_summary: "Athene es un sistema centinela aéreo en desarrollo experimental (TRL 3 declarado). Estamos definiendo su arquitectura y preparando la integración de una plataforma de pruebas, análisis térmico a bordo y supervisión humana. El programa 2026-27 busca evaluar esa integración.",
     eb_b1_title: "1. El Problema Operacional",
-    eb_b1_p1: "Ventana ciega nocturna: La aviación tripulada combate de día, pero no vuela de noche por normativa DGAC y riesgo de choque con el relieve (CFIT).",
-    eb_b1_p2: "99,7% de origen humano: La casi totalidad de los incendios derivan de acción humana intencional o negligente (Fuente: CONAF).",
-    eb_b1_p3: "Puntos ciegos terrestres: Patrullas en 4x4 cubren < 12% del predio, ciegas ante quebradas y rodales interiores donde se inician fogatas y focos intencionales.",
+    eb_b1_p1: "Brecha nocturna: La observación y la respuesta en oscuridad y relieve complejo presentan restricciones operacionales que deben evaluarse para cada misión.",
+    eb_b1_p2: "Actividad humana: La vigilancia propuesta busca detectar presencia de personas y evaluar su contexto para advertir situaciones que podrían originar un incendio.",
+    eb_b1_p3: "Puntos ciegos terrestres: Las quebradas y los rodales interiores dificultan la observación desde caminos; su cobertura se evaluará en cada predio piloto.",
     eb_b2_title: "2. Solución Tecnológica",
-    eb_b2_p1: "Aeronave VTOL Noctua™: Validación inicial sobre plataforma adaptada; autonomía de diseño 45–60 min y despegue vertical sin pista hacia la plataforma VTOL dedicada.",
-    eb_b2_p2: "Edge AI Zero-Cloud a Bordo: Cómputo local NVIDIA Jetson; detección térmica en segundos sin conexión a internet ni señal celular.",
-    eb_b2_p3: "Disuasión con Autorización Humana: Activación de iluminación táctica de alta potencia siempre autorizada por el operador en tierra (Human-in-the-Loop).",
-    eb_b3_title: "3. Modelo de Impacto Operacional IaaS",
-    eb_b3_p1: "Seguridad del Personal: Cero exposición humana innecesaria en quebradas y caminos aislados en horario nocturno crítico.",
-    eb_b3_p2: "Detección Temprana & Disuasión: Detección de actividad humana a 100 m de altura y disuasión autorizada por el operador antes de la ignición.",
-    eb_b3_p3: "Optimización al Amanecer: Georreferenciación temprana de coordenadas y perímetro que ahorra horas críticas de combate aéreo al inicio del día.",
+    eb_b2_p1: "Plataforma aérea: Validación inicial prevista sobre aeronave comercial adaptada. Noctua es la plataforma VTOL futura; su configuración y prestaciones requieren validación.",
+    eb_b2_p2: "Edge AI a bordo: Procesamiento térmico local proyectado, sin depender de internet para la inferencia. Latencia y precisión pendientes de medición.",
+    eb_b2_p3: "Supervisión humana: Imágenes y alertas para que un operador evalúe el contexto y apoye decisiones de respuesta.",
+    eb_b3_title: "3. Impacto que buscamos validar",
+    eb_b3_p1: "Seguridad del personal: Objetivo de reducir exposición en quebradas y caminos aislados mediante información previa para el equipo de respuesta.",
+    eb_b3_p2: "Observación nocturna: Evaluar la detección de presencia humana y anomalías térmicas para apoyar la vigilancia preventiva y la detección temprana de incendios.",
+    eb_b3_p3: "Apoyo al despacho: Georreferenciación e información de contexto proyectadas para apoyar decisiones de respuesta junto a un socio piloto.",
     eb_b4_title: "4. Programa de Validación 2026-27",
-    eb_b4_p1: "Estado Actual TRL 3: Proyecto Semilla Inicia CORFO, apoyo UdeC y demostración técnica programada en Gearbox (Enero 2027).",
-    eb_b4_p2: "Campaña en Predio Piloto: 4 fases metodológicas (Levantamiento, Calibración, Vigilancia Nocturna, Auditoría Operacional).",
-    eb_b4_p3: "Gobernanza & Contacto: Modelos y software bajo titularidad exclusiva de Strig Systems SpA • Tomás Medina (Technical Lead) | contacto@strigsystems.tech"
+    eb_b4_p1: "Estado actual TRL 3: Proyecto Semilla Inicia Corfo, apoyo UdeC y demostración técnica prevista en Gearbox para enero de 2027.",
+    eb_b4_p2: "Próximos pasos: Integración experimental y primeras pruebas para evaluar el funcionamiento conjunto del sistema.",
+    eb_b4_p3: "Contacto: Equipo Strig Systems · Concepción, Chile · contacto@strigsystems.tech"
   },
 
   en: {
     // Page metadata & Header
+    h_company: "Aerospace engineering and autonomous systems · Chile",
     h_page_title: "Strig Systems | Athene — Autonomous Aerial Intelligence",
     lang_code: "ES",
     h_nav_cta: "Request Briefing",
 
     // Hero Section
-    h_status: "TRL 3 · Prototype under development · Technical demo Jan 2027",
-    h_badge: "CORFO Semilla Inicia Grant • UdeC Aerospace Lab • Gearbox",
-    h_eyebrow_tag: "AUTONOMOUS AERIAL SENTINEL SYSTEM",
-    h_title_1: "Wildfires move fast.",
+    h_visual_tag: "CONCEPTUAL ARCHITECTURE",
+    h_visual_title: "One system. Three connected functions.",
+    h_visual_caption: "Conceptual architecture with a generic aircraft and enlarged components. Evidence is enriched during observation. It does not depict the Noctua design or measured results.",
+    h_visual_boundary: "VTOL aircraft · onboard camera and computer",
+    h_visual_delivery: "Images and notices to the local supervision station",
+    h_flow_1: "Aircraft and camera",
+    h_flow_2: "Onboard inference",
+    h_flow_3: "Human assessment",
+    h_stage_label: "PROJECT STATUS",
+    h_stage_now: "Today · TRL 3",
+    h_stage_now_desc: "Architecture and integration preparation.",
+    h_stage_next: "Next · 2027 demo",
+    h_stage_next_desc: "Experimental integration planned.",
+    h_stage_future: "Vision · Noctua / Nest",
+    h_stage_future_desc: "Proposed aircraft and ground station.",
+    h_capabilities_label: "ARCHITECTURE UNDER DEVELOPMENT",
+    h_status: "TRL 3 · Prototype under development · Demo planned Jan 2027",
+    h_badge: "Corfo Semilla Inicia Grant • IncubaUdeC • 7th Gear Challenge Finalists - Gearbox UdeC",
+    h_eyebrow_tag: "AERIAL SURVEILLANCE FOR THE NIGHTTIME GAP",
+    h_title_1: "Risks move fast.",
     h_title_2: "We see them coming.",
-    h_desc: "Autonomous aerial sentinel platform with onboard Edge AI thermal inference. Designed to close the nocturnal gap by detecting precursors and unauthorized human activity before ignition.",
-    h_cta_pilot: "Request Dossier Access & Pilot Validation",
-    h_cta_brief: "Executive Briefing (PDF)",
+    h_desc: "An autonomous aerial sentinel platform designed to reduce the nighttime forestry surveillance gap through onboard thermal analysis and human oversight of alerts.",
+    h_cta_pilot: "Discuss a validation pilot",
+    h_cta_brief: "View executive brief",
 
     // 3 Capability Pillars
     h_p1_tag: "[AEROSPACE // 01]",
-    h_p1_title: "Autonomous VTOL Aerial Platform",
-    h_p1_desc: "Runway-free vertical takeoff and high-efficiency fixed-wing cruising. Engineered for continuous nocturnal patrol over ravines and rugged forestry terrain.",
+    h_p1_title: "Experimental aerial platform",
+    h_p1_desc: "Initial validation is planned on an adapted commercial aircraft. Noctua is the proposed fixed-wing VTOL platform for the future system.",
 
-    h_p2_tag: "[ZERO-CLOUD // 02]",
-    h_p2_title: "Onboard Edge AI Inference",
-    h_p2_desc: "Local LWIR radiometric thermal computer vision processed at the edge. Threat classification in microseconds without relying on satellite or 4G/5G connectivity.",
+    h_p2_tag: "[ANALYSIS // 02]",
+    h_p2_title: "Onboard thermal analysis",
+    h_p2_desc: "Onboard thermal analysis to detect the presence of people and signs of fire at night. Accuracy and response times will be assessed during testing.",
 
-    h_p3_tag: "[HITL // 03]",
-    h_p3_title: "Human-in-the-Loop Doctrine",
-    h_p3_desc: "Instant geo-referenced telemetry dispatched to ground command. Active deterrence via high-intensity tactical illumination strictly authorized by a human operator.",
+    h_p3_tag: "[SUPERVISION // 03]",
+    h_p3_title: "Human oversight of alerts",
+    h_p3_desc: "The operator reviews images and alerts to assess human activity that could pose a fire risk and support an early response.",
 
     // Technical Specifications & Pilot Card
-    h_ip_tag: "◈ TECHNICAL SPECIFICATIONS & PILOT TERRAIN",
+    h_ip_tag: "TECHNICAL CONVERSATION",
     h_ip_protocol: "[2026-27 VALIDATION]",
-    h_ip_title: "Interested in technical architecture details or evaluating deployment on your terrain?",
-    h_ip_body: "We share detailed flight specifications, territorial coverage models, and operational validation plans with forestry protection teams, emergency agencies, and strategic partners. Contact us to schedule a direct technical briefing or evaluate incorporating your terrain into the 2026-27 pilot program.",
+    h_ip_title: "Would you like to explore field validation?",
+    h_ip_body: "Let’s discuss your forestry surveillance needs and how they could inform Athene testing. We are preparing experimental system integration.",
     h_ip_footer_note: "Strig Systems Team · Concepción, Chile.",
-    h_ip_btn: "Connect with Engineering Team",
+    h_ip_btn: "Talk with the team",
 
     // Backing strip
     h_b1: "5 UdeC Aerospace Engineers",
-    h_b2: "CORFO · Semilla Inicia Grant Awardees",
-    h_b3: "Gearbox UdeC Accelerator",
-    h_b4: "UdeC Aerospace Lab",
+    h_b2: "Corfo · Semilla Inicia Grant Awardees",
+    h_b3: "7th Gear Challenge Finalists - Gearbox UdeC",
+    h_b4: "IncubaUdeC",
+    team_tag: "Founding team",
+    team_title: "The team behind Strig Systems",
+    team_intro: "Five aerospace engineers trained at Universidad de Concepción, developing Strig Systems and Athene.",
+    team_role_lead: "Co-founder · Technical lead",
+    team_role_ops: "Co-founder · Operations",
+    team_role_cofounder_f: "Co-founder",
+    team_role_cofounder: "Co-founder",
+    team_linkedin: "LinkedIn",
+    team_name_tomas: "Tomás Medina",
+    team_name_carlos: "Carlos Gutiérrez",
+    team_name_ananda: "Ananda Glaria",
+    team_name_richard: "Richard Solís",
+    team_name_pablo: "Pablo Alarcón",
+    institutional_title: "Supported by",
+    institutional_incuba: "Incubated at IncubaUdeC · Mentoring by Red de Mentores IU",
+    institutional_corfo: "Funding · Corfo Semilla Inicia",
+
 
     // Footer
-    f_tagline: "Chilean deeptech aerospace & defense startup. Creators of the Athene™ autonomous aerial sentinel system.",
+    f_tagline: "Chilean aerospace engineering and autonomous systems company. We develop Athene™, an aerial sentinel system for nighttime forest monitoring.",
     f_location: "Concepción, Chile · Universidad de Concepción",
     f_copyright: "© 2026 Strig Systems SpA. All rights reserved.",
     f_terms: "B2B Terms of Service",
@@ -194,7 +263,7 @@ const translations = {
     // Modal tabs & headers
     intent_tab_pilot: "Pilot Property 2026-27",
     intent_tab_briefing: "Technical Briefing (15 min)",
-    intent_tab_alliances: "NDA & Investment",
+    intent_tab_alliances: "Collaboration",
     modal_badge: "Territorial Validation 2026-27",
     modal_title: "Join the 2026-27 Validation Program",
     modal_sub: "Submit your organization's details to evaluate joint territorial feasibility and field validation requirements.",
@@ -202,15 +271,15 @@ const translations = {
     // Form labels & placeholders
     f_name_label: "Full Name *",
     f_name_ph: "E.g.: Sarah Jenkins",
-    f_email_label: "Corporate or Institutional Email *",
+    f_email_label: "Email address *",
     f_email_ph: "name@company.com",
-    f_company_label: "Company or Organization *",
+    f_company_label: "Company or organization (optional)",
     f_company_ph: "E.g.: Forestry Operator / Mining / Government",
     f_phone_label: "Phone / WhatsApp (optional)",
     f_phone_ph: "+56 9 1234 5678",
-    f_region_label: "Territorial Region *",
+    f_region_label: "Potential pilot region (optional)",
     opt_select_region: "Select a region",
-    f_interest_label: "Entity or Property Type *",
+    f_interest_label: "Organization or property type (optional)",
     opt_select_interest: "Select type of interest",
     opt_interest_1: "Forestry Enterprise (Productive Land)",
     opt_interest_2: "Public Emergency Agency / B2G",
@@ -220,21 +289,22 @@ const translations = {
     opt_time_morning: "Morning (09:00 - 12:00 CLT)",
     opt_time_afternoon: "Afternoon (14:00 - 17:00 CLT)",
     opt_time_late: "Late Afternoon (17:00 - 19:00 CLT)",
-    f_alliance_type_label: "Nature of Inquiry / NDA *",
+    f_alliance_type_label: "Collaboration type",
     opt_alliance_1: "Venture Capital / Investment Fund",
     opt_alliance_nda: "NDA Request for Technical Evaluation",
     opt_alliance_2: "R&D Center / Academic Cooperation",
     opt_alliance_3: "Public Agency / Municipality / B2G",
     f_message_label: "Additional Details or Specific Requirements (optional)",
     f_message_ph: "Briefly describe your land type, geographic zone, or technical inquiry...",
-    f_consent_label: "I agree to the processing of my contact information for technical evaluation and acknowledge the Terms of Service and Privacy Policy (Law No. 19,628 / 21,719).",
+    f_consent_label: "I consent to the processing of my details to respond to this enquiry and acknowledge:",
     form_val_error: "Please complete all required fields (*) with a valid format.",
+    form_sending: "Sending…",
     form_error_msg: "An error occurred while submitting. You can write directly to",
     f_submit_btn: "Submit Validation Request",
-    f_privacy: "Your data is handled under strict technical confidentiality (NDA available).",
+    f_privacy: "We will use these details to respond to your enquiry.",
     f_briefing_direct: "Or reach the Technical Lead directly:",
     success_title: "Application Received Successfully!",
-    success_desc: "We have received your entity's submission. Our aerospace engineering team will review requirements and reach out within 24 business hours.",
+    success_desc: "We have received your enquiry. The team will contact you to discuss next steps.",
     success_close_btn: "Close Window",
 
     // Dynamic Intent Variations
@@ -242,13 +312,13 @@ const translations = {
     title_pilot: "Join the 2026-27 Validation Program",
     sub_pilot: "Submit your organization's details to evaluate joint territorial feasibility and field validation requirements.",
     badge_briefing: "Strig Systems Team · 15 Minutes",
-    title_briefing: "Schedule Operational Technical Briefing",
-    sub_briefing: "Direct 15-minute Google Meet call with the engineering team to review system scope, architecture, and capabilities.",
-    badge_alliances: "Technical Reserve & NDA",
-    title_alliances: "NDA Request & Strategic Cooperation",
-    sub_alliances: "Institutional channel for venture funds, R&D centers, or entities seeking to execute a Non-Disclosure Agreement.",
+    title_briefing: "Discuss Athene",
+    sub_briefing: "A conversation with the team about the project, its current stage and validation opportunities.",
+    badge_alliances: "Collaboration and R&D",
+    title_alliances: "Explore a collaboration",
+    sub_alliances: "Tell us how you would like to contribute to Athene development and validation.",
     f_briefing_submit: "Request Technical Briefing",
-    f_submit_alliances: "Submit NDA Request",
+    f_submit_alliances: "Send enquiry",
     briefing_success_title: "Briefing Request Received!",
     briefing_success_desc: "Tomás Medina will reach out to coordinate the Google Meet link according to your selected time slot.",
 
@@ -258,23 +328,23 @@ const translations = {
     eb_tag: "EXECUTIVE BRIEF 2026-27",
     eb_sub: "Autonomous Nocturnal Aerial Surveillance",
     eb_h1: "Autonomous Aerial Intelligence for the Nocturnal Wildfire Gap",
-    eb_summary: "Athene tackles the nocturnal gap utilizing autonomous VTOL aircraft (initial validation on an adapted experimental platform), onboard Edge AI thermal inference (NVIDIA Jetson), and tactical FHSS 915 MHz telemetry, replacing hazardous unguided night ground patrols and optimizing dawn aerial water-bombing dispatch.",
+    eb_summary: "Athene is an aerial sentinel system under experimental development (declared TRL 3). We are defining its architecture and preparing the integration of a test platform, onboard thermal analysis and human supervision. The 2026-27 program aims to assess that integration.",
     eb_b1_title: "1. Operational Problem",
-    eb_b1_p1: "Nocturnal blind gap: Manned aviation operates during daylight, but cannot fly at night due to DGAC regulations and controlled flight into terrain (CFIT) risks.",
-    eb_b1_p2: "99.7% human origin: Almost all forest fires stem from intentional or negligent human activity (Source: CONAF historical records).",
-    eb_b1_p3: "Ground blind spots: Ground 4x4 patrols cover < 12% of forestry acreage, completely blind to ravines and deep interior stands where fires are initiated.",
+    eb_b1_p1: "Nocturnal gap: Observation and response in darkness and complex terrain face operational constraints that must be assessed for each mission.",
+    eb_b1_p2: "Human activity: The proposed surveillance aims to detect the presence of people and assess context to flag situations that could lead to a fire.",
+    eb_b1_p3: "Ground blind spots: Ravines and interior stands limit observation from roads; coverage will be assessed at each pilot site.",
     eb_b2_title: "2. Technological Solution",
-    eb_b2_p1: "Noctua™ VTOL Aircraft: Initial validation on adapted testbed; 45–60 min design endurance and runway-free vertical takeoff transitioning into dedicated VTOL platform.",
-    eb_b2_p2: "Onboard Zero-Cloud Edge AI: NVIDIA Jetson edge compute; instant thermal threat classification without cellular or internet dependency.",
-    eb_b2_p3: "Authorized Deterrence: High-intensity tactical illumination strictly activated upon human operator ground authorization (Human-in-the-Loop).",
-    eb_b3_title: "3. Operational Impact & IaaS Model",
-    eb_b3_p1: "Personnel Safety: Zero unnecessary ground firefighter exposure in isolated ravines during critical night hours.",
-    eb_b3_p2: "Early Detection & Deterrence: Detection of human activity at 100 m AGL and operator-authorized deterrence prior to ignition.",
-    eb_b3_p3: "Dawn Aerial Dispatch: Early geo-referenced thermal perimeter dispatch, saving critical hours of aerial water-bombing flight time at sunrise.",
+    eb_b2_p1: "Aerial platform: Initial validation is planned on an adapted commercial aircraft. Noctua is the future VTOL platform; its configuration and performance require validation.",
+    eb_b2_p2: "Onboard Edge AI: Proposed local thermal processing, with inference independent of internet access. Latency and accuracy await measurement.",
+    eb_b2_p3: "Human supervision: Images and alerts for an operator to assess context and support response decisions.",
+    eb_b3_title: "3. Impact we aim to validate",
+    eb_b3_p1: "Personnel safety: Aim to reduce exposure in ravines and isolated roads through advance information for response teams.",
+    eb_b3_p2: "Nighttime observation: Assess the detection of human presence and thermal anomalies to support preventive surveillance and early fire detection.",
+    eb_b3_p3: "Dispatch support: Proposed georeferencing and contextual information to support response decisions with a pilot partner.",
     eb_b4_title: "4. Validation Program 2026-27",
-    eb_b4_p1: "Current TRL 3 Status: Supported by CORFO Semilla Inicia grant, UdeC Aerospace Lab, with technical demo day in Gearbox (January 2027).",
-    eb_b4_p2: "Private Pilot Campaign: 4 methodological phases (Surveying, Sensor Calibration, Nocturnal Surveillance, Joint Audit).",
-    eb_b4_p3: "Governance & Contact: Proprietary models and software owned exclusively by Strig Systems SpA • Tomás Medina (Technical Lead) | contacto@strigsystems.tech"
+    eb_b4_p1: "Current TRL 3 status: Corfo Semilla Inicia project, UdeC support and a technical demonstration planned at Gearbox for January 2027.",
+    eb_b4_p2: "Next steps: Experimental integration and initial tests to assess how the system works together.",
+    eb_b4_p3: "Contact: Strig Systems team · Concepción, Chile · contacto@strigsystems.tech"
   }
 };
 
@@ -362,6 +432,7 @@ function initContactModal() {
 
   let currentIntent = 'pilot';
   let lastActiveElement = null;
+  let focusFrame = null;
 
   function getDict() {
     const lang = document.documentElement.getAttribute('data-lang') || 'es';
@@ -375,7 +446,7 @@ function initContactModal() {
     intentPills.forEach(pill => {
       const isTarget = pill.getAttribute('data-intent-target') === intent;
       pill.classList.toggle('active', isTarget);
-      pill.setAttribute('aria-selected', isTarget ? 'true' : 'false');
+      pill.setAttribute('aria-pressed', isTarget ? 'true' : 'false');
     });
 
     const pilotFields = modal.querySelectorAll('.intent-field-pilot');
@@ -439,11 +510,21 @@ function initContactModal() {
 
     const firstInput = modal.querySelector('#contact-name');
     if (firstInput) {
-      setTimeout(() => firstInput.focus(), 120);
+      cancelAnimationFrame(focusFrame);
+      let remainingFrames = 20;
+      const focusWhenVisible = () => {
+        if (!modal.classList.contains('active') || modal.contains(document.activeElement)) return;
+        firstInput.focus({ preventScroll: true });
+        if (document.activeElement !== firstInput && remainingFrames-- > 0) {
+          focusFrame = requestAnimationFrame(focusWhenVisible);
+        }
+      };
+      focusFrame = requestAnimationFrame(focusWhenVisible);
     }
   }
 
   function closeModal() {
+    cancelAnimationFrame(focusFrame);
     modal.classList.remove('active');
     modal.setAttribute('aria-hidden', 'true');
     document.body.classList.remove('modal-open');
@@ -472,7 +553,7 @@ function initContactModal() {
 
   modal.addEventListener('keydown', (e) => {
     if (e.key === 'Tab') {
-      const focusables = modal.querySelectorAll('button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])');
+      const focusables = [...modal.querySelectorAll('button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])')].filter(el => el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden');
       if (!focusables.length) return;
       const first = focusables[0];
       const last = focusables[focusables.length - 1];
@@ -522,7 +603,7 @@ function initContactModal() {
       let isValid = true;
 
       // Base fields validation
-      [name, email, company].forEach(input => {
+      [name, email].forEach(input => {
         if (!input || !input.value.trim()) {
           if (input) input.classList.add('input-invalid');
           isValid = false;
@@ -536,18 +617,6 @@ function initContactModal() {
       if (email && email.value && !emailRegex.test(email.value.trim())) {
         email.classList.add('input-invalid');
         isValid = false;
-      }
-
-      // Intent-specific validation
-      if (currentIntent === 'pilot') {
-        [region, interest].forEach(sel => {
-          if (!sel || !sel.value) {
-            if (sel) sel.classList.add('input-invalid');
-            isValid = false;
-          } else {
-            if (sel) sel.classList.remove('input-invalid');
-          }
-        });
       }
 
       // Consent validation
@@ -565,13 +634,14 @@ function initContactModal() {
       }
 
       // Dynamic subject
+      const senderLabel = company.value.trim() || name.value.trim();
       let dynamicSubject = '';
       if (currentIntent === 'briefing') {
         dynamicSubject = `Solicitud Briefing Técnico: ${name.value.trim()} (${company.value.trim()}) - Strig Systems`;
       } else if (currentIntent === 'alliances') {
-        dynamicSubject = `Solicitud NDA / Inversión: ${company.value.trim()} - Strig Systems`;
+        dynamicSubject = `Consulta de colaboración: ${senderLabel} - Strig Systems`;
       } else {
-        dynamicSubject = `Nueva Postulación Piloto: ${company.value.trim()} - Strig Systems`;
+        dynamicSubject = `Consulta sobre piloto: ${senderLabel} - Strig Systems`;
       }
 
       const payload = {
@@ -594,7 +664,7 @@ function initContactModal() {
       if (submitBtn) submitBtn.disabled = true;
       if (btnSpinner) btnSpinner.style.display = 'inline-block';
       if (arrowIcon) arrowIcon.style.display = 'none';
-      if (btnText) btnText.textContent = "Enviando...";
+      if (btnText) btnText.textContent = dict.form_sending;
 
       try {
         const response = await fetch('https://formsubmit.co/ajax/contacto@strigsystems.tech', {
@@ -673,6 +743,7 @@ function initExecutiveBriefModal() {
   const printBtn = document.getElementById('brief-print-btn');
 
   let lastActiveElement = null;
+  let focusFrame = null;
 
   function openModal() {
     lastActiveElement = document.activeElement;
@@ -686,11 +757,21 @@ function initExecutiveBriefModal() {
 
     const closeBtn = modal.querySelector('[data-close-modal]');
     if (closeBtn) {
-      setTimeout(() => closeBtn.focus(), 120);
+      cancelAnimationFrame(focusFrame);
+      let remainingFrames = 20;
+      const focusWhenVisible = () => {
+        if (!modal.classList.contains('active') || modal.contains(document.activeElement)) return;
+        closeBtn.focus({ preventScroll: true });
+        if (document.activeElement !== closeBtn && remainingFrames-- > 0) {
+          focusFrame = requestAnimationFrame(focusWhenVisible);
+        }
+      };
+      focusFrame = requestAnimationFrame(focusWhenVisible);
     }
   }
 
   function closeModal() {
+    cancelAnimationFrame(focusFrame);
     modal.classList.remove('active');
     modal.setAttribute('aria-hidden', 'true');
     document.body.classList.remove('modal-open');
@@ -718,7 +799,7 @@ function initExecutiveBriefModal() {
 
   modal.addEventListener('keydown', (e) => {
     if (e.key === 'Tab') {
-      const focusables = modal.querySelectorAll('button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])');
+      const focusables = [...modal.querySelectorAll('button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])')].filter(el => el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden');
       if (!focusables.length) return;
       const first = focusables[0];
       const last = focusables[focusables.length - 1];

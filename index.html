@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#07090e">
   <title data-i18n="h_page_title">Strig Systems | Athene — Inteligencia Aérea Autónoma</title>
-  <meta name="description" content="Strig Systems desarrolla Athene: plataforma centinela de vigilancia territorial autónoma con drones e inferencia Edge AI a bordo para la detección temprana de incendios forestales en la brecha nocturna.">
+  <meta name="description" content="Strig Systems desarrolla Athene, un sistema centinela aéreo en prueba de concepto (TRL 3). Programa de validación experimental 2026-27 para protección forestal.">
   <meta name="keywords" content="Strig Systems, Athene, Drones VTOL, Incendios Forestales, Edge AI, Vigilancia Nocturna, CORFO, UdeC">
   <meta name="author" content="Strig Systems SpA">
   <link rel="canonical" href="https://strigsystems.tech/">
@@ -15,26 +15,27 @@
   <meta property="og:site_name" content="Strig Systems">
   <meta property="og:url" content="https://strigsystems.tech/">
   <meta property="og:title" content="Strig Systems | Athene — Inteligencia Aérea Autónoma">
-  <meta property="og:description" content="Vigilancia aérea nocturna con Edge AI para detección de actividad humana y disuasión temprana de incendios forestales.">
-  <meta property="og:image" content="https://strigsystems.tech/assets/img/tech/vtol_payload.png">
+  <meta property="og:description" content="Athene: sistema centinela aéreo en desarrollo (TRL 3). Arquitectura conceptual y programa de validación experimental para protección forestal.">
+  <meta property="og:image" content="https://strigsystems.tech/assets/img/brand/strig-social.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Strig Systems · Athene · TRL 3 · Prototipo en desarrollo">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Strig Systems | Athene — Inteligencia Aérea Autónoma">
-  <meta name="twitter:description" content="Vigilancia aérea nocturna con Edge AI para detección de actividad humana y disuasión temprana de incendios forestales.">
-  <meta name="twitter:image" content="https://strigsystems.tech/assets/img/tech/vtol_payload.png">
+  <meta name="twitter:description" content="Athene: sistema centinela aéreo en desarrollo (TRL 3). Arquitectura conceptual y programa de validación experimental para protección forestal.">
+  <meta name="twitter:image" content="https://strigsystems.tech/assets/img/brand/strig-social.png">
 
   <!-- Favicon SVG -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="assets/img/brand/web/favicon.svg">
 
   <!-- Google Fonts: Space Grotesk, Outfit & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=2.0.3">
+  <link rel="stylesheet" href="styles.css?v=2.2.0">
 
   <!-- Umami Analytics (Privacy-First & Cookie-less) -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="aa979513-3790-4797-99e5-03d4a57d74ee"></script>
@@ -47,8 +48,7 @@
     "name": "Strig Systems",
     "legalName": "Strig Systems SpA",
     "url": "https://strigsystems.tech/",
-    "logo": "https://strigsystems.tech/assets/img/tech/vtol_payload.png",
-    "description": "Startup chilena de ingeniería aeroespacial y defensa deeptech. Desarrolladores del sistema centinela aéreo autónomo Athene.",
+    "description": "Empresa chilena de ingeniería aeroespacial y sistemas autónomos. Desarrollamos Athene, un sistema centinela aéreo para vigilancia forestal nocturna.",
     "foundingDate": "2025",
     "address": {
       "@type": "PostalAddress",
@@ -81,11 +81,9 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="#" class="brand" aria-label="Strig Systems Inicio">
-        <span class="brand-shield" aria-hidden="true">◈</span>
-        <span class="brand-name">STRIG<span class="accent-text">SYSTEMS</span></span>
-        <span class="brand-product-badge">
-          <span class="brand-product-dot" aria-hidden="true"></span>
-          <span class="brand-product-name">ATHENE</span>
+        <img class="brand-logo" src="assets/img/brand/web/strig-lockup-light.svg" width="208" height="60" alt="Strig Systems" decoding="async">
+        <span class="brand-product-badge brand-product-identity">
+          <img class="product-logo product-logo-badge" src="assets/img/brand/web/athene-lockup-light.svg" width="224" height="32" alt="Athene" decoding="async">
         </span>
       </a>
 
@@ -105,44 +103,42 @@
   <main class="holding-main">
     <div class="container">
       <!-- HERO AREA -->
-      <section class="hero-section" style="padding: 2.2rem 0 3.2rem;">
-        <div class="hero-content" style="margin: 0 auto;">
+      <section class="hero-section holding-hero">
+        <div class="hero-content">
           <!-- Unified Institutional & Engineering Telemetry HUD Bar -->
           <div class="hero-credential-bar glass-panel" role="region" aria-label="Credenciales y estado técnico del proyecto">
             <div class="cred-segment">
               <span class="status-pulse-dot" aria-hidden="true"></span>
-              <span class="cred-label" data-i18n="h_status">TRL 3 · Prototipo en desarrollo · Demo técnica ene 2027</span>
+              <span class="cred-label" data-i18n="h_status">TRL 3 · Prototipo en desarrollo · Demo prevista ene 2027</span>
             </div>
             <span class="cred-separator" aria-hidden="true">│</span>
             <div class="cred-segment">
               <span class="cred-sub-mark" aria-hidden="true">◈</span>
-              <span class="cred-label" data-i18n="h_badge">Semilla Inicia CORFO • Lab Aeroespacial UdeC • Gearbox</span>
+              <span class="cred-label" data-i18n="h_badge">Semilla Inicia Corfo • IncubaUdeC • Finalistas 7th Gear Challenge - Gearbox UdeC</span>
             </div>
           </div>
 
           <!-- Dedicated Athene Product Eyebrow -->
           <div class="hero-product-eyebrow">
-            <span class="eyebrow-tactical-mark" aria-hidden="true">◈</span>
-            <span class="eyebrow-product-name">ATHENE<span class="eyebrow-tm">™</span></span>
+            <img class="product-logo" src="assets/img/brand/web/athene-lockup-light.svg" width="224" height="32" alt="Athene" decoding="async"><span class="eyebrow-tm" aria-hidden="true">™</span>
             <span class="eyebrow-sep" aria-hidden="true">│</span>
-            <span class="eyebrow-tagline" data-i18n="h_eyebrow_tag">SISTEMA CENTINELA AÉREO AUTÓNOMO</span>
+            <span class="eyebrow-tagline" data-i18n="h_eyebrow_tag">VIGILANCIA AÉREA PARA LA BRECHA NOCTURNA</span>
           </div>
 
           <!-- Hero Headline with Metallic Aerospace Gradient -->
+          <p class="hero-company" data-i18n="h_company">Ingeniería aeroespacial y sistemas autónomos · Chile</p>
           <h1 class="hero-title">
             <span data-i18n="h_title_1">Los riesgos se mueven rápido.</span><br>
             <span class="gradient-text" data-i18n="h_title_2">Nosotros los vemos venir.</span>
           </h1>
 
           <!-- Hero Subtitle -->
-          <p class="hero-subtitle" data-i18n="h_desc">
-            Plataforma centinela aérea autónoma con inferencia térmica Edge AI a bordo. Diseñada para cubrir la brecha nocturna de incendios forestales mediante la detección temprana de precursores y actividad humana no autorizada antes de la ignición.
-          </p>
+          <p class="hero-subtitle" data-i18n="h_desc">Plataforma centinela aérea autónoma diseñada para reducir la brecha nocturna de vigilancia forestal mediante análisis térmico a bordo y supervisión humana de las alertas.</p>
 
           <!-- Hero Actions -->
           <div class="hero-actions">
             <button type="button" class="btn-primary btn-large" data-open-modal="contact-modal" data-intent="pilot">
-              <span data-i18n="h_cta_pilot">Solicitar Acceso a Dossier & Validación Piloto</span>
+              <span data-i18n="h_cta_pilot">Conversar sobre un piloto</span>
               <span class="arrow-icon" aria-hidden="true">→</span>
             </button>
             <button type="button" class="btn-ghost btn-large btn-hero-brief" data-open-modal="brief-modal">
@@ -151,12 +147,38 @@
                 <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
                 <rect x="6" y="14" width="12" height="8"></rect>
               </svg>
-              <span data-i18n="h_cta_brief">Executive Briefing (PDF)</span>
+              <span data-i18n="h_cta_brief">Ver resumen ejecutivo</span>
             </button>
           </div>
         </div>
+        <figure class="concept-panel glass-panel">
+          <div class="concept-panel-heading">
+            <span class="concept-kind" data-i18n="h_visual_tag">ARQUITECTURA CONCEPTUAL</span>
+            <span class="concept-reference" aria-hidden="true">ATHENE // 01</span>
+          </div>
+          <h2 class="concept-title" data-i18n="h_visual_title">Un sistema. Tres funciones conectadas.</h2>
+          <p class="concept-boundary" data-i18n="h_visual_boundary">Aeronave VTOL · cámara y computador a bordo</p>
+          <img class="concept-diagram" src="assets/img/tech/athene-architecture.svg" width="720" height="460" alt="" decoding="async">
+          <ol class="concept-flow">
+            <li><span class="concept-step" aria-hidden="true">01</span><span data-i18n="h_flow_1">Aeronave y cámara</span></li>
+            <li><span class="concept-step" aria-hidden="true">02</span><span data-i18n="h_flow_2">Inferencia a bordo</span></li>
+            <li><span class="concept-step" aria-hidden="true">03</span><span data-i18n="h_flow_3">Evaluación humana</span></li>
+          </ol>
+          <p class="concept-delivery" data-i18n="h_visual_delivery">Imágenes y avisos al puesto de supervisión local</p>
+          <figcaption data-i18n="h_visual_caption">Arquitectura conceptual con aeronave genérica y componentes ampliados. La evidencia se enriquece durante la observación. No representa el diseño de Noctua ni resultados medidos.</figcaption>
+        </figure>
       </section>
 
+      <section class="project-stages" aria-labelledby="project-stages-title">
+        <h2 id="project-stages-title" class="section-kicker" data-i18n="h_stage_label">ESTADO DEL PROYECTO</h2>
+        <ol class="project-stages-grid">
+          <li><h3 data-i18n="h_stage_now">Hoy · TRL 3</h3><p data-i18n="h_stage_now_desc">Arquitectura y preparación de integración.</p></li>
+          <li><h3 data-i18n="h_stage_next">Próximo · Demo 2027</h3><p data-i18n="h_stage_next_desc">Integración experimental prevista.</p></li>
+          <li><h3 data-i18n="h_stage_future">Visión · Noctua / Nest</h3><p data-i18n="h_stage_future_desc">Plataforma aérea y estación proyectadas.</p></li>
+        </ol>
+      </section>
+
+      <h2 class="section-kicker" data-i18n="h_capabilities_label">ARQUITECTURA EN DESARROLLO</h2>
       <!-- 3 FUNCTIONAL CAPABILITY PILLARS -->
       <div class="holding-pillars-grid">
         <div class="holding-pillar-card glass-panel">
@@ -171,15 +193,13 @@
               <path d="M2 12l10 5 10-5"></path>
             </svg>
           </div>
-          <h2 class="pillar-title" data-i18n="h_p1_title">Plataforma Aérea VTOL Autónoma</h2>
-          <p class="pillar-desc" data-i18n="h_p1_desc">
-            Aeronave de despegue vertical sin pista y crucero eficiente de ala fija. Diseñada para patrullaje nocturno continuo sobre quebradas y topografía forestal compleja.
-          </p>
+          <h3 class="pillar-title" data-i18n="h_p1_title">Plataforma aérea experimental</h3>
+          <p class="pillar-desc" data-i18n="h_p1_desc">Validación inicial prevista sobre una aeronave comercial adaptada. Noctua es la plataforma VTOL de ala fija proyectada para la evolución del sistema.</p>
         </div>
 
         <div class="holding-pillar-card glass-panel">
           <div class="pillar-card-header">
-            <span class="pillar-tag" data-i18n="h_p2_tag">[ZERO-CLOUD // 02]</span>
+            <span class="pillar-tag" data-i18n="h_p2_tag">[ANÁLISIS // 02]</span>
             <span class="pillar-status-dot" aria-hidden="true"></span>
           </div>
           <div class="pillar-icon-wrap" aria-hidden="true">
@@ -196,15 +216,13 @@
               <path d="M1 14h3"></path>
             </svg>
           </div>
-          <h2 class="pillar-title" data-i18n="h_p2_title">Inferencia Edge AI a Bordo</h2>
-          <p class="pillar-desc" data-i18n="h_p2_desc">
-            Cómputo local de visión térmica radiométrica LWIR a bordo. Detección y clasificación de precursores en microsegundos sin requerir internet satelital ni 4G/5G.
-          </p>
+          <h3 class="pillar-title" data-i18n="h_p2_title">Análisis térmico a bordo</h3>
+          <p class="pillar-desc" data-i18n="h_p2_desc">Análisis térmico a bordo para detectar presencia de personas e indicios de incendio durante la noche. La precisión y los tiempos de respuesta se evaluarán en pruebas.</p>
         </div>
 
         <div class="holding-pillar-card glass-panel">
           <div class="pillar-card-header">
-            <span class="pillar-tag" data-i18n="h_p3_tag">[HITL // 03]</span>
+            <span class="pillar-tag" data-i18n="h_p3_tag">[SUPERVISIÓN // 03]</span>
             <span class="pillar-status-dot" aria-hidden="true"></span>
           </div>
           <div class="pillar-icon-wrap" aria-hidden="true">
@@ -217,48 +235,65 @@
               <path d="M17 11h-1"></path>
             </svg>
           </div>
-          <h2 class="pillar-title" data-i18n="h_p3_title">Doctrina Human-in-the-Loop</h2>
-          <p class="pillar-desc" data-i18n="h_p3_desc">
-            Alerta inmediata y georreferenciada a la estación de mando. Disuasión activa mediante iluminación táctica de alta intensidad autorizada exclusivamente por el operador humano.
-          </p>
+          <h3 class="pillar-title" data-i18n="h_p3_title">Supervisión humana de alertas</h3>
+          <p class="pillar-desc" data-i18n="h_p3_desc">El operador revisa imágenes y alertas para evaluar actividad humana que podría generar riesgo de incendio y apoyar una respuesta temprana.</p>
         </div>
       </div>
 
       <!-- TECHNICAL SPECIFICATIONS & PILOT COLLABORATION CARD -->
       <div class="holding-ip-card glass-panel">
         <div class="holding-ip-header">
-          <span class="holding-ip-badge" data-i18n="h_ip_tag">◈ ESPECIFICACIONES TÉCNICAS & TERRENO PILOTO</span>
+          <span class="holding-ip-badge" data-i18n="h_ip_tag">CONVERSACIÓN TÉCNICA</span>
           <span class="ip-protocol-tag" data-i18n="h_ip_protocol">[VALIDACIÓN 2026-27]</span>
         </div>
-        <h2 class="holding-ip-title" data-i18n="h_ip_title">¿Interesado en conocer la arquitectura técnica o evaluar un despliegue en tus terrenos?</h2>
-        <p class="holding-ip-body" data-i18n="h_ip_body">
-          Compartimos especificaciones técnicas de vuelo, análisis de cobertura territorial y el plan de validación operacional de Athene™ con equipos de protección forestal, entidades de emergencia y colaboradores estratégicos. Contáctanos para coordinar un briefing técnico directo o evaluar la incorporación de tus terrenos al programa piloto 2026-27.
-        </p>
+        <h2 class="holding-ip-title" data-i18n="h_ip_title">¿Quieres explorar una validación en terreno?</h2>
+        <p class="holding-ip-body" data-i18n="h_ip_body">Conversemos sobre tus necesidades de vigilancia forestal y cómo podrían orientar las pruebas de Athene. Estamos preparando la integración experimental del sistema.</p>
         <div class="holding-ip-footer">
           <span class="ip-footer-note" data-i18n="h_ip_footer_note">Equipo Strig Systems · Concepción, Chile.</span>
-          <button type="button" class="btn-ghost" data-open-modal="contact-modal" data-intent="alliances" data-i18n="h_ip_btn">Conversar con el Equipo Técnico</button>
+          <button type="button" class="btn-ghost" data-open-modal="contact-modal" data-intent="briefing" data-i18n="h_ip_btn">Conversar con el equipo</button>
         </div>
       </div>
 
-      <!-- TEAM & INSTITUTIONAL BACKING STRIP -->
-      <div class="holding-backing-strip glass-panel">
-        <div class="backing-item">
-          <span class="backing-dot" aria-hidden="true"></span>
-          <span data-i18n="h_b1">5 Ingenieros Civiles Aeroespaciales UdeC</span>
+      <!-- Compact public team, adapted from dev; three profiles supplied by Tomas. -->
+      <section id="equipo" class="public-team" aria-labelledby="public-team-title">
+        <div class="public-team-heading">
+          <span class="public-team-tag" data-i18n="team_tag">Equipo fundador</span>
+          <h2 id="public-team-title" data-i18n="team_title">El equipo detrás de Strig Systems</h2>
+          <p data-i18n="team_intro">Cinco ingenieros civiles aeroespaciales formados en la Universidad de Concepción, detrás del desarrollo de Strig Systems y Athene.</p>
         </div>
-        <div class="backing-item">
-          <span class="backing-dot" aria-hidden="true"></span>
-          <span data-i18n="h_b2">CORFO · Adjudicatarios Semilla Inicia</span>
+        <div class="public-team-grid">
+          <article class="public-team-card glass-panel" data-team-member="tomas">
+            <img class="public-team-photo" src="assets/img/team/tomas_portrait.jpg" width="400" height="400" alt="" loading="lazy" decoding="async">
+            <h3 data-i18n="team_name_tomas">Tomás Medina</h3>
+            <p class="public-team-role" data-i18n="team_role_lead">Cofundador · Lead técnico</p>
+            <a class="team-linkedin" href="https://www.linkedin.com/in/tomasmedinab/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn · Tomás Medina"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg><span data-i18n="team_linkedin">LinkedIn</span></a>
+          </article>
+          <article class="public-team-card glass-panel" data-team-member="carlos">
+            <img class="public-team-photo" src="assets/img/team/carlos_portrait.jpg" width="400" height="400" alt="" loading="lazy" decoding="async">
+            <h3 data-i18n="team_name_carlos">Carlos Gutiérrez</h3>
+            <p class="public-team-role" data-i18n="team_role_ops">Cofundador · Operaciones</p>
+            <a class="team-linkedin" href="https://www.linkedin.com/in/cgutierrezsoto/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn · Carlos Gutiérrez"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg><span data-i18n="team_linkedin">LinkedIn</span></a>
+          </article>
+          <article class="public-team-card glass-panel" data-team-member="ananda">
+            <img class="public-team-photo" src="assets/img/team/ananda_glaria.png" width="400" height="400" alt="" loading="lazy" decoding="async">
+            <h3 data-i18n="team_name_ananda">Ananda Glaria</h3>
+            <p class="public-team-role" data-i18n="team_role_cofounder_f">Cofundadora</p>
+            <span class="team-linkedin" role="link" aria-disabled="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg><span data-i18n="team_linkedin">LinkedIn</span></span>
+          </article>
+          <article class="public-team-card glass-panel" data-team-member="richard">
+            <img class="public-team-photo" src="assets/img/team/richard_solis.jpg" width="400" height="400" alt="" loading="lazy" decoding="async">
+            <h3 data-i18n="team_name_richard">Richard Solís</h3>
+            <p class="public-team-role" data-i18n="team_role_cofounder">Cofundador</p>
+            <a class="team-linkedin" href="https://www.linkedin.com/in/richard-solis-580ba0324/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn · Richard Solís"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg><span data-i18n="team_linkedin">LinkedIn</span></a>
+          </article>
+          <article class="public-team-card glass-panel" data-team-member="pablo">
+            <img class="public-team-photo" src="assets/img/team/pablo_alarcon.jpg" width="400" height="400" alt="" loading="lazy" decoding="async">
+            <h3 data-i18n="team_name_pablo">Pablo Alarcón</h3>
+            <p class="public-team-role" data-i18n="team_role_cofounder">Cofundador</p>
+            <span class="team-linkedin" role="link" aria-disabled="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg><span data-i18n="team_linkedin">LinkedIn</span></span>
+          </article>
         </div>
-        <div class="backing-item">
-          <span class="backing-dot" aria-hidden="true"></span>
-          <span data-i18n="h_b3">Aceleradora Gearbox UdeC</span>
-        </div>
-        <div class="backing-item">
-          <span class="backing-dot" aria-hidden="true"></span>
-          <span data-i18n="h_b4">Lab Aeroespacial UdeC</span>
-        </div>
-      </div>
+      </section>
     </div>
   </main>
 
@@ -268,11 +303,10 @@
       <div class="holding-footer-top">
         <div class="footer-brand-side">
           <a href="#" class="brand" aria-label="Strig Systems Inicio">
-            <span class="brand-shield" aria-hidden="true">◈</span>
-            <span class="brand-name">STRIG<span class="accent-text">SYSTEMS</span></span>
+            <img class="brand-logo" src="assets/img/brand/web/strig-lockup-light.svg" width="208" height="60" alt="Strig Systems" decoding="async">
           </a>
           <p class="footer-tagline" data-i18n="f_tagline">
-            Startup chilena de ingeniería aeroespacial y defensa deeptech. Desarrolladores del sistema centinela aéreo autónomo Athene™.
+            Empresa chilena de ingeniería aeroespacial y sistemas autónomos. Desarrollamos Athene™, un sistema centinela aéreo para vigilancia forestal nocturna.
           </p>
         </div>
 
@@ -309,6 +343,21 @@
         </div>
       </div>
 
+      <!-- Supplied institutional marks: keep each official lockup intact. -->
+      <section class="institutional-support" aria-labelledby="institutional-support-title">
+        <h2 id="institutional-support-title" data-i18n="institutional_title">Nos apoyan</h2>
+        <div class="institutional-logos">
+          <figure class="institutional-mark institutional-incuba">
+            <div class="institutional-logo-space"><img src="assets/img/institutions/incuba-udec-white-color.webp" width="1014" height="246" alt="IncubaUdeC" loading="lazy" decoding="async"></div>
+            <figcaption data-i18n="institutional_incuba">Incubados en IncubaUdeC · Mentorías con Red de Mentores IU</figcaption>
+          </figure>
+          <figure class="institutional-mark institutional-corfo">
+            <div class="institutional-logo-space"><img src="assets/img/institutions/corfo-project-supported-white.webp" width="4534" height="3004" alt="Corfo" loading="lazy" decoding="async"></div>
+            <figcaption data-i18n="institutional_corfo">Financiamiento · Semilla Inicia Corfo</figcaption>
+          </figure>
+        </div>
+      </section>
+
       <div class="holding-footer-bottom">
         <p class="footer-copyright" data-i18n="f_copyright">© 2026 Strig Systems SpA. Todos los derechos reservados.</p>
         <div class="footer-legal-links">
@@ -321,7 +370,7 @@
   </footer>
 
   <!-- MODAL: CONTACT & NDA QUALIFICATION FORM -->
-  <div id="contact-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="contact-modal-title">
+  <div id="contact-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
     <div class="modal-dialog glass-panel pilot-modal-dialog">
       <button type="button" class="modal-close" data-close-modal aria-label="Cerrar ventana">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -332,8 +381,8 @@
 
       <div class="modal-body-scroll">
         <!-- Interactive Intent Tabs -->
-        <div class="intent-selector-pills" role="tablist" aria-label="Tipo de solicitud">
-          <button type="button" class="intent-pill active" data-intent-target="pilot" role="tab" aria-selected="true">
+        <div class="intent-selector-pills" role="group" aria-label="Tipo de solicitud / Enquiry type">
+          <button type="button" class="intent-pill active" data-intent-target="pilot" aria-pressed="true">
             <span class="intent-pill-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
@@ -341,7 +390,7 @@
             </span>
             <span data-i18n="intent_tab_pilot">Predio Piloto 2026-27</span>
           </button>
-          <button type="button" class="intent-pill" data-intent-target="briefing" role="tab" aria-selected="false">
+          <button type="button" class="intent-pill" data-intent-target="briefing" aria-pressed="false">
             <span class="intent-pill-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10"></circle>
@@ -350,7 +399,7 @@
             </span>
             <span data-i18n="intent_tab_briefing">Briefing Técnico (15 min)</span>
           </button>
-          <button type="button" class="intent-pill" data-intent-target="alliances" role="tab" aria-selected="false">
+          <button type="button" class="intent-pill" data-intent-target="alliances" aria-pressed="false">
             <span class="intent-pill-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
@@ -359,7 +408,7 @@
                 <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
               </svg>
             </span>
-            <span data-i18n="intent_tab_alliances">NDA & Inversión</span>
+            <span data-i18n="intent_tab_alliances">Colaboración</span>
           </button>
         </div>
 
@@ -374,6 +423,7 @@
           </p>
         </div>
 
+        <p class="modal-direct-contact"><a href="mailto:contacto@strigsystems.tech">contacto@strigsystems.tech</a></p>
         <form id="contact-form" class="pilot-form" novalidate>
           <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
           <input type="hidden" id="form-subject" name="_subject" value="Nueva Solicitud Holding - Strig Systems">
@@ -388,13 +438,13 @@
             </div>
 
             <div class="form-group">
-              <label for="contact-email" class="form-label" data-i18n="f_email_label">Correo corporativo o institucional *</label>
+              <label for="contact-email" class="form-label" data-i18n="f_email_label">Correo electrónico *</label>
               <input type="email" id="contact-email" name="Email" class="form-input" required placeholder="nombre@empresa.cl" data-i18n-ph="f_email_ph">
             </div>
 
             <div class="form-group">
-              <label for="contact-company" class="form-label" data-i18n="f_company_label">Empresa u organización *</label>
-              <input type="text" id="contact-company" name="Empresa_Organizacion" class="form-input" required placeholder="Ej: Forestal / Minera / Institución" data-i18n-ph="f_company_ph">
+              <label for="contact-company" class="form-label" data-i18n="f_company_label">Empresa u organización (opcional)</label>
+              <input type="text" id="contact-company" name="Empresa_Organizacion" class="form-input" placeholder="Ej: Forestal / Minera / Institución" data-i18n-ph="f_company_ph">
             </div>
 
             <div class="form-group">
@@ -403,8 +453,8 @@
             </div>
 
             <div class="form-group intent-field-pilot">
-              <label for="contact-region" class="form-label" data-i18n="f_region_label">Región territorial *</label>
-              <select id="contact-region" name="Region" class="form-select" required>
+              <label for="contact-region" class="form-label" data-i18n="f_region_label">Región del posible piloto (opcional)</label>
+              <select id="contact-region" name="Region" class="form-select">
                 <option value="" disabled selected data-i18n="opt_select_region">Selecciona una región</option>
                 <option value="Región del Biobío">Región del Biobío</option>
                 <option value="Región de La Araucanía">Región de La Araucanía</option>
@@ -419,8 +469,8 @@
             </div>
 
             <div class="form-group intent-field-pilot">
-              <label for="contact-interest" class="form-label" data-i18n="f_interest_label">Tipo de entidad o predio *</label>
-              <select id="contact-interest" name="Tipo_Interes" class="form-select" required>
+              <label for="contact-interest" class="form-label" data-i18n="f_interest_label">Tipo de entidad o predio (opcional)</label>
+              <select id="contact-interest" name="Tipo_Interes" class="form-select">
                 <option value="" disabled selected data-i18n="opt_select_interest">Selecciona tipo de interés</option>
                 <option value="Empresa forestal (Predio productivo)" data-i18n="opt_interest_1">Empresa forestal (Predio productivo)</option>
                 <option value="Organismo público de emergencia / B2G" data-i18n="opt_interest_2">Organismo público de emergencia / B2G</option>
@@ -439,7 +489,7 @@
             </div>
 
             <div class="form-group intent-field-alliances" style="display: none;">
-              <label for="contact-alliance-type" class="form-label" data-i18n="f_alliance_type_label">Naturaleza de la consulta / NDA *</label>
+              <label for="contact-alliance-type" class="form-label" data-i18n="f_alliance_type_label">Tipo de colaboración</label>
               <select id="contact-alliance-type" name="Tipo_Alianza" class="form-select">
                 <option value="Fondo de inversión / Venture Capital" selected data-i18n="opt_alliance_1">Fondo de inversión / Venture Capital</option>
                 <option value="Solicitud de NDA para Evaluación Técnica" data-i18n="opt_alliance_nda">Solicitud de NDA para Evaluación Técnica</option>
@@ -457,7 +507,7 @@
           <div class="form-group form-checkbox-group">
             <label class="form-checkbox-label" for="contact-consent">
               <input type="checkbox" id="contact-consent" name="Consentimiento" required class="form-checkbox">
-              <span class="checkbox-text" data-i18n="f_consent_label">Acepto el tratamiento de mis datos de contacto para la evaluación técnica y declaro conocer los <a href="terms.html" target="_blank" class="legal-inline-link">Términos de Servicio</a> y la <a href="privacy.html" target="_blank" class="legal-inline-link">Política de Privacidad</a> (Ley N° 19.628 / 21.719).</span>
+              <span class="checkbox-text"><span data-i18n="f_consent_label">Acepto el tratamiento de mis datos para responder a esta consulta y declaro conocer:</span> <a href="terms.html" target="_blank" rel="noopener noreferrer" class="legal-inline-link" data-i18n="f_terms">Términos de Servicio B2B</a> · <a href="privacy.html" target="_blank" rel="noopener noreferrer" class="legal-inline-link" data-i18n="f_privacy_link">Política de Privacidad</a></span>
             </label>
           </div>
 
@@ -476,7 +526,7 @@
               <span class="btn-spinner" style="display: none;" aria-hidden="true"></span>
               <span class="arrow-icon">→</span>
             </button>
-            <span id="contact-privacy-note" class="form-privacy-note" data-i18n="f_privacy">Tus datos serán tratados bajo estricta confidencialidad técnica (NDA disponible).</span>
+            <span id="contact-privacy-note" class="form-privacy-note" data-i18n="f_privacy">Usaremos estos datos para responder a tu consulta.</span>
             <div id="contact-direct-note" class="direct-contact-note" style="display: none;">
               <span data-i18n="f_briefing_direct">O escribe directamente al Technical Lead:</span>
               <a href="mailto:tmedina@strigsystems.tech" class="highlight-link">tmedina@strigsystems.tech</a>
@@ -491,9 +541,7 @@
             </svg>
           </div>
           <h3 id="contact-success-title" class="success-title" data-i18n="success_title">¡Solicitud Recibida con Éxito!</h3>
-          <p id="contact-success-desc" class="success-desc" data-i18n="success_desc">
-            Hemos recibido los antecedentes de tu entidad. Nuestro equipo de ingeniería aeroespacial revisará la solicitud y se contactará directamente dentro de 24 horas hábiles.
-          </p>
+          <p id="contact-success-desc" class="success-desc" data-i18n="success_desc">Hemos recibido tu consulta. El equipo se pondrá en contacto para conversar sobre los próximos pasos.</p>
           <div class="success-actions">
             <button type="button" class="btn-ghost" data-close-modal data-i18n="success_close_btn">Cerrar Ventana</button>
           </div>
@@ -503,7 +551,7 @@
   </div>
 
   <!-- MODAL: EXECUTIVE BRIEF ONE-PAGER -->
-  <div id="brief-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="brief-doc-title">
+  <div id="brief-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="brief-doc-title">
     <div class="modal-dialog glass-panel executive-brief-dialog">
       <div class="brief-modal-actions no-print">
         <button type="button" class="btn-brief-print" id="brief-print-btn">
@@ -525,7 +573,7 @@
       <div class="executive-brief-paper" id="executive-brief-paper">
         <div class="brief-paper-header">
           <div class="brief-logo-area">
-            <span class="brief-brand">STRIG SYSTEMS</span>
+            <span class="brief-brand"><img class="brand-logo logo-on-screen" src="assets/img/brand/web/strig-lockup-light.svg" width="208" height="60" alt="Strig Systems"><img class="brand-logo logo-on-print" src="assets/img/brand/web/strig-lockup-dark.svg" width="208" height="60" alt="Strig Systems"></span>
             <span class="brief-product" data-i18n="eb_product">PLATAFORMA ATHENE</span>
           </div>
           <div class="brief-meta-area">
@@ -536,45 +584,43 @@
 
         <div class="brief-paper-lead">
           <h2 id="brief-doc-title" class="brief-h1" data-i18n="eb_h1">Inteligencia Aérea Autónoma para la Brecha Nocturna de Incendios</h2>
-          <p class="brief-summary" data-i18n="eb_summary">
-            Athene aborda la brecha nocturna mediante aeronaves autónomas VTOL (validación inicial sobre plataforma adaptada), inferencia térmica Edge AI a bordo (NVIDIA Jetson) y telemetría táctica FHSS 915 MHz, sustituyendo la exposición terrestre a ciegas y optimizando el despacho aéreo al amanecer.
-          </p>
+          <p class="brief-summary" data-i18n="eb_summary">Athene es un sistema centinela aéreo en desarrollo experimental (TRL 3 declarado). Estamos definiendo su arquitectura y preparando la integración de una plataforma de pruebas, análisis térmico a bordo y supervisión humana. El programa 2026-27 busca evaluar esa integración.</p>
         </div>
 
         <div class="brief-paper-grid">
           <div class="brief-box">
             <h3 class="brief-box-title" data-i18n="eb_b1_title">1. El Problema Operacional</h3>
             <ul class="brief-list">
-              <li data-i18n="eb_b1_p1"><strong>Ventana ciega nocturna:</strong> La aviación tripulada combate de día, pero no vuela de noche por normativa DGAC y riesgo de choque con el relieve (CFIT).</li>
-              <li data-i18n="eb_b1_p2"><strong>99,7% de origen humano:</strong> La casi totalidad de los incendios derivan de acción humana intencional o negligente (Fuente: CONAF).</li>
-              <li data-i18n="eb_b1_p3"><strong>Puntos ciegos terrestres:</strong> Patrullas en 4x4 cubren &lt; 12% del predio, ciegas ante quebradas y rodales interiores donde se inician fogatas y focos intencionales.</li>
+              <li data-i18n="eb_b1_p1">Brecha nocturna: La observación y la respuesta en oscuridad y relieve complejo presentan restricciones operacionales que deben evaluarse para cada misión.</li>
+              <li data-i18n="eb_b1_p2">Actividad humana: La vigilancia propuesta busca detectar presencia de personas y evaluar su contexto para advertir situaciones que podrían originar un incendio.</li>
+              <li data-i18n="eb_b1_p3">Puntos ciegos terrestres: Las quebradas y los rodales interiores dificultan la observación desde caminos; su cobertura se evaluará en cada predio piloto.</li>
             </ul>
           </div>
 
           <div class="brief-box">
             <h3 class="brief-box-title" data-i18n="eb_b2_title">2. Solución Tecnológica</h3>
             <ul class="brief-list">
-              <li data-i18n="eb_b2_p1"><strong>Aeronave VTOL Noctua™:</strong> Validación inicial sobre plataforma adaptada; autonomía de diseño 45–60 min y despegue vertical sin pista hacia la plataforma VTOL dedicada.</li>
-              <li data-i18n="eb_b2_p2"><strong>Edge AI Zero-Cloud a Bordo:</strong> Cómputo local NVIDIA Jetson; detección térmica en segundos sin conexión a internet ni señal celular.</li>
-              <li data-i18n="eb_b2_p3"><strong>Disuasión con Autorización Humana:</strong> Activación de iluminación táctica de alta potencia siempre autorizada por el operador en tierra (Human-in-the-Loop).</li>
+              <li data-i18n="eb_b2_p1">Plataforma aérea: Validación inicial prevista sobre aeronave comercial adaptada. Noctua es la plataforma VTOL futura; su configuración y prestaciones requieren validación.</li>
+              <li data-i18n="eb_b2_p2">Edge AI a bordo: Procesamiento térmico local proyectado, sin depender de internet para la inferencia. Latencia y precisión pendientes de medición.</li>
+              <li data-i18n="eb_b2_p3">Supervisión humana: Imágenes y alertas para que un operador evalúe el contexto y apoye decisiones de respuesta.</li>
             </ul>
           </div>
 
           <div class="brief-box">
-            <h3 class="brief-box-title" data-i18n="eb_b3_title">3. Modelo de Impacto Operacional IaaS</h3>
+            <h3 class="brief-box-title" data-i18n="eb_b3_title">3. Impacto que buscamos validar</h3>
             <ul class="brief-list">
-              <li data-i18n="eb_b3_p1"><strong>Seguridad del Personal:</strong> Cero exposición humana innecesaria en quebradas y caminos aislados en horario nocturno crítico.</li>
-              <li data-i18n="eb_b3_p2"><strong>Detección Temprana & Disuasión:</strong> Detección de actividad humana a 100 m de altura y disuasión autorizada por el operador antes de la ignición.</li>
-              <li data-i18n="eb_b3_p3"><strong>Optimización al Amanecer:</strong> Georreferenciación temprana de coordenadas y perímetro que ahorra horas críticas de combate aéreo al inicio del día.</li>
+              <li data-i18n="eb_b3_p1">Seguridad del personal: Objetivo de reducir exposición en quebradas y caminos aislados mediante información previa para el equipo de respuesta.</li>
+              <li data-i18n="eb_b3_p2">Observación nocturna: Evaluar la detección de presencia humana y anomalías térmicas para apoyar la vigilancia preventiva y la detección temprana de incendios.</li>
+              <li data-i18n="eb_b3_p3">Apoyo al despacho: Georreferenciación e información de contexto proyectadas para apoyar decisiones de respuesta junto a un socio piloto.</li>
             </ul>
           </div>
 
           <div class="brief-box">
             <h3 class="brief-box-title" data-i18n="eb_b4_title">4. Programa de Validación 2026-27</h3>
             <ul class="brief-list">
-              <li data-i18n="eb_b4_p1"><strong>Estado Actual TRL 3:</strong> Proyecto Semilla Inicia CORFO, apoyo UdeC y demostración técnica programada en Gearbox (Enero 2027).</li>
-              <li data-i18n="eb_b4_p2"><strong>Campaña en Predio Piloto:</strong> 4 fases metodológicas (Levantamiento, Calibración, Vigilancia Nocturna, Auditoría Operacional).</li>
-              <li data-i18n="eb_b4_p3"><strong>Gobernanza & Contacto:</strong> Modelos y software bajo titularidad exclusiva de Strig Systems SpA • Tomás Medina (Technical Lead) | <code>contacto@strigsystems.tech</code></li>
+              <li data-i18n="eb_b4_p1">Estado actual TRL 3: Proyecto Semilla Inicia Corfo, apoyo UdeC y demostración técnica prevista en Gearbox para enero de 2027.</li>
+              <li data-i18n="eb_b4_p2">Próximos pasos: Integración experimental y primeras pruebas para evaluar el funcionamiento conjunto del sistema.</li>
+              <li data-i18n="eb_b4_p3">Contacto: Equipo Strig Systems · Concepción, Chile · contacto@strigsystems.tech</li>
             </ul>
           </div>
         </div>
@@ -587,6 +633,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=2.0.3"></script>
+  <script src="script.js?v=2.2.0"></script>
 </body>
 </html>

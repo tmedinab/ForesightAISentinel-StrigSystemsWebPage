@@ -27,6 +27,8 @@ yarn-error.log*
 
 # Node modules (si se usan a futuro)
 node_modules/
+__pycache__/
+*.py[cod]
 scratch/*
 !scratch/preflight_check.js
 !scratch/verify_i18n.js

@@ -11,14 +11,14 @@
   <meta name="googlebot" content="noindex, nofollow">
 
   <!-- Favicon SVG -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="assets/img/brand/web/favicon.svg">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=2.0.0">
+  <link rel="stylesheet" href="styles.css?v=2.1.10">
 
   <style>
     /* Security Gate Overlay Styles */
@@ -155,6 +155,20 @@
       filter: none;
     }
 
+    @media (max-width: 900px) {
+      .header-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+      }
+      .site-header .brand { margin-right: 0; }
+      .site-header .header-actions {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
     @media print {
       body {
         background: #ffffff !important;
@@ -191,7 +205,7 @@
   <!-- SECURITY GATE MODAL -->
   <div id="gate-overlay" class="gate-overlay" role="dialog" aria-modal="true" aria-labelledby="gate-title">
     <div class="gate-dialog glass-panel">
-      <span class="gate-shield">◈</span>
+      <img class="gate-identity" src="assets/img/brand/web/strig-symbol-light.svg" width="64" height="64" alt="Strig Systems">
       <div class="gate-badge">[ATHENE C2 // ACCESO TÉCNICO RESERVADO]</div>
       <h1 id="gate-title" class="gate-title">Dossier Técnico Operacional 2026-27</h1>
       <p class="gate-desc">
@@ -220,8 +234,7 @@
     <header class="site-header">
       <div class="container header-inner">
         <a href="index.html" class="brand" aria-label="Strig Systems Inicio">
-          <span class="brand-shield" aria-hidden="true">◈</span>
-          <span class="brand-name">STRIG<span class="accent-text">SYSTEMS</span></span>
+          <img class="brand-logo" src="assets/img/brand/web/strig-lockup-light.svg" width="208" height="60" alt="Strig Systems" decoding="async">
           <span class="brand-product-badge">
             <span class="brand-product-dot" aria-hidden="true"></span>
             <span class="brand-product-name">DOSSIER TÉCNICO</span>
@@ -254,7 +267,7 @@
           <span class="cred-separator">│</span>
           <div class="cred-segment">
             <span class="cred-sub-mark">◈</span>
-            <span class="cred-label">CORFO Semilla Inicia · Lab Aeroespacial UdeC · Gearbox</span>
+            <span class="cred-label">Corfo Semilla Inicia · IncubaUdeC · Finalistas 7th Gear Challenge - Gearbox UdeC</span>
           </div>
         </div>
 
@@ -262,10 +275,10 @@
           Dossier Técnico Operacional · Plataforma Centinela Athene™
         </h1>
         <p style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.6; max-width: 900px; margin-bottom: 1.5rem;">
-          Documento reservado para contrapartes industriales, jefes de despacho y comités técnicos. Describe el protocolo de misión nocturna, la metodología de validación en 4 fases para predio piloto forestal y los parámetros de arquitectura de sistemas.
+          Documento de arquitectura propuesta para contrapartes industriales, jefes de despacho y comités técnicos. Describe el protocolo de misión nocturna, la metodología de validación en 4 fases para predio piloto forestal y los parámetros de arquitectura de sistemas.
         </p>
         <div style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--accent-amber); background: rgba(245, 158, 11, 0.08); padding: 0.75rem 1.25rem; border-radius: 4px; border-left: 3px solid var(--accent-amber);">
-          AVISO DE CONFIDENCIALIDAD: Este material contiene metodología y procedimientos operativos bajo titularidad exclusiva de Strig Systems SpA. Prohibida su distribución sin autorización escrita.
+          ALCANCE: Arquitectura y procedimientos propuestos para validación. Esta página está alojada en un sitio estático y no constituye un repositorio seguro de información confidencial.
         </div>
       </div>
 
@@ -273,28 +286,28 @@
       <section class="glass-panel" style="padding: 2.5rem; margin-bottom: 2.5rem;">
         <div class="pillar-tag">[PROTOCOLO TÁCTICO // 01]</div>
         <h2 style="font-family: var(--font-heading); font-size: 1.6rem; color: #fff; margin-bottom: 1rem;">
-          El Ciclo de Misión Nocturna (Ventana Crítica 00:00 – 05:00 hrs)
+          Concepto del ciclo de misión nocturna
         </h2>
         <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 2rem;">
-          Mientras la aviación cisterna tripulada permanece en tierra por normativa de visibilidad DGAC (riesgo CFIT), Athene ejecuta patrullajes deterministas bajo geocerca sobre rodales y quebradas:
+          Concepto de misión propuesto para validación experimental: observación aérea sobre rodales y quebradas, con geocerca y supervisión humana. Esta secuencia no acredita una operación desplegada.
         </p>
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem;">
           <div style="background: rgba(5, 8, 17, 0.7); padding: 1.5rem; border-radius: 6px; border: 1px solid var(--border-glass);">
             <div style="font-family: var(--font-mono); color: var(--accent-cyan); font-size: 0.85rem; margin-bottom: 0.5rem;">01 // DESPEGUE VERTICAL</div>
-            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Ascenso en 4 rotores desde base acotada sin pista hacia altitud de crucero segura (100 m AGL).</p>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Despegue desde una zona preparada. La configuración de la aeronave y la altitud se definirán en el plan de ensayo.</p>
           </div>
           <div style="background: rgba(5, 8, 17, 0.7); padding: 1.5rem; border-radius: 6px; border: 1px solid var(--border-glass);">
             <div style="font-family: var(--font-mono); color: var(--accent-cyan); font-size: 0.85rem; margin-bottom: 0.5rem;">02 // CRUCERO Y DETECCIÓN</div>
-            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Vuelo de ala fija eficiente. La unidad Jetson a bordo procesa el flujo LWIR radiométrico en microsegundos.</p>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Procesamiento LWIR a bordo proyectado mediante Edge AI. Configuración, latencia y precisión pendientes de validación experimental.</p>
           </div>
           <div style="background: rgba(5, 8, 17, 0.7); padding: 1.5rem; border-radius: 6px; border: 1px solid var(--border-glass);">
             <div style="font-family: var(--font-mono); color: var(--accent-cyan); font-size: 0.85rem; margin-bottom: 0.5rem;">03 // TELEMETRÍA TÁCTICA</div>
-            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Enlace 915 MHz FHSS despacha ficha sintética con coordenadas de silueta térmica al operador en ≤ 3 min.</p>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Enlace de telemetría proyectado para enviar alertas georreferenciadas al operador. El tiempo de alerta será medido en los ensayos.</p>
           </div>
           <div style="background: rgba(5, 8, 17, 0.7); padding: 1.5rem; border-radius: 6px; border: 1px solid var(--border-glass);">
             <div style="font-family: var(--font-mono); color: var(--accent-cyan); font-size: 0.85rem; margin-bottom: 0.5rem;">04 // DISUASIÓN AUTORIZADA</div>
-            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">El operador en tierra valida la ficha y autoriza la activación de foco estroboscópico de alta intensidad y sirena.</p>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">El operador evalúa la alerta y autoriza la iluminación táctica. Su integración y eficacia requieren validación.</p>
           </div>
         </div>
       </section>
@@ -382,7 +395,7 @@
           Coordinación de Sesión Técnica 1:1
         </h3>
         <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.25rem;">
-          Para coordinar visitas técnicas al Laboratorio Aeroespacial UdeC o formalizar acuerdos de validación en predio:
+          Para coordinar reuniones técnicas o formalizar acuerdos de validación en predio:
         </p>
         <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
           <a href="mailto:contacto@strigsystems.tech?subject=Coordinacion%20Predio%20Piloto%20Athene" class="btn-primary" style="padding: 0.75rem 1.5rem;">
@@ -401,8 +414,7 @@
       <div class="container footer-layout">
         <div class="footer-brand-side">
           <span class="brand">
-            <span class="brand-shield" aria-hidden="true">◈</span>
-            <span class="brand-name">STRIG<span class="accent-text">SYSTEMS</span></span>
+            <img class="brand-logo" src="assets/img/brand/web/strig-lockup-light.svg" width="208" height="60" alt="Strig Systems" decoding="async">
           </span>
           <p class="footer-tagline">
             Strig Systems SpA · Plataforma Centinela Athene™ · Documento Reservado bajo Protocolo NDA.
