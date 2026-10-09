@@ -6,6 +6,7 @@ El historial de versiones registra lo ocurrido, no especificaciones vigentes. Co
 
 - Restaurados los logos completos de IncubaUdeC y Corfo en el paquete público por instrucción expresa de Tomás. Validación institucional pendiente documentada, sin supresión automática del arte (ADR-0014).
 - Verificación de carga y visibilidad de ambas marcas incorporada a la revisión ES/EN en cuatro anchos.
+- Configuración Wrangler añadida para corregir el primer deploy de Workers Builds: nombre exacto, fecha de compatibilidad y paquete público con página 404 (ADR-0015). Resultado remoto pendiente de confirmar.
 
 ## [2.2.0] — 2026-10-08
 

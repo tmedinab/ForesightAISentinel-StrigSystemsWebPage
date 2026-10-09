@@ -34,3 +34,5 @@ El repo conserva `CNAME` para `strigsystems.tech` y workflow GitHub Pages al pus
 El workflow genera `build/public` mediante `python tools/build_public_site.py` y publica sólo portada, páginas legales/404 y assets referenciados. Docs, scratch, exports, dossier y rondas quedan fuera del sitio. El paquete público conserva los logos completos de IncubaUdeC y Corfo por autorización de Tomás; la validación gráfica institucional sigue pendiente (ADR-0014). No confundir esta exclusión del hosting con privacidad del repositorio Git.
 
 Verificación del paquete: `node tools/verify_public_site.cjs` con Playwright. El builder usa sólo Python estándar, sin frameworks de frontend.
+
+Workers Builds: rama `main`, raíz `/`, build `python tools/build_public_site.py`, deploy `npx wrangler deploy`. `wrangler.jsonc` fija el nombre `foresightaisentinel-strigsystemswebpage`, fecha de compatibilidad y assets `build/public` (ADR-0015). Configuración preparada tras el primer deploy fallido; resultado remoto y dominio pendientes de confirmar.
