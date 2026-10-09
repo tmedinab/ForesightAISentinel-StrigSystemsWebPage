@@ -34,7 +34,7 @@ const translations = {
 
     // Page metadata & Header
     h_company: "Ingeniería aeroespacial y sistemas autónomos · Chile",
-    h_page_title: "Strig Systems | Athene — Inteligencia Aérea Autónoma",
+    h_page_title: "Strig Systems | Athene — Vigilancia forestal nocturna",
     lang_code: "EN",
     h_nav_cta: "Contactar",
 
@@ -106,7 +106,7 @@ const translations = {
 
 
     // Footer
-    f_tagline: "Empresa chilena de ingeniería aeroespacial y sistemas autónomos. Desarrollamos Athene™, un sistema centinela aéreo para vigilancia forestal nocturna.",
+    f_tagline: "Empresa chilena de ingeniería aeroespacial y sistemas autónomos. Desarrollamos Athene™, un sistema para apoyar la vigilancia forestal nocturna con observación aérea y supervisión humana.",
     f_location: "Concepción, Chile",
     f_copyright: "© 2026 Strig Systems SpA. Todos los derechos reservados.",
     f_terms: "Términos de Servicio B2B",
@@ -189,7 +189,7 @@ const translations = {
 
     // Page metadata & Header
     h_company: "Aerospace engineering and autonomous systems · Chile",
-    h_page_title: "Strig Systems | Athene — Autonomous Aerial Intelligence",
+    h_page_title: "Strig Systems | Athene — Nighttime forest monitoring",
     lang_code: "ES",
     h_nav_cta: "Contact",
 
@@ -261,7 +261,7 @@ const translations = {
 
 
     // Footer
-    f_tagline: "Chilean aerospace engineering and autonomous systems company. We develop Athene™, an aerial sentinel system for nighttime forest monitoring.",
+    f_tagline: "Chilean aerospace engineering and autonomous systems company. We develop Athene™, a system supporting nighttime forest monitoring through aerial observation and human supervision.",
     f_location: "Concepción, Chile",
     f_copyright: "© 2026 Strig Systems SpA. All rights reserved.",
     f_terms: "B2B Terms of Service",
@@ -508,7 +508,7 @@ function initContactModal(prefix = 'contact') {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 20000);
     try {
-      const response = await fetch('https://formsubmit.co/ajax/contacto@strigsystems.tech', {
+      const response = await fetch('https://formsubmit.co/ajax/contacto@strigsystems.cl', {
         method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify(payload), signal: controller.signal
       });
@@ -524,7 +524,7 @@ function initContactModal(prefix = 'contact') {
       reason.value = intent;
     } catch (err) {
       const body = Object.entries(payload).filter(([key]) => !key.startsWith('_')).map(([key, val]) => `${key}: ${val}`).join('\n');
-      error.querySelector('.alert-link').href = `mailto:contacto@strigsystems.tech?cc=tmedina@strigsystems.tech&subject=${encodeURIComponent(payload._subject)}&body=${encodeURIComponent(body)}`;
+      error.querySelector('.alert-link').href = `mailto:contacto@strigsystems.cl?subject=${encodeURIComponent(payload._subject)}&body=${encodeURIComponent(body)}`;
       error.style.display = 'block';
     } finally {
       clearTimeout(timeout);

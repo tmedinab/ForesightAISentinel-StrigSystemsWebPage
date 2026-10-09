@@ -17,12 +17,13 @@ const root=path.resolve(__dirname,'..'),pub=path.join(root,'build/public');
  let browser;
  try{
   browser=await chromium.launch({headless:true});const page=await browser.newPage();const errors=[];
+  page.setDefaultNavigationTimeout(60000);
   page.on('pageerror',e=>errors.push(e.message));
   await page.route('**/*',r=>r.request().url().startsWith(base)?r.continue():r.abort());
   for(const width of [1440,768,390,320]){
    await page.setViewportSize({width,height:900});
    for(const file of ['index.html','privacy.html','terms.html','404.html']){
-    await page.goto(`${base}/${file}`,{waitUntil:'load'});
+    await page.goto(`${base}/${file}`,{waitUntil:'domcontentloaded'});
     await page.locator('img').evaluateAll(imgs=>imgs.forEach(i=>i.loading='eager'));
     await page.waitForFunction(()=>[...document.images].every(i=>i.complete&&i.naturalWidth>0));
     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,`${file}/${width} overflow`);
@@ -115,7 +116,7 @@ const root=path.resolve(__dirname,'..'),pub=path.join(root,'build/public');
   await page.locator('#contact-submit-btn').click();
   await page.locator('#contact-error').waitFor({state:'visible'});
   const fallback=await page.locator('#contact-error .alert-link').getAttribute('href');
-  assert.ok(fallback.startsWith('mailto:contacto@strigsystems.tech?cc=tmedina@strigsystems.tech'));
+  assert.ok(fallback.startsWith('mailto:contacto@strigsystems.cl?subject='));
   assert.ok(decodeURIComponent(fallback).includes('test@example.invalid'));
   assert.ok(await page.locator('#contact-submit-btn').isEnabled());
   assert.ok(decodeURIComponent(fallback).includes('Local test: nighttime forestry enquiry'));

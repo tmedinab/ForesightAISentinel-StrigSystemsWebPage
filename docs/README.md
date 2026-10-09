@@ -1,6 +1,6 @@
 # Documentación de la web
 
-Actualizada: 2026-10-08. Este índice recoge el estado vigente; las rondas de exploración ya no son instrucciones de implementación.
+Actualizada: 2026-10-09. Este índice recoge el estado vigente; las rondas de exploración ya no son instrucciones de implementación.
 
 | Documento | Información que mantiene |
 | --- | --- |

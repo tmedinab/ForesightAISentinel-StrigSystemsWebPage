@@ -1,6 +1,6 @@
 # AGENTS.md — Web Strig Systems / Athene
 
-Reglas operativas vigentes, 2026-10-08. Leer el [índice documental](docs/README.md), el documento dueño del cambio y los ADRs aplicables. Las rondas históricas son antecedentes, no instrucciones actuales. Las instrucciones explícitas de Tomás prevalecen.
+Reglas operativas vigentes, 2026-10-09. Leer el [índice documental](docs/README.md), el documento dueño del cambio y los ADRs aplicables. Las rondas históricas son antecedentes, no instrucciones actuales. Las instrucciones explícitas de Tomás prevalecen.
 
 ## Alcance, marca y evidencia
 
@@ -11,7 +11,7 @@ Reglas operativas vigentes, 2026-10-08. Leer el [índice documental](docs/README
 - Consultar `docs/ASSET_REGISTER.json`: assets anteriores de origen no verificado no prueban ensayos. Ilustraciones/renders con rótulo cercano y en exports. Sin CAD aprobado no dibujar planos acotados; no afirmar visión térmica a través de suelo/vegetación opaca.
 - SVG de arquitectura activo `assets/img/tech/athene-architecture.svg`: representación conceptual, no diseño de Noctua ni interfaz real. Consultar [método](docs/METODOLOGIA_ILUSTRACION_ARQUITECTURA.md).
 - Para Corfo/IncubaUdeC/Red IU leer [biblioteca institucional](docs/brand/institutional/README.md) y manuales. Conservar originales/hashes, sin deformar, recolorear, filtrar, aislar escudo ni inventar Gearbox. Relaciones confirmadas por Tomás; aplicación gráfica pública autorizada por Tomás con validación IU p.18 pendiente (ADR-0014); no suprimir los logos por ese pendiente. La biblioteca mantiene las reglas estrictas; no duplicarlas aquí.
-- Correos actuales: `contacto@strigsystems.tech` y `tmedina@strigsystems.tech`, sin aclaraciones personales en UI. Sede: Concepción, Chile; no coordenadas geográficas crudas. .cl/Cloudflare en migración pendiente, no cambiar correo/hosting por inferencia.
+- Contacto público: `contacto@strigsystems.cl`; no exponer correo personal ni inventar alias individuales. Tomás confirma recepción mediante reenvío de Cloudflare a correos personales; salida SMTP independiente. Tomás hará la transición al dominio .cl: mantener URLs canonical/OG/CNAME .tech hasta esa transición. Cloudflare y GitHub Pages despliegan main; nueva activación FormSubmit y entrega real de formularios pendientes. Sede: Concepción, Chile; no coordenadas geográficas crudas.
 
 ## Contratos de implementación
 

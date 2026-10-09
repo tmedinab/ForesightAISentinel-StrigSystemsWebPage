@@ -1,6 +1,6 @@
 # Ilustración de arquitectura Athene
 
-Estado: 2026-10-08. SVG activo: [athene-architecture.svg](../assets/img/tech/athene-architecture.svg). Pieza conceptual de la web, no plano de Noctua ni evidencia de operación. [Plan](PLAN_ESTRATEGICO_MARCA_Y_ASSETS_VISUALES.md) para narrativa; [registro](ASSET_REGISTER.json) para procedencia.
+Estado: 2026-10-09. SVG activo: [athene-architecture.svg](../assets/img/tech/athene-architecture.svg). Pieza conceptual de la web, no plano de Noctua ni evidencia de operación. [Plan](PLAN_ESTRATEGICO_MARCA_Y_ASSETS_VISUALES.md) para narrativa; [registro](ASSET_REGISTER.json) para procedencia.
 
 ## Qué debe entenderse
 
@@ -31,7 +31,9 @@ La candidata `athene-architecture-astra-candidate-v1.svg` fue generada en una pr
 2. Paso 2: soportes/rotores con relaciones mecánicas más comprensibles.
 3. Paso 3: separar flechas de silueta; lupa de inferencia y pantalla con contexto.
 4. Paso 4: iluminación compartida, gimbal esférico, relieve y volumen de central.
-5. Paso 5 vigente: plano común de rotores, motores cilíndricos, continuidad del fuselaje, coníferas escalonadas y operador refinado. Indicio térmico compartido reemplaza la persona detectada; no incendio confirmado.
+5. Paso 5: plano común de rotores, motores cilíndricos, continuidad del fuselaje, coníferas escalonadas y operador refinado. Indicio térmico compartido reemplaza la persona detectada; no incendio confirmado.
+
+6. Paso 6 vigente: entrada visual y procesador diferenciados en la ampliación; el mismo motivo térmico aparece en el análisis, la evidencia transmitida y la pantalla del operador. Flechas entran y salen de la tarjeta de evidencia sin atravesarla. Siluetas y composición conservadas.
 
 Hitos anteriores en `assets/img/tech/athene-architecture-step01.svg` a `step04.svg`; conceptos anteriores son historial. Conservados en esta limpieza, sin convertirlos en nuevas referencias públicas.
 

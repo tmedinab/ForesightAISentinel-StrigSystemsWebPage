@@ -134,25 +134,26 @@
     <path d="m410 61 6-5h78v70l-6 5Z" fill="#213847" stroke="#617f90" stroke-width="1.2"/>
     <rect x="410" y="61" width="78" height="70" rx="4" fill="#0c1017" stroke="#cbd5e1" stroke-width="2"/>
     <path d="M423 53v8m17-8v8m17-8v8m17-8v8m-51 70v8m17-8v8m17-8v8m17-8v8m-72-66h8m-8 16h8m-8 16h8m78-32h8m-8 16h8m-8 16h8" stroke="#728996" stroke-width="1.8"/>
-    <!-- Image features, a generic inference graph, and an observation bracket. No model topology asserted. -->
-    <rect x="418" y="80" width="16" height="30" rx="2" stroke="#94a3b8" stroke-width="1.6"/>
-    <path d="M422 87h8m-8 6h8m-8 6h5" stroke="#94a3b8" stroke-width="1.8"/>
-    <path d="m440 85 10 11-10 11m10-11 10-11m-10 11 10 11" stroke="#00e5ff" stroke-width="2"/>
-    <g fill="#0c1017" stroke="#00e5ff" stroke-width="1.8"><circle cx="440" cy="85" r="2.5"/><circle cx="440" cy="107" r="2.5"/><circle cx="460" cy="85" r="2.5"/><circle cx="460" cy="107" r="2.5"/></g>
-    <circle cx="450" cy="96" r="3" fill="#00e5ff"/>
-    <path d="M469 88v-5h5m8 0h-4m4 0v5m0 15v5h-4m-9-5v5h5" stroke="#f59e0b" stroke-width="1.8"/>
-    <path d="M472 97q1-5 4-3t3 5q-3 3-7-2Z" fill="#f5b644" fill-opacity=".7"/>
+    <!-- Image input, processor, and the same thermal observation as the received screen. -->
+    <rect x="418" y="81" width="17" height="28" rx="2" fill="#102431" stroke="#789aaa" stroke-width="1.2"/>
+    <path d="m420 103 4-7 4 4 5-9" stroke="#789aaa" stroke-width="1.2"/>
+    <path d="M437 95h5m-2-2 2 2-2 2m16-2h6m-2-2 2 2-2 2" stroke="#00e5ff" stroke-width="1.2"/>
+    <rect x="444" y="87" width="12" height="16" rx="2" fill="#163643" stroke="#00e5ff" stroke-width="1.3"/>
+    <path d="M447 83v4m6-4v4m-6 16v4m6-4v4M441 90h3m-3 9h3m12-9h3m-3 9h3" stroke="#7699a8" stroke-width="1"/>
+    <use href="#thermal-observation" transform="translate(475 95) scale(.42)"/>
+
   </g>
   <!-- Input stays outside the silhouette and rotor discs; the target is an enlarged view of onboard analysis. -->
   <path id="camera-data-flow" d="M169 218h13q12 0 12 12v14q0 12 12 12h183q22 0 22-22v-58q0-12 10-19l20-21" stroke="#00e5ff" stroke-width="2.5" marker-end="url(#astra-arrow)"/>
   <!-- Analysis -> illustrative image/notice -> station; logical flow, not physical component placement. -->
-  <path id="evidence-data-flow" d="M514 96h38q18 0 18 18v123" stroke="#00e5ff" stroke-width="2.5" marker-end="url(#astra-arrow)"/>
+  <path id="evidence-data-flow" d="M511 96h41q18 0 18 18v47" stroke="#00e5ff" stroke-width="2.5" marker-end="url(#astra-arrow)"/>
   <g id="delivered-evidence">
     <rect x="542" y="169" width="56" height="44" rx="3" fill="#0c1017" stroke="#00e5ff" stroke-width="1.8"/>
-    <path d="m550 204 8-10 8 6 10-13 14 13" stroke="#728996" stroke-width="1.5"/>
-    <path d="M550 177h12v12h-12Z" fill="#3e301c" stroke="#f59e0b" stroke-width="1.5"/>
-    <path d="M556 180v4m0 2v.5" stroke="#f59e0b" stroke-width="1.7"/>
+    <path d="m548 204 7-12 7 8 12-10 18 13" stroke="#728996" stroke-width="1.2"/>
+    <use href="#thermal-observation" transform="translate(574 191) scale(.55)"/>
+
   </g>
+  <path id="evidence-to-operator" d="M570 213v24" stroke="#00e5ff" stroke-width="2.5" marker-end="url(#astra-arrow)"/>
   <!-- Central monitoring workstation. Interface and room are conceptual, not an actual installation. -->
   <g id="human-review-central">
     <!-- Open floor establishes the station's depth without inventing a building. -->

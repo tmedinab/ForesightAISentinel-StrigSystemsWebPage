@@ -2,6 +2,14 @@
 
 El historial de versiones registra lo ocurrido, no especificaciones vigentes. Consultar el [índice](README.md) y el plan para el estado actual. Los documentos antiguos citados en las versiones están en la copia recuperable local descrita en el índice.
 
+## [2.4.3] — 2026-10-09
+
+- Narrativa de Athene coherente en portada, metadatos y footer. Retiradas afirmaciones operativas y detalles técnicos heredados de las páginas complementarias; privacidad describe formularios y proveedores actuales.
+- Contacto público único `contacto@strigsystems.cl`, incluidos formularios, legales y fallback sin copia individual. URLs y dominio principal .tech conservados hasta la transición de Tomás. Tomás confirma recepción mediante reenvío a correos personales; activación FormSubmit y entrega real de formularios pendientes de comprobación.
+- SVG paso 6: imagen de entrada, procesador y observación coherentes; tarjeta de evidencia conectada sin flecha atravesándola. Composición preservada.
+- Plan, reglas operativas, método y registro de assets actualizados al estado real de publicación.
+- Verificados SVG/XML/referencias, datos estructurados, correos, 127 claves ES/EN y 16 combinaciones de página/ancho. Modales, teclado, borradores y envíos simulados aprobados; sin envío externo ni cambios de DNS. Comparación del SVG renderizada y revisada.
+
 ## [2.4.2] — 2026-10-09
 
 - Retirada la ficha pública de Pablo por instrucción de Tomás. Equipo presentado con cuatro integrantes y cuadrícula de cuatro columnas en escritorio, dos en tablet y una en móvil.

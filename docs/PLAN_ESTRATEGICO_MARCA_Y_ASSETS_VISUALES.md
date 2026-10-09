@@ -4,7 +4,7 @@ Actualizado: 2026-10-09. Resume decisiones aprobadas y prioridades; fundamentos 
 
 ## Narrativa aprobada
 
-**Empresa:** «Empresa chilena de ingeniería aeroespacial y sistemas autónomos. Desarrollamos Athene™, un sistema centinela aéreo para vigilancia forestal nocturna.» (ADR-0011). No declarar defensa como actividad principal ni anunciar la colaboración exploratoria con Armada de Chile, aún no formalizada.
+**Empresa:** «Empresa chilena de ingeniería aeroespacial y sistemas autónomos. Desarrollamos Athene™, un sistema para apoyar la vigilancia forestal nocturna con observación aérea y supervisión humana.» (ADR-0011). No declarar defensa como actividad principal ni anunciar la colaboración exploratoria con Armada de Chile, aún no formalizada.
 
 **Hero:** «Los riesgos se mueven rápido. Nosotros los vemos venir.» Conservar su jerarquía y gradiente metálico en la segunda línea.
 
@@ -27,7 +27,7 @@ Invitar a conversación técnica/piloto sin barrera legal intimidante ni cuestio
 | Identidad | Familia A, empresa y producto diferenciados; derivados en `assets/img/brand/web/`. Sin master final cerrado. |
 | Tipografía | Space Grotesk para titulares (700 máximo cargado), Outfit 400/500/600 para cuerpo y secundarios legibles; JetBrains Mono sólo para metadatos breves. |
 | Maquetación | Contenedor general 1200px con padding 24px; ampliar a 1400px fue propuesta, no decisión. Header flexible; proporción óptica Strig principal / Athene secundario. |
-| Arquitectura | `assets/img/tech/athene-architecture.svg`, paso 5 sobre candidata Astra. VTOL, cámara, inferencia, indicio y operador; representación conceptual. |
+| Arquitectura | `assets/img/tech/athene-architecture.svg`, paso 6 sobre candidata Astra. VTOL, cámara, inferencia, indicio y operador; representación conceptual. |
 | Credenciales | «Finalistas 7th Gear Challenge - Gearbox UdeC». No generar logo Gearbox. |
 | Apoyos | Logos completos de IncubaUdeC y Corfo publicados por autorización de Tomás, con incubación, mentorías y financiamiento explícitos. Validación gráfica IU p.18 pendiente; no declara aprobación institucional (ADR-0014). |
 | Equipo | Tomás Medina (Cofundador · Responsable técnico), Carlos Gutiérrez (Cofundador · Operaciones), Ananda Glaria (Cofundadora) y Richard Solís (Cofundador). Cuatro fichas públicas. |
@@ -52,15 +52,17 @@ Cada paso exige comparación visual, decisión explícita si cambia identidad/me
 
 ## Dominio y hosting: actual frente a pendiente
 
-Estado del repositorio: `CNAME` apunta a `strigsystems.tech`; GitHub Pages tiene workflow al push a main. Tomás compró **strigsystems.cl** en NIC Chile y reporta DNS en configuración/propagación en Cloudflare. No se ha comprobado aquí su activación ni desplegado el sitio allí.
+Estado confirmado: `main` se publica automáticamente mediante Cloudflare Workers y GitHub Pages. Se comprobó la versión 2.4.2 en ambos dominios el 2026-10-09. `CNAME`, canonical, Open Graph y datos estructurados conservan `strigsystems.tech` hasta que Tomás complete la transición de dominio. No se modifican DNS ni redirecciones en esta ronda.
 
-Dirección recomendada: .cl principal, .tech conservado con redirección y correo independiente; Cloudflare Workers Static Assets con Workers Builds conectado a GitHub para desplegar los commits de main. Es una migración pendiente: las ediciones locales no publican hasta push y deploy. Preservar MX/TXT de correo antes de cualquier cambio. Contactos actuales `contacto@strigsystems.tech` y `tmedina@strigsystems.tech` no se cambian por comprar .cl.
+Tomás autoriza cambiar los correos públicos a **contacto@strigsystems.cl** y confirma su recepción mediante reenvío de Cloudflare a correos personales el 2026-10-09. Es el único contacto público en portada, documentos y formularios; la dirección individual de empresa se reserva para firmas y conversaciones directas, sin inventar un alias nuevo. No se añade correo de Gmail personal a la web. El reenvío de recepción no habilita SMTP de salida.
 
-Referencias de configuración: [Workers Static Assets](https://developers.cloudflare.com/workers/static-assets/), [Workers Builds](https://developers.cloudflare.com/workers/ci-cd/builds/), [DNS full setup](https://developers.cloudflare.com/dns/zone-setups/full-setup/setup/) y [custom domains](https://developers.cloudflare.com/workers/configuration/routing/custom-domains/). La limpieza documental anterior no modificó hosting. La publicación actual conserva DNS/CNAME .tech y cambia el workflow para empaquetar sólo `build/public`, generado por `tools/build_public_site.py`: portada/legal/404 y assets referenciados. Docs, scratch, exports, dossier y fuentes de exploración quedan fuera del sitio. El builder conserva los logos institucionales referenciados en la portada, conforme a la autorización de Tomás (ADR-0014); la validación externa sigue pendiente.
+Los formularios ahora apuntan a FormSubmit para `contacto@strigsystems.cl`; el fallback mailto conserva el mensaje completo, sin copia a una dirección individual. Activación del nuevo destinatario en FormSubmit y entrega real de los formularios pendientes de comprobación: la recepción por reenvío confirmada por Tomás y los tests simulados no verifican esa integración. No publicar afirmaciones de entrega comprobada.
+
+El empaquetado `tools/build_public_site.py` incluye sólo portada, páginas legales, 404 y assets públicos referenciados; excluye documentación, scratch y exploraciones. La validación gráfica IU sigue pendiente. Los correos anteriores pueden conservarse como alias si Tomás lo configura, sin exponerlos en la nueva página.
 
 ## Verificación
 
-Preflight e i18n, carga de assets, revisión ES/EN escritorio/móvil, teclado/foco, contraste, motion reducido, enlaces y contacto. Separar pruebas técnicas de aceptación visual e institucional. Los cambios recientes pasaron preflight/i18n con 144 claves; volver a ejecutar tras editar código. No presentar estos checks como certificación funcional del sistema.
+Preflight e i18n, carga de assets, revisión ES/EN escritorio/móvil, teclado/foco, contraste, motion reducido, enlaces y contacto. Separar pruebas técnicas de aceptación visual e institucional. Comprobar el número vigente de claves con preflight/i18n; volver a ejecutar tras editar código. No presentar estos checks como certificación funcional del sistema.
 
 
 ## Refinamiento aprobado e implementado — 2026-10-09
@@ -99,3 +101,9 @@ Precisión aprobada por Tomás: Athene es el sistema completo, que utiliza plata
 Tomás aprobó acortar modales y naturalizar textos. Contacto abre «Conversemos»; nombre/correo/mensaje visibles y organización/teléfono en desplegable opcional. Colaboración prioriza mensaje y mantiene información adicional desplegable, con nota de prácticas/memorias al final. Se retiran notas repetidas de privacidad; consentimiento y enlace permanecen. Los valores de borrador se conservan al plegar; un dato inválido oculto se revela antes de enfocar.
 
 Resumen imprimible más breve, con títulos «El desafío» y «El sistema» y sin bullets duplicados. Se mantienen propósito, supervisión humana, estado experimental y objetivos de pruebas. Tarjetas con rótulos sin códigos y sin puntos/retículas decorativos; espaciado móvil reducido sin bajar tamaño de texto. Retratos con marco y tamaño comunes: las fotografías originales mantienen encuadres/iluminación distintos; una sesión o selección editorial común sigue pendiente.
+
+## Revisión de coherencia — 2.4.3
+
+Metadatos, footer y resumen describen Athene como sistema de vigilancia forestal nocturna que utiliza observación aérea. Se conserva el titular aprobado y la definición de presencia de personas, sin identidad ni intención. Las páginas complementarias dejan de afirmar servicio IaaS operativo, cero CAPEX, hardware/radio específicos, anonimización automática, prestaciones numéricas o pruebas de laboratorio no acreditadas. Privacidad diferencia datos del sitio de futuros ensayos y menciona los proveedores realmente integrados. Es corrección editorial de alcance y funcionamiento, no auditoría jurídica completa.
+
+SVG paso 6: motivo térmico coherente en análisis/evidencia/pantalla, entrada y procesador distinguibles y flechas que conectan los elementos sin atravesar la tarjeta de evidencia. Se conserva composición, aeronave, terreno y operador. Comparación local antes/después en scratch; no se crea otro master público.
