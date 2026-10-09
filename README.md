@@ -31,6 +31,6 @@ Node se usa para checks de desarrollo. [Herramientas de marca](tools/brand/READM
 
 El repo conserva `CNAME` para `strigsystems.tech` y workflow GitHub Pages al push a main. Tomás compró `strigsystems.cl` y configura DNS en Cloudflare. La migración propuesta a Workers Static Assets + Workers Builds está pendiente; no inferir que el sitio ya está desplegado allí. Los cambios locales requieren commit/push y despliegue para actualizar la web. Mantener correo .tech y sus registros hasta planificar cualquier migración independiente.
 
-El workflow genera `build/public` mediante `python tools/build_public_site.py` y publica sólo portada, páginas legales/404 y assets referenciados. Docs, scratch, exports, dossier y rondas quedan fuera del sitio. La fuente del repo tiene preview institucional; el paquete público conserva menciones textuales mientras la validación gráfica sigue pendiente. No confundir esta exclusión del hosting con privacidad del repositorio Git.
+El workflow genera `build/public` mediante `python tools/build_public_site.py` y publica sólo portada, páginas legales/404 y assets referenciados. Docs, scratch, exports, dossier y rondas quedan fuera del sitio. El paquete público conserva los logos completos de IncubaUdeC y Corfo por autorización de Tomás; la validación gráfica institucional sigue pendiente (ADR-0014). No confundir esta exclusión del hosting con privacidad del repositorio Git.
 
 Verificación del paquete: `node tools/verify_public_site.cjs` con Playwright. El builder usa sólo Python estándar, sin frameworks de frontend.

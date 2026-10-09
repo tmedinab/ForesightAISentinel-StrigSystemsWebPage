@@ -72,7 +72,7 @@ Derivados WebP sin pérdida desde PNG originales. Sin redibujar, ampliar artific
 
 ## Validación externa y próximos materiales
 
-**Pendiente de validación institucional:** IU p.18 indica «Validar la aplicación de las marcas con Cecilia Figueroa», con el correo suministrado `Ceciliafigueroa@udec.cl`. Preparar una captura final de la web y las piezas futuras para esa revisión. El contacto procede del manual recibido y no se ha comprobado su vigencia. No se ha enviado ningún mensaje ni obtenido aprobación; esta tarea deja una aplicación local revisable.
+**Pendiente de validación institucional:** IU p.18 indica «Validar la aplicación de las marcas con Cecilia Figueroa», con el correo suministrado `Ceciliafigueroa@udec.cl`. Preparar una captura final de la web y las piezas futuras para esa revisión. El contacto procede del manual recibido y no se ha comprobado su vigencia. No se ha enviado ningún mensaje ni obtenido aprobación. Tomás autorizó expresamente publicar los logos completos el 2026-10-08 y gestionar la validación después (ADR-0014). Este pendiente no bloquea la publicación autorizada de la web ni equivale a aprobación institucional.
 
 Para cualquier nueva pieza:
 
@@ -80,7 +80,7 @@ Para cualquier nueva pieza:
 2. Elegir el master completo permitido, con resolución suficiente; no usar screenshot, imagen del buscador o logo generado.
 3. Reservar espacio de protección y comprobar lectura, contraste y proporciones. En impresión verificar el mínimo Corfo sobre la marca visible.
 4. Revisar posición inferior derecha de Corfo y jerarquía de Strig; no convertir la banda institucional en una promesa del producto.
-5. Preparar preview/exportación y gestionar la validación indicada por el manual antes de publicar la nueva aplicación. Guardar evidencia y fecha de aprobación en este directorio, sin datos personales innecesarios.
+5. Preparar preview/exportación y gestionar la validación indicada por el manual. Para la web actual, Tomás autorizó publicarla mientras esa validación sigue pendiente. Guardar evidencia y fecha de aprobación en este directorio, sin datos personales innecesarios.
 
 ## Pendientes de la siguiente investigación
 

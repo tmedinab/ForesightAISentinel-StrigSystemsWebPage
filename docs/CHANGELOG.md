@@ -2,6 +2,11 @@
 
 El historial de versiones registra lo ocurrido, no especificaciones vigentes. Consultar el [índice](README.md) y el plan para el estado actual. Los documentos antiguos citados en las versiones están en la copia recuperable local descrita en el índice.
 
+## [2.2.1] — 2026-10-08
+
+- Restaurados los logos completos de IncubaUdeC y Corfo en el paquete público por instrucción expresa de Tomás. Validación institucional pendiente documentada, sin supresión automática del arte (ADR-0014).
+- Verificación de carga y visibilidad de ambas marcas incorporada a la revisión ES/EN en cuatro anchos.
+
 ## [2.2.0] — 2026-10-08
 
 - Portada y briefing pulidos tras primera lectura simulada y revisión UX: vigilancia nocturna, detección de presencia humana e indicios de incendio con evaluación del operador; sin reconocimiento de identidad ni prestaciones medidas implícitas. Familia A y titular conservados.

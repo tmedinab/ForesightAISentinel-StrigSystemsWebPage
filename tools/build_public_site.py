@@ -1,13 +1,13 @@
 """Package only the compact public website and the assets it actually references.
 
-Institutional artwork remains a local preview until its application is validated.
+Preserve the public HTML, including institutional artwork authorized for publication.
 """
 from pathlib import Path
 from urllib.parse import urlparse, unquote
 import re, shutil, json, argparse
 
 ROOT=Path(__file__).resolve().parents[1]
-def build(out, institutional_approved=False):
+def build(out):
     out=out.resolve()
     assert out.is_relative_to(ROOT/'build') and out!=ROOT/'build', 'Output must be a subdirectory of build/'
     if out.exists():shutil.rmtree(out)
@@ -23,9 +23,6 @@ def build(out, institutional_approved=False):
         dst=out/name;dst.parent.mkdir(parents=True,exist_ok=True)
         if src.suffix in ['.html','.css','.js','.svg']:
             text=src.read_text(encoding='utf-8')
-            if name=='index.html' and not institutional_approved:
-                text=re.sub(r'<div class="institutional-logo-space">.*?</div>','',text,flags=re.S)
-                text=text.replace('class="institutional-support"','class="institutional-support institutional-text-only"')
             dst.write_text(text,encoding='utf-8')
             refs=re.findall(r'(?:src|href)=["\']([^"\']+)["\']',text) if src.suffix in ['.html','.svg'] else []
             refs+=re.findall(r'content=["\'](https?://[^"\']+/assets/[^"\']+)["\']',text)
@@ -48,9 +45,9 @@ def build(out, institutional_approved=False):
     (out/'.nojekyll').touch()
     forbidden=['docs','scratch','exports','.agents','.git','dossier.html','tools','AGENTS.md']
     assert not any((out/x).exists() for x in forbidden)
-    print(json.dumps({'output':str(out),'files':len(seen)+1,'institutional_artwork':institutional_approved,'internal_material':'excluded'}))
+    print(json.dumps({'output':str(out),'files':len(seen)+1,'institutional_artwork':True,'internal_material':'excluded'}))
     return seen
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--out',default='build/public');p.add_argument('--institutional-approved',action='store_true')
-    a=p.parse_args();build(ROOT/a.out,a.institutional_approved)
+    p=argparse.ArgumentParser();p.add_argument('--out',default='build/public')
+    a=p.parse_args();build(ROOT/a.out)

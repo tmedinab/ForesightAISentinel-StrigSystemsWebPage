@@ -31,7 +31,12 @@ const root=path.resolve(__dirname,'..'),pub=path.join(root,'build/public');
      for(const lang of ['es','en']){
       await page.evaluate(l=>setLanguage(l),lang);
       assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,`${lang}/${width} overflow`);
-      assert.equal(await page.locator('.institutional-logo-space').count(),0);
+      assert.equal(await page.locator('.institutional-logo-space').count(),2);
+      for(const alt of ['IncubaUdeC','Corfo']) {
+       const logo=page.locator(`.institutional-logo-space img[alt="${alt}"]`);
+       assert.ok(await logo.isVisible(),`${alt}/${lang}/${width} visible`);
+       assert.ok(await logo.evaluate(i=>i.complete&&i.naturalWidth>0),`${alt} loaded`);
+      }
       await page.locator('.hero-actions [data-open-modal="brief-modal"]').click();
       await page.locator('#brief-modal').waitFor({state:'visible'});
       assert.ok(await page.locator('#brief-modal').isVisible());
