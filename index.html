@@ -35,7 +35,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=2.4.0">
+  <link rel="stylesheet" href="styles.css?v=2.4.1">
 
   <!-- Umami Analytics (Privacy-First & Cookie-less) -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="aa979513-3790-4797-99e5-03d4a57d74ee"></script>
@@ -174,8 +174,7 @@
       <div class="holding-pillars-grid">
         <div class="holding-pillar-card glass-panel">
           <div class="pillar-card-header">
-            <span class="pillar-tag" data-i18n="h_p1_tag">[AERONÁUTICA // 01]</span>
-            <span class="pillar-status-dot" aria-hidden="true"></span>
+            <span class="pillar-tag" data-i18n="h_p1_tag">AERONÁUTICA</span>
           </div>
           <div class="pillar-icon-wrap" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -190,8 +189,7 @@
 
         <div class="holding-pillar-card glass-panel">
           <div class="pillar-card-header">
-            <span class="pillar-tag" data-i18n="h_p2_tag">[ANÁLISIS // 02]</span>
-            <span class="pillar-status-dot" aria-hidden="true"></span>
+            <span class="pillar-tag" data-i18n="h_p2_tag">ANÁLISIS</span>
           </div>
           <div class="pillar-icon-wrap" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -213,8 +211,7 @@
 
         <div class="holding-pillar-card glass-panel">
           <div class="pillar-card-header">
-            <span class="pillar-tag" data-i18n="h_p3_tag">[SUPERVISIÓN // 03]</span>
-            <span class="pillar-status-dot" aria-hidden="true"></span>
+            <span class="pillar-tag" data-i18n="h_p3_tag">SUPERVISIÓN</span>
           </div>
           <div class="pillar-icon-wrap" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -284,8 +281,8 @@
           </article>
         </div>
         <div class="team-collaboration" aria-labelledby="join-invitation-title">
-          <div><h3 id="join-invitation-title" data-i18n="join_title">Colabora en el desarrollo de Athene</h3><p data-i18n="join_card_desc">Queremos conocer a estudiantes, egresados e investigadores interesados en aportar al proyecto mediante colaboración extracurricular.</p></div>
-          <button type="button" class="btn-ghost" data-open-modal="join-modal" data-intent="collaboration" data-i18n="join_cta">Cuéntanos cómo te gustaría aportar</button>
+          <div><h3 id="join-invitation-title" data-i18n="join_title">Colabora en el desarrollo de Athene</h3><p data-i18n="join_card_desc">Buscamos estudiantes, egresados e investigadores interesados en aportar al proyecto mediante colaboración extracurricular.</p></div>
+          <button type="button" class="btn-ghost" data-open-modal="join-modal" data-intent="collaboration" data-i18n="join_cta">Quiero colaborar</button>
         </div>
       </section>
     </div>
@@ -372,8 +369,8 @@
       <div class="modal-body-scroll">
         <div class="modal-header">
           <p class="contact-kicker">Strig Systems</p>
-          <h2 id="contact-modal-title" class="modal-title" data-i18n="modal_title">Conversemos sobre tu proyecto</h2>
-          <p id="contact-modal-sub" class="modal-subtitle" data-i18n="modal_sub">Cuéntanos qué necesitas o cómo te gustaría colaborar. El equipo revisará tu consulta y te contactará para conversar sobre los próximos pasos.</p>
+          <h2 id="contact-modal-title" class="modal-title" data-i18n="modal_title">Conversemos</h2>
+          <p id="contact-modal-sub" class="modal-subtitle" data-i18n="modal_sub">Cuéntanos qué necesitas o cómo te gustaría colaborar.</p>
         </div>
         <p class="modal-direct-contact"><a href="mailto:contacto@strigsystems.tech">contacto@strigsystems.tech</a></p>
         <form id="contact-form" class="pilot-form" novalidate>
@@ -395,36 +392,40 @@
               <label for="contact-email" class="form-label" data-i18n="f_email_label">Correo electrónico *</label>
               <input type="email" id="contact-email" name="Email" class="form-input" required autocomplete="email" placeholder="nombre@empresa.cl" data-i18n-ph="f_email_ph">
             </div>
-            <div class="form-group">
-              <label for="contact-company" class="form-label" data-i18n="f_company_label">Empresa u organización (opcional)</label>
-              <input type="text" id="contact-company" name="Empresa_Organizacion" class="form-input" autocomplete="organization" placeholder="Nombre de tu organización" data-i18n-ph="f_company_ph">
-            </div>
-            <div class="form-group">
-              <label for="contact-phone" class="form-label" data-i18n="f_phone_label">Teléfono (opcional)</label>
-              <input type="tel" id="contact-phone" name="Telefono" class="form-input" autocomplete="tel" placeholder="+56 9 1234 5678" data-i18n-ph="f_phone_ph">
-            </div>
           </div>
           <div class="form-group full-width">
             <label for="contact-message" class="form-label" data-i18n="f_message_label">Mensaje *</label>
             <p id="contact-message-hint" class="contact-field-hint" data-i18n="contact_hint_general">Cuéntanos brevemente el motivo de tu consulta.</p>
-            <textarea id="contact-message" name="Mensaje" class="form-textarea" rows="4" required aria-describedby="contact-message-hint" placeholder="Escribe tu mensaje…" data-i18n-ph="f_message_ph"></textarea>
+            <textarea id="contact-message" name="Mensaje" class="form-textarea" rows="3" required aria-describedby="contact-message-hint" placeholder="Escribe tu mensaje…" data-i18n-ph="f_message_ph"></textarea>
           </div>
+          <details id="contact-optional" class="form-optional">
+            <summary data-i18n="contact_optional">Agregar datos de contacto (opcional)</summary>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="contact-company" class="form-label" data-i18n="f_company_label">Empresa u organización (opcional)</label>
+                <input type="text" id="contact-company" name="Empresa_Organizacion" class="form-input" autocomplete="organization" placeholder="Nombre de tu organización" data-i18n-ph="f_company_ph">
+              </div>
+              <div class="form-group">
+                <label for="contact-phone" class="form-label" data-i18n="f_phone_label">Teléfono (opcional)</label>
+                <input type="tel" id="contact-phone" name="Telefono" class="form-input" autocomplete="tel" placeholder="+56 9 1234 5678" data-i18n-ph="f_phone_ph">
+              </div>
+            </div>
+          </details>
           <div class="form-group form-checkbox-group">
             <label class="form-checkbox-label" for="contact-consent">
               <input type="checkbox" id="contact-consent" name="Consentimiento" required class="form-checkbox">
               <span class="checkbox-text"><span data-i18n="f_consent_label">Acepto el uso de mis datos para responder a esta consulta, según la</span> <a href="privacy.html" target="_blank" rel="noopener noreferrer" class="legal-inline-link" data-i18n="f_privacy_link">Política de Privacidad</a>.</span>
             </label>
           </div>
-          <div id="contact-validation-error" class="form-alert alert-warning" style="display:none" role="alert"><span data-i18n="form_val_error">Revisa los campos obligatorios (*) y acepta el uso de tus datos para continuar.</span></div>
+          <div id="contact-validation-error" class="form-alert alert-warning" style="display:none" role="alert"><span data-i18n="form_val_error">Revisa los datos del formulario y acepta el uso de tus datos para continuar.</span></div>
           <div id="contact-error" class="form-alert alert-error" style="display:none" role="alert"><span data-i18n="form_error_msg">No pudimos enviar tu consulta. Puedes enviarla por correo a</span> <a href="mailto:contacto@strigsystems.tech" class="alert-link">contacto@strigsystems.tech</a>.</div>
           <div class="form-actions">
             <button type="submit" id="contact-submit-btn" class="btn-primary btn-submit"><span class="btn-text" data-i18n="f_submit_btn">Enviar consulta</span><span class="btn-spinner" style="display:none" aria-hidden="true"></span></button>
-            <span class="form-privacy-note" data-i18n="f_privacy">Usaremos estos datos para responder a tu consulta.</span>
           </div>
         </form>
         <div id="contact-success" class="form-success-state" style="display:none" aria-live="polite">
           <h3 id="contact-success-title" class="success-title" tabindex="-1" data-i18n="success_title">Tu consulta fue enviada.</h3>
-          <p class="success-desc" data-i18n="success_desc">El equipo revisará tu mensaje y te contactará mediante el correo indicado.</p>
+          <p class="success-desc" data-i18n="success_desc">Revisaremos tu mensaje y te responderemos al correo que indicaste.</p>
           <button type="button" class="btn-ghost" data-close-modal data-i18n="success_close_btn">Cerrar</button>
         </div>
       </div>
@@ -442,9 +443,8 @@
         <div class="modal-header">
           <p class="contact-kicker" data-i18n="join_mode">Colaboración extracurricular</p>
           <h2 id="join-modal-title" class="modal-title" data-i18n="join_title">Colabora en el desarrollo de Athene</h2>
-          <p id="join-modal-sub" class="modal-subtitle" data-i18n="join_intro">Cuéntanos qué te interesa y cómo te gustaría contribuir. Las posibilidades de participación se conversarán según las necesidades del proyecto y tu disponibilidad.</p>
+          <p id="join-modal-sub" class="modal-subtitle" data-i18n="join_intro">Cuéntanos qué te gustaría aportar o aprender. Conversaremos contigo para definir una posible colaboración.</p>
         </div>
-        <p class="contact-field-hint join-future" data-i18n="join_future">Más adelante esperamos abrir posibilidades de prácticas y memorias, sujetas a las necesidades del proyecto y la coordinación académica.</p>
         <p class="modal-direct-contact"><a href="mailto:contacto@strigsystems.tech">contacto@strigsystems.tech</a></p>
         <form id="join-form" class="pilot-form" novalidate>
           <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -458,39 +458,43 @@
               <label for="join-email" class="form-label" data-i18n="f_email_label">Correo electrónico *</label>
               <input type="email" id="join-email" name="Email" class="form-input" required autocomplete="email" placeholder="nombre@empresa.cl" data-i18n-ph="f_email_ph">
             </div>
-            <div class="form-group">
-              <label for="join-studies" class="form-label" data-i18n="join_studies">Carrera o especialidad (opcional)</label>
-              <input type="text" id="join-studies" name="Formacion" class="form-input">
-            </div>
-            <div class="form-group">
-              <label for="join-institution" class="form-label" data-i18n="join_institution">Universidad o institución (opcional)</label>
-              <input type="text" id="join-institution" name="Institucion" class="form-input">
-            </div>
-            <div class="form-group"><label for="join-availability" class="form-label" data-i18n="join_availability">Disponibilidad orientativa (opcional)</label><input type="text" id="join-availability" class="form-input" maxlength="300"></div>
-            <div class="form-group"><label for="join-portfolio" class="form-label" data-i18n="join_portfolio">Portafolio, GitHub o LinkedIn (opcional)</label><input type="url" id="join-portfolio" class="form-input" maxlength="300"></div>
           </div>
           <div class="form-group full-width">
-            <label for="join-message" class="form-label" data-i18n="join_message">Intereses y posibles aportes *</label>
-            <p id="join-message-hint" class="contact-field-hint" data-i18n="join_hint">¿Qué te interesa del proyecto y qué te gustaría aportar o aprender?</p>
-            <textarea id="join-message" name="Mensaje" class="form-textarea" rows="4" required aria-describedby="join-message-hint" placeholder="Escribe tu mensaje…" data-i18n-ph="f_message_ph"></textarea>
+            <label for="join-message" class="form-label" data-i18n="join_message">¿Cómo te gustaría participar? *</label>
+            <p id="join-message-hint" class="contact-field-hint" data-i18n="join_hint">Cuéntanos sobre tus intereses y lo que te gustaría aportar o aprender.</p>
+            <textarea id="join-message" name="Mensaje" class="form-textarea" rows="3" required aria-describedby="join-message-hint" placeholder="Escribe tu mensaje…" data-i18n-ph="f_message_ph"></textarea>
           </div>
+          <details id="join-optional" class="form-optional">
+            <summary data-i18n="join_optional">Agregar información sobre ti (opcional)</summary>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="join-studies" class="form-label" data-i18n="join_studies">Carrera o especialidad (opcional)</label>
+                <input type="text" id="join-studies" name="Formacion" class="form-input">
+              </div>
+              <div class="form-group">
+                <label for="join-institution" class="form-label" data-i18n="join_institution">Universidad o institución (opcional)</label>
+                <input type="text" id="join-institution" name="Institucion" class="form-input">
+              </div>
+              <div class="form-group"><label for="join-availability" class="form-label" data-i18n="join_availability">¿Cuánto tiempo podrías dedicar? (opcional)</label><input type="text" id="join-availability" class="form-input" maxlength="300"></div>
+              <div class="form-group"><label for="join-portfolio" class="form-label" data-i18n="join_portfolio">Portafolio, GitHub o LinkedIn (opcional)</label><input type="url" id="join-portfolio" class="form-input" maxlength="300"></div>
+            </div>
+          </details>
           <div class="form-group form-checkbox-group">
             <label class="form-checkbox-label" for="join-consent">
               <input type="checkbox" id="join-consent" name="Consentimiento" required class="form-checkbox">
               <span class="checkbox-text"><span data-i18n="f_consent_label">Acepto el uso de mis datos para responder a esta consulta, según la</span> <a href="privacy.html" target="_blank" rel="noopener noreferrer" class="legal-inline-link" data-i18n="f_privacy_link">Política de Privacidad</a>.</span>
             </label>
           </div>
-          <div id="join-validation-error" class="form-alert alert-warning" style="display:none" role="alert"><span data-i18n="form_val_error">Revisa los campos obligatorios (*) y acepta el uso de tus datos para continuar.</span></div>
+          <div id="join-validation-error" class="form-alert alert-warning" style="display:none" role="alert"><span data-i18n="form_val_error">Revisa los datos del formulario y acepta el uso de tus datos para continuar.</span></div>
           <div id="join-error" class="form-alert alert-error" style="display:none" role="alert"><span data-i18n="form_error_msg">No pudimos enviar tu consulta. Puedes enviarla por correo a</span> <a href="mailto:contacto@strigsystems.tech" class="alert-link">contacto@strigsystems.tech</a>.</div>
           <div class="form-actions">
-            <button type="submit" id="join-submit-btn" class="btn-primary btn-submit"><span class="btn-text" data-i18n="join_submit">Enviar interés</span><span class="btn-spinner" style="display:none" aria-hidden="true"></span></button>
-            <span class="form-privacy-note" data-i18n="f_privacy">Usaremos estos datos para responder a tu consulta.</span>
+            <button type="submit" id="join-submit-btn" class="btn-primary btn-submit"><span class="btn-text" data-i18n="join_submit">Enviar mensaje</span><span class="btn-spinner" style="display:none" aria-hidden="true"></span></button>
           </div>
-          <p class="contact-field-hint" data-i18n="join_note">Este contacto inicia una conversación; las tareas y condiciones de participación se acordarán con el equipo.</p>
+          <p class="contact-field-hint join-future" data-i18n="join_future">Más adelante esperamos abrir prácticas y memorias, según las necesidades del proyecto y la coordinación con tu universidad.</p>
         </form>
         <div id="join-success" class="form-success-state" style="display:none" aria-live="polite">
           <h3 id="join-success-title" class="success-title" tabindex="-1" data-i18n="success_title">Tu consulta fue enviada.</h3>
-          <p class="success-desc" data-i18n="success_desc">El equipo revisará tu mensaje y te contactará mediante el correo indicado.</p>
+          <p class="success-desc" data-i18n="success_desc">Revisaremos tu mensaje y te responderemos al correo que indicaste.</p>
           <button type="button" class="btn-ghost" data-close-modal data-i18n="success_close_btn">Cerrar</button>
         </div>
       </div>
@@ -532,43 +536,40 @@
 
         <div class="brief-paper-lead">
           <h2 id="brief-doc-title" class="brief-h1" data-i18n="eb_h1">Observación aérea para la vigilancia forestal nocturna</h2>
-          <p class="brief-summary" data-i18n="eb_summary">Athene es un sistema centinela aéreo en desarrollo experimental (TRL 3 declarado). Estamos definiendo su arquitectura y preparando la integración de una plataforma de pruebas, análisis térmico a bordo y supervisión humana. El programa 2026-27 busca evaluar esa integración.</p>
+          <p class="brief-summary" data-i18n="eb_summary">Athene es un sistema en desarrollo experimental (TRL 3 declarado) para apoyar la vigilancia forestal nocturna con plataformas aéreas autónomas y supervisión humana. Estamos preparando la integración y las primeras pruebas.</p>
         </div>
 
         <div class="brief-paper-grid">
           <div class="brief-box">
-            <h3 class="brief-box-title" data-i18n="eb_b1_title">1. El Problema Operacional</h3>
+            <h3 class="brief-box-title" data-i18n="eb_b1_title">1. El desafío</h3>
             <ul class="brief-list">
-              <li data-i18n="eb_b1_p1">Brecha nocturna: La oscuridad y el relieve complejo dificultan la observación de terrenos forestales y la evaluación de posibles riesgos.</li>
-              <li data-i18n="eb_b1_p2">Vigilancia preventiva: Detectar presencia de personas e indicios de incendio permite aportar información para la evaluación del operador, sin identificar personas ni determinar su intención.</li>
-              <li data-i18n="eb_b1_p3">Puntos ciegos terrestres: Las quebradas y los rodales interiores dificultan la observación desde caminos.</li>
+              <li data-i18n="eb_b1_p1">La oscuridad, las quebradas y los sectores interiores del bosque dificultan la observación desde caminos.</li>
+              <li data-i18n="eb_b1_p2">Buscamos detectar presencia de personas e indicios de incendio para apoyar la evaluación del operador, sin identificar personas ni determinar su intención.</li>
             </ul>
           </div>
 
           <div class="brief-box">
-            <h3 class="brief-box-title" data-i18n="eb_b2_title">2. Solución Tecnológica</h3>
+            <h3 class="brief-box-title" data-i18n="eb_b2_title">2. El sistema</h3>
             <ul class="brief-list">
-              <li data-i18n="eb_b2_p1">Plataforma aérea: Primeras pruebas previstas sobre una aeronave comercial adaptada; Noctua es la plataforma VTOL de ala fija para la evolución del sistema.</li>
-              <li data-i18n="eb_b2_p2">Análisis a bordo: Arquitectura de procesamiento térmico local, sin depender de internet para la inferencia.</li>
-              <li data-i18n="eb_b2_p3">Revisión humana: Imágenes y alertas para que un operador evalúe el contexto y oriente una respuesta temprana.</li>
+              <li data-i18n="eb_b2_p1">Plataforma aérea: primeras pruebas previstas sobre una aeronave comercial adaptada. Noctua es el desarrollo VTOL de ala fija previsto para la evolución del sistema.</li>
+              <li data-i18n="eb_b2_p2">Análisis a bordo: procesamiento térmico local, diseñado para realizar la inferencia sin conexión a internet.</li>
+              <li data-i18n="eb_b2_p3">Supervisión humana: el operador revisa imágenes y alertas para evaluar el contexto y orientar una respuesta.</li>
             </ul>
           </div>
 
           <div class="brief-box">
             <h3 class="brief-box-title" data-i18n="eb_b3_title">3. Impacto que buscamos validar</h3>
             <ul class="brief-list">
-              <li data-i18n="eb_b3_p1">Seguridad del personal: Objetivo de reducir exposición en quebradas y caminos aislados mediante información previa para el equipo de respuesta.</li>
-              <li data-i18n="eb_b3_p2">Observación nocturna: Evaluar la detección de presencia humana y anomalías térmicas para apoyar la vigilancia preventiva y la detección temprana de incendios.</li>
-              <li data-i18n="eb_b3_p3">Apoyo a la respuesta: Evaluar cómo la ubicación de las alertas y la información de contexto pueden apoyar decisiones en terreno.</li>
+              <li data-i18n="eb_b3_p1">Evaluar si la información aérea ayuda a reducir la exposición del personal en quebradas y caminos aislados.</li>
+              <li data-i18n="eb_b3_p2">Evaluar la detección nocturna y la utilidad de las alertas para apoyar decisiones y una respuesta temprana en terreno.</li>
             </ul>
           </div>
 
           <div class="brief-box">
             <h3 class="brief-box-title" data-i18n="eb_b4_title">4. Desarrollo y próximas pruebas</h3>
             <ul class="brief-list">
-              <li data-i18n="eb_b4_p1">Estado actual TRL 3: Proyecto Semilla Inicia Corfo, apoyo UdeC y demostración técnica prevista en Gearbox para enero de 2027.</li>
-              <li data-i18n="eb_b4_p2">Próximos pasos: Integración experimental y primeras pruebas para evaluar el funcionamiento conjunto, la precisión y los tiempos de respuesta.</li>
-              <li data-i18n="eb_b4_p3">Contacto: Equipo Strig Systems · Concepción, Chile · contacto@strigsystems.tech</li>
+              <li data-i18n="eb_b4_p1">Semilla Inicia Corfo y acompañamiento de la UdeC. Demostración técnica prevista en Gearbox para enero de 2027.</li>
+              <li data-i18n="eb_b4_p2">Integrar los componentes y realizar primeras pruebas para evaluar su funcionamiento conjunto, precisión y tiempos de respuesta.</li>
             </ul>
           </div>
         </div>
@@ -581,6 +582,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=2.4.0"></script>
+  <script src="script.js?v=2.4.1"></script>
 </body>
 </html>

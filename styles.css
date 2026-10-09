@@ -5793,3 +5793,30 @@ body.modal-open {
 .team-collaboration .btn-ghost { flex-shrink: 0; white-space: normal; max-width: 280px; }
 .join-future { margin-bottom: 1rem; }
 @media (max-width: 768px) { .team-collaboration { flex-direction: column; align-items: flex-start; padding: 1.25rem; } .team-collaboration .btn-ghost { max-width: 100%; } }
+
+/* Compact forms: essential fields first, optional details on demand. */
+.contact-dialog .modal-header { margin-bottom: 0.75rem; }
+.contact-dialog .modal-direct-contact { margin-bottom: 1rem; }
+.contact-dialog .form-actions { margin-top: 0.25rem; padding-top: 0.75rem; }
+.contact-dialog .form-textarea { min-height: 88px; }
+.contact-dialog .join-future { margin: 0; }
+.form-optional { border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass); }
+.form-optional summary { color: var(--text-secondary); font-family: var(--font-body); font-size: 0.9375rem; line-height: 1.5; min-height: 44px; padding: 0.75rem 0; cursor: pointer; }
+.form-optional summary:hover { color: var(--text-primary); }
+.form-optional summary:focus-visible { outline: 2px solid var(--accent-cyan); outline-offset: 3px; border-radius: var(--radius-badge); }
+.form-optional[open] summary { color: var(--text-primary); }
+.form-optional .form-grid { padding: 0.25rem 0 1rem; }
+.holding-pillar-card .pillar-tag { letter-spacing: 0.04em; }
+.holding-pillar-card.glass-panel::before, .holding-pillar-card.glass-panel::after,
+.public-team-card.glass-panel::before, .public-team-card.glass-panel::after { display: none; }
+.holding-pillar-card:hover { transform: none; box-shadow: none; border-color: var(--border-glass); background: var(--bg-card); }
+.holding-pillar-card:hover .pillar-icon-wrap { transform: none; box-shadow: none; border-color: var(--border-glass); }
+.public-team-photo { border: 1px solid var(--border-glass); background: var(--bg-card); }
+@media (max-width: 650px) {
+  .holding-pillar-card { padding: 1.5rem; }
+  .holding-pillars-grid { gap: 1rem; margin-bottom: 2.5rem; }
+  .holding-ip-card { padding: 1.5rem; margin-bottom: 2.5rem; }
+  .holding-ip-header { margin-bottom: 0.75rem; }
+  .public-team { margin-top: 2.5rem; }
+  .team-collaboration { gap: 1rem; }
+}

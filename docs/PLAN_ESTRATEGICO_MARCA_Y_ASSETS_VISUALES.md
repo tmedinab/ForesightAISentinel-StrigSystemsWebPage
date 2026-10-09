@@ -74,22 +74,28 @@ Información de equipo precisada por Tomás: Ananda egresada; Richard y Tomás e
 
 Contacto implementado (ADR-0016): formulario general de Strig, con Athene preseleccionado desde hero/invitación y consulta general desde cabecera. Motivos: Athene/vigilancia y pruebas, colaboración, consulta general. Nombre/correo/mensaje obligatorios; organización/teléfono opcionales y consentimiento para responder según privacidad. Sin región, clasificación del terreno, horarios, NDA ni promesa de reunión/plazo. Usar «terreno», no «predio». Correo directo y fallback con datos completos; éxito únicamente tras aceptación explícita del proveedor. La revisión automática simula respuestas y no acredita recepción real de correo.
 
-## Participación universitaria — planificación, 2026-10-09
+## Participación universitaria — implementación, 2026-10-09
 
 **Dirección confirmada por Tomás:** buscar principalmente colaboración extracurricular. Se contempla habilitar prácticas o memorias próximamente y, más adelante, compromisos laborales. No son convocatorias disponibles ni condiciones acordadas hoy. Las áreas se trabajarán aparte, a partir de las necesidades del repositorio de ingeniería.
 
 **Consideración interna:** Tomás explora una eventual participación societaria en la SpA para integrantes responsables de desarrollos clave y del cumplimiento de hitos. Figura, condiciones y procedimiento sin definir; no ofrecer equity ni vincular la colaboración actual con una promesa de participación futura en la web. Esta nota registra una intención, no establece condiciones laborales ni societarias.
 
-**Interfaz implementada localmente:** invitación discreta junto al equipo, «Colabora en el desarrollo de Athene», con botón «Cuéntanos cómo te gustaría aportar». Modal separado del contacto comercial, manteniendo el lenguaje visual, accesibilidad y tratamiento de errores del formulario vigente.
+**Interfaz implementada:** invitación discreta junto al equipo, «Colabora en el desarrollo de Athene», con botón «Quiero colaborar». Modal separado del contacto comercial, manteniendo el lenguaje visual, accesibilidad y tratamiento de errores del formulario vigente.
 
-Texto propuesto: «Estamos desarrollando Athene y queremos conocer a estudiantes, egresados e investigadores interesados en aportar al proyecto mediante colaboración extracurricular. Cuéntanos qué te interesa y cómo te gustaría contribuir. Las posibilidades de participación se conversarán según las necesidades del proyecto y tu disponibilidad.»
+Texto del modal: «Cuéntanos qué te gustaría aportar o aprender. Conversaremos contigo para definir una posible colaboración.» Mantener el rótulo «Colaboración extracurricular». La invitación del equipo explicita estudiantes, egresados e investigadores.
 
-Nota propuesta: «Más adelante esperamos abrir posibilidades de prácticas y memorias, sujetas a las necesidades del proyecto y la coordinación académica.» No declarar convenios académicos, plazas, remuneración, acompañamiento o plazos que aún no estén definidos. Antes de iniciar una colaboración, conversar tareas, disponibilidad, acompañamiento y condiciones concretas; el envío del formulario sólo inicia el contacto.
+Nota final: «Más adelante esperamos abrir prácticas y memorias, según las necesidades del proyecto y la coordinación con tu universidad.» No declarar convenios, plazas, remuneración o plazos aún no definidos. Antes de iniciar una colaboración, conversar tareas, disponibilidad, acompañamiento y condiciones; el envío sólo inicia el contacto.
 
-Campos propuestos: nombre, correo y mensaje obligatorios; carrera/especialidad, institución, disponibilidad orientativa y enlace a portafolio/GitHub/LinkedIn opcionales; consentimiento según privacidad. Mensaje guiado: «¿Qué te interesa del proyecto y qué te gustaría aportar o aprender?». Sin CV ni adjuntos iniciales, y sin selector de áreas hasta definir necesidades. Adaptar privacidad a los datos efectivamente recogidos y mantener paridad ES/EN antes de publicar.
+Nombre, correo, mensaje y consentimiento obligatorios. Formación, institución, disponibilidad y enlace a portafolio/GitHub/LinkedIn opcionales, dentro de «Agregar información sobre ti (opcional)». Sin CV, adjuntos ni selector de áreas. Mantener privacidad y paridad ES/EN.
 
 **Trabajo separado para definir áreas:** contrastar tareas actuales, prioridad, responsable que pueda acompañar, entregable y criterio de cierre; dimensionar una primera contribución acotada. Fuentes iniciales del repo `foresight-ai-mvp-2026`: `docs/ALCANCE_UI_CORE_MVP.md`, `docs/INTERNAL_ENGINEERING_ROADMAP.md`, `queue.yaml`, `docs/gestion/CARTA_GANTT.md` y roadmaps de unidad. El alcance UI/Core distingue decisiones y propuestas; el roadmap remite pendientes accionables a `queue.yaml`. Ninguno equivale por sí solo a una vacante aprobada. No trasladar arquitectura, compras, socios exploratorios ni hitos técnicos internos al anuncio público.
 
 Implementación 2.4.0: modal de participación independiente del contacto general, con controlador compartido y borradores separados. Sin selector de áreas, CV ni oferta de empleo o participación societaria. Privacidad actualizada para los campos opcionales de participación. Tomás autorizó publicar mediante push a main; los despliegues automáticos deben confirmarse tras el envío.
 
 Precisión aprobada por Tomás: Athene es el sistema completo, que utiliza plataformas aéreas autónomas bajo supervisión humana; no es el nombre de una aeronave ni de un único componente (ADR-0017).
+
+## Pulido de lectura y formularios — 2.4.1
+
+Tomás aprobó acortar modales y naturalizar textos. Contacto abre «Conversemos»; nombre/correo/mensaje visibles y organización/teléfono en desplegable opcional. Colaboración prioriza mensaje y mantiene información adicional desplegable, con nota de prácticas/memorias al final. Se retiran notas repetidas de privacidad; consentimiento y enlace permanecen. Los valores de borrador se conservan al plegar; un dato inválido oculto se revela antes de enfocar.
+
+Resumen imprimible más breve, con títulos «El desafío» y «El sistema» y sin bullets duplicados. Se mantienen propósito, supervisión humana, estado experimental y objetivos de pruebas. Tarjetas con rótulos sin códigos y sin puntos/retículas decorativos; espaciado móvil reducido sin bajar tamaño de texto. Retratos con marco y tamaño comunes: las fotografías originales mantienen encuadres/iluminación distintos; una sesión o selección editorial común sigue pendiente.

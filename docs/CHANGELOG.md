@@ -2,6 +2,13 @@
 
 El historial de versiones registra lo ocurrido, no especificaciones vigentes. Consultar el [índice](README.md) y el plan para el estado actual. Los documentos antiguos citados en las versiones están en la copia recuperable local descrita en el índice.
 
+## [2.4.1] — 2026-10-09
+
+- Modales abreviados y lenguaje más natural: contacto «Conversemos», invitación «Quiero colaborar» y envío «Enviar mensaje». Campos opcionales agrupados en desplegables nativos; notas repetidas retiradas y prácticas/memorias al final.
+- Foco de teclado incluye desplegables; validación revela un campo opcional inválido antes de enfocarlo. Borradores y fallback completos conservados.
+- Resumen imprimible condensado; rótulos y decoración de tarjetas simplificados, espaciado móvil ajustado y presentación de retratos uniforme sin modificar fotografías originales.
+- Paridad ES/EN, cuatro anchos, teclado, desplegables, campo inválido oculto, borradores y respuestas simuladas verificados; sin enviar correos reales.
+
 ## [2.4.0] — 2026-10-09
 
 - Invitación de colaboración extracurricular junto al equipo y modal propio ES/EN; prácticas y memorias descritas como posibilidades futuras, sin ofertas laborales ni societarias.

@@ -6,27 +6,29 @@
 
 const translations = {
   es: {
+    contact_optional: "Agregar datos de contacto (opcional)",
+    join_optional: "Agregar información sobre ti (opcional)",
+
     join_title: "Colabora en el desarrollo de Athene",
-    join_card_desc: "Queremos conocer a estudiantes, egresados e investigadores interesados en aportar al proyecto mediante colaboración extracurricular.",
-    join_cta: "Cuéntanos cómo te gustaría aportar",
-    join_intro: "Cuéntanos qué te interesa y cómo te gustaría contribuir. Las posibilidades de participación se conversarán según las necesidades del proyecto y tu disponibilidad.",
-    join_future: "Más adelante esperamos abrir posibilidades de prácticas y memorias, sujetas a las necesidades del proyecto y la coordinación académica.",
+    join_card_desc: "Buscamos estudiantes, egresados e investigadores interesados en aportar al proyecto mediante colaboración extracurricular.",
+    join_cta: "Quiero colaborar",
+    join_intro: "Cuéntanos qué te gustaría aportar o aprender. Conversaremos contigo para definir una posible colaboración.",
+    join_future: "Más adelante esperamos abrir prácticas y memorias, según las necesidades del proyecto y la coordinación con tu universidad.",
     join_mode: "Colaboración extracurricular",
     join_studies: "Carrera o especialidad (opcional)",
     join_institution: "Universidad o institución (opcional)",
-    join_availability: "Disponibilidad orientativa (opcional)",
+    join_availability: "¿Cuánto tiempo podrías dedicar? (opcional)",
     join_portfolio: "Portafolio, GitHub o LinkedIn (opcional)",
-    join_message: "Intereses y posibles aportes *",
-    join_hint: "¿Qué te interesa del proyecto y qué te gustaría aportar o aprender?",
-    join_submit: "Enviar interés",
-    join_note: "Este contacto inicia una conversación; las tareas y condiciones de participación se acordarán con el equipo.",
+    join_message: "¿Cómo te gustaría participar? *",
+    join_hint: "Cuéntanos sobre tus intereses y lo que te gustaría aportar o aprender.",
+    join_submit: "Enviar mensaje",
 
     contact_reason_label: "Motivo de la consulta",
     contact_reason_athene: "Athene · Vigilancia y pruebas",
     contact_reason_collaboration: "Colaboración",
     contact_reason_general: "Consulta general",
-    contact_hint_athene: "¿Qué necesitas observar y en qué contexto? Puedes mencionar la ubicación general del terreno o tu interés en posibles pruebas.",
-    contact_hint_collaboration: "Cuéntanos sobre tu organización y cómo te gustaría colaborar.",
+    contact_hint_athene: "¿Qué necesitas monitorear? Cuéntanos sobre el terreno o tu interés en futuras pruebas.",
+    contact_hint_collaboration: "¿Cómo te gustaría colaborar con nosotros?",
     contact_hint_general: "Cuéntanos brevemente el motivo de tu consulta.",
     contact_close: "Cerrar ventana",
 
@@ -62,15 +64,15 @@ const translations = {
     h_cta_brief: "Ver resumen del proyecto",
 
     // 3 Capability Pillars
-    h_p1_tag: "[AERONÁUTICA // 01]",
+    h_p1_tag: "AERONÁUTICA",
     h_p1_title: "Plataforma aérea experimental",
     h_p1_desc: "Las primeras pruebas se plantean sobre una aeronave comercial adaptada. Noctua es la plataforma VTOL de ala fija para la evolución del sistema.",
 
-    h_p2_tag: "[ANÁLISIS // 02]",
+    h_p2_tag: "ANÁLISIS",
     h_p2_title: "Análisis térmico a bordo",
     h_p2_desc: "Procesamiento de imágenes térmicas para detectar presencia de personas e indicios de incendio durante la noche.",
 
-    h_p3_tag: "[SUPERVISIÓN // 03]",
+    h_p3_tag: "SUPERVISIÓN",
     h_p3_title: "Revisión humana de alertas",
     h_p3_desc: "El operador revisa imágenes y alertas para evaluar el contexto y orientar una respuesta temprana.",
 
@@ -112,8 +114,8 @@ const translations = {
     f_privacy_link: "Política de Privacidad",
 
     // Modal tabs & headers
-    modal_title: "Conversemos sobre tu proyecto",
-    modal_sub: "Cuéntanos qué necesitas o cómo te gustaría colaborar. El equipo revisará tu consulta y te contactará para conversar sobre los próximos pasos.",
+    modal_title: "Conversemos",
+    modal_sub: "Cuéntanos qué necesitas o cómo te gustaría colaborar.",
 
     // Form labels & placeholders
     f_name_label: "Nombre y apellido *",
@@ -127,13 +129,12 @@ const translations = {
     f_message_label: "Mensaje *",
     f_message_ph: "Escribe tu mensaje…",
     f_consent_label: "Acepto el uso de mis datos para responder a esta consulta, según la",
-    form_val_error: "Revisa los campos obligatorios (*) y acepta el uso de tus datos para continuar.",
+    form_val_error: "Revisa los datos del formulario y acepta el uso de tus datos para continuar.",
     form_sending: "Enviando…",
     form_error_msg: "No pudimos enviar tu consulta. Puedes enviarla por correo a",
     f_submit_btn: "Enviar consulta",
-    f_privacy: "Usaremos estos datos para responder a tu consulta.",
     success_title: "Tu consulta fue enviada.",
-    success_desc: "El equipo revisará tu mensaje y te contactará mediante el correo indicado.",
+    success_desc: "Revisaremos tu mensaje y te responderemos al correo que indicaste.",
     success_close_btn: "Cerrar",
 
     // Dynamic Intent Variations
@@ -144,47 +145,46 @@ const translations = {
     eb_tag: "RESUMEN DEL PROYECTO 2026-27",
     eb_sub: "Vigilancia forestal nocturna",
     eb_h1: "Observación aérea para la vigilancia forestal nocturna",
-    eb_summary: "Athene es un sistema centinela aéreo en desarrollo experimental (TRL 3 declarado). Estamos definiendo su arquitectura y preparando la integración de una plataforma de pruebas, análisis térmico a bordo y supervisión humana. El programa 2026-27 busca evaluar esa integración.",
-    eb_b1_title: "1. El Problema Operacional",
-    eb_b1_p1: "Brecha nocturna: La oscuridad y el relieve complejo dificultan la observación de terrenos forestales y la evaluación de posibles riesgos.",
-    eb_b1_p2: "Vigilancia preventiva: Detectar presencia de personas e indicios de incendio permite aportar información para la evaluación del operador, sin identificar personas ni determinar su intención.",
-    eb_b1_p3: "Puntos ciegos terrestres: Las quebradas y los rodales interiores dificultan la observación desde caminos.",
-    eb_b2_title: "2. Solución Tecnológica",
-    eb_b2_p1: "Plataforma aérea: Primeras pruebas previstas sobre una aeronave comercial adaptada; Noctua es la plataforma VTOL de ala fija para la evolución del sistema.",
-    eb_b2_p2: "Análisis a bordo: Arquitectura de procesamiento térmico local, sin depender de internet para la inferencia.",
-    eb_b2_p3: "Revisión humana: Imágenes y alertas para que un operador evalúe el contexto y oriente una respuesta temprana.",
+    eb_summary: "Athene es un sistema en desarrollo experimental (TRL 3 declarado) para apoyar la vigilancia forestal nocturna con plataformas aéreas autónomas y supervisión humana. Estamos preparando la integración y las primeras pruebas.",
+    eb_b1_title: "1. El desafío",
+    eb_b1_p1: "La oscuridad, las quebradas y los sectores interiores del bosque dificultan la observación desde caminos.",
+    eb_b1_p2: "Buscamos detectar presencia de personas e indicios de incendio para apoyar la evaluación del operador, sin identificar personas ni determinar su intención.",
+    eb_b2_title: "2. El sistema",
+    eb_b2_p1: "Plataforma aérea: primeras pruebas previstas sobre una aeronave comercial adaptada. Noctua es el desarrollo VTOL de ala fija previsto para la evolución del sistema.",
+    eb_b2_p2: "Análisis a bordo: procesamiento térmico local, diseñado para realizar la inferencia sin conexión a internet.",
+    eb_b2_p3: "Supervisión humana: el operador revisa imágenes y alertas para evaluar el contexto y orientar una respuesta.",
     eb_b3_title: "3. Impacto que buscamos validar",
-    eb_b3_p1: "Seguridad del personal: Objetivo de reducir exposición en quebradas y caminos aislados mediante información previa para el equipo de respuesta.",
-    eb_b3_p2: "Observación nocturna: Evaluar la detección de presencia humana y anomalías térmicas para apoyar la vigilancia preventiva y la detección temprana de incendios.",
-    eb_b3_p3: "Apoyo a la respuesta: Evaluar cómo la ubicación de las alertas y la información de contexto pueden apoyar decisiones en terreno.",
+    eb_b3_p1: "Evaluar si la información aérea ayuda a reducir la exposición del personal en quebradas y caminos aislados.",
+    eb_b3_p2: "Evaluar la detección nocturna y la utilidad de las alertas para apoyar decisiones y una respuesta temprana en terreno.",
     eb_b4_title: "4. Desarrollo y próximas pruebas",
-    eb_b4_p1: "Estado actual TRL 3: Proyecto Semilla Inicia Corfo, apoyo UdeC y demostración técnica prevista en Gearbox para enero de 2027.",
-    eb_b4_p2: "Próximos pasos: Integración experimental y primeras pruebas para evaluar el funcionamiento conjunto, la precisión y los tiempos de respuesta.",
-    eb_b4_p3: "Contacto: Equipo Strig Systems · Concepción, Chile · contacto@strigsystems.tech"
+    eb_b4_p1: "Semilla Inicia Corfo y acompañamiento de la UdeC. Demostración técnica prevista en Gearbox para enero de 2027.",
+    eb_b4_p2: "Integrar los componentes y realizar primeras pruebas para evaluar su funcionamiento conjunto, precisión y tiempos de respuesta.",
   },
 
   en: {
+    contact_optional: "Add contact details (optional)",
+    join_optional: "Add information about yourself (optional)",
+
     join_title: "Contribute to the development of Athene",
-    join_card_desc: "We would like to meet students, graduates and researchers interested in contributing to the project through extracurricular collaboration.",
-    join_cta: "Tell us how you would like to contribute",
-    join_intro: "Tell us what interests you and how you would like to contribute. We will discuss opportunities based on project needs and your availability.",
-    join_future: "We hope to offer internships and thesis opportunities in the future, subject to project needs and academic coordination.",
+    join_card_desc: "We welcome students, graduates and researchers interested in contributing through extracurricular collaboration.",
+    join_cta: "I'd like to contribute",
+    join_intro: "Tell us what you would like to contribute or learn. We will discuss a possible collaboration with you.",
+    join_future: "We hope to offer internships and thesis opportunities in the future, depending on project needs and coordination with your university.",
     join_mode: "Extracurricular collaboration",
     join_studies: "Degree programme or specialty (optional)",
     join_institution: "University or institution (optional)",
-    join_availability: "Approximate availability (optional)",
+    join_availability: "How much time could you contribute? (optional)",
     join_portfolio: "Portfolio, GitHub or LinkedIn (optional)",
-    join_message: "Interests and possible contributions *",
-    join_hint: "What interests you about the project, and what would you like to contribute or learn?",
-    join_submit: "Send expression of interest",
-    join_note: "This contact starts a conversation; tasks and participation terms will be agreed with the team.",
+    join_message: "How would you like to participate? *",
+    join_hint: "Tell us about your interests and what you would like to contribute or learn.",
+    join_submit: "Send message",
 
     contact_reason_label: "Reason for contacting us",
     contact_reason_athene: "Athene · Surveillance and testing",
     contact_reason_collaboration: "Collaboration",
     contact_reason_general: "General enquiry",
-    contact_hint_athene: "What do you need to observe, and in what context? You can mention the general location of the site or your interest in potential tests.",
-    contact_hint_collaboration: "Tell us about your organisation and how you would like to collaborate.",
+    contact_hint_athene: "What do you need to monitor? Tell us about the site or your interest in future tests.",
+    contact_hint_collaboration: "How would you like to collaborate with us?",
     contact_hint_general: "Briefly describe your enquiry.",
     contact_close: "Close dialog",
 
@@ -220,15 +220,15 @@ const translations = {
     h_cta_brief: "View project overview",
 
     // 3 Capability Pillars
-    h_p1_tag: "[AEROSPACE // 01]",
+    h_p1_tag: "AERONAUTICS",
     h_p1_title: "Experimental aerial platform",
     h_p1_desc: "Initial tests are planned on an adapted commercial aircraft. Noctua is the fixed-wing VTOL platform envisioned for the future system.",
 
-    h_p2_tag: "[ANALYSIS // 02]",
+    h_p2_tag: "ANALYSIS",
     h_p2_title: "Onboard thermal analysis",
     h_p2_desc: "Thermal image processing to detect the presence of people and signs of fire at night.",
 
-    h_p3_tag: "[SUPERVISION // 03]",
+    h_p3_tag: "SUPERVISION",
     h_p3_title: "Human review of alerts",
     h_p3_desc: "The operator reviews images and alerts to assess the context and guide an early response.",
 
@@ -270,8 +270,8 @@ const translations = {
     f_privacy_link: "Privacy Policy",
 
     // Modal tabs & headers
-    modal_title: "Let’s discuss your project",
-    modal_sub: "Tell us what you need or how you would like to collaborate. Our team will review your enquiry and contact you to discuss the next steps.",
+    modal_title: "Let's talk",
+    modal_sub: "Tell us what you need or how you would like to collaborate.",
 
     // Form labels & placeholders
     f_name_label: "Full Name *",
@@ -285,13 +285,12 @@ const translations = {
     f_message_label: "Message *",
     f_message_ph: "Write your message…",
     f_consent_label: "I agree to the use of my data to respond to this enquiry, as described in the",
-    form_val_error: "Check the required fields (*) and agree to the use of your data to continue.",
+    form_val_error: "Check the form details and consent to the use of your data to continue.",
     form_sending: "Sending…",
     form_error_msg: "We could not send your enquiry. You can email it to",
     f_submit_btn: "Send enquiry",
-    f_privacy: "We will use these details to respond to your enquiry.",
     success_title: "Your enquiry has been sent.",
-    success_desc: "Our team will review your message and contact you at the email address provided.",
+    success_desc: "We will review your message and reply to the email address you provided.",
     success_close_btn: "Close",
 
     // Dynamic Intent Variations
@@ -302,23 +301,20 @@ const translations = {
     eb_tag: "PROJECT OVERVIEW 2026-27",
     eb_sub: "Nighttime forestry surveillance",
     eb_h1: "Aerial observation for nighttime forestry surveillance",
-    eb_summary: "Athene is an aerial sentinel system under experimental development (declared TRL 3). We are defining its architecture and preparing the integration of a test platform, onboard thermal analysis and human supervision. The 2026-27 program aims to assess that integration.",
-    eb_b1_title: "1. Operational Problem",
-    eb_b1_p1: "Nighttime gap: Darkness and complex terrain make it harder to observe forest sites and assess potential risks.",
-    eb_b1_p2: "Preventive surveillance: Detecting the presence of people and signs of fire can inform operator assessment, without identifying individuals or determining their intent.",
-    eb_b1_p3: "Ground blind spots: Ravines and interior forest stands limit observation from roads.",
-    eb_b2_title: "2. Technological Solution",
-    eb_b2_p1: "Aerial platform: Initial tests are planned on an adapted commercial aircraft; Noctua is the fixed-wing VTOL platform envisioned for the future system.",
-    eb_b2_p2: "Onboard analysis: An architecture for local thermal processing without relying on internet access for inference.",
-    eb_b2_p3: "Human review: Images and alerts for an operator to assess the context and guide an early response.",
+    eb_summary: "Athene is a system under experimental development (declared TRL 3) to support nighttime forestry surveillance using autonomous aerial platforms with human supervision. We are preparing integration and initial tests.",
+    eb_b1_title: "1. The challenge",
+    eb_b1_p1: "Darkness, ravines and interior forest areas make observation from roads difficult.",
+    eb_b1_p2: "We aim to detect the presence of people and signs of fire to support operator assessment, without identifying individuals or determining their intent.",
+    eb_b2_title: "2. The system",
+    eb_b2_p1: "Aerial platform: initial tests planned on an adapted commercial aircraft. Noctua is the fixed-wing VTOL development envisioned for the future system.",
+    eb_b2_p2: "Onboard analysis: local thermal processing, designed to run inference without an internet connection.",
+    eb_b2_p3: "Human supervision: the operator reviews images and alerts to assess the context and guide a response.",
     eb_b3_title: "3. Impact we aim to validate",
-    eb_b3_p1: "Personnel safety: Aim to reduce exposure in ravines and isolated roads through advance information for response teams.",
-    eb_b3_p2: "Nighttime observation: Assess the detection of human presence and thermal anomalies to support preventive surveillance and early fire detection.",
-    eb_b3_p3: "Response support: Assess how alert locations and contextual information can support decisions in the field.",
+    eb_b3_p1: "Assess whether aerial information helps reduce personnel exposure in ravines and isolated roads.",
+    eb_b3_p2: "Assess nighttime detection and the usefulness of alerts in supporting decisions and an early response in the field.",
     eb_b4_title: "4. Development and upcoming tests",
-    eb_b4_p1: "Current TRL 3 status: Corfo Semilla Inicia project, UdeC support and a technical demonstration planned at Gearbox for January 2027.",
-    eb_b4_p2: "Next steps: Experimental integration and initial tests to assess combined operation, accuracy and response times.",
-    eb_b4_p3: "Contact: Strig Systems team · Concepción, Chile · contacto@strigsystems.tech"
+    eb_b4_p1: "Corfo Semilla Inicia funding and UdeC support. Technical demonstration planned at Gearbox for January 2027.",
+    eb_b4_p2: "Integrate components and run initial tests to assess combined operation, accuracy and response times.",
   }
 };
 
@@ -468,7 +464,7 @@ function initContactModal(prefix = 'contact') {
     if (!modal.classList.contains('active')) return;
     if (event.key === 'Escape') { event.preventDefault(); closeModal(); return; }
     if (event.key !== 'Tab') return;
-    const focusables = [...modal.querySelectorAll('button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled])')]
+    const focusables = [...modal.querySelectorAll('button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), summary')]
       .filter(el => el.tabIndex >= 0 && el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden');
     const first = focusables[0], last = focusables[focusables.length - 1];
     if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
@@ -488,6 +484,7 @@ function initContactModal(prefix = 'contact') {
         if (el.type === 'checkbox') el.parentElement.classList.add('input-invalid');
       });
       validation.style.display = 'block';
+      invalid[0].closest('details')?.setAttribute('open', '');
       invalid[0].focus();
       return;
     }
@@ -525,6 +522,7 @@ function initContactModal(prefix = 'contact') {
       if (modal.classList.contains('active')) element('success-title').focus();
       if (window.umami) window.umami.track('Submit-Contact-Success', { intent });
       form.reset();
+      form.querySelectorAll('details').forEach(details => { details.open = false; });
       reason.value = intent;
     } catch (err) {
       const body = Object.entries(payload).filter(([key]) => !key.startsWith('_')).map(([key, val]) => `${key}: ${val}`).join('\n');
