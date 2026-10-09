@@ -1,0 +1,29 @@
+{
+  "ruta": "B / Articulación diagonal de Strig",
+  "alcance": "Revisión individual de asesor-agente. Sin comparación con A/C, adopción ni validación externa.",
+  "materialRevisado": ["R16/split-s.png", "R16/family-b.png", "R16/negative-space-b.png", "R16/source/studies_b.json"],
+  "tesis": "Articular la S gruesa por su recorrido diagonal, conservando el origen de firma empresarial y Athene de perfil.",
+  "cumplimiento": "La operación está aislada: canal de anchura perpendicular0/6/10 u, pendiente y centro fijos, dos polígonos transparentes. Terminales y dimensiones generales permanecen; la tinta retirada y pasos exteriores se declaran. Athene R15 permanece exacto.",
+  "observado": [
+    "Ambos canales separan la firma en dos masas siguiendo la misma dirección de sus bordes oblicuos.",
+    "La lectura general de una S y sus terminales gruesos permanece en las dos alternativas.",
+    "Canal6 conserva más tinta en el tramo central; Canal10 hace más dominante la franja y separa más las mitades.",
+    "En la presentación pequeña el canal6 se insinúa a16 px y se distingue mejor a24/32; Canal10 dispone de mayor separación. Esta lámina no garantiza el mismo comportamiento en todo soporte.",
+    "La ficha mantiene producto principal y respaldo corporativo; la variante cortada no exige alterar Athene para relacionarse con él."
+  ],
+  "hipotesis": [
+    "El corte puede expresar composición deliberada o articulación; no demuestra ingeniería ni integración operacional.",
+    "En esta revisión las partes se perciben como una S partida, no dos S autónomas. El vínculo con las iniciales Strig/Systems puede motivar la decisión sin convertirse en lectura conseguida.",
+    "La mayor franja puede aportar claridad o fragmentación; la valoración local favorece el gesto más contenido, sin atribuir consenso externo."
+  ],
+  "ganancia": "Canal6 añade una articulación visible a la firma conservando buena parte del peso que Tomás aprecia. La dirección del corte pertenece a la construcción propia de B.",
+  "coste": "Toda variante interrumpe la continuidad monolítica y retira masa. Canal6 depende más del tamaño para mostrar separación; Canal10 sacrifica más enlace y protagoniza el centro sin conseguir dos S más legibles.",
+  "preservacionIdentidad": "Sí: masa, silueta general y recorrido diagonal siguen presentes. Canal6 conserva mejor la unidad en esta revisión; el control intacto mantiene mayor continuidad material.",
+  "decisionProvisional": "Recomiendo 1/Canal6 como candidato para continuar si a Tomás le atrae la articulación. Mantendría 0/S gruesa como control; no avanzaría con Canal10 solo para forzar SS, porque su pérdida de enlace es mayor y esa lectura sigue sin lograrse.",
+  "criterioParaElegir": "Elegir Canal6 porque gusta una firma articulada, no porque haya que explicar dos letras. Si Tomás prefiere la S como recorrido sólido, conservar el control es una resolución completa; no debe mantenerse el corte por justificar su propuesta inicial.",
+  "contraformaAthene": "El vacío posterior separa cabeza, cuello y apoyo dentro del recorrido y preserva su apertura. No hay evidencia de intención original de ala, territorio o segunda figura. La respuesta gráfica no necesita rellenarlo para dar significado a cada espacio.",
+  "complementacionPerfil": "Mantendría Athene intacto ahora: Tomás aprecia el descubrimiento del búho implícito. Una figura añadida competiría potencialmente con esa lectura y sería otra operación; no es necesaria para justificar el canal corporativo.",
+  "siguienteIntervencion": "Recoger preferencia entre firma sólida y Canal6 en el mismo contexto. Si se elige el canal, comprobar una aplicación real de cabecera/documento y definir tamaño de uso según la separación efectiva. No añadir simultáneamente letras, figuras o nueva anatomía al perfil.",
+  "diferido": ["Redibujar cada parte para conseguir SS explícitas", "Rellenar el vacío posterior de Athene", "Variante micro automática antes de seleccionar", "Distintividad o disponibilidad registral", "Relato nuevo que atribuya significados originales al corte"],
+  "limiteDeCerteza": "La geometría y comparación local son verificables; reconocimiento de dos S, identidad animal externa, percepción de seguridad y distintividad comercial permanecen sin validar."
+}

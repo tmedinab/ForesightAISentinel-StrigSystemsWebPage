@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" fill="none" role="img" aria-labelledby="architecture-title architecture-description">
+  <title id="architecture-title">Athene conceptual architecture in three-quarter perspective</title>
+  <desc id="architecture-description">Three-quarter parallel projection of a generic fixed-wing VTOL aircraft with illustrative lift rotors and a camera below its forward fuselage. A locator identifies an enlarged onboard computer, with a separate directional camera-to-inference connection. A schematic forest terrain tile shows depth beneath the camera. Image and notice symbols reach a local human supervision console. Conceptual only: not approved Noctua geometry, real imagery, component placement, terrain data or measured performance. Use with the translated caption.</desc>
+  <defs>
+    <pattern id="architecture-grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" stroke="#94a3b8" stroke-opacity=".055"/></pattern>
+    <linearGradient id="observation-field" x1="165" y1="172" x2="165" y2="374" gradientUnits="userSpaceOnUse"><stop stop-color="#00e5ff" stop-opacity=".16"/><stop offset="1" stop-color="#00e5ff" stop-opacity=".015"/></linearGradient>
+    <linearGradient id="aerial-surface" x1="70" y1="42" x2="402" y2="194" gradientUnits="userSpaceOnUse"><stop stop-color="#00e5ff" stop-opacity=".045"/><stop offset="1" stop-color="#00e5ff" stop-opacity=".012"/></linearGradient>
+    <marker id="flow-direction" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="m2 1 6 4-6 4" stroke="#00e5ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <symbol id="forest-tree" viewBox="0 0 28 40"><path d="m14 2-9 12h5L2 26h10v12h4V26h10L18 14h5Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></symbol>
+  </defs>
+  <path d="M0 0h720v460H0z" fill="url(#architecture-grid)"/>
+  <!-- Functional boundary, not an airframe enclosure or a hardware layout. -->
+  <path d="M64 42h328l14 14v140l-14 14H64l-14-14V56Z" fill="url(#aerial-surface)" stroke="#94a3b8" stroke-opacity=".45" stroke-width="1.5" stroke-dasharray="5 7"/>
+  <!-- Original generic aircraft: parallel three-quarter projection, illustrative geometry. -->
+<path d="M87.75 134.54L143.65 93.26" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/><path d="M186.35 169.34L242.25 128.06" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/><path d="M86.2 89.3L74.5 97.94L145.05 134.9L165.45 142.1L258.1 162.74L269.8 154.1L178.05 130.94L161.05 124.94Z" fill="#203c4a" stroke="#cbd5e1" stroke-width="1.8" stroke-linejoin="round"/><path d="M178.05 130.94L269.8 154.1L269.8 158.6L178.05 135.44Z" fill="#0f202d" stroke="#94a3b8" stroke-width="1.4" stroke-linejoin="round"/><path d="M86.2 89.3L161.05 124.94L161.05 129.44L86.2 93.8Z" fill="#122735" stroke="#94a3b8" stroke-width="1.4" stroke-linejoin="round"/><path d="M174.6 83.42L168.1 88.22L190.25 105.26L202.15 109.46L241.2 114.02L247.7 109.22L205.95 100.16Z" fill="#203c4a" stroke="#cbd5e1" stroke-width="1.8" stroke-linejoin="round"/><path d="M115.6 170.48L129.2 143.96L155.65 121.7L190.25 102.56L216.35 94.28L202.15 106.76L174.35 128.3L146.2 149.96Z" fill="#345364" stroke="#cbd5e1" stroke-width="1.8" stroke-linejoin="round"/><path d="M115.6 170.48L146.2 149.96L174.35 128.3L202.15 106.76L216.35 94.28L203 116.96L176.05 142.4L146.2 161.66Z" fill="#152c3a" stroke="#cbd5e1" stroke-width="1.8" stroke-linejoin="round"/><path d="M123.4 160.22L193.6 102.98" stroke="#b7d1dc" stroke-width="1.2" stroke-linecap="round"/><path d="M195.55 103.34L205.3 79.04L215.05 93.44Z" fill="#365464" stroke="#cbd5e1" stroke-width="1.8" stroke-linejoin="round"/><path d="M140.3 157.64L140.3 168.44" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round"/><g stroke="#00e5ff" stroke-width="2" stroke-linejoin="round"><path d="M128.3 165.94v8q0 12 12 12t12-12v-8"/><path d="M132.3 166.94l16-3 6 5v12l-17 3-5-5Z" fill="#173544"/><ellipse cx="140.3" cy="175.94" rx="5" ry="6" fill="#07090e"/></g><path d="M143.65 93.26L143.65 85.16" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round"/><path d="M158.95 90.56L160.94 88.77L162.26 86.84L162.87 84.85L162.74 82.87L161.88 80.98L160.31 79.24L158.11 77.74L155.35 76.52L152.14 75.63L148.6 75.11L144.88 74.98L141.1 75.23L137.43 75.87L133.99 76.86L130.93 78.18L128.35 79.76L126.36 81.55L125.04 83.48L124.43 85.47L124.56 87.45L125.42 89.34L126.99 91.08L129.19 92.58L131.95 93.8L135.16 94.69L138.7 95.21L142.42 95.34L146.2 95.09L149.87 94.45L153.31 93.46L156.37 92.14Z" fill="#0e2833" stroke="#00e5ff" stroke-width="1.5" stroke-linejoin="round"/><path d="M130.9 80.66L156.4 89.66" stroke="#7adbe5" stroke-width="2" stroke-linecap="round"/><circle cx="143.65" cy="85.16" r="2.6" fill="#cbd5e1"/><path d="M87.75 134.54L87.75 126.44" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round"/><path d="M103.05 131.84L105.04 130.05L106.36 128.12L106.97 126.13L106.84 124.15L105.98 122.26L104.41 120.52L102.21 119.02L99.45 117.8L96.24 116.91L92.7 116.39L88.98 116.26L85.2 116.51L81.53 117.15L78.09 118.14L75.03 119.46L72.45 121.04L70.46 122.83L69.14 124.76L68.53 126.75L68.66 128.73L69.52 130.62L71.09 132.36L73.29 133.86L76.05 135.08L79.26 135.97L82.8 136.49L86.52 136.62L90.3 136.37L93.97 135.73L97.41 134.74L100.47 133.42Z" fill="#0e2833" stroke="#00e5ff" stroke-width="1.5" stroke-linejoin="round"/><path d="M75 121.94L100.5 130.94" stroke="#7adbe5" stroke-width="2" stroke-linecap="round"/><circle cx="87.75" cy="126.44000000000001" r="2.6" fill="#cbd5e1"/><path d="M242.25 128.06L242.25 119.96" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round"/><path d="M257.55 125.36L259.54 123.57L260.86 121.64L261.47 119.65L261.34 117.67L260.48 115.78L258.91 114.04L256.71 112.54L253.95 111.32L250.74 110.43L247.2 109.91L243.48 109.78L239.7 110.03L236.03 110.67L232.59 111.66L229.53 112.98L226.95 114.56L224.96 116.35L223.64 118.28L223.03 120.27L223.16 122.25L224.02 124.14L225.59 125.88L227.79 127.38L230.55 128.6L233.76 129.49L237.3 130.01L241.02 130.14L244.8 129.89L248.47 129.25L251.91 128.26L254.97 126.94Z" fill="#0e2833" stroke="#00e5ff" stroke-width="1.5" stroke-linejoin="round"/><path d="M229.5 115.46L255 124.46" stroke="#7adbe5" stroke-width="2" stroke-linecap="round"/><circle cx="242.25" cy="119.96" r="2.6" fill="#cbd5e1"/><path d="M186.35 169.34L186.35 161.24" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round"/><path d="M201.65 166.64L203.64 164.85L204.96 162.92L205.57 160.93L205.44 158.95L204.58 157.06L203.01 155.32L200.81 153.82L198.05 152.6L194.84 151.71L191.3 151.19L187.58 151.06L183.8 151.31L180.13 151.95L176.69 152.94L173.63 154.26L171.05 155.84L169.06 157.63L167.74 159.56L167.13 161.55L167.26 163.53L168.12 165.42L169.69 167.16L171.89 168.66L174.65 169.88L177.86 170.77L181.4 171.29L185.12 171.42L188.9 171.17L192.57 170.53L196.01 169.54L199.07 168.22Z" fill="#0e2833" stroke="#00e5ff" stroke-width="1.5" stroke-linejoin="round"/><path d="M173.6 156.74L199.1 165.74" stroke="#7adbe5" stroke-width="2" stroke-linecap="round"/><circle cx="186.35000000000002" cy="161.24" r="2.6" fill="#cbd5e1"/><path d="M171.8 126.5L246 82H279" stroke="#94a3b8" stroke-opacity=".6" stroke-width="1.5" stroke-dasharray="4 5"/><circle cx="171.8" cy="126.5" r="3" fill="#00e5ff"/><path d="M158.3 175.94H253q12 0 12-12v-49h6" stroke="#00e5ff" stroke-width="2" marker-end="url(#flow-direction)"/>
+  <path d="M286 76l10-8h76v74l-10 8V76Z" fill="#14303d" stroke="#00e5ff" stroke-opacity=".55" stroke-width="1.5"/>
+  <!-- Abstract processing, without implying a particular board or manufacturer. -->
+  <g stroke="#00e5ff" stroke-width="2" stroke-linejoin="round">
+    <rect x="286" y="76" width="76" height="74" rx="3" fill="#0c1017"/>
+    <path d="M300 89h48v48h-48Z" stroke-opacity=".5"/>
+    <path d="M301 67v9m15-9v9m15-9v9m15-9v9m-45 74v9m15-9v9m15-9v9m15-9v9m-60-58h-9m9 15h-9m9 15h-9m85-30h9m-9 15h9m-9 15h9" stroke-opacity=".65"/>
+    <path d="M309 106v-8h8m14 0h8v8m0 13v8h-8m-14 0h-8v-8"/>
+    <path d="m311 105 13 8-13 9m13-9 14-8m-14 8 14 9" stroke-opacity=".7"/><circle cx="311" cy="105" r="3"/><circle cx="311" cy="122" r="3"/><circle cx="338" cy="105" r="3"/><circle cx="338" cy="122" r="3"/>
+  </g>
+  <circle cx="325" cy="112" r="4" fill="#f59e0b" stroke="#f59e0b"/>
+  <path d="M374 112h68q12 0 12 12v40q0 12 12 12h20" stroke="#00e5ff" stroke-width="2" marker-end="url(#flow-direction)"/>
+  <g stroke="#00e5ff" stroke-width="1.8" stroke-linejoin="round">
+    <rect x="393" y="93" width="44" height="37" rx="3" fill="#0c1017"/>
+    <path d="m399 123 8-7 7 4 9-10 8 6" stroke-opacity=".5"/>
+    <circle cx="415" cy="103" r="3" stroke="#f59e0b"/>
+    <path d="M415 109v8m-5-5 5-3 5 3" stroke="#f59e0b"/>
+  </g>
+  <!-- Schematic terrain tile; the depth is qualitative, without coverage dimensions. -->
+  <path d="M35 329 244 265 443 337 228 413Z" fill="#0e1b24" stroke="#6d8294" stroke-opacity=".5" stroke-width="1.5"/>
+  <path d="M35 329v11l193 84v-11Zm193 84 215-76v11l-215 76Z" fill="#142633" stroke="#6d8294" stroke-opacity=".4" stroke-width="1.5"/>
+  <g stroke="#94a3b8" stroke-opacity=".22" stroke-width="1.2">
+    <path d="m63 323 198 78m-147-94 202 74m-149-90 205 70m-152-86 204 68M77 347l212-66m-166 86 213-69m-165 90 213-73m-165 94 214-78"/>
+    <path d="M54 335q61-23 117-2t107-11 126 21M90 352q53-18 89-4t100-11 91 21M129 370q49-18 82-4t78-8 47 12"/>
+  </g>
+  <ellipse cx="153" cy="345" rx="74" ry="24" fill="#00e5ff" fill-opacity=".035" stroke="#00e5ff" stroke-opacity=".4" stroke-width="1.4"/>
+  <path d="M140.3 185.94 79 345Q150 390 227 345Z" fill="url(#observation-field)"/>
+  <path d="M140.3 185.94 79 345M140.3 185.94 227 345" stroke="#00e5ff" stroke-opacity=".35" stroke-width="1.4" stroke-dasharray="4 7"/>
+  <path d="M79 331l12-4 11 6-12 4Z" fill="#07090e" fill-opacity=".65"/>
+  <path d="M90 298 78 322 90 326Z" fill="#294451" stroke="#6f8996" stroke-opacity=".6" stroke-width="1.1"/>
+  <path d="M90 298 102 320 90 326Z" fill="#142c39" stroke="#6f8996" stroke-opacity=".6" stroke-width="1.1"/>
+  <path d="M90 326v7" stroke="#94a3b8" stroke-opacity=".6" stroke-width="2"/>
+  <path d="M133 301l12-4 11 6-12 4Z" fill="#07090e" fill-opacity=".65"/>
+  <path d="M144 272 132 292 144 296Z" fill="#294451" stroke="#6f8996" stroke-opacity=".6" stroke-width="1.1"/>
+  <path d="M144 272 156 290 144 296Z" fill="#142c39" stroke="#6f8996" stroke-opacity=".6" stroke-width="1.1"/>
+  <path d="M144 296v7" stroke="#94a3b8" stroke-opacity=".6" stroke-width="2"/>
+  <path d="M280 329l12-4 11 6-12 4Z" fill="#07090e" fill-opacity=".65"/>
+  <path d="M291 292 279 320 291 324Z" fill="#294451" stroke="#6f8996" stroke-opacity=".6" stroke-width="1.1"/>
+  <path d="M291 292 303 318 291 324Z" fill="#142c39" stroke="#6f8996" stroke-opacity=".6" stroke-width="1.1"/>
+  <path d="M291 324v7" stroke="#94a3b8" stroke-opacity=".6" stroke-width="2"/>
+  <path d="M329 358l12-4 11 6-12 4Z" fill="#07090e" fill-opacity=".65"/>
+  <path d="M340 327 328 349 340 353Z" fill="#294451" stroke="#6f8996" stroke-opacity=".6" stroke-width="1.1"/>
+  <path d="M340 327 352 347 340 353Z" fill="#142c39" stroke="#6f8996" stroke-opacity=".6" stroke-width="1.1"/>
+  <path d="M340 353v7" stroke="#94a3b8" stroke-opacity=".6" stroke-width="2"/>
+  <path d="M247 384l12-4 11 6-12 4Z" fill="#07090e" fill-opacity=".65"/>
+  <path d="M258 345 246 375 258 379Z" fill="#294451" stroke="#6f8996" stroke-opacity=".6" stroke-width="1.1"/>
+  <path d="M258 345 270 373 258 379Z" fill="#142c39" stroke="#6f8996" stroke-opacity=".6" stroke-width="1.1"/>
+  <path d="M258 379v7" stroke="#94a3b8" stroke-opacity=".6" stroke-width="2"/>
+  <g stroke="#f59e0b" stroke-width="2" stroke-linecap="round"><path d="M139 333v-7h9m23 0h9v7m0 19v7h-9m-23 0h-9v-7"/><circle cx="159" cy="333" r="4" fill="#f59e0b" fill-opacity=".25"/><path d="M159 339v11m-7-6 7-5 7 5m-7 6-6 8m6-8 6 8"/></g>
+  <path d="M491 139l11-8h151v119l-11 8V139Z" fill="#20303c" stroke="#94a3b8" stroke-width="1.4"/>
+  <path d="M536 275h59l14-7h-59Z" fill="#20303c" stroke="#94a3b8" stroke-width="1.4"/>
+  <!-- A reviewable alert reaches a person, rather than an automatic response. -->
+  <g stroke="#cbd5e1" stroke-width="2" stroke-linejoin="round">
+    <rect x="491" y="139" width="151" height="119" rx="3" fill="#0c1017"/>
+    <path d="M503 151h127v94H503Zm52 107v17m-17 0h57" stroke-opacity=".6"/>
+    <path d="M516 191h43v41h-43Zm56-34h45v34h-45Z" stroke-opacity=".4"/>
+    <path d="m520 224 9-8 8 5 8-10 10 6m21-34 9-8 10 5 11-13 7 9" stroke-opacity=".45"/>
+    <circle cx="538" cy="202" r="3" stroke="#f59e0b"/>
+    <path d="M538 208v10m-5-5 5-5 5 5m-5 5-4 7m4-7 4 7" stroke="#f59e0b"/>
+    <circle cx="582" cy="217" r="10" stroke-opacity=".65"/><path d="M582 211v7l5 3" stroke-opacity=".65"/>
+    <path d="M609 206a8 8 0 0 1 8 8c0 6-8 15-8 15s-8-9-8-15a8 8 0 0 1 8-8Z" stroke-opacity=".5" stroke-dasharray="3 3"/>
+    <circle cx="677" cy="180" r="12"/>
+    <path d="M657 237v-21a20 20 0 0 1 40 0v21m-40-11h40"/>
+  </g>
+  <path d="M516 165h18v18h-18Z" fill="#f59e0b" fill-opacity=".15" stroke="#f59e0b" stroke-width="1.5"/>
+  <path d="M525 170v6m0 3v1" stroke="#f59e0b" stroke-width="2"/>
+  <g font-family="monospace" font-size="24" fill="#cbd5e1"><text x="65" y="70">01</text><text x="286" y="59">02</text><text x="493" y="121">03</text></g>
+  <g stroke="#00e5ff" stroke-opacity=".4" stroke-width="1.3"><path d="M16 32V16h16m656 0h16v16M16 428v16h16m656 0h16v-16"/></g>
+</svg>

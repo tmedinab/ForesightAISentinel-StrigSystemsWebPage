@@ -1,0 +1,219 @@
+{
+  "actualizado": "2026-10-06",
+  "estado": "Tutoría y encargos revisados. Sin nuevos SVG ni identidad adoptada.",
+  "solicitud": "M15: cultivar identidad propia por ruta; evaluación separada de proceso y resultado; consejos diferidos.",
+  "criterioComun": "M14 confirmado: ingeniería y atención protectora; búho como identidad.",
+  "alcance": "Asesoría simulada por un agente distinto del equipo de dibujo. No evaluación ciega ni investigación externa.",
+  "rutas": [
+    {
+      "id": "A",
+      "tutoria": {
+        "ruta": "A / Campo y centinela abierto",
+        "estado": "Tutoría cerrada con defensa coordinada por agente principal. Sin nuevas formas.",
+        "tesis": "La empresa firma con un campo articulado; el producto concentra atención en un frente abierto.",
+        "no_negociables_conceptuales": [
+          "Apertura como disponibilidad de atención, no simple hueco decorativo.",
+          "Empresa abstracta y producto facial: roles diferentes con oficio común.",
+          "Presencia amplia y firme sin encerrar el rostro."
+        ],
+        "logrado": [
+          "Dos brazos articulan Strig; frente, centro y retornos articulan Athene.",
+          "Hay diferencia visible de silueta y figuración entre empresa y producto.",
+          "La apertura inferior del producto permanece clara en la lámina."
+        ],
+        "observado_en_forma": "Frente continua, centro unido y retornos cortos producen una figura frontal abierta; no prueban por sí mismos búho o protección.",
+        "hipotesis_no_validada": "Búho, visor y máscara son lecturas posibles de revisores simulados. La preferencia de Tomás valida afinidad personal, no recepción externa.",
+        "riesgo_principal": "Que la explicación zoológica sostenga más la identidad de centinela que las relaciones faciales visibles.",
+        "diagnostico_proceso": "Las rondas aislaron variables y conservaron controles. Falta convertir preferencias acumuladas en una tesis defendida sin relatos retrospectivos; ser la ruta elegida no la convierte en patrón para las demás.",
+        "intervencion_proxima": "Antes de dibujar, el equipo identifica qué relación entre frente, mejillas y centro produce atención firme y cuál admite ambigüedad. Después podrá ensayar una sola relación conservando amplitud y apertura.",
+        "consejo_diferido": "No añadir A, orejas, casco o intervención tipográfica hasta saber qué lectura concreta hace falta mejorar.",
+        "prueba_criterio": "Mostrar símbolo y ficha sin metáfora explicada; separar lo que Tomás ve, el carácter que siente y lo que necesita del producto. Registrar sin llamarlo lectura ciega.",
+        "conservar_si": "La presencia abierta y la relación de roles se sostienen sin exigir una explicación para aceptar el conjunto.",
+        "reconsiderar_si": "La lectura preferida depende del relato y el carácter visible contradice atención protectora; no basta una asociación alternativa aislada.",
+        "leccion_al_equipo": "La madurez de una ruta exige defender su intención y límites, no convertir cada crítica en otro detalle.",
+        "pregunta_al_equipo": "¿Qué relación visible hace que este frente abierto sea un centinela propio, y qué ambigüedad aceptarían deliberadamente sin tratar de eliminarla?",
+        "respuesta_equipo": "Root defiende continuidad facetada corporativa y centinela abierto. R11 cultivó retornos sin reemplazar rostro; R12 cambió composición sin alterar isotipo. La reacción de Tomás es evidencia local de afinidad, no percepción universal.",
+        "resolucion_tutor": "Conservar geometría puede ser la intervención correcta. La trayectoria documentada de cambios aislados sostiene el proceso, pero falta verificar la relación visual propia sin hacer de A un ideal para otras rutas.",
+        "encargo_particular": {
+          "objetivo": "Explicitar y comprobar la gramática del campo articulado y su especialización facial.",
+          "entrega_antes_de_dibujar": "Tres relaciones visibles anotadas: continuidad/corte corporativo, masa/vacío facial y jerarquía empresa/producto. Una ambigüedad aceptada y una que sí merecería ajuste.",
+          "limite": "Sin letras añadidas ni nuevas curvas por obligación; no reclamar superioridad por selección o más rondas.",
+          "puerta_de_avance": "Solo dibujar si aparece un problema localizado que el equipo puede relacionar con la tesis; en otro caso preservar el control y trabajar reglas de uso."
+        },
+        "respuestaEquipoLeida": {
+          "tesisDefendida": "Strig articula un campo abierto con dos brazos; Athene concentra atención en una relación frontal entre plano superior, centro descendente y retornos laterales. La familia comparte oficio y aperturas, no el mismo rostro.",
+          "rasgoPropio": "La amplitud horizontal de Athene y su centro conectado se equilibran con retornos que envuelven sin cerrar la zona inferior. En Strig, la continuidad se sugiere entre dos brazos rotacionales separados, en lugar de una cinta cerrada.",
+          "decision": "Acepta la tutoría y difiere nueva geometría. La relación observable se puede defender; todavía no hay un problema concreto que justifique modificarla. Afinidad de Tomás no equivale a reconocimiento universal.",
+          "operacionProxima": "Explicitar en la ficha de construcción qué hacen frente, centro y retornos y qué lectura alternativa se acepta. Antes de un ensayo, localizar con Tomás si la ambigüedad está en el centro nasal, en el peso de la frente o en la envolvente; modificar solo esa relación si contradice el carácter buscado.",
+          "queConserva": "H1 exacto, Athene-retornos y composición equilibrada, amplitud frontal y apertura inferior. La selección existente se conserva sin convertir A en patrón formal de B/C.",
+          "beneficio": "Consolida una intención defendible y evita sumar rasgos zoológicos solo para eliminar toda ambigüedad.",
+          "coste": "El búho seguirá siendo una lectura posible junto a visor o casco; se acepta esa ambigüedad si no domina equipamiento de combate ni contradice atención protectora.",
+          "consejoDiferido": "Añadir A, orejas, ojos o casco y personalizar tipografía. También se difiere cualquier cambio de centro antes de localizar el problema.",
+          "criterio": "Distinguir en la crítica local relación formal, carácter sentido y asociación figurativa. Si existe un problema concreto de atención/carácter, formular un ensayo de una variable y compararlo con el control; no fabricar un resultado por novedad.",
+          "controlElegido": "A de R14, cuyos paths y lockups conservan las selecciones R09/R11/R12. No se abre una nueva rama."
+        },
+        "devolucionTutor": {
+          "decision": "Seguir con el encargo de documentación y lectura; sin necesidad de ensayo geométrico.",
+          "encargoAcotado": true,
+          "preservaTesis": "Sí. Defiende relaciones de continuidad y apertura sin convertirlas en obligación para otras rutas.",
+          "observacionCritica": "La ambigüedad visor/casco se acepta de modo condicional. No declararla irrelevante por afinidad previa ni exigir búho inequívoco.",
+          "precisionNecesaria": "Separar la anotación geométrica de la interpretación atención/protección; las anotaciones muestran construcción, no acreditan el efecto semántico.",
+          "siguienteEntrega": "Ficha de relaciones frente-centro-retornos y campo corporativo, con ambigüedad admisible y disparador concreto para reconsiderarla.",
+          "alcance": "Cierre de encargo, no aprobación de logo ni adopción pública."
+        }
+      },
+      "respuestaDesarrollo": {
+        "tesisDefendida": "Strig articula un campo abierto con dos brazos; Athene concentra atención en una relación frontal entre plano superior, centro descendente y retornos laterales. La familia comparte oficio y aperturas, no el mismo rostro.",
+        "rasgoPropio": "La amplitud horizontal de Athene y su centro conectado se equilibran con retornos que envuelven sin cerrar la zona inferior. En Strig, la continuidad se sugiere entre dos brazos rotacionales separados, en lugar de una cinta cerrada.",
+        "decision": "Acepta la tutoría y difiere nueva geometría. La relación observable se puede defender; todavía no hay un problema concreto que justifique modificarla. Afinidad de Tomás no equivale a reconocimiento universal.",
+        "operacionProxima": "Explicitar en la ficha de construcción qué hacen frente, centro y retornos y qué lectura alternativa se acepta. Antes de un ensayo, localizar con Tomás si la ambigüedad está en el centro nasal, en el peso de la frente o en la envolvente; modificar solo esa relación si contradice el carácter buscado.",
+        "queConserva": "H1 exacto, Athene-retornos y composición equilibrada, amplitud frontal y apertura inferior. La selección existente se conserva sin convertir A en patrón formal de B/C.",
+        "beneficio": "Consolida una intención defendible y evita sumar rasgos zoológicos solo para eliminar toda ambigüedad.",
+        "coste": "El búho seguirá siendo una lectura posible junto a visor o casco; se acepta esa ambigüedad si no domina equipamiento de combate ni contradice atención protectora.",
+        "consejoDiferido": "Añadir A, orejas, ojos o casco y personalizar tipografía. También se difiere cualquier cambio de centro antes de localizar el problema.",
+        "criterio": "Distinguir en la crítica local relación formal, carácter sentido y asociación figurativa. Si existe un problema concreto de atención/carácter, formular un ensayo de una variable y compararlo con el control; no fabricar un resultado por novedad.",
+        "controlElegido": "A de R14, cuyos paths y lockups conservan las selecciones R09/R11/R12. No se abre una nueva rama."
+      }
+    },
+    {
+      "id": "B",
+      "tutoria": {
+        "ruta": "B / Firma de barrido — Retorno sostenido",
+        "estado": "Tutoría cerrada tras defensa del equipo B transmitida por root. Sin nuevas formas.",
+        "tesis": "Un mismo recorrido transforma la firma empresarial en una atención orientada de producto.",
+        "no_negociables_conceptuales": [
+          "Continuidad y transformación del recorrido como origen de familia.",
+          "Orientación o retorno deliberado: atención con dirección, no movimiento gratuito.",
+          "Diferenciar empresa y producto mediante la misma lógica, no por imitar otra ruta."
+        ],
+        "logrado": [
+          "R13 propone S y perfil como transformaciones de una firma compacta.",
+          "R14 conserva cinta continua y masa suficiente en ambos signos.",
+          "R14 hace explícita su renuncia a S y perfil; no oculta el cambio."
+        ],
+        "observado_en_forma": "R14 sustituye S y diagonal por arco axial; Athene pasa de perfil asimétrico a frente simétrico. Son cambios de identidad estructural, no retoques de acabado.",
+        "hipotesis_no_validada": "La diagonal podría parecer deportiva; el perfil podría parecer otra ave o nueve. No se ha demostrado que esos rasgos impidan confianza o atención protectora.",
+        "riesgo_principal": "Responder a críticas posibles borrando los recursos que distinguían la ruta, antes de intentar cultivarlos.",
+        "diagnostico_proceso": "R13→R14 es reformulación. Se preservan retorno y masa, pero no basta llamarlos herencia sin demostrar qué hace propio este recorrido. Faltó un ensayo dentro de S/perfil antes de abandonarlos.",
+        "intervencion_proxima": "Defender atención orientada y localizar qué tramo del recorrido da velocidad o aplomo. Formular un ensayo acotado que cambie ritmo o apoyo, sin suprimir por defecto S o perfil. No ejecutar aún.",
+        "consejo_diferido": "Diferir frontalidad obligatoria y sustitución de la S. No son condiciones del mensaje confirmado.",
+        "prueba_criterio": "Evaluar R13/R14 separadamente sin ranking: describir dirección, recorrido y punto de reposo; registrar si el cambio conserva una firma reconocible. Reconocimiento animal sigue pendiente.",
+        "conservar_si": "El recorrido tiene un rasgo identificable propio y puede ganar aplomo mediante una intervención contenida, conservando su tesis.",
+        "reconsiderar_si": "El equipo no puede mostrar cómo el recorrido conecta empresa y producto, o toda solución exige sustituirlo por una estructura ajena; entonces declarar nueva rama en vez de refinamiento.",
+        "leccion_al_equipo": "Una crítica semántica es una hipótesis para investigar. Primero se enseña al concepto a resolverla; eliminar su rasgo distintivo es una decisión posterior.",
+        "pregunta_al_equipo": "¿Qué parte del barrido S/perfil es indispensable para su idea de atención orientada, y cómo podría ganar aplomo sin convertirla automáticamente en un frente simétrico?",
+        "respuesta_equipo": "B reconoce que R14 cambió demasiado por hipótesis locales; S y perfil no se demostraron inviables. Defiende recorrido continuo nominal/orientado, masa compacta y apertura. Propone cultivar cabeza, cuello y disco facial en un perfil asentado; S opcional sin sprint.",
+        "resolucion_tutor": "La defensa recupera una intención específica. Procede cultivar atención orientada, sin volver literalmente a R13 ni conservar R14 por inercia. No restaurar ojo octogonal, acento o diagonal dominante por nostalgia.",
+        "encargo_particular": {
+          "objetivo": "Hacer legible un recorrido atento y asentado que se transforme entre firma empresarial y centinela de perfil.",
+          "entrega_antes_de_dibujar": "Indicar tramo de atención, tramo de retorno y apoyo de reposo. Elegir una sola relación cabeza/cuello/disco facial que necesita desarrollo; explicar qué recurso nominal de Strig merece conservarse.",
+          "limite": "Sin frontalidad obligatoria, sin S obligatoria y sin reemplazar la tesis por otro arco. Tampoco restaurar piezas de R13 sin justificar función.",
+          "puerta_de_avance": "El ensayo futuro deberá conservar orientación y recorrido identificables, mejorar aplomo de manera localizada y registrar la pérdida aceptada."
+        },
+        "respuestaEquipoLeida": {
+          "tesisDefendida": "B transforma un recorrido empresarial continuo en atención orientada de producto. Lo indispensable es que la dirección termine en un punto de atención y vuelva a un apoyo reconocible. La S y el perfil son recursos de R13 que permiten comprobar esa transformación; no son requisitos universales del brief.",
+          "rasgoPropio": "En R13, Strig conserva una S monolítica de dos retornos horizontales unidos por una diagonal; Athene transforma su tramo superior en cabeza orientada a la derecha y el inferior en apoyo de cuello. Atención: frente de cabeza y remate derecho, entre y=30 y y=70. Retorno: cuello que vuelve hacia la plataforma interior y=92. Reposo: base horizontal de x=26 a x=74 en y=108. La diagonal larga entre cabeza y retorno hace dominante el descenso oblicuo; las plataformas horizontales ya ofrecen una posibilidad concreta de aplomo.",
+          "decision": "acepta",
+          "operacionProxima": "Ensayo acotado solo sobre Athene de R13: acortar 8 unidades la distancia vertical entre cabeza y apoyo inferior, desplazando hacia arriba el conjunto de plataforma y base del retorno, conservando su grosor de 16 unidades y su anchura. La plataforma y=92 y base y=108 pasarían a y=84 y y=100; se resolvería su unión al cuello dentro de esa misma operación. Cabeza, apertura ocular y orientación derecha permanecerían como control. Strig R13 permanecería intacto para comprobar si la transformación entre firma y producto sigue reconocible. No dibujar hasta la puerta de avance del tutor.",
+          "queConserva": "Conserva continuidad monolítica, apertura amplia, masa compacta, dirección lateral y apoyo horizontal. El recurso nominal que merece conservarse en el control es la S de Strig: identifica el nombre mediante todo el recorrido, sin letra añadida sobre una cara. No se afirma todavía que ese recurso deba quedar en la identidad final.",
+          "beneficio": "Busca que la cabeza orientada tenga mayor peso respecto del cuello y que el recorrido repose antes sobre una base horizontal. Permite probar aplomo dentro del perfil propio, sin sustituir su orientación por un frente simétrico ni rehacer toda la familia.",
+          "coste": "El retorno tendrá menos recorrido vertical y la silueta será más baja. Puede disminuir la claridad de la transformación S/cuello o reforzar la lectura de nueve; esa pérdida deberá observarse. El ojo octogonal y la identificación de especie quedan sin resolver en este ensayo.",
+          "consejoDiferido": "Se difieren frontalidad obligatoria, sustitución de la S y rediseño del ojo o disco facial. La relación elegida ahora es altura de cabeza frente a cuello; corregir simultáneamente la especie, el ojo y el ritmo impediría saber qué aporta el apoyo más próximo. R14 sigue como reformulación documentada, no como resultado que deba conservarse por inercia.",
+          "criterio": "Comparar control y ensayo de perfil con igual escala y aplicaciones. Describir dónde comienza la atención, cómo vuelve el recorrido y dónde reposa; comprobar si puede señalarse el mismo recorrido en Strig y Athene. Continuar solo si el apoyo más próximo conserva dirección, retorno y diferenciación de roles, y aporta aplomo local sin cerrar la apertura a 24 px. No usar este ensayo para declarar búho reconocido ni confianza validada.",
+          "controlElegido": "R13: conserva la tesis nominal/orientada que faltó cultivar antes de R14. Se usa como control histórico para un ensayo del cuello y apoyo, no como restauración literal ni nueva selección. R14 permanece registrado como una reformulación distinta."
+        },
+        "devolucionTutor": {
+          "decision": "Seguir con el encargo del ensayo acotado; precisar la unión del cuello antes de ejecutarlo.",
+          "encargoAcotado": true,
+          "preservaTesis": "Sí. El perfil y el retorno sobreviven; la altura relativa cabeza/apoyo es una variable defendible de aplomo.",
+          "observacionCritica": "Elegir R13 como control no es readoptarlo. Mantener ojo y cabeza en este ensayo es buen aislamiento, no una validación del octágono ni de la especie.",
+          "precisionNecesaria": "Enumerar qué vértices del retorno suben 8 unidades y cuáles quedan fijos. La resolución de la unión no puede introducir otra curvatura, cierre o cambio de grosor encubierto; si los requiere, dividir el ensayo.",
+          "siguienteEntrega": "Especificación de una operación altura/apoyo con cabeza fija y Strig intacto. Comparar tanto proporción interna como silueta a tamaño nativo; igualar altura total puede magnificar la cabeza.",
+          "alcance": "Puede continuar la preparación del ensayo. No autoriza por sí mismo ejecutar SVG, seleccionar la variante ni declarar búho o confianza logrados."
+        }
+      },
+      "respuestaDesarrollo": {
+        "tesisDefendida": "B transforma un recorrido empresarial continuo en atención orientada de producto. Lo indispensable es que la dirección termine en un punto de atención y vuelva a un apoyo reconocible. La S y el perfil son recursos de R13 que permiten comprobar esa transformación; no son requisitos universales del brief.",
+        "rasgoPropio": "En R13, Strig conserva una S monolítica de dos retornos horizontales unidos por una diagonal; Athene transforma su tramo superior en cabeza orientada a la derecha y el inferior en apoyo de cuello. Atención: frente de cabeza y remate derecho, entre y=30 y y=70. Retorno: cuello que vuelve hacia la plataforma interior y=92. Reposo: base horizontal de x=26 a x=74 en y=108. La diagonal larga entre cabeza y retorno hace dominante el descenso oblicuo; las plataformas horizontales ya ofrecen una posibilidad concreta de aplomo.",
+        "decision": "acepta",
+        "operacionProxima": "Ensayo acotado solo sobre Athene de R13: acortar 8 unidades la distancia vertical entre cabeza y apoyo inferior, desplazando hacia arriba el conjunto de plataforma y base del retorno, conservando su grosor de 16 unidades y su anchura. La plataforma y=92 y base y=108 pasarían a y=84 y y=100; se resolvería su unión al cuello dentro de esa misma operación. Cabeza, apertura ocular y orientación derecha permanecerían como control. Strig R13 permanecería intacto para comprobar si la transformación entre firma y producto sigue reconocible. No dibujar hasta la puerta de avance del tutor.",
+        "queConserva": "Conserva continuidad monolítica, apertura amplia, masa compacta, dirección lateral y apoyo horizontal. El recurso nominal que merece conservarse en el control es la S de Strig: identifica el nombre mediante todo el recorrido, sin letra añadida sobre una cara. No se afirma todavía que ese recurso deba quedar en la identidad final.",
+        "beneficio": "Busca que la cabeza orientada tenga mayor peso respecto del cuello y que el recorrido repose antes sobre una base horizontal. Permite probar aplomo dentro del perfil propio, sin sustituir su orientación por un frente simétrico ni rehacer toda la familia.",
+        "coste": "El retorno tendrá menos recorrido vertical y la silueta será más baja. Puede disminuir la claridad de la transformación S/cuello o reforzar la lectura de nueve; esa pérdida deberá observarse. El ojo octogonal y la identificación de especie quedan sin resolver en este ensayo.",
+        "consejoDiferido": "Se difieren frontalidad obligatoria, sustitución de la S y rediseño del ojo o disco facial. La relación elegida ahora es altura de cabeza frente a cuello; corregir simultáneamente la especie, el ojo y el ritmo impediría saber qué aporta el apoyo más próximo. R14 sigue como reformulación documentada, no como resultado que deba conservarse por inercia.",
+        "criterio": "Comparar control y ensayo de perfil con igual escala y aplicaciones. Describir dónde comienza la atención, cómo vuelve el recorrido y dónde reposa; comprobar si puede señalarse el mismo recorrido en Strig y Athene. Continuar solo si el apoyo más próximo conserva dirección, retorno y diferenciación de roles, y aporta aplomo local sin cerrar la apertura a 24 px. No usar este ensayo para declarar búho reconocido ni confianza validada.",
+        "controlElegido": "R13: conserva la tesis nominal/orientada que faltó cultivar antes de R14. Se usa como control histórico para un ensayo del cuello y apoyo, no como restauración literal ni nueva selección. R14 permanece registrado como una reformulación distinta."
+      }
+    },
+    {
+      "id": "C",
+      "tutoria": {
+        "ruta": "C / Umbral compartido — Campo permeable",
+        "estado": "Tutoría cerrada tras defensa del equipo C transmitida por root. Sin nuevas formas.",
+        "tesis": "La ingeniería habilita un campo común; Athene convierte esa estructura en una presencia de atención.",
+        "no_negociables_conceptuales": [
+          "El campo compartido organiza el signo, no es residuo entre piezas.",
+          "La estructura sostiene y permite paso; no exige orientación horizontal o vertical fija.",
+          "La derivación hacia el centinela debe conservar una relación comprensible con ese campo."
+        ],
+        "logrado": [
+          "R13 hace visible un espacio entre apoyo y dintel.",
+          "R14 conserva masas laterales y un paso axial amplio en Strig.",
+          "Athene distingue sus regiones faciales y el centro mediante tres masas."
+        ],
+        "observado_en_forma": "El umbral horizontal de R13 pasa a encuadre lateral en R14. La cabeza continua se divide en discos y pico. La apertura cambia de topología, no solamente de tamaño.",
+        "hipotesis_no_validada": "Mordaza, robot o calavera son asociaciones posibles. R14 puede sugerir corchetes, gafas o diana; no hay prueba de que una alternativa resulte más protectora.",
+        "riesgo_principal": "Que abrir para neutralizar asociaciones transforme un umbral propio en dos brackets genéricos con un acento central.",
+        "diagnostico_proceso": "El concepto de campo sobrevive, pero su operación distintiva se debilita si cualquier par de masas cuenta como umbral. El cambio hacia discos faciales necesita defensa de parentesco, no solo eliminación de mandíbula.",
+        "intervencion_proxima": "Precisar dónde empieza, atraviesa y termina el campo, y qué encuentros lo hacen propio. Proponer luego un ajuste de apertura o terminales dentro de esa estructura; no sumar detalle animal todavía.",
+        "consejo_diferido": "Diferir quitar todo cierre y toda masa inferior. Compacidad o contención no equivalen por sí mismas a hostilidad; también pueden expresar resguardo.",
+        "prueba_criterio": "Ocultar relato y señalar por separado estructura, campo y derivación facial. El equipo debe identificar una relación visual específica repetida; Tomás evalúa si percibe presencia disponible o encierro.",
+        "conservar_si": "El campo sigue siendo una relación propia y perceptible, y la derivación facial añade identidad sin depender de elementos genéricos acumulados.",
+        "reconsiderar_si": "El umbral solo existe en la explicación o el producto pierde su relación al añadir figuración. Reabrir la operación espacial antes de decorar el centro.",
+        "leccion_al_equipo": "Abrir una figura no mejora automáticamente su sentido. La topología es una decisión de concepto y cada cierre debe evaluarse por su función.",
+        "pregunta_al_equipo": "¿Qué hace que este vacío sea un umbral propio y no un encuadre genérico, y qué parte de la estructura necesitarían conservar aunque admita una lectura alternativa?",
+        "respuesta_equipo": "C reconoce múltiples cambios simultáneos y una relación apertura/protección exagerada. Defiende campo sostenido, aplomo compacto y continuidad facial. R14 conserva masa, simetría y campo, pero pierde articulación central y unidad. Admite cierre parcial o facetas si aportan, sin devolver automáticamente mandíbula o piernas.",
+        "resolucion_tutor": "Procede cultivar el umbral y su unidad. El cierre parcial es una herramienta admisible; su función debe demostrarse. No regresar por nostalgia a la cabeza cerrada ni mantener discos separados solo para evitar asociaciones posibles.",
+        "encargo_particular": {
+          "objetivo": "Dar articulación propia al campo sostenido y derivarlo en presencia facial con unidad.",
+          "entrega_antes_de_dibujar": "Definir entrada, continuidad y apoyo del campo. Elegir una sola relación entre estructura y centro para cultivar; justificar dónde un cierre parcial o una faceta añade resguardo o unidad y qué coste tendría.",
+          "limite": "Sin tratar apertura como protección automática; no copiar frente/mejillas de A ni restaurar mandíbula/piernas por inercia.",
+          "puerta_de_avance": "El ensayo futuro deberá preservar una relación espacial propia, mejorar la unidad del centinela y poder describirse mediante una operación principal."
+        },
+        "respuestaEquipoLeida": {
+          "tesisDefendida": "La estructura de C sostiene un campo común y le da un lugar de paso. Athene debe convertir esa misma relación en una presencia frontal unitaria. El valor defendido es ingeniería con aplomo y atención protectora; abrir, contener o facetar son herramientas, no significados garantizados.",
+          "rasgoPropio": "En R13 el campo empieza en la ranura lateral entre dintel y apoyo, se ensancha dentro de los hombros y encuentra en el centro una faceta descendente enfrentada a un apoyo continuo; termina en la ranura opuesta. Son tres momentos: entrada acotada, ensanchamiento y registro central sobre una base. Esa alternancia entre pasos estrechos y cámara compartida distingue la operación de dos brackets uniformes. Merecen conservarse el cambio de sección, el centro articulado y la continuidad del apoyo, incluso si permiten leer arquitectura o instrumento. No afirmo que esa relación ya resulte suficientemente distintiva.",
+          "decision": "reformula: acepto el diagnóstico de que R14 dejó demasiado indeterminado el umbral. Recupero como pregunta de diseño el campo articulado de R13, no la cabeza cerrada completa ni sus piernas. Reformulo el consejo de apertura: estudiar el acceso lateral dentro de una estructura que mantiene centro y apoyo, sin sustituirla por masas separadas.",
+          "operacionProxima": "Una operación principal: retirar los retornos laterales a la altura del campo. En Strig, acortar hacia abajo 6 unidades los pequeños retornos ascendentes del apoyo en los dos accesos, manteniendo dintel, faceta central y suelo interior. En el estudio de Athene, traducir esa retirada como apertura lateral de las regiones faciales hacia el exterior, manteniendo unido su centro al resto de la presencia. El ensayo no rotará la estructura, no separará un rombo y no añadirá detalle animal. La equivalencia de esta operación en el producto deberá justificarse antes de fijar coordenadas.",
+          "queConserva": "Masa y compacidad; simetría frontal; hombros y cambios de sección; entrada y salida laterales; centro articulado; apoyo común. En Athene se defiende continuidad facial suficiente para leer una sola presencia. No se conserva por obligación la escotadura inferior de R13 ni se adopta su contorno completo como solución.",
+          "beneficio": "El acceso puede hacerse más disponible sin borrar el lugar donde el campo se organiza. Se recupera una operación específica compartida por empresa y producto, y Athene puede abrir sus regiones faciales sin convertirse en tres piezas alrededor de un acento. Son beneficios buscados, no recepción demostrada.",
+          "coste": "Mantener apoyo y centro puede conservar lecturas de mordaza, máscara o instrumento. Retirar un retorno reduce la sensación de resguardo y podría hacer más evidente una boca horizontal. La traducción facial puede seguir admitiendo casco; no se eliminará por principio toda interpretación alternativa.",
+          "consejoDiferido": "Difiero quitar todo cierre, toda base o toda masa inferior, y también añadir ojos, plumas o una A para explicar el resultado. Un cierre parcial puede sostener unidad y resguardo; habrá que señalar su función concreta. No conservaré los discos separados de R14 únicamente por temor a robot o calavera.",
+          "criterio": "Antes del ensayo, señalar entrada, ensanchamiento, registro central, apoyo y salida en el control. Después, comprobar que solo cambian los accesos y que esos cinco lugares siguen identificables en la forma. La derivación facial debe repetir esa relación espacial y presentarse como una presencia, sin precisar un rombo añadido. Tomás evaluará si el acceso gana disponibilidad sin perder aplomo o aumentar la mordaza; no lo llamaremos prueba ciega ni protección universal. Si el campo necesita relato o la traducción exige varias operaciones nuevas, se detiene el ensayo y se redefine la relación.",
+          "controlElegido": "R13 como control de la relación espacial, porque conserva entrada lateral, ensanchamiento, faceta central y apoyo común. No se readopta como solución de producto: su cierre y salida inferior siguen en discusión. R14 permanece como evidencia del coste de separar y reorientar, no como molde para el próximo dibujo."
+        },
+        "devolucionTutor": {
+          "decision": "Corregir y escalonar el encargo antes de dibujar ambos signos.",
+          "encargoAcotado": false,
+          "preservaTesis": "La intención sí preserva el campo articulado. La intervención empresarial es localizada; la traducción facial aún no está suficientemente definida para llamarla la misma operación.",
+          "observacionCritica": "Retirar accesos del Strig R13 y abrir regiones faciales de Athene no son automáticamente equivalentes. Sin correspondencia visible, el producto podría volver a una reformulación extensa.",
+          "precisionNecesaria": "Primero enumerar en Strig los extremos de retorno que cambian 6 unidades y los límites fijos. Después señalar en Athene entrada, ensanchamiento, registro, apoyo y salida; decidir qué acceso se retiraría y qué continuidad no cambia. Mantener la escotadura inferior como control en ese ensayo o estudiarla después.",
+          "siguienteEntrega": "Un esquema verbal de correspondencia espacial empresa/producto antes de coordenadas. Si no encuentra equivalencia localizada, ensayar solo la empresa y diferir producto; no exigir dos dibujos para completar una lámina.",
+          "alcance": "La tesis de C merece cultivo. Se corrige el encargo, no se descarta el logo ni se aprueba regresar literalmente a R13."
+        }
+      },
+      "respuestaDesarrollo": {
+        "tesisDefendida": "La estructura de C sostiene un campo común y le da un lugar de paso. Athene debe convertir esa misma relación en una presencia frontal unitaria. El valor defendido es ingeniería con aplomo y atención protectora; abrir, contener o facetar son herramientas, no significados garantizados.",
+        "rasgoPropio": "En R13 el campo empieza en la ranura lateral entre dintel y apoyo, se ensancha dentro de los hombros y encuentra en el centro una faceta descendente enfrentada a un apoyo continuo; termina en la ranura opuesta. Son tres momentos: entrada acotada, ensanchamiento y registro central sobre una base. Esa alternancia entre pasos estrechos y cámara compartida distingue la operación de dos brackets uniformes. Merecen conservarse el cambio de sección, el centro articulado y la continuidad del apoyo, incluso si permiten leer arquitectura o instrumento. No afirmo que esa relación ya resulte suficientemente distintiva.",
+        "decision": "reformula: acepto el diagnóstico de que R14 dejó demasiado indeterminado el umbral. Recupero como pregunta de diseño el campo articulado de R13, no la cabeza cerrada completa ni sus piernas. Reformulo el consejo de apertura: estudiar el acceso lateral dentro de una estructura que mantiene centro y apoyo, sin sustituirla por masas separadas.",
+        "operacionProxima": "Una operación principal: retirar los retornos laterales a la altura del campo. En Strig, acortar hacia abajo 6 unidades los pequeños retornos ascendentes del apoyo en los dos accesos, manteniendo dintel, faceta central y suelo interior. En el estudio de Athene, traducir esa retirada como apertura lateral de las regiones faciales hacia el exterior, manteniendo unido su centro al resto de la presencia. El ensayo no rotará la estructura, no separará un rombo y no añadirá detalle animal. La equivalencia de esta operación en el producto deberá justificarse antes de fijar coordenadas.",
+        "queConserva": "Masa y compacidad; simetría frontal; hombros y cambios de sección; entrada y salida laterales; centro articulado; apoyo común. En Athene se defiende continuidad facial suficiente para leer una sola presencia. No se conserva por obligación la escotadura inferior de R13 ni se adopta su contorno completo como solución.",
+        "beneficio": "El acceso puede hacerse más disponible sin borrar el lugar donde el campo se organiza. Se recupera una operación específica compartida por empresa y producto, y Athene puede abrir sus regiones faciales sin convertirse en tres piezas alrededor de un acento. Son beneficios buscados, no recepción demostrada.",
+        "coste": "Mantener apoyo y centro puede conservar lecturas de mordaza, máscara o instrumento. Retirar un retorno reduce la sensación de resguardo y podría hacer más evidente una boca horizontal. La traducción facial puede seguir admitiendo casco; no se eliminará por principio toda interpretación alternativa.",
+        "consejoDiferido": "Difiero quitar todo cierre, toda base o toda masa inferior, y también añadir ojos, plumas o una A para explicar el resultado. Un cierre parcial puede sostener unidad y resguardo; habrá que señalar su función concreta. No conservaré los discos separados de R14 únicamente por temor a robot o calavera.",
+        "criterio": "Antes del ensayo, señalar entrada, ensanchamiento, registro central, apoyo y salida en el control. Después, comprobar que solo cambian los accesos y que esos cinco lugares siguen identificables en la forma. La derivación facial debe repetir esa relación espacial y presentarse como una presencia, sin precisar un rombo añadido. Tomás evaluará si el acceso gana disponibilidad sin perder aplomo o aumentar la mordaza; no lo llamaremos prueba ciega ni protección universal. Si el campo necesita relato o la traducción exige varias operaciones nuevas, se detiene el ensayo y se redefine la relación.",
+        "controlElegido": "R13 como control de la relación espacial, porque conserva entrada lateral, ensanchamiento, faceta central y apoyo común. No se readopta como solución de producto: su cierre y salida inferior siguen en discusión. R14 permanece como evidencia del coste de separar y reorientar, no como molde para el próximo dibujo."
+      }
+    }
+  ]
+}

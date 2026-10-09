@@ -1,0 +1,279 @@
+{
+  "studies": [
+    {
+      "id": "strig-r17-b-control",
+      "title": "Strig B / Canal 6 R16",
+      "change": "Control exacto del canal diagonal de 6 u R16 que Tomás valora en grande; operación distinta del ensayo longitudinal.",
+      "intent": "Articular dos partes de una misma firma gruesa conservando recorrido, dimensiones y terminales; explorar composición sin dibujar otras iniciales.",
+      "risk": "El canal estrecho puede fusionarse perceptivamente en pequeño; dos partes no implican dos S legibles.",
+      "bounds": [
+        18,
+        22,
+        112,
+        108
+      ],
+      "path": "M 104 22 H 42 L 23.236 40.764 L 110 84.146 V 72 L 62 48 H 100 L 112 34 Z M 20 45.854 V 58 L 68 82 H 30 L 18 96 L 30 108 H 88 L 106.764 89.236 Z"
+    },
+    {
+      "id": "strig-r17-b-recorrido4",
+      "title": "Strig B / Recorrido 4 u",
+      "change": "Costura longitudinal de 4 u perpendicular a cada tramo; dos rieles que siguen la S completa.",
+      "intent": "Visualizar la curiosidad de dos recorridos S contiguos, conservando la firma facetada y sin duplicar isotipos arbitrariamente.",
+      "risk": "La costura consume tinta en todo el recorrido. Puede debilitar los rieles, parecer laberinto o perder separación en pequeño; dos S legibles siguen siendo hipótesis.",
+      "bounds": [
+        19,
+        22,
+        111.333,
+        108
+      ],
+      "path": "M 111.333 33 L 104 22 L 42 22 L 20 44 L 20 58 L 68 82 L 30 82 L 20.571 93 L 84.172 93 L 94.624 82.548 L 28.624 49.548 L 45.172 33 Z M 109.429 37 L 100 48 L 62 48 L 110 72 L 110 86 L 88 108 L 30 108 L 19 97 L 85.828 97 L 101.376 81.452 L 35.376 48.452 L 46.828 37 Z"
+    },
+    {
+      "id": "strig-r17-b-recorrido6",
+      "title": "Strig B / Recorrido 6 u",
+      "change": "Costura longitudinal de 6 u perpendicular a cada tramo; dos rieles que siguen la S completa.",
+      "intent": "Visualizar la curiosidad de dos recorridos S contiguos, conservando la firma facetada y sin duplicar isotipos arbitrariamente.",
+      "risk": "La costura consume tinta en todo el recorrido. Puede debilitar los rieles, parecer laberinto o perder separación en pequeño; dos S legibles siguen siendo hipótesis.",
+      "bounds": [
+        20,
+        22,
+        110.667,
+        108
+      ],
+      "path": "M 110.667 32 L 104 22 L 42 22 L 20 44 L 20 58 L 68 82 L 30 82 L 21.429 92 L 83.757 92 L 92.936 82.822 L 26.936 49.822 L 44.757 32 Z M 108.571 38 L 100 48 L 62 48 L 110 72 L 110 86 L 88 108 L 30 108 L 20 98 L 86.243 98 L 103.064 81.178 L 37.064 48.178 L 47.243 38 Z"
+    },
+    {
+      "id": "athene-r17-b-control",
+      "title": "Athene B / R15 fijo",
+      "change": "Control Athene R15 exacto, sin nuevo significado ni añadido a su contraforma.",
+      "intent": "Ensayar una relación cabeza/cuello más asentada dentro de la atención orientada propia de B, sin volver al frente simétrico ni redibujar especie y ojo.",
+      "risk": "Puede reforzar un nueve o acortar demasiado el cuello. La especie, el ojo octogonal y el carácter deportivo de la firma siguen sin resolver; no se presentan como problemas eliminados.",
+      "bounds": [
+        20,
+        20,
+        108,
+        100
+      ],
+      "path": "M 30 20 L 44 30 H 74 C 88 30 98 38 98 50 L 108 62 L 98 70 V 76 L 74 100 H 26 L 42 84 H 64 L 78 78 L 32 56 L 20 40 Z M 62 44 L 68 38 H 80 L 86 44 V 52 L 80 58 H 68 L 62 52 Z"
+    }
+  ],
+  "meta": {
+    "team": "B",
+    "name": "Firma de barrido / doble recorrido",
+    "boardSummary": "Dos rieles recorren toda la S facetada; costuras longitudinales de 4 y 6 u.",
+    "thesis": "La curva solicitada se entiende como trayectoria de la S actual, construida con facetas. Se abre una costura por todo su recorrido, desde el terminal superior al inferior; cada riel conserva barra superior, giro izquierdo, diagonal central, giro derecho y barra inferior.",
+    "messageAlignment": "Ingeniería y atención protectora; búho como identidad. Se conserva la firma gruesa como origen y Athene como atención orientada. El ensayo solo cultiva la composición nominal; no modifica el producto.",
+    "feedbackBasis": "Tomás valora el canal de 6 u R16 en grande y señala que se junta en pequeño. Ahora pregunta por separación siguiendo la curva de S como dos S pegadas. Es una curiosidad autorizada para visualizar, no selección del doble recorrido.",
+    "explainingCut": "R16 corta transversalmente una zona de la cinta. R17 abre longitudinalmente el recorrido completo: la costura entra en el terminal superior derecho, sigue la barra superior hacia la izquierda, gira en dos facetas hacia la diagonal, vuelve por el giro derecho y sale por el terminal inferior izquierdo. No se impone Bézier sobre la firma facetada.",
+    "operationMap": {
+      "registeredBeforeRendering": true,
+      "controls": "Canal 6 R16 y Athene R15 exactos; S gruesa R13 se usa solo como perímetro de construcción y comprobación de tinta exterior.",
+      "centerLine": [
+        [
+          140,
+          35
+        ],
+        [
+          46,
+          35
+        ],
+        [
+          32,
+          49
+        ],
+        [
+          98,
+          82
+        ],
+        [
+          85,
+          95
+        ],
+        [
+          0,
+          95
+        ]
+      ],
+      "centerLineMeaning": "Los puntos extremos 140/0 prolongan las dos barras hasta intersecar los terminales; no se exportan como tinta. Los cuatro vértices interiores son el centro del recorrido facetado.",
+      "construction": "Offsets normales de 2/3 u a cada lado para canales 4/6 u. En cada giro, intersección de dos rectas desplazadas; unión miter explícita, sin curva ni nodo decorativo. Dos polígonos manuales que siguen los dos perímetros originales y regresan por sendos bordes de costura.",
+      "variants": [
+        {
+          "width": 4,
+          "leftCorners": [
+            [
+              45.172,
+              33
+            ],
+            [
+              28.624,
+              49.548
+            ],
+            [
+              94.624,
+              82.548
+            ],
+            [
+              84.172,
+              93
+            ]
+          ],
+          "rightCorners": [
+            [
+              46.828,
+              37
+            ],
+            [
+              35.376,
+              48.452
+            ],
+            [
+              101.376,
+              81.452
+            ],
+            [
+              85.828,
+              97
+            ]
+          ],
+          "entries": {
+            "a": [
+              111.333,
+              33
+            ],
+            "b": [
+              109.429,
+              37
+            ]
+          },
+          "exits": {
+            "a": [
+              20.571,
+              93
+            ],
+            "b": [
+              19,
+              97
+            ]
+          }
+        },
+        {
+          "width": 6,
+          "leftCorners": [
+            [
+              44.757,
+              32
+            ],
+            [
+              26.936,
+              49.822
+            ],
+            [
+              92.936,
+              82.822
+            ],
+            [
+              83.757,
+              92
+            ]
+          ],
+          "rightCorners": [
+            [
+              47.243,
+              38
+            ],
+            [
+              37.064,
+              48.178
+            ],
+            [
+              103.064,
+              81.178
+            ],
+            [
+              86.243,
+              98
+            ]
+          ],
+          "entries": {
+            "a": [
+              110.667,
+              32
+            ],
+            "b": [
+              108.571,
+              38
+            ]
+          },
+          "exits": {
+            "a": [
+              21.429,
+              92
+            ],
+            "b": [
+              20,
+              98
+            ]
+          }
+        }
+      ],
+      "fixed": "Todos los segmentos exteriores y contraformas originales fuera de las aperturas terminales; dimensiones verticales 22→108; Athene R15 completo.",
+      "outerSilhouetteCost": "Abrir terminales por su zona media elimina pequeños fragmentos de ambas puntas. El bbox lateral pasa de 18→112 a 19→111.333 en 4 u y 20→110.667 en 6 u. No se afirma silueta exterior idéntica: los restantes tramos del perímetro quedan fijos. No se escala para esconder esa contracción.",
+      "railContinuity": "Cada uno de los dos polígonos es un riel continuo desde terminal superior a inferior, con los cinco tramos de S. No son las dos mitades transversales de R16 ni dos letras completas copiadas y desplazadas.",
+      "precision": "Intersecciones y offsets calculados con las pendientes actuales; coordenadas redondeadas a 0.001 u. Separación medida normal a cada tramo."
+    },
+    "tradeoffs": [
+      "Canal 4 conserva más peso por riel; Canal 6 separa más y retira tinta a lo largo de toda la S, no solo en su diagonal.",
+      "La apertura terminal contrae ligeramente el ancho visible. No se oculta mediante escala ni nuevos remates.",
+      "Cada riel recorre una S completa, pero la lectura de dos S contiguas puede fallar o parecer laberinto.",
+      "Athene y su vacío permanecen exactos. La metáfora animal no se hace más evidente para justificar la nueva firma."
+    ],
+    "nextChecks": [
+      "Mirar control R16 / longitudinal 4 / longitudinal 6 a 16/24/32/128 px en claro e inversa: unidad, peso, separación y doble recorrido.",
+      "Comprobar transparencia, continuidad de ambos polígonos y ausencia de tinta fuera de la S original.",
+      "Registrar con Tomás si ve dos recorridos S o una firma fragmentada, sin exigir SS al dibujo.",
+      "Conservar el control R16 si la curiosidad longitudinal debilita la masa firme o el recorrido; no supone adopción."
+    ],
+    "qa": {
+      "preview": "scratch/round17/b/mini.png",
+      "sizes": [
+        16,
+        24,
+        32,
+        128
+      ],
+      "backgrounds": [
+        "claro",
+        "inversa"
+      ],
+      "controlR16Exact": true,
+      "productR15Exact": true,
+      "checks": [
+        {
+          "id": "strig-r17-b-recorrido4",
+          "outsideOpaquePixels": 0,
+          "removedOpaquePixels": 15611,
+          "seamSampleAlpha": [
+            0,
+            0,
+            0
+          ],
+          "selfIntersections": 0
+        },
+        {
+          "id": "strig-r17-b-recorrido6",
+          "outsideOpaquePixels": 0,
+          "removedOpaquePixels": 23187,
+          "seamSampleAlpha": [
+            0,
+            0,
+            0
+          ],
+          "selfIntersections": 0
+        }
+      ],
+      "scope": "Raster 512 / alpha 128 y cruces de segmentos; no reconocimiento ni producción física."
+    },
+    "resultObservation": "Los dos rieles permanecen continuos y recorren todas las facetas de S; la costura no repite el corte transversal. En grande se aprecia mejor el recorrido doble. A 16/24 px aparecen más líneas y vacíos que en el control, con menor masa por riel. Canal 4 conserva más peso; Canal 6 hace más disponible la costura y aumenta la sensación de contorno o zigzag. No doy por logradas dos S independientes ni mejora de identidad.",
+    "critique": "La curiosidad está visualizada dentro de la trayectoria propia de B. El beneficio observable es poder seguir dos recorridos continuos; el coste es adelgazar el enlace por todo el signo y abrir las puntas. Se parece más a una S de doble trazo que a dos isotipos independientes. Comparar con el canal 6 R16 que ya gusta, sin justificar una firma débil por el relato SS. La variante de 4 u es el ensayo más contenido; 6 u permite juzgar el coste de mayor separación."
+  }
+}

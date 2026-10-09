@@ -1,0 +1,93 @@
+[
+  {
+    "id": "athene-abierto-control",
+    "title": "Abierto / R06",
+    "change": "Control conservado",
+    "intent": "Atención sin mentón de escudo.",
+    "risk": "Visor / gafas / cercanía a Bilateral.",
+    "bounds": [
+      16,
+      30,
+      112,
+      77
+    ]
+  },
+  {
+    "id": "athene-abierto-mejillas",
+    "title": "Abierto / mejillas",
+    "change": "Retornos curvos; mismo puente",
+    "intent": "Disco facial sugerido; base abierta.",
+    "risk": "Gafas / personaje.",
+    "bounds": [
+      16,
+      30,
+      112,
+      77
+    ]
+  },
+  {
+    "id": "athene-abierto-puente",
+    "title": "Abierto / puente",
+    "change": "Centro más estrecho y breve",
+    "intent": "Menos dominancia del centro.",
+    "risk": "Visor / puente frágil.",
+    "bounds": [
+      16,
+      30,
+      112,
+      75
+    ]
+  },
+  {
+    "id": "athene-solido-control",
+    "title": "Sólido / R06",
+    "change": "Control conservado",
+    "intent": "Presencia firme y mirada contenida.",
+    "risk": "Máscara / demasiada amabilidad.",
+    "bounds": [
+      16,
+      30,
+      112,
+      99
+    ]
+  },
+  {
+    "id": "athene-solido-continuo",
+    "title": "Sólido / contorno continuo",
+    "change": "Mejillas curvas; mismas aperturas",
+    "intent": "Cabeza más continua y contenida.",
+    "risk": "Amabilidad excesiva / mascota.",
+    "bounds": [
+      16,
+      30,
+      112,
+      97
+    ]
+  },
+  {
+    "id": "strig-campo",
+    "title": "Strig / Campo continuidad",
+    "change": "Control conservado",
+    "intent": "Mayor unidad; conserva apertura.",
+    "risk": "S tecnológica convencional.",
+    "bounds": [
+      18,
+      21,
+      110,
+      107
+    ]
+  },
+  {
+    "id": "strig-bilateral",
+    "title": "Strig / Bilateral frente",
+    "change": "Control conservado",
+    "intent": "Gesto más contenido.",
+    "risk": "menos tensión / carácter.",
+    "bounds": [
+      12,
+      32,
+      116,
+      76
+    ]
+  }
+]

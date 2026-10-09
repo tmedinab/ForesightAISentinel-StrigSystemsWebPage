@@ -1,0 +1,54 @@
+[
+  {
+    "id": "athene-anterior",
+    "title": "0 / composición anterior",
+    "change": "Control conservado",
+    "intent": "Más continuidad de las regiones faciales.",
+    "risk": "Puede aproximarse a gafas o máscara.",
+    "bounds": [
+      16,
+      30,
+      112,
+      78
+    ]
+  },
+  {
+    "id": "athene-equilibrado",
+    "title": "1 / presencia equilibrada",
+    "change": "Símbolo 118; separación 24; centro alineado a ATHENE",
+    "intent": "Dar al símbolo presencia equivalente a las mayúsculas.",
+    "risk": "El rostro adquiere mayor protagonismo.",
+    "bounds": [
+      16,
+      30,
+      112,
+      78
+    ]
+  },
+  {
+    "id": "athene-compacto",
+    "title": "2 / firma contenida",
+    "change": "Símbolo 102; separación 18; centro alineado a ATHENE",
+    "intent": "Conjunto algo más compacto; nombre prioritario.",
+    "risk": "Menor presencia del símbolo y separación más ajustada.",
+    "bounds": [
+      16,
+      30,
+      112,
+      78
+    ]
+  },
+  {
+    "id": "strig-h1",
+    "title": "Strig H1 / referencia óptica",
+    "change": "Control conservado",
+    "intent": "Menor peso del emblema junto al nombre.",
+    "risk": "Menor presencia del símbolo aislado en el conjunto.",
+    "bounds": [
+      18,
+      21,
+      110,
+      107
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "status": "pass",
+  "boardChecks": [
+    {
+      "board": "01_option_A",
+      "width": 1200,
+      "height": 1120,
+      "outlinedCaptionsInsideCanvas": true
+    },
+    {
+      "board": "02_option_B",
+      "width": 1200,
+      "height": 1120,
+      "outlinedCaptionsInsideCanvas": true
+    },
+    {
+      "board": "03_AB_comparison",
+      "width": 1200,
+      "height": 1100,
+      "outlinedCaptionsInsideCanvas": true
+    },
+    {
+      "board": "04_native_sizes",
+      "width": 1200,
+      "height": 760,
+      "outlinedCaptionsInsideCanvas": true
+    },
+    {
+      "board": "05_contexts_AB",
+      "width": 1400,
+      "height": 1150,
+      "outlinedCaptionsInsideCanvas": true
+    }
+  ],
+  "vectorCases": 48,
+  "vectorFiles": 16,
+  "briefHtmlHorizontalOverflow": false,
+  "note": "Export portability and bounds checks; no aesthetic or recognition validation.",
+  "geometryMatchesOrigins": true,
+  "svgXmlValid": true,
+  "visibleTextOutlined": true,
+  "svgFiles": 21
+}

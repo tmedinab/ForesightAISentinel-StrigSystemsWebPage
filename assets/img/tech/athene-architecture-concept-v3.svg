@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" fill="none" role="img" aria-labelledby="architecture-title architecture-description">
+  <title id="architecture-title">Athene conceptual VTOL, onboard inference and image delivery</title>
+  <desc id="architecture-description">A generic fixed-wing VTOL aircraft with four illustrative lift rotors and an enlarged camera observes schematic forest terrain. The camera feeds an enlarged onboard computer inside the same functional boundary. Image and notice symbols travel to a local supervision console beside a human operator. Conceptual architecture only: rotor count, aircraft shape, camera and computer geometry are illustrative, not the approved Noctua design, actual imagery or measured performance. Use with the translated caption.</desc>
+  <defs>
+    <pattern id="architecture-grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" stroke="#94a3b8" stroke-opacity=".055"/></pattern>
+    <linearGradient id="observation-field" x1="165" y1="172" x2="165" y2="374" gradientUnits="userSpaceOnUse"><stop stop-color="#00e5ff" stop-opacity=".16"/><stop offset="1" stop-color="#00e5ff" stop-opacity=".015"/></linearGradient>
+    <linearGradient id="aerial-surface" x1="70" y1="42" x2="402" y2="194" gradientUnits="userSpaceOnUse"><stop stop-color="#00e5ff" stop-opacity=".045"/><stop offset="1" stop-color="#00e5ff" stop-opacity=".012"/></linearGradient>
+    <marker id="flow-direction" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="m2 1 6 4-6 4" stroke="#00e5ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <symbol id="forest-tree" viewBox="0 0 28 40"><path d="m14 2-9 12h5L2 26h10v12h4V26h10L18 14h5Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></symbol>
+  </defs>
+  <path d="M0 0h720v460H0z" fill="url(#architecture-grid)"/>
+  <!-- Functional boundary, not an airframe enclosure or a hardware layout. -->
+  <path d="M64 42h328l14 14v140l-14 14H64l-14-14V56Z" fill="url(#aerial-surface)" stroke="#94a3b8" stroke-opacity=".45" stroke-width="1.5" stroke-dasharray="5 7"/>
+  <!-- Generic plan view: wing, fuselage, tail and illustrative lift rotors. -->
+  <g stroke="#cbd5e1" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M157 95 75 119v14l82-12h16l82 12v-14l-82-24Z" fill="#10232f"/>
+    <path d="M154 146 128 160v8l37-7 37 7v-8l-26-14Z" fill="#10232f"/>
+    <path d="M165 65q-11 11-11 29v51l11 21 11-21V94q0-18-11-29Z" fill="#172f3d"/>
+    <path d="M165 73v12m0 59v15" stroke-opacity=".5"/>
+    <path d="M115 88v67m100-67v67" stroke="#94a3b8"/>
+  </g>
+  <g stroke="#00e5ff" stroke-width="2" stroke-linecap="round">
+    <ellipse cx="115" cy="88" rx="19" ry="6" fill="#0c1017"/>
+    <ellipse cx="215" cy="88" rx="19" ry="6" fill="#0c1017"/>
+    <ellipse cx="115" cy="155" rx="19" ry="6" fill="#0c1017"/>
+    <ellipse cx="215" cy="155" rx="19" ry="6" fill="#0c1017"/>
+    <path d="m102 84 26 8m74-8 26 8m-126 59 26 8m74-8 26 8"/>
+    <circle cx="115" cy="88" r="2" fill="#00e5ff"/>
+    <circle cx="215" cy="88" r="2" fill="#00e5ff"/>
+    <circle cx="115" cy="155" r="2" fill="#00e5ff"/>
+    <circle cx="215" cy="155" r="2" fill="#00e5ff"/>
+  </g>
+  <!-- Enlarged underside camera, linked to its schematic mounting point. -->
+  <circle cx="165" cy="101" r="4" fill="#00e5ff"/>
+  <path d="M165 106v66" stroke="#00e5ff" stroke-opacity=".5" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <g stroke="#00e5ff" stroke-width="2.4" stroke-linejoin="round">
+    <path d="M151 172v13q0 12 14 12t14-12v-13"/>
+    <rect x="154" y="175" width="22" height="19" rx="6" fill="#0c1017"/>
+    <circle cx="165" cy="185" r="5"/>
+    <path d="M180 185h73q12 0 12-12v-61h6" stroke-width="2" marker-end="url(#flow-direction)"/>
+  </g>
+  <!-- Abstract processing, without implying a particular board or manufacturer. -->
+  <g stroke="#00e5ff" stroke-width="2" stroke-linejoin="round">
+    <rect x="286" y="76" width="76" height="74" rx="3" fill="#0c1017"/>
+    <path d="M300 89h48v48h-48Z" stroke-opacity=".5"/>
+    <path d="M301 67v9m15-9v9m15-9v9m15-9v9m-45 74v9m15-9v9m15-9v9m15-9v9m-60-58h-9m9 15h-9m9 15h-9m85-30h9m-9 15h9m-9 15h9" stroke-opacity=".65"/>
+    <path d="M309 106v-8h8m14 0h8v8m0 13v8h-8m-14 0h-8v-8"/>
+    <path d="m311 105 13 8-13 9m13-9 14-8m-14 8 14 9" stroke-opacity=".7"/><circle cx="311" cy="105" r="3"/><circle cx="311" cy="122" r="3"/><circle cx="338" cy="105" r="3"/><circle cx="338" cy="122" r="3"/>
+  </g>
+  <circle cx="325" cy="112" r="4" fill="#f59e0b" stroke="#f59e0b"/>
+  <path d="M374 112h68q12 0 12 12v40q0 12 12 12h20" stroke="#00e5ff" stroke-width="2" marker-end="url(#flow-direction)"/>
+  <g stroke="#00e5ff" stroke-width="1.8" stroke-linejoin="round">
+    <rect x="393" y="93" width="44" height="37" rx="3" fill="#0c1017"/>
+    <path d="m399 123 8-7 7 4 9-10 8 6" stroke-opacity=".5"/>
+    <circle cx="415" cy="103" r="3" stroke="#f59e0b"/>
+    <path d="M415 109v8m-5-5 5-3 5 3" stroke="#f59e0b"/>
+  </g>
+  <!-- Observation over schematic relief, without a dimensional coverage claim. -->
+  <path d="m165 199-106 145q104 60 213 14Z" fill="url(#observation-field)"/>
+  <path d="m165 199-106 145m106-145 107 159" stroke="#00e5ff" stroke-opacity=".3" stroke-width="1.5" stroke-dasharray="4 8"/>
+  <g stroke="#94a3b8" stroke-opacity=".25" stroke-width="1.4" stroke-linecap="round">
+    <path d="M24 320q55-38 109-15t95-5 94 7 85-6 111 17 96-9 79 7"/>
+    <path d="M24 340q55-38 109-15t95-5 94 7 85-6 111 17 96-9 79 7"/>
+    <path d="M24 360q55-38 109-15t95-5 94 7 85-6 111 17 96-9 79 7"/>
+    <path d="M24 380q55-38 109-15t95-5 94 7 85-6 111 17 96-9 79 7"/>
+    <path d="M24 400q55-38 109-15t95-5 94 7 85-6 111 17 96-9 79 7"/>
+  </g>
+  <g color="#94a3b8" opacity=".55"><use href="#forest-tree" x="68" y="273" width="28" height="40"/><use href="#forest-tree" x="112" y="245" width="25" height="36"/><use href="#forest-tree" x="265" y="288" width="28" height="40"/><use href="#forest-tree" x="324" y="256" width="25" height="36"/><use href="#forest-tree" x="375" y="295" width="28" height="40"/></g>
+  <ellipse cx="166" cy="347" rx="95" ry="28" stroke="#00e5ff" stroke-opacity=".4" stroke-width="1.6"/>
+  <ellipse cx="166" cy="347" rx="64" ry="18" stroke="#00e5ff" stroke-opacity=".2" stroke-width="1.4"/>
+  <g stroke="#f59e0b" stroke-width="2" stroke-linecap="round"><path d="M149 336v-7h10m22 0h10v7m0 22v7h-10m-22 0h-10v-7"/><circle cx="170" cy="337" r="4" fill="#f59e0b" fill-opacity=".2"/><path d="M170 343v12m-7-6 7-5 7 5m-7 6-6 8m6-8 6 8"/></g>
+  <!-- A reviewable alert reaches a person, rather than an automatic response. -->
+  <g stroke="#cbd5e1" stroke-width="2" stroke-linejoin="round">
+    <rect x="491" y="139" width="151" height="119" rx="3" fill="#0c1017"/>
+    <path d="M503 151h127v94H503Zm52 107v17m-17 0h57" stroke-opacity=".6"/>
+    <path d="M516 191h43v41h-43Zm56-34h45v34h-45Z" stroke-opacity=".4"/>
+    <path d="m520 224 9-8 8 5 8-10 10 6m21-34 9-8 10 5 11-13 7 9" stroke-opacity=".45"/>
+    <circle cx="538" cy="202" r="3" stroke="#f59e0b"/>
+    <path d="M538 208v10m-5-5 5-5 5 5m-5 5-4 7m4-7 4 7" stroke="#f59e0b"/>
+    <circle cx="582" cy="217" r="10" stroke-opacity=".65"/><path d="M582 211v7l5 3" stroke-opacity=".65"/>
+    <path d="M609 206a8 8 0 0 1 8 8c0 6-8 15-8 15s-8-9-8-15a8 8 0 0 1 8-8Z" stroke-opacity=".5" stroke-dasharray="3 3"/>
+    <circle cx="677" cy="180" r="12"/>
+    <path d="M657 237v-21a20 20 0 0 1 40 0v21m-40-11h40"/>
+  </g>
+  <path d="M516 165h18v18h-18Z" fill="#f59e0b" fill-opacity=".15" stroke="#f59e0b" stroke-width="1.5"/>
+  <path d="M525 170v6m0 3v1" stroke="#f59e0b" stroke-width="2"/>
+  <g font-family="monospace" font-size="24" fill="#cbd5e1"><text x="65" y="70">01</text><text x="286" y="59">02</text><text x="493" y="121">03</text></g>
+  <g stroke="#00e5ff" stroke-opacity=".4" stroke-width="1.3"><path d="M16 32V16h16m656 0h16v16M16 428v16h16m656 0h16v-16"/></g>
+</svg>

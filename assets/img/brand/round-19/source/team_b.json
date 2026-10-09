@@ -1,0 +1,53 @@
+{
+  "team": "B",
+  "name": "Giros apoyados / contexto",
+  "corporates": [
+    {
+      "id": "strig-r19-b-control",
+      "title": "Strig / Giros apoyados, conservado",
+      "change": "B3 R18 exacto; composición y contexto de firma.",
+      "intent": "Repartir la tinta en los dos giros exteriores del recorrido para reducir estrechamientos, sin perder doble continuidad ni volver al sólido.",
+      "risk": "El apoyo exterior gana tinta a costa del otro lado del giro. Puede cambiar el ritmo sin aportar mejora perceptiva; dos S legibles no están demostradas.",
+      "bounds": [
+        19,
+        22,
+        111.333,
+        108
+      ],
+      "path": "M 111.333 33 L 104 22 L 42 22 L 20 44 L 20 58 L 68 82 L 30 82 L 20.571 93 L 84.028 93 L 92.913 81.692 L 30.893 50.682 L 45.039 33 Z M 109.429 37 L 100 48 L 62 48 L 110 72 L 110 86 L 88 108 L 30 108 L 19 97 L 85.972 97 L 99.087 80.308 L 37.107 49.318 L 46.961 37 Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "athene-r19-b-control",
+      "title": "Athene / Perfil R15, conservado",
+      "change": "Athene R15 exacto; sin repetir costura de Strig.",
+      "intent": "Conservar el centinela orientado que Tomás aprecia y usarlo como referencia de masa para las cuatro firmas corporativas.",
+      "risk": "Afinidad de Tomás y reconocimiento local del búho no equivalen a aprobación final ni recepción externa.",
+      "bounds": [
+        20,
+        20,
+        108,
+        100
+      ],
+      "path": "M 30 20 L 44 30 H 74 C 88 30 98 38 98 50 L 108 62 L 98 70 V 76 L 74 100 H 26 L 42 84 H 64 L 78 78 L 32 56 L 20 40 Z M 62 44 L 68 38 H 80 L 86 44 V 52 L 80 58 H 68 L 62 52 Z"
+    }
+  ],
+  "rationale": "Tomás aprecia B3 y confirma parentesco sin repetir corte. Se mantienen proporciones previas y se prueba jerarquía por soporte, sin nuevas geometrías.",
+  "composition": {
+    "corporateSymbolHeightAt85": 65.4347826087,
+    "corporateGapAt85": 22,
+    "corporateBaselineOffsetAt85": -18,
+    "productSymbolHeightAt85": 59,
+    "productGapAt85": 24,
+    "productBaselineOffsetAt85": -29.75,
+    "corporateHeaderFont": 42,
+    "productContentFont": 40,
+    "endorsementFont": 36,
+    "documentCorporateFont": 42,
+    "documentProductFont": 34,
+    "systemsFontAtEndorsement": 10.16470588235294,
+    "systemsFontAtDocument": 11.858823529411765,
+    "contextCorrection": "Endorsement27→36 y documento35→42 para SYSTEMS10.16/11.86px en láminas a escala1, conservando proporciones/paths. No se fija mínimo universal."
+  }
+}

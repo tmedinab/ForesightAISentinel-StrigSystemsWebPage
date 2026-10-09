@@ -1,0 +1,16 @@
+# Keep master/export bytes identical to their provenance hashes on Windows.
+assets/** -text whitespace=cr-at-eol,-blank-at-eol
+exports/** -text whitespace=cr-at-eol,-blank-at-eol
+docs/brand/**/originals/** -text
+*.ai binary
+*.pdf binary
+*.zip binary
+*.ttf binary
+*.png binary
+*.webp binary
+*.jpg binary
+
+# Imported/generated drawings and font licences retain source whitespace.
+assets/img/brand/**/*.svg whitespace=-blank-at-eol
+assets/img/brand/SpaceGrotesk-OFL.txt whitespace=-blank-at-eol
+**/OFL.txt whitespace=-blank-at-eol

@@ -1,0 +1,43 @@
+{
+  "ruta": "C",
+  "alcance": "Asesoría simulada; reacción de Tomás como evidencia local. Sin SVG, cambio de M14 ni concepto nuevo aprobado.",
+  "diagnostico": "Tomás muestra afinidad por la evolución formal y duda del fundamento. No especificó qué versión o detalle prefiere; la última presentación fue R15. No se debe convertir esa reacción en selección del umbral ni en rechazo de toda la ruta.",
+  "distincionNecesaria": {
+    "construccionInterna": "Umbral nombra una operación para ordenar masa, campo y apoyos. Puede ser útil al diseñar sin convertirse en historia que el cliente deba descifrar.",
+    "mensajeAlCliente": "Ingeniería y atención protectora son prioridades confirmadas. El logo puede expresar carácter e identificar; nombre, descriptor y evidencia explican qué hace el sistema.",
+    "conceptoDefendible": "Debe orientar decisiones y renuncias. No basta encontrar después una palabra que haga parecer resuelta una figura agradable."
+  },
+  "decisionPropuesta": "Conservar el lenguaje formal de C como material valioso y detener su evolución automática. Primero aclarar si incomoda el término umbral o la relación que propone. Si solo sobra el relato, mantenerlo como hipótesis de construcción interna y evaluar carácter. Si contradice lo que Tomás quiere expresar, abrir una rama conceptual explícita; no renombrar R15 como si siempre hubiera tenido otro origen.",
+  "opciones": [
+    {
+      "tesis": "Coordinación de sistemas",
+      "fundamentoDesdeBrief": "Strig desarrolla e integra sistemas; el conjunto se organiza mediante partes e interfaces. Athene coordina observación y supervisión, sin que el logo represente sensores o una arquitectura aprobada.",
+      "consecuenciaFormal": "La relación entre piezas tendría que mostrar una articulación propia: encuentros, terminales y espacio compartido deliberados. En producto, conservar una presencia unitaria sin duplicar una cámara. No bastan dos brackets genéricos etiquetados integración.",
+      "ganancia": "Fundamento corporativo amplio y vínculo comprensible entre partes, estructura y desarrollo.",
+      "coste": "Puede perder presencia biológica y parecer un signo técnico genérico. No exigir reconocer integración literalmente ni prometer interoperabilidad operacional.",
+      "estado": "Hipótesis de una rama nueva si se abandona el umbral; no genealogía retrospectiva de las formas existentes."
+    },
+    {
+      "tesis": "Resguardo atento",
+      "fundamentoDesdeBrief": "La protección se vincula con atención disponible, no con ataque. El producto puede tener centinela y aplomo; la empresa admite una abstracción de esa disposición.",
+      "consecuenciaFormal": "Estudiar una relación de envolvente y apertura que parezca sostenida, con centro facial legible y masa suficiente. Podría conservar cierres parciales; no obliga a un escudo ni a eliminar toda base.",
+      "ganancia": "Se aproxima al beneficio forestal y al carácter firme que Tomás busca.",
+      "coste": "El resguardo puede volverse encierro o insignia de seguridad y restringir la personalidad corporativa. Un contorno protector no demuestra prevención ni protección real.",
+      "estado": "Hipótesis alternativa por decidir; no lectura ya validada de C."
+    }
+  ],
+  "tradeoffs": [
+    "Conservar lenguaje formal permite cultivar afinidad sin perder trabajo; conservar concepto a la fuerza puede convertir crítica en explicación publicitaria.",
+    "Cambiar concepto es legítimo si produce criterios distintos y consecuencias visibles; si solo cambia el párrafo, es racionalización.",
+    "El fundamento de construcción no necesita ser reconocido literalmente por un cliente; el carácter y la identidad sí deben poder evaluarse sin explicación.",
+    "Abrir una ruta completamente nueva es razonable si ninguna hipótesis explica qué relaciones merece cultivar C sin contradecir el mensaje; no hace falta hacerlo solo porque umbral sea una palabra abstracta."
+  ],
+  "pruebaProxima": {
+    "paso": "Aclarar la objeción y formular un único encargo de definición antes de otra forma.",
+    "entrega": "Para la hipótesis que se elija: una relación formal que conservar, una que modificar y una renuncia. Señalar qué del dibujo observado la apoya y qué todavía falta construir.",
+    "criterio": "Continuar si la hipótesis orienta una intervención localizada y el carácter gusta sin relato. Si necesita forzar significados o rehacer todas las relaciones, retirar el concepto y registrar nueva rama. No iterar C indefinidamente por afinidad aislada.",
+    "limite": "No ejecutar simultáneamente ambas tesis ni afirmar que la forma ya comunica cualquiera de ellas."
+  },
+  "preguntaOpcional": "¿Te incomoda la explicación del umbral, o que la forma todavía no exprese la clase de ingeniería y protección que quieres asociar a Strig y Athene?",
+  "registroSiCambia": "Mantener R13-R15 como historia de Umbral; crear nueva rama conceptual con origen y decisiones explícitos. La afinidad formal puede transferirse como recurso, sin alterar su procedencia."
+}

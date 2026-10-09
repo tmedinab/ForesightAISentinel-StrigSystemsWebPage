@@ -1,0 +1,177 @@
+{
+  "studies": [
+    {
+      "id": "strig-r16-b-control",
+      "title": "Strig B / S gruesa intacta",
+      "change": "Control exacto de la S R13, conservada en R15.",
+      "intent": "Conservar el recorrido y la masa que Tomás valora; referencia para evaluar solo el canal.",
+      "risk": "La firma sigue siendo una S compacta; afinidad de Tomás no acredita distintividad externa.",
+      "bounds": [
+        18,
+        22,
+        112,
+        108
+      ],
+      "path": "M 104 22 H 42 L 20 44 V 58 L 68 82 H 30 L 18 96 L 30 108 H 88 L 110 86 V 72 L 62 48 H 100 L 112 34 Z"
+    },
+    {
+      "id": "strig-r16-b-canal6",
+      "title": "Strig B / Canal 6 u",
+      "change": "Canal transparente de 6 u perpendicular a la diagonal propia de la S. Dos polígonos explícitos, sin tinta de knockout exterior.",
+      "intent": "Articular dos partes de una misma firma gruesa conservando recorrido, dimensiones y terminales; explorar composición sin dibujar otras iniciales.",
+      "risk": "El canal estrecho puede fusionarse perceptivamente en pequeño; dos partes no implican dos S legibles.",
+      "bounds": [
+        18,
+        22,
+        112,
+        108
+      ],
+      "path": "M 104 22 H 42 L 23.236 40.764 L 110 84.146 V 72 L 62 48 H 100 L 112 34 Z M 20 45.854 V 58 L 68 82 H 30 L 18 96 L 30 108 H 88 L 106.764 89.236 Z"
+    },
+    {
+      "id": "strig-r16-b-canal10",
+      "title": "Strig B / Canal 10 u",
+      "change": "El mismo canal y centro, ampliado a 10 u perpendicularmente. El ancho es la única diferencia respecto de Canal 6 u.",
+      "intent": "Dar más margen de separación en pequeño sin cambiar pendiente, agregar iniciales ni alterar los extremos de la S.",
+      "risk": "Una separación más disponible resta masa al enlace y puede fragmentar el gesto; no demuestra lectura de SS.",
+      "bounds": [
+        18,
+        22,
+        112,
+        108
+      ],
+      "path": "M 104 22 H 42 L 24.727 39.273 L 110 81.910 V 72 L 62 48 H 100 L 112 34 Z M 20 48.090 V 58 L 68 82 H 30 L 18 96 L 30 108 H 88 L 105.273 90.727 Z"
+    },
+    {
+      "id": "athene-r16-b-control",
+      "title": "Athene B / Perfil R15 intacto",
+      "change": "Control Athene R15 exacto. Sin añadido al vacío ni cambio de ojo, cabeza, perfil o apoyo.",
+      "intent": "Conservar el perfil que Tomás ahora reconoce como búho sin hacerlo más explícito; aislar el ensayo corporativo.",
+      "risk": "Reconocimiento y agrado de Tomás son evidencia local de afinidad; no prueban especie reconocida por terceros ni adopción final.",
+      "bounds": [
+        20,
+        20,
+        108,
+        100
+      ],
+      "path": "M 30 20 L 44 30 H 74 C 88 30 98 38 98 50 L 108 62 L 98 70 V 76 L 74 100 H 26 L 42 84 H 64 L 78 78 L 32 56 L 20 40 Z M 62 44 L 68 38 H 80 L 86 44 V 52 L 80 58 H 68 L 62 52 Z"
+    }
+  ],
+  "meta": {
+    "team": "B",
+    "name": "Firma de barrido / articulación diagonal",
+    "boardSummary": "La S gruesa se divide por su propia diagonal: canales de 6 y 10 u, con Athene intacto.",
+    "resultObservation": "El corte conserva la silueta general de S y hace visibles dos partes. Canal 6 mantiene más unidad y peso en el enlace; Canal 10 deja una separación más disponible a 16/24 px, pero el canal domina más el centro y fragmenta el gesto. En la revisión local se percibe una firma S cortada; no dos S independientes. Athene sigue exacto y su vacío no recibe significado ni figura nuevos.",
+    "critique": "Las variantes siguen la identidad B por dirección y recorrido; no convierten la S en un marco ni el producto en un frente simétrico. El canal es un gesto visible de articulación, con coste real de masa. Recomiendo juzgar primero si mejora la firma gruesa que ahora gusta; la intención SS es secundaria y no debe sostener una separación que debilite la forma. Canal 6 es el contraste más contenido; Canal 10 permite observar claramente el coste de mayor margen, sin declararlo una mejora automática.",
+    "thesis": "La S gruesa se articula en dos partes mediante un corte paralelo a su propio recorrido. La identidad sigue en la firma y su transformación a perfil; no se añaden dos letras ni se impone un frente simétrico.",
+    "messageAlignment": "Ingeniería y atención protectora; búho como identidad. Se conserva masa suficiente y recorrido orientado. El ensayo trabaja una firma compuesta; no atribuye significado animal nuevo al canal.",
+    "feedbackBasis": "Tomás indica que inicialmente costó entender B, ahora ve claramente el búho sin que sea evidente y le gusta. Valora la S gruesa y propone quizá cortarla en dos siguiendo sus bordes para simbolizar las dos S del nombre. Son afinidad y propuesta personales; no lectura externa ni geometría aprobada.",
+    "explainingCut": "El vacío detrás y bajo la cabeza de Athene separa el tramo de atención del retorno y deja visible la plataforma inferior: es una contraforma estructural del recorrido. No nació como ala, territorio o segunda pieza. Añadir una figura allí reduciría esa separación y sería otra operación. El nuevo canal de Strig es distinto: divide la cinta diagonal en dos partes para explorar una firma compuesta. La asociación con Strig Systems puede motivarlo, pero no se afirma que cada parte sea una S legible.",
+    "operationMap": {
+      "registeredBeforeRendering": true,
+      "control": "S corporate de scratch/round13/team_b.json y Athene product de scratch/round15/team_b.json exactos.",
+      "singleVariable": "Anchura perpendicular de un canal diagonal centrado y de pendiente fija: 0, 6 y 10 unidades.",
+      "directionEvidence": "Bordes propios de la cinta: (62,48)→(110,72) y (20,58)→(68,82). Ambos tienen delta=(48,24), pendiente 1/2 y ángulo 26.565 grados. No se sustituye por 45 grados.",
+      "centerLine": "y=x/2+32.5. Los bordes de tinta existentes son y=x/2+17 e y=x/2+48; el canal ocupa su zona media.",
+      "channel6": {
+        "normalWidth": 6,
+        "lineOffsets": [
+          29.145898,
+          35.854102
+        ],
+        "upperPolygonCut": [
+          [
+            23.236,
+            40.764
+          ],
+          [
+            110,
+            84.146
+          ]
+        ],
+        "lowerPolygonCut": [
+          [
+            20,
+            45.854
+          ],
+          [
+            106.764,
+            89.236
+          ]
+        ]
+      },
+      "channel10": {
+        "normalWidth": 10,
+        "lineOffsets": [
+          26.90983,
+          38.09017
+        ],
+        "upperPolygonCut": [
+          [
+            24.727,
+            39.273
+          ],
+          [
+            110,
+            81.91
+          ]
+        ],
+        "lowerPolygonCut": [
+          [
+            20,
+            48.09
+          ],
+          [
+            105.273,
+            90.727
+          ]
+        ]
+      },
+      "construction": "Dos polígonos explícitos por canal. Cada borde del canal se recorta en su intersección con el perímetro; el espacio entre polígonos es transparente. No hay subpath exterior de knockout, máscara o fondo simulado.",
+      "fixed": "Todos los tramos del perímetro y contraformas originales fuera de las cuatro entradas/salidas del canal; bounds 18,22,112,108; terminales superiores e inferiores; Athene completo.",
+      "necessaryLoss": "Toda separación consume tinta y abre dos pequeños pasos en el perímetro. Se conserva la envolvente y dimensiones, no una cantidad idéntica de masa ni un contorno matemáticamente cerrado idéntico.",
+      "precision": "Intersecciones calculadas a partir de la pendiente propia y redondeadas a 0.001 u. Error máximo de canal inferior a 0.003 u. El ancho se mide perpendicularmente, no como distancia vertical."
+    },
+    "tradeoffs": [
+      "Canal 6 conserva más enlace; puede perder separación a 16/24 px. Canal 10 ofrece margen, pero fragmenta más la S gruesa que Tomás valora.",
+      "Dos partes hacen visible composición; no prueban dos S. Mantener lectura general de S es más importante que explicar SS retrospectivamente.",
+      "Las dimensiones y extremos quedan fijos; la tinta retirada y las aberturas exteriores son costes reales declarados.",
+      "El vacío de Athene conserva su función estructural; no se añade un símbolo para resolver una pregunta narrativa."
+    ],
+    "nextChecks": [
+      "Evaluar control/canales a 16/24/32 px e inversa: disponibilidad del canal, continuidad perceptiva y fragmentación.",
+      "Comprobar que ningún polígono introduce tinta fuera del control y que los dos controles siguen exactos.",
+      "Mirar con Tomás si el canal añade identidad conservando la S gruesa, sin exigir dos S a la figura.",
+      "Conservar control si el corte necesita explicación o debilita el recorrido; esta ronda no adopta una nueva marca."
+    ],
+    "qa": {
+      "corporateControlExact": true,
+      "productControlExact": true,
+      "preview": "scratch/round16/b/mini.png",
+      "sizes": [
+        16,
+        24,
+        32
+      ],
+      "backgrounds": [
+        "claro",
+        "inversa"
+      ],
+      "geometry": [
+        {
+          "id": "strig-r16-b-canal6",
+          "opaquePixelsOutsideControl": 0,
+          "removedOpaquePixels": 9454,
+          "channelCenterAlpha": 0
+        },
+        {
+          "id": "strig-r16-b-canal10",
+          "opaquePixelsOutsideControl": 0,
+          "removedOpaquePixels": 15640,
+          "channelCenterAlpha": 0
+        }
+      ],
+      "scope": "Comparación raster a 512 px con umbral alpha 128; transparencia central comprobada. No reconocimiento ni revisión jurídica."
+    }
+  }
+}

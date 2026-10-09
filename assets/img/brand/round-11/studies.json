@@ -1,0 +1,54 @@
+[
+  {
+    "id": "athene-control",
+    "title": "0 / mejillas actual",
+    "change": "Control conservado",
+    "intent": "Disco facial sugerido; base abierta.",
+    "risk": "Gafas / personaje.",
+    "bounds": [
+      16,
+      30,
+      112,
+      77
+    ]
+  },
+  {
+    "id": "athene-retornos",
+    "title": "1 / retornos prolongados",
+    "change": "Extremos inferiores 4 u hacia el centro y 2 u abajo",
+    "intent": "Más continuidad de las regiones faciales.",
+    "risk": "Puede aproximarse a gafas o máscara.",
+    "bounds": [
+      16,
+      30,
+      112,
+      78
+    ]
+  },
+  {
+    "id": "athene-centro-contenido",
+    "title": "2 / centro contenido",
+    "change": "Punta central 4 u más corta; hombros intactos",
+    "intent": "Menor proyección de la pieza central.",
+    "risk": "Puede perder pico y parecer más visor.",
+    "bounds": [
+      16,
+      30,
+      112,
+      76
+    ]
+  },
+  {
+    "id": "strig-h1",
+    "title": "Strig H1 / referencia óptica",
+    "change": "Control conservado",
+    "intent": "Menor peso del emblema junto al nombre.",
+    "risk": "Menor presencia del símbolo aislado en el conjunto.",
+    "bounds": [
+      18,
+      21,
+      110,
+      107
+    ]
+  }
+]

@@ -1,0 +1,346 @@
+{
+  "status": "pass",
+  "scenarioCount": 24,
+  "boardCount": 3,
+  "chromiumVersion": "151.0.7922.34",
+  "librsvgVersion": "2.62.91",
+  "note": "Rendering/bounds verification only. Letter recognition, aesthetics and customer preference are not measured.",
+  "results": [
+    {
+      "name": "athene-control",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 16,
+        "y": 30,
+        "w": 96,
+        "h": 47,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.8571
+    },
+    {
+      "name": "athene-control",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 16,
+        "y": 30,
+        "w": 96,
+        "h": 47,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9767
+    },
+    {
+      "name": "athene-control",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 16,
+        "y": 30,
+        "w": 96,
+        "h": 47,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "athene-control",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 16,
+        "y": 30,
+        "w": 96,
+        "h": 47,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9419
+    },
+    {
+      "name": "athene-control",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 16,
+        "y": 30,
+        "w": 96,
+        "h": 47,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9996
+    },
+    {
+      "name": "athene-control-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 27.000001907348633,
+        "y": 28.4999942779541,
+        "w": 437.60003662109375,
+        "h": 63.53126525878906,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9891
+    },
+    {
+      "name": "athene-retornos",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 16,
+        "y": 30,
+        "w": 96,
+        "h": 48,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.8636
+    },
+    {
+      "name": "athene-retornos",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 16,
+        "y": 30,
+        "w": 96,
+        "h": 48,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9556
+    },
+    {
+      "name": "athene-retornos",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 16,
+        "y": 30,
+        "w": 96,
+        "h": 48,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9873
+    },
+    {
+      "name": "athene-retornos",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 16,
+        "y": 30,
+        "w": 96,
+        "h": 48,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9466
+    },
+    {
+      "name": "athene-retornos",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 16,
+        "y": 30,
+        "w": 96,
+        "h": 48,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.998
+    },
+    {
+      "name": "athene-retornos-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 27.000001907348633,
+        "y": 28.4999942779541,
+        "w": 437.60003662109375,
+        "h": 64.00001525878906,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9898
+    },
+    {
+      "name": "athene-centro-contenido",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 16,
+        "y": 30,
+        "w": 96,
+        "h": 46,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.8571
+    },
+    {
+      "name": "athene-centro-contenido",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 16,
+        "y": 30,
+        "w": 96,
+        "h": 46,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9756
+    },
+    {
+      "name": "athene-centro-contenido",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 16,
+        "y": 30,
+        "w": 96,
+        "h": 46,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "athene-centro-contenido",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 16,
+        "y": 30,
+        "w": 96,
+        "h": 46,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9405
+    },
+    {
+      "name": "athene-centro-contenido",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 16,
+        "y": 30,
+        "w": 96,
+        "h": 46,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "athene-centro-contenido-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 27.000001907348633,
+        "y": 28.4999942779541,
+        "w": 437.60003662109375,
+        "h": 63.06251525878906,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9933
+    },
+    {
+      "name": "strig-h1",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.8333
+    },
+    {
+      "name": "strig-h1",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "strig-h1",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "strig-h1",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9487
+    },
+    {
+      "name": "strig-h1",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9778
+    },
+    {
+      "name": "strig-h1-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 25,
+        "y": 27.309993743896484,
+        "w": 332.5500183105469,
+        "h": 91.0260009765625,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9785
+    }
+  ]
+}

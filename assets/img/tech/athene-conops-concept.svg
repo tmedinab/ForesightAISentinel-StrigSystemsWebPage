@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" fill="none">
+  <title>Athene conceptual system architecture</title>
+  <desc>Abstract aerial sensing node linked to onboard processing and a human supervision console above schematic terrain. No aircraft geometry or performance measurements are represented.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" stroke="#cbd5e1" stroke-opacity=".06"/></pattern>
+    <linearGradient id="scan" x1="256" y1="132" x2="256" y2="321" gradientUnits="userSpaceOnUse"><stop stop-color="#00e5ff" stop-opacity=".18"/><stop offset="1" stop-color="#00e5ff" stop-opacity=".01"/></linearGradient>
+  </defs>
+  <path fill="url(#grid)" d="M0 0h640v420H0z"/>
+  <g stroke="#94a3b8" stroke-opacity=".28" stroke-width="1.2">
+    <path d="m22 302 68-33 66 12 72-44 75 34 82-22 72 29 55-7 107 32M22 321l68-33 66 12 72-44 75 34 82-22 72 29 55-7 107 32M22 340l68-33 66 12 72-44 75 34 82-22 72 29 55-7 107 32M22 359l68-33 66 12 72-44 75 34 82-22 72 29 55-7 107 32M22 378l68-33 66 12 72-44 75 34 82-22 72 29 55-7 107 32"/>
+  </g>
+  <path d="m250 129-101 176 199 24Z" fill="url(#scan)"/>
+  <path d="m250 129-101 176m101-176 98 200" stroke="#00e5ff" stroke-opacity=".28" stroke-dasharray="4 8"/>
+  <ellipse cx="250" cy="306" rx="63" ry="20" stroke="#00e5ff" stroke-opacity=".45"/>
+  <ellipse cx="250" cy="306" rx="38" ry="12" stroke="#00e5ff" stroke-opacity=".25"/>
+  <g stroke="#00e5ff" stroke-width="1.7" stroke-linejoin="round">
+    <path d="m250 63 54 31v62l-54 31-54-31V94Z" fill="#0c1017"/>
+    <path d="m196 94 54 31 54-31m-54 31v62"/>
+    <path d="m225 93 25-14 25 14-25 14Z"/>
+    <circle cx="225" cy="139" r="8"/><circle cx="275" cy="139" r="8"/>
+  </g>
+  <g stroke="#00e5ff" stroke-width="1.5">
+    <path d="M312 113h47v-35h31" stroke-dasharray="5 7"/>
+    <rect x="399" y="43" width="91" height="70" rx="4" fill="#0c1017"/>
+    <rect x="424" y="60" width="41" height="36" rx="2"/>
+    <path d="M432 35v8m13-8v8m13-8v8m-26 70v8m13-8v8m13-8v8m-59-59h-8m8 16h-8m99-16h8m-8 16h8"/>
+    <path d="M490 130v72h33" stroke-dasharray="5 7"/>
+  </g>
+  <g stroke="#cbd5e1" stroke-width="1.6" stroke-linejoin="round">
+    <path d="M470 220h121v69H470Z" fill="#0c1017"/>
+    <path d="M481 230h99v44h-99Zm49 59v12m-20 0h40"/>
+    <path d="m493 252 15-10 13 9 19-10 26 16" stroke="#00e5ff"/>
+    <circle cx="441" cy="244" r="10"/><path d="M425 278v-8a16 16 0 0 1 32 0v8"/>
+  </g>
+  <g stroke="#f59e0b" stroke-width="1.5"><path d="M225 293v-8h12m25 0h12v8m0 23v8h-12m-25 0h-12v-8"/><circle cx="250" cy="305" r="4"/></g>
+  <g fill="#cbd5e1" font-family="monospace" font-size="13"><text x="178" y="69">01</text><text x="401" y="29">02</text><text x="566" y="207">03</text></g>
+  <g stroke="#00e5ff" stroke-opacity=".5"><path d="M16 32V16h16m576 0h16v16M16 388v16h16m576 0h16v-16"/></g>
+</svg>

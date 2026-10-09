@@ -1,0 +1,388 @@
+{
+  "status": "pass",
+  "chromiumVersion": "151.0.7922.34",
+  "sharpVersion": "0.35.4",
+  "librsvgVersion": "2.62.91",
+  "scenarioCount": 42,
+  "note": "Alpha-mask agreement is a rendering check, not an aesthetic, legibility or recognition score.",
+  "results": [
+    {
+      "name": "strig-01-campo",
+      "width": 16,
+      "height": 16,
+      "dpr": 1,
+      "inkPixelsChromium": 51,
+      "inkPixelsLibrsvg": 50,
+      "maskIoU": 0.9423
+    },
+    {
+      "name": "strig-01-campo",
+      "width": 16,
+      "height": 16,
+      "dpr": 2,
+      "inkPixelsChromium": 228,
+      "inkPixelsLibrsvg": 196,
+      "maskIoU": 0.812
+    },
+    {
+      "name": "strig-01-campo",
+      "width": 24,
+      "height": 24,
+      "dpr": 1,
+      "inkPixelsChromium": 119,
+      "inkPixelsLibrsvg": 114,
+      "maskIoU": 0.879
+    },
+    {
+      "name": "strig-01-campo",
+      "width": 24,
+      "height": 24,
+      "dpr": 2,
+      "inkPixelsChromium": 422,
+      "inkPixelsLibrsvg": 424,
+      "maskIoU": 0.9315
+    },
+    {
+      "name": "strig-01-campo",
+      "width": 32,
+      "height": 32,
+      "dpr": 1,
+      "inkPixelsChromium": 228,
+      "inkPixelsLibrsvg": 196,
+      "maskIoU": 0.812
+    },
+    {
+      "name": "strig-01-campo",
+      "width": 32,
+      "height": 32,
+      "dpr": 2,
+      "inkPixelsChromium": 776,
+      "inkPixelsLibrsvg": 768,
+      "maskIoU": 0.9495
+    },
+    {
+      "name": "strig-01-campo",
+      "width": 48,
+      "height": 48,
+      "dpr": 1,
+      "inkPixelsChromium": 422,
+      "inkPixelsLibrsvg": 424,
+      "maskIoU": 0.9315
+    },
+    {
+      "name": "strig-01-campo",
+      "width": 48,
+      "height": 48,
+      "dpr": 2,
+      "inkPixelsChromium": 1841,
+      "inkPixelsLibrsvg": 1744,
+      "maskIoU": 0.913
+    },
+    {
+      "name": "strig-01-campo",
+      "width": 128,
+      "height": 128,
+      "dpr": 1,
+      "inkPixelsChromium": 3108,
+      "inkPixelsLibrsvg": 3072,
+      "maskIoU": 0.9808
+    },
+    {
+      "name": "strig-01-campo",
+      "width": 128,
+      "height": 128,
+      "dpr": 2,
+      "inkPixelsChromium": 12384,
+      "inkPixelsLibrsvg": 12288,
+      "maskIoU": 0.9922
+    },
+    {
+      "name": "strig-01-campo",
+      "width": 256,
+      "height": 256,
+      "dpr": 1,
+      "inkPixelsChromium": 12384,
+      "inkPixelsLibrsvg": 12288,
+      "maskIoU": 0.9922
+    },
+    {
+      "name": "strig-01-campo",
+      "width": 256,
+      "height": 256,
+      "dpr": 2,
+      "inkPixelsChromium": 49344,
+      "inkPixelsLibrsvg": 49152,
+      "maskIoU": 0.9961
+    },
+    {
+      "name": "strig-02-bilateral",
+      "width": 16,
+      "height": 16,
+      "dpr": 1,
+      "inkPixelsChromium": 34,
+      "inkPixelsLibrsvg": 35,
+      "maskIoU": 0.9714
+    },
+    {
+      "name": "strig-02-bilateral",
+      "width": 16,
+      "height": 16,
+      "dpr": 2,
+      "inkPixelsChromium": 148,
+      "inkPixelsLibrsvg": 143,
+      "maskIoU": 0.8896
+    },
+    {
+      "name": "strig-02-bilateral",
+      "width": 24,
+      "height": 24,
+      "dpr": 1,
+      "inkPixelsChromium": 82,
+      "inkPixelsLibrsvg": 82,
+      "maskIoU": 1
+    },
+    {
+      "name": "strig-02-bilateral",
+      "width": 24,
+      "height": 24,
+      "dpr": 2,
+      "inkPixelsChromium": 330,
+      "inkPixelsLibrsvg": 327,
+      "maskIoU": 0.9909
+    },
+    {
+      "name": "strig-02-bilateral",
+      "width": 32,
+      "height": 32,
+      "dpr": 1,
+      "inkPixelsChromium": 148,
+      "inkPixelsLibrsvg": 143,
+      "maskIoU": 0.8896
+    },
+    {
+      "name": "strig-02-bilateral",
+      "width": 32,
+      "height": 32,
+      "dpr": 2,
+      "inkPixelsChromium": 580,
+      "inkPixelsLibrsvg": 568,
+      "maskIoU": 0.9327
+    },
+    {
+      "name": "strig-02-bilateral",
+      "width": 48,
+      "height": 48,
+      "dpr": 1,
+      "inkPixelsChromium": 330,
+      "inkPixelsLibrsvg": 327,
+      "maskIoU": 0.9909
+    },
+    {
+      "name": "strig-02-bilateral",
+      "width": 48,
+      "height": 48,
+      "dpr": 2,
+      "inkPixelsChromium": 1310,
+      "inkPixelsLibrsvg": 1291,
+      "maskIoU": 0.9556
+    },
+    {
+      "name": "strig-02-bilateral",
+      "width": 128,
+      "height": 128,
+      "dpr": 1,
+      "inkPixelsChromium": 2308,
+      "inkPixelsLibrsvg": 2284,
+      "maskIoU": 0.9658
+    },
+    {
+      "name": "strig-02-bilateral",
+      "width": 128,
+      "height": 128,
+      "dpr": 2,
+      "inkPixelsChromium": 9264,
+      "inkPixelsLibrsvg": 9160,
+      "maskIoU": 0.9888
+    },
+    {
+      "name": "strig-02-bilateral",
+      "width": 256,
+      "height": 256,
+      "dpr": 1,
+      "inkPixelsChromium": 9264,
+      "inkPixelsLibrsvg": 9160,
+      "maskIoU": 0.9888
+    },
+    {
+      "name": "strig-02-bilateral",
+      "width": 256,
+      "height": 256,
+      "dpr": 2,
+      "inkPixelsChromium": 36896,
+      "inkPixelsLibrsvg": 36688,
+      "maskIoU": 0.9944
+    },
+    {
+      "name": "athene-01-centinela",
+      "width": 16,
+      "height": 16,
+      "dpr": 1,
+      "inkPixelsChromium": 72,
+      "inkPixelsLibrsvg": 66,
+      "maskIoU": 0.9167
+    },
+    {
+      "name": "athene-01-centinela",
+      "width": 16,
+      "height": 16,
+      "dpr": 2,
+      "inkPixelsChromium": 262,
+      "inkPixelsLibrsvg": 265,
+      "maskIoU": 0.9234
+    },
+    {
+      "name": "athene-01-centinela",
+      "width": 24,
+      "height": 24,
+      "dpr": 1,
+      "inkPixelsChromium": 142,
+      "inkPixelsLibrsvg": 142,
+      "maskIoU": 1
+    },
+    {
+      "name": "athene-01-centinela",
+      "width": 24,
+      "height": 24,
+      "dpr": 2,
+      "inkPixelsChromium": 598,
+      "inkPixelsLibrsvg": 581,
+      "maskIoU": 0.9716
+    },
+    {
+      "name": "athene-01-centinela",
+      "width": 32,
+      "height": 32,
+      "dpr": 1,
+      "inkPixelsChromium": 262,
+      "inkPixelsLibrsvg": 265,
+      "maskIoU": 0.9234
+    },
+    {
+      "name": "athene-01-centinela",
+      "width": 32,
+      "height": 32,
+      "dpr": 2,
+      "inkPixelsChromium": 1032,
+      "inkPixelsLibrsvg": 1036,
+      "maskIoU": 0.9546
+    },
+    {
+      "name": "athene-01-centinela",
+      "width": 48,
+      "height": 48,
+      "dpr": 1,
+      "inkPixelsChromium": 598,
+      "inkPixelsLibrsvg": 581,
+      "maskIoU": 0.9716
+    },
+    {
+      "name": "athene-01-centinela",
+      "width": 48,
+      "height": 48,
+      "dpr": 2,
+      "inkPixelsChromium": 2322,
+      "inkPixelsLibrsvg": 2326,
+      "maskIoU": 0.9695
+    },
+    {
+      "name": "athene-01-centinela",
+      "width": 128,
+      "height": 128,
+      "dpr": 1,
+      "inkPixelsChromium": 4120,
+      "inkPixelsLibrsvg": 4126,
+      "maskIoU": 0.9756
+    },
+    {
+      "name": "athene-01-centinela",
+      "width": 128,
+      "height": 128,
+      "dpr": 2,
+      "inkPixelsChromium": 16567,
+      "inkPixelsLibrsvg": 16480,
+      "maskIoU": 0.9932
+    },
+    {
+      "name": "athene-01-centinela",
+      "width": 256,
+      "height": 256,
+      "dpr": 1,
+      "inkPixelsChromium": 16567,
+      "inkPixelsLibrsvg": 16480,
+      "maskIoU": 0.9932
+    },
+    {
+      "name": "athene-01-centinela",
+      "width": 256,
+      "height": 256,
+      "dpr": 2,
+      "inkPixelsChromium": 66052,
+      "inkPixelsLibrsvg": 65884,
+      "maskIoU": 0.9969
+    },
+    {
+      "name": "strig-03-firma",
+      "width": 131,
+      "height": 34,
+      "dpr": 1,
+      "inkPixelsChromium": 1710,
+      "inkPixelsLibrsvg": 1717,
+      "maskIoU": 0.8809
+    },
+    {
+      "name": "strig-03-firma",
+      "width": 202,
+      "height": 52,
+      "dpr": 1,
+      "inkPixelsChromium": 4177,
+      "inkPixelsLibrsvg": 4105,
+      "maskIoU": 0.9026
+    },
+    {
+      "name": "strig-01-campo-lockup",
+      "width": 350,
+      "height": 100,
+      "dpr": 1,
+      "inkPixelsChromium": 5750,
+      "inkPixelsLibrsvg": 5642,
+      "maskIoU": 0.9713
+    },
+    {
+      "name": "strig-02-bilateral-lockup",
+      "width": 350,
+      "height": 100,
+      "dpr": 1,
+      "inkPixelsChromium": 5179,
+      "inkPixelsLibrsvg": 5164,
+      "maskIoU": 0.986
+    },
+    {
+      "name": "strig-03-firma-lockup",
+      "width": 350,
+      "height": 100,
+      "dpr": 1,
+      "inkPixelsChromium": 4392,
+      "inkPixelsLibrsvg": 4377,
+      "maskIoU": 0.9835
+    },
+    {
+      "name": "athene-01-centinela-lockup",
+      "width": 490,
+      "height": 140,
+      "dpr": 1,
+      "inkPixelsChromium": 13779,
+      "inkPixelsLibrsvg": 13720,
+      "maskIoU": 0.9885
+    }
+  ]
+}

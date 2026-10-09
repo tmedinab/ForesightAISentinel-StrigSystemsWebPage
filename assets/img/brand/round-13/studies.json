@@ -1,0 +1,86 @@
+[
+  {
+    "id": "strig-a",
+    "title": "Strig / A actual",
+    "change": "Control conservado",
+    "intent": "Menor peso del emblema junto al nombre.",
+    "risk": "Menor presencia del símbolo aislado en el conjunto.",
+    "bounds": [
+      18,
+      21,
+      110,
+      107
+    ],
+    "exportNominalSize": 85
+  },
+  {
+    "id": "athene-a",
+    "title": "Athene / A actual",
+    "change": "Control conservado",
+    "intent": "Dar al símbolo presencia equivalente a las mayúsculas.",
+    "risk": "El rostro adquiere mayor protagonismo.",
+    "bounds": [
+      16,
+      30,
+      112,
+      78
+    ],
+    "exportNominalSize": 84.705
+  },
+  {
+    "id": "strig-b",
+    "title": "Strig / S de barrido",
+    "change": "Alternativa estructural de firma: una S monolítica, facetada, con retornos horizontales y dos aperturas laterales amplias.",
+    "intent": "Representar una operación de percepción que recibe, transforma y devuelve información. La inicial organiza toda la silueta; los retornos sugieren instrumentación sin representar sensores ni limitar los futuros productos de ingeniería.",
+    "risk": "La S puede dominar la lectura y hacer muy débil la asociación implícita con Strigiformes. También debe comprobarse que la firma no parezca una marca deportiva por su diagonal central.",
+    "bounds": [
+      18,
+      22,
+      112,
+      108
+    ],
+    "exportNominalSize": 85
+  },
+  {
+    "id": "athene-b",
+    "title": "Athene / Firma en perfil",
+    "change": "El recorrido de la firma se convierte en cabeza y retorno de cuello vistos de perfil. Una apertura octogonal y un remate frontal breve diferencian el producto sin añadir una A independiente.",
+    "intent": "Explorar vigilancia orientada y atención sostenida mediante un centinela lateral. El hombro superior, la apertura y la masa inferior intentan introducir una lectura de ave nocturna dentro de la misma firma.",
+    "risk": "La lectura de búho no está demostrada: podría reconocerse otra ave, un nueve o una firma abstracta. El pequeño acento superior debe evaluarse para evitar que se perciba como oreja caricaturesca.",
+    "bounds": [
+      20,
+      20,
+      108,
+      108
+    ],
+    "exportNominalSize": 85
+  },
+  {
+    "id": "strig-c",
+    "title": "Strig / Umbral compartido",
+    "change": "Dirección abstracta nueva: dintel y apoyo abiertos, separados por un campo horizontal; se elimina el monograma como requisito.",
+    "intent": "Expresar estructura, coordinación y percepción mediante la relación entre masa y apertura. La simetría sostiene una presencia estable y la articulación central permite una asociación secundaria con Strigiformes.",
+    "risk": "Podría leerse como arquitectura, una mordaza o una cara robótica; la relación con percepción no es literal y debe contrastarse con lectores externos.",
+    "bounds": [
+      12,
+      22,
+      116,
+      114
+    ],
+    "exportNominalSize": 85
+  },
+  {
+    "id": "athene-c",
+    "title": "Athene / Presencia del umbral",
+    "change": "El umbral abierto se reúne en una masa facial continua, con dos contraformas grandes y una salida inferior abierta.",
+    "intent": "Proponer una presencia centinela más figurativa, usando amplitud frontal y mejillas suaves en vez de pupilas, plumas o cejas afiladas. La apertura inferior pertenece a la estructura y no añade una letra separada.",
+    "risk": "Las contraformas podrían recordar una máscara o binoculares antes que un búho; la escotadura inferior puede sugerir una A o dos piernas, sin garantizar ninguna de esas lecturas.",
+    "bounds": [
+      12,
+      22,
+      116,
+      108
+    ],
+    "exportNominalSize": 85
+  }
+]

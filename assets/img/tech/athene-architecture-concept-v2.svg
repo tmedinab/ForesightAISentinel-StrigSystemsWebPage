@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" fill="none" role="img" aria-labelledby="architecture-title architecture-description">
+  <title id="architecture-title">Athene conceptual observation and alert workflow</title>
+  <desc id="architecture-description">Abstract aerial observation and onboard analysis share a single boundary above schematic forest terrain. A directional connection carries an illustrative alert to a human supervision station. This is a conceptual diagram, not aircraft geometry, a real thermal image, a mission or measured performance. Use with the accompanying translated caption.</desc>
+  <defs>
+    <pattern id="architecture-grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" stroke="#94a3b8" stroke-opacity=".055"/></pattern>
+    <linearGradient id="observation-field" x1="165" y1="172" x2="165" y2="374" gradientUnits="userSpaceOnUse"><stop stop-color="#00e5ff" stop-opacity=".16"/><stop offset="1" stop-color="#00e5ff" stop-opacity=".015"/></linearGradient>
+    <linearGradient id="aerial-surface" x1="70" y1="42" x2="402" y2="194" gradientUnits="userSpaceOnUse"><stop stop-color="#00e5ff" stop-opacity=".045"/><stop offset="1" stop-color="#00e5ff" stop-opacity=".012"/></linearGradient>
+    <marker id="flow-direction" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="m2 1 6 4-6 4" stroke="#00e5ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <symbol id="forest-tree" viewBox="0 0 28 40"><path d="m14 2-9 12h5L2 26h10v12h4V26h10L18 14h5Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></symbol>
+  </defs>
+  <path d="M0 0h720v460H0z" fill="url(#architecture-grid)"/>
+  <!-- Shared functional boundary: observation and analysis aboard the aerial node. -->
+  <path d="M80 42h312l14 14v121l-14 14H80l-14-14V56Z" fill="url(#aerial-surface)" stroke="#94a3b8" stroke-opacity=".45" stroke-width="1.5" stroke-dasharray="5 7"/>
+  <g stroke="#00e5ff" stroke-width="2" stroke-linejoin="round">
+    <path d="M132 80h65v65h-65Z" fill="#0c1017"/>
+    <path d="M125 92v-19h19m41 0h19v19m0 41v19h-19m-41 0h-19v-19" stroke-opacity=".45"/>
+    <path d="M146 160h37m-29 8h21" stroke-opacity=".65"/>
+  </g>
+  <!-- Qualitative observation scene; deliberately not a thermal capture. -->
+  <g fill="#00e5ff" fill-opacity=".15">
+    <path d="M142 90h13v13h-13zM158 90h13v13h-13zM174 90h13v13h-13zM142 106h13v13h-13zM174 106h13v13h-13zM142 122h13v13h-13zM158 122h13v13h-13zM174 122h13v13h-13z"/>
+  </g>
+  <g stroke="#f59e0b" stroke-width="3" stroke-linecap="round"><circle cx="165" cy="102" r="4" fill="#f59e0b"/><path d="M165 110v13m-8-9 8-4 8 4m-8 9-6 9m6-9 6 9"/></g>
+  <path d="M213 112h58" stroke="#00e5ff" stroke-width="2" marker-end="url(#flow-direction)"/>
+  <!-- Abstract processing, without implying a particular board or manufacturer. -->
+  <g stroke="#00e5ff" stroke-width="2" stroke-linejoin="round">
+    <rect x="286" y="76" width="76" height="74" rx="3" fill="#0c1017"/>
+    <path d="M300 89h48v48h-48Z" stroke-opacity=".5"/>
+    <path d="M301 67v9m15-9v9m15-9v9m15-9v9m-45 74v9m15-9v9m15-9v9m15-9v9m-60-58h-9m9 15h-9m9 15h-9m85-30h9m-9 15h9m-9 15h9" stroke-opacity=".65"/>
+    <path d="M309 106v-8h8m14 0h8v8m0 13v8h-8m-14 0h-8v-8"/>
+    <path d="M312 117h6l7-11h11" stroke-opacity=".7"/>
+  </g>
+  <circle cx="325" cy="112" r="4" fill="#f59e0b" stroke="#f59e0b"/>
+  <path d="M374 112h68q12 0 12 12v40q0 12 12 12h20" stroke="#00e5ff" stroke-width="2" marker-end="url(#flow-direction)"/>
+  <!-- Observation over schematic relief, without a dimensional coverage claim. -->
+  <path d="m165 173-106 171q104 60 213 14Z" fill="url(#observation-field)"/>
+  <path d="m165 173-106 171m106-171 107 185" stroke="#00e5ff" stroke-opacity=".3" stroke-width="1.5" stroke-dasharray="4 8"/>
+  <g stroke="#94a3b8" stroke-opacity=".25" stroke-width="1.4" stroke-linecap="round">
+    <path d="M24 320q55-38 109-15t95-5 94 7 85-6 111 17 96-9 79 7"/>
+    <path d="M24 340q55-38 109-15t95-5 94 7 85-6 111 17 96-9 79 7"/>
+    <path d="M24 360q55-38 109-15t95-5 94 7 85-6 111 17 96-9 79 7"/>
+    <path d="M24 380q55-38 109-15t95-5 94 7 85-6 111 17 96-9 79 7"/>
+    <path d="M24 400q55-38 109-15t95-5 94 7 85-6 111 17 96-9 79 7"/>
+  </g>
+  <g color="#94a3b8" opacity=".55"><use href="#forest-tree" x="68" y="273" width="28" height="40"/><use href="#forest-tree" x="112" y="245" width="25" height="36"/><use href="#forest-tree" x="265" y="288" width="28" height="40"/><use href="#forest-tree" x="324" y="256" width="25" height="36"/><use href="#forest-tree" x="375" y="295" width="28" height="40"/></g>
+  <ellipse cx="166" cy="347" rx="95" ry="28" stroke="#00e5ff" stroke-opacity=".4" stroke-width="1.6"/>
+  <ellipse cx="166" cy="347" rx="64" ry="18" stroke="#00e5ff" stroke-opacity=".2" stroke-width="1.4"/>
+  <g stroke="#f59e0b" stroke-width="2" stroke-linecap="round"><path d="M149 336v-7h10m22 0h10v7m0 22v7h-10m-22 0h-10v-7"/><circle cx="170" cy="337" r="4" fill="#f59e0b" fill-opacity=".2"/><path d="M170 343v12m-7-6 7-5 7 5m-7 6-6 8m6-8 6 8"/></g>
+  <!-- A reviewable alert reaches a person, rather than an automatic response. -->
+  <g stroke="#cbd5e1" stroke-width="2" stroke-linejoin="round">
+    <rect x="491" y="139" width="151" height="119" rx="3" fill="#0c1017"/>
+    <path d="M503 151h127v94H503Zm52 107v17m-17 0h57" stroke-opacity=".6"/>
+    <path d="M516 191h43v41h-43Zm56-34h45v34h-45Z" stroke-opacity=".4"/>
+    <path d="m520 224 9-8 8 5 8-10 10 6m21-34 9-8 10 5 11-13 7 9" stroke-opacity=".45"/>
+    <circle cx="538" cy="202" r="3" stroke="#f59e0b"/>
+    <path d="M538 208v10m-5-5 5-5 5 5m-5 5-4 7m4-7 4 7" stroke="#f59e0b"/>
+    <circle cx="582" cy="217" r="10" stroke-opacity=".65"/><path d="M582 211v7l5 3" stroke-opacity=".65"/>
+    <path d="M609 206a8 8 0 0 1 8 8c0 6-8 15-8 15s-8-9-8-15a8 8 0 0 1 8-8Z" stroke-opacity=".5" stroke-dasharray="3 3"/>
+    <circle cx="677" cy="180" r="12"/>
+    <path d="M657 237v-21a20 20 0 0 1 40 0v21m-40-11h40"/>
+  </g>
+  <path d="M516 165h18v18h-18Z" fill="#f59e0b" fill-opacity=".15" stroke="#f59e0b" stroke-width="1.5"/>
+  <path d="M525 170v6m0 3v1" stroke="#f59e0b" stroke-width="2"/>
+  <g font-family="monospace" font-size="24" fill="#cbd5e1"><text x="89" y="78">01</text><text x="286" y="59">02</text><text x="493" y="121">03</text></g>
+  <g stroke="#00e5ff" stroke-opacity=".4" stroke-width="1.3"><path d="M16 32V16h16m656 0h16v16M16 428v16h16m656 0h16v-16"/></g>
+</svg>

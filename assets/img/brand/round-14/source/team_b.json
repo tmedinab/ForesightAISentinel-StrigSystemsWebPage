@@ -1,0 +1,40 @@
+{
+  "team": "B",
+  "name": "Retorno sostenido",
+  "boardSummary": "Un recorrido asentado firma ingeniería; dos retornos envolventes concentran atención frontal.",
+  "messageAlignment": "Ingeniería y atención protectora; búho como identidad. Strig organiza un campo abstracto y estable; Athene concentra esa atención en una presencia frontal envolvente, sin adelgazar la masa ni imponer iniciales.",
+  "thesis": "El barrido deja de representar velocidad y se convierte en un retorno sostenido. Strig organiza un campo abierto mediante una cinta que vuelve sobre sí misma; Athene especializa el mismo principio en dos regiones faciales abiertas y envolventes. La masa firme y el recorrido son la herencia, no una inicial obligatoria.",
+  "corporate": {
+    "id": "strig-r14-b-retorno",
+    "title": "Strig / Recorrido asentado",
+    "change": "Sustituye la S diagonal compacta por una cinta continua asentada sobre dos retornos inferiores. Mantiene masa visible, apertura inferior y campo interior único; elimina la diagonal que dominaba como velocidad.",
+    "intent": "Firmar desarrollo de sistemas con una estructura deliberada que organiza un campo. El vacío único evita dos lentes o hardware representado. Hombro horizontal, facetas y apoyos inferiores buscan precisión y aplomo institucional.",
+    "risk": "Puede leerse como arco, herradura o arquitectura, y no comunicar percepción sin el nombre y el contexto. La asociación con Strigiformes sigue tenue; la distintividad del recorrido abierto necesita contraste posterior.",
+    "bounds": [20, 20, 108, 102],
+    "path": "M 42 20 H 86 L 108 42 V 82 L 88 102 H 74 V 86 H 82 L 92 76 V 48 L 80 36 H 48 L 36 48 V 76 L 46 86 H 54 V 102 H 40 L 20 82 V 42 Z"
+  },
+  "product": {
+    "id": "athene-r14-b-atencion",
+    "title": "Athene / Atención envolvente",
+    "change": "Abandona el perfil lateral y el ojo aislado. Un frente continuo de terminales contenidos deriva en dos recorridos faciales profundos, abiertos por abajo. El centro corto queda entre regiones amplias, sin pico largo, pupilas ni orejas añadidas.",
+    "intent": "Proponer una presencia frontal firme y sostenida. Los retornos envuelven el campo de atención y dan mayor altura al centinela sin dibujar un escudo cerrado. La raíz del búho permanece en la relación de frente, regiones faciales y centro, subordinada a confianza y protección territorial.",
+    "risk": "Frente y centro todavía pueden sugerir visor o casco. La envolvente redondeada y profunda podría recordar gafas; no se ha demostrado búho, confianza o protección como lecturas espontáneas.",
+    "bounds": [16, 26, 112, 100],
+    "path": "M 42 26 H 86 C 102 26 112 40 112 58 C 112 78 100 94 84 100 L 76 86 C 90 82 96 72 96 58 C 96 48 92 42 82 42 H 74 L 68 62 H 60 L 54 42 H 46 C 36 42 32 48 32 58 C 32 72 38 82 52 86 L 44 100 C 28 94 16 78 16 58 C 16 40 26 26 42 26 Z"
+  },
+  "rationale": "Los dos signos comparten una cinta de masa suficiente, campo interior amplio, hombro horizontal y retornos inferiores que se detienen antes de cerrar la figura. La empresa organiza un vacío único de manera facetada; el producto desarrolla dos regiones en un frente profundo y simétrico. La diferencia con A es observable: Strig tiene una cinta única con dos apoyos inferiores, no dos brazos rotacionales; Athene usa hombros continuos sin puntas superiores, mayor profundidad facial y centro breve de base horizontal. No se conserva una letra si impide el carácter solicitado. Las curvas de producto sirven a la envolvente, mientras las facetas corporativas ordenan el recorrido; no se impone un ángulo único como garantía de precisión. SVG manual para viewBox 0 0 128 128, currentColor, fill-rule evenodd, sin dependencias.",
+  "critiqueResponse": "La diagonal de la S y el perfil ave/nueve se sustituyen por una cinta asentada y atención frontal. Se conserva masa firme y continuidad, con campos abiertos amplios. Gana aplomo y pierde inicial directa y orientación lateral. Quedan sin resolver la lectura espontánea de búho y la posible asociación del producto con gafas/visor.",
+  "tradeoffs": [
+    "Gana aplomo y atención frontal; pierde la S explícita y el perfil distintivo. Búho, gafas y visor todavía deben contrastarse.",
+    "La empresa mantiene un recorrido único, abstracto y extensible, pero puede aproximarse a un arco arquitectónico o herradura.",
+    "Athene amplía el campo facial y elimina el ojo aislado; la frontalidad aumenta el vínculo de centinela y también la posibilidad de visor.",
+    "La masa no se adelgaza para evitar intimidación. Se reduce la convergencia de puntas y se conservan anchos reproducibles y una base estable.",
+    "No se incorpora una A: la estructura no la necesita y una inicial impuesta competiría con la atención sostenida."
+  ],
+  "nextChecks": [
+    "Comparar R13 y R14 en idénticos lockups, ficha y tamaños nativos para evaluar si gana aplomo sin perder identificación.",
+    "Revisar campo interior y apertura inferior a 24 px en una tinta e inversa; no convertir reproducción en prueba de reconocimiento.",
+    "Valorar con Tomás el coste de perder S/perfil y si el frente profundo aporta confianza o se acerca a gafas y casco.",
+    "Contrastar el recorrido corporativo con arcos, signos de integración y herraduras antes de fijar una dirección; no declarar originalidad registral ni aceptación externa."
+  ]
+}

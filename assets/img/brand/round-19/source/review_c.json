@@ -1,0 +1,22 @@
+{
+  "ruta": "C / Hombros articulados",
+  "alcance": "Revisión individual por asesor-agente; sin ranking con otras rutas ni recepción externa validada.",
+  "materialRevisado": ["scratch/round19/team_c.json", "R19/shoulders-c.png", "R19/native-sizes.png"],
+  "tesis": "La interfaz registrada reúne partes; hombros de producto articulan plano superior y lateral conservando el centro animal y la división apreciados.",
+  "cumplimiento": "La operación se limita a dos transiciones superiores: Q continuas pasan a faceta y retornos curvos cortos. Extremos, pico R17, ojos, junta, salida lateral, Strig y bounds permanecen fijos. No reabre la punta corta descartada.",
+  "observado": [
+    "El encuentro superior/lateral tiene ahora un tramo oblicuo reconocible, en lugar de una curva larga uniforme.",
+    "Los retornos cortos conservan suavidad en los encuentros; no se añade ceja, oreja ni esquina aguda sobre ojos.",
+    "Pico y aperturas ocupan las mismas posiciones; la diferencia de carácter pertenece a envolvente superior.",
+    "La combinación plano/faceta/curva hace más explícita una relación de construcción con la empresa facetada, sin duplicar su silueta.",
+    "En grande se distingue la transición; a16/24 la diferencia es tenue. En32 se mantiene la misma identidad general en ambas versiones."
+  ],
+  "ganancia": "Estructura visible en los hombros sin sacrificar pico ni junta. El ensayo responde sustantivamente al carácter de envolvente que se quería estudiar, en lugar de quitar otro detalle animal.",
+  "coste": "Pierde parte de la suavidad original y puede acercarse a placa, casco o robot. Las aperturas circulares y salida lateral continúan; no se demuestra reducción de chat ni aumento universal de competencia.",
+  "hipotesisDeCaracter": "En esta revisión el ensayo se siente más articulado y el control más amable/redondeado. Ambos conservan el centinela propuesto. Imposición, elegancia o profesionalidad no se deducen solo de usar45 grados.",
+  "preservacionIdentidad": "Sí: registro común, división, masa, rostro y pico permanecen. El cambio cultiva una relación propia, no añade símbolos funcionales o relato nuevo.",
+  "decisionProvisional": "Mantendría1/Hombros articulados como candidato de carácter estructurado para que Tomás lo contraste con0/Curvo. Tiene beneficio formal observable y un coste claro; no reemplazar el control sin su reacción ni declarar mejor identidad por novedad.",
+  "siguientePaso": "Cerrar esta comparación de carácter: curvo más suave o articulado más estructurado. Después probar el par en aplicación; no producir otro hombro intermedio automáticamente ni cambiar ojos para perseguir todas las asociaciones.",
+  "diferido": ["Eliminar chat mediante otra anatomía inmediata", "Hacer ceja agresiva", "Reducir nuevamente pico", "Modificar Strig por café sin prueba contextual", "Adopción final por PASS técnico"],
+  "limites": "La construcción y comparación local son verificables; la afinidad de Tomás y recepción externa de atención competente requieren respuesta y evidencia independientes de rasterización."
+}

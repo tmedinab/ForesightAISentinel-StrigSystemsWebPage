@@ -1,0 +1,395 @@
+{
+  "team": "B",
+  "name": "Recorrido / apoyo en giros",
+  "thesis": "La firma sigue un recorrido coordinado, y Athene lo transforma en atención orientada. La costura longitudinal puede identificar ese recorrido; su beneficio requiere que conserve peso y continuidad en los giros. La familia comparte dirección, retorno y masa suficiente, sin repetir el canal en el ave.",
+  "boardSummary": "S sólida, diagonal, longitudinal y un ajuste local de giros; Athene se conserva.",
+  "corporates": [
+    {
+      "id": "strig-r18-b-solido",
+      "title": "Strig / S sólida",
+      "change": "Control R13 exacto: sin canal.",
+      "intent": "Representar una operación de percepción que recibe, transforma y devuelve información. La inicial organiza toda la silueta; los retornos sugieren instrumentación sin representar sensores ni limitar los futuros productos de ingeniería.",
+      "risk": "La S puede dominar la lectura y hacer muy débil la asociación implícita con Strigiformes. También debe comprobarse que la firma no parezca una marca deportiva por su diagonal central.",
+      "bounds": [
+        18,
+        22,
+        112,
+        108
+      ],
+      "path": "M 104 22 H 42 L 20 44 V 58 L 68 82 H 30 L 18 96 L 30 108 H 88 L 110 86 V 72 L 62 48 H 100 L 112 34 Z"
+    },
+    {
+      "id": "strig-r18-b-diagonal",
+      "title": "Strig / Diagonal 6",
+      "change": "Control R16 canal 6 exacto.",
+      "intent": "Articular dos partes de una misma firma gruesa conservando recorrido, dimensiones y terminales; explorar composición sin dibujar otras iniciales.",
+      "risk": "El canal estrecho puede fusionarse perceptivamente en pequeño; dos partes no implican dos S legibles.",
+      "bounds": [
+        18,
+        22,
+        112,
+        108
+      ],
+      "path": "M 104 22 H 42 L 23.236 40.764 L 110 84.146 V 72 L 62 48 H 100 L 112 34 Z M 20 45.854 V 58 L 68 82 H 30 L 18 96 L 30 108 H 88 L 106.764 89.236 Z"
+    },
+    {
+      "id": "strig-r18-b-longitudinal",
+      "title": "Strig / Longitudinal 4",
+      "change": "Control R17 recorrido 4 exacto.",
+      "intent": "Visualizar la curiosidad de dos recorridos S contiguos, conservando la firma facetada y sin duplicar isotipos arbitrariamente.",
+      "risk": "La costura consume tinta en todo el recorrido. Puede debilitar los rieles, parecer laberinto o perder separación en pequeño; dos S legibles siguen siendo hipótesis.",
+      "bounds": [
+        19,
+        22,
+        111.333,
+        108
+      ],
+      "path": "M 111.333 33 L 104 22 L 42 22 L 20 44 L 20 58 L 68 82 L 30 82 L 20.571 93 L 84.172 93 L 94.624 82.548 L 28.624 49.548 L 45.172 33 Z M 109.429 37 L 100 48 L 62 48 L 110 72 L 110 86 L 88 108 L 30 108 L 19 97 L 85.828 97 L 101.376 81.452 L 35.376 48.452 L 46.828 37 Z"
+    },
+    {
+      "id": "strig-r18-b-codos",
+      "title": "Strig / Giros apoyados",
+      "change": "Longitudinal 4 u: ambos codos centrales se desplazan 2 u en x y 1 u en y hacia el interior de la diagonal. Canal, terminales y perímetro fijos.",
+      "intent": "Repartir la tinta en los dos giros exteriores del recorrido para reducir estrechamientos, sin perder doble continuidad ni volver al sólido.",
+      "risk": "El apoyo exterior gana tinta a costa del otro lado del giro. Puede cambiar el ritmo sin aportar mejora perceptiva; dos S legibles no están demostradas.",
+      "bounds": [
+        19,
+        22,
+        111.333,
+        108
+      ],
+      "path": "M 111.333 33 L 104 22 L 42 22 L 20 44 L 20 58 L 68 82 L 30 82 L 20.571 93 L 84.028 93 L 92.913 81.692 L 30.893 50.682 L 45.039 33 Z M 109.429 37 L 100 48 L 62 48 L 110 72 L 110 86 L 88 108 L 30 108 L 19 97 L 85.972 97 L 99.087 80.308 L 37.107 49.318 L 46.961 37 Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "athene-r18-b-control",
+      "title": "Athene / R15 intacto",
+      "change": "Control R15 exacto; no corte doble por repetición literal.",
+      "intent": "Conservar el centinela orientado que Tomás aprecia y usarlo como referencia de masa para las cuatro firmas corporativas.",
+      "risk": "Afinidad de Tomás y reconocimiento local del búho no equivalen a aprobación final ni recepción externa.",
+      "bounds": [
+        20,
+        20,
+        108,
+        100
+      ],
+      "path": "M 30 20 L 44 30 H 74 C 88 30 98 38 98 50 L 108 62 L 98 70 V 76 L 74 100 H 26 L 42 84 H 64 L 78 78 L 32 56 L 20 40 Z M 62 44 L 68 38 H 80 L 86 44 V 52 L 80 58 H 68 L 62 52 Z"
+    }
+  ],
+  "rationale": "Se comparan tres operaciones de firma con el mismo producto: masa monolítica; separación de dos partes; doble recorrido longitudinal. El refinamiento no introduce otra operación: desplaza hacia dentro los dos codos sobre la misma diagonal de pendiente 1/2, manteniendo canal 4 u, barras, terminales y perímetro. En R17, el borde de costura quedaba a 8.624 u del lado exterior en ambos giros; el ajuste busca más apoyo de tinta allí. La diferencia de masas frente a Athene tiene un propósito de rol: firma abstracta recorrida frente a presencia figurativa maciza. Se comprobará en composición y no se afirma que esa diferencia ya sea ideal. No se recorta el perfil para aparentar parentesco ni se oculta el coste de tinta con escalas diferentes.",
+  "tradeoffs": [
+    "Más apoyo en giros exteriores; menos tinta al otro lado. La costura mantiene 4 u: no aumenta separación en pequeño por sí sola.",
+    "La S sólida conserva máximo peso. Diagonal 6 conserva grandes masas; longitudinal 4 hace visible todo el recorrido y retira más tinta.",
+    "Parentesco por dirección, retorno y encuentro de masas; no exige que Athene también tenga dos rieles ni que el canal represente una función tecnológica.",
+    "La S de doble recorrido es apreciada por Tomás, pero su lectura SS y distintividad externa siguen pendientes."
+  ],
+  "nextChecks": [
+    "Comparar las cuatro firmas con Athene usando la misma altura nominal, nombre y jerarquía; evaluar si la masa recorrida firma con aplomo o queda débil.",
+    "Mirar giros R17/R18 a 16/24/32/128 px, claro e inversa, antes de decidir si el apoyo adicional merece conservarse.",
+    "Registrar si sólido, diagonal o longitudinal sirve mejor a la firma y al parentesco; no exige que gane la variante nueva.",
+    "Terminar este ensayo: si no mejora un problema visible, conservar control y decidir dirección antes de otra geometría."
+  ],
+  "operationMap": {
+    "registeredBeforeRendering": true,
+    "controls": "S R13 exacta; canal 6 R16 exacto; longitudinal 4 R17 exacto; Athene R15 exacto.",
+    "singleVariable": "Desplazamiento de ambos codos centrales hacia el interior, distancia horizontal 2 u y vertical 1 u sobre la misma línea y=x/2+33.",
+    "movingCenters": [
+      {
+        "from": [
+          32,
+          49
+        ],
+        "to": [
+          34,
+          50
+        ]
+      },
+      {
+        "from": [
+          98,
+          82
+        ],
+        "to": [
+          96,
+          81
+        ]
+      }
+    ],
+    "fixedCenters": [
+      [
+        140,
+        35
+      ],
+      [
+        46,
+        35
+      ],
+      [
+        85,
+        95
+      ],
+      [
+        0,
+        95
+      ]
+    ],
+    "newCenterLine": [
+      [
+        140,
+        35
+      ],
+      [
+        46,
+        35
+      ],
+      [
+        34,
+        50
+      ],
+      [
+        96,
+        81
+      ],
+      [
+        85,
+        95
+      ],
+      [
+        0,
+        95
+      ]
+    ],
+    "normalChannel": 4,
+    "oldSeamCorners": {
+      "width": 4,
+      "leftCorners": [
+        [
+          45.172,
+          33
+        ],
+        [
+          28.624,
+          49.548
+        ],
+        [
+          94.624,
+          82.548
+        ],
+        [
+          84.172,
+          93
+        ]
+      ],
+      "rightCorners": [
+        [
+          46.828,
+          37
+        ],
+        [
+          35.376,
+          48.452
+        ],
+        [
+          101.376,
+          81.452
+        ],
+        [
+          85.828,
+          97
+        ]
+      ],
+      "entries": {
+        "a": [
+          111.333,
+          33
+        ],
+        "b": [
+          109.429,
+          37
+        ]
+      },
+      "exits": {
+        "a": [
+          20.571,
+          93
+        ],
+        "b": [
+          19,
+          97
+        ]
+      }
+    },
+    "newLeftSeamCorners": [
+      [
+        45.039,
+        33
+      ],
+      [
+        30.893,
+        50.682
+      ],
+      [
+        92.913,
+        81.692
+      ],
+      [
+        84.028,
+        93
+      ]
+    ],
+    "newRightSeamCorners": [
+      [
+        46.961,
+        37
+      ],
+      [
+        37.107,
+        49.318
+      ],
+      [
+        99.087,
+        80.308
+      ],
+      [
+        85.972,
+        97
+      ]
+    ],
+    "derivedRule": "Todos los vértices de costura en los giros se recalculan con el mismo offset normal ±2 u y encuentros miter. Es consecuencia de mover los dos codos; no se añade curva, bisel, ancho de canal o cambio de perímetro.",
+    "fixed": "Terminales de entrada/salida, barras horizontales, y=22/y=108, bounds 19/22/111.333/108, perímetro exterior existente y producto entero.",
+    "clearance": {
+      "meaning": "Distancia horizontal desde borde de costura al lateral exterior en dos giros, no mínimo universal de espesor.",
+      "r17": [
+        8.624,
+        8.624
+      ],
+      "r18": [
+        10.893,
+        10.913
+      ]
+    },
+    "composition": "QA usa viewBox 128 nativo y las mismas escalas por tamaño para todos los signos. No se aumenta solo longitudinal para esconder tinta retirada. La composición final y jerarquía quedan para la lámina común."
+  },
+  "critiqueResponse": "Se cultiva longitudinal 4 mediante una sola relación de giros. Aumenta apoyo exterior sin cambiar canal ni remates; la tinta se redistribuye. Athene queda macizo e intacto: parentesco por recorrido y dirección, sin corte literal. Beneficio local y coherencia deben juzgarse en familia.",
+  "qa": {
+    "preview": "scratch/round18/b/mini.png",
+    "sizes": [
+      16,
+      24,
+      32,
+      128
+    ],
+    "backgrounds": [
+      "positivo",
+      "inversa"
+    ],
+    "controlsExact": true,
+    "refinedSelfIntersections": 0,
+    "refinedOpaquePixelsOutsideSolid": 0,
+    "native": [
+      {
+        "id": "strig-r18-b-solido",
+        "size": 16,
+        "opaquePixels": 93
+      },
+      {
+        "id": "strig-r18-b-solido",
+        "size": 24,
+        "opaquePixels": 206
+      },
+      {
+        "id": "strig-r18-b-solido",
+        "size": 32,
+        "opaquePixels": 352
+      },
+      {
+        "id": "strig-r18-b-solido",
+        "size": 128,
+        "opaquePixels": 5892
+      },
+      {
+        "id": "strig-r18-b-diagonal",
+        "size": 16,
+        "opaquePixels": 82
+      },
+      {
+        "id": "strig-r18-b-diagonal",
+        "size": 24,
+        "opaquePixels": 188
+      },
+      {
+        "id": "strig-r18-b-diagonal",
+        "size": 32,
+        "opaquePixels": 313
+      },
+      {
+        "id": "strig-r18-b-diagonal",
+        "size": 128,
+        "opaquePixels": 5282
+      },
+      {
+        "id": "strig-r18-b-longitudinal",
+        "size": 16,
+        "opaquePixels": 86
+      },
+      {
+        "id": "strig-r18-b-longitudinal",
+        "size": 24,
+        "opaquePixels": 166
+      },
+      {
+        "id": "strig-r18-b-longitudinal",
+        "size": 32,
+        "opaquePixels": 286
+      },
+      {
+        "id": "strig-r18-b-longitudinal",
+        "size": 128,
+        "opaquePixels": 4935
+      },
+      {
+        "id": "strig-r18-b-codos",
+        "size": 16,
+        "opaquePixels": 85
+      },
+      {
+        "id": "strig-r18-b-codos",
+        "size": 24,
+        "opaquePixels": 166
+      },
+      {
+        "id": "strig-r18-b-codos",
+        "size": 32,
+        "opaquePixels": 285
+      },
+      {
+        "id": "strig-r18-b-codos",
+        "size": 128,
+        "opaquePixels": 4938
+      },
+      {
+        "id": "athene-r18-b-control",
+        "size": 16,
+        "opaquePixels": 52
+      },
+      {
+        "id": "athene-r18-b-control",
+        "size": 24,
+        "opaquePixels": 120
+      },
+      {
+        "id": "athene-r18-b-control",
+        "size": 32,
+        "opaquePixels": 209
+      },
+      {
+        "id": "athene-r18-b-control",
+        "size": 128,
+        "opaquePixels": 3412
+      }
+    ],
+    "scope": "Raster 512 / alpha 128 y cruces de rectas; no reconocimiento o aprobación de producción."
+  },
+  "resultObservation": "En la comparación propia, los giros exteriores del refinamiento contienen más tinta y la longitud diagonal entre codos se reduce. Las barras, terminales y costura de 4 u se mantienen; el cambio es más evidente en grande y tenue a 16/24 px. El longitudinal sigue teniendo más líneas y menos masa que el diagonal o sólido junto a Athene. No se afirma mejor coherencia por este ajuste: la lámina de familia debe mostrar si la firma recorrida tiene presencia suficiente frente al producto macizo."
+}

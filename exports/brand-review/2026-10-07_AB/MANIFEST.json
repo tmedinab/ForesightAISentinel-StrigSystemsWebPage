@@ -1,0 +1,181 @@
+{
+  "version": "2026-10-07",
+  "scope": "Professional evaluation of A/B candidate identities",
+  "files": [
+    {
+      "path": "boards/01_option_A.svg",
+      "bytes": 507590,
+      "sha256": "94df3f38bfdf8b0524c185743fc68d0c8544ba60a9dd8df440b29896d93cc050"
+    },
+    {
+      "path": "boards/02_option_B.svg",
+      "bytes": 503536,
+      "sha256": "9cb572250c5e18e5f014ea554238d2d34eeba4f179d14f5870fdde04a41dd98e"
+    },
+    {
+      "path": "boards/03_AB_comparison.svg",
+      "bytes": 275690,
+      "sha256": "1a771e2ea896d4dc4578daac657bb797f30c7c65a0591c8c271ed5d6b977aa2a"
+    },
+    {
+      "path": "boards/04_native_sizes.svg",
+      "bytes": 262608,
+      "sha256": "bea06a1673311b97cfc2b816416a4e7c448bdb7597ce89292550b0b846a65281"
+    },
+    {
+      "path": "boards/05_contexts_AB.svg",
+      "bytes": 573997,
+      "sha256": "684d3d9b5b61994c7673ef47bb875b19fe8cffd2bd21a67d169d3e1f5f66c76a"
+    },
+    {
+      "path": "DESIGN_BRIEF_EN.html",
+      "bytes": 12246,
+      "sha256": "4354a56cf10647ab096a045494af5e11d5959c54226b0992164c8273f3894b3b"
+    },
+    {
+      "path": "DESIGN_BRIEF_EN.md",
+      "bytes": 11348,
+      "sha256": "0d173753c4fc106984f46b1ba71f02633435bfc5fe016573cb867b8a5d4c7914"
+    },
+    {
+      "path": "fonts/OFL.txt",
+      "bytes": 4495,
+      "sha256": "564ce565c371c5e5bbf286006565a7c9aa55a9f56e7ca58d56e05d649dd61a72"
+    },
+    {
+      "path": "fonts/SpaceGrotesk.ttf",
+      "bytes": 136676,
+      "sha256": "acad6de1fc93436f5c0f1f4137751ef04f1aea3063e7036535970ffcfbd79f72"
+    },
+    {
+      "path": "previews/01_option_A.png",
+      "bytes": 113714,
+      "sha256": "287b5bed6ffd1e6a4b2d20298696e4b38e96676614828ec3cf162205308114b7"
+    },
+    {
+      "path": "previews/02_option_B.png",
+      "bytes": 115948,
+      "sha256": "5cf9f220d59b58824980ac1804cea77edc524401dd2ab3de49d172f53e81a603"
+    },
+    {
+      "path": "previews/03_AB_comparison.png",
+      "bytes": 90099,
+      "sha256": "9f73e9ed448860259e5490013e6a82cf0cdab4be0080378996429cea14a29cb4"
+    },
+    {
+      "path": "previews/04_native_sizes.png",
+      "bytes": 60265,
+      "sha256": "6bfd47a7f6a82c48dc3fcb99105cd8232959344f5d0dd5b1a7443514019ef8c0"
+    },
+    {
+      "path": "previews/05_contexts_AB.png",
+      "bytes": 102362,
+      "sha256": "11501b4e64fedd743f3ceb3df6bc06e16b70693c04b4f21090bb1159f97f86ab"
+    },
+    {
+      "path": "QA_REPORT.json",
+      "bytes": 1024,
+      "sha256": "45a49a5b65c9990ffe2581ce675497b6aaf59767caaa0de7d0c569138175d431"
+    },
+    {
+      "path": "README_EN.md",
+      "bytes": 1952,
+      "sha256": "86d5c44c3c3b9b046d8fed72303f5fffb97a5b5303cd4318386615b5e3e1f527"
+    },
+    {
+      "path": "REVIEW_RESPONSE_TEMPLATE_EN.md",
+      "bytes": 1528,
+      "sha256": "130b55f895e991aa816cccba390b3d78b6db7d60cad61858b7bf15cd6e3acc3c"
+    },
+    {
+      "path": "source/boards.json",
+      "bytes": 276,
+      "sha256": "47fb498371467e682ada532982ce2f0501809030d45b80981f377969d2f86a7b"
+    },
+    {
+      "path": "source/geometry_EN.json",
+      "bytes": 9332,
+      "sha256": "08ca53d25c914acaa66a85c8b68d502c7644ba0c2e819173cfbb46fcacb2f1b7"
+    },
+    {
+      "path": "vectors/A/athene-lockup_ink.svg",
+      "bytes": 1518,
+      "sha256": "656aab477a33ca794b7f2cb3746afe9d3ad966b6ec3d0ec6c7fda9f202044fef"
+    },
+    {
+      "path": "vectors/A/athene-lockup_white.svg",
+      "bytes": 1528,
+      "sha256": "dbdf8402079d9c664a9eb3b9f12e2a6306a1b597b3f632a8febf221a81df26ff"
+    },
+    {
+      "path": "vectors/A/athene-symbol_ink.svg",
+      "bytes": 775,
+      "sha256": "be3ab1e068fa169133eff8e34e66d31a4c57d1772bcc7c5ef73c73b579d7e4e1"
+    },
+    {
+      "path": "vectors/A/athene-symbol_white.svg",
+      "bytes": 785,
+      "sha256": "65d661e68d5faec13493d7988d26fef24a2a93dbd532c55ca5c048301724709a"
+    },
+    {
+      "path": "vectors/A/strig-lockup_ink.svg",
+      "bytes": 6556,
+      "sha256": "730270f6e4d5db0ee66fd8e9b58774d8d37b9b3c4864a7ffc3da10a339cfd607"
+    },
+    {
+      "path": "vectors/A/strig-lockup_white.svg",
+      "bytes": 6566,
+      "sha256": "d92a8b913f8969d21a6875abe689885476dd7e36306e51d1c459881c4d0afec3"
+    },
+    {
+      "path": "vectors/A/strig-symbol_ink.svg",
+      "bytes": 699,
+      "sha256": "5bf51980620e5789829d95cd89eafb139433ac45b524dc71c5b58866bcc6d877"
+    },
+    {
+      "path": "vectors/A/strig-symbol_white.svg",
+      "bytes": 709,
+      "sha256": "11446bb8a735c822ef8fba17d56c54cf599c1ec3bd13c09a32aa8834a79586ce"
+    },
+    {
+      "path": "vectors/B/athene-lockup_ink.svg",
+      "bytes": 1520,
+      "sha256": "06fe6006007167906d70cff5f47ec3a374248ab61c88fcb281d6e57d8dd49534"
+    },
+    {
+      "path": "vectors/B/athene-lockup_white.svg",
+      "bytes": 1530,
+      "sha256": "f81ea3a754c3f6a796ce43b5eb620d43857e208fc0de811920b63ac78bd0d0c7"
+    },
+    {
+      "path": "vectors/B/athene-symbol_ink.svg",
+      "bytes": 803,
+      "sha256": "97c3ade6aa168ddf6c2768de5c80a51c46c643d55577363b8fd81cdcaafbd5cb"
+    },
+    {
+      "path": "vectors/B/athene-symbol_white.svg",
+      "bytes": 813,
+      "sha256": "dede0ab6d4a7808b8a1aef3165c54e586f68979759e2c477af495d044257e721"
+    },
+    {
+      "path": "vectors/B/strig-lockup_ink.svg",
+      "bytes": 6737,
+      "sha256": "161807d26471be2b6488b4b2457a7b954b608768ffa28a3689147dd413ec960b"
+    },
+    {
+      "path": "vectors/B/strig-lockup_white.svg",
+      "bytes": 6747,
+      "sha256": "3fb721fe94e5451b715824745e6502e8723eb2e0733c9ec56a61b44f300fb55e"
+    },
+    {
+      "path": "vectors/B/strig-symbol_ink.svg",
+      "bytes": 853,
+      "sha256": "7633d1f09e6580b1a195c9bb76d80b00ec466526345b1a2c06bf8c30b89296c0"
+    },
+    {
+      "path": "vectors/B/strig-symbol_white.svg",
+      "bytes": 863,
+      "sha256": "a258050cd3203f28a48111690c3ad644056c7baa3e14a75a3364fb022cc7089e"
+    }
+  ]
+}

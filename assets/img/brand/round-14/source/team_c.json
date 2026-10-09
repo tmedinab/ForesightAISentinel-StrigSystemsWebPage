@@ -1,0 +1,41 @@
+{
+  "team": "C",
+  "name": "Campo permeable",
+  "boardSummary": "Un campo abierto organiza la empresa; discos faciales abiertos dan presencia al centinela.",
+  "thesis": "La ingeniería organiza un campo común sin cerrarlo. El umbral deja de contener o apretar: dos soportes laterales mantienen paso y estabilidad. Athene hereda la apertura mediante dos discos faciales y un centro independiente, como hipótesis de atención firme.",
+  "messageAlignment": "Ingeniería y atención protectora; búho como identidad. Strig firma criterio de desarrollo extensible y Athene propone atención sostenida sobre el territorio. La forma no acredita protección ni prestaciones.",
+  "corporate": {
+    "id": "strig-r14-c-campo-permeable",
+    "title": "Strig / Campo permeable",
+    "change": "Se sustituye la oposición horizontal dintel/base por dos soportes laterales. Se eliminan la punta central y el cierre inferior; el campo atraviesa el signo de arriba abajo.",
+    "intent": "Mantener aplomo y masa, con un espacio disponible para lectura y coordinación. Los hombros facetados articulan una estructura y las bases continuas evitan convertirla en mordaza; no se representa ningún sensor.",
+    "risk": "Puede leerse como corchetes, encuadre, pieza mecánica o contenedor incompleto. La raíz de búho es secundaria y tenue; el repertorio de marcas tecnológicas con brackets sigue siendo una vecindad a comparar.",
+    "bounds": [16, 24, 112, 104],
+    "path": "M54 24 H36 L16 44 V76 Q16 104 44 104 H54 V84 H46 Q36 84 36 74 V54 L46 44 H54 Z M74 24 H92 L112 44 V76 Q112 104 84 104 H74 V84 H82 Q92 84 92 74 V54 L82 44 H74 Z"
+  },
+  "product": {
+    "id": "athene-r14-c-discos-abiertos",
+    "title": "Athene / Discos abiertos",
+    "change": "Se descompone la cabeza cerrada en dos discos faciales abiertos hacia el centro y un pico separado. Desaparecen corona plana, agujeros oculares cerrados, mandíbula y escotadura inferior de dos piernas.",
+    "intent": "Dar identidad de centinela por discos faciales y pico, conservando masas amplias y frontalidad. Las aperturas comunican atención disponible sin una ceja enfadada, casco, cuernos o escudo. La lectura animal se propone, no se declara conseguida.",
+    "risk": "Puede parecer gafas abiertas, binoculares o un instrumento alrededor de un rombo; el centro separado puede leerse como diana o elemento ornamental. El reconocimiento de búho y el carácter protector necesitan la reacción de Tomás; no se fuerza una A.",
+    "bounds": [16, 24, 112, 92],
+    "path": "M52 24 Q16 24 16 58 Q16 92 50 92 H54 V76 H50 Q34 76 34 58 Q34 42 50 42 H54 Z M76 24 Q112 24 112 58 Q112 92 78 92 H74 V76 H78 Q94 76 94 58 Q94 42 78 42 H74 Z M64 52 L74 64 L64 82 L54 64 Z"
+  },
+  "rationale": "R13 hacía literal el parentesco mediante un cuerpo compacto, pero el hueco parecía atrapado y Athene dependía de una máscara cerrada. La reformulación conserva un campo común y masas laterales: cambia la topología, el eje de paso y el centro. Strig trabaja estructura y planos; Athene interpreta facialmente esa relación con curvas continuas y un centro separado. De A se toma el principio de apertura, no su frente ni sus mejillas. De los referentes se aprende economía, separación de papeles y firma estable; no se copian símbolos ni se traslada un carácter de combate a la vigilancia forestal. La precisión y protección corresponden también a nombre, contenido y evidencia, no a una punta o una retícula obligatoria.",
+  "critiqueResponse": "Se elimina la oposición dintel/mandíbula de Strig. Athene pierde cabeza cerrada, huecos oculares y salida de dos piernas: los discos y pico son independientes, con paso central abierto. Mantiene masa. Quedan posibles lecturas de corchetes, gafas o instrumento; reducir robot/calavera y ganar búho son hipótesis pendientes de la reacción de Tomás.",
+  "tradeoffs": [
+    "Gana apertura y conserva masa; pierde la compacidad de R13 y acepta una empresa más próxima al lenguaje de encuadre.",
+    "El parentesco se desplaza de una silueta repetida a apertura axial, masas laterales y terminales; Athene admite mayor figuración.",
+    "El pico separado evita una nasal continua de casco, pero introduce una tercera masa y posible lectura de diana.",
+    "La ausencia de cejas oblicuas y cuerpo inferior elimina operaciones que endurecían R13; no demuestra una recepción protectora universal.",
+    "No se busca A visible: exigirla podría devolver una escotadura inferior o un triángulo dominante, reabriendo la crítica de piernas o máscara."
+  ],
+  "nextChecks": [
+    "Comparar C/R13 y C/R14 en las mismas firmas y aplicaciones junto a A estable y B desarrollado.",
+    "Preguntar a Tomás si el cambio visible abandona mordaza/calavera y sostiene aplomo; no llamar ciega a su lectura ni inventar consenso externo.",
+    "Inspeccionar cortes, vacío central y separación del pico a 16, 24, 32, 48 y 128 píxeles en positivo y negativo.",
+    "Evaluar si los discos sostienen identidad animal suficiente sin relato; si la lectura instrumental domina, reformular o retirar el producto sin añadir detalle por acumulación.",
+    "Si esta dirección se selecciona, contrastar brackets, gafas, búhos y símbolos de encuadre del repertorio público en un estudio específico de semejanzas; no declarar exclusividad registral."
+  ]
+}

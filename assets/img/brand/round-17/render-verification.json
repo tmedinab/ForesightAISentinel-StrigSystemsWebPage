@@ -1,0 +1,514 @@
+{
+  "status": "pass",
+  "scenarioCount": 36,
+  "boardCount": 5,
+  "chromiumVersion": "151.0.7922.34",
+  "librsvgVersion": "2.62.91",
+  "note": "Rendering/bounds verification only. Letter recognition, aesthetics and customer preference are not measured.",
+  "results": [
+    {
+      "name": "strig-r17-b-control",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 18,
+        "y": 22,
+        "w": 94,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9884
+    },
+    {
+      "name": "strig-r17-b-control",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 18,
+        "y": 22,
+        "w": 94,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9895
+    },
+    {
+      "name": "strig-r17-b-control",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 18,
+        "y": 22,
+        "w": 94,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9086
+    },
+    {
+      "name": "strig-r17-b-control",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 18,
+        "y": 22,
+        "w": 94,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9987
+    },
+    {
+      "name": "strig-r17-b-control",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 18,
+        "y": 22,
+        "w": 94,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9953
+    },
+    {
+      "name": "strig-r17-b-control-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 15,
+        "y": 27.309993743896484,
+        "w": 334.0717468261719,
+        "h": 91.0260009765625,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9867
+    },
+    {
+      "name": "strig-r17-b-recorrido4",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 19,
+        "y": 22,
+        "w": 92.33300018310547,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.957
+    },
+    {
+      "name": "strig-r17-b-recorrido4",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 19,
+        "y": 22,
+        "w": 92.33300018310547,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.8956
+    },
+    {
+      "name": "strig-r17-b-recorrido4",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 19,
+        "y": 22,
+        "w": 92.33300018310547,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.8769
+    },
+    {
+      "name": "strig-r17-b-recorrido4",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 19,
+        "y": 22,
+        "w": 92.33300018310547,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9514
+    },
+    {
+      "name": "strig-r17-b-recorrido4",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 19,
+        "y": 22,
+        "w": 92.33300018310547,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9873
+    },
+    {
+      "name": "strig-r17-b-recorrido4-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 15,
+        "y": 27.309993743896484,
+        "w": 332.80340576171875,
+        "h": 91.0260009765625,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9883
+    },
+    {
+      "name": "strig-r17-b-recorrido6",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 20,
+        "y": 22,
+        "w": 90.66699981689453,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9359
+    },
+    {
+      "name": "strig-r17-b-recorrido6",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 20,
+        "y": 22,
+        "w": 90.66699981689453,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9568
+    },
+    {
+      "name": "strig-r17-b-recorrido6",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 20,
+        "y": 22,
+        "w": 90.66699981689453,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.7866
+    },
+    {
+      "name": "strig-r17-b-recorrido6",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 20,
+        "y": 22,
+        "w": 90.66699981689453,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9861
+    },
+    {
+      "name": "strig-r17-b-recorrido6",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 20,
+        "y": 22,
+        "w": 90.66699981689453,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9928
+    },
+    {
+      "name": "strig-r17-b-recorrido6-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 15,
+        "y": 27.309993743896484,
+        "w": 331.5357971191406,
+        "h": 91.0260009765625,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9857
+    },
+    {
+      "name": "athene-r17-b-control",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "w": 88,
+        "h": 80,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.963
+    },
+    {
+      "name": "athene-r17-b-control",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "w": 88,
+        "h": 80,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9917
+    },
+    {
+      "name": "athene-r17-b-control",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "w": 88,
+        "h": 80,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9513
+    },
+    {
+      "name": "athene-r17-b-control",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "w": 88,
+        "h": 80,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9799
+    },
+    {
+      "name": "athene-r17-b-control",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "w": 88,
+        "h": 80,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9873
+    },
+    {
+      "name": "athene-r17-b-control-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 15.000001907348633,
+        "y": 28.4999942779541,
+        "w": 408.5000305175781,
+        "h": 59.50000762939453,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9925
+    },
+    {
+      "name": "strig-r17-c-registro-comun",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 19,
+        "y": 16,
+        "w": 90,
+        "h": 96,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "strig-r17-c-registro-comun",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 19,
+        "y": 16,
+        "w": 90,
+        "h": 96,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9958
+    },
+    {
+      "name": "strig-r17-c-registro-comun",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 19,
+        "y": 16,
+        "w": 90,
+        "h": 96,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "strig-r17-c-registro-comun",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 19,
+        "y": 16,
+        "w": 90,
+        "h": 96,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "strig-r17-c-registro-comun",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 19,
+        "y": 16,
+        "w": 90,
+        "h": 96,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9921
+    },
+    {
+      "name": "strig-r17-c-registro-comun-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 15,
+        "y": 27.309993743896484,
+        "w": 323.8951416015625,
+        "h": 91.0260009765625,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9884
+    },
+    {
+      "name": "athene-r17-c-registro-facial",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 12,
+        "y": 22,
+        "w": 104,
+        "h": 92,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9895
+    },
+    {
+      "name": "athene-r17-c-registro-facial",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 12,
+        "y": 22,
+        "w": 104,
+        "h": 92,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9545
+    },
+    {
+      "name": "athene-r17-c-registro-facial",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 12,
+        "y": 22,
+        "w": 104,
+        "h": 92,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9819
+    },
+    {
+      "name": "athene-r17-c-registro-facial",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 12,
+        "y": 22,
+        "w": 104,
+        "h": 92,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9893
+    },
+    {
+      "name": "athene-r17-c-registro-facial",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 12,
+        "y": 22,
+        "w": 104,
+        "h": 92,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9895
+    },
+    {
+      "name": "athene-r17-c-registro-facial-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 15,
+        "y": 28.4999942779541,
+        "w": 410.2956848144531,
+        "h": 59.50000762939453,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9929
+    }
+  ]
+}

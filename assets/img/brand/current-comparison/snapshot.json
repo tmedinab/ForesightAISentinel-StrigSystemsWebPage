@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-07",
+  "teams": [
+    {
+      "letter": "A",
+      "name": "Campo abierto",
+      "status": "Referencia seleccionada",
+      "corporate": {
+        "id": "strig-a",
+        "title": "Strig A",
+        "change": "Control conservado",
+        "intent": "Menor peso del emblema junto al nombre.",
+        "risk": "Menor presencia del símbolo aislado en el conjunto.",
+        "bounds": [
+          18,
+          21,
+          110,
+          107
+        ],
+        "path": "M18 57V41L38 21H110L94 37H46L34 49L26 57Z M110 71V87L90 107H18L34 91H82L94 79L102 71Z"
+      },
+      "product": {
+        "id": "athene-a",
+        "title": "Athene A",
+        "change": "Control conservado",
+        "intent": "Dar al símbolo presencia equivalente a las mayúsculas.",
+        "risk": "El rostro adquiere mayor protagonismo.",
+        "bounds": [
+          16,
+          30,
+          112,
+          78
+        ],
+        "path": "M16 30L40 36H88L112 30L108 62Q106 72 92 78L86 70Q98 62 98 54V48H74L76 60Q74 66 69 71L64 77L59 71Q54 66 52 60L54 48H30V54Q30 62 42 70L36 78Q22 72 20 62Z"
+      },
+      "summary": "Continuidad abierta y centinela frontal."
+    },
+    {
+      "letter": "B",
+      "name": "Doble recorrido",
+      "status": "B3 / giros apoyados apreciado",
+      "corporate": {
+        "id": "strig-r19-b-control",
+        "title": "Strig / Giros apoyados, conservado",
+        "change": "B3 R18 exacto; composición y contexto de firma.",
+        "intent": "Repartir la tinta en los dos giros exteriores del recorrido para reducir estrechamientos, sin perder doble continuidad ni volver al sólido.",
+        "risk": "El apoyo exterior gana tinta a costa del otro lado del giro. Puede cambiar el ritmo sin aportar mejora perceptiva; dos S legibles no están demostradas.",
+        "bounds": [
+          19,
+          22,
+          111.333,
+          108
+        ],
+        "path": "M 111.333 33 L 104 22 L 42 22 L 20 44 L 20 58 L 68 82 L 30 82 L 20.571 93 L 84.028 93 L 92.913 81.692 L 30.893 50.682 L 45.039 33 Z M 109.429 37 L 100 48 L 62 48 L 110 72 L 110 86 L 88 108 L 30 108 L 19 97 L 85.972 97 L 99.087 80.308 L 37.107 49.318 L 46.961 37 Z"
+      },
+      "product": {
+        "id": "athene-r19-b-control",
+        "title": "Athene / Perfil R15, conservado",
+        "change": "Athene R15 exacto; sin repetir costura de Strig.",
+        "intent": "Conservar el centinela orientado que Tomás aprecia y usarlo como referencia de masa para las cuatro firmas corporativas.",
+        "risk": "Afinidad de Tomás y reconocimiento local del búho no equivalen a aprobación final ni recepción externa.",
+        "bounds": [
+          20,
+          20,
+          108,
+          100
+        ],
+        "path": "M 30 20 L 44 30 H 74 C 88 30 98 38 98 50 L 108 62 L 98 70 V 76 L 74 100 H 26 L 42 84 H 64 L 78 78 L 32 56 L 20 40 Z M 62 44 L 68 38 H 80 L 86 44 V 52 L 80 58 H 68 L 62 52 Z"
+      },
+      "summary": "Firma recorrida y centinela de perfil."
+    },
+    {
+      "letter": "C",
+      "name": "Registro común",
+      "status": "Original R17 confirmado dentro de C",
+      "corporate": {
+        "id": "strig-r19-c-control",
+        "title": "Strig / Registro común, control",
+        "change": "Control R17 exacto. Se conserva la firma corporativa sin ensayo adicional.",
+        "intent": "Mantener la coordinación registrada entre dos planos y la amplitud de ingeniería de Strig.",
+        "risk": "Café sigue como asociación local posible; no se modifica la empresa para perseguirla.",
+        "bounds": [
+          19,
+          16,
+          109,
+          112
+        ],
+        "path": "M93 16 L109 32 V96 L93 112 H81 V82 L59 60 V16 Z M49 16 V64 L71 86 V112 H37 L19 94 V34 L37 16 Z"
+      },
+      "product": {
+        "id": "athene-r19-c-control",
+        "title": "Athene / Control R17, pico preferido",
+        "change": "R17 exacto, con pico y=114. Tomás prefirió este control frente a la punta corta R18.",
+        "intent": "Conservar división, identidad de búho y coherencia del corte apreciadas por Tomás como evidencia local de afinidad.",
+        "risk": "Chat, máscara o robot siguen siendo asociaciones posibles; la preferencia local no acredita recepción externa.",
+        "bounds": [
+          12,
+          22,
+          116,
+          114
+        ],
+        "path": "M12 44 Q12 22 38 22 H50 L56 30 V52 L62 58 V78 L72 88 H116 V92 Q104 102 88 102 H76 L64 114 L52 102 H40 Q12 94 12 68 Z M68 30 L78 22 H90 Q116 22 116 44 V68 Q116 78 114 80 H84 L74 70 V54 L68 48 Z M45 58 A11 11 0 1 1 23 58 A11 11 0 1 1 45 58 Z M105 58 A11 11 0 1 1 83 58 A11 11 0 1 1 105 58 Z"
+      },
+      "summary": "Planos complementarios y atención frontal."
+    }
+  ],
+  "pendingC": {
+    "id": "athene-r19-c-hombros-articulados",
+    "title": "Athene / Hombros articulados",
+    "change": "Las dos curvas superiores Q se sustituyen por una faceta de 45° y dos retornos curvos cortos por hombro. Extremos y cajas superiores fijos; resto del path R17 exacto.",
+    "intent": "Ensayar una jerarquía más asentada entre plano superior, encuentro oblicuo y lateral. Mantener suavidad en los encuentros, pico original y coordinación registrada, sin añadir oreja o ceja.",
+    "risk": "La envolvente puede ganar carácter de placa o máscara y perder suavidad; el cambio no garantiza profesionalidad, elegancia o menor chat.",
+    "bounds": [
+      12,
+      22,
+      116,
+      114
+    ],
+    "path": "M12 44 V38 Q12 36 14 34 L24 24 Q26 22 30 22 H38 H50 L56 30 V52 L62 58 V78 L72 88 H116 V92 Q104 102 88 102 H76 L64 114 L52 102 H40 Q12 94 12 68 Z M68 30 L78 22 H90 H98 Q102 22 104 24 L114 34 Q116 36 116 38 V44 V68 Q116 78 114 80 H84 L74 70 V54 L68 48 Z M45 58 A11 11 0 1 1 23 58 A11 11 0 1 1 45 58 Z M105 58 A11 11 0 1 1 83 58 A11 11 0 1 1 105 58 Z"
+  },
+  "composition": "Equal visible symbol height per role, same nominal wordmark size and gaps; not equal ink area."
+}

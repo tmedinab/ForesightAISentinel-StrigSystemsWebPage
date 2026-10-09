@@ -1,0 +1,67 @@
+[
+  {
+    "id": "strig-h1-control",
+    "title": "Strig H1 / composición anterior",
+    "change": "Control conservado",
+    "intent": "S abierta con terminales interiores oblicuos.",
+    "risk": "El matiz puede desaparecer en pequeño.",
+    "bounds": [
+      18,
+      21,
+      110,
+      107
+    ]
+  },
+  {
+    "id": "strig-h1-optico",
+    "title": "Strig H1 / equilibrio óptico",
+    "change": "Símbolo 70; separación 22; STRIG 85",
+    "intent": "Menor peso del emblema junto al nombre.",
+    "risk": "Menor presencia del símbolo aislado en el conjunto.",
+    "bounds": [
+      18,
+      21,
+      110,
+      107
+    ]
+  },
+  {
+    "id": "strig-h1-compacto",
+    "title": "Strig H1 / composición compacta",
+    "change": "Símbolo 62; separación 16; STRIG 85",
+    "intent": "Nombre prioritario y firma más contenida.",
+    "risk": "El símbolo puede parecer accesorio.",
+    "bounds": [
+      18,
+      21,
+      110,
+      107
+    ]
+  },
+  {
+    "id": "athene-control",
+    "title": "Athene / mejillas conservado",
+    "change": "Control conservado",
+    "intent": "Disco facial sugerido; base abierta.",
+    "risk": "Gafas / personaje.",
+    "bounds": [
+      16,
+      30,
+      112,
+      77
+    ]
+  },
+  {
+    "id": "athene-cejas-facetadas",
+    "title": "Athene / cejas facetadas",
+    "change": "Dos transiciones de 6 × 6 u a 45 grados",
+    "intent": "Compartir dirección angular; conservar frente abierto.",
+    "risk": "Orejas más explícitas; posible mayor severidad.",
+    "bounds": [
+      16,
+      30,
+      112,
+      77
+    ]
+  }
+]

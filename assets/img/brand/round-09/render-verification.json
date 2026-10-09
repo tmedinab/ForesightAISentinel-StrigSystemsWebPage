@@ -1,0 +1,430 @@
+{
+  "status": "pass",
+  "scenarioCount": 30,
+  "boardCount": 3,
+  "chromiumVersion": "151.0.7922.34",
+  "librsvgVersion": "2.62.91",
+  "note": "Rendering/bounds verification only. Letter recognition, aesthetics and customer preference are not measured.",
+  "results": [
+    {
+      "name": "strig-campo-control",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.8333
+    },
+    {
+      "name": "strig-campo-control",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "strig-campo-control",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "strig-campo-control",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9498
+    },
+    {
+      "name": "strig-campo-control",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9808
+    },
+    {
+      "name": "strig-campo-control-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 27,
+        "y": 27.309993743896484,
+        "w": 358.5500183105469,
+        "h": 91.0260009765625,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9875
+    },
+    {
+      "name": "strig-campo-facetas",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.8333
+    },
+    {
+      "name": "strig-campo-facetas",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "strig-campo-facetas",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "strig-campo-facetas",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9487
+    },
+    {
+      "name": "strig-campo-facetas",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9778
+    },
+    {
+      "name": "strig-campo-facetas-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 27,
+        "y": 27.309993743896484,
+        "w": 358.5500183105469,
+        "h": 91.0260009765625,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9868
+    },
+    {
+      "name": "strig-campo-apertura-control",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.8333
+    },
+    {
+      "name": "strig-campo-apertura-control",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "strig-campo-apertura-control",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "strig-campo-apertura-control",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9498
+    },
+    {
+      "name": "strig-campo-apertura-control",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9808
+    },
+    {
+      "name": "strig-campo-apertura-control-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 27,
+        "y": 27.309993743896484,
+        "w": 358.5500183105469,
+        "h": 91.0260009765625,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9876
+    },
+    {
+      "name": "strig-campo-convergente",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.8393
+    },
+    {
+      "name": "strig-campo-convergente",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9815
+    },
+    {
+      "name": "strig-campo-convergente",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "strig-campo-convergente",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.948
+    },
+    {
+      "name": "strig-campo-convergente",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9785
+    },
+    {
+      "name": "strig-campo-convergente-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 27,
+        "y": 27.309993743896484,
+        "w": 358.5500183105469,
+        "h": 91.0260009765625,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9876
+    },
+    {
+      "name": "athene-mejillas",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 16,
+        "y": 30,
+        "w": 96,
+        "h": 47,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.8571
+    },
+    {
+      "name": "athene-mejillas",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 16,
+        "y": 30,
+        "w": 96,
+        "h": 47,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9767
+    },
+    {
+      "name": "athene-mejillas",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 16,
+        "y": 30,
+        "w": 96,
+        "h": 47,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "athene-mejillas",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 16,
+        "y": 30,
+        "w": 96,
+        "h": 47,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9419
+    },
+    {
+      "name": "athene-mejillas",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 16,
+        "y": 30,
+        "w": 96,
+        "h": 47,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9996
+    },
+    {
+      "name": "athene-mejillas-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 27.000001907348633,
+        "y": 28.4999942779541,
+        "w": 437.60003662109375,
+        "h": 63.53126525878906,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9891
+    }
+  ]
+}

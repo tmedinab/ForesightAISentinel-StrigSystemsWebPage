@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" fill="none" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="astra-title astra-desc" focusable="false">
+  <title id="astra-title">Athene: arquitectura conceptual / conceptual architecture</title>
+  <desc id="astra-desc">A generic fixed-wing VTOL observes a schematic forest through a forward underslung camera. A magnified computer detail is connected to a conceptual locator on the aircraft, indicating onboard inference without specifying component placement. Arrows connect the camera to the enlarged onboard analysis detail and carry illustrative image/notice evidence to a local human review station; this is a logical explanation, not physical wiring. Three labels identify functions, not rigid mission steps. Original illustration; not approved Noctua geometry, actual thermal imagery or demonstrated performance. Aeronave genérica, ampliaciones y ubicación de componentes ilustrativas. Sin CAD ni resultados medidos.</desc>
+  <defs>
+    <linearGradient id="astra-field" x1="150" y1="217" x2="150" y2="361" gradientUnits="userSpaceOnUse"><stop stop-color="#00e5ff" stop-opacity=".14"/><stop offset="1" stop-color="#00e5ff" stop-opacity=".02"/></linearGradient>
+    <marker id="astra-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="m2 1 6 4-6 4" stroke="#00e5ff" stroke-width="1.8"/></marker>
+    <!-- Shared lighting, vector surfaces only: no raster filters or external assets. -->
+    <linearGradient id="airframe-top" x1="130" y1="85" x2="255" y2="207" gradientUnits="userSpaceOnUse"><stop stop-color="#b3c8d2"/><stop offset=".48" stop-color="#617f90"/><stop offset="1" stop-color="#304e60"/></linearGradient>
+    <linearGradient id="airframe-side" x1="210" y1="145" x2="225" y2="203" gradientUnits="userSpaceOnUse"><stop stop-color="#416274"/><stop offset="1" stop-color="#162b39"/></linearGradient>
+    <linearGradient id="terrain-surface" x1="160" y1="283" x2="239" y2="423" gradientUnits="userSpaceOnUse"><stop stop-color="#243d47"/><stop offset="1" stop-color="#101b26"/></linearGradient>
+    <linearGradient id="instrument-metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b3c8d2"/><stop offset=".5" stop-color="#4b687b"/><stop offset="1" stop-color="#1a3041"/></linearGradient>
+    <radialGradient id="camera-shell" cx=".32" cy=".25" r=".8"><stop stop-color="#a2bac8"/><stop offset=".5" stop-color="#456779"/><stop offset="1" stop-color="#162d3d"/></radialGradient>
+    <linearGradient id="console-face" x1="500" y1="245" x2="649" y2="345" gradientUnits="userSpaceOnUse"><stop stop-color="#314e60"/><stop offset="1" stop-color="#142733"/></linearGradient>
+    <clipPath id="terrain-clip"><path d="m37 337 173-56 218 81-173 63Z"/></clipPath>
+  </defs>
+  <!-- Web derivative: visible conceptual scope is supplied by the translated HTML figure. Standalone export must include that caption. -->
+  <!-- Enlarged detail uses a magnifier convention, not a second device in the data chain. -->
+  <path d="M225 139 408 51M247 157 396 130" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <!-- Terrain: qualitative relief and a schematic observation, not a coverage model. -->
+  <path d="m37 337 173-56 218 81-173 63Z" fill="url(#terrain-surface)" stroke="#516779" stroke-width="1.5"/>
+  <path d="M37 337v12l218 88v-12Zm218 88 173-63v12l-173 63Z" fill="#162936" stroke="#516779" stroke-width="1.5"/>
+  <path d="m73 326 215 88m-162-105 215 86m-159-104 211 87M88 359l175-59m-123 80 174-61m-122 82 173-63" stroke="#94a3b8" stroke-opacity=".15" stroke-width="1.2"/>
+  <!-- Continuous relief and contour bands: qualitative terrain, no geographic or coverage claim. -->
+  <g clip-path="url(#terrain-clip)">
+    <path d="M41 336q65-19 96-23t77-30l46 42 91 5 86 41-81 26-91-15-69-20-58-1Z" fill="#2a4550" opacity=".65"/>
+    <path d="M41 336q65-19 96-23t77-30l-38 48-45 25-42 1Z" fill="#48606a" opacity=".22"/>
+    <path d="M175 332q39-5 66 15t49 14l68-20 61 20-65 37-70 5-54-35-54-11Z" fill="#0b1721" opacity=".7"/>
+    <path d="M64 336q70-19 112-4t74 37q37 22 83 1t80-4M87 348q53-14 88-1t73 36q37 23 88 0M110 365q48-6 73 8t48 31" stroke="#77939d" stroke-opacity=".28" stroke-width="1.2"/>
+    <path d="M207 295q-11 30-37 42t-20 27q3 13 33 24t34 25" stroke="#79a2ad" stroke-opacity=".4" stroke-width="2"/>
+  </g>
+  <path d="M152 221 89 352Q142 380 211 350Z" fill="url(#astra-field)"/>
+  <path d="M152 221 89 352m63-131 59 129" stroke="#00e5ff" stroke-opacity=".38" stroke-width="1.6" stroke-dasharray="5 7"/>
+  <ellipse cx="150" cy="352" rx="61" ry="19" stroke="#00e5ff" stroke-opacity=".4" stroke-width="1.5"/>
+
+<g transform="translate(78 331) scale(0.85)"><path d="m-16 4 15-5 18 7-16 5Z" fill="#07090e" opacity=".6"/><path d="M0-43-16-9 0-4Z" fill="#294451" stroke="#6c8795" stroke-width="1.5"/><path d="M0-43 16-10 0-4Z" fill="#172f3c" stroke="#6c8795" stroke-width="1.5"/><path d="M0-4V6" stroke="#94a3b8" stroke-width="2"/></g>
+<g transform="translate(197 308) scale(1)"><path d="m-16 4 15-5 18 7-16 5Z" fill="#07090e" opacity=".6"/><path d="M0-43-16-9 0-4Z" fill="#294451" stroke="#6c8795" stroke-width="1.5"/><path d="M0-43 16-10 0-4Z" fill="#172f3c" stroke="#6c8795" stroke-width="1.5"/><path d="M0-4V6" stroke="#94a3b8" stroke-width="2"/></g>
+<g transform="translate(307 353) scale(0.9)"><path d="m-16 4 15-5 18 7-16 5Z" fill="#07090e" opacity=".6"/><path d="M0-43-16-9 0-4Z" fill="#294451" stroke="#6c8795" stroke-width="1.5"/><path d="M0-43 16-10 0-4Z" fill="#172f3c" stroke="#6c8795" stroke-width="1.5"/><path d="M0-4V6" stroke="#94a3b8" stroke-width="2"/></g>
+<g transform="translate(239 396) scale(1)"><path d="m-16 4 15-5 18 7-16 5Z" fill="#07090e" opacity=".6"/><path d="M0-43-16-9 0-4Z" fill="#294451" stroke="#6c8795" stroke-width="1.5"/><path d="M0-43 16-10 0-4Z" fill="#172f3c" stroke="#6c8795" stroke-width="1.5"/><path d="M0-4V6" stroke="#94a3b8" stroke-width="2"/></g>
+<g transform="translate(354 376) scale(0.7)"><path d="m-16 4 15-5 18 7-16 5Z" fill="#07090e" opacity=".6"/><path d="M0-43-16-9 0-4Z" fill="#294451" stroke="#6c8795" stroke-width="1.5"/><path d="M0-43 16-10 0-4Z" fill="#172f3c" stroke="#6c8795" stroke-width="1.5"/><path d="M0-4V6" stroke="#94a3b8" stroke-width="2"/></g>
+<g stroke="#f59e0b" stroke-width="2.6"><path d="M127 335v-8h10m29 0h10v8m0 24v8h-10m-29 0h-10v-8"/><circle cx="151" cy="336" r="5"/><path d="M151 343v12m-9-6 9-6 9 6m-9 6-7 10m7-10 7 10"/></g>
+<!-- Generic lift supports below the wing; illustrative proportions, no hardware dimensions. -->
+<g id="vtol-supports">
+<path d="M228.55 102.4L66.55 171.4L72.25 173.32L234.25 104.32Z" fill="#365565" stroke="#9eb4c1" stroke-width="1.7"/>
+<path d="M234.25 104.32L72.25 173.32L72.25 177.32L234.25 108.32Z" fill="#1b303e" stroke="#728f9f" stroke-width="1.3"/>
+<path d="M365.35 148.48L203.35 217.48L209.05 219.4L371.05 150.4Z" fill="#365565" stroke="#9eb4c1" stroke-width="1.7"/>
+<path d="M371.05 150.4L209.05 219.4L209.05 223.4L371.05 154.4Z" fill="#1b303e" stroke="#728f9f" stroke-width="1.3"/>
+</g>
+<path d="M279.52 80.56L292.48 75.04L345.38 88.74L364.38 95.14L406.48 113.44L393.52 118.96L341.83 104.02L324.73 98.26Z" fill="url(#airframe-top)" stroke="#cbd5e1" stroke-width="2"/>
+<path d="M79.11 100.08L102.87 89.96L250.56 124.88L288.56 137.68L397.37 189.16L373.61 199.28L227.26 162.34L193.06 150.82Z" fill="url(#airframe-top)" stroke="#cbd5e1" stroke-width="2"/>
+<path d="M79.11 100.08L193.06 150.82L227.26 162.34L373.61 199.28L373.61 204.28L227.26 167.34L193.06 155.82L79.11 105.08Z" fill="#182f3c" stroke="#8da8b7" stroke-width="1.6"/>
+<path d="M95.35 97.96L196.13 143.44" stroke="#7895a6" stroke-width="1.3"/>
+<path d="M374.65 192.04L243.63 159.44" stroke="#7895a6" stroke-width="1.3"/>
+<path d="M115.12 199.06 Q113.83 181.74 150.55 161.1 L261.27 115.84 349.48 94.24 282.17 122.88 179.05 170.7 Q142.33 191.34 115.12 199.06Z" fill="url(#airframe-top)" stroke="#e2e8f0" stroke-width="2.2"/>
+<path d="M115.12 199.06 Q142.33 191.34 179.05 170.7 L282.17 122.88 349.48 94.24 333.71 113.58 279.75 141.36 178.1 185.38 Q141.64 199.46 115.12 199.06Z" fill="url(#airframe-side)" stroke="#94a3b8" stroke-width="1.8"/>
+<path d="M139.96 180.48L319.24 100.12" stroke="#cbd5e1" stroke-width="1.4"/>
+<path d="M311.68 103.34L333.28 59.14L352.72 92.86Z" fill="url(#airframe-top)" stroke="#cbd5e1" stroke-width="2"/>
+<!-- Rotor/motor symbols separated from wing edges and the magnifier. -->
+<g id="vtol-rotors">
+<path d="M231.92 100.24L231.92 92.24L223.28 95.92L223.28 103.92Z" fill="#3e5868" stroke="#9eb4c1" stroke-width="1.4"/>
+<path d="M223.28 103.92L223.28 95.92L230.88 98.48L230.88 106.48Z" fill="#213a49" stroke="#7895a6" stroke-width="1.3"/>
+<path d="M211.96 100.64L214.87 101.44L218.2 102.01L221.84 102.35L225.72 102.44L229.75 102.29L233.81 101.89L237.81 101.25L241.66 100.4L245.25 99.34L248.5 98.12L251.33 96.75L253.67 95.28L255.46 93.73L256.66 92.15L257.24 90.58L257.18 89.05L256.48 87.6L255.17 86.27L253.28 85.08L250.84 84.08L247.93 83.28L244.6 82.71L240.96 82.37L237.08 82.28L233.05 82.43L228.99 82.83L224.99 83.47L221.14 84.32L217.55 85.38L214.3 86.6L211.47 87.97L209.13 89.44L207.34 90.99L206.14 92.57L205.56 94.14L205.62 95.67L206.32 97.12L207.63 98.45L209.52 99.64Z" fill="none" stroke="#617c8c" stroke-width="1.2"/>
+<path d="M242.29 81.2L237.15 81.94L218.61 102.88L224.7 102.46Z" fill="#c5d6df" stroke="#cbd5e1" stroke-width="0.7"/>
+<circle cx="231.4" cy="92.36" r="3" fill="#f8fafc"/>
+<path d="M69.92 169.24L69.92 161.24L61.28 164.92L61.28 172.92Z" fill="#3e5868" stroke="#9eb4c1" stroke-width="1.4"/>
+<path d="M61.28 172.92L61.28 164.92L68.88 167.48L68.88 175.48Z" fill="#213a49" stroke="#7895a6" stroke-width="1.3"/>
+<path d="M49.96 169.64L52.87 170.44L56.2 171.01L59.84 171.35L63.72 171.44L67.75 171.29L71.81 170.89L75.81 170.25L79.66 169.4L83.25 168.34L86.5 167.12L89.33 165.75L91.67 164.28L93.46 162.73L94.66 161.15L95.24 159.58L95.18 158.05L94.48 156.6L93.17 155.27L91.28 154.08L88.84 153.08L85.93 152.28L82.6 151.71L78.96 151.37L75.08 151.28L71.05 151.43L66.99 151.83L62.99 152.47L59.14 153.32L55.55 154.38L52.3 155.6L49.47 156.97L47.13 158.44L45.34 159.99L44.14 161.57L43.56 163.14L43.62 164.67L44.32 166.12L45.63 167.45L47.52 168.64Z" fill="none" stroke="#617c8c" stroke-width="1.2"/>
+<path d="M80.29 150.2L75.15 150.94L56.61 171.88L62.7 171.46Z" fill="#c5d6df" stroke="#cbd5e1" stroke-width="0.7"/>
+<circle cx="69.4" cy="161.36" r="3" fill="#f8fafc"/>
+<path d="M368.72 146.32L368.72 138.32L360.08 142L360.08 150Z" fill="#3e5868" stroke="#9eb4c1" stroke-width="1.4"/>
+<path d="M360.08 150L360.08 142L367.68 144.56L367.68 152.56Z" fill="#213a49" stroke="#7895a6" stroke-width="1.3"/>
+<path d="M348.76 146.72L351.67 147.52L355 148.09L358.64 148.43L362.52 148.52L366.55 148.37L370.61 147.97L374.61 147.33L378.46 146.48L382.05 145.42L385.3 144.2L388.13 142.83L390.47 141.36L392.26 139.81L393.46 138.23L394.04 136.66L393.98 135.13L393.28 133.68L391.97 132.35L390.08 131.16L387.64 130.16L384.73 129.36L381.4 128.79L377.76 128.45L373.88 128.36L369.85 128.51L365.79 128.91L361.79 129.55L357.94 130.4L354.35 131.46L351.1 132.68L348.27 134.05L345.93 135.52L344.14 137.07L342.94 138.65L342.36 140.22L342.42 141.75L343.12 143.2L344.43 144.53L346.32 145.72Z" fill="none" stroke="#617c8c" stroke-width="1.2"/>
+<path d="M379.09 127.28L373.95 128.02L355.41 148.96L361.5 148.54Z" fill="#c5d6df" stroke="#cbd5e1" stroke-width="0.7"/>
+<circle cx="368.2" cy="138.44" r="3" fill="#f8fafc"/>
+<path d="M206.72 215.32L206.72 207.32L198.08 211L198.08 219Z" fill="#3e5868" stroke="#9eb4c1" stroke-width="1.4"/>
+<path d="M198.08 219L198.08 211L205.68 213.56L205.68 221.56Z" fill="#213a49" stroke="#7895a6" stroke-width="1.3"/>
+<path d="M186.76 215.72L189.67 216.52L193 217.09L196.64 217.43L200.52 217.52L204.55 217.37L208.61 216.97L212.61 216.33L216.46 215.48L220.05 214.42L223.3 213.2L226.13 211.83L228.47 210.36L230.26 208.81L231.46 207.23L232.04 205.66L231.98 204.13L231.28 202.68L229.97 201.35L228.08 200.16L225.64 199.16L222.73 198.36L219.4 197.79L215.76 197.45L211.88 197.36L207.85 197.51L203.79 197.91L199.79 198.55L195.94 199.4L192.35 200.46L189.1 201.68L186.27 203.05L183.93 204.52L182.14 206.07L180.94 207.65L180.36 209.22L180.42 210.75L181.12 212.2L182.43 213.53L184.32 214.72Z" fill="none" stroke="#617c8c" stroke-width="1.2"/>
+<path d="M217.09 196.28L211.95 197.02L193.41 217.96L199.5 217.54Z" fill="#c5d6df" stroke="#cbd5e1" stroke-width="0.7"/>
+<circle cx="206.2" cy="207.44" r="3" fill="#f8fafc"/>
+</g>
+<!-- Enlarged camera and functional onboard locator; neither defines physical packaging. -->
+  <g id="camera-gimbal">
+    <path d="M151 194v9" stroke="#b3c8d2" stroke-width="5"/>
+    <path d="M135 206v8q0 17 17 17t17-17v-8" stroke="#6e91a3" stroke-width="3"/>
+    <circle cx="152" cy="214" r="13" fill="url(#camera-shell)" stroke="#a2bac8" stroke-width="1.5"/>
+    <path d="M143 204q13-5 18 8" stroke="#d3e3ea" stroke-opacity=".6" stroke-width="1"/>
+    <ellipse cx="148" cy="217" rx="7" ry="8" fill="#0b1924" stroke="#7dc6d5" stroke-width="1.6"/>
+    <ellipse cx="148" cy="217" rx="4.2" ry="5" fill="#123b4f" stroke="#00e5ff" stroke-width=".9"/>
+    <path d="m146 214 3-1" stroke="#d3f8ff" stroke-width="1.3"/>
+    <circle cx="165" cy="213" r="2" fill="#142733" stroke="#8facbc" stroke-width="1"/>
+  </g>
+  <path d="m220 135 17-8 20 8-17 9Z" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
+  <!-- Exploded onboard detail: dashed locators identify enlargement; arrows carry information. -->
+  <g id="onboard-analysis-detail">
+    <circle cx="449" cy="96" r="61" fill="#101923" stroke="#94a3b8" stroke-width="1.7"/>
+    <path d="m410 61 6-5h78v70l-6 5Z" fill="#213847" stroke="#617f90" stroke-width="1.2"/>
+    <rect x="410" y="61" width="78" height="70" rx="4" fill="#0c1017" stroke="#cbd5e1" stroke-width="2"/>
+    <path d="M423 53v8m17-8v8m17-8v8m17-8v8m-51 70v8m17-8v8m17-8v8m17-8v8m-72-66h8m-8 16h8m-8 16h8m78-32h8m-8 16h8m-8 16h8" stroke="#728996" stroke-width="1.8"/>
+    <!-- Image features, a generic inference graph, and an observation bracket. No model topology asserted. -->
+    <rect x="418" y="80" width="16" height="30" rx="2" stroke="#94a3b8" stroke-width="1.6"/>
+    <path d="M422 87h8m-8 6h8m-8 6h5" stroke="#94a3b8" stroke-width="1.8"/>
+    <path d="m440 85 10 11-10 11m10-11 10-11m-10 11 10 11" stroke="#00e5ff" stroke-width="2"/>
+    <g fill="#0c1017" stroke="#00e5ff" stroke-width="1.8"><circle cx="440" cy="85" r="2.5"/><circle cx="440" cy="107" r="2.5"/><circle cx="460" cy="85" r="2.5"/><circle cx="460" cy="107" r="2.5"/></g>
+    <circle cx="450" cy="96" r="3" fill="#00e5ff"/>
+    <path d="M469 88v-5h5m8 0h-4m4 0v5m0 15v5h-4m-9-5v5h5" stroke="#f59e0b" stroke-width="1.8"/>
+    <circle cx="475" cy="95" r="2" fill="#f59e0b"/>
+    <path d="M475 100v4" stroke="#f59e0b" stroke-width="1.8"/>
+  </g>
+  <!-- Input stays outside the silhouette and rotor discs; the target is an enlarged view of onboard analysis. -->
+  <path id="camera-data-flow" d="M173 220h9q12 0 12 12v12q0 12 12 12h183q22 0 22-22v-58q0-12 10-19l20-21" stroke="#00e5ff" stroke-width="2.5" marker-end="url(#astra-arrow)"/>
+  <!-- Analysis -> illustrative image/notice -> station; logical flow, not physical component placement. -->
+  <path id="evidence-data-flow" d="M514 96h38q18 0 18 18v115" stroke="#00e5ff" stroke-width="2.5" marker-end="url(#astra-arrow)"/>
+  <g id="delivered-evidence">
+    <rect x="542" y="169" width="56" height="44" rx="3" fill="#0c1017" stroke="#00e5ff" stroke-width="1.8"/>
+    <path d="m550 204 8-10 8 6 10-13 14 13" stroke="#728996" stroke-width="1.5"/>
+    <path d="M550 177h12v12h-12Z" fill="#3e301c" stroke="#f59e0b" stroke-width="1.5"/>
+    <path d="M556 180v4m0 2v.5" stroke="#f59e0b" stroke-width="1.7"/>
+  </g>
+  <!-- Central monitoring workstation. Interface and room are conceptual, not an actual installation. -->
+  <g id="human-review-central">
+    <!-- Open floor establishes the station's depth without inventing a building. -->
+    <path d="m478 371 125-41 103 48-125 48Z" fill="#0e1b26" stroke="#3d5669" stroke-width="1.2"/>
+    <path d="m478 371v5l103 48v-4m0 6 125-48v6l-125 48Z" fill="#152b39" stroke="#3d5669" stroke-width="1.2"/>
+    <path d="m494 374 84 38 109-36m-151-11 84 38m-43-51 84 38" stroke="#5d7d90" stroke-opacity=".18" stroke-width="1"/>
+    <!-- Console desk shares the floor's oblique axes. -->
+    <path d="m500 339 107-35 72 34-107 36Z" fill="url(#console-face)" stroke="#92abba" stroke-width="1.5"/>
+    <path d="m500 339v8l72 35v-8Zm72 35 107-36v8l-107 36Z" fill="#1a3040" stroke="#617f90" stroke-width="1.2"/>
+    <path d="m515 354 8 4v38l-8-4Zm104 14 8-3v28l-8 3Z" fill="#294554" stroke="#617f90" stroke-width="1.2"/>
+    <!-- Display bevel, stand and inset image: received evidence, not automated approval. -->
+    <path d="m511 245 8-6h126v93l-8 6V245Z" fill="#294553" stroke="#8fa7b6" stroke-width="1.3"/>
+    <rect x="511" y="245" width="126" height="93" rx="4" fill="url(#console-face)" stroke="#b3c8d2" stroke-width="1.8"/>
+    <rect x="518" y="252" width="112" height="76" rx="2" fill="#08131e" stroke="#49677b" stroke-width="1"/>
+    <path d="M566 338v7l-11 4 20 7 17-6-15-5v-7" fill="#294553" stroke="#92abba" stroke-width="1.4"/>
+    <path d="M524 261h12m5 0h49" stroke="#7c98a8" stroke-width="1.6"/>
+    <circle cx="622" cy="260" r="2" fill="#00e5ff"/>
+    <!-- Evidence panel repeats terrain context and the same observation motif. -->
+    <rect x="524" y="270" width="66" height="51" rx="2" fill="#102431" stroke="#4a6c7d" stroke-width="1"/>
+    <path d="m527 306 10-18 11 18m-11-3v6m7-12 11-5 10 6 21-12m-57 28 21-7 33 8" stroke="#628795" stroke-width="1.2"/>
+    <g stroke="#f59e0b" stroke-width="1.6"><path d="M557 282v-4h5m15 0h5v4m0 25v5h-5m-15 0h-5v-5"/><circle cx="569" cy="287" r="2.5"/><path d="M569 292v9m-5-5 5-4 5 4m-5 5-4 7m4-7 4 7"/></g>
+    <path d="M598 273h25v13h-25Z" fill="#3e301c" stroke="#ae812e" stroke-width="1"/>
+    <path d="M603 279h15m-15 3h8" stroke="#f5bc53" stroke-width="1.4"/>
+    <path d="M598 296h25m-25 6h19m-19 6h23m-23 6h12" stroke="#7c98a8" stroke-width="1.4"/>
+    <!-- Input surface: physical console, no unreadable pseudo-telemetry. -->
+    <path d="m587 343 25-8 25 11-25 9Z" fill="#0e1c29" stroke="#628795" stroke-width="1"/>
+    <path d="m595 342 23 11m-16-13 23 10m-26-4 20-7m-13 10 19-6" stroke="#7391a1" stroke-width=".8"/>
+    <!-- Seated human in profile; arm reaches the desk, preserving a human review endpoint. -->
+    <path d="M679 331q13 0 14 13l-2 27-18 9-10-7 1-33q1-9 15-9Z" fill="#233c4d" stroke="#6d889c" stroke-width="1.5"/>
+    <path d="m671 378-5 19m17-20 4 21m-21-1-12 4m12-4 13 5m8-4 12-2" stroke="#6d889c" stroke-width="2"/>
+    <path d="M662 303q-8 3-8 11l3 11 10 3 7-8-1-12Z" fill="url(#instrument-metal)" stroke="#b3c8d2" stroke-width="1.5"/>
+    <path d="m655 314-4 3 5 3" stroke="#b3c8d2" stroke-width="1.2"/>
+    <path d="M659 327q-12 8-13 22l16 22 18-7-7-25q-1-10-14-12Z" fill="#3a586c" stroke="#9cb3c2" stroke-width="1.5"/>
+    <path d="m650 339-10 10-18-5m40 3-14 9-17-8" stroke="#b3c8d2" stroke-width="4"/>
+    <path d="m663 369-9 17-19 4m40-24 1 19-10 16" stroke="#7b98ac" stroke-width="7"/>
+    <path d="m635 390-8 1m39 10-8 3" stroke="#b3c8d2" stroke-width="3"/>
+  </g>
+  <g font-family="monospace" font-size="23" fill="#cbd5e1"><text x="39" y="87">01</text><text x="501" y="40">02</text><text x="493" y="228">03</text></g>
+</svg>

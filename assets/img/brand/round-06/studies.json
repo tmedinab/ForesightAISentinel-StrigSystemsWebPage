@@ -1,0 +1,80 @@
+[
+  {
+    "id": "athene-original",
+    "title": "Original / R04",
+    "change": "Control conservado",
+    "intent": "Frente y pico; A no resuelta.",
+    "risk": "máscara / escudo.",
+    "bounds": [
+      16,
+      28,
+      112,
+      108
+    ]
+  },
+  {
+    "id": "athene-compacto",
+    "title": "Compacto / R05",
+    "change": "Control conservado",
+    "intent": "Mirada facial y cierre más corto.",
+    "risk": "mascota / perder tensión.",
+    "bounds": [
+      18,
+      30,
+      110,
+      98
+    ]
+  },
+  {
+    "id": "athene-frente-solido",
+    "title": "Frente sólido",
+    "change": "Cabeza cerrada; aperturas más amplias",
+    "intent": "Presencia firme y mirada contenida.",
+    "risk": "Máscara / demasiada amabilidad.",
+    "bounds": [
+      16,
+      30,
+      112,
+      99
+    ]
+  },
+  {
+    "id": "athene-frente-abierto",
+    "title": "Frente abierto",
+    "change": "Perímetro inferior abierto; pico conectado",
+    "intent": "Atención sin mentón de escudo.",
+    "risk": "Visor / gafas / cercanía a Bilateral.",
+    "bounds": [
+      16,
+      30,
+      112,
+      77
+    ]
+  },
+  {
+    "id": "strig-campo",
+    "title": "Strig / Campo continuidad",
+    "change": "Control conservado",
+    "intent": "Mayor unidad; conserva apertura.",
+    "risk": "S tecnológica convencional.",
+    "bounds": [
+      18,
+      21,
+      110,
+      107
+    ]
+  },
+  {
+    "id": "strig-bilateral",
+    "title": "Strig / Bilateral frente",
+    "change": "Control conservado",
+    "intent": "Gesto más contenido.",
+    "risk": "menos tensión / carácter.",
+    "bounds": [
+      12,
+      32,
+      116,
+      76
+    ]
+  }
+]

@@ -37,3 +37,7 @@ build/
 
 # Diagramas HTML compilados locales de documentacion
 docs/**/*.html
+
+# Supplied institutional manuals and source pack retained for reuse.
+!docs/brand/institutional/**/originals/*.pdf
+!docs/brand/institutional/**/originals/*.zip

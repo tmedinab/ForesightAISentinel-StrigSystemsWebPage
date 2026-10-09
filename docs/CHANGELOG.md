@@ -1,4 +1,62 @@
-# Registro de Cambios (Changelog) — Strig Systems & Athene™
+# Registro de cambios — Strig Systems / Athene
+
+El historial de versiones registra lo ocurrido, no especificaciones vigentes. Consultar el [índice](README.md) y el plan para el estado actual. Los documentos antiguos citados en las versiones están en la copia recuperable local descrita en el índice.
+
+## [2.2.0] — 2026-10-08
+
+- Portada y briefing pulidos tras primera lectura simulada y revisión UX: vigilancia nocturna, detección de presencia humana e indicios de incendio con evaluación del operador; sin reconocimiento de identidad ni prestaciones medidas implícitas. Familia A y titular conservados.
+- Menos repetición de credenciales, equipo móvil compacto, contacto exploratorio con campos opcionales y correo directo, selector accesible y enlaces legales persistentes ES/EN.
+- Publicación por paquete limitado a recursos públicos; docs/exports/dossier/rondas excluidos. Aplicación gráfica institucional conservada localmente, pendiente de validación; menciones textuales en el paquete público (ADR-0013).
+- Preflight/i18n: 146 claves ES/EN. QA de paquete: 16 combinaciones página/ancho, modales, traducciones, carga de assets, ausencia de overflow y fallback de correo con fallo simulado, sin envío externo. Revisión UX final sin regresión P1; los detalles finos de tipografía con fuentes externas no se certifican por pruebas offline.
+
+## Sin publicar — 2026-10-08
+
+### Documentación
+- Condensados 26 documentos temáticos en cuatro documentos de contenido y un índice; retirados 22 estudios de exploración y tres briefs/borradores de raíz y un plan histórico de primera lectura. AGENTS/README/herramientas actualizados; ADR-0012 establece un dueño por tema.
+- Copia verificada de 34 archivos en `scratch/documentation-backup/2026-10-08-before-consolidation.zip`. Manuales, originales, ADRs aceptados, código, SVG y exports preservados.
+- Verificación de limpieza: 536 archivos protegidos idénticos por SHA-256, enlaces activos y JSON válidos, originales/derivados institucionales verificados, preflight/i18n 144 claves y diff check satisfactorios. Sin cambios de hosting ni publicación.
+
+### Web y assets anteriores a esta limpieza
+- SVG de arquitectura refinado hasta paso5: profundidad, soportes/rotores coherentes, inferencia, conexiones y central con operador. Indicio térmico ilustrativo común en terreno/pantalla; sin fuego confirmado. Pasos anteriores preservados. Se mantiene SVG tras evaluar videos generados.
+- Equipo público compacto: cinco retratos, icono LinkedIn y tres URLs suministradas; Ananda/Pablo deshabilitados. Tomás identificado como cofundador y lead técnico.
+- Posicionamiento aeroespacial/sistemas autónomos aprobado (ADR-0011). Footer «Nos apoyan», IncubaUdeC una vez, incubación/mentorías explícitas y Corfo inferior derecho (ADR-0010).
+- Biblioteca institucional con originales/manuales/manifest y derivados web. Aplicación local, validación IU pendiente (ADR-0009).
+- Checks registrados: XML/referencias SVG, Chromium 1440/320 ES/EN y preflight/i18n 144 claves; microdetalle de pantalla requiere ampliación móvil.
+
+## Sin publicar — 2026-10-07
+
+- Comparación A/B/C y handoff profesional A/B en inglés, con geometría y licencias preservadas. Tomás seleccionó A para integración local (ADR-0008); firmas, favicon y tarjeta social derivados.
+- Jerarquía corporativa/producto y hero revisados; secundarios tipográficos más legibles, navbar y escala óptica refinados (ADR-0007).
+- Revisión independiente Astra y candidata SVG adoptada como base editable. Limpieza de rótulos, relaciones VTOL y flujos de evidencia; representación conceptual y fuentes CONOPS registradas.
+- Validaciones automatizadas y renderizadas se conservan como resultados técnicos, sin master final ni aceptación institucional/comercial.
+
+## Sin publicar — 2026-10-06
+
+- Desarrollo de familias y variantes de identidad con tutoría diferenciada; selección H1/Campo para Strig y Athene abierto/retornos/composición equilibrada como referencia. Fuentes/controles en assets y scripts de generación preservados.
+- Auditoría de procedencia, honestidad de claims y estado experimental; revisiones y limitaciones consolidadas en documentos dueños.
+
+## [2.1.0] — 2026-10-05
+### Añadido
+* Hero con arquitectura conceptual SVG rotulada ES/EN y estados hoy/próximo/visión.
+* Imagen social de marca SVG/PNG, registro de assets y ADR-0005.
+* Asesoría visual de marca, tres rutas de isotipo SVG y lámina comparativa con pruebas mono/inversa a distintos tamaños. Exploraciones no aprobadas, sin sustituir la marca pública.
+* Brief y proceso formal de identidad, filosofía visual y estudios adicionales. Skills SVG/composición instaladas; segunda ronda rechazada, sin adoptar logo nuevo.
+* Estrategia de familia visual Strig/Athene/Noctua/Nest, estudio de referentes y auditoría SVG por dos subagentes autorizados; beneficios/costes y compuertas documentados.
+* Ronda 04: tres territorios corporativos y estudio Athene, SVG de propuestas/lockups, láminas, fuente/contornos trazables y herramientas de reconstrucción/verificación. Crítica independiente y correcciones de silueta, jerarquía y recortes. La A de Athene sigue pendiente.
+* Profundización de teoría de marca y refinamiento previo a Round 05: Campo/Bilateral como rutas preferidas, operaciones de masa/vacío, alternativas formales para Athene (incluida A invertida + T), tradeoffs y protocolo de comparación. Sin nuevos logos adoptados.
+* Round05: controles de Round04, dos variantes por ruta Campo/Bilateral y tres estructuras Athene; diez símbolos/lockups, tres láminas y herramientas reproducibles. Revisión independiente y 60 escenarios de reproducción/límites PASS. Letras y lectura de búho en evaluación, sin reemplazar marca pública.
+### Modificado
+* Titular original recuperado y complementado con descriptor nocturno, subtítulo de desarrollo y TRL 3 en ES/EN.
+* Plan estratégico priorizado por evidencia; instrucciones AGENTS alineadas con procedencia.
+* Portada, resumen y secuencia del dossier describen funciones en validación.
+### Corregido
+* Claims de microsegundos, cifras sin fuente del brief y hardware no verificado como logo/imagen social.
+* Alcance de confidencialidad del dossier estático.
+* Selectores y geometría de modales, cierre móvil, controles ocultos de la trampa de foco y foco sincronizado con renderizado y cancelación al cerrar. ADR-0006.
+* Solicitud de Space Grotesk ajustada a pesos hasta 700.
+### Seguridad / Consistencia
+* Verificación ES/EN, preflight y revisión visual registradas en docs/REVISION_VISUAL_2026-10-05.md.
+
 
 Todas las modificaciones notables realizadas en la plataforma web de **Strig Systems** se documentan en este archivo de manera cronológica y categorizada.
 
@@ -45,31 +103,31 @@ El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/
   * Barra de navegación y clasificación documental (`[DOC // B2B-TERMS]`, `[DOC // PRIVACY-GOV]`, `◈ VIGENTE`).
   * Estructuración del contenido en tarjetas tácticas `.legal-card.glass-panel` con retículas milimétricas, títulos semánticos con glifo `◈`, y callouts operacionales para el modelo IaaS 0 CAPEX, honestidad TRL 3 y arquitectura Zero-Cloud.
   * Pie de página `.site-footer` unificado con píldoras de contacto institucionales y enlaces legales recíprocos.
-  * Centralización de reglas CSS en [`styles.css`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/styles.css), erradicando bloques `<style>` locales obsoletos y referencias de versión antiguas.
+  * Centralización de reglas CSS en [`styles.css`](../styles.css), erradicando bloques `<style>` locales obsoletos y referencias de versión antiguas.
 
 ## [1.3.5] — 2026-09-30
 ### Corregido
-* **Fijación Viewport del Botón Flotante (`#back-to-top`):** Corrección de especificidad CSS en [`styles.css`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/styles.css) donde la regla `.glass-panel:not(.nav-dropdown-menu)` sobreescribía `position: fixed` con `position: relative`, haciendo que el botón quedara retenido al final del flujo del DOM en lugar de flotar en la esquina inferior del viewport. Se aplicó `position: fixed !important`, `z-index: 950`, `pointer-events: none/auto` y exclusión en el selector de panel.
-* **Invocación Reactiva e Inmediata en Montaje:** En [`script.js`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/script.js), ajuste del umbral de aparición a 300px (justo tras rebasar el pliegue del hero) y llamada inmediata a `updateVisibility()` durante la inicialización para evaluar el estado si el usuario entra a través de un ancla.
-* **Renovación Forzada de Caché de Navegador (Cache-Busting):** Actualización de strings de versión a `?v=1.3.5` en [`index.html`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/index.html), [`privacy.html`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/privacy.html), [`terms.html`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/terms.html) y [`404.html`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/404.html) para forzar a navegadores con copia local en caché a descargar los nuevos estilos y scripts sin requerir vaciado manual de historial.
+* **Fijación Viewport del Botón Flotante (`#back-to-top`):** Corrección de especificidad CSS en [`styles.css`](../styles.css) donde la regla `.glass-panel:not(.nav-dropdown-menu)` sobreescribía `position: fixed` con `position: relative`, haciendo que el botón quedara retenido al final del flujo del DOM en lugar de flotar en la esquina inferior del viewport. Se aplicó `position: fixed !important`, `z-index: 950`, `pointer-events: none/auto` y exclusión en el selector de panel.
+* **Invocación Reactiva e Inmediata en Montaje:** En [`script.js`](../script.js), ajuste del umbral de aparición a 300px (justo tras rebasar el pliegue del hero) y llamada inmediata a `updateVisibility()` durante la inicialización para evaluar el estado si el usuario entra a través de un ancla.
+* **Renovación Forzada de Caché de Navegador (Cache-Busting):** Actualización de strings de versión a `?v=1.3.5` en [`index.html`](../index.html), [`privacy.html`](../privacy.html), [`terms.html`](../terms.html) y [`404.html`](../404.html) para forzar a navegadores con copia local en caché a descargar los nuevos estilos y scripts sin requerir vaciado manual de historial.
 
 ## [1.3.4] — 2026-09-30
 ### Añadido
 * **Botón Flotante Táctico "Back to Top" (`#back-to-top`):** Control flotante estilizado con micro-icono SVG táctico, tipografía mono HUD (`TOP`), animación suave de retorno al origen (`window.scrollTo({ top: 0, behavior: 'smooth' })`), visibilidad reactiva (>450px de scroll) y throttling vía `requestAnimationFrame` para máximo rendimiento.
 * **Página de Error Personalizada 404 (`404.html`):** Interfaz para GitHub Pages con estética Aerospace HUD (`ERR // 404 - SECTOR NO ENCONTRADO`), enlaces de retorno al centro de comando (`/`), motor i18n reactivo y baliza de telemetría Umami.
-* **Metadatos Semánticos Schema.org JSON-LD & `theme-color`:** Inyección de marcado estructurado `Organization` deeptech aeroespacial en [`index.html`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/index.html) y meta tag de color para navegadores móviles (`#07090e`).
+* **Metadatos Semánticos Schema.org JSON-LD & `theme-color`:** Inyección de marcado estructurado `Organization` deeptech aeroespacial en [`index.html`](../index.html) y meta tag de color para navegadores móviles (`#07090e`).
 * **Optimización de Exportación/Impresión PDF para Executive Brief:** Reglas CSS `@page { size: A4 portrait; margin: 0.6cm 0.8cm; }` y `break-inside: avoid;` en `.brief-box`, garantizando que el One-Pager ejecutivo se imprima o exporte en exactamente una sola página A4 sin saltos indeseados.
-* **Backlog de Mejoras First-Reader:** Registro de mejoras operativas y narrativas (FR-01 a FR-07) en [`docs/superpowers/plans/2026-09-29-first-reader-improvements.md`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/docs/superpowers/plans/2026-09-29-first-reader-improvements.md) para desarrollo futuro.
+* **Backlog de Mejoras First-Reader:** Registro de mejoras operativas y narrativas (FR-01 a FR-07) en `docs/superpowers/plans/2026-09-29-first-reader-improvements.md` (plan histórico retirado en la consolidación del 2026-10-08, conservado en el respaldo local) para desarrollo futuro.
 
 ### Corregido
-* **Restauración de Estado en Reapertura de Modales (`openModal`):** Corrección lógica en [`script.js`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/script.js) asegurando que al reabrir `#contact-modal` tras un envío previo, el formulario se restaure automáticamente (`form.style.display = ''`) y el estado de éxito se oculte (`successState.style.display = 'none'`).
+* **Restauración de Estado en Reapertura de Modales (`openModal`):** Corrección lógica en [`script.js`](../script.js) asegurando que al reabrir `#contact-modal` tras un envío previo, el formulario se restaure automáticamente (`form.style.display = ''`) y el estado de éxito se oculte (`successState.style.display = 'none'`).
 * **Eliminación Reactiva de Errores en Consentimiento (`form-checkbox`):** Inclusión de casillas de verificación en los listeners de cambio para remover el error de validación en tiempo real al marcarlas.
 * **Telemetría Asíncrona Resiliente en Umami:** Verificación defensiva previa de `window.umami.track` antes de marcar secciones como registradas, evitando omisiones por carga diferida de la baliza.
 
 ## [1.3.3] — 2026-09-29
 ### Añadido
-* **Telemetría Web & Analítica Privacy-First (Umami Cloud):** Integración de baliza analítica sin cookies ni banners invasivos en [`index.html`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/index.html), [`privacy.html`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/privacy.html) y [`terms.html`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/terms.html) (`data-website-id="aa979513-3790-4797-99e5-03d4a57d74ee"`).
-* **Instrumentación de Eventos Tácticos Clave ([`script.js`](file:///c:/Users/Tomas/PycharmProjects/ForesightAISentinel-StrigSystemsWebPage/script.js)):** Despacho programático y reactivo de eventos hacia Umami:
+* **Telemetría Web & Analítica Privacy-First (Umami Cloud):** Integración de baliza analítica sin cookies ni banners invasivos en [`index.html`](../index.html), [`privacy.html`](../privacy.html) y [`terms.html`](../terms.html) (`data-website-id="aa979513-3790-4797-99e5-03d4a57d74ee"`).
+* **Instrumentación de Eventos Tácticos Clave ([`script.js`](../script.js)):** Despacho programático y reactivo de eventos hacia Umami:
   * `Switch-Language`: Registro de conmutación a inglés o español con propiedad de idioma.
   * `Open-Contact-Modal`: Apertura del modal con registro de intención (`pilot`, `briefing`, `alliances`).
   * `Submit-Contact-Success`: Envío exitoso de formulario de contacto/pilotaje.
@@ -167,3 +225,5 @@ El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/
 * **Lanzamiento Inicial de Plataforma:** Plataforma web institucional deeptech de Strig Systems y sistema Athene™.
 * **Motor i18n Vanilla:** Soporte bilingüe ES / EN sin recarga de página.
 * **Diseño Glassmorphism Táctico:** Sistema de tokens de diseño en modo oscuro con acentos cian, ámbar y azul espacial.
+
+Validación del equipo público (2026-10-08): preflight e i18n PASS, 144 claves ES/EN. Chromium1440/1024/768/390/320px ES/EN: cinco integrantes, roles traducidos, cinco recuadros LinkedIn deshabilitados sin enlaces ficticios y sin desbordamiento. Captura de escritorio revisada visualmente.

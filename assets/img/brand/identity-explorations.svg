@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980">
+  <rect width="1600" height="980" fill="#07090e"/>
+  <text x="60" y="68" fill="#f8fafc" font-family="Arial,sans-serif" font-size="34" font-weight="700">STRIG SYSTEMS / EXPLORACIÓN DE IDENTIDAD</text>
+  <text x="60" y="111" fill="#f59e0b" font-family="monospace" font-size="20">ESTUDIOS CONCEPTUALES · NO APROBADOS · 2026-10-05</text>
+  <rect x="60" y="166" width="460" height="700" rx="8" fill="#0c1017" stroke="#263242"/>
+    <text x="90" y="212" fill="#00e5ff" font-family="monospace" font-size="20">A / CENTINELA</text>
+    <g transform="translate(190 245) scale(1.6)" fill="#f8fafc" color="#f8fafc">
+  
+  <path fill-rule="evenodd" d="M16 14 42 30 64 23 86 30 112 14 102 65 64 112 26 65ZM32 45 56 51 48 69 36 59ZM96 45 72 51 80 69 92 59Z"/>
+  <path d="m57 77 7-7 7 7-7 16Z"/>
+
+</g>
+    <path d="M90 492h400" stroke="#263242"/>
+    <text x="90" y="535" fill="#94a3b8" font-family="monospace" font-size="17">24 / 32 / 48 PX · UNA TINTA</text>
+    <g transform="translate(102 565) scale(.1875)" fill="#f8fafc">
+  
+  <path fill-rule="evenodd" d="M16 14 42 30 64 23 86 30 112 14 102 65 64 112 26 65ZM32 45 56 51 48 69 36 59ZM96 45 72 51 80 69 92 59Z"/>
+  <path d="m57 77 7-7 7 7-7 16Z"/>
+
+</g>
+    <g transform="translate(160 561) scale(.25)" fill="#f8fafc">
+  
+  <path fill-rule="evenodd" d="M16 14 42 30 64 23 86 30 112 14 102 65 64 112 26 65ZM32 45 56 51 48 69 36 59ZM96 45 72 51 80 69 92 59Z"/>
+  <path d="m57 77 7-7 7 7-7 16Z"/>
+
+</g>
+    <g transform="translate(228 553) scale(.375)" fill="#00e5ff">
+  
+  <path fill-rule="evenodd" d="M16 14 42 30 64 23 86 30 112 14 102 65 64 112 26 65ZM32 45 56 51 48 69 36 59ZM96 45 72 51 80 69 92 59Z"/>
+  <path d="m57 77 7-7 7 7-7 16Z"/>
+
+</g>
+    <rect x="90" y="633" width="400" height="85" rx="4" fill="#f8fafc"/>
+    <g transform="translate(108 645) scale(.45)" fill="#07090e">
+  
+  <path fill-rule="evenodd" d="M16 14 42 30 64 23 86 30 112 14 102 65 64 112 26 65ZM32 45 56 51 48 69 36 59ZM96 45 72 51 80 69 92 59Z"/>
+  <path d="m57 77 7-7 7 7-7 16Z"/>
+
+</g>
+    <text x="180" y="670" fill="#07090e" font-family="Arial,sans-serif" font-size="23" font-weight="700" letter-spacing="4">STRIG</text>
+    <text x="180" y="694" fill="#334155" font-family="Arial,sans-serif" font-size="16" letter-spacing="4">SYSTEMS</text>
+    <g transform="translate(92 756) scale(.4)" fill="#f8fafc">
+  
+  <path fill-rule="evenodd" d="M16 14 42 30 64 23 86 30 112 14 102 65 64 112 26 65ZM32 45 56 51 48 69 36 59ZM96 45 72 51 80 69 92 59Z"/>
+  <path d="m57 77 7-7 7 7-7 16Z"/>
+
+</g>
+    <text x="165" y="780" fill="#f8fafc" font-family="Arial,sans-serif" font-size="23" font-weight="700" letter-spacing="4">STRIG</text>
+    <text x="165" y="806" fill="#94a3b8" font-family="Arial,sans-serif" font-size="16" letter-spacing="4">SYSTEMS</text><rect x="560" y="166" width="460" height="700" rx="8" fill="#0c1017" stroke="#263242"/>
+    <text x="590" y="212" fill="#00e5ff" font-family="monospace" font-size="20">B / ALA DELTA</text>
+    <g transform="translate(690 245) scale(1.6)" fill="#f8fafc" color="#f8fafc">
+  
+  <path fill-rule="evenodd" d="M8 29 52 46 64 20 76 46 120 29 95 79 64 110 33 79ZM30 49 55 56 48 74ZM98 49 73 56 80 74Z"/>
+
+</g>
+    <path d="M590 492h400" stroke="#263242"/>
+    <text x="590" y="535" fill="#94a3b8" font-family="monospace" font-size="17">24 / 32 / 48 PX · UNA TINTA</text>
+    <g transform="translate(602 565) scale(.1875)" fill="#f8fafc">
+  
+  <path fill-rule="evenodd" d="M8 29 52 46 64 20 76 46 120 29 95 79 64 110 33 79ZM30 49 55 56 48 74ZM98 49 73 56 80 74Z"/>
+
+</g>
+    <g transform="translate(660 561) scale(.25)" fill="#f8fafc">
+  
+  <path fill-rule="evenodd" d="M8 29 52 46 64 20 76 46 120 29 95 79 64 110 33 79ZM30 49 55 56 48 74ZM98 49 73 56 80 74Z"/>
+
+</g>
+    <g transform="translate(728 553) scale(.375)" fill="#00e5ff">
+  
+  <path fill-rule="evenodd" d="M8 29 52 46 64 20 76 46 120 29 95 79 64 110 33 79ZM30 49 55 56 48 74ZM98 49 73 56 80 74Z"/>
+
+</g>
+    <rect x="590" y="633" width="400" height="85" rx="4" fill="#f8fafc"/>
+    <g transform="translate(608 645) scale(.45)" fill="#07090e">
+  
+  <path fill-rule="evenodd" d="M8 29 52 46 64 20 76 46 120 29 95 79 64 110 33 79ZM30 49 55 56 48 74ZM98 49 73 56 80 74Z"/>
+
+</g>
+    <text x="680" y="670" fill="#07090e" font-family="Arial,sans-serif" font-size="23" font-weight="700" letter-spacing="4">STRIG</text>
+    <text x="680" y="694" fill="#334155" font-family="Arial,sans-serif" font-size="16" letter-spacing="4">SYSTEMS</text>
+    <g transform="translate(592 756) scale(.4)" fill="#f8fafc">
+  
+  <path fill-rule="evenodd" d="M8 29 52 46 64 20 76 46 120 29 95 79 64 110 33 79ZM30 49 55 56 48 74ZM98 49 73 56 80 74Z"/>
+
+</g>
+    <text x="665" y="780" fill="#f8fafc" font-family="Arial,sans-serif" font-size="23" font-weight="700" letter-spacing="4">STRIG</text>
+    <text x="665" y="806" fill="#94a3b8" font-family="Arial,sans-serif" font-size="16" letter-spacing="4">SYSTEMS</text><rect x="1060" y="166" width="460" height="700" rx="8" fill="#0c1017" stroke="#263242"/>
+    <text x="1090" y="212" fill="#00e5ff" font-family="monospace" font-size="20">C / ÓPTICA DUAL</text>
+    <g transform="translate(1190 245) scale(1.6)" fill="#f8fafc" color="#f8fafc">
+  
+  <path fill-rule="evenodd" d="m64 10 52 52-52 54L12 62Zm0 15L28 62l36 37 36-37Z"/>
+  <path fill-rule="evenodd" d="m44 40 18 22-18 22-18-22Zm0 13-7 9 7 9 7-9Zm40-13 18 22-18 22-18-22Zm0 13-7 9 7 9 7-9Z"/>
+
+</g>
+    <path d="M1090 492h400" stroke="#263242"/>
+    <text x="1090" y="535" fill="#94a3b8" font-family="monospace" font-size="17">24 / 32 / 48 PX · UNA TINTA</text>
+    <g transform="translate(1102 565) scale(.1875)" fill="#f8fafc">
+  
+  <path fill-rule="evenodd" d="m64 10 52 52-52 54L12 62Zm0 15L28 62l36 37 36-37Z"/>
+  <path fill-rule="evenodd" d="m44 40 18 22-18 22-18-22Zm0 13-7 9 7 9 7-9Zm40-13 18 22-18 22-18-22Zm0 13-7 9 7 9 7-9Z"/>
+
+</g>
+    <g transform="translate(1160 561) scale(.25)" fill="#f8fafc">
+  
+  <path fill-rule="evenodd" d="m64 10 52 52-52 54L12 62Zm0 15L28 62l36 37 36-37Z"/>
+  <path fill-rule="evenodd" d="m44 40 18 22-18 22-18-22Zm0 13-7 9 7 9 7-9Zm40-13 18 22-18 22-18-22Zm0 13-7 9 7 9 7-9Z"/>
+
+</g>
+    <g transform="translate(1228 553) scale(.375)" fill="#00e5ff">
+  
+  <path fill-rule="evenodd" d="m64 10 52 52-52 54L12 62Zm0 15L28 62l36 37 36-37Z"/>
+  <path fill-rule="evenodd" d="m44 40 18 22-18 22-18-22Zm0 13-7 9 7 9 7-9Zm40-13 18 22-18 22-18-22Zm0 13-7 9 7 9 7-9Z"/>
+
+</g>
+    <rect x="1090" y="633" width="400" height="85" rx="4" fill="#f8fafc"/>
+    <g transform="translate(1108 645) scale(.45)" fill="#07090e">
+  
+  <path fill-rule="evenodd" d="m64 10 52 52-52 54L12 62Zm0 15L28 62l36 37 36-37Z"/>
+  <path fill-rule="evenodd" d="m44 40 18 22-18 22-18-22Zm0 13-7 9 7 9 7-9Zm40-13 18 22-18 22-18-22Zm0 13-7 9 7 9 7-9Z"/>
+
+</g>
+    <text x="1180" y="670" fill="#07090e" font-family="Arial,sans-serif" font-size="23" font-weight="700" letter-spacing="4">STRIG</text>
+    <text x="1180" y="694" fill="#334155" font-family="Arial,sans-serif" font-size="16" letter-spacing="4">SYSTEMS</text>
+    <g transform="translate(1092 756) scale(.4)" fill="#f8fafc">
+  
+  <path fill-rule="evenodd" d="m64 10 52 52-52 54L12 62Zm0 15L28 62l36 37 36-37Z"/>
+  <path fill-rule="evenodd" d="m44 40 18 22-18 22-18-22Zm0 13-7 9 7 9 7-9Zm40-13 18 22-18 22-18-22Zm0 13-7 9 7 9 7-9Z"/>
+
+</g>
+    <text x="1165" y="780" fill="#f8fafc" font-family="Arial,sans-serif" font-size="23" font-weight="700" letter-spacing="4">STRIG</text>
+    <text x="1165" y="806" fill="#94a3b8" font-family="Arial,sans-serif" font-size="16" letter-spacing="4">SYSTEMS</text>
+  <text x="60" y="913" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="21">A: reconocimiento del centinela · B: vínculo aeronáutico · C: continuidad con el diamante</text>
+  <text x="60" y="949" fill="#94a3b8" font-family="Arial,sans-serif" font-size="18">Comparar silueta, legibilidad y diferenciación. El wordmark usa fuente de sistema provisional.</text>
+</svg>

@@ -1,0 +1,116 @@
+{
+  "team": "C",
+  "name": "Umbral / Accesos retirados",
+  "boardSummary": "Strig amplía sus accesos 6 u; Athene R13 queda exacto, con su desarrollo diferido.",
+  "thesis": "Un campo común empieza en accesos laterales acotados, se ensancha dentro de una estructura y se registra entre una faceta central y un apoyo continuo. El ensayo cultiva esa relación propia de C.",
+  "messageAlignment": "Ingeniería y atención protectora; búho como identidad. Se defiende aplomo compacto y se estudia disponibilidad del campo sin equiparar apertura con protección ni trasladar el control a identidad adoptada.",
+  "corporate": {
+    "id": "strig-r15-c-accesos-6u",
+    "title": "Strig / Accesos retirados 6 u",
+    "change": "Ensayo localizado sobre R13: cuatro nodos superiores de los retornos inferiores laterales pasan de y=78 a y=84. Dintel, centro y apoyo interior permanecen exactos.",
+    "intent": "Hacer más amplio el acceso al campo compartido conservando su cambio de sección, articulación central y apoyo. Cultivar el umbral compacto de C, sin reorientarlo ni eliminar toda contención.",
+    "risk": "El aumento de las ranuras puede seguir pareciendo una boca o mordaza; retirar masa lateral puede restar resguardo. Mayor apertura no acredita atención protectora.",
+    "bounds": [
+      12,
+      22,
+      116,
+      114
+    ],
+    "path": "M12 42 L32 22 H96 L116 42 V62 H96 V50 L88 42 H78 L64 56 L50 42 H40 L32 50 V62 H12 Z M12 84 H32 V84 L40 92 H88 L96 84 V84 H116 V94 L96 114 H32 L12 94 Z"
+  },
+  "product": {
+    "id": "athene-r15-c-control-r13",
+    "title": "Athene / Control R13, desarrollo diferido",
+    "change": "Sin cambios: path R13 exacto, conservado como control de estudio no adoptado. Escotadura inferior, centro, contraformas y continuidad facial intactos.",
+    "intent": "Mantener una referencia facial unitaria mientras se precisa una intervención propia de producto. No presentar la retirada corporativa como mejora simultánea de Athene.",
+    "risk": "Persisten las asociaciones posibles de máscara, robot, calavera y dos piernas. El control no es una solución aprobada ni una respuesta resuelta al mensaje de protección.",
+    "bounds": [
+      12,
+      22,
+      116,
+      108
+    ],
+    "path": "M12 42 L32 22 H96 L116 42 V68 Q116 94 96 108 H80 L64 84 L48 108 H32 Q12 94 12 68 Z M30 46 H48 L56 54 V66 Q44 82 30 66 Z M98 46 H80 L72 54 V66 Q84 82 98 66 Z"
+  },
+  "rationale": "La tutoría pide cultivar el umbral antes de sustituirlo por encuadre genérico. Se vuelve al R13 como control de relación espacial y se retiran exactamente sus retornos inferiores laterales 6 u; no se recupera por nostalgia ni se adopta. El dintel facetado, el suelo interior y el recorrido horizontal se conservan para que el efecto del acceso pueda observarse. La equivalencia con Athene no existe todavía: sus regiones oculares están cerradas y separadas por masa central. Hacerlas atravesables exigiría una operación distinta. Por eso esta ronda modifica solo Strig y muestra Athene R13 como control explícito, sin repetir la separación en discos/rombo de R14.",
+  "critiqueResponse": "Se conserva el umbral R13 y se ensaya solo un retiro lateral de 6 u. Centro, dintel y apoyo quedan exactos. Athene no tiene accesos equivalentes: abrir sus huecos cambiaría topología; se difiere y mantiene R13, incluida su escotadura. Mordaza y máscara siguen como posibles lecturas; apertura no prueba protección.",
+  "tradeoffs": [
+    "El acceso lateral pasa de 16 a 22 u; la estructura conserva compacidad y apoyo, pero puede continuar pareciendo una mordaza.",
+    "Retirar los retornos inferiores reduce 6 u de masa en cada borde; el soporte interior entre y=92 y y=114 conserva su espesor de 22 u.",
+    "La faceta central y el cambio de sección siguen identificando la operación de campo; no se presupone que basten para distintividad comercial.",
+    "Diferir Athene evita una equivalencia inventada, pero deja sin resolver su cierre facial y la asociación de piernas.",
+    "La diferencia de 6 u equivale a 0.75 px en canvas 16, 1.125 px en 24, 2.25 px en 48 y 6 px en 128; su efecto en reducción puede ser tenue."
+  ],
+  "nextChecks": [
+    "Mirar R13 y R15 de Strig con la misma altura y firma: señalar el acceso y decidir si gana disponibilidad sin perder aplomo o reforzar boca/mordaza.",
+    "Separar reproducción visual, preferencia de Tomás y asociación figurativa; no inferir recepción externa de esta comparación.",
+    "Mantener Athene R13 como control hasta localizar un acceso o relación facial propia y fijar explícitamente sus continuidades; estudiar la escotadura inferior solo en fase separada.",
+    "Si el acceso no aporta una mejora visible o de carácter, conservar R13 como control y retirar el ensayo; no compensarlo con otro cambio simultáneo."
+  ],
+  "operationMap": {
+    "corporate": {
+      "control": "Strig R13 / estudio no adoptado",
+      "entrada": "Borde izquierdo x=12..32. Ranura entre dintel y=62 y retorno inferior y=78; pasa a y=62..84, de 16 a 22 u.",
+      "ensanchamiento": "Entre x=32 y x=50, el techo interior asciende por (32,50)→(40,42)→(50,42); el suelo desciende por (32,84)→(40,92). Estos tramos interiores quedan fijos.",
+      "registro": "Faceta superior (50,42)→(64,56)→(78,42), enfrentada al suelo y=92. Separación central 36 u, intacta.",
+      "apoyo": "Suelo interior horizontal (40,92)→(88,92), base exterior y=114 y extremos inferiores y=94: intactos. No se elimina la base.",
+      "salida": "Ranura derecha x=96..116, espejo de entrada: y=62..78 pasa a y=62..84.",
+      "nodosModificados": [
+        {
+          "before": [
+            12,
+            78
+          ],
+          "after": [
+            12,
+            84
+          ]
+        },
+        {
+          "before": [
+            32,
+            78
+          ],
+          "after": [
+            32,
+            84
+          ]
+        },
+        {
+          "before": [
+            96,
+            78
+          ],
+          "after": [
+            96,
+            84
+          ]
+        },
+        {
+          "before": [
+            116,
+            78
+          ],
+          "after": [
+            116,
+            84
+          ]
+        }
+      ],
+      "limitesFijos": "Todo el subpath superior; (32,84),(40,92),(88,92),(96,84); base (12,94),(32,114),(96,114),(116,94). No cambia x ni bounds."
+    },
+    "product": {
+      "control": "Athene R13 / estudio no adoptado",
+      "entrada": "No existe acceso lateral: contraforma izquierda cerrada en x=30..56, y=46..74. El borde exterior en x=12 mantiene pared de 18 u junto a x=30.",
+      "ensanchamiento": "Región facial izquierda delimitada por (30,46),(48,46),(56,54),(56,66) y curva Q(44,82) hasta (30,66); su extremo inferior real es y=74. Derecha reflejada x=72..98.",
+      "registro": "Centro de masa entre x=56 y x=72 en y=54..66; separa los dos huecos. No es un campo continuo a través del eje.",
+      "apoyo": "Ambos huecos terminan en y=74. La región inferior une el rostro antes del vértice de escotadura (64,84); el contorno inferior y=108 y flancos (48,108),(80,108) quedan fijos.",
+      "salida": "No existe salida al exterior en la contraforma derecha; una pared separa x=98 del borde x=116. No se abrirá por analogía verbal.",
+      "accesoEnsayado": "Ninguno. Path exacto del control, incluida escotadura inferior."
+    }
+  },
+  "spatialCorrespondence": "R13 comparte hombros, centro y masas, pero sus vacíos no tienen la misma topología: Strig ya posee dos accesos laterales y campo continuo; Athene tiene dos huecos cerrados separados por masa. Retirar 6 u en Strig amplía un acceso existente. Atravesar las paredes de Athene exigiría cortar al menos 18 u, elegir altura/canal y demostrar qué continuidad conserva. No hay equivalencia localizada suficiente; producto diferido.",
+  "productDeferred": true,
+  "tutorBrief": "Ejecutar retiro corporativo exacto de 6 u después de mapear entrada, ensanchamiento, registro, apoyo y salida. Dibujar producto solo si existe correspondencia localizada; mantener escotadura inferior fija. No llenar una lámina rehaciendo la familia.",
+  "resultHypothesis": "En la QA, el acceso lateral se ve más alto y el apoyo aparece más separado del dintel; la faceta central y el suelo conservan la articulación R13. Mi crítica local todavía admite boca/mordaza y no encuentra por forma sola una señal nueva de protección. La hipótesis es que retirar el retorno haga disponible el campo sin perder aplomo. Tomás debe evaluar ese efecto; no se declara mejora. La diferencia técnica queda limitada a dos rectángulos de 20×6 u, 240 u² retiradas."
+}

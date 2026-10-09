@@ -1,0 +1,67 @@
+[
+  {
+    "id": "strig-r19-b-control",
+    "title": "Strig / Giros apoyados, conservado",
+    "change": "B3 R18 exacto; composición y contexto de firma.",
+    "intent": "Repartir la tinta en los dos giros exteriores del recorrido para reducir estrechamientos, sin perder doble continuidad ni volver al sólido.",
+    "risk": "El apoyo exterior gana tinta a costa del otro lado del giro. Puede cambiar el ritmo sin aportar mejora perceptiva; dos S legibles no están demostradas.",
+    "bounds": [
+      19,
+      22,
+      111.333,
+      108
+    ]
+  },
+  {
+    "id": "athene-r19-b-control",
+    "title": "Athene / Perfil R15, conservado",
+    "change": "Athene R15 exacto; sin repetir costura de Strig.",
+    "intent": "Conservar el centinela orientado que Tomás aprecia y usarlo como referencia de masa para las cuatro firmas corporativas.",
+    "risk": "Afinidad de Tomás y reconocimiento local del búho no equivalen a aprobación final ni recepción externa.",
+    "bounds": [
+      20,
+      20,
+      108,
+      100
+    ]
+  },
+  {
+    "id": "strig-r19-c-control",
+    "title": "Strig / Registro común, control",
+    "change": "Control R17 exacto. Se conserva la firma corporativa sin ensayo adicional.",
+    "intent": "Mantener la coordinación registrada entre dos planos y la amplitud de ingeniería de Strig.",
+    "risk": "Café sigue como asociación local posible; no se modifica la empresa para perseguirla.",
+    "bounds": [
+      19,
+      16,
+      109,
+      112
+    ]
+  },
+  {
+    "id": "athene-r19-c-control",
+    "title": "Athene / Control R17, pico preferido",
+    "change": "R17 exacto, con pico y=114. Tomás prefirió este control frente a la punta corta R18.",
+    "intent": "Conservar división, identidad de búho y coherencia del corte apreciadas por Tomás como evidencia local de afinidad.",
+    "risk": "Chat, máscara o robot siguen siendo asociaciones posibles; la preferencia local no acredita recepción externa.",
+    "bounds": [
+      12,
+      22,
+      116,
+      114
+    ]
+  },
+  {
+    "id": "athene-r19-c-hombros-articulados",
+    "title": "Athene / Hombros articulados",
+    "change": "Las dos curvas superiores Q se sustituyen por una faceta de45° y dos retornos curvos cortos por hombro. Extremos y cajas superiores fijos; resto del path R17 exacto.",
+    "intent": "Ensayar una jerarquía más asentada entre plano superior, encuentro oblicuo y lateral. Mantener suavidad en los encuentros, pico original y coordinación registrada, sin añadir oreja o ceja.",
+    "risk": "La envolvente puede ganar carácter de placa o máscara y perder suavidad; el cambio no garantiza profesionalidad, elegancia o menor chat.",
+    "bounds": [
+      12,
+      22,
+      116,
+      114
+    ]
+  }
+]

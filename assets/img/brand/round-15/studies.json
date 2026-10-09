@@ -1,0 +1,86 @@
+[
+  {
+    "id": "strig-a",
+    "title": "Strig / A actual",
+    "change": "Control conservado",
+    "intent": "Menor peso del emblema junto al nombre.",
+    "risk": "Menor presencia del símbolo aislado en el conjunto.",
+    "bounds": [
+      18,
+      21,
+      110,
+      107
+    ],
+    "exportNominalSize": 85
+  },
+  {
+    "id": "athene-a",
+    "title": "Athene / A actual",
+    "change": "Control conservado",
+    "intent": "Dar al símbolo presencia equivalente a las mayúsculas.",
+    "risk": "El rostro adquiere mayor protagonismo.",
+    "bounds": [
+      16,
+      30,
+      112,
+      78
+    ],
+    "exportNominalSize": 84.705
+  },
+  {
+    "id": "strig-b",
+    "title": "Strig / Barrido R13 intacto",
+    "change": "Control R13 exacto. No se ensaya el signo corporativo en esta ronda.",
+    "intent": "Conservar la firma nominal y el origen continuo del recorrido mientras se cultiva la relación cabeza/apoyo del producto.",
+    "risk": "La S sigue admitiendo energía deportiva y una referencia biológica tenue. Mantenerla como control no resuelve ni valida esas lecturas.",
+    "bounds": [
+      18,
+      22,
+      112,
+      108
+    ],
+    "exportNominalSize": 85
+  },
+  {
+    "id": "athene-b",
+    "title": "Athene / Apoyo próximo",
+    "change": "Retorno inferior del perfil R13 trasladado 8 u hacia arriba: plataforma92→84 y base108→100. Cinco vértices móviles; cabeza, codo interior y ojo intactos.",
+    "intent": "Ensayar una relación cabeza/cuello más asentada dentro de la atención orientada propia de B, sin volver al frente simétrico ni redibujar especie y ojo.",
+    "risk": "Puede reforzar un nueve o acortar demasiado el cuello. La especie, el ojo octogonal y el carácter deportivo de la firma siguen sin resolver; no se presentan como problemas eliminados.",
+    "bounds": [
+      20,
+      20,
+      108,
+      100
+    ],
+    "exportNominalSize": 85
+  },
+  {
+    "id": "strig-c",
+    "title": "Strig / Accesos retirados 6 u",
+    "change": "Ensayo localizado sobre R13: cuatro nodos superiores de los retornos inferiores laterales pasan de y=78 a y=84. Dintel, centro y apoyo interior permanecen exactos.",
+    "intent": "Hacer más amplio el acceso al campo compartido conservando su cambio de sección, articulación central y apoyo. Cultivar el umbral compacto de C, sin reorientarlo ni eliminar toda contención.",
+    "risk": "El aumento de las ranuras puede seguir pareciendo una boca o mordaza; retirar masa lateral puede restar resguardo. Mayor apertura no acredita atención protectora.",
+    "bounds": [
+      12,
+      22,
+      116,
+      114
+    ],
+    "exportNominalSize": 85
+  },
+  {
+    "id": "athene-c",
+    "title": "Athene / Control R13, desarrollo diferido",
+    "change": "Sin cambios: path R13 exacto, conservado como control de estudio no adoptado. Escotadura inferior, centro, contraformas y continuidad facial intactos.",
+    "intent": "Mantener una referencia facial unitaria mientras se precisa una intervención propia de producto. No presentar la retirada corporativa como mejora simultánea de Athene.",
+    "risk": "Persisten las asociaciones posibles de máscara, robot, calavera y dos piernas. El control no es una solución aprobada ni una respuesta resuelta al mensaje de protección.",
+    "bounds": [
+      12,
+      22,
+      116,
+      108
+    ],
+    "exportNominalSize": 85
+  }
+]

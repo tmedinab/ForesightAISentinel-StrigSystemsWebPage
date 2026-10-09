@@ -1,0 +1,61 @@
+[
+  {
+    "team": "A",
+    "name": "Campo y centinela abierto",
+    "thesis": "La S firma ingeniería; el rostro identifica el sistema.",
+    "tradeoffs": [
+      "Dirección preferida; distintividad y lectura facial pendientes."
+    ],
+    "corporate": "strig-a",
+    "product": "athene-a"
+  },
+  {
+    "team": "B",
+    "name": "Retorno sostenido",
+    "boardSummary": "Un recorrido asentado firma ingeniería; dos retornos envolventes concentran atención frontal.",
+    "messageAlignment": "Ingeniería y atención protectora; búho como identidad. Strig organiza un campo abstracto y estable; Athene concentra esa atención en una presencia frontal envolvente, sin adelgazar la masa ni imponer iniciales.",
+    "thesis": "El barrido deja de representar velocidad y se convierte en un retorno sostenido. Strig organiza un campo abierto mediante una cinta que vuelve sobre sí misma; Athene especializa el mismo principio en dos regiones faciales abiertas y envolventes. La masa firme y el recorrido son la herencia, no una inicial obligatoria.",
+    "rationale": "Los dos signos comparten una cinta de masa suficiente, campo interior amplio, hombro horizontal y retornos inferiores que se detienen antes de cerrar la figura. La empresa organiza un vacío único de manera facetada; el producto desarrolla dos regiones en un frente profundo y simétrico. La diferencia con A es observable: Strig tiene una cinta única con dos apoyos inferiores, no dos brazos rotacionales; Athene usa hombros continuos sin puntas superiores, mayor profundidad facial y centro breve de base horizontal. No se conserva una letra si impide el carácter solicitado. Las curvas de producto sirven a la envolvente, mientras las facetas corporativas ordenan el recorrido; no se impone un ángulo único como garantía de precisión. SVG manual para viewBox 0 0 128 128, currentColor, fill-rule evenodd, sin dependencias.",
+    "critiqueResponse": "La diagonal de la S y el perfil ave/nueve se sustituyen por una cinta asentada y atención frontal. Se conserva masa firme y continuidad, con campos abiertos amplios. Gana aplomo y pierde inicial directa y orientación lateral. Quedan sin resolver la lectura espontánea de búho y la posible asociación del producto con gafas/visor.",
+    "tradeoffs": [
+      "Gana aplomo y atención frontal; pierde la S explícita y el perfil distintivo. Búho, gafas y visor todavía deben contrastarse.",
+      "La empresa mantiene un recorrido único, abstracto y extensible, pero puede aproximarse a un arco arquitectónico o herradura.",
+      "Athene amplía el campo facial y elimina el ojo aislado; la frontalidad aumenta el vínculo de centinela y también la posibilidad de visor.",
+      "La masa no se adelgaza para evitar intimidación. Se reduce la convergencia de puntas y se conservan anchos reproducibles y una base estable.",
+      "No se incorpora una A: la estructura no la necesita y una inicial impuesta competiría con la atención sostenida."
+    ],
+    "nextChecks": [
+      "Comparar R13 y R14 en idénticos lockups, ficha y tamaños nativos para evaluar si gana aplomo sin perder identificación.",
+      "Revisar campo interior y apertura inferior a 24 px en una tinta e inversa; no convertir reproducción en prueba de reconocimiento.",
+      "Valorar con Tomás el coste de perder S/perfil y si el frente profundo aporta confianza o se acerca a gafas y casco.",
+      "Contrastar el recorrido corporativo con arcos, signos de integración y herraduras antes de fijar una dirección; no declarar originalidad registral ni aceptación externa."
+    ],
+    "corporate": "strig-b",
+    "product": "athene-b"
+  },
+  {
+    "team": "C",
+    "name": "Campo permeable",
+    "boardSummary": "Un campo abierto organiza la empresa; discos faciales abiertos dan presencia al centinela.",
+    "thesis": "La ingeniería organiza un campo común sin cerrarlo. El umbral deja de contener o apretar: dos soportes laterales mantienen paso y estabilidad. Athene hereda la apertura mediante dos discos faciales y un centro independiente, como hipótesis de atención firme.",
+    "messageAlignment": "Ingeniería y atención protectora; búho como identidad. Strig firma criterio de desarrollo extensible y Athene propone atención sostenida sobre el territorio. La forma no acredita protección ni prestaciones.",
+    "rationale": "R13 hacía literal el parentesco mediante un cuerpo compacto, pero el hueco parecía atrapado y Athene dependía de una máscara cerrada. La reformulación conserva un campo común y masas laterales: cambia la topología, el eje de paso y el centro. Strig trabaja estructura y planos; Athene interpreta facialmente esa relación con curvas continuas y un centro separado. De A se toma el principio de apertura, no su frente ni sus mejillas. De los referentes se aprende economía, separación de papeles y firma estable; no se copian símbolos ni se traslada un carácter de combate a la vigilancia forestal. La precisión y protección corresponden también a nombre, contenido y evidencia, no a una punta o una retícula obligatoria.",
+    "critiqueResponse": "Se elimina la oposición dintel/mandíbula de Strig. Athene pierde cabeza cerrada, huecos oculares y salida de dos piernas: los discos y pico son independientes, con paso central abierto. Mantiene masa. Quedan posibles lecturas de corchetes, gafas o instrumento; reducir robot/calavera y ganar búho son hipótesis pendientes de la reacción de Tomás.",
+    "tradeoffs": [
+      "Gana apertura y conserva masa; pierde la compacidad de R13 y acepta una empresa más próxima al lenguaje de encuadre.",
+      "El parentesco se desplaza de una silueta repetida a apertura axial, masas laterales y terminales; Athene admite mayor figuración.",
+      "El pico separado evita una nasal continua de casco, pero introduce una tercera masa y posible lectura de diana.",
+      "La ausencia de cejas oblicuas y cuerpo inferior elimina operaciones que endurecían R13; no demuestra una recepción protectora universal.",
+      "No se busca A visible: exigirla podría devolver una escotadura inferior o un triángulo dominante, reabriendo la crítica de piernas o máscara."
+    ],
+    "nextChecks": [
+      "Comparar C/R13 y C/R14 en las mismas firmas y aplicaciones junto a A estable y B desarrollado.",
+      "Preguntar a Tomás si el cambio visible abandona mordaza/calavera y sostiene aplomo; no llamar ciega a su lectura ni inventar consenso externo.",
+      "Inspeccionar cortes, vacío central y separación del pico a 16, 24, 32, 48 y 128 píxeles en positivo y negativo.",
+      "Evaluar si los discos sostienen identidad animal suficiente sin relato; si la lectura instrumental domina, reformular o retirar el producto sin añadir detalle por acumulación.",
+      "Si esta dirección se selecciona, contrastar brackets, gafas, búhos y símbolos de encuadre del repertorio público en un estudio específico de semejanzas; no declarar exclusividad registral."
+    ],
+    "corporate": "strig-c",
+    "product": "athene-c"
+  }
+]

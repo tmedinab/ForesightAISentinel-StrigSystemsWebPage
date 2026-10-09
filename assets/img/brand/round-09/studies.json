@@ -1,0 +1,67 @@
+[
+  {
+    "id": "strig-campo-control",
+    "title": "Campo / continuidad · control",
+    "change": "Control conservado",
+    "intent": "Mayor unidad; conserva apertura.",
+    "risk": "S tecnológica convencional.",
+    "bounds": [
+      18,
+      21,
+      110,
+      107
+    ]
+  },
+  {
+    "id": "strig-campo-facetas",
+    "title": "H1 / continuidad facetada",
+    "change": "Cortes internos de 8 u; simetría de 180 grados",
+    "intent": "S abierta con terminales interiores oblicuos.",
+    "risk": "El matiz puede desaparecer en pequeño.",
+    "bounds": [
+      18,
+      21,
+      110,
+      107
+    ]
+  },
+  {
+    "id": "strig-campo-apertura-control",
+    "title": "Campo / apertura común · control",
+    "change": "Control conservado",
+    "intent": "Un vacío abierto en la misma dirección.",
+    "risk": "C / bracket / encuadre genérico.",
+    "bounds": [
+      18,
+      21,
+      110,
+      107
+    ]
+  },
+  {
+    "id": "strig-campo-convergente",
+    "title": "H2 / apertura convergente",
+    "change": "Retornos interiores de 4 u; espejo horizontal",
+    "intent": "Apertura común con dos retornos triangulares.",
+    "risk": "Lectura de C / mandíbula / encuadre.",
+    "bounds": [
+      18,
+      21,
+      110,
+      107
+    ]
+  },
+  {
+    "id": "athene-mejillas",
+    "title": "Athene / abierto-mejillas",
+    "change": "Control conservado",
+    "intent": "Disco facial sugerido; base abierta.",
+    "risk": "Gafas / personaje.",
+    "bounds": [
+      16,
+      30,
+      112,
+      77
+    ]
+  }
+]

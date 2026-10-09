@@ -1,0 +1,346 @@
+{
+  "status": "pass",
+  "scenarioCount": 24,
+  "boardCount": 3,
+  "chromiumVersion": "151.0.7922.34",
+  "librsvgVersion": "2.62.91",
+  "note": "Rendering/bounds verification only. Letter recognition, aesthetics and customer preference are not measured.",
+  "results": [
+    {
+      "name": "strig-r16-b-control",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 18,
+        "y": 22,
+        "w": 94,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9897
+    },
+    {
+      "name": "strig-r16-b-control",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 18,
+        "y": 22,
+        "w": 94,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9856
+    },
+    {
+      "name": "strig-r16-b-control",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 18,
+        "y": 22,
+        "w": 94,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9023
+    },
+    {
+      "name": "strig-r16-b-control",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 18,
+        "y": 22,
+        "w": 94,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9906
+    },
+    {
+      "name": "strig-r16-b-control",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 18,
+        "y": 22,
+        "w": 94,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9943
+    },
+    {
+      "name": "strig-r16-b-control-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 15,
+        "y": 27.309993743896484,
+        "w": 334.0717468261719,
+        "h": 91.0260009765625,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9883
+    },
+    {
+      "name": "strig-r16-b-canal6",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 18,
+        "y": 22,
+        "w": 94,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9884
+    },
+    {
+      "name": "strig-r16-b-canal6",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 18,
+        "y": 22,
+        "w": 94,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9895
+    },
+    {
+      "name": "strig-r16-b-canal6",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 18,
+        "y": 22,
+        "w": 94,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9086
+    },
+    {
+      "name": "strig-r16-b-canal6",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 18,
+        "y": 22,
+        "w": 94,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9987
+    },
+    {
+      "name": "strig-r16-b-canal6",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 18,
+        "y": 22,
+        "w": 94,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9953
+    },
+    {
+      "name": "strig-r16-b-canal6-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 15,
+        "y": 27.309993743896484,
+        "w": 334.0717468261719,
+        "h": 91.0260009765625,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9867
+    },
+    {
+      "name": "strig-r16-b-canal10",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 18,
+        "y": 22,
+        "w": 94,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9524
+    },
+    {
+      "name": "strig-r16-b-canal10",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 18,
+        "y": 22,
+        "w": 94,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9943
+    },
+    {
+      "name": "strig-r16-b-canal10",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 18,
+        "y": 22,
+        "w": 94,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9003
+    },
+    {
+      "name": "strig-r16-b-canal10",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 18,
+        "y": 22,
+        "w": 94,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9719
+    },
+    {
+      "name": "strig-r16-b-canal10",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 18,
+        "y": 22,
+        "w": 94,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9954
+    },
+    {
+      "name": "strig-r16-b-canal10-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 15,
+        "y": 27.309993743896484,
+        "w": 334.0717468261719,
+        "h": 91.0260009765625,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9876
+    },
+    {
+      "name": "athene-r16-b-control",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "w": 88,
+        "h": 80,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.963
+    },
+    {
+      "name": "athene-r16-b-control",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "w": 88,
+        "h": 80,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9917
+    },
+    {
+      "name": "athene-r16-b-control",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "w": 88,
+        "h": 80,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9513
+    },
+    {
+      "name": "athene-r16-b-control",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "w": 88,
+        "h": 80,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9799
+    },
+    {
+      "name": "athene-r16-b-control",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "w": 88,
+        "h": 80,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9873
+    },
+    {
+      "name": "athene-r16-b-control-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 15.000001907348633,
+        "y": 28.4999942779541,
+        "w": 408.5000305175781,
+        "h": 59.50000762939453,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9925
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "ruta": "B / Recorrido y giros apoyados",
+  "alcance": "Revisión individual por asesor-agente; sin ranking entre rutas ni adopción.",
+  "material": ["scratch/round18/team_b.json", "R18/family-b.png", "R18/detail-b.png", "R18/native-sizes.png"],
+  "tesis": "Firma recorrida que se especializa en centinela orientado; el parentesco no exige repetir la costura sobre Athene.",
+  "cumplimiento": "Tres operaciones históricas exactas se comparan con el mismo producto. El refinamiento desplaza los dos codos interiores; mantiene canal4, terminales, perímetro y Athene. La redistribución de tinta y sus consecuencias están declaradas.",
+  "observado": [
+    "Sólido concentra tinta; diagonal conserva dos grandes masas; longitudinal muestra dos recorridos completos y más bordes interiores.",
+    "El ajuste de giros aumenta el apoyo exterior y redistribuye tinta entre rieles, sin crear otra costura.",
+    "En detalle grande el desplazamiento se aprecia. En16/24/32 el control longitudinal y el refinado son muy próximos; la costura conserva el mismo margen.",
+    "Las composiciones de familia mantienen nombre dominante y producto figurativo intacto. Longitudinal pesa menos por tinta que sólido o diagonal, pero no pierde su papel de firma al acompañar STRIG."
+  ],
+  "hipotesis": "El apoyo exterior puede estabilizar el ritmo de los giros. No se verifica una mejora equivalente de aplomo global, reconocimiento SS o parentesco por este desplazamiento pequeño.",
+  "beneficioRefinamiento": "Reparto de tinta más favorable en los dos apoyos exteriores dentro de la operación longitudinal que Tomás aprecia; los dos rieles siguen continuos.",
+  "costeRefinamiento": "La tinta se toma del otro lado de cada giro y se altera su ángulo de encuentro. No aumenta separación ni peso total apreciablemente; el problema de lectura pequeña no queda resuelto.",
+  "evaluacionFamilia": "La afinidad por dirección, retorno y silueta se conserva. Firma abstracta de doble recorrido y producto macizo pueden compartir familia sin igual cantidad de tinta o cortes. El nombre y la jerarquía hacen trabajo real; no se necesita incidir Athene para aparentar coherencia.",
+  "alternativas": {
+    "solido": "Más peso y máxima continuidad; renuncia a articulación de partes.",
+    "diagonal": "Separación concentrada conservando grandes masas; no dos S completas.",
+    "longitudinal": "Recorrido doble defendible; menor masa por riel y más información en reducción.",
+    "girosApoyados": "Cultiva esa misma operación con apoyo localizado; no es una cuarta dirección conceptual."
+  },
+  "decisionProvisional": "Si el doble recorrido es la dirección que Tomás quiere cultivar, conservaría3/Giros apoyados como candidato de acabado, con2 como control. Su ganancia es localizada, no una superioridad estética demostrada. Sólido y diagonal siguen alternativas legítimas de carácter; decidir operación antes de otra microiteración.",
+  "siguienteIntervencion": "Seleccionar masa sólida, articulación diagonal o doble recorrido mediante la familia presentada. Después comprobar cabecera y documento reales para fijar composición y uso pequeño. No dibujar nuevos giros sin una debilidad observada; no convertir cada diferencia de píxel en otra ronda.",
+  "diferido": ["Corte doble en Athene", "Cambiar figura de producto para igualar tinta", "Afirmar que3 resuelve microescala", "Sumar SS literales", "Logo definitivo por QA técnica"],
+  "limites": "Encargo y efecto geométrico comprobables; carácter profesional, seguridad percibida y reconocimiento externo permanecen sin validar."
+}

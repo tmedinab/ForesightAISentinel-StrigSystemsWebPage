@@ -1,0 +1,100 @@
+{
+  "team": "C",
+  "name": "Registro común / Hombros articulados",
+  "thesis": "Las partes completan una presencia por una interfaz registrada. El ensayo cultiva solo el encuentro de hombros superiores con laterales para dar estructura a esa envolvente, conservando el pico preferido.",
+  "boardSummary": "Strig exacto; Athene compara R17 con hombros facetados y retornos curvos contenidos.",
+  "corporates": [
+    {
+      "id": "strig-r19-c-control",
+      "title": "Strig / Registro común, control",
+      "change": "Control R17 exacto. Se conserva la firma corporativa sin ensayo adicional.",
+      "intent": "Mantener la coordinación registrada entre dos planos y la amplitud de ingeniería de Strig.",
+      "risk": "Café sigue como asociación local posible; no se modifica la empresa para perseguirla.",
+      "bounds": [
+        19,
+        16,
+        109,
+        112
+      ],
+      "path": "M93 16 L109 32 V96 L93 112 H81 V82 L59 60 V16 Z M49 16 V64 L71 86 V112 H37 L19 94 V34 L37 16 Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "athene-r19-c-control",
+      "title": "Athene / Control R17, pico preferido",
+      "change": "R17 exacto, con pico y=114. Tomás prefirió este control frente a la punta corta R18.",
+      "intent": "Conservar división, identidad de búho y coherencia del corte apreciadas por Tomás como evidencia local de afinidad.",
+      "risk": "Chat, máscara o robot siguen siendo asociaciones posibles; la preferencia local no acredita recepción externa.",
+      "bounds": [
+        12,
+        22,
+        116,
+        114
+      ],
+      "path": "M12 44 Q12 22 38 22 H50 L56 30 V52 L62 58 V78 L72 88 H116 V92 Q104 102 88 102 H76 L64 114 L52 102 H40 Q12 94 12 68 Z M68 30 L78 22 H90 Q116 22 116 44 V68 Q116 78 114 80 H84 L74 70 V54 L68 48 Z M45 58 A11 11 0 1 1 23 58 A11 11 0 1 1 45 58 Z M105 58 A11 11 0 1 1 83 58 A11 11 0 1 1 105 58 Z"
+    },
+    {
+      "id": "athene-r19-c-hombros-articulados",
+      "title": "Athene / Hombros articulados",
+      "change": "Las dos curvas superiores Q se sustituyen por una faceta de 45° y dos retornos curvos cortos por hombro. Extremos y cajas superiores fijos; resto del path R17 exacto.",
+      "intent": "Ensayar una jerarquía más asentada entre plano superior, encuentro oblicuo y lateral. Mantener suavidad en los encuentros, pico original y coordinación registrada, sin añadir oreja o ceja.",
+      "risk": "La envolvente puede ganar carácter de placa o máscara y perder suavidad; el cambio no garantiza profesionalidad, elegancia o menor chat.",
+      "bounds": [
+        12,
+        22,
+        116,
+        114
+      ],
+      "path": "M12 44 V38 Q12 36 14 34 L24 24 Q26 22 30 22 H38 H50 L56 30 V52 L62 58 V78 L72 88 H116 V92 Q104 102 88 102 H76 L64 114 L52 102 H40 Q12 94 12 68 Z M68 30 L78 22 H90 H98 Q102 22 104 24 L114 34 Q116 36 116 38 V44 V68 Q116 78 114 80 H84 L74 70 V54 L68 48 Z M45 58 A11 11 0 1 1 23 58 A11 11 0 1 1 45 58 Z M105 58 A11 11 0 1 1 83 58 A11 11 0 1 1 105 58 Z"
+    }
+  ],
+  "rationale": "Fecha de registro 2026-10-07. Se lee la revisión R18 y la confirmación de Tomás: el pico original se conserva. La hipótesis se desplaza al encuentro superior/lateral señalado por el asesor, sin reabrir punta, ojos o junta. R17 tiene curvas superiores continuas entre lateral y plano; el ensayo introduce un tramo oblicuo legible y retornos tangentes cortos dentro de las mismas cajas. La intención es ordenar curva y faceta para una presencia más asentada, no dibujar una prestación ni borrar asociaciones posibles. Se cultiva Registro común de R17, sin reinterpretar Umbral ni usar otras rutas como molde.",
+  "tradeoffs": [
+    "Gana un tramo oblicuo explícito entre plano y lateral; puede perder suavidad y aumentar placa/máscara.",
+    "Pico, ojos y corte permanecen iguales: la comparación no confunde la transición superior con cambio de identidad animal.",
+    "Los encuentros curvos mantienen continuidad tangencial con plano, faceta y lateral; no se añade una esquina aguda como ceja.",
+    "En 16/24 px el matiz puede ser pequeño; el refinamiento no merece adoptarse solo por diferencia visible en grande.",
+    "Café/chat pueden permanecer. La lectura y el carácter se contrastan con Tomás, sin asumir profesionalidad por usar 45°."
+  ],
+  "nextChecks": [
+    "Comparar control y ensayo al mismo origen/escala: localizar si el hombro aporta aplomo o refuerza placa/máscara.",
+    "Mantener pico y ojos registrados durante la revisión para que no parezcan cambiar de posición por normalización óptica.",
+    "Comprobar 16/24/32/128 positivo/inversa, bounds y diferencia localizada en dos cajas de hombro.",
+    "Tomás evalúa asociación, carácter y afinidad por separado; si el ensayo endurece sin beneficio, conservar R17.",
+    "No cambiar otra relación hasta recibir reacción sobre esta transición; el ensayo no constituye selección ni adopción."
+  ],
+  "operationMap": {
+    "preGeometryRecord": {
+      "objective": "Carácter de envolvente más asentado mediante jerarquía plano/faceta/lateral. Coste previsto: placa/máscara y pérdida de suavidad.",
+      "operation": "Sustituir dos Q por encuentros de faceta de 45° con retornos curvos cortos, sin desplazar los cuatro extremos de hombro.",
+      "leftControl": "De(12,44) a(38,22), controlQ(12,22).",
+      "rightControl": "De(90,22) a(116,44), controlQ(116,22).",
+      "fixedBeforeDrawing": "Pico(64,114), hombros extremos, corona interior, ambos círculos de ojos, ambos bordes de junta, salida lateral y todo el resto del contorno."
+    },
+    "left": {
+      "box": [
+        12,
+        22,
+        38,
+        44
+      ],
+      "newSequence": "(12,44)→(12,38), Q control(12,36) hasta(14,34), faceta hasta(24,24), Q control(26,22) hasta(30,22), plano hasta(38,22).",
+      "continuity": "Vertical→retornoQ→faceta de 45°→retornoQ→horizontal; tangentes coinciden en cada encuentro."
+    },
+    "right": {
+      "box": [
+        90,
+        22,
+        116,
+        44
+      ],
+      "newSequence": "(90,22)→(98,22), Q control(102,22) hasta(104,24), faceta hasta(114,34), Q control(116,36) hasta(116,38), vertical hasta(116,44).",
+      "continuity": "Horizontal→retornoQ→faceta de 45°→retornoQ→vertical; tangentes coinciden."
+    },
+    "fixed": "Todos los comandos exteriores a las dos curvasQ originales quedan exactos. Bounds [12,22,116,114], origen0..128 y escalas idénticos al control.",
+    "corporate": "R17 exacto, sin refinamiento.",
+    "date": "2026-10-07"
+  },
+  "critiqueResponse": "Tomás prefiere el pico R17; se conserva. Solo se ensayan dos hombros: faceta de 45° y retornos curvos cortos entre plano y lateral. Ojos, junta, salida, pico y bounds exactos. Se busca aplomo de envolvente; placa/máscara y menor suavidad son costes posibles. No se promete eliminar chat ni validar profesionalidad."
+}

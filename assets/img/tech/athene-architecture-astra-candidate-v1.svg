@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" fill="none" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="astra-title astra-desc" focusable="false">
+  <title id="astra-title">Athene: arquitectura conceptual / conceptual architecture</title>
+  <desc id="astra-desc">A generic fixed-wing VTOL observes a schematic forest through a forward underslung camera. A magnified computer detail is connected to a conceptual locator on the aircraft, indicating onboard inference without specifying component placement. Image and notice symbols travel from the aircraft to a local human review station. Three labels identify functions, not rigid mission steps. Original illustration; not approved Noctua geometry, actual thermal imagery or demonstrated performance. Aeronave genérica, ampliaciones y ubicación de componentes ilustrativas. Sin CAD ni resultados medidos.</desc>
+  <defs>
+    <linearGradient id="astra-field" x1="150" y1="217" x2="150" y2="361" gradientUnits="userSpaceOnUse"><stop stop-color="#00e5ff" stop-opacity=".14"/><stop offset="1" stop-color="#00e5ff" stop-opacity=".02"/></linearGradient>
+    <marker id="astra-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="m2 1 6 4-6 4" stroke="#00e5ff" stroke-width="1.8"/></marker>
+  </defs>
+  <!-- Visible scope travels with the SVG when exported. Adjacent HTML carries the full translated caption. -->
+  <text x="24" y="25" fill="#94a3b8" font-family="Arial, sans-serif" font-size="12" letter-spacing="1">ESQUEMA CONCEPTUAL / CONCEPTUAL DIAGRAM</text>
+  <!-- Enlarged detail uses a magnifier convention, not a second device in the data chain. -->
+  <path d="M225 139 407 59M247 157 409 135" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <!-- Terrain: qualitative relief and a schematic observation, not a coverage model. -->
+  <path d="m37 337 173-56 218 81-173 63Z" fill="#101d27" stroke="#516779" stroke-width="1.5"/>
+  <path d="M37 337v12l218 88v-12Zm218 88 173-63v12l-173 63Z" fill="#162936" stroke="#516779" stroke-width="1.5"/>
+  <path d="m73 326 215 88m-162-105 215 86m-159-104 211 87M88 359l175-59m-123 80 174-61m-122 82 173-63" stroke="#94a3b8" stroke-opacity=".15" stroke-width="1.2"/>
+  <path d="M152 221 89 352Q142 380 211 350Z" fill="url(#astra-field)"/>
+  <path d="M152 221 89 352m63-131 59 129" stroke="#00e5ff" stroke-opacity=".38" stroke-width="1.6" stroke-dasharray="5 7"/>
+  <ellipse cx="150" cy="352" rx="61" ry="19" stroke="#00e5ff" stroke-opacity=".4" stroke-width="1.5"/>
+
+<g transform="translate(78 331) scale(0.85)"><path d="m-16 4 15-5 18 7-16 5Z" fill="#07090e" opacity=".6"/><path d="M0-43-16-9 0-4Z" fill="#294451" stroke="#6c8795" stroke-width="1.5"/><path d="M0-43 16-10 0-4Z" fill="#172f3c" stroke="#6c8795" stroke-width="1.5"/><path d="M0-4V6" stroke="#94a3b8" stroke-width="2"/></g>
+<g transform="translate(197 308) scale(1)"><path d="m-16 4 15-5 18 7-16 5Z" fill="#07090e" opacity=".6"/><path d="M0-43-16-9 0-4Z" fill="#294451" stroke="#6c8795" stroke-width="1.5"/><path d="M0-43 16-10 0-4Z" fill="#172f3c" stroke="#6c8795" stroke-width="1.5"/><path d="M0-4V6" stroke="#94a3b8" stroke-width="2"/></g>
+<g transform="translate(307 353) scale(0.9)"><path d="m-16 4 15-5 18 7-16 5Z" fill="#07090e" opacity=".6"/><path d="M0-43-16-9 0-4Z" fill="#294451" stroke="#6c8795" stroke-width="1.5"/><path d="M0-43 16-10 0-4Z" fill="#172f3c" stroke="#6c8795" stroke-width="1.5"/><path d="M0-4V6" stroke="#94a3b8" stroke-width="2"/></g>
+<g transform="translate(239 396) scale(1)"><path d="m-16 4 15-5 18 7-16 5Z" fill="#07090e" opacity=".6"/><path d="M0-43-16-9 0-4Z" fill="#294451" stroke="#6c8795" stroke-width="1.5"/><path d="M0-43 16-10 0-4Z" fill="#172f3c" stroke="#6c8795" stroke-width="1.5"/><path d="M0-4V6" stroke="#94a3b8" stroke-width="2"/></g>
+<g transform="translate(354 376) scale(0.7)"><path d="m-16 4 15-5 18 7-16 5Z" fill="#07090e" opacity=".6"/><path d="M0-43-16-9 0-4Z" fill="#294451" stroke="#6c8795" stroke-width="1.5"/><path d="M0-43 16-10 0-4Z" fill="#172f3c" stroke="#6c8795" stroke-width="1.5"/><path d="M0-4V6" stroke="#94a3b8" stroke-width="2"/></g>
+<g stroke="#f59e0b" stroke-width="2.6"><path d="M127 335v-8h10m29 0h10v8m0 24v8h-10m-29 0h-10v-8"/><circle cx="151" cy="336" r="5"/><path d="M151 343v12m-9-6 9-6 9 6m-9 6-7 10m7-10 7 10"/></g>
+<path d="M234.3 85.98L70.14 155.9" stroke="#7895a6" stroke-width="5"/>
+<path d="M397.7 141.02L233.54 210.94" stroke="#7895a6" stroke-width="5"/>
+<path d="M279.52 80.56L292.48 75.04L345.38 88.74L364.38 95.14L406.48 113.44L393.52 118.96L341.83 104.02L324.73 98.26Z" fill="#385361" stroke="#cbd5e1" stroke-width="2"/>
+<path d="M79.11 100.08L102.87 89.96L250.56 124.88L288.56 137.68L397.37 189.16L373.61 199.28L227.26 162.34L193.06 150.82Z" fill="#355363" stroke="#cbd5e1" stroke-width="2"/>
+<path d="M79.11 100.08L193.06 150.82L227.26 162.34L373.61 199.28L373.61 204.28L227.26 167.34L193.06 155.82L79.11 105.08Z" fill="#182f3c" stroke="#8da8b7" stroke-width="1.6"/>
+<path d="M95.35 97.96L196.13 143.44" stroke="#7895a6" stroke-width="1.3"/>
+<path d="M374.65 192.04L243.63 159.44" stroke="#7895a6" stroke-width="1.3"/>
+<path d="M115.12 199.06 Q113.83 181.74 150.55 161.1 L261.27 115.84 349.48 94.24 282.17 122.88 179.05 170.7 Q142.33 191.34 115.12 199.06Z" fill="#557282" stroke="#e2e8f0" stroke-width="2.2"/>
+<path d="M115.12 199.06 Q142.33 191.34 179.05 170.7 L282.17 122.88 349.48 94.24 333.71 113.58 279.75 141.36 178.1 185.38 Q141.64 199.46 115.12 199.06Z" fill="#233e4e" stroke="#94a3b8" stroke-width="1.8"/>
+<path d="M139.96 180.48L319.24 100.12" stroke="#cbd5e1" stroke-width="1.4"/>
+<path d="M311.68 103.34L333.28 59.14L352.72 92.86Z" fill="#557282" stroke="#cbd5e1" stroke-width="2"/>
+<path d="M233.22 86.44L233.22 73.44" stroke="#cbd5e1" stroke-width="3"/><path d="M212.7 82.18L215.23 82.9L218.07 83.46L221.17 83.84L224.47 84.05L227.93 84.08L231.47 83.92L235.05 83.58L238.59 83.08L242.04 82.4L245.34 81.57L248.44 80.61L251.27 79.52L253.79 78.33L255.97 77.05L257.75 75.71L259.11 74.34L260.03 72.94L260.49 71.56L260.49 70.21L260.02 68.91L259.09 67.69L257.71 66.57L255.92 65.57L253.74 64.7L251.21 63.98L248.37 63.42L245.27 63.04L241.97 62.83L238.51 62.8L234.97 62.96L231.39 63.3L227.85 63.8L224.4 64.48L221.1 65.31L218 66.27L215.17 67.36L212.65 68.55L210.47 69.83L208.69 71.17L207.33 72.54L206.41 73.94L205.95 75.32L205.95 76.67L206.42 77.97L207.35 79.19L208.73 80.31L210.52 81.31Z" fill="#10222c" stroke="#94a3b8" stroke-width="1.7"/><path d="M241.82 63.98L224.62 82.9" stroke="#cbd5e1" stroke-width="3"/><circle cx="233.22000000000003" cy="73.44000000000001" r="3" fill="#f8fafc"/>
+<path d="M73.38 154.52L73.38 141.52" stroke="#cbd5e1" stroke-width="3"/><path d="M52.86 150.26L55.39 150.98L58.23 151.54L61.33 151.92L64.63 152.13L68.09 152.16L71.63 152L75.21 151.66L78.75 151.16L82.2 150.48L85.5 149.65L88.6 148.69L91.43 147.6L93.95 146.41L96.13 145.13L97.91 143.79L99.27 142.42L100.19 141.02L100.65 139.64L100.65 138.29L100.18 136.99L99.25 135.77L97.87 134.65L96.08 133.65L93.9 132.78L91.37 132.06L88.53 131.5L85.43 131.12L82.13 130.91L78.67 130.88L75.13 131.04L71.55 131.38L68.01 131.88L64.56 132.56L61.26 133.39L58.16 134.35L55.33 135.44L52.81 136.63L50.63 137.91L48.85 139.25L47.49 140.62L46.57 142.02L46.11 143.4L46.11 144.75L46.58 146.05L47.51 147.27L48.89 148.39L50.68 149.39Z" fill="#10222c" stroke="#94a3b8" stroke-width="1.7"/><path d="M81.98 132.06L64.78 150.98" stroke="#cbd5e1" stroke-width="3"/><circle cx="73.37999999999998" cy="141.51999999999998" r="3" fill="#f8fafc"/>
+<path d="M396.62 141.48L396.62 128.48" stroke="#cbd5e1" stroke-width="3"/><path d="M376.1 137.22L378.63 137.94L381.47 138.5L384.57 138.88L387.87 139.09L391.33 139.12L394.87 138.96L398.45 138.62L401.99 138.12L405.44 137.44L408.74 136.61L411.84 135.65L414.67 134.56L417.19 133.37L419.37 132.09L421.15 130.75L422.51 129.38L423.43 127.98L423.89 126.6L423.89 125.25L423.42 123.95L422.49 122.73L421.11 121.61L419.32 120.61L417.14 119.74L414.61 119.02L411.77 118.46L408.67 118.08L405.37 117.87L401.91 117.84L398.37 118L394.79 118.34L391.25 118.84L387.8 119.52L384.5 120.35L381.4 121.31L378.57 122.4L376.05 123.59L373.87 124.87L372.09 126.21L370.73 127.58L369.81 128.98L369.35 130.36L369.35 131.71L369.82 133.01L370.75 134.23L372.13 135.35L373.92 136.35Z" fill="#10222c" stroke="#94a3b8" stroke-width="1.7"/><path d="M405.22 119.02L388.02 137.94" stroke="#cbd5e1" stroke-width="3"/><circle cx="396.62" cy="128.48000000000002" r="3" fill="#f8fafc"/>
+<path d="M236.78 209.56L236.78 196.56" stroke="#cbd5e1" stroke-width="3"/><path d="M216.26 205.3L218.79 206.02L221.63 206.58L224.73 206.96L228.03 207.17L231.49 207.2L235.03 207.04L238.61 206.7L242.15 206.2L245.6 205.52L248.9 204.69L252 203.73L254.83 202.64L257.35 201.45L259.53 200.17L261.31 198.83L262.67 197.46L263.59 196.06L264.05 194.68L264.05 193.33L263.58 192.03L262.65 190.81L261.27 189.69L259.48 188.69L257.3 187.82L254.77 187.1L251.93 186.54L248.83 186.16L245.53 185.95L242.07 185.92L238.53 186.08L234.95 186.42L231.41 186.92L227.96 187.6L224.66 188.43L221.56 189.39L218.73 190.48L216.21 191.67L214.03 192.95L212.25 194.29L210.89 195.66L209.97 197.06L209.51 198.44L209.51 199.79L209.98 201.09L210.91 202.31L212.29 203.43L214.08 204.43Z" fill="#10222c" stroke="#94a3b8" stroke-width="1.7"/><path d="M245.38 187.1L228.18 206.02" stroke="#cbd5e1" stroke-width="3"/><circle cx="236.77999999999997" cy="196.56" r="3" fill="#f8fafc"/>
+<!-- Enlarged camera and functional onboard locator; neither defines physical packaging. -->
+  <path d="M151 193v11" stroke="#cbd5e1" stroke-width="4"/>
+  <path d="M133 206v9q0 15 18 15t18-15v-9" stroke="#00e5ff" stroke-width="2.8"/>
+  <path d="m140 205 18-4 9 7v14l-19 4-8-6Z" fill="#23495b" stroke="#7adbe5" stroke-width="2.5"/>
+  <ellipse cx="149" cy="216" rx="6" ry="7" fill="#07090e" stroke="#00e5ff" stroke-width="2.5"/>
+  <path d="m220 135 17-8 20 8-17 9Z" fill="#0c1017" stroke="#00e5ff" stroke-width="2.5"/>
+  <path d="M171 210h17l42-59" stroke="#00e5ff" stroke-width="2.5" marker-end="url(#astra-arrow)"/>
+  <!-- Detail circle, quiet hardware; cyan is reserved for information processing. -->
+  <circle cx="449" cy="96" r="51" fill="#101923" stroke="#94a3b8" stroke-width="1.7"/>
+  <rect x="423" y="70" width="52" height="52" rx="3" fill="#0c1017" stroke="#cbd5e1" stroke-width="2"/>
+  <path d="M434 62v8m15-8v8m15-8v8m-30 52v8m15-8v8m15-8v8m-49-45h8m-8 15h8m-8 15h8m52-30h8m-8 15h8m-8 15h8" stroke="#94a3b8" stroke-width="2"/>
+  <path d="m435 85 14 11-14 11m14-11 15-11m-15 11 15 11" stroke="#00e5ff" stroke-width="2.5"/>
+  <g fill="#0c1017" stroke="#00e5ff" stroke-width="2"><circle cx="435" cy="85" r="3"/><circle cx="435" cy="107" r="3"/><circle cx="464" cy="85" r="3"/><circle cx="464" cy="107" r="3"/></g>
+  <circle cx="449" cy="96" r="4" fill="#00e5ff"/>
+  <text x="449" y="163" text-anchor="middle" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="12">A BORDO / ONBOARD</text>
+  <!-- Data leaves the aircraft, not the magnified-detail circle. -->
+  <path d="M249 151 301 240h187q16 0 16 16v12" stroke="#00e5ff" stroke-width="2.7" marker-end="url(#astra-arrow)"/>
+  <!-- A frame and notice on the link represent deliverable information, not RF performance. -->
+  <rect x="386" y="219" width="59" height="44" rx="3" fill="#0c1017" stroke="#00e5ff" stroke-width="2"/>
+  <path d="m393 255 10-10 9 6 11-15 14 11" stroke="#94a3b8" stroke-width="1.6"/>
+  <path d="M401 226h12v12h-12Z" fill="#3e301c" stroke="#f59e0b" stroke-width="1.5"/>
+  <path d="M407 229v4m0 2v.5" stroke="#f59e0b" stroke-width="1.6"/>
+  <!-- Local review station: one evidence view and one alert, no invented telemetry. -->
+  <g transform="translate(-20 0)">
+  <path d="m531 235 10-8h133v105l-10 8V235Z" fill="#233745" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="531" y="235" width="133" height="105" rx="3" fill="#101923" stroke="#cbd5e1" stroke-width="2.3"/>
+  <rect x="541" y="246" width="113" height="83" rx="1" fill="#0c1017" stroke="#728996" stroke-width="1.4"/>
+  <path d="M582 340v19h32m-32-19h26v19m-44 0h68l-10 7h-68Z" fill="#1e3443" stroke="#94a3b8" stroke-width="1.8"/>
+  <path d="M552 254h18v18h-18Z" fill="#3e301c" stroke="#f59e0b" stroke-width="1.8"/>
+  <path d="M561 259v6m0 3v1" stroke="#f59e0b" stroke-width="2"/>
+  <path d="M581 255h61m-61 9h35" stroke="#94a3b8" stroke-width="2"/>
+  <path d="m551 316 18-30 15 25m-22-3h12m-5 2v10" stroke="#728996" stroke-width="1.7"/>
+  <g stroke="#f59e0b" stroke-width="2"><path d="M596 287v-7h8m29 0h8v7m0 27v7h-8m-29 0h-8v-7"/><circle cx="619" cy="290" r="4"/><path d="M619 297v12m-8-6 8-6 8 6m-8 6-6 9m6-9 6 9"/></g>
+  </g>
+  <!-- Human remains a visible endpoint, linked to the station without an approval check mark. -->
+  <circle cx="681" cy="275" r="11" stroke="#e2e8f0" stroke-width="2.4"/>
+  <path d="M661 329v-12a20 20 0 0 1 40 0v12m-40-7h40" stroke="#e2e8f0" stroke-width="2.4"/>
+  <g font-family="monospace" font-size="23" fill="#cbd5e1"><text x="39" y="87">01</text><text x="491" y="57">02</text><text x="518" y="218">03</text></g>
+  <text x="24" y="452" fill="#94a3b8" font-family="Arial, sans-serif" font-size="11.5">Aeronave genérica · componentes ampliados / Generic aircraft · enlarged components</text>
+</svg>

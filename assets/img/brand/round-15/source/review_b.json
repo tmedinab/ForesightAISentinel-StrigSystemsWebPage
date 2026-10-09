@@ -1,0 +1,24 @@
+{
+  "ruta": "B / Barrido y apoyo próximo",
+  "materialRevisado": ["R15/source/team_b.json", "R15/route-b.png", "R15/native-sizes.png", "R13/source/team_b.json", "docs/brand/TUTORIA_RUTAS_ABC.json: ruta B"],
+  "tesis": "Una firma continua se transforma en atención orientada; el recorrido vuelve desde la cabeza al apoyo inferior.",
+  "cumplimiento": "Sí. Los cinco puntos del retorno suben 8 u; coordenadas x, cabeza, ojo, codo interior y Strig permanecen. Cambios derivados de pendiente y unión están declarados. No se vuelve a un frente simétrico.",
+  "observado": [
+    "El perfil R15 ocupa 8 u menos de altura y conserva orientación derecha, base horizontal y apertura interior.",
+    "La plataforma queda más próxima a cabeza; el tramo vertical exterior y el descenso hacia el retorno se acortan.",
+    "La cabeza adquiere mayor proporción dentro del conjunto; no fue escalada ni redibujada.",
+    "La silueta nativa mantiene cabeza orientada y recorrido; en reducción el ojo octogonal funciona como pequeña abertura, con menor detalle de su geometría."
+  ],
+  "hipotesis": [
+    "En esta revisión la compacidad aumenta claramente; el aplomo buscado no mejora con igual claridad. Acercar apoyo no garantiza reposo perceptivo.",
+    "Sigue siendo posible una firma numérica tipo nueve o un ave genérica; no hay evidencia externa ni respuesta nueva de Tomás que lo resuelva.",
+    "El parentesco de recorrido con Strig sigue defendible, pero identificación de búho no se deduce de mantener un ojo aislado."
+  ],
+  "ganancia": "Ensayo causal legible dentro de la identidad propia. Consigue compacidad sin borrar perfil, firma ni orientación, y permite distinguir efecto geométrico de intención semántica.",
+  "coste": "Menos recorrido de cuello y enlace interior más horizontal. La silueta puede acercarse al nueve; se mantiene pendiente el carácter específico del centinela. El control empresarial no recibe mejora en esta ronda.",
+  "preservacionIdentidad": "Sí. Es cultivo del barrido nominal/orientado de B, no reemplazo de su tesis. Conserva recursos sin declararlos aprobados.",
+  "reinspeccionOrigenFijo": "Revisadas route-b.png y native-sizes.png regeneradas con escala y origen de canvas128 fijos. La cabeza ocupa la misma posición en el par; la base sube8 u. Se confirma compacidad y se mantiene aplomo indeterminado. La revisión previa no necesita cambiar decisión o siguiente intervención.",
+  "decisionProvisional": "Conservar R13 y R15 como controles de ritmo; mantener R15 como candidato de compacidad, sin proclamarlo mejora de aplomo. Seguir cultivando B; no cerrar master por cumplir coordenadas.",
+  "siguienteIntervencion": "Recoger reacción de Tomás al perfil más compacto. El problema posterior de identidad está en la relación cabeza-cuello y región facial, no en otra reducción automática de altura. Elegir una sola relación del contorno de cabeza/disco facial para fortalecer centinela, conservando dirección y retorno; fijar primero qué queda intacto.",
+  "diferido": ["Frontalidad obligatoria", "Suprimir S por asociación deportiva posible", "Rediseñar ojo y apoyo simultáneamente", "Declarar especie reconocida", "Adoptar R15 sin reacción al ritmo"]
+}

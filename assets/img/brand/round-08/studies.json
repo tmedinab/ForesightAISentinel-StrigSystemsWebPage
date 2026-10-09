@@ -1,0 +1,67 @@
+[
+  {
+    "id": "strig-campo-control",
+    "title": "Campo / continuidad R05",
+    "change": "Control conservado",
+    "intent": "Mayor unidad; conserva apertura.",
+    "risk": "S tecnológica convencional.",
+    "bounds": [
+      18,
+      21,
+      110,
+      107
+    ]
+  },
+  {
+    "id": "strig-campo-direccion",
+    "title": "Campo / apertura común",
+    "change": "Pieza inferior reflejada sobre x64",
+    "intent": "Un vacío abierto en la misma dirección.",
+    "risk": "C / bracket / encuadre genérico.",
+    "bounds": [
+      18,
+      21,
+      110,
+      107
+    ]
+  },
+  {
+    "id": "strig-bilateral-control",
+    "title": "Bilateral / frente R05",
+    "change": "Control conservado",
+    "intent": "Gesto más contenido.",
+    "risk": "menos tensión / carácter.",
+    "bounds": [
+      12,
+      32,
+      116,
+      76
+    ]
+  },
+  {
+    "id": "strig-bilateral-planos",
+    "title": "Bilateral / planos",
+    "change": "Sin escalón lateral; base más contenida",
+    "intent": "Dos masas coordinadas, menos rostro.",
+    "risk": "Módulos genéricos / menor presencia.",
+    "bounds": [
+      12,
+      32,
+      116,
+      68
+    ]
+  },
+  {
+    "id": "athene-mejillas",
+    "title": "Athene / abierto-mejillas",
+    "change": "Control conservado",
+    "intent": "Disco facial sugerido; base abierta.",
+    "risk": "Gafas / personaje.",
+    "bounds": [
+      16,
+      30,
+      112,
+      77
+    ]
+  }
+]

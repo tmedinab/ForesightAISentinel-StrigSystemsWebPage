@@ -1,0 +1,132 @@
+[
+  {
+    "id": "campo-control",
+    "title": "Campo / R04",
+    "change": "Control conservado",
+    "intent": "Dos marcos abiertos; posible S.",
+    "risk": "Riesgo: bracket genérico.",
+    "bounds": [
+      18,
+      18,
+      110,
+      110
+    ]
+  },
+  {
+    "id": "campo-continuidad",
+    "title": "Campo / continuidad",
+    "change": "Piezas 3 u hacia el centro",
+    "intent": "Mayor unidad; conserva apertura.",
+    "risk": "Riesgo: S tecnológica convencional.",
+    "bounds": [
+      18,
+      21,
+      110,
+      107
+    ]
+  },
+  {
+    "id": "campo-terminal",
+    "title": "Campo / terminal corto",
+    "change": "Retornos de 8 a 4 u",
+    "intent": "Menos gesto de corchete.",
+    "risk": "Riesgo: perder un rasgo propio.",
+    "bounds": [
+      18,
+      18,
+      110,
+      110
+    ]
+  },
+  {
+    "id": "bilateral-control",
+    "title": "Bilateral / R04",
+    "change": "Control conservado",
+    "intent": "Atención y parentesco biológico.",
+    "risk": "Riesgo: cejas / ave genérica.",
+    "bounds": [
+      12,
+      32,
+      116,
+      76
+    ]
+  },
+  {
+    "id": "bilateral-frente",
+    "title": "Bilateral / frente estable",
+    "change": "Menor inclinación superior",
+    "intent": "Gesto más contenido.",
+    "risk": "Riesgo: menos tensión / carácter.",
+    "bounds": [
+      12,
+      32,
+      116,
+      76
+    ]
+  },
+  {
+    "id": "bilateral-profundo",
+    "title": "Bilateral / más presencia",
+    "change": "Base 8 u más profunda",
+    "intent": "Más masa vertical en pequeño.",
+    "risk": "Riesgo: máscara / mayor peso.",
+    "bounds": [
+      12,
+      32,
+      116,
+      84
+    ]
+  },
+  {
+    "id": "athene-control",
+    "title": "Athene / R04",
+    "change": "Control conservado",
+    "intent": "Frente y pico; A no resuelta.",
+    "risk": "Riesgo: máscara / escudo.",
+    "bounds": [
+      16,
+      28,
+      112,
+      108
+    ]
+  },
+  {
+    "id": "athene-at-invertida",
+    "title": "Athene / A invertida + T",
+    "change": "Otra estructura: diagonales y puente",
+    "intent": "Letras como construcción interna.",
+    "risk": "Riesgo: casco / símbolo matemático.",
+    "bounds": [
+      12,
+      28,
+      116,
+      106
+    ]
+  },
+  {
+    "id": "athene-a-central",
+    "title": "Athene / A central",
+    "change": "A en masa positiva; cabeza autónoma",
+    "intent": "Lectura nominal secundaria en estudio.",
+    "risk": "Riesgo: centro pesado / acertijo.",
+    "bounds": [
+      18,
+      30,
+      110,
+      100
+    ]
+  },
+  {
+    "id": "athene-compacto",
+    "title": "Athene / cabeza compacta",
+    "change": "Sin letras; curvas contenidas",
+    "intent": "Mirada facial y cierre más corto.",
+    "risk": "Riesgo: mascota / perder tensión.",
+    "bounds": [
+      18,
+      30,
+      110,
+      98
+    ]
+  }
+]

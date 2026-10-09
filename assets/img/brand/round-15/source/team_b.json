@@ -1,0 +1,71 @@
+{
+  "team": "B",
+  "name": "Barrido / apoyo próximo",
+  "boardSummary": "El perfil conserva su dirección; el retorno sube 8 u para acercar el apoyo a la cabeza.",
+  "thesis": "Cultivar atención orientada dentro de la firma de barrido: el recorrido continuo se transforma entre S empresarial y centinela de perfil. El ensayo acerca el retorno al punto de atención sin sustituirlos por un frente axial.",
+  "messageAlignment": "Ingeniería y atención protectora; búho como identidad. Se mantiene firma corporativa extensible y producto orientado. Acercar el apoyo busca aplomo local; no demuestra confianza ni identificación de búho.",
+  "operationMap": {
+    "registeredBeforeRendering": true,
+    "control": "scratch/round13/team_b.json, paths corporate y product exactos de R13. R14 queda como reformulación histórica distinta.",
+    "singleOperation": "Trasladar 8 unidades hacia arriba los cinco vértices del retorno inferior de Athene. Toda coordenada x permanece idéntica.",
+    "movingVertices": [
+      {"label":"P8 / unión exterior cabeza-retorno","from":[98,84],"to":[98,76]},
+      {"label":"P9 / extremo derecho de base","from":[74,108],"to":[74,100]},
+      {"label":"P10 / extremo izquierdo de base","from":[26,108],"to":[26,100]},
+      {"label":"P11 / inicio de plataforma interior","from":[42,92],"to":[42,84]},
+      {"label":"P12 / final de plataforma interior","from":[64,92],"to":[64,84]}
+    ],
+    "fixedOuterVertices": [[30,20],[44,30],[74,30],[98,50],[108,62],[98,70],[78,78],[32,56],[20,40]],
+    "fixedCurve": "C 88 30 98 38 98 50",
+    "fixedEye": "M 62 44 L 68 38 H 80 L 86 44 V 52 L 80 58 H 68 L 62 52 Z",
+    "fixedCorporate": "Path Strig R13 íntegro, sin ajuste de terminales, masa ni inicial.",
+    "neckJoinRule": "Mantener los mismos segmentos rectos y codo interior (78,78). El segmento (64,92)→(78,78) pasa a (64,84)→(78,78), sin nodo o curvatura nuevos. La unión exterior parte de (98,70) fijo hacia (98,76) móvil. El retorno exterior conserva su diagonal 45 grados porque ambos extremos suben 8 unidades.",
+    "preservedMeasures": "Base horizontal: x26→74, ancho48. Plataforma: x42→64, ancho22. Distancia base/plataforma: 16 unidades. No se escala cabeza ni ojo.",
+    "derivedChange": "El enlace interior se hace menos inclinado y la unión vertical derecha se acorta de 14 a 6 unidades como consecuencias de trasladar el retorno; no se compensan con otro ajuste de grosor o curva.",
+    "intersectionRule": "Conservar 8 unidades si el contorno permanece simple. Si el desplazamiento obligara a añadir una curva, nodo o cierre, detener esta versión y declarar otro ensayo; no ocultarlo como reparación."
+  },
+  "tutorBrief": "R14 eliminó S/perfil antes de cultivarlos. El tutor solicita una operación localizada de altura/apoyo, con vértices móviles y fijos enumerados, Strig/cabeza/ojo intactos y unión del cuello explícita. Ojo fijo significa aislamiento, no readopción del octágono.",
+  "resultHypothesis": "La cabeza tendrá más presencia relativa y el recorrido encontrará antes una base horizontal. Es posible que el perfil gane aplomo; también puede quedar más compacto y reforzar la lectura de nueve. Se juzgará mirando la comparación, no por cumplir el desplazamiento.",
+  "resultObservation": "En la mini comparación renderizada, la base queda visiblemente más próxima a la cabeza y el retorno tiene menor altura. Dirección derecha, apertura ocular y gesto nominal/orientado permanecen. La silueta sigue admitiendo ave o nueve; la mayor compacidad no demuestra mejora de aplomo. A 16 px se pierde detalle y a 24 px se mantiene la apertura; esos renders no acreditan especie o confianza.",
+  "qa": {
+    "preview": "scratch/round15/b/mini.png",
+    "sizes": [16,24,48,128],
+    "backgrounds": ["claro","inversa"],
+    "corporatePathExactR13": true,
+    "eyeSubpathExactR13": true,
+    "outerLineCrossings": 0,
+    "crossingCheckScope": "Segmentos rectos del contorno y curva superior muestreada en 32 pasos; inspección visual del SVG rasterizado. No es auditoría registral ni reconocimiento humano."
+  },
+  "corporate": {
+    "id": "strig-r15-b-control",
+    "title": "Strig / Barrido R13 intacto",
+    "change": "Control R13 exacto. No se ensaya el signo corporativo en esta ronda.",
+    "intent": "Conservar la firma nominal y el origen continuo del recorrido mientras se cultiva la relación cabeza/apoyo del producto.",
+    "risk": "La S sigue admitiendo energía deportiva y una referencia biológica tenue. Mantenerla como control no resuelve ni valida esas lecturas.",
+    "bounds": [18,22,112,108],
+    "path": "M 104 22 H 42 L 20 44 V 58 L 68 82 H 30 L 18 96 L 30 108 H 88 L 110 86 V 72 L 62 48 H 100 L 112 34 Z"
+  },
+  "product": {
+    "id": "athene-r15-b-apoyo",
+    "title": "Athene / Apoyo próximo",
+    "change": "Retorno inferior del perfil R13 trasladado 8 u hacia arriba: plataforma92→84 y base108→100. Cinco vértices móviles; cabeza, codo interior y ojo intactos.",
+    "intent": "Ensayar una relación cabeza/cuello más asentada dentro de la atención orientada propia de B, sin volver al frente simétrico ni redibujar especie y ojo.",
+    "risk": "Puede reforzar un nueve o acortar demasiado el cuello. La especie, el ojo octogonal y el carácter deportivo de la firma siguen sin resolver; no se presentan como problemas eliminados.",
+    "bounds": [20,20,108,100],
+    "path": "M 30 20 L 44 30 H 74 C 88 30 98 38 98 50 L 108 62 L 98 70 V 76 L 74 100 H 26 L 42 84 H 64 L 78 78 L 32 56 L 20 40 Z M 62 44 L 68 38 H 80 L 86 44 V 52 L 80 58 H 68 L 62 52 Z"
+  },
+  "rationale": "El tramo de atención sigue en la cabeza orientada a la derecha, con remate a (108,62). El recorrido vuelve por cuello al codo (78,78) y después a la plataforma elevada. El reposo visible es la base horizontal y=100, ahora 8 unidades más próxima. La diagonal exterior inferior y la anchura de la base se conservan por traslación; no se redibuja un animal completo para corregir un problema de ritmo. Strig permanece idéntico para observar la transformación de la S nominal en perfil. La pérdida de altura es intencional y la pendiente distinta del enlace interior está declarada, sin otra variable encubierta. Paths manuales viewBox 128, currentColor y fill-rule evenodd.",
+  "critiqueResponse": "R15 cultiva S/perfil de R13, en lugar de borrarlos como R14. Solo sube el retorno 8 u, con mapa de cinco vértices; cabeza, ojo y Strig quedan fijos. Gana compacidad y acerca el apoyo. Aplomo sigue como hipótesis: puede reforzar el nueve. Ojo fijo es aislamiento, no aprobación.",
+  "tradeoffs": [
+    "Conserva dirección y firma de recorrido; pierde 8 u de altura. El apoyo se acerca, pero el nueve podría hacerse más evidente.",
+    "Base y plataforma conservan ancho y 16 u de distancia; el enlace al codo fijo pierde inclinación como consecuencia explícita.",
+    "La S sigue siendo nominal y compacta; su posible energía deportiva se difiere para no combinar dos ensayos.",
+    "No se modifica ojo, disco facial ni acento superior. La identificación del búho sigue pendiente y no se deduce del render."
+  ],
+  "nextChecks": [
+    "Comparar Athene R13/R15 en escala nativa y con altura visible equivalente; distinguir reducción real de compacidad percibida.",
+    "Revisar atención, retorno y punto de reposo con Tomás: si el apoyo más próximo aporta aplomo o solo acorta la firma.",
+    "Comprobar a 16/24/48/128 px la apertura entre cabeza y plataforma; evaluar ojo sin llamarlo aprobado.",
+    "Si el ritmo no mejora, mantener R13 como control y decidir un ensayo diferente; no forzar R15 ni volver automáticamente a R14."
+  ]
+}

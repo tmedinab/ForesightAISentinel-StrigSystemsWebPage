@@ -1,0 +1,25 @@
+{
+  "ruta": "B / Doble recorrido longitudinal",
+  "alcance": "Revisión individual de asesor-agente. Ensayo solicitado como curiosidad; no rechazo del canal6 R16 ni adopción. Sin comparación con otras rutas.",
+  "materialRevisado": ["scratch/round17/studies_b.json", "R17/split-s.png", "R17/family-b.png", "R17/rails-b.png"],
+  "tesis": "Dos rieles contiguos siguen la trayectoria facetada completa de S; la firma conserva origen nominal y su relación con Athene de perfil.",
+  "cumplimiento": "La operación longitudinal responde a la aclaración de Tomás. Cada polígono contiene barra superior, giro izquierdo, diagonal, giro derecho y barra inferior. Cambia anchura de costura4/6 u; Athene y control R16 son exactos. La pequeña contracción lateral de terminales está declarada, no ocultada con escala.",
+  "continuidadRieles": "Las láminas de descomposición permiten seguir cada riel como S continua. Aquí existe una respuesta geométrica a dos recorridos S completos, distinta de las dos mitades transversales de R16.",
+  "lecturaDobleS": "Separados, ambos recorridos admiten S en esta revisión. Juntos, domina una S de doble trazo o borde interior; no se demuestra que un observador identifique SS espontáneamente. No hace falta negar el vínculo nominal, pero debe conservarse como segunda lectura posible.",
+  "observado": [
+    "La costura sigue giros y barras; no corta solamente la diagonal central.",
+    "Las dos alternativas conservan la dirección y silueta general de firma B.",
+    "Longitudinal4 mantiene más grosor por riel; Longitudinal6 presenta más separación y menos tinta en todo el recorrido.",
+    "En la ficha, la firma corporativa se vuelve visualmente más lineal frente al Athene macizo intacto. Se conserva jerarquía producto/desarrollador, pero cambia el equilibrio de masa de la familia.",
+    "La costura terminal introduce remates y estrechamientos que antes eran una sola masa; son consecuencias reales de dividir todo el recorrido."
+  ],
+  "masaYUnidad": "Los rieles se mantienen continuos y el conjunto no parece un laberinto de múltiples rutas en esta revisión. Sí aumenta la información de bordes y vacíos y disminuye el carácter monolítico. El control R16 mantiene mayor presencia de masa; longitudinal4 es el contraste más contenido.",
+  "reduccionEInversa": "En los PNG, a16 px domina el signo S general y seguir dos recorridos es difícil. A24/32 se distinguen mejor los tramos de costura; la variante6 tiene más margen de separación. Las inversas de firma muestran el doble trazo, pero no sustituyen una prueba nativa16/24 inversa en implementación real. Ningún canal longitudinal resuelve automáticamente el problema de unión en pequeño.",
+  "ganancia": "Visualiza de forma fiel y defendible la idea de dos S contiguas: cada parte conserva recorrido completo. Aporta un parentesco nominal posible sin copiar dos emblemas independientes.",
+  "coste": "Retira tinta a lo largo de toda la firma, abre terminales y vuelve más lineal su presencia. El margen de costura consume peso por riel. La lectura de SS exige más atención que reconocer una S simple y no se acredita externamente.",
+  "preservacionIdentidad": "Sí: dirección, firma nominal, facetas y Athene de perfil permanecen. El ensayo cambia carácter de masa hacia doble trazo; debe decidirse si esa renuncia es deseada, no llamarla mejora automática.",
+  "decisionProvisional": "Mantendría0/Canal6 R16 como referencia principal de firmeza y preferencia vigente. Si Tomás quiere cultivar el doble recorrido, elegiría1/Longitudinal4 como candidato más contenido. No recomendaría2/Longitudinal6 solo para separar mejor en pequeño: su pérdida longitudinal de peso es mayor y a16 la doble lectura sigue incierta.",
+  "siguienteIntervencion": "Decidir primero si la firma debe sentirse una masa articulada o dos trazos contiguos. Si se elige el doble recorrido, revisar un único estrechamiento crítico y la pareja Strig/Athene en uso real antes de producir variante micro. Conservar ambas operaciones como ramas de ensayo; no combinarlas ni sumar cortes.",
+  "diferido": ["Forzar reconocimiento SS mediante otras letras", "Combinar corte transversal y longitudinal", "Cambiar Athene para igualar una firma más lineal", "Ensanchar canales sin evaluar masa", "Definir una variante micro antes de elegir operación", "Distintividad comercial o disponibilidad jurídica"],
+  "limites": "Continuidad de polígonos y comparación local son verificables. Lectura nominal externa, seguridad percibida y reconocimiento de marca permanecen sin validar. Afinidad de Tomás decidirá qué renuncia merece cultivar."
+}

@@ -1,0 +1,69 @@
+{
+  "team": "C",
+  "name": "Registro común",
+  "boardSummary": "Dos planos se registran en una interfaz propia; Athene la especializa como atención frontal.",
+  "thesis": "Partes distintas producen una presencia común cuando sus encuentros obedecen un mismo registro. Strig coordina capacidad de desarrollo; Athene especializa ese criterio como atención territorial. La decisión formal es una interfaz abierta con desplazamiento oblicuo, no un campo sostenido por apoyos.",
+  "messageAlignment": "Ingeniería y atención protectora; búho como identidad. Se busca aplomo y atención competente sin representar una configuración técnica ni prometer interoperabilidad o protección operacional.",
+  "branchOrigin": "new-coordination",
+  "conceptBeforeGeometry": "Antes de dibujar elegí Registro común: una parte debe conservar contorno e identidad, pero necesitar a la otra para completar la silueta. La interfaz tendría dos tramos paralelos y un desplazamiento oblicuo medido. La empresa se resolvería con planos compactos; el producto con un frente facial articulado. Renuncié a umbral, base de resguardo, ruta de paso e iniciales obligatorias como fundamento.",
+  "corporate": {
+    "id": "strig-r17-c-registro-comun",
+    "title": "Strig / Registro común",
+    "change": "Nueva rama: dos planos complementarios completan una envolvente facetada. Una junta vertical cambia de posición por un tramo oblicuo; desaparecen dintel, apoyo y cámara central de la ruta Umbral.",
+    "intent": "Expresar criterio de organización mediante una articulación específica: los dos bordes mantienen distancia y dirección comunes antes y después de un desplazamiento. La masa firma una empresa extensible, sin nodos ni módulos de hardware.",
+    "risk": "Puede leerse como N, dos placas o una pieza mecánica partida. La coordinación es una hipótesis de construcción; no se presupone que un observador la nombre ni que sea suficientemente distintiva.",
+    "bounds": [
+      19,
+      16,
+      109,
+      112
+    ],
+    "path": "M93 16 L109 32 V96 L93 112 H81 V82 L59 60 V16 Z M49 16 V64 L71 86 V112 H37 L19 94 V34 L37 16 Z"
+  },
+  "product": {
+    "id": "athene-r17-c-registro-facial",
+    "title": "Athene / Registro facial",
+    "change": "Un frente nuevo se articula en dos planos con la misma junta desplazada. La interfaz sale por una mejilla y el remate central inferior pertenece a una parte continua; no se descompone en discos y rombo de R14.",
+    "intent": "Especializar el registro como presencia facial: aperturas amplias, contorno curvo y remate central proponen identidad de búho. Las dos partes completan un frente; el encuentro conserva el centro inferior sin añadir A, casco o pieza flotante.",
+    "risk": "Puede parecer máscara, robot, rostro cortado o incisión antes que búho; los ojos circulares pueden resultar instrumentales o demasiado amables. La salida lateral introduce asimetría y no prueba atención protectora.",
+    "bounds": [
+      12,
+      22,
+      116,
+      114
+    ],
+    "path": "M12 44 Q12 22 38 22 H50 L56 30 V52 L62 58 V78 L72 88 H116 V92 Q104 102 88 102 H76 L64 114 L52 102 H40 Q12 94 12 68 Z M68 30 L78 22 H90 Q116 22 116 44 V68 Q116 78 114 80 H84 L74 70 V54 L68 48 Z M45 58 A11 11 0 1 1 23 58 A11 11 0 1 1 45 58 Z M105 58 A11 11 0 1 1 83 58 A11 11 0 1 1 105 58 Z"
+  },
+  "rationale": "La rama nueva nace de la autorización para probar coordinación de sistemas y de la asesoría R16; no atribuye esa intención retrospectivamente a Umbral R13-R15. Conserva masa monocroma, compacidad y articulación precisa como recursos de C cuya evolución interesó a Tomás; no se atribuye preferencia por un detalle concreto. El nuevo centro de decisión es el encuentro entre partes: una junta estrecha cambia de registro y hace que dos masas completen la misma silueta. En Strig trabaja planos facetados; en Athene combina contorno facial y apertura, conserva un centro inferior unido y hace salir la junta por el lateral. La forma puede identificarse sin que el cliente descifre coordinación: nombre, descriptor y evidencia explican actividad. Reconocimiento de búho, carácter protector y distintividad siguen pendientes.",
+  "critiqueResponse": "La nueva tesis cambia la geometría: no quedan dintel, apoyo ni paso de Umbral. Dos planos comparten una junta desplazada; Athene la especializa en un frente con centro inferior continuo. Se preserva masa de C, no su fundamento anterior. La QA admite placas/N y máscara/robot; coordinación y búho son hipótesis, no logros validados.",
+  "tradeoffs": [
+    "Gana un encuentro específico entre partes; renuncia al campo y apoyo de Umbral. Puede parecer una pieza técnica dividida.",
+    "La coordinación se construye como registro y dependencia de silueta, sin representar nodos o arquitectura real. El significado no se exige como lectura literal.",
+    "Athene aumenta figuración con aperturas circulares y remate central; acepta riesgo de máscara, instrumental óptico o carácter demasiado amable.",
+    "La junta sale por una mejilla para conservar un centro inferior continuo; gana unidad frente a discos separados, pero introduce asimetría y posible incisión.",
+    "La junta corporativa mide 10 u en sus tramos verticales: 1.25 px a 16 y 1.875 px a 24. La articulación oblicua pierde matiz en reducción."
+  ],
+  "nextChecks": [
+    "Tutor: señalar qué parte se registra con cuál y qué relación visible desaparece al retirar una masa. Evaluar la nueva tesis por sus consecuencias, sin ranking ni molde de otras rutas.",
+    "Tomás: mirar el par antes del relato y describir carácter, asociación y afinidad; distinguir una lectura alternativa aceptable de una que contradiga atención protectora.",
+    "Contrastar juntas y remate central en 16, 24, 32 y 128 px, en positivo/inversa y firmas equivalentes; la QA comprueba reproducción, no reconocimiento.",
+    "Si máscara o incisión domina la reacción de Tomás, localizar en la interfaz o el remate el problema antes de agregar más animalidad.",
+    "Si la coordinación solo funciona en explicación y no orienta decisiones útiles, retirar esta rama como hipótesis; no renombrar otra figura para justificarla."
+  ],
+  "operationMap": {
+    "corporate": {
+      "parts": "Plano izquierdo y plano derecho completan una envolvente de 90×96 u. Sin una masa, queda un plano abierto hacia el encuentro, no la envolvente común.",
+      "sharedRegistration": "Borde izquierdo de junta (49,16)→(49,64)→(71,86)→(71,112). Borde derecho (59,16)→(59,60)→(81,82)→(81,112).",
+      "visibleOperation": "Tramos verticales separados 10 u; desplazamiento oblicuo de 22 u en x/y en ambos bordes, con diferencia de inicio de 4 u. La junta desplaza la relación de izquierda a derecha sin convertirse en bracket o red.",
+      "renunciation": "No hay ranura horizontal que pase entre dintel/base, ni hueco común central identificado como campo."
+    },
+    "product": {
+      "parts": "Plano facial izquierdo/inferior y plano facial superior derecho. Ambos completan el frente; el remate central (64,114) queda unido al plano inferior.",
+      "sharedRegistration": "Junta superior entre x=56 y x=68; desplazamiento oblicuo (56,52)→(62,58) y (68,48)→(74,54). Continúa entre x=62 y x=74, cambia al lateral por (62,78)→(72,88) y (74,70)→(84,80), y sale a derecha.",
+      "visibleOperation": "La misma gramática vertical/oblicua se especializa en un encuentro facial. Salida lateral: borde inferior de abertura y=88 y borde superior y=80. Se conservan dos partes y un remate inferior conectado; no hay centro añadido.",
+      "facialDecision": "Aperturas circulares de radio 11 u centradas en (34,58) y (94,58). Son contraformas faciales en esta propuesta, no sensores o prestaciones."
+    }
+  },
+  "namingRole": "Strig Systems sigue nombrando la empresa; Athene nombra su primer sistema. Strigiformes aporta raíz metafórica para atención e identidad, sin atribuir sensores biológicos ni capacidades térmicas a las aves. Noctua/Nest conservan denominaciones y no reciben nuevos emblemas. Las letras S/A no gobiernan esta operación.",
+  "formalContinuityAndBreak": "Continuidad expresamente transferida desde C: masa monocroma, compacidad, frontalidad de producto y contraste entre empresa abstracta y atención facial. Ruptura: el vacío deja de ser paso y se vuelve interfaz registrada; desaparecen soporte/dintel, se asume complementariedad desigual de las partes y se crea otro rostro. R13-R15 permanecen historia de Umbral; Registro común es una nueva rama de R17."
+}

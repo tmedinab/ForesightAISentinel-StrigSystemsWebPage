@@ -1,0 +1,106 @@
+[
+  {
+    "id": "strig-r18-b-solido",
+    "title": "Strig / S sólida",
+    "change": "Control R13 exacto: sin canal.",
+    "intent": "Representar una operación de percepción que recibe, transforma y devuelve información. La inicial organiza toda la silueta; los retornos sugieren instrumentación sin representar sensores ni limitar los futuros productos de ingeniería.",
+    "risk": "La S puede dominar la lectura y hacer muy débil la asociación implícita con Strigiformes. También debe comprobarse que la firma no parezca una marca deportiva por su diagonal central.",
+    "bounds": [
+      18,
+      22,
+      112,
+      108
+    ]
+  },
+  {
+    "id": "strig-r18-b-diagonal",
+    "title": "Strig / Diagonal 6",
+    "change": "Control R16 canal 6 exacto.",
+    "intent": "Articular dos partes de una misma firma gruesa conservando recorrido, dimensiones y terminales; explorar composición sin dibujar otras iniciales.",
+    "risk": "El canal estrecho puede fusionarse perceptivamente en pequeño; dos partes no implican dos S legibles.",
+    "bounds": [
+      18,
+      22,
+      112,
+      108
+    ]
+  },
+  {
+    "id": "strig-r18-b-longitudinal",
+    "title": "Strig / Longitudinal 4",
+    "change": "Control R17 recorrido 4 exacto.",
+    "intent": "Visualizar la curiosidad de dos recorridos S contiguos, conservando la firma facetada y sin duplicar isotipos arbitrariamente.",
+    "risk": "La costura consume tinta en todo el recorrido. Puede debilitar los rieles, parecer laberinto o perder separación en pequeño; dos S legibles siguen siendo hipótesis.",
+    "bounds": [
+      19,
+      22,
+      111.333,
+      108
+    ]
+  },
+  {
+    "id": "strig-r18-b-codos",
+    "title": "Strig / Giros apoyados",
+    "change": "Longitudinal 4 u: ambos codos centrales se desplazan 2 u en x y 1 u en y hacia el interior de la diagonal. Canal, terminales y perímetro fijos.",
+    "intent": "Repartir la tinta en los dos giros exteriores del recorrido para reducir estrechamientos, sin perder doble continuidad ni volver al sólido.",
+    "risk": "El apoyo exterior gana tinta a costa del otro lado del giro. Puede cambiar el ritmo sin aportar mejora perceptiva; dos S legibles no están demostradas.",
+    "bounds": [
+      19,
+      22,
+      111.333,
+      108
+    ]
+  },
+  {
+    "id": "athene-r18-b-control",
+    "title": "Athene / R15 intacto",
+    "change": "Control R15 exacto; no corte doble por repetición literal.",
+    "intent": "Conservar el centinela orientado que Tomás aprecia y usarlo como referencia de masa para las cuatro firmas corporativas.",
+    "risk": "Afinidad de Tomás y reconocimiento local del búho no equivalen a aprobación final ni recepción externa.",
+    "bounds": [
+      20,
+      20,
+      108,
+      100
+    ]
+  },
+  {
+    "id": "strig-r18-c-control",
+    "title": "Strig / Registro común, control R17",
+    "change": "Control R17 exacto; no se altera el isotipo corporativo por la asociación local de café.",
+    "intent": "Conservar dos planos que completan una silueta mediante la junta desplazada. Firma amplia de ingeniería; la actividad se comunica con nombre, descriptor y evidencia.",
+    "risk": "Tomás lo asocia con café. Puede funcionar como asociación secundaria; no se ha probado que contradiga ingeniería ni que el nombre elimine esa lectura.",
+    "bounds": [
+      19,
+      16,
+      109,
+      112
+    ]
+  },
+  {
+    "id": "athene-r18-c-control",
+    "title": "Athene / Registro facial, control R17",
+    "change": "Control R17 exacto. Se conserva para comparar la relación entre envolvente facial y remate inferior.",
+    "intent": "Conservar división y búho que Tomás aprecia, y el parentesco visible con Strig. Esta afinidad local no equivale a recepción externa.",
+    "risk": "Tomás lo asocia con burbuja de chat. Envolvente redondeada, aperturas circulares y remate central de 12 u permiten esa asociación.",
+    "bounds": [
+      12,
+      22,
+      116,
+      114
+    ]
+  },
+  {
+    "id": "athene-r18-c-remate-contenido",
+    "title": "Athene / Frente con remate contenido",
+    "change": "Una relación primaria de silueta: vértice inferior central (64,114)→(64,106). La proyección bajo la línea de mejillas y=102 pasa de 12 a 4 u. Corona, contraformas, junta y salida lateral exactas.",
+    "intent": "Dar prioridad al frente amplio y a su articulación de atención sobre la punta exterior. Se busca una presencia facial más asentada sin añadir señales de alerta ni cambiar la coordinación registrada.",
+    "risk": "El pico exterior resulta menos explícito y puede perder identidad de búho. El contorno, círculos y salida lateral aún admiten chat, robot o máscara; menor punta no demuestra más profesionalidad.",
+    "bounds": [
+      12,
+      22,
+      116,
+      106
+    ]
+  }
+]

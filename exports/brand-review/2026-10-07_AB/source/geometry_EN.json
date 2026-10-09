@@ -1,0 +1,282 @@
+{
+  "date": "2026-10-07",
+  "scope": "A/B professional review; unchanged candidate geometry",
+  "routes": [
+    {
+      "id": "A",
+      "name": "Open field and frontal sentinel",
+      "corporate": {
+        "path": "M18 57V41L38 21H110L94 37H46L34 49L26 57Z M110 71V87L90 107H18L34 91H82L94 79L102 71Z",
+        "bounds": [
+          18,
+          21,
+          110,
+          107
+        ],
+        "description": "Two opposing faceted shapes form an open corporate sign with 180-degree rotational symmetry. Abstract engineering/perception and an implicit S are intentions; owl recognition is not required. H1 geometry preserved. Review candidate, not a production master.",
+        "symbolOrigin": "assets/img/brand/round-12/strig-h1.svg",
+        "lockupOrigin": "assets/img/brand/round-12/strig-h1-lockup.svg",
+        "lockupTransformsInDocumentOrder": [
+          {
+            "element": "path",
+            "transform": "translate(11.304347826086953 21.304347826086953) scale(0.7608695652173914)"
+          },
+          {
+            "element": "g",
+            "transform": "translate(117 88) scale(0.085)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(0 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(624 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(1252 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(1924 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(2228 0)"
+          },
+          {
+            "element": "g",
+            "transform": "translate(119.0 118.0) scale(0.024)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(0 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(762 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(1524 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(2277 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(3035 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(3768 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(4803 0)"
+          }
+        ]
+      },
+      "product": {
+        "path": "M16 30L40 36H88L112 30L108 62Q106 72 92 78L86 70Q98 62 98 54V48H74L76 60Q74 66 69 71L64 77L59 71Q54 66 52 60L54 48H30V54Q30 62 42 70L36 78Q22 72 20 62Z",
+        "bounds": [
+          16,
+          30,
+          112,
+          78
+        ],
+        "description": "Broad frontal open sentinel with prolonged cheek returns and a connected central feature. Intended owl identity and protective attention; visor, helmet or mask readings remain open. Preferred R11 geometry and balanced R12 composition preserved. Review candidate.",
+        "symbolOrigin": "assets/img/brand/round-12/athene-equilibrado.svg",
+        "lockupOrigin": "assets/img/brand/round-12/athene-equilibrado-lockup.svg",
+        "lockupTransformsInDocumentOrder": [
+          {
+            "element": "path",
+            "transform": "translate(-4.666666666666671 -8.125) scale(1.2291666666666667)"
+          },
+          {
+            "element": "g",
+            "transform": "translate(157 88) scale(0.085)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(0 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(610 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(1238 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(1934 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(2528 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(3238 0)"
+          }
+        ]
+      },
+      "status": "Earlier client-selected reference; no approved production master"
+    },
+    {
+      "id": "B",
+      "name": "Dual path and directional sentinel",
+      "corporate": {
+        "path": "M 111.333 33 L 104 22 L 42 22 L 20 44 L 20 58 L 68 82 L 30 82 L 20.571 93 L 84.028 93 L 92.913 81.692 L 30.893 50.682 L 45.039 33 Z M 109.429 37 L 100 48 L 62 48 L 110 72 L 110 86 L 88 108 L 30 108 L 19 97 L 85.972 97 L 99.087 80.308 L 37.107 49.318 L 46.961 37 Z",
+        "bounds": [
+          19,
+          22,
+          111.333,
+          108
+        ],
+        "description": "Two continuous paths follow an S trajectory with a nominal 4-unit longitudinal channel and locally supported turns. B3 R18 geometry preserved through R19. Dual S reading is a hypothesis, not established recognition. Review candidate.",
+        "symbolOrigin": "assets/img/brand/round-19/strig-r19-b-control.svg",
+        "lockupOrigin": "assets/img/brand/round-19/strig-r19-b-control-lockup.svg",
+        "lockupTransformsInDocumentOrder": [
+          {
+            "element": "path",
+            "transform": "translate(0.5434782608686035 20.54347826086628) scale(0.7608695652174419)"
+          },
+          {
+            "element": "g",
+            "transform": "translate(107.25336956522206 88) scale(0.085)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(0 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(624 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(1252 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(1924 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(2228 0)"
+          },
+          {
+            "element": "g",
+            "transform": "translate(109.25336956522206 118.0) scale(0.024)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(0 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(762 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(1524 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(2277 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(3035 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(3768 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(4803 0)"
+          }
+        ]
+      },
+      "product": {
+        "path": "M 30 20 L 44 30 H 74 C 88 30 98 38 98 50 L 108 62 L 98 70 V 76 L 74 100 H 26 L 42 84 H 64 L 78 78 L 32 56 L 20 40 Z M 62 44 L 68 38 H 80 L 86 44 V 52 L 80 58 H 68 L 62 52 Z",
+        "bounds": [
+          20,
+          20,
+          108,
+          100
+        ],
+        "description": "Directional owl-like profile with a facial opening and a posterior negative space separating head/neck and lower return. R15 geometry preserved, without copying the corporate cut. Intended competent sentinel attention; recognition and character remain review questions.",
+        "symbolOrigin": "assets/img/brand/round-19/athene-r19-b-control.svg",
+        "lockupOrigin": "assets/img/brand/round-19/athene-r19-b-control-lockup.svg",
+        "lockupTransformsInDocumentOrder": [
+          {
+            "element": "path",
+            "transform": "translate(0.25 14.0) scale(0.7375)"
+          },
+          {
+            "element": "g",
+            "transform": "translate(103.9 88) scale(0.085)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(0 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(610 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(1238 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(1934 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(2528 0)"
+          },
+          {
+            "element": "path",
+            "transform": "translate(3238 0)"
+          }
+        ]
+      },
+      "status": "B3 supported turns liked by client; no final global selection"
+    }
+  ],
+  "constructionParameters": {
+    "corporateAt85": {
+      "visibleHeight": 65.4347826087,
+      "gap": 22,
+      "systemsSize": 24,
+      "opticalCenterFromBaseline": -18
+    },
+    "productAt85": {
+      "visibleHeight": 59,
+      "gap": 24,
+      "opticalCenterFromBaseline": -29.75
+    },
+    "symbolCanvas": [
+      0,
+      0,
+      128,
+      128
+    ],
+    "lockupCanvas": [
+      0,
+      0,
+      490,
+      140
+    ]
+  },
+  "boardScaling": "Equal visible height per role; native reduction fixes canvas and origin."
+}

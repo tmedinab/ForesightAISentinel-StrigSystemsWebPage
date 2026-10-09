@@ -1,0 +1,80 @@
+[
+  {
+    "id": "strig-r17-b-control",
+    "title": "Strig B / Canal 6 R16",
+    "change": "Control exacto del canal diagonal de 6 u R16 que Tomás valora en grande; operación distinta del ensayo longitudinal.",
+    "intent": "Articular dos partes de una misma firma gruesa conservando recorrido, dimensiones y terminales; explorar composición sin dibujar otras iniciales.",
+    "risk": "El canal estrecho puede fusionarse perceptivamente en pequeño; dos partes no implican dos S legibles.",
+    "bounds": [
+      18,
+      22,
+      112,
+      108
+    ]
+  },
+  {
+    "id": "strig-r17-b-recorrido4",
+    "title": "Strig B / Recorrido 4 u",
+    "change": "Costura longitudinal de 4 u perpendicular a cada tramo; dos rieles que siguen la S completa.",
+    "intent": "Visualizar la curiosidad de dos recorridos S contiguos, conservando la firma facetada y sin duplicar isotipos arbitrariamente.",
+    "risk": "La costura consume tinta en todo el recorrido. Puede debilitar los rieles, parecer laberinto o perder separación en pequeño; dos S legibles siguen siendo hipótesis.",
+    "bounds": [
+      19,
+      22,
+      111.333,
+      108
+    ]
+  },
+  {
+    "id": "strig-r17-b-recorrido6",
+    "title": "Strig B / Recorrido 6 u",
+    "change": "Costura longitudinal de 6 u perpendicular a cada tramo; dos rieles que siguen la S completa.",
+    "intent": "Visualizar la curiosidad de dos recorridos S contiguos, conservando la firma facetada y sin duplicar isotipos arbitrariamente.",
+    "risk": "La costura consume tinta en todo el recorrido. Puede debilitar los rieles, parecer laberinto o perder separación en pequeño; dos S legibles siguen siendo hipótesis.",
+    "bounds": [
+      20,
+      22,
+      110.667,
+      108
+    ]
+  },
+  {
+    "id": "athene-r17-b-control",
+    "title": "Athene B / R15 fijo",
+    "change": "Control Athene R15 exacto, sin nuevo significado ni añadido a su contraforma.",
+    "intent": "Ensayar una relación cabeza/cuello más asentada dentro de la atención orientada propia de B, sin volver al frente simétrico ni redibujar especie y ojo.",
+    "risk": "Puede reforzar un nueve o acortar demasiado el cuello. La especie, el ojo octogonal y el carácter deportivo de la firma siguen sin resolver; no se presentan como problemas eliminados.",
+    "bounds": [
+      20,
+      20,
+      108,
+      100
+    ]
+  },
+  {
+    "id": "strig-r17-c-registro-comun",
+    "title": "Strig / Registro común",
+    "change": "Nueva rama: dos planos complementarios completan una envolvente facetada. Una junta vertical cambia de posición por un tramo oblicuo; desaparecen dintel, apoyo y cámara central de la ruta Umbral.",
+    "intent": "Expresar criterio de organización mediante una articulación específica: los dos bordes mantienen distancia y dirección comunes antes y después de un desplazamiento. La masa firma una empresa extensible, sin nodos ni módulos de hardware.",
+    "risk": "Puede leerse como N, dos placas o una pieza mecánica partida. La coordinación es una hipótesis de construcción; no se presupone que un observador la nombre ni que sea suficientemente distintiva.",
+    "bounds": [
+      19,
+      16,
+      109,
+      112
+    ]
+  },
+  {
+    "id": "athene-r17-c-registro-facial",
+    "title": "Athene / Registro facial",
+    "change": "Un frente nuevo se articula en dos planos con la misma junta desplazada. La interfaz sale por una mejilla y el remate central inferior pertenece a una parte continua; no se descompone en discos y rombo de R14.",
+    "intent": "Especializar el registro como presencia facial: aperturas amplias, contorno curvo y remate central proponen identidad de búho. Las dos partes completan un frente; el encuentro conserva el centro inferior sin añadir A, casco o pieza flotante.",
+    "risk": "Puede parecer máscara, robot, rostro cortado o incisión antes que búho; los ojos circulares pueden resultar instrumentales o demasiado amables. La salida lateral introduce asimetría y no prueba atención protectora.",
+    "bounds": [
+      12,
+      22,
+      116,
+      114
+    ]
+  }
+]

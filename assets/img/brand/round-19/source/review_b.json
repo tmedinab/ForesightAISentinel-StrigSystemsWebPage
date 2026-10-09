@@ -1,0 +1,31 @@
+{
+  "ruta": "B / Contextos de identidad",
+  "alcance": "Revisión individual por asesor-agente. Bocetos SVG de cabecera, ficha y documento; no frontend live, hero aprobado, aplicación final ni prestaciones acreditadas.",
+  "materialRevisado": ["scratch/round19/team_b.json actualizado", "R19/contexts-b.png regenerado", "R19/native-sizes.png"],
+  "tesis": "Strig firma desarrollo mediante recorrido compuesto; Athene identifica el centinela orientado. La familia se alinea por proporción, nombre y rol, sin repetir cortes o igualar tinta.",
+  "cumplimiento": "Paths B3 y Athene R15 exactos. Alturas relativas, separaciones y offsets del lockup se conservan. La corrección endorsement27→36 y firma documental35→42 está declarada y cambia legibilidad contextual, no geometría del logo.",
+  "parametrosRevisados": {
+    "corporateHeaderFont": 42,
+    "productContentFont": 40,
+    "endorsementFont": 36,
+    "documentCorporateFont": 42,
+    "documentProductFont": 34,
+    "systemsNominalEndorsement": 10.1647,
+    "systemsNominalDocument": 11.8588
+  },
+  "observado": [
+    "Cabecera corporativa coloca Strig primero y Athene dentro del contenido; la ficha invierte la prioridad y rotula desarrollador.",
+    "Documento separa firma empresarial izquierda y denominación de sistema derecha; margen y divisor organizan roles sin enfrentar dos marcas iguales.",
+    "Centro, proporción y separación símbolo/nombre permiten lectura conjunta en las escalas mostradas. El recorrido lineal de Strig y ave maciza no requieren igualar tinta.",
+    "SYSTEMS tiene más disponibilidad en endorsement y documento tras aumentar escala. Sigue subordinado y es el elemento restrictivo de reducción corporativa.",
+    "Descriptores y campos de texto están separados de firmas y no colisionan en los bocetos inspeccionados. Claro e inversa conservan jerarquía visible.",
+    "La costura y detalle del perfil son limitados a16/24 nativos; la aplicación contextual utiliza firmas mayores, sin ocultar esa limitación."
+  ],
+  "ganancia": "La pareja funciona como arquitectura de identidad por papel y jerarquía, con diferencia de masa deliberada. La corrección de tamaño evita depender de SYSTEMS nominal7.62 en endorsement y9.88 en documento.",
+  "coste": "El endorsement mayor ocupa más espacio y se acerca al tamaño nominal del producto; su papel secundario depende también de posición, rótulo y contenido. Los valores nominales no equivalen a altura de tinta ni certifican legibilidad en otro soporte.",
+  "hipotesis": "La composición puede transmitir orden y profesionalidad, pero esta inspección local no verifica reconocimiento o confianza institucional. El contenido ilustrativo no valida claims ni sustituye el titular previamente elegido.",
+  "decisionProvisional": "Conservar B3 y Athene R15 y estas composiciones como candidatos de uso. No aparece un problema que exija otro isotipo o el mismo corte en producto. La escala corregida mejora la disponibilidad de SYSTEMS en el boceto; no fijar todavía un mínimo universal.",
+  "siguientePaso": "Cerrar esta ronda y registrar parámetros de rol. Cuando se autorice integración, verificar cabecera real en su ancho efectivo y documento a escala de lectura/exportación, con nombre accesible y versiones claro/inversa. Si falta espacio, resolver uso y composición antes de otra anatomía.",
+  "diferido": ["Nueva geometría automática", "Igualar masa o simetrizar perfil", "Cortar Athene por parentesco", "Adoptar frases ilustrativas como hero", "Mínimo universal derivado de esta lámina", "Declarar responsive validado por SVG estático"],
+  "limites": "Los roles, parámetros y composición local son comprobables. Usabilidad web, reproducción impresa efectiva, aceptación externa y adopción final permanecen pendientes."
+}

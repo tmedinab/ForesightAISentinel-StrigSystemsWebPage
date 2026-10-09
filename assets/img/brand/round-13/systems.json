@@ -1,0 +1,54 @@
+[
+  {
+    "team": "A",
+    "name": "Campo y centinela abierto",
+    "thesis": "La S firma ingeniería; el rostro identifica el sistema.",
+    "tradeoffs": [
+      "Dirección preferida; distintividad y lectura facial pendientes."
+    ],
+    "corporate": "strig-a",
+    "product": "athene-a"
+  },
+  {
+    "team": "B",
+    "name": "Firma de barrido",
+    "thesis": "Una firma compacta convierte la inicial de Strig en una trayectoria de percepción. Athene toma esa misma trayectoria y la especializa como perfil de centinela; el parentesco reside en el recorrido y en la masa, no en colocar letras sobre ojos.",
+    "rationale": "Los dos signos son recorridos sólidos de aproximadamente la misma anchura y comparten apertura lateral, retorno inferior y tensión diagonal. Strig prioriza la firma de ingeniería; Athene incorpora una sola apertura facial y una orientación concreta. La metáfora animal surge de modificar el recorrido, sin ojos añadidos bajo una inicial y sin escudo, aeronave, árbol o emblema auxiliar. Los paths son manuales, para viewBox 0 0 128 128, relleno currentColor y fill-rule evenodd.",
+    "tradeoffs": [
+      "La firma corporativa ofrece una S clara y gran economía de formas, pero su vínculo con el búho queda deliberadamente implícito y debe comprobarse.",
+      "El perfil diferencia el papel del sistema Athene y evita fijar un par de sensores; pierde la simetría frontal y puede confundirse con otra especie de ave.",
+      "No se incorpora A: su presencia no aportaba una solución estructural natural a esta ruta.",
+      "La variante de producto requiere ajuste óptico horizontal cuando se acompaña de un nombre debido a su orientación lateral."
+    ],
+    "nextChecks": [
+      "Comparar ambas siluetas a 24, 32 y 64 px con relleno claro y oscuro; comprobar en especial la apertura del perfil a 24 px.",
+      "Pedir lectura espontánea separada antes de revelar el concepto: inicial, instrumento, búho, otra ave o nueve.",
+      "Evaluar la seguridad y sobriedad del perfil frente a posibles lecturas deportivas, caricaturescas o de ave agresiva.",
+      "Comprobar el centro óptico y la misma presencia de ambos símbolos en las láminas comunes y los lockups de marca."
+    ],
+    "corporate": "strig-b",
+    "product": "athene-b"
+  },
+  {
+    "team": "C",
+    "name": "Umbral compartido",
+    "thesis": "La ingeniería integra un campo común de lectura: dos masas sostienen una apertura, sin representar un equipo físico. Athene convierte ese umbral en una presencia frontal de vigilancia.",
+    "rationale": "Metáforas consideradas antes de dibujar: umbral, puente de medida, intersección de campos, horizonte de lectura, acoplamiento, plano de corte, convergencia, orientación y estrato. Se elige el umbral por sostener percepción sin fijar hardware y por admitir una traducción frontal en Athene. La familia comparte hombros a 45 grados, ancho, masa y aperturas; cambia el grado de cierre y la continuidad facial. La empresa conserva un campo único y abierto, mientras el producto se aproxima a un rostro. Ninguna lectura zoológica o tipográfica se considera validada.",
+    "tradeoffs": [
+      "La abstracción corporativa amplía el alcance de Strig, pero necesita el nombre y contexto para explicar su actividad.",
+      "El parentesco depende de proporciones y construcción, no de repetir exactamente el mismo dibujo.",
+      "Athene admite mayor figuración y contraste con Strig; las dos aperturas son faciales y pueden confundirse con instrumental óptico.",
+      "La salida inferior reduce la sensación de insignia cerrada, pero introduce una ambigüedad estructural que debe evaluarse.",
+      "Se priorizan masas y vacíos amplios sobre detalle; el campo mínimo de 16 unidades equivale a 3 píxeles al renderizar el viewBox de 128 a 24 píxeles."
+    ],
+    "nextChecks": [
+      "Renderizar láminas comparables a igual altura óptica junto con las otras propuestas, manteniendo etiquetas de empresa y producto.",
+      "Inspeccionar 16, 24, 32 y 128 píxeles en positivo y negativo; comprobar el canal corporativo y la apertura inferior del producto.",
+      "Solicitar lecturas espontáneas sin mencionar búho, A o tecnología; registrar arquitectura, máscara, robot y binoculares como posibles confusiones.",
+      "Comprobar peso y separación con STRIG SYSTEMS y ATHENE antes de refinar puntas o curvas.",
+      "Si se selecciona la ruta, contrastar semejanzas visuales y disponibilidad de marca en un proceso específico; esta propuesta no acredita calidad registral."
+    ],
+    "corporate": "strig-c",
+    "product": "athene-c"
+  }
+]

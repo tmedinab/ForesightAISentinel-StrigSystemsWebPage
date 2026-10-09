@@ -1,112 +1,36 @@
-# ◈ Strig Systems — Foresight AI Sentinel
+# Strig Systems — Web institucional
 
-Sitio web oficial y arquitectura de despliegue continuo en **GitHub Pages** para **Foresight AI Sentinel** con el dominio personalizado **[strigsystems.tech](https://strigsystems.tech)**.
+Sitio estático de Strig Systems y Athene, sistema centinela aéreo en desarrollo para vigilancia forestal nocturna. HTML, CSS y JavaScript vanilla, con interfaz ES/EN. La portada es compacta; dossier/componentes anteriores no implican disponibilidad comercial ni confidencialidad efectiva.
 
----
+## Trabajar en el proyecto
 
-## 🚀 Arquitectura del Proyecto
+Leer [AGENTS.md](AGENTS.md) y el [índice documental](docs/README.md). Para preview desde la raíz:
 
-Este repositorio utiliza el estándar moderno de GitHub Pages impulsado por **GitHub Actions** (`.github/workflows/deploy.yml`):
-- **Cero dependencias pesadas:** HTML5 semántico, Vanilla CSS con tokens HSL y JavaScript modular.
-- **Despliegue Atómico:** Cada `push` a la rama `main` dispara automáticamente la acción oficial de GitHub Pages sin requerir ramas intermedias como `gh-pages`.
-- **Dominio Canónico:** Configurado a través del archivo `CNAME` apuntando a `strigsystems.tech`.
-
-```
-ForesightAISentinel-StrigSystemsWebPage/
-├── .agents/skills/              # Skills locales instaladas (first-reader, scope-creep, etc.)
-├── .github/workflows/deploy.yml # Pipeline oficial de despliegue automático en GitHub Pages
-├── .gitignore                   # Exclusiones de IDEs, SO y temporales
-├── CNAME                        # Dominio canónico strigsystems.tech
-├── README.md                    # Documentación y guía DNS
-├── index.html                   # Landing page moderna con telemetría y diseño Cyber/Dark
-├── styles.css                   # Sistema de diseño con Glassmorphism y paleta HSL
-└── script.js                    # Interactividad y efectos visuales
+```sh
+python -m http.server 8081 --bind 127.0.0.1
 ```
 
----
+Abrir `http://127.0.0.1:8081/?brand=A`. Si el puerto está ocupado, usar otro libre. El servidor sólo sirve archivos; no requiere build del frontend. No publicar scratch ni respaldos de documentación como parte del sitio.
 
-## 📡 Guía Paso a Paso: Configuración de DNS en Get.Tech
-
-> [!IMPORTANT]
-> **Aviso sobre Mailbux:** Ya tienes configurado tu correo en Mailbux. **NO modifiques ni elimines tus registros `MX` ni los registros `TXT` existentes de SPF o DKIM**. Solo vamos a **añadir** los nuevos registros para la web y la verificación de GitHub.
-
-### 1. Registros para el Dominio Apex (`strigsystems.tech`)
-En el panel de DNS de **Get.Tech**, añade **4 registros tipo `A`**:
-
-| Tipo | Host / Nombre | Valor / Destino IP | TTL |
-| :--- | :--- | :--- | :--- |
-| **A** | `@` (o en blanco) | `185.199.108.153` | 3600 (o Auto) |
-| **A** | `@` (o en blanco) | `185.199.109.153` | 3600 (o Auto) |
-| **A** | `@` (o en blanco) | `185.199.110.153` | 3600 (o Auto) |
-| **A** | `@` (o en blanco) | `185.199.111.153` | 3600 (o Auto) |
-
-*(Opcional recomendado) 4 registros IPv6 tipo `AAAA`:*
-- `2606:50c0:8000::153`
-- `2606:50c0:8001::153`
-- `2606:50c0:8002::153`
-- `2606:50c0:8003::153`
-
----
-
-### 2. Registro para el Subdominio `www` (`www.strigsystems.tech`)
-Añade **1 registro tipo `CNAME`**:
-
-| Tipo | Host / Nombre | Valor / Destino | TTL |
-| :--- | :--- | :--- | :--- |
-| **CNAME** | `www` | `tmedinab.github.io.` | 3600 (o Auto) |
-
-*(Si Get.Tech no acepta el punto final `.`, escribe simplemente `tmedinab.github.io`).*
-
----
-
-### 3. Verificación de Dominio en GitHub (Seguridad Anti-Takeover)
-Para garantizar que nadie más en GitHub pueda vincular tu dominio a otro repositorio:
-1. En GitHub, ve a tu perfil: **Settings > Pages > Add a domain**.
-2. Escribe `strigsystems.tech`.
-3. GitHub te dará un registro TXT parecido a este:
-   - **Tipo:** `TXT`
-   - **Host:** `_github-pages-challenge-tmedinab`
-   - **Valor:** `github-site-verification=...`
-4. Añade ese registro TXT en tu panel de **Get.Tech**.
-5. Vuelve a GitHub y presiona **Verify**.
-
----
-
-### 4. Configurar GitHub Pages en el Repositorio
-Una vez que subas este repositorio a GitHub (`tmedinab/ForesightAISentinel-StrigSystemsWebPage`):
-1. Ve a **Settings > Pages** en tu repositorio.
-2. En **Build and deployment > Source**, selecciona: **`GitHub Actions`**.
-3. En **Custom domain**, confirma que figure `strigsystems.tech`.
-4. Una vez que el DNS propague y GitHub emita el certificado SSL (Let's Encrypt), activa la casilla **"Enforce HTTPS"**.
-
----
-
-## 🛠️ Comandos de Verificación en Terminal (PowerShell)
-
-Para comprobar que los registros DNS ya se están resolviendo en tu máquina:
-
-```powershell
-# Verificar registros A hacia GitHub
-Resolve-DnsName -Name strigsystems.tech -Type A
-
-# Verificar registro CNAME de www
-Resolve-DnsName -Name www.strigsystems.tech -Type CNAME
-
-# Verificar registro TXT de validación
-Resolve-DnsName -Name _github-pages-challenge-tmedinab.strigsystems.tech -Type TXT
+```sh
+node scratch/preflight_check.js
+node scratch/verify_i18n.js
 ```
 
-También puedes comprobar la propagación mundial en:
-👉 [https://dnschecker.org/#A/strigsystems.tech](https://dnschecker.org/#A/strigsystems.tech)
+Node se usa para checks de desarrollo. [Herramientas de marca](tools/brand/README.md) tienen requisitos separados para generación/render; no son dependencias de ejecución de la web.
 
----
+## Assets y documentación
 
-## 📤 Comandos Git para el Primer Push a GitHub
+- [Estudio de marca](docs/ESTUDIO_MARCA_STRIG_ATHENE.md): familia A seleccionada para integración local, alternativas y pendientes.
+- [Plan](docs/PLAN_ESTRATEGICO_MARCA_Y_ASSETS_VISUALES.md): textos aprobados, equipo, prioridades y estado de dominio.
+- [Arquitectura ilustrada](docs/METODOLOGIA_ILUSTRACION_ARQUITECTURA.md): SVG editable y significado conceptual.
+- [Biblioteca institucional](docs/brand/institutional/README.md): originales/manuales y reglas estrictas.
+- [Registro de assets](docs/ASSET_REGISTER.json), [ADRs](docs/adr/) y [changelog](docs/CHANGELOG.md).
 
-Si creas el repositorio en GitHub con el nombre `ForesightAISentinel-StrigSystemsWebPage`:
+## Hosting
 
-```bash
-git remote add origin https://github.com/tmedinab/ForesightAISentinel-StrigSystemsWebPage.git
-git branch -M main
-git push -u origin main
-```
+El repo conserva `CNAME` para `strigsystems.tech` y workflow GitHub Pages al push a main. Tomás compró `strigsystems.cl` y configura DNS en Cloudflare. La migración propuesta a Workers Static Assets + Workers Builds está pendiente; no inferir que el sitio ya está desplegado allí. Los cambios locales requieren commit/push y despliegue para actualizar la web. Mantener correo .tech y sus registros hasta planificar cualquier migración independiente.
+
+El workflow genera `build/public` mediante `python tools/build_public_site.py` y publica sólo portada, páginas legales/404 y assets referenciados. Docs, scratch, exports, dossier y rondas quedan fuera del sitio. La fuente del repo tiene preview institucional; el paquete público conserva menciones textuales mientras la validación gráfica sigue pendiente. No confundir esta exclusión del hosting con privacidad del repositorio Git.
+
+Verificación del paquete: `node tools/verify_public_site.cjs` con Playwright. El builder usa sólo Python estándar, sin frameworks de frontend.

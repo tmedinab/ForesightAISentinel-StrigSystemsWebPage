@@ -1,0 +1,177 @@
+{
+  "received": "2026-10-08",
+  "supplier": "Tomás, local file attachments; no independent download verification",
+  "status": "Local application; institutional validation pending",
+  "files": [
+    {
+      "path": "docs/brand/institutional/corfo/originals/Logo Corfo Vector.ai",
+      "source": "C:\\Users\\Tomas\\Documents\\Logo Corfo Vector.ai",
+      "sha256": "3683ff6fb144accdc820c381777c1eb8d96a9a26640da4a52e3819aed47416ea",
+      "bytes": 232788,
+      "received": "2026-10-08",
+      "kind": "supplied-original",
+      "identityVerification": "PDF-compatible AI, rendered for identity check: current Corfo project-supported lockup (4 pages)"
+    },
+    {
+      "path": "docs/brand/institutional/corfo/originals/manual_corfo.pdf",
+      "source": "C:\\Users\\Tomas\\Documents\\manual_corfo.pdf",
+      "sha256": "cf43858bc19d31f37dedb01f5179122d8d691e167669a0b8dcf69ee45649857f",
+      "bytes": 3929011,
+      "received": "2026-10-08",
+      "kind": "supplied-original",
+      "identityVerification": "supplied institution asset/manual"
+    },
+    {
+      "path": "docs/brand/institutional/corfo/originals/Logo_Corfo blanco.png",
+      "source": "C:\\Users\\Tomas\\Documents\\Logo_Corfo blanco.png",
+      "sha256": "e6132b66b21a8347fdf3dbfa022b329c125ae86ae0cc7b1a1beefacc8affdf7e",
+      "bytes": 135167,
+      "received": "2026-10-08",
+      "kind": "supplied-original",
+      "identityVerification": "supplied institution asset/manual"
+    },
+    {
+      "path": "docs/brand/institutional/corfo/originals/Logo_Corfo color.png",
+      "source": "C:\\Users\\Tomas\\Documents\\Logo_Corfo color.png",
+      "sha256": "e99a68e2d4f7267ab5bc316ad1c51da65f9f2c319eb7a984d9183a320185b2b1",
+      "bytes": 142831,
+      "received": "2026-10-08",
+      "kind": "supplied-original",
+      "identityVerification": "supplied institution asset/manual"
+    },
+    {
+      "path": "docs/brand/institutional/corfo/originals/Logo_Corfo pluma blanco.png",
+      "source": "C:\\Users\\Tomas\\Documents\\Logo_Corfo pluma blanco.png",
+      "sha256": "7f7fc74b0122f9a6c0faa9b004c5180ede8bfd065ebbb8c607f14f26a24930fe",
+      "bytes": 135072,
+      "received": "2026-10-08",
+      "kind": "supplied-original",
+      "identityVerification": "supplied institution asset/manual"
+    },
+    {
+      "path": "docs/brand/institutional/corfo/originals/Logo_Corfo pluma gris.png",
+      "source": "C:\\Users\\Tomas\\Documents\\Logo_Corfo pluma gris.png",
+      "sha256": "10db27b690fae94950bb9bb56f4d7001834d874c6feca01e5d39de51fd85847b",
+      "bytes": 141873,
+      "received": "2026-10-08",
+      "kind": "supplied-original",
+      "identityVerification": "supplied institution asset/manual"
+    },
+    {
+      "path": "docs/brand/institutional/incuba-udec/originals/Logo Trazado (2) (2).ai",
+      "source": "C:\\Users\\Tomas\\Documents\\Logo Trazado (2) (2).ai",
+      "sha256": "12ecdc95bdf6bd640182d77bf153c65e58736f7dfe20c779b21faa97d0690cb4",
+      "bytes": 1440263,
+      "received": "2026-10-08",
+      "kind": "supplied-original",
+      "identityVerification": "PDF-compatible AI, rendered for identity check: IncubaUdeC color lockup (1 page)"
+    },
+    {
+      "path": "docs/brand/institutional/incuba-udec/originals/2. Manual Uso de Marca IU.pdf",
+      "source": "C:\\Users\\Tomas\\Documents\\2. Manual Uso de Marca IU.pdf",
+      "sha256": "94fbe7f5b049fa39eb5727d3397a5396a805febe89a73ca713572f0b02aa90fa",
+      "bytes": 6005339,
+      "received": "2026-10-08",
+      "kind": "supplied-original",
+      "identityVerification": "supplied institution asset/manual"
+    },
+    {
+      "path": "docs/brand/institutional/incuba-udec/originals/IncubaUdeC 1.png",
+      "source": "C:\\Users\\Tomas\\Documents\\IncubaUdeC 1.png",
+      "sha256": "c07525a1da77adbbce91a2a9091908de2b487642a2b832386806ef8bcbc2080e",
+      "bytes": 125336,
+      "received": "2026-10-08",
+      "kind": "supplied-original",
+      "identityVerification": "supplied institution asset/manual"
+    },
+    {
+      "path": "docs/brand/institutional/incuba-udec/originals/IncubaUdeC Blanco.png",
+      "source": "C:\\Users\\Tomas\\Documents\\IncubaUdeC Blanco.png",
+      "sha256": "03aad3aa24e5601468c7140a0f65034995088ebc9ff106c48ff38a73bca93308",
+      "bytes": 48472,
+      "received": "2026-10-08",
+      "kind": "supplied-original",
+      "identityVerification": "supplied institution asset/manual"
+    },
+    {
+      "path": "docs/brand/institutional/incuba-udec/originals/Logo color.png",
+      "source": "C:\\Users\\Tomas\\Documents\\Logo color.png",
+      "sha256": "f882bd8a5ac9aa33f22061612deb208ead3b217eef5eb49153fa13d31adb5240",
+      "bytes": 63878,
+      "received": "2026-10-08",
+      "kind": "supplied-original",
+      "identityVerification": "supplied institution asset/manual"
+    },
+    {
+      "path": "docs/brand/institutional/red-mentores-iu/originals/drive-download-20261008T175819Z-1-001.zip",
+      "source": "C:\\Users\\Tomas\\Documents\\drive-download-20261008T175819Z-1-001.zip",
+      "sha256": "37187c1379193269464ad192c5b510742cb0df9983a1203e5675078ac629729b",
+      "bytes": 161362,
+      "received": "2026-10-08",
+      "kind": "supplied-original",
+      "identityVerification": "supplied institution asset/manual"
+    },
+    {
+      "path": "docs/brand/institutional/red-mentores-iu/originals/extracted/Red de mentores negro (3).png",
+      "source": "supplied ZIP: Red de mentores negro (3).png",
+      "sha256": "3bc551a194916fc90e52021e3695b3bd0fe911292ef5437afde4e198578400dd",
+      "bytes": 48268,
+      "received": "2026-10-08",
+      "kind": "zip-member"
+    },
+    {
+      "path": "docs/brand/institutional/red-mentores-iu/originals/extracted/Red IU 1.png",
+      "source": "supplied ZIP: Red IU 1.png",
+      "sha256": "ff7a8a0222d5593e864672406db8b14119fbbc5da40a6edb8be45c7b50c4b1a1",
+      "bytes": 27369,
+      "received": "2026-10-08",
+      "kind": "zip-member"
+    },
+    {
+      "path": "docs/brand/institutional/red-mentores-iu/originals/extracted/Red mentores blanco (3).png",
+      "source": "supplied ZIP: Red mentores blanco (3).png",
+      "sha256": "ceb7abe325ef7ee2009f987587082c54b2e1b08473fff7116eea9b31951a0f97",
+      "bytes": 36328,
+      "received": "2026-10-08",
+      "kind": "zip-member"
+    },
+    {
+      "path": "docs/brand/institutional/red-mentores-iu/originals/extracted/Red de mentores azul (2).png",
+      "source": "supplied ZIP: Red de mentores azul (2).png",
+      "sha256": "6a9e2465eeb1fc81c8ffa6c3750f30e5ae863e2e543edd6f1eaacdc714dcd1bb",
+      "bytes": 48516,
+      "received": "2026-10-08",
+      "kind": "zip-member"
+    },
+    {
+      "path": "assets/img/institutions/corfo-project-supported-white.webp",
+      "source": "docs/brand/institutional/corfo/originals/Logo_Corfo blanco.png",
+      "sha256": "b4a5c7c5ddd75557079ac06d4f4a51210a2963f0334eb3b434a74e0e1544a771",
+      "bytes": 39214,
+      "kind": "web-derivative",
+      "transformation": "Lossless WebP; full original canvas, dimensions, RGBA pixels, colors, proportions preserved; no crop or recoloring."
+    },
+    {
+      "path": "assets/img/institutions/incuba-udec-white-color.webp",
+      "source": "docs/brand/institutional/incuba-udec/originals/IncubaUdeC 1.png",
+      "sha256": "939956564c3d5c594f5f5764722a6988bbfdab6116458af50fd1b7ecbdf85960",
+      "bytes": 67388,
+      "kind": "web-derivative",
+      "transformation": "Lossless WebP; full original canvas, dimensions, RGBA pixels, colors, proportions preserved; no crop or recoloring."
+    },
+    {
+      "path": "assets/img/institutions/red-mentores-iu-white.webp",
+      "source": "docs/brand/institutional/red-mentores-iu/originals/extracted/Red mentores blanco (3).png",
+      "sha256": "bcbb2a0b122bdd7727abd67385ab8651d341f457f3a6c121ef92594e22a0958e",
+      "bytes": 16266,
+      "kind": "web-derivative",
+      "transformation": "Lossless WebP from supplied 2003x267 white master; full canvas, colors, proportions and RGBA preserved. No crop/recoloring."
+    }
+  ],
+  "relationships": {
+    "corfo": "Semilla Inicia grant recipient",
+    "incuba-udec": "Chosen incubator for Semilla Inicia",
+    "red-mentores-iu": "Mentoring service chosen with Red de Mentores IU",
+    "evidence": "Explicit owner confirmation in chat, 2026-10-08; not independent institutional validation."
+  }
+}

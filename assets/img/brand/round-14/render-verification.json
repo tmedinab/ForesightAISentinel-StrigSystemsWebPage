@@ -1,0 +1,514 @@
+{
+  "status": "pass",
+  "scenarioCount": 36,
+  "boardCount": 4,
+  "chromiumVersion": "151.0.7922.34",
+  "librsvgVersion": "2.62.91",
+  "note": "Rendering/bounds verification only. Letter recognition, aesthetics and customer preference are not measured.",
+  "results": [
+    {
+      "name": "strig-a",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.8333
+    },
+    {
+      "name": "strig-a",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "strig-a",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "strig-a",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9487
+    },
+    {
+      "name": "strig-a",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9778
+    },
+    {
+      "name": "strig-a-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 25,
+        "y": 27.309993743896484,
+        "w": 332.5500183105469,
+        "h": 91.0260009765625,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9785
+    },
+    {
+      "name": "athene-a",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 16,
+        "y": 30,
+        "w": 96,
+        "h": 48,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.8636
+    },
+    {
+      "name": "athene-a",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 16,
+        "y": 30,
+        "w": 96,
+        "h": 48,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9556
+    },
+    {
+      "name": "athene-a",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 16,
+        "y": 30,
+        "w": 96,
+        "h": 48,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9873
+    },
+    {
+      "name": "athene-a",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 16,
+        "y": 30,
+        "w": 96,
+        "h": 48,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9466
+    },
+    {
+      "name": "athene-a",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 16,
+        "y": 30,
+        "w": 96,
+        "h": 48,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.998
+    },
+    {
+      "name": "athene-a-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 15,
+        "y": 28.4999942779541,
+        "w": 461.60003662109375,
+        "h": 59.50000762939453,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9943
+    },
+    {
+      "name": "strig-b",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "w": 88,
+        "h": 82,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9394
+    },
+    {
+      "name": "strig-b",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "w": 88,
+        "h": 82,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "strig-b",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "w": 88,
+        "h": 82,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9561
+    },
+    {
+      "name": "strig-b",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "w": 88,
+        "h": 82,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9579
+    },
+    {
+      "name": "strig-b",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "w": 88,
+        "h": 82,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9761
+    },
+    {
+      "name": "strig-b-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 15,
+        "y": 27.309993743896484,
+        "w": 332.772705078125,
+        "h": 91.0260009765625,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9871
+    },
+    {
+      "name": "athene-b",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 16,
+        "y": 26,
+        "w": 96,
+        "h": 74,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9643
+    },
+    {
+      "name": "athene-b",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 16,
+        "y": 26,
+        "w": 96,
+        "h": 74,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9839
+    },
+    {
+      "name": "athene-b",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 16,
+        "y": 26,
+        "w": 96,
+        "h": 74,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9478
+    },
+    {
+      "name": "athene-b",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 16,
+        "y": 26,
+        "w": 96,
+        "h": 74,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.998
+    },
+    {
+      "name": "athene-b",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 16,
+        "y": 26,
+        "w": 96,
+        "h": 74,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9954
+    },
+    {
+      "name": "athene-b-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 14.999999046325684,
+        "y": 28.4999942779541,
+        "w": 420.14056396484375,
+        "h": 59.50000762939453,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9925
+    },
+    {
+      "name": "strig-c",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 16,
+        "y": 24,
+        "w": 96,
+        "h": 80,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "strig-c",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 16,
+        "y": 24,
+        "w": 96,
+        "h": 80,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9583
+    },
+    {
+      "name": "strig-c",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 16,
+        "y": 24,
+        "w": 96,
+        "h": 80,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9632
+    },
+    {
+      "name": "strig-c",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 16,
+        "y": 24,
+        "w": 96,
+        "h": 80,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9863
+    },
+    {
+      "name": "strig-c",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 16,
+        "y": 24,
+        "w": 96,
+        "h": 80,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9942
+    },
+    {
+      "name": "strig-c-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 15,
+        "y": 27.309993743896484,
+        "w": 341.0717468261719,
+        "h": 91.0260009765625,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9867
+    },
+    {
+      "name": "athene-c",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 16,
+        "y": 24,
+        "w": 96,
+        "h": 68,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9286
+    },
+    {
+      "name": "athene-c",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 16,
+        "y": 24,
+        "w": 96,
+        "h": 68,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9508
+    },
+    {
+      "name": "athene-c",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 16,
+        "y": 24,
+        "w": 96,
+        "h": 68,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "athene-c",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 16,
+        "y": 24,
+        "w": 96,
+        "h": 68,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9816
+    },
+    {
+      "name": "athene-c",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 16,
+        "y": 24,
+        "w": 96,
+        "h": 68,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9942
+    },
+    {
+      "name": "athene-c-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 15,
+        "y": 28.4999942779541,
+        "w": 426.8941650390625,
+        "h": 59.50000762939453,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9914
+    }
+  ]
+}

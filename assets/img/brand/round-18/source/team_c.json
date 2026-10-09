@@ -1,0 +1,95 @@
+{
+  "team": "C",
+  "name": "Registro común / Frente contenido",
+  "thesis": "Dos partes producen una presencia común por una junta registrada. En Athene, esa coordinación se especializa como un frente de atención; el ensayo contiene su remate inferior para dar prioridad a la presencia facial.",
+  "boardSummary": "Strig exacto; Athene contiene su remate inferior y conserva división, ojos y corte registrado.",
+  "corporates": [
+    {
+      "id": "strig-r18-c-control",
+      "title": "Strig / Registro común, control R17",
+      "change": "Control R17 exacto; no se altera el isotipo corporativo por la asociación local de café.",
+      "intent": "Conservar dos planos que completan una silueta mediante la junta desplazada. Firma amplia de ingeniería; la actividad se comunica con nombre, descriptor y evidencia.",
+      "risk": "Tomás lo asocia con café. Puede funcionar como asociación secundaria; no se ha probado que contradiga ingeniería ni que el nombre elimine esa lectura.",
+      "bounds": [
+        19,
+        16,
+        109,
+        112
+      ],
+      "path": "M93 16 L109 32 V96 L93 112 H81 V82 L59 60 V16 Z M49 16 V64 L71 86 V112 H37 L19 94 V34 L37 16 Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "athene-r18-c-control",
+      "title": "Athene / Registro facial, control R17",
+      "change": "Control R17 exacto. Se conserva para comparar la relación entre envolvente facial y remate inferior.",
+      "intent": "Conservar división y búho que Tomás aprecia, y el parentesco visible con Strig. Esta afinidad local no equivale a recepción externa.",
+      "risk": "Tomás lo asocia con burbuja de chat. Envolvente redondeada, aperturas circulares y remate central de 12 u permiten esa asociación.",
+      "bounds": [
+        12,
+        22,
+        116,
+        114
+      ],
+      "path": "M12 44 Q12 22 38 22 H50 L56 30 V52 L62 58 V78 L72 88 H116 V92 Q104 102 88 102 H76 L64 114 L52 102 H40 Q12 94 12 68 Z M68 30 L78 22 H90 Q116 22 116 44 V68 Q116 78 114 80 H84 L74 70 V54 L68 48 Z M45 58 A11 11 0 1 1 23 58 A11 11 0 1 1 45 58 Z M105 58 A11 11 0 1 1 83 58 A11 11 0 1 1 105 58 Z"
+    },
+    {
+      "id": "athene-r18-c-remate-contenido",
+      "title": "Athene / Frente con remate contenido",
+      "change": "Una relación primaria de silueta: vértice inferior central (64,114)→(64,106). La proyección bajo la línea de mejillas y=102 pasa de 12 a 4 u. Corona, contraformas, junta y salida lateral exactas.",
+      "intent": "Dar prioridad al frente amplio y a su articulación de atención sobre la punta exterior. Se busca una presencia facial más asentada sin añadir señales de alerta ni cambiar la coordinación registrada.",
+      "risk": "El pico exterior resulta menos explícito y puede perder identidad de búho. El contorno, círculos y salida lateral aún admiten chat, robot o máscara; menor punta no demuestra más profesionalidad.",
+      "bounds": [
+        12,
+        22,
+        116,
+        106
+      ],
+      "path": "M12 44 Q12 22 38 22 H50 L56 30 V52 L62 58 V78 L72 88 H116 V92 Q104 102 88 102 H76 L64 106 L52 102 H40 Q12 94 12 68 Z M68 30 L78 22 H90 Q116 22 116 44 V68 Q116 78 114 80 H84 L74 70 V54 L68 48 Z M45 58 A11 11 0 1 1 23 58 A11 11 0 1 1 45 58 Z M105 58 A11 11 0 1 1 83 58 A11 11 0 1 1 105 58 Z"
+    }
+  ],
+  "rationale": "La reacción de Tomás aporta afinidad local con división, búho y parentesco, además de asociaciones café/chat. La respuesta conserva los recursos apreciados y cultiva Registro común, cuyo origen R17 permanece explícito. El café corporativo no se convierte en defecto automático: no hay un beneficio concreto que justifique modificar Strig ahora. En Athene localizo el posible carácter de globo en la relación entre volumen redondeado y punta inferior; los círculos también pueden recordar puntos, pero se mantienen para no mezclar dos hipótesis. El único cambio reduce la proyección de 12 a 4 u y la altura visible de 92 a 84 u, sin modificar la interfaz. Función, objetivo y beneficio se expresarán según el contexto mediante descriptor y evidencia; el logo debe identificar y dar presencia, no prometer detección precoz por forma.",
+  "tradeoffs": [
+    "Se reduce la lectura posible de punta de globo; se debilita también el pico que ayuda a la identidad animal.",
+    "El frente resulta proporcionalmente más ancho: 104×84 u frente a 104×92 u. Que gane aplomo o elegancia es una hipótesis para la reacción de Tomás.",
+    "La junta y las dos partes quedan exactas; el ensayo no mezcla corrección del corte con cambio de contorno.",
+    "Strig conserva su amplitud empresarial y la afinidad formal existente, aceptando café como asociación secundaria pendiente de evaluación contextual.",
+    "Chat puede persistir por ojos circulares, redondez y salida de mejilla. No se cambia todo a la vez para intentar eliminar cualquier asociación."
+  ],
+  "nextChecks": [
+    "Comparar Athene R17 y remate contenido a igual ancho y en la firma de producto: decidir si gana presencia facial o si el pico más largo merece conservarse.",
+    "Registrar por separado qué ve Tomás, qué carácter siente y qué partes aprecia; no llamar ciega a esta revisión.",
+    "Mirar Strig con nombre completo y descriptor de ingeniería en claro/oscuro antes de decidir si café contradice su papel.",
+    "Si se necesita otra operación, localizar después si la asociación de chat reside en ojos, redondez o salida lateral; no añadir detalles decorativos o emblemas funcionales.",
+    "Tutor: comprobar que la modificación sirve a Registro común y que su coste animal resulta admisible bajo M14; retirar el ensayo si no mejora el control."
+  ],
+  "operationMap": {
+    "corporate": {
+      "status": "Control R17 exacto, sin refinamiento.",
+      "interface": "Borde izquierdo de junta (49,16)→(49,64)→(71,86)→(71,112). Borde derecho (59,16)→(59,60)→(81,82)→(81,112).",
+      "reason": "El beneficio concreto de alterar la firma por café no está demostrado. No borrar una junta apreciada por una asociación secundaria."
+    },
+    "product": {
+      "primaryHypothesis": "Prioridad de frente facial mediante menor proyección inferior, manteniendo coordinación registrada.",
+      "changedNodes": [
+        {
+          "before": [
+            64,
+            114
+          ],
+          "after": [
+            64,
+            106
+          ]
+        }
+      ],
+      "changedRelation": "Vértice situado 12 u bajo mejillas y=102 pasa a 4 u. Los flancos (76,102)→vértice→(52,102) cambian inclinación como consecuencia del único nodo.",
+      "fixed": "Todo el resto del path: corona, hombros, radios/centros de ojos, bordes de junta, salida de mejilla y continuidad inferior.",
+      "associatedObservation": "La lectura de chat la aporta Tomás. Su atribución parcial a envolvente/punta es hipótesis del equipo, no diagnóstico probado.",
+      "qa": "Comprobar 16/24/32/128 positivo/inversa, bounds y diferencia limitada al remate inferior."
+    }
+  },
+  "namingRole": "Strig Systems sigue nombrando la empresa; Athene nombra su primer sistema. Strigiformes aporta raíz metafórica para atención e identidad, sin atribuir sensores biológicos ni capacidades térmicas a las aves. Noctua/Nest conservan denominaciones y no reciben nuevos emblemas. Las letras S/A no gobiernan esta operación.",
+  "critiqueResponse": "Tomás aprecia división, búho y coherencia; café/chat son asociaciones locales. Strig se conserva. Athene ensaya solo la proyección inferior 12→4 u, manteniendo ojos y junta. Se busca un frente más asentado; el coste es menor pico. Chat puede persistir y no se declara mejora de protección, detección o elegancia."
+}

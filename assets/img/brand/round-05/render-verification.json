@@ -1,0 +1,849 @@
+{
+  "status": "pass",
+  "scenarioCount": 60,
+  "chromiumVersion": "151.0.7922.34",
+  "librsvgVersion": "2.62.91",
+  "note": "Rendering/bounds verification only. Letter recognition, aesthetics and customer preference are not measured.",
+  "results": [
+    {
+      "name": "campo-control",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 18,
+        "y": 18,
+        "w": 92,
+        "h": 92,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9423
+    },
+    {
+      "name": "campo-control",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 18,
+        "y": 18,
+        "w": 92,
+        "h": 92,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.879
+    },
+    {
+      "name": "campo-control",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 18,
+        "y": 18,
+        "w": 92,
+        "h": 92,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.812
+    },
+    {
+      "name": "campo-control",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 18,
+        "y": 18,
+        "w": 92,
+        "h": 92,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9315
+    },
+    {
+      "name": "campo-control",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 18,
+        "y": 18,
+        "w": 92,
+        "h": 92,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9808
+    },
+    {
+      "name": "campo-control-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 27,
+        "y": 25,
+        "w": 358.5500183105469,
+        "h": 93.33599853515625,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.986
+    },
+    {
+      "name": "campo-continuidad",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.8333
+    },
+    {
+      "name": "campo-continuidad",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "campo-continuidad",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "campo-continuidad",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9498
+    },
+    {
+      "name": "campo-continuidad",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 18,
+        "y": 21,
+        "w": 92,
+        "h": 86,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9808
+    },
+    {
+      "name": "campo-continuidad-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 27,
+        "y": 27.309993743896484,
+        "w": 358.5500183105469,
+        "h": 91.0260009765625,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9875
+    },
+    {
+      "name": "campo-terminal",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 18,
+        "y": 18,
+        "w": 92,
+        "h": 92,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9375
+    },
+    {
+      "name": "campo-terminal",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 18,
+        "y": 18,
+        "w": 92,
+        "h": 92,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.8583
+    },
+    {
+      "name": "campo-terminal",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 18,
+        "y": 18,
+        "w": 92,
+        "h": 92,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.8036
+    },
+    {
+      "name": "campo-terminal",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 18,
+        "y": 18,
+        "w": 92,
+        "h": 92,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9296
+    },
+    {
+      "name": "campo-terminal",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 18,
+        "y": 18,
+        "w": 92,
+        "h": 92,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9799
+    },
+    {
+      "name": "campo-terminal-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 27,
+        "y": 25,
+        "w": 358.5500183105469,
+        "h": 93.33599853515625,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9859
+    },
+    {
+      "name": "bilateral-control",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 12,
+        "y": 32,
+        "w": 104,
+        "h": 44,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9714
+    },
+    {
+      "name": "bilateral-control",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 12,
+        "y": 32,
+        "w": 104,
+        "h": 44,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "bilateral-control",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 12,
+        "y": 32,
+        "w": 104,
+        "h": 44,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.8896
+    },
+    {
+      "name": "bilateral-control",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 12,
+        "y": 32,
+        "w": 104,
+        "h": 44,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9909
+    },
+    {
+      "name": "bilateral-control",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 12,
+        "y": 32,
+        "w": 104,
+        "h": 44,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9658
+    },
+    {
+      "name": "bilateral-control-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 27,
+        "y": 27.309993743896484,
+        "w": 358.5500183105469,
+        "h": 91.0260009765625,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9859
+    },
+    {
+      "name": "bilateral-frente",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 12,
+        "y": 32,
+        "w": 104,
+        "h": 44,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.975
+    },
+    {
+      "name": "bilateral-frente",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 12,
+        "y": 32,
+        "w": 104,
+        "h": 44,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "bilateral-frente",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 12,
+        "y": 32,
+        "w": 104,
+        "h": 44,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9
+    },
+    {
+      "name": "bilateral-frente",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 12,
+        "y": 32,
+        "w": 104,
+        "h": 44,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9863
+    },
+    {
+      "name": "bilateral-frente",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 12,
+        "y": 32,
+        "w": 104,
+        "h": 44,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9689
+    },
+    {
+      "name": "bilateral-frente-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 27,
+        "y": 27.309993743896484,
+        "w": 358.5500183105469,
+        "h": 91.0260009765625,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9857
+    },
+    {
+      "name": "bilateral-profundo",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 12,
+        "y": 32,
+        "w": 104,
+        "h": 52,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9767
+    },
+    {
+      "name": "bilateral-profundo",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 12,
+        "y": 32,
+        "w": 104,
+        "h": 52,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "bilateral-profundo",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 12,
+        "y": 32,
+        "w": 104,
+        "h": 52,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9105
+    },
+    {
+      "name": "bilateral-profundo",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 12,
+        "y": 32,
+        "w": 104,
+        "h": 52,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9926
+    },
+    {
+      "name": "bilateral-profundo",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 12,
+        "y": 32,
+        "w": 104,
+        "h": 52,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9722
+    },
+    {
+      "name": "bilateral-profundo-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 27,
+        "y": 27.309993743896484,
+        "w": 358.5500183105469,
+        "h": 91.0260009765625,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9861
+    },
+    {
+      "name": "athene-control",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 16,
+        "y": 28,
+        "w": 96,
+        "h": 80,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9167
+    },
+    {
+      "name": "athene-control",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 16,
+        "y": 28,
+        "w": 96,
+        "h": 80,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "athene-control",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 16,
+        "y": 28,
+        "w": 96,
+        "h": 80,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9234
+    },
+    {
+      "name": "athene-control",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 16,
+        "y": 28,
+        "w": 96,
+        "h": 80,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9716
+    },
+    {
+      "name": "athene-control",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 16,
+        "y": 28,
+        "w": 96,
+        "h": 80,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9756
+    },
+    {
+      "name": "athene-control-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 27.000001907348633,
+        "y": 28.4999942779541,
+        "w": 437.60003662109375,
+        "h": 79.0000228881836,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9883
+    },
+    {
+      "name": "athene-at-invertida",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 12,
+        "y": 28,
+        "w": 104,
+        "h": 78,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.8108
+    },
+    {
+      "name": "athene-at-invertida",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 12,
+        "y": 28,
+        "w": 104,
+        "h": 78,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9875
+    },
+    {
+      "name": "athene-at-invertida",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 12,
+        "y": 28,
+        "w": 104,
+        "h": 78,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "athene-at-invertida",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 12,
+        "y": 28,
+        "w": 104,
+        "h": 78,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.929
+    },
+    {
+      "name": "athene-at-invertida",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 12,
+        "y": 28,
+        "w": 104,
+        "h": 78,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.999
+    },
+    {
+      "name": "athene-at-invertida-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 27,
+        "y": 28.4999942779541,
+        "w": 437.60003662109375,
+        "h": 75.25000762939453,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9941
+    },
+    {
+      "name": "athene-a-central",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 18,
+        "y": 30,
+        "w": 92,
+        "h": 70,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9063
+    },
+    {
+      "name": "athene-a-central",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 18,
+        "y": 30,
+        "w": 92,
+        "h": 70,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 1
+    },
+    {
+      "name": "athene-a-central",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 18,
+        "y": 30,
+        "w": 92,
+        "h": 70,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9481
+    },
+    {
+      "name": "athene-a-central",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 18,
+        "y": 30,
+        "w": 92,
+        "h": 70,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9657
+    },
+    {
+      "name": "athene-a-central",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 18,
+        "y": 30,
+        "w": 92,
+        "h": 70,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9922
+    },
+    {
+      "name": "athene-a-central-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 27,
+        "y": 28.4999942779541,
+        "w": 437.60003662109375,
+        "h": 75.73912811279297,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.994
+    },
+    {
+      "name": "athene-compacto",
+      "width": 16,
+      "height": 16,
+      "bounds": {
+        "x": 18,
+        "y": 30,
+        "w": 92,
+        "h": 68,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9063
+    },
+    {
+      "name": "athene-compacto",
+      "width": 24,
+      "height": 24,
+      "bounds": {
+        "x": 18,
+        "y": 30,
+        "w": 92,
+        "h": 68,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9683
+    },
+    {
+      "name": "athene-compacto",
+      "width": 32,
+      "height": 32,
+      "bounds": {
+        "x": 18,
+        "y": 30,
+        "w": 92,
+        "h": 68,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9783
+    },
+    {
+      "name": "athene-compacto",
+      "width": 48,
+      "height": 48,
+      "bounds": {
+        "x": 18,
+        "y": 30,
+        "w": 92,
+        "h": 68,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.964
+    },
+    {
+      "name": "athene-compacto",
+      "width": 128,
+      "height": 128,
+      "bounds": {
+        "x": 18,
+        "y": 30,
+        "w": 92,
+        "h": 68,
+        "vw": 128,
+        "vh": 128
+      },
+      "maskIoU": 0.9981
+    },
+    {
+      "name": "athene-compacto-lockup",
+      "width": 490,
+      "height": 140,
+      "bounds": {
+        "x": 27,
+        "y": 28.4999942779541,
+        "w": 437.60003662109375,
+        "h": 74.7608871459961,
+        "vw": 490,
+        "vh": 140
+      },
+      "maskIoU": 0.9908
+    }
+  ]
+}
