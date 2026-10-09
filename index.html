@@ -35,7 +35,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=2.2.0">
+  <link rel="stylesheet" href="styles.css?v=2.3.0">
 
   <!-- Umami Analytics (Privacy-First & Cookie-less) -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="aa979513-3790-4797-99e5-03d4a57d74ee"></script>
@@ -95,7 +95,7 @@
           <span class="lang-option" data-lang-val="en">EN</span>
         </button>
 
-        <button type="button" class="btn-primary btn-header" data-open-modal="contact-modal" data-intent="briefing" data-i18n="h_nav_cta">Solicitar Briefing</button>
+        <button type="button" class="btn-primary btn-header" data-open-modal="contact-modal" data-intent="general" data-i18n="h_nav_cta">Contactar</button>
       </div>
     </div>
   </header>
@@ -105,18 +105,7 @@
       <!-- HERO AREA -->
       <section class="hero-section holding-hero">
         <div class="hero-content">
-          <!-- Unified Institutional & Engineering Telemetry HUD Bar -->
-          <div class="hero-credential-bar glass-panel" role="region" aria-label="Credenciales y estado técnico del proyecto">
-            <div class="cred-segment">
-              <span class="status-pulse-dot" aria-hidden="true"></span>
-              <span class="cred-label" data-i18n="h_status">TRL 3 · Prototipo en desarrollo · Demo prevista ene 2027</span>
-            </div>
-            <span class="cred-separator" aria-hidden="true">│</span>
-            <div class="cred-segment">
-              <span class="cred-sub-mark" aria-hidden="true">◈</span>
-              <span class="cred-label" data-i18n="h_badge">Semilla Inicia Corfo • IncubaUdeC • Finalistas 7th Gear Challenge - Gearbox UdeC</span>
-            </div>
-          </div>
+          <p class="hero-company" data-i18n="h_company">Ingeniería aeroespacial y sistemas autónomos · Chile</p>
 
           <!-- Dedicated Athene Product Eyebrow -->
           <div class="hero-product-eyebrow">
@@ -126,19 +115,20 @@
           </div>
 
           <!-- Hero Headline with Metallic Aerospace Gradient -->
-          <p class="hero-company" data-i18n="h_company">Ingeniería aeroespacial y sistemas autónomos · Chile</p>
           <h1 class="hero-title">
             <span data-i18n="h_title_1">Los riesgos se mueven rápido.</span><br>
             <span class="gradient-text" data-i18n="h_title_2">Nosotros los vemos venir.</span>
           </h1>
 
           <!-- Hero Subtitle -->
-          <p class="hero-subtitle" data-i18n="h_desc">Plataforma centinela aérea autónoma diseñada para reducir la brecha nocturna de vigilancia forestal mediante análisis térmico a bordo y supervisión humana de las alertas.</p>
+          <p class="hero-subtitle" data-i18n="h_desc">Athene es una plataforma centinela aérea autónoma diseñada para apoyar la vigilancia forestal nocturna. Busca detectar presencia de personas e indicios de incendio mediante análisis térmico a bordo y revisión humana de las alertas.</p>
+
+          <p class="hero-status" data-i18n="h_status">Desarrollo experimental · TRL 3</p>
 
           <!-- Hero Actions -->
           <div class="hero-actions">
-            <button type="button" class="btn-primary btn-large" data-open-modal="contact-modal" data-intent="pilot">
-              <span data-i18n="h_cta_pilot">Conversar sobre un piloto</span>
+            <button type="button" class="btn-primary btn-large" data-open-modal="contact-modal" data-intent="athene">
+              <span data-i18n="h_cta_pilot">Conversar con el equipo</span>
               <span class="arrow-icon" aria-hidden="true">→</span>
             </button>
             <button type="button" class="btn-ghost btn-large btn-hero-brief" data-open-modal="brief-modal">
@@ -147,7 +137,7 @@
                 <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
                 <rect x="6" y="14" width="12" height="8"></rect>
               </svg>
-              <span data-i18n="h_cta_brief">Ver resumen ejecutivo</span>
+              <span data-i18n="h_cta_brief">Ver resumen del proyecto</span>
             </button>
           </div>
         </div>
@@ -157,26 +147,27 @@
             <span class="concept-reference" aria-hidden="true">ATHENE // 01</span>
           </div>
           <h2 class="concept-title" data-i18n="h_visual_title">Un sistema. Tres funciones conectadas.</h2>
-          <p class="concept-boundary" data-i18n="h_visual_boundary">Aeronave VTOL · cámara y computador a bordo</p>
           <img class="concept-diagram" src="assets/img/tech/athene-architecture.svg" width="720" height="460" alt="" decoding="async">
           <ol class="concept-flow">
-            <li><span class="concept-step" aria-hidden="true">01</span><span data-i18n="h_flow_1">Aeronave y cámara</span></li>
-            <li><span class="concept-step" aria-hidden="true">02</span><span data-i18n="h_flow_2">Inferencia a bordo</span></li>
-            <li><span class="concept-step" aria-hidden="true">03</span><span data-i18n="h_flow_3">Evaluación humana</span></li>
+            <li><span class="concept-step" aria-hidden="true">01</span><span data-i18n="h_flow_1">Observación aérea</span></li>
+            <li><span class="concept-step" aria-hidden="true">02</span><span data-i18n="h_flow_2">Análisis a bordo</span></li>
+            <li><span class="concept-step" aria-hidden="true">03</span><span data-i18n="h_flow_3">Revisión humana</span></li>
           </ol>
-          <p class="concept-delivery" data-i18n="h_visual_delivery">Imágenes y avisos al puesto de supervisión local</p>
-          <figcaption data-i18n="h_visual_caption">Arquitectura conceptual con aeronave genérica y componentes ampliados. La evidencia se enriquece durante la observación. No representa el diseño de Noctua ni resultados medidos.</figcaption>
+          <p class="concept-delivery" data-i18n="h_visual_delivery">Imágenes y alertas para el operador</p>
+          <figcaption data-i18n="h_visual_caption">Ilustración conceptual del flujo de observación, análisis a bordo y revisión humana. No representa el diseño de Noctua ni resultados de pruebas.</figcaption>
         </figure>
       </section>
 
       <section class="project-stages" aria-labelledby="project-stages-title">
         <h2 id="project-stages-title" class="section-kicker" data-i18n="h_stage_label">ESTADO DEL PROYECTO</h2>
         <ol class="project-stages-grid">
-          <li><h3 data-i18n="h_stage_now">Hoy · TRL 3</h3><p data-i18n="h_stage_now_desc">Arquitectura y preparación de integración.</p></li>
-          <li><h3 data-i18n="h_stage_next">Próximo · Demo 2027</h3><p data-i18n="h_stage_next_desc">Integración experimental prevista.</p></li>
-          <li><h3 data-i18n="h_stage_future">Visión · Noctua / Nest</h3><p data-i18n="h_stage_future_desc">Plataforma aérea y estación proyectadas.</p></li>
+          <li><h3 data-i18n="h_stage_now">Hoy · TRL 3</h3><p data-i18n="h_stage_now_desc">Preparación de integración y primeras pruebas.</p></li>
+          <li><h3 data-i18n="h_stage_next">Próximo · Demostración 2027</h3><p data-i18n="h_stage_next_desc">Evaluación conjunta de los componentes.</p></li>
+          <li><h3 data-i18n="h_stage_future">Evolución · Aeronave y estación</h3><p data-i18n="h_stage_future_desc">Noctua y Nest como desarrollos futuros.</p></li>
         </ol>
       </section>
+
+      <p class="project-credentials" data-i18n="h_badge">Semilla Inicia Corfo • IncubaUdeC • Finalistas 7th Gear Challenge - Gearbox UdeC</p>
 
       <h2 class="section-kicker" data-i18n="h_capabilities_label">ARQUITECTURA EN DESARROLLO</h2>
       <!-- 3 FUNCTIONAL CAPABILITY PILLARS -->
@@ -194,7 +185,7 @@
             </svg>
           </div>
           <h3 class="pillar-title" data-i18n="h_p1_title">Plataforma aérea experimental</h3>
-          <p class="pillar-desc" data-i18n="h_p1_desc">Validación inicial prevista sobre una aeronave comercial adaptada. Noctua es la plataforma VTOL de ala fija proyectada para la evolución del sistema.</p>
+          <p class="pillar-desc" data-i18n="h_p1_desc">Las primeras pruebas se plantean sobre una aeronave comercial adaptada. Noctua es la plataforma VTOL de ala fija para la evolución del sistema.</p>
         </div>
 
         <div class="holding-pillar-card glass-panel">
@@ -217,7 +208,7 @@
             </svg>
           </div>
           <h3 class="pillar-title" data-i18n="h_p2_title">Análisis térmico a bordo</h3>
-          <p class="pillar-desc" data-i18n="h_p2_desc">Análisis térmico a bordo para detectar presencia de personas e indicios de incendio durante la noche. La precisión y los tiempos de respuesta se evaluarán en pruebas.</p>
+          <p class="pillar-desc" data-i18n="h_p2_desc">Procesamiento de imágenes térmicas para detectar presencia de personas e indicios de incendio durante la noche.</p>
         </div>
 
         <div class="holding-pillar-card glass-panel">
@@ -235,22 +226,21 @@
               <path d="M17 11h-1"></path>
             </svg>
           </div>
-          <h3 class="pillar-title" data-i18n="h_p3_title">Supervisión humana de alertas</h3>
-          <p class="pillar-desc" data-i18n="h_p3_desc">El operador revisa imágenes y alertas para evaluar actividad humana que podría generar riesgo de incendio y apoyar una respuesta temprana.</p>
+          <h3 class="pillar-title" data-i18n="h_p3_title">Revisión humana de alertas</h3>
+          <p class="pillar-desc" data-i18n="h_p3_desc">El operador revisa imágenes y alertas para evaluar el contexto y orientar una respuesta temprana.</p>
         </div>
       </div>
 
       <!-- TECHNICAL SPECIFICATIONS & PILOT COLLABORATION CARD -->
       <div class="holding-ip-card glass-panel">
         <div class="holding-ip-header">
-          <span class="holding-ip-badge" data-i18n="h_ip_tag">CONVERSACIÓN TÉCNICA</span>
-          <span class="ip-protocol-tag" data-i18n="h_ip_protocol">[VALIDACIÓN 2026-27]</span>
+          <span class="holding-ip-badge" data-i18n="h_ip_tag">POSIBLES PRUEBAS EN TERRENO</span>
         </div>
-        <h2 class="holding-ip-title" data-i18n="h_ip_title">¿Quieres explorar una validación en terreno?</h2>
-        <p class="holding-ip-body" data-i18n="h_ip_body">Conversemos sobre tus necesidades de vigilancia forestal y cómo podrían orientar las pruebas de Athene. Estamos preparando la integración experimental del sistema.</p>
+        <h2 class="holding-ip-title" data-i18n="h_ip_title">Exploremos posibles pruebas con Athene</h2>
+        <p class="holding-ip-body" data-i18n="h_ip_body">Buscamos conocer necesidades de vigilancia forestal y conversar con organizaciones interesadas en orientar futuras pruebas del sistema.</p>
         <div class="holding-ip-footer">
           <span class="ip-footer-note" data-i18n="h_ip_footer_note">Equipo Strig Systems · Concepción, Chile.</span>
-          <button type="button" class="btn-ghost" data-open-modal="contact-modal" data-intent="briefing" data-i18n="h_ip_btn">Conversar con el equipo</button>
+          <button type="button" class="btn-ghost" data-open-modal="contact-modal" data-intent="athene" data-i18n="h_ip_btn">Conversar con el equipo</button>
         </div>
       </div>
 
@@ -259,13 +249,13 @@
         <div class="public-team-heading">
           <span class="public-team-tag" data-i18n="team_tag">Equipo fundador</span>
           <h2 id="public-team-title" data-i18n="team_title">El equipo detrás de Strig Systems</h2>
-          <p data-i18n="team_intro">Cinco ingenieros civiles aeroespaciales formados en la Universidad de Concepción, detrás del desarrollo de Strig Systems y Athene.</p>
+          <p data-i18n="team_intro">Equipo con formación en Ingeniería Civil Aeroespacial en la Universidad de Concepción, dedicado al desarrollo de Strig Systems y Athene.</p>
         </div>
         <div class="public-team-grid">
           <article class="public-team-card glass-panel" data-team-member="tomas">
             <img class="public-team-photo" src="assets/img/team/tomas_portrait.jpg" width="400" height="400" alt="" loading="lazy" decoding="async">
             <h3 data-i18n="team_name_tomas">Tomás Medina</h3>
-            <p class="public-team-role" data-i18n="team_role_lead">Cofundador · Lead técnico</p>
+            <p class="public-team-role" data-i18n="team_role_lead">Cofundador · Responsable técnico</p>
             <a class="team-linkedin" href="https://www.linkedin.com/in/tomasmedinab/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn · Tomás Medina"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg><span data-i18n="team_linkedin">LinkedIn</span></a>
           </article>
           <article class="public-team-card glass-panel" data-team-member="carlos">
@@ -324,7 +314,7 @@
               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
               <circle cx="12" cy="10" r="3"></circle>
             </svg>
-            <span data-i18n="f_location">Concepción, Chile · Universidad de Concepción</span>
+            <span data-i18n="f_location">Concepción, Chile</span>
           </div>
           <a href="mailto:contacto@strigsystems.tech" class="pill-item pill-link">
             <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -369,186 +359,74 @@
     </div>
   </footer>
 
-  <!-- MODAL: CONTACT & NDA QUALIFICATION FORM -->
-  <div id="contact-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
-    <div class="modal-dialog glass-panel pilot-modal-dialog">
-      <button type="button" class="modal-close" data-close-modal aria-label="Cerrar ventana">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
+  <!-- General company contact, with context supplied by each invitation. -->
+  <div id="contact-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title" aria-describedby="contact-modal-sub">
+    <div class="modal-dialog glass-panel contact-dialog">
+      <button type="button" class="modal-close" data-close-modal aria-label="Cerrar ventana" data-i18n-aria="contact_close">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m18 6-12 12M6 6l12 12"/></svg>
       </button>
-
       <div class="modal-body-scroll">
-        <!-- Interactive Intent Tabs -->
-        <div class="intent-selector-pills" role="group" aria-label="Tipo de solicitud / Enquiry type">
-          <button type="button" class="intent-pill active" data-intent-target="pilot" aria-pressed="true">
-            <span class="intent-pill-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              </svg>
-            </span>
-            <span data-i18n="intent_tab_pilot">Predio Piloto 2026-27</span>
-          </button>
-          <button type="button" class="intent-pill" data-intent-target="briefing" aria-pressed="false">
-            <span class="intent-pill-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 6 12 12 16 14"></polyline>
-              </svg>
-            </span>
-            <span data-i18n="intent_tab_briefing">Briefing Técnico (15 min)</span>
-          </button>
-          <button type="button" class="intent-pill" data-intent-target="alliances" aria-pressed="false">
-            <span class="intent-pill-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                <circle cx="9" cy="7" r="4"></circle>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-              </svg>
-            </span>
-            <span data-i18n="intent_tab_alliances">Colaboración</span>
-          </button>
-        </div>
-
         <div class="modal-header">
-          <div class="modal-badge">
-            <span class="badge-dot"></span>
-            <span id="contact-badge-text" data-i18n="modal_badge">Validación territorial 2026-27</span>
-          </div>
-          <h2 id="contact-modal-title" class="modal-title" data-i18n="modal_title">Sumarse al programa de validación 2026-27</h2>
-          <p id="contact-modal-sub" class="modal-subtitle" data-i18n="modal_sub">
-            Completa los datos de tu entidad para evaluar conjuntamente la factibilidad territorial y requerimientos de validación en terreno.
-          </p>
+          <p class="contact-kicker">Strig Systems</p>
+          <h2 id="contact-modal-title" class="modal-title" data-i18n="modal_title">Conversemos sobre tu proyecto</h2>
+          <p id="contact-modal-sub" class="modal-subtitle" data-i18n="modal_sub">Cuéntanos qué necesitas o cómo te gustaría colaborar. El equipo revisará tu consulta y te contactará para conversar sobre los próximos pasos.</p>
         </div>
-
         <p class="modal-direct-contact"><a href="mailto:contacto@strigsystems.tech">contacto@strigsystems.tech</a></p>
         <form id="contact-form" class="pilot-form" novalidate>
-          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-          <input type="hidden" id="form-subject" name="_subject" value="Nueva Solicitud Holding - Strig Systems">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" id="form-intent-input" name="Intencion" value="Validación territorial (2026-27)">
-
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="form-group full-width">
+            <label for="contact-reason" class="form-label" data-i18n="contact_reason_label">Motivo de la consulta</label>
+            <select id="contact-reason" name="Motivo" class="form-select">
+              <option value="athene" data-i18n="contact_reason_athene">Athene · Vigilancia y pruebas</option>
+              <option value="collaboration" data-i18n="contact_reason_collaboration">Colaboración</option>
+              <option value="general" selected data-i18n="contact_reason_general">Consulta general</option>
+            </select>
+          </div>
           <div class="form-grid">
             <div class="form-group">
               <label for="contact-name" class="form-label" data-i18n="f_name_label">Nombre y apellido *</label>
-              <input type="text" id="contact-name" name="Nombre" class="form-input" required placeholder="Ej: Marcela Soto" data-i18n-ph="f_name_ph">
+              <input type="text" id="contact-name" name="Nombre" class="form-input" required autocomplete="name" placeholder="Ej: Marcela Soto" data-i18n-ph="f_name_ph">
             </div>
-
             <div class="form-group">
               <label for="contact-email" class="form-label" data-i18n="f_email_label">Correo electrónico *</label>
-              <input type="email" id="contact-email" name="Email" class="form-input" required placeholder="nombre@empresa.cl" data-i18n-ph="f_email_ph">
+              <input type="email" id="contact-email" name="Email" class="form-input" required autocomplete="email" placeholder="nombre@empresa.cl" data-i18n-ph="f_email_ph">
             </div>
-
             <div class="form-group">
               <label for="contact-company" class="form-label" data-i18n="f_company_label">Empresa u organización (opcional)</label>
-              <input type="text" id="contact-company" name="Empresa_Organizacion" class="form-input" placeholder="Ej: Forestal / Minera / Institución" data-i18n-ph="f_company_ph">
+              <input type="text" id="contact-company" name="Empresa_Organizacion" class="form-input" autocomplete="organization" placeholder="Nombre de tu organización" data-i18n-ph="f_company_ph">
             </div>
-
             <div class="form-group">
-              <label for="contact-phone" class="form-label" data-i18n="f_phone_label">Teléfono / WhatsApp (opcional)</label>
-              <input type="tel" id="contact-phone" name="Telefono" class="form-input" placeholder="+56 9 1234 5678" data-i18n-ph="f_phone_ph">
-            </div>
-
-            <div class="form-group intent-field-pilot">
-              <label for="contact-region" class="form-label" data-i18n="f_region_label">Región del posible piloto (opcional)</label>
-              <select id="contact-region" name="Region" class="form-select">
-                <option value="" disabled selected data-i18n="opt_select_region">Selecciona una región</option>
-                <option value="Región del Biobío">Región del Biobío</option>
-                <option value="Región de La Araucanía">Región de La Araucanía</option>
-                <option value="Región de Ñuble">Región de Ñuble</option>
-                <option value="Región del Maule">Región del Maule</option>
-                <option value="Región de Los Ríos">Región de Los Ríos</option>
-                <option value="Región de Los Lagos">Región de Los Lagos</option>
-                <option value="Región de Valparaíso">Región de Valparaíso</option>
-                <option value="Región Metropolitana">Región Metropolitana</option>
-                <option value="Otra región">Otra región / Internacional</option>
-              </select>
-            </div>
-
-            <div class="form-group intent-field-pilot">
-              <label for="contact-interest" class="form-label" data-i18n="f_interest_label">Tipo de entidad o predio (opcional)</label>
-              <select id="contact-interest" name="Tipo_Interes" class="form-select">
-                <option value="" disabled selected data-i18n="opt_select_interest">Selecciona tipo de interés</option>
-                <option value="Empresa forestal (Predio productivo)" data-i18n="opt_interest_1">Empresa forestal (Predio productivo)</option>
-                <option value="Organismo público de emergencia / B2G" data-i18n="opt_interest_2">Organismo público de emergencia / B2G</option>
-                <option value="Comunidad / Protección de interfaz urbano-forestal" data-i18n="opt_interest_3">Comunidad / Protección de interfaz urbano-forestal</option>
-                <option value="Infraestructura crítica / Red eléctrica / Energía" data-i18n="opt_interest_4">Infraestructura crítica / Red eléctrica / Energía</option>
-              </select>
-            </div>
-
-            <div class="form-group intent-field-briefing" style="display: none;">
-              <label for="contact-briefing-time" class="form-label" data-i18n="f_briefing_time_label">Horario preferente de reunión *</label>
-              <select id="contact-briefing-time" name="Horario_Preferente" class="form-select">
-                <option value="Mañana (09:00 - 12:00 CLT)" selected data-i18n="opt_time_morning">Mañana (09:00 - 12:00 CLT)</option>
-                <option value="Tarde (14:00 - 17:00 CLT)" data-i18n="opt_time_afternoon">Tarde (14:00 - 17:00 CLT)</option>
-                <option value="Fin de tarde (17:00 - 19:00 CLT)" data-i18n="opt_time_late">Fin de tarde (17:00 - 19:00 CLT)</option>
-              </select>
-            </div>
-
-            <div class="form-group intent-field-alliances" style="display: none;">
-              <label for="contact-alliance-type" class="form-label" data-i18n="f_alliance_type_label">Tipo de colaboración</label>
-              <select id="contact-alliance-type" name="Tipo_Alianza" class="form-select">
-                <option value="Fondo de inversión / Venture Capital" selected data-i18n="opt_alliance_1">Fondo de inversión / Venture Capital</option>
-                <option value="Solicitud de NDA para Evaluación Técnica" data-i18n="opt_alliance_nda">Solicitud de NDA para Evaluación Técnica</option>
-                <option value="Centro de I+D / Cooperación académica" data-i18n="opt_alliance_2">Centro de I+D / Cooperación académica</option>
-                <option value="Agencia pública / Municipalidad / B2G" data-i18n="opt_alliance_3">Agencia pública / Municipalidad / B2G</option>
-              </select>
+              <label for="contact-phone" class="form-label" data-i18n="f_phone_label">Teléfono (opcional)</label>
+              <input type="tel" id="contact-phone" name="Telefono" class="form-input" autocomplete="tel" placeholder="+56 9 1234 5678" data-i18n-ph="f_phone_ph">
             </div>
           </div>
-
           <div class="form-group full-width">
-            <label for="contact-message" class="form-label" data-i18n="f_message_label">Detalles adicionales o necesidad específica (opcional)</label>
-            <textarea id="contact-message" name="Mensaje" class="form-textarea" rows="3" placeholder="Describe brevemente el tipo de predio, zona geográfica o consulta técnica..." data-i18n-ph="f_message_ph"></textarea>
+            <label for="contact-message" class="form-label" data-i18n="f_message_label">Mensaje *</label>
+            <p id="contact-message-hint" class="contact-field-hint" data-i18n="contact_hint_general">Cuéntanos brevemente el motivo de tu consulta.</p>
+            <textarea id="contact-message" name="Mensaje" class="form-textarea" rows="4" required aria-describedby="contact-message-hint" placeholder="Escribe tu mensaje…" data-i18n-ph="f_message_ph"></textarea>
           </div>
-
           <div class="form-group form-checkbox-group">
             <label class="form-checkbox-label" for="contact-consent">
               <input type="checkbox" id="contact-consent" name="Consentimiento" required class="form-checkbox">
-              <span class="checkbox-text"><span data-i18n="f_consent_label">Acepto el tratamiento de mis datos para responder a esta consulta y declaro conocer:</span> <a href="terms.html" target="_blank" rel="noopener noreferrer" class="legal-inline-link" data-i18n="f_terms">Términos de Servicio B2B</a> · <a href="privacy.html" target="_blank" rel="noopener noreferrer" class="legal-inline-link" data-i18n="f_privacy_link">Política de Privacidad</a></span>
+              <span class="checkbox-text"><span data-i18n="f_consent_label">Acepto el uso de mis datos para responder a esta consulta, según la</span> <a href="privacy.html" target="_blank" rel="noopener noreferrer" class="legal-inline-link" data-i18n="f_privacy_link">Política de Privacidad</a>.</span>
             </label>
           </div>
-
-          <div id="contact-validation-error" class="form-alert alert-warning" style="display: none;" role="alert">
-            <span data-i18n="form_val_error">Por favor completa todos los campos obligatorios (*) con un formato válido.</span>
-          </div>
-
-          <div id="contact-error" class="form-alert alert-error" style="display: none;" role="alert">
-            <span data-i18n="form_error_msg">Hubo un problema al enviar la solicitud. Puedes escribirnos directamente a</span>
-            <a href="mailto:contacto@strigsystems.tech" class="alert-link">contacto@strigsystems.tech</a>.
-          </div>
-
+          <div id="contact-validation-error" class="form-alert alert-warning" style="display:none" role="alert"><span data-i18n="form_val_error">Revisa los campos obligatorios (*) y acepta el uso de tus datos para continuar.</span></div>
+          <div id="contact-error" class="form-alert alert-error" style="display:none" role="alert"><span data-i18n="form_error_msg">No pudimos enviar tu consulta. Puedes enviarla por correo a</span> <a href="mailto:contacto@strigsystems.tech" class="alert-link">contacto@strigsystems.tech</a>.</div>
           <div class="form-actions">
-            <button type="submit" id="contact-submit-btn" class="btn-primary btn-submit">
-              <span class="btn-text" data-i18n="f_submit_btn">Enviar solicitud de validación</span>
-              <span class="btn-spinner" style="display: none;" aria-hidden="true"></span>
-              <span class="arrow-icon">→</span>
-            </button>
-            <span id="contact-privacy-note" class="form-privacy-note" data-i18n="f_privacy">Usaremos estos datos para responder a tu consulta.</span>
-            <div id="contact-direct-note" class="direct-contact-note" style="display: none;">
-              <span data-i18n="f_briefing_direct">O escribe directamente al Technical Lead:</span>
-              <a href="mailto:tmedina@strigsystems.tech" class="highlight-link">tmedina@strigsystems.tech</a>
-            </div>
+            <button type="submit" id="contact-submit-btn" class="btn-primary btn-submit"><span class="btn-text" data-i18n="f_submit_btn">Enviar consulta</span><span class="btn-spinner" style="display:none" aria-hidden="true"></span></button>
+            <span class="form-privacy-note" data-i18n="f_privacy">Usaremos estos datos para responder a tu consulta.</span>
           </div>
         </form>
-
-        <div id="contact-success" class="form-success-state" style="display: none;">
-          <div class="success-icon-circle">
-            <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="var(--accent-cyan)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
-          </div>
-          <h3 id="contact-success-title" class="success-title" data-i18n="success_title">¡Solicitud Recibida con Éxito!</h3>
-          <p id="contact-success-desc" class="success-desc" data-i18n="success_desc">Hemos recibido tu consulta. El equipo se pondrá en contacto para conversar sobre los próximos pasos.</p>
-          <div class="success-actions">
-            <button type="button" class="btn-ghost" data-close-modal data-i18n="success_close_btn">Cerrar Ventana</button>
-          </div>
+        <div id="contact-success" class="form-success-state" style="display:none" aria-live="polite">
+          <h3 id="contact-success-title" class="success-title" tabindex="-1" data-i18n="success_title">Tu consulta fue enviada.</h3>
+          <p class="success-desc" data-i18n="success_desc">El equipo revisará tu mensaje y te contactará mediante el correo indicado.</p>
+          <button type="button" class="btn-ghost" data-close-modal data-i18n="success_close_btn">Cerrar</button>
         </div>
       </div>
     </div>
   </div>
+
 
   <!-- MODAL: EXECUTIVE BRIEF ONE-PAGER -->
   <div id="brief-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="brief-doc-title">
@@ -562,7 +440,7 @@
           </svg>
           <span data-i18n="brief_doc_print">Imprimir / Guardar como PDF</span>
         </button>
-        <button type="button" class="modal-close" data-close-modal aria-label="Cerrar ventana">
+        <button type="button" class="modal-close" data-close-modal aria-label="Cerrar ventana" data-i18n-aria="contact_close">
           <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="18" y1="6" x2="6" y2="18"></line>
             <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -574,16 +452,16 @@
         <div class="brief-paper-header">
           <div class="brief-logo-area">
             <span class="brief-brand"><img class="brand-logo logo-on-screen" src="assets/img/brand/web/strig-lockup-light.svg" width="208" height="60" alt="Strig Systems"><img class="brand-logo logo-on-print" src="assets/img/brand/web/strig-lockup-dark.svg" width="208" height="60" alt="Strig Systems"></span>
-            <span class="brief-product" data-i18n="eb_product">PLATAFORMA ATHENE</span>
+            <span class="brief-product" data-i18n="eb_product">SISTEMA ATHENE</span>
           </div>
           <div class="brief-meta-area">
-            <span class="brief-doc-tag" data-i18n="eb_tag">EXECUTIVE BRIEF 2026-27</span>
-            <span class="brief-doc-sub" data-i18n="eb_sub">Vigilancia Territorial Autónoma Nocturna</span>
+            <span class="brief-doc-tag" data-i18n="eb_tag">RESUMEN DEL PROYECTO 2026-27</span>
+            <span class="brief-doc-sub" data-i18n="eb_sub">Vigilancia forestal nocturna</span>
           </div>
         </div>
 
         <div class="brief-paper-lead">
-          <h2 id="brief-doc-title" class="brief-h1" data-i18n="eb_h1">Inteligencia Aérea Autónoma para la Brecha Nocturna de Incendios</h2>
+          <h2 id="brief-doc-title" class="brief-h1" data-i18n="eb_h1">Observación aérea para la vigilancia forestal nocturna</h2>
           <p class="brief-summary" data-i18n="eb_summary">Athene es un sistema centinela aéreo en desarrollo experimental (TRL 3 declarado). Estamos definiendo su arquitectura y preparando la integración de una plataforma de pruebas, análisis térmico a bordo y supervisión humana. El programa 2026-27 busca evaluar esa integración.</p>
         </div>
 
@@ -591,18 +469,18 @@
           <div class="brief-box">
             <h3 class="brief-box-title" data-i18n="eb_b1_title">1. El Problema Operacional</h3>
             <ul class="brief-list">
-              <li data-i18n="eb_b1_p1">Brecha nocturna: La observación y la respuesta en oscuridad y relieve complejo presentan restricciones operacionales que deben evaluarse para cada misión.</li>
-              <li data-i18n="eb_b1_p2">Actividad humana: La vigilancia propuesta busca detectar presencia de personas y evaluar su contexto para advertir situaciones que podrían originar un incendio.</li>
-              <li data-i18n="eb_b1_p3">Puntos ciegos terrestres: Las quebradas y los rodales interiores dificultan la observación desde caminos; su cobertura se evaluará en cada predio piloto.</li>
+              <li data-i18n="eb_b1_p1">Brecha nocturna: La oscuridad y el relieve complejo dificultan la observación de terrenos forestales y la evaluación de posibles riesgos.</li>
+              <li data-i18n="eb_b1_p2">Vigilancia preventiva: Detectar presencia de personas e indicios de incendio permite aportar información para la evaluación del operador, sin identificar personas ni determinar su intención.</li>
+              <li data-i18n="eb_b1_p3">Puntos ciegos terrestres: Las quebradas y los rodales interiores dificultan la observación desde caminos.</li>
             </ul>
           </div>
 
           <div class="brief-box">
             <h3 class="brief-box-title" data-i18n="eb_b2_title">2. Solución Tecnológica</h3>
             <ul class="brief-list">
-              <li data-i18n="eb_b2_p1">Plataforma aérea: Validación inicial prevista sobre aeronave comercial adaptada. Noctua es la plataforma VTOL futura; su configuración y prestaciones requieren validación.</li>
-              <li data-i18n="eb_b2_p2">Edge AI a bordo: Procesamiento térmico local proyectado, sin depender de internet para la inferencia. Latencia y precisión pendientes de medición.</li>
-              <li data-i18n="eb_b2_p3">Supervisión humana: Imágenes y alertas para que un operador evalúe el contexto y apoye decisiones de respuesta.</li>
+              <li data-i18n="eb_b2_p1">Plataforma aérea: Primeras pruebas previstas sobre una aeronave comercial adaptada; Noctua es la plataforma VTOL de ala fija para la evolución del sistema.</li>
+              <li data-i18n="eb_b2_p2">Análisis a bordo: Arquitectura de procesamiento térmico local, sin depender de internet para la inferencia.</li>
+              <li data-i18n="eb_b2_p3">Revisión humana: Imágenes y alertas para que un operador evalúe el contexto y oriente una respuesta temprana.</li>
             </ul>
           </div>
 
@@ -611,15 +489,15 @@
             <ul class="brief-list">
               <li data-i18n="eb_b3_p1">Seguridad del personal: Objetivo de reducir exposición en quebradas y caminos aislados mediante información previa para el equipo de respuesta.</li>
               <li data-i18n="eb_b3_p2">Observación nocturna: Evaluar la detección de presencia humana y anomalías térmicas para apoyar la vigilancia preventiva y la detección temprana de incendios.</li>
-              <li data-i18n="eb_b3_p3">Apoyo al despacho: Georreferenciación e información de contexto proyectadas para apoyar decisiones de respuesta junto a un socio piloto.</li>
+              <li data-i18n="eb_b3_p3">Apoyo a la respuesta: Evaluar cómo la ubicación de las alertas y la información de contexto pueden apoyar decisiones en terreno.</li>
             </ul>
           </div>
 
           <div class="brief-box">
-            <h3 class="brief-box-title" data-i18n="eb_b4_title">4. Programa de Validación 2026-27</h3>
+            <h3 class="brief-box-title" data-i18n="eb_b4_title">4. Desarrollo y próximas pruebas</h3>
             <ul class="brief-list">
               <li data-i18n="eb_b4_p1">Estado actual TRL 3: Proyecto Semilla Inicia Corfo, apoyo UdeC y demostración técnica prevista en Gearbox para enero de 2027.</li>
-              <li data-i18n="eb_b4_p2">Próximos pasos: Integración experimental y primeras pruebas para evaluar el funcionamiento conjunto del sistema.</li>
+              <li data-i18n="eb_b4_p2">Próximos pasos: Integración experimental y primeras pruebas para evaluar el funcionamiento conjunto, la precisión y los tiempos de respuesta.</li>
               <li data-i18n="eb_b4_p3">Contacto: Equipo Strig Systems · Concepción, Chile · contacto@strigsystems.tech</li>
             </ul>
           </div>
@@ -633,6 +511,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=2.2.0"></script>
+  <script src="script.js?v=2.3.0"></script>
 </body>
 </html>

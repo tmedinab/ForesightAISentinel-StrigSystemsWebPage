@@ -1,6 +1,6 @@
 # Plan vigente de web, narrativa y assets
 
-Actualizado: 2026-10-08. Resume decisiones aprobadas y prioridades; fundamentos de identidad en el [estudio de marca](ESTUDIO_MARCA_STRIG_ATHENE.md). La implementación y publicación de la web no equivalen a validación operacional del sistema.
+Actualizado: 2026-10-09. Resume decisiones aprobadas y prioridades; fundamentos de identidad en el [estudio de marca](ESTUDIO_MARCA_STRIG_ATHENE.md). La implementación y publicación de la web no equivalen a validación operacional del sistema.
 
 ## Narrativa aprobada
 
@@ -8,7 +8,7 @@ Actualizado: 2026-10-08. Resume decisiones aprobadas y prioridades; fundamentos 
 
 **Hero:** «Los riesgos se mueven rápido. Nosotros los vemos venir.» Conservar su jerarquía y gradiente metálico en la segunda línea.
 
-**Definición directa elegida:** «Plataforma centinela aérea autónoma diseñada para reducir la brecha nocturna de vigilancia forestal mediante análisis térmico a bordo y supervisión humana de las alertas.» Es una intención de diseño, sin garantía de anticipación a toda ignición o prevención de incendios.
+**Definición vigente:** «Athene es una plataforma centinela aérea autónoma diseñada para apoyar la vigilancia forestal nocturna. Busca detectar presencia de personas e indicios de incendio mediante análisis térmico a bordo y revisión humana de las alertas.» Es una intención de diseño, sin garantía de anticipación a toda ignición o prevención de incendios.
 
 La portada pública es compacta: empresa, propósito de Athene, arquitectura conceptual, estado experimental, equipo, contacto y apoyos. Las páginas/componentes ampliados anteriores son referencia; no restaurarlos por defecto ni difundir detalles técnicos antes de tiempo. El gate de dossier del lado cliente no protege información confidencial.
 
@@ -30,7 +30,7 @@ Invitar a conversación técnica/piloto sin barrera legal intimidante ni cuestio
 | Arquitectura | `assets/img/tech/athene-architecture.svg`, paso 5 sobre candidata Astra. VTOL, cámara, inferencia, indicio y operador; representación conceptual. |
 | Credenciales | «Finalistas 7th Gear Challenge - Gearbox UdeC». No generar logo Gearbox. |
 | Apoyos | Logos completos de IncubaUdeC y Corfo publicados por autorización de Tomás, con incubación, mentorías y financiamiento explícitos. Validación gráfica IU p.18 pendiente; no declara aprobación institucional (ADR-0014). |
-| Equipo | Tomás Medina (Cofundador · Lead técnico), Carlos Gutiérrez (Cofundador · Operaciones), Ananda Glaria, Richard Solís y Pablo Alarcón (Cofundadores). Cinco retratos locales. |
+| Equipo | Tomás Medina (Cofundador · Responsable técnico), Carlos Gutiérrez (Cofundador · Operaciones), Ananda Glaria, Richard Solís y Pablo Alarcón (Cofundadores). Cinco retratos locales. |
 
 Tomás suministró perfiles de [Carlos](https://www.linkedin.com/in/cgutierrezsoto/), [Richard](https://www.linkedin.com/in/richard-solis-580ba0324/) y [Tomás](https://www.linkedin.com/in/tomasmedinab/). Ananda/Pablo sin URL confirmada: recuadros deshabilitados, sin enlaces inventados. No es verificación independiente de sus perfiles.
 
@@ -61,3 +61,15 @@ Referencias de configuración: [Workers Static Assets](https://developers.cloudf
 ## Verificación
 
 Preflight e i18n, carga de assets, revisión ES/EN escritorio/móvil, teclado/foco, contraste, motion reducido, enlaces y contacto. Separar pruebas técnicas de aceptación visual e institucional. Los cambios recientes pasaron preflight/i18n con 144 claves; volver a ejecutar tras editar código. No presentar estos checks como certificación funcional del sistema.
+
+
+## Refinamiento aprobado e implementado — 2026-10-09
+
+Primera lectura simulada y crítica visual: ambos lectores terminaron; la utilidad se concretó en personas e indicios de incendio y aceptarían conversación exploratoria. Ronda local en `.first-reader/runs/2026-10-09-narrative-polish/`; no equivale a investigación con clientes.
+
+Tomás aprobó adelantar el propósito preventivo y mantener detección de presencia sin atribuir identidad/intención; alinear CTA y formulario con conversación exploratoria; concentrar el estado experimental y simplificar caption/rótulos; unificar sistema/plataforma aérea y terminología ES/EN; dejar Concepción, Chile como ubicación y explicar UdeC mediante formación/incubación. Familia A y titular se conservan como base. No divulgar condiciones de ensayo aún no definidas.
+
+Información de equipo precisada por Tomás: Ananda egresada; Richard y Tomás en penúltimo semestre; Carlos en memoria/último semestre. No describir al conjunto como cinco profesionales titulados: redacción pública «Equipo con formación en Ingeniería Civil Aeroespacial en la Universidad de Concepción». Pablo podría dejar el equipo fundador; aún no confirmado. La ficha permanece por ahora, pendiente de conversación y definición, sin cambiar su rol ni retirarla por inferencia.
+
+
+Contacto implementado (ADR-0016): formulario general de Strig, con Athene preseleccionado desde hero/invitación y consulta general desde cabecera. Motivos: Athene/vigilancia y pruebas, colaboración, consulta general. Nombre/correo/mensaje obligatorios; organización/teléfono opcionales y consentimiento para responder según privacidad. Sin región, clasificación del terreno, horarios, NDA ni promesa de reunión/plazo. Usar «terreno», no «predio». Correo directo y fallback con datos completos; éxito únicamente tras aceptación explícita del proveedor. La revisión automática simula respuestas y no acredita recepción real de correo.

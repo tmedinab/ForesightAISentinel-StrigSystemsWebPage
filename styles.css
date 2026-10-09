@@ -5745,8 +5745,6 @@ body.modal-open {
 .modal-direct-contact { margin: 0 0 1.25rem; font-size: 0.95rem; }
 .modal-direct-contact a { color: var(--accent-cyan); overflow-wrap: anywhere; }
 .team-linkedin { min-height: 44px; }
-.institutional-text-only .institutional-logos { align-items: start; }
-.institutional-text-only .institutional-corfo { width: auto; }
 @media (max-width: 650px) {
   .public-team-card { display: grid; grid-template-columns: 64px minmax(0, 1fr); column-gap: 1rem; row-gap: 0.25rem; align-items: start; }
   .public-team-photo { width: 64px; height: 64px; grid-column: 1; grid-row: 1 / 4; margin: 0; }
@@ -5754,3 +5752,36 @@ body.modal-open {
   .public-team-card h3, .public-team-role { margin: 0; }
   .team-linkedin { justify-self: start; margin-top: 0.35rem; }
 }
+
+/* Corporate contact: one conversational form, with an accessible reason selector. */
+.contact-dialog { max-width: 640px; border-color: var(--border-glass); box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55); }
+.contact-dialog .modal-body-scroll { padding-top: 0; }
+.contact-dialog .modal-header { padding-right: 1.75rem; margin-bottom: 1rem; }
+.contact-kicker { font-family: var(--font-body); font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 0.75rem; }
+.contact-dialog .modal-subtitle { font-family: var(--font-body); font-size: 1rem; line-height: 1.6; }
+.contact-dialog .modal-direct-contact { margin: 0 0 1.5rem; font-size: 0.9375rem; }
+.contact-dialog .form-label { font-family: var(--font-body); font-size: 0.9375rem; letter-spacing: 0; font-weight: 500; }
+.contact-dialog .form-input, .contact-dialog .form-select, .contact-dialog .form-textarea { font-family: var(--font-body); font-size: 1rem; }
+.contact-field-hint { font-size: 0.875rem; line-height: 1.6; color: var(--text-secondary); margin: 0; }
+.contact-dialog .checkbox-text { font-family: var(--font-body); font-size: 0.875rem; line-height: 1.6; }
+.contact-dialog .btn-submit { width: auto; align-self: flex-start; min-width: 160px; }
+.contact-dialog .form-success-state { padding: 2rem 0; gap: 1rem; }
+.holding-hero .hero-company { font-family: var(--font-body); font-size: 0.9375rem; line-height: 1.5; margin: 0 0 1rem; color: var(--text-secondary); }
+.holding-hero .hero-product-eyebrow { background: transparent; border: 0; box-shadow: none; padding: 0; margin-bottom: 1.5rem; }
+.holding-hero .hero-status { font-family: var(--font-body); font-size: 0.875rem; line-height: 1.5; color: var(--accent-amber); margin: -0.5rem 0 1.5rem; }
+.project-credentials { font-family: var(--font-body); font-size: 0.875rem; line-height: 1.6; color: var(--text-secondary); margin: -0.75rem 0 2rem; }
+.concept-panel { padding: 1.25rem; }
+.concept-panel .concept-delivery { font-size: 0.875rem; }
+@media (max-width: 650px) {
+  .contact-dialog .modal-header { padding-right: 2rem; }
+  .contact-dialog .btn-submit { width: 100%; }
+  .contact-dialog .form-select { font-size: 0.9375rem; }
+  .holding-hero .hero-company { font-size: 0.875rem; }
+  .holding-hero .hero-product-eyebrow { margin-bottom: 1.25rem; }
+  .concept-panel { padding: 1rem; }
+}
+
+.modal-backdrop .contact-dialog { padding: 1.75rem; border-color: var(--border-glass); box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55); }
+.contact-dialog .pilot-form { gap: 1rem; }
+.contact-dialog .form-checkbox-group { margin-top: 0; }
+@media (max-width: 650px) { .modal-backdrop .contact-dialog { padding: 1.25rem; } }

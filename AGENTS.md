@@ -24,7 +24,7 @@ Reglas operativas vigentes, 2026-10-08. Leer el [índice documental](docs/README
 - Dropdowns: separación 8px; puente invisible de hover 14px con selector específico `.nav-dropdown-wrap .nav-dropdown-menu::before` y precedencia suficiente frente a `.glass-panel::before`. Apertura -6px a 0; comprobar continuidad al mover cursor. Anclas con margen/scroll-padding actual 5.2rem: verificar que header no tape títulos.
 - Capas: fondos 1–10, contenido 100, header 1000, dropdowns 1001, modales 1050, toasts 2000. Evitar cambios globales sin inspeccionar efectos.
 - Animaciones bajo control de visibilidad: pausar fuera del viewport, al ocultar documento y con motion reducido. No mostrar telemetría simulada como datos reales.
-- Formulario: preservar fallback mailto con campos completos si AJAX falla. Contacto y briefing accesibles sin fricción artificial; no inventar entrega de correo comprobada. Permitir impresión del briefing.
+- Formulario general de Strig (ADR-0016): contexto Athene desde sus invitaciones; consulta general desde cabecera. Motivo, nombre/correo/mensaje, organización/teléfono opcionales y consentimiento de privacidad. Usar terreno, no predio; sin promesas de reunión o plazo. Preservar fallback mailto completo ante fallos y exigir aceptación del proveedor antes de mostrar éxito. Resumen del proyecto accesible e imprimible; no inventar entrega de correo comprobada.
 - Lenguaje técnico claro de Chile/LATAM, sin promesas absolutas, jerga bélica forzada o advertencias legales intimidantes. Usar aeronave/plataforma aérea, no «célula». No restaurar funciones de disuasión sólo por aparecer en briefs antiguos.
 
 ## Documentación y decisiones

@@ -2,6 +2,13 @@
 
 El historial de versiones registra lo ocurrido, no especificaciones vigentes. Consultar el [índice](README.md) y el plan para el estado actual. Los documentos antiguos citados en las versiones están en la copia recuperable local descrita en el índice.
 
+## [2.3.0] — 2026-10-09
+
+- Narrativa forestal preventiva adelantada: presencia de personas e indicios de incendio, con revisión humana y madurez concentrada. Titular y familia A conservados; rótulos superiores reducidos y credenciales junto al estado del proyecto.
+- Formación del equipo descrita sin atribuir titulación a todos; Pablo permanece mientras se define su participación. Ubicación Concepción, Chile; ES/EN y terminología corporativa armonizados.
+- Contacto general rediseñado con contexto Athene, selector simple y mensaje obligatorio. Organización/teléfono opcionales; retirados región, tipo de terreno, horarios, NDA y reuniones prometidas. Consentimiento breve de privacidad, correo directo y fallback completo (ADR-0016).
+- Estados de validación, idioma, foco, respuesta rechazada/aceptada y fallo de red cubiertos mediante pruebas locales con respuestas simuladas; sin envío externo de correo.
+
 ## [2.2.1] — 2026-10-08
 
 - Restaurados los logos completos de IncubaUdeC y Corfo en el paquete público por instrucción expresa de Tomás. Validación institucional pendiente documentada, sin supresión automática del arte (ADR-0014).

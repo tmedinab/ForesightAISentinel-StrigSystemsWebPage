@@ -45,25 +45,43 @@ const root=path.resolve(__dirname,'..'),pub=path.join(root,'build/public');
       assert.ok(await page.locator('.hero-actions [data-open-modal="brief-modal"]').evaluate(n=>n===document.activeElement));
       await page.locator('.hero-actions [data-open-modal="contact-modal"]').click();
       await page.locator('#contact-modal').waitFor({state:'visible'});
-      assert.equal(await page.locator('.intent-selector-pills').getAttribute('role'),'group');
-      for(const intent of ['pilot','briefing','alliances']){
-       await page.locator(`[data-intent-target="${intent}"]`).click();
-       assert.equal(await page.locator('[aria-pressed="true"]').count(),1);
-       assert.equal(await page.locator('.checkbox-text a').count(),2);
+      assert.equal(await page.locator('#contact-reason').inputValue(),'athene');
+      assert.equal(await page.locator('#contact-message').getAttribute('required'),'');
+      assert.equal(await page.locator('.checkbox-text a').count(),1);
+      assert.equal(await page.locator('.checkbox-text a').getAttribute('href'),'privacy.html');
+      for(const intent of ['athene','collaboration','general']){
+       await page.locator('#contact-reason').selectOption(intent);
+       assert.equal(await page.locator('#contact-reason').inputValue(),intent);
+       assert.ok((await page.locator('#contact-message-hint').innerText()).length>20);
+       assert.equal(await page.locator('#contact-region, #contact-briefing-time, #contact-alliance-type').count(),0);
       }
+      await page.locator('#contact-reason').selectOption('athene');
+      await page.evaluate(l=>setLanguage(l),lang==='es'?'en':'es');
+      assert.equal(await page.locator('#contact-reason').inputValue(),'athene');
+      await page.evaluate(l=>setLanguage(l),lang);
+      if([1440,390].includes(width))await page.screenshot({path:path.join(root,`scratch/contact-${lang}-${width}.png`)});
       await page.keyboard.press('Escape');
      }
      if([1440,390].includes(width)){
-      await page.evaluate(()=>setLanguage('es'));
+      await page.evaluate(async()=>{setLanguage('es');await Promise.all([...document.images].map(i=>i.decode()));});
+      await page.locator('.institutional-support').scrollIntoViewIfNeeded();
+      await page.evaluate(()=>scrollTo(0,0));
+      await page.waitForTimeout(150);
       await page.screenshot({path:path.join(root,`scratch/public-final-${width}.png`),fullPage:true});
      }
     }
    }
   }
+  await page.setViewportSize({width:1440,height:1000});
   await page.goto(base,{waitUntil:'load'});await page.evaluate(()=>setLanguage('en'));
-  await page.locator('.hero-actions [data-open-modal="contact-modal"]').click();
+  await page.locator('.btn-header').click();
+  assert.equal(await page.locator('#contact-reason').inputValue(),'general');
   await page.locator('#contact-name').fill('Local test');await page.locator('#contact-email').fill('test@example.invalid');
   await page.locator('#contact-consent').check();
+  await page.locator('#contact-submit-btn').click();
+  assert.ok(await page.locator('#contact-validation-error').isVisible());
+  assert.ok(await page.locator('#contact-message').evaluate(n=>n===document.activeElement));
+  await page.locator('#contact-message').fill('Local test: nighttime forestry enquiry');
   // Intentional failure is mocked locally: no email is sent.
   await page.route('https://formsubmit.co/**',r=>r.abort());
   await page.locator('#contact-submit-btn').click();
@@ -72,8 +90,41 @@ const root=path.resolve(__dirname,'..'),pub=path.join(root,'build/public');
   assert.ok(fallback.startsWith('mailto:contacto@strigsystems.tech?cc=tmedina@strigsystems.tech'));
   assert.ok(decodeURIComponent(fallback).includes('test@example.invalid'));
   assert.ok(await page.locator('#contact-submit-btn').isEnabled());
+  assert.ok(decodeURIComponent(fallback).includes('Local test: nighttime forestry enquiry'));
+  // A 200 response with provider rejection must not claim success.
+  await page.unroute('https://formsubmit.co/**');
+  await page.route('https://formsubmit.co/**',r=>r.fulfill({status:200,contentType:'application/json',body:JSON.stringify({success:false})}));
+  await page.locator('#contact-submit-btn').click();
+  await page.locator('#contact-error').waitFor({state:'visible'});
+  assert.equal(await page.locator('#contact-success').isVisible(),false);
+  await page.unroute('https://formsubmit.co/**');
+  let submitted;
+  await page.route('https://formsubmit.co/**',r=>{
+   submitted=r.request().postDataJSON();
+   return r.fulfill({status:200,contentType:'application/json',body:JSON.stringify({success:true})});
+  });
+  await page.locator('#contact-reason').selectOption('collaboration');
+  await page.locator('#contact-submit-btn').click();
+  await page.locator('#contact-success').waitFor({state:'visible'});
+  assert.equal(submitted.Email,'test@example.invalid');
+  assert.equal(submitted.Empresa_Organizacion,'');
+  assert.equal(submitted.Telefono,'');
+  assert.ok(submitted.Motivo.toLowerCase().includes('collaboration'));
+  assert.equal(submitted.Mensaje,'Local test: nighttime forestry enquiry');
+  assert.equal('Horario_Preferente' in submitted,false);
+  assert.ok(await page.locator('#contact-success-title').evaluate(n=>n===document.activeElement));
+  assert.equal(await page.locator('#contact-form').isVisible(),false);
+  await page.evaluate(()=>setLanguage('es'));
+  assert.equal(await page.locator('#contact-success-title').innerText(),'Tu consulta fue enviada.');
+  await page.keyboard.press('Escape');
+  assert.ok(await page.locator('.btn-header').evaluate(n=>n===document.activeElement));
+  await page.locator('.holding-ip-card [data-open-modal="contact-modal"]').click();
+  assert.equal(await page.locator('#contact-reason').inputValue(),'athene');
+  assert.ok(await page.locator('#contact-form').isVisible());
+  assert.equal(await page.locator('#contact-message').inputValue(),'');
+  await page.keyboard.press('Escape');
   assert.equal(errors.length,0,errors.join('\n'));
   for(const forbidden of ['docs/README.md','scratch/documentation-backup/2026-10-08-before-consolidation.zip','exports/brand-review/2026-10-07_AB/README.md','dossier.html','AGENTS.md'])assert.equal((await page.request.get(`${base}/${forbidden}`)).status(),404,forbidden);
-  console.log('PASS: 16 page/viewport cases; ES/EN, modal controls, legal links, email fallback, loaded assets, no overflow/errors; internal material excluded. No external submission.');
+  console.log('PASS: 16 page/viewport cases; ES/EN, contact context, required message, rejected/successful mocked submissions, legal links, email fallback, loaded assets, no overflow/errors; internal material excluded. No external submission.');
  }finally{if(browser)await browser.close();await new Promise(r=>server.close(r));}
 })().catch(e=>{console.error(e);process.exitCode=1});
