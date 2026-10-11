@@ -1,10 +1,14 @@
 # Estudio de marca Strig Systems / Athene
 
-Estado al 2026-10-08. Fuente central de estrategia e identidad; [plan web](PLAN_ESTRATEGICO_MARCA_Y_ASSETS_VISUALES.md) para aplicación y [biblioteca institucional](brand/institutional/README.md) para marcas ajenas.
+Estado al 2026-10-11. Fuente central de estrategia e identidad; [plan web](PLAN_ESTRATEGICO_MARCA_Y_ASSETS_VISUALES.md) para aplicación y [biblioteca institucional](brand/institutional/README.md) para marcas ajenas.
 
 ## Dirección aprobada
 
-Tomás eligió **familia A para la web local** el 2026-10-07 (ADR-0008). Hay una solución candidata sólida, sin master final cerrado ni validación externa recibida. Mantener los contornos aprobados; mejorar composición o tamaño no autoriza rediseñarlos.
+Tomás eligió **familia A para la web local** el 2026-10-07 (ADR-0008) y el
+2026-10-11 solicitó integrar las referencias revisadas por un diseñador
+(ADR-0018). Los derivados web actuales reconstruyen sus siluetas; el master
+vectorial y la fuente tipográfica siguen pendientes. Conservar los rasgos
+elegidos; los originales A de la tabla siguiente son antecedentes recuperables.
 
 | Marca | Papel y lectura prioritaria | Fuente de geometría |
 | --- | --- | --- |
@@ -44,7 +48,50 @@ No mezclar lo mejor de cada familia por suma de rasgos. Comparar cada una por su
 4. Realizar revisión de similitudes públicas antes del cierre. Registrar muestras, diferencias y fecha; no declarar exclusividad o disponibilidad legal sin revisión correspondiente.
 5. Cerrar masters, reglas de uso y exports cuando Tomás apruebe. Bordado/grabado requieren pruebas físicas; render y máscara alpha no validan fabricación.
 
-La revisión Astra detectó riesgos de lectura de SYSTEMS a tamaños pequeños y diferencias de altura visible entre símbolos. Las medidas son diagnóstico geométrico, no un estudio de percepción. El uso de agentes fue asesoría simulada; no se ha recibido evaluación de un diseñador humano o investigación con clientes.
+La revisión Astra detectó riesgos de lectura de SYSTEMS a tamaños pequeños y diferencias de altura visible entre símbolos. Las medidas son diagnóstico geométrico, no un estudio de percepción. La asesoría de agentes fue simulada. El 2026-10-11 Tomás aportó tres referencias revisadas por un diseñador mediante iteración con IA; no hay informe escrito ni investigación con clientes.
+
+## Revisión del diseñador recibida el 2026-10-11
+
+Originales JPEG y hashes: [biblioteca de referencias](brand/designer-2026-10-10/manifest.json).
+Decisión de aplicación: [ADR-0018](adr/0018-designer-reference-web-reconstruction.md).
+La tabla de geometrías A anterior identifica el antecedente preservado; los
+derivados web actuales incorporan esta revisión y no son una reproducción exacta
+de los SVG A. Copia anterior en `brand/designer-2026-10-10/previous-web/`.
+
+| Aspecto | Diferencia observada | Beneficio / compromiso |
+| --- | --- | --- |
+| Strig: símbolo | Dos piezas oblicuas, superior de tinta principal e inferior cian; canal central y remate derecho más direccionales que H1. | S más inmediata, energía y coordinación; menos lectura bilateral de instrumentación. Flecha/intercambio es una asociación posible, no significado demostrado. |
+| Strig: nombre | Sans ancha, pesada, esquinas suavizadas y R con pierna diagonal; SYSTEMS amplio y ligero. | Mayor presencia industrial y jerarquía; SYSTEMS sigue necesitando tamaño suficiente. No se conoce el nombre de la fuente. |
+| Strig: composición | Símbolo más ancho que el original cuadrado; firma apaisada. | Menos altura a igual ancho total. Ajustar escala por tinta visible; no comprimir la firma para recuperar altura. |
+| Athene: símbolo | Frente abierto, mejillas más voluminosas, ojos negativos amplios y centro descendente; curvas inferiores más continuas. | Lectura de centinela competente conservada; a tamaños mínimos los retornos y centro pueden fusionarse visualmente. No es un diseño de aeronave ni un casco documentado. |
+| Athene: nombre | Mayúsculas con serifas angulares, A abierta y cortes diagonales en H/N. | Referencia clásica al nombre y carácter propio; más ceremonial que la sans corporativa. Los cortes no deben desaparecer o convertirse en defectos por reducción. |
+| Relación | Palabra corporativa industrial frente a palabra de producto clásica; ambos símbolos angulares. | Familia por geometría, contraste y composición, sin exigir misma fuente. Reservar la firma ornamental de Athene al nombre del producto. |
+
+**Criterio de aplicación:** conservar los cambios que Tomás prefiere sin sumar
+detalles nuevos. Tipografía del contenido sin cambios. Contornos transparentes
+claros/oscuros en web, favicon con símbolo; no usar el JPEG con fondo como logo
+de navegación. Para tamaños donde no se lea el nombre, usar símbolo acompañado
+de nombre accesible en el contexto, sin diseñar otra marca por esa limitación.
+
+**Precisión:** reconstrucción de las siluetas raster, simplificada a 0,65 píxeles
+de origen; fondo y textura JPEG excluidos del vector. No equivale a curvas
+maestras ni identifica la fuente o sus métricas originales. Una entrega SVG/AI
+permitiría sustituir estos derivados sin reinterpretar los rasgos elegidos.
+
+## Gramática compartida y aplicación tipográfica
+
+Criterio de publicación, 2026-10-11: conservar la diferenciación entre empresa y producto. Comparten masa sólida, cortes oblicuos, aperturas en negativo y alto contraste; la S direccional de Strig y el centinela abierto de Athene no requieren repetir la misma figura. Azul/cian organiza la identidad corporativa; Athene mantiene su firma monocroma. Estas asociaciones son una lectura de diseño, no resultados de investigación perceptual.
+
+| Uso | Recurso | Criterio |
+| --- | --- | --- |
+| Firma corporativa | Wordmark vectorial STRIG SYSTEMS | Identificación de empresa en cabecera, footer y documentos; preservar proporciones y separación entre ambas líneas. |
+| Firma del producto | Wordmark vectorial ATHENE | Identificación del sistema, portadas y firmas de producto. Serifas y cortes forman parte del arte; no trasladarlos a párrafos, botones ni etiquetas operativas. |
+| Titulares web | Space Grotesk, hasta 700 | Continuidad geométrica con Strig y jerarquía clara, sin imitar letras del logo. |
+| Texto y controles | Outfit, 400/500/600 | Lectura fluida y natural en escritorio y móvil. |
+| Datos y metadatos breves | JetBrains Mono | Precisión instrumental; evitar párrafos monoespaciados y telemetría decorativa. |
+| Tamaños mínimos | Símbolo con nombre accesible en contexto | Comprobar tinta visible y lectura; SYSTEMS y cortes de ATHENE no sirven como información textual diminuta. |
+
+No añadir una nueva fuente por semejanza visual: faltan los nombres y archivos tipográficos originales. La extensión de marca debe aparecer en composición, contraste y espaciado; no en cortes repetidos en cada componente. Mantener retículas discretas y acentos funcionales sin convertir la interfaz en una insignia. Tomás autoriza publicar los logos nuevos en main; no se cambia la tipografía general de la página para esta versión.
 
 ## Entrega profesional y reproducción
 

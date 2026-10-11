@@ -2,6 +2,13 @@
 
 El historial de versiones registra lo ocurrido, no especificaciones vigentes. Consultar el [índice](README.md) y el plan para el estado actual. Los documentos antiguos citados en las versiones están en la copia recuperable local descrita en el índice.
 
+## [2.4.4] — 2026-10-11
+
+- Revisión de logos del diseñador integrada en firmas, símbolos y favicon de Strig/Athene. Referencias JPEG y hashes conservados junto a los vectores anteriores; derivados web transparentes, con masters y fuente originales pendientes (ADR-0018).
+- Documentada la gramática compartida y el uso tipográfico: firmas propias para empresa/producto, fuentes actuales para contenido y controles. Sin nuevas dependencias de fuentes.
+- Verificados 20 casos de página/ancho, impresión, ES/EN, preflight e i18n. Paquete público limitado a la web; estudio y material de ingeniería excluidos del despliegue.
+- Publicación en main autorizada expresamente por Tomás el 2026-10-11.
+
 ## [2.4.3] — 2026-10-09
 
 - Narrativa de Athene coherente en portada, metadatos y footer. Retiradas afirmaciones operativas y detalles técnicos heredados de las páginas complementarias; privacidad describe formularios y proveedores actuales.

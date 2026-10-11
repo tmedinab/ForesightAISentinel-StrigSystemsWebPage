@@ -24,7 +24,7 @@ Invitar a conversación técnica/piloto sin barrera legal intimidante ni cuestio
 
 | Área | Decisión vigente |
 | --- | --- |
-| Identidad | Familia A, empresa y producto diferenciados; derivados en `assets/img/brand/web/`. Sin master final cerrado. |
+| Identidad | Revisión del diseñador incorporada a derivados web (ADR-0018), con A anterior preservada; empresa/producto diferenciados. Contornos reconstruidos de JPEG, masters y fuente pendientes. |
 | Tipografía | Space Grotesk para titulares (700 máximo cargado), Outfit 400/500/600 para cuerpo y secundarios legibles; JetBrains Mono sólo para metadatos breves. |
 | Maquetación | Contenedor general 1200px con padding 24px; ampliar a 1400px fue propuesta, no decisión. Header flexible; proporción óptica Strig principal / Athene secundario. |
 | Arquitectura | `assets/img/tech/athene-architecture.svg`, paso 6 sobre candidata Astra. VTOL, cámara, inferencia, indicio y operador; representación conceptual. |

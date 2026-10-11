@@ -1,6 +1,15 @@
 # Herramientas de identidad
 
-Herramientas de desarrollo; no añaden dependencias de runtime al sitio. Estado de decisiones en [estudio central](../../docs/ESTUDIO_MARCA_STRIG_ATHENE.md). La web local utiliza familia A; rondas anteriores son historial reproducible, no identidad automáticamente adoptada.
+Herramientas de desarrollo; no añaden dependencias de runtime al sitio. Estado de decisiones en [estudio central](../../docs/ESTUDIO_MARCA_STRIG_ATHENE.md). La web local utiliza los derivados de la revisión del diseñador (ADR-0018); familia A y rondas anteriores se conservan como antecedentes.
+
+## Referencias del diseñador
+
+`python tools/brand/import_designer_reference.py` conserva los JPEG/hashes y los
+derivados anteriores antes de reconstruir firmas/símbolos web con Pillow. Fuente
+tipográfica desconocida; no pretende producir un master idéntico al vector de
+origen. El primer ingreso lee los archivos nombrados por Tomás desde Documents;
+las siguientes ejecuciones usan la copia del repo. No ejecutar el builder A
+sobre los derivados activos salvo decisión explícita de recuperar esa revisión.
 
 ## Requisitos y verificación
 

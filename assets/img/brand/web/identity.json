@@ -1,9 +1,12 @@
 {
   "family": "A",
-  "integration": "local website",
-  "date": "2026-10-07",
-  "corporate": "H1 / round12 optical composition",
-  "product": "Round11 prolonged returns / round12 balanced composition",
-  "selection": "Tomás requested family A for the website; current preference, not irreversible design freeze.",
-  "source": "exports/brand-review/2026-10-07_AB/vectors/A"
+  "integration": "public website; publication authorized 2026-10-11",
+  "date": "2026-10-11",
+  "corporate": "Designer two-piece oblique S with cyan accent",
+  "product": "Designer open sentinel and angular serif wordmark",
+  "selection": "Tomas supplied and requested integration of designer references; masters pending.",
+  "source": "docs/brand/designer-2026-10-10/manifest.json",
+  "revision": "designer-reference-2026-10-10",
+  "status": "web reconstruction; vector master and font identity pending",
+  "original_identity": "family A retained in previous-web"
 }

@@ -1,14 +1,16 @@
 {
-  "family": "A",
-  "trim": "Geometry unchanged; viewBox cropped to ink bounds with4units margin",
+  "revision": "designer-reference-2026-10-10",
+  "trim": "Source artwork bounds; contours reconstructed, not unchanged master geometry",
   "dimensions": {
     "strig": {
-      "width": 340.5500183105469,
-      "height": 99.0260009765625
+      "width": 1135,
+      "height": 239
     },
     "athene": {
-      "width": 469.60003662109375,
-      "height": 67.50000762939453
+      "width": 1330,
+      "height": 177
     }
-  }
+  },
+  "previous": "docs/brand/designer-2026-10-10/previous-web/layout.json",
+  "master_status": "pending"
 }

@@ -1,0 +1,20 @@
+{
+  "received": "2026-10-11",
+  "references": {
+    "strig-white-background.jpeg": {
+      "original_filename": "WhatsApp Image 2026-10-10 at 18.48.18((2).jpeg",
+      "sha256": "f51f67985b84ae9998452e9cb1e5c01ff3800f0b941600a525f86cc76e306f0c"
+    },
+    "strig-navy-background.jpeg": {
+      "original_filename": "WhatsApp Image 2026-10-10 at 18.48.18.jpeg",
+      "sha256": "33ab7033288970b7fad84ca917d11d1e5420f08be8c03ab078ea840924035aa9"
+    },
+    "athene-black-background.jpeg": {
+      "original_filename": "WhatsApp Image 2026-10-10 at 18.50.10.jpeg",
+      "sha256": "86999377bde8a7f6e77f80665377b7d164df71da76ffb146d7e3cd93001e177e"
+    }
+  },
+  "derivation": "Pillow threshold + pixel boundaries + RDP 0.65px",
+  "font_identity": "unknown",
+  "master_status": "raster references only"
+}
