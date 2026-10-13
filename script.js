@@ -634,6 +634,54 @@ function initExecutiveBriefModal() {
   }
 }
 
+// One-time section entrances; no content depends on animation or on JavaScript.
+function initSectionMotion() {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (reduceMotion.matches || !('IntersectionObserver' in window) || !Element.prototype.animate) return;
+  const sections = document.querySelectorAll('.holding-main .project-stages, .holding-main .holding-pillars-grid, .holding-main .holding-ip-card, .holding-main .public-team-heading');
+  if (!sections.length) return;
+  const seen = new WeakSet();
+  const active = new Map();
+  const visible = new Set();
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(({ target, isIntersecting }) => {
+      if (isIntersecting) visible.add(target);
+      else visible.delete(target);
+      let animation = active.get(target);
+      if (isIntersecting && !seen.has(target)) {
+        seen.add(target);
+        animation = target.animate([
+          { opacity: 0.86, transform: 'translateY(8px)' },
+          { opacity: 1, transform: 'translateY(0)' }
+        ], { duration: 420, easing: 'cubic-bezier(0.2, 0.7, 0.3, 1)' });
+        active.set(target, animation);
+        animation.onfinish = () => {
+          active.delete(target);
+          visible.delete(target);
+          observer.unobserve(target);
+        };
+      }
+      if (animation) {
+        if (isIntersecting && !document.hidden) animation.play();
+        else animation.pause();
+      }
+    });
+  }, { threshold: 0.08 });
+  sections.forEach(section => observer.observe(section));
+  document.addEventListener('visibilitychange', () => {
+    active.forEach((animation, section) => {
+      if (!document.hidden && visible.has(section)) animation.play();
+      else animation.pause();
+    });
+  });
+  reduceMotion.addEventListener('change', event => {
+    if (!event.matches) return;
+    active.forEach(animation => animation.finish());
+    active.clear();
+    observer.disconnect();
+  });
+}
+
 // DOM Initialization
 document.addEventListener('DOMContentLoaded', () => {
   console.log(
@@ -667,7 +715,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (targetElem) {
           e.preventDefault();
           targetElem.scrollIntoView({
-            behavior: 'smooth',
+            behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
             block: 'start'
           });
         }
@@ -691,6 +739,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }, { passive: true });
   });
+
+  initSectionMotion();
 
   // Initialize Modals
   initContactModal();

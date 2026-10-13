@@ -2,6 +2,17 @@
 
 El historial de versiones registra lo ocurrido, no especificaciones vigentes. Consultar el [índice](README.md) y el plan para el estado actual. Los documentos antiguos citados en las versiones están en la copia recuperable local descrita en el índice.
 
+## Material local del spot — 2026-10-12
+
+- Contexto y arquitectura lógica con límite del sistema, roles externos, responsabilidades e intercambios nombrados; vistas derivadas sin alterar fuentes de ingeniería ni fijar hardware.
+- Visor interno con pestañas y modo pantalla; PNG 1920 × 1080, revisión de conectores y navegación accesible en escritorio/móvil. Brief central y snapshot de fuentes actualizados. Material separado de la web publicada.
+
+## Cambios locales pendientes de publicación — 2026-10-11
+
+- Extensión visual acotada a Athene y sus tres tarjetas: descriptor independiente, cabeceras compactas y corte diagonal integrado en la esquina del contorno. Retiradas marcas y pestañas flotantes; tipografía y narrativa conservadas.
+- Entradas únicas por visibilidad y respuesta discreta de la flecha del botón principal. Pausa fuera de vista/pestaña oculta; movimiento reducido y contenido visible sin JavaScript.
+- Comparación actual/propuesta y revisión ES/EN en cuatro anchos, sin desbordamientos ni errores de JavaScript. Estudio central actualizado.
+
 ## [2.4.4] — 2026-10-11
 
 - Revisión de logos del diseñador integrada en firmas, símbolos y favicon de Strig/Athene. Referencias JPEG y hashes conservados junto a los vectores anteriores; derivados web transparentes, con masters y fuente originales pendientes (ADR-0018).
