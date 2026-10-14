@@ -43,3 +43,22 @@ docs/**/*.html
 # Supplied institutional manuals and source pack retained for reuse.
 !docs/brand/institutional/**/originals/*.pdf
 !docs/brand/institutional/**/originals/*.zip
+
+# Spot UdeC y presentaciones locales/internas (no publicadas en la web)
+docs/BRIEF_SPOT_*
+docs/presentations/
+docs/REVISION_GIT_*
+exports/spot-*
+tools/prepare_spot_*
+tools/verify_spot_*
+
+# Secretos, entornos y credenciales locales
+.env
+.env.*
+*.key
+*.pem
+*.crt
+*.cert
+credentials*
+secrets/
+private/

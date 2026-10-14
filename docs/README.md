@@ -1,12 +1,13 @@
 # Documentación de la web
 
-Actualizada: 2026-10-09. Este índice recoge el estado vigente; las rondas de exploración ya no son instrucciones de implementación.
+Actualizada: 2026-10-11. Este índice recoge el estado vigente; las rondas de exploración ya no son instrucciones de implementación.
 
 | Documento | Información que mantiene |
 | --- | --- |
 | [Estudio de marca](ESTUDIO_MARCA_STRIG_ATHENE.md) | Identidad seleccionada, fundamentos, alternativas y trabajo pendiente de logos. |
 | [Plan de web y assets](PLAN_ESTRATEGICO_MARCA_Y_ASSETS_VISUALES.md) | Narrativa aprobada, estado de implementación y prioridades. |
 | [Ilustración de arquitectura](METODOLOGIA_ILUSTRACION_ARQUITECTURA.md) | Significado del SVG, límites técnicos, método de iteración y futura animación. |
+| Preparación local del spot UdeC | Recorrido, perfiles y pauta de tomas conservados fuera de esta publicación pública; no forman parte de la landing. |
 | [Biblioteca institucional](brand/institutional/README.md) | Reglas por página de manual, originales, procedencia y validaciones pendientes. |
 | [Registro de assets](ASSET_REGISTER.json) | Procedencia y condiciones de uso de cada asset. |
 | [ADRs](adr/) | Decisiones formales históricas; los aceptados se conservan. |

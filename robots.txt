@@ -5,4 +5,4 @@ Allow: /terms.html$
 Allow: /privacy.html$
 Disallow: /dossier.html
 
-Sitemap: https://strigsystems.tech/sitemap.xml
+Sitemap: https://strigsystems.cl/sitemap.xml
