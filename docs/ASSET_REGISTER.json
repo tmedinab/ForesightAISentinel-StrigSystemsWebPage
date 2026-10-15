@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-11",
+  "updated": "2026-10-15",
   "scope": "Assets técnicos, identidad Strig/Athene y marcas institucionales; retratos pendientes de auditoría de derechos.",
   "ownerInstruction": "Tomás: tratar assets existentes como origen no verificado.",
   "assets": [
@@ -2516,14 +2516,14 @@
     {
       "path": "assets/img/brand/strig-social.svg",
       "status": "approved-local-web",
-      "source": "Familia A: H1 Strig y AtheneR11/R12. Derivados del paquete exports/brand-review/2026-10-07_AB/vectors/A; selección explícita M25, 2026-10-07.",
+      "source": "Familia A: H1 Strig y AtheneR11/R12. Derivados del paquete exports/brand-review/2026-10-07_AB/vectors/A; selección explícita M25, 2026-10-07. Texto público de estado actualizado el 2026-10-15 según ADR-0019; PNG reexportado del SVG vigente, sin modificar contornos de marca.",
       "rights": "Contornos originales del estudio; wordmarks Space Grotesk bajo SIL OFL preservada en el paquete fuente.",
       "approvedUse": "Identidad de empresa/producto en la web local, impresión y tarjeta social. ADR-0008. No constituye evidencia de hardware o prestaciones."
     },
     {
       "path": "assets/img/brand/strig-social.png",
       "status": "approved-local-web",
-      "source": "Familia A: H1 Strig y AtheneR11/R12. Derivados del paquete exports/brand-review/2026-10-07_AB/vectors/A; selección explícita M25, 2026-10-07.",
+      "source": "Familia A: H1 Strig y AtheneR11/R12. Derivados del paquete exports/brand-review/2026-10-07_AB/vectors/A; selección explícita M25, 2026-10-07. Texto público de estado actualizado el 2026-10-15 según ADR-0019; PNG reexportado del SVG vigente, sin modificar contornos de marca.",
       "rights": "Contornos originales del estudio; wordmarks Space Grotesk bajo SIL OFL preservada en el paquete fuente.",
       "approvedUse": "Identidad de empresa/producto en la web local, impresión y tarjeta social. ADR-0008. No constituye evidencia de hardware o prestaciones."
     },
@@ -2746,6 +2746,30 @@
       "source": "docs/brand/designer-2026-10-10/manifest.json",
       "approvedUse": "Aplicación web pública autorizada por Tomás el 2026-10-11, tras integración ADR-0018; contornos reconstruidos de JPEG, masters pendientes.",
       "rights": "Derivacion de referencias aportadas para uso por Tomas; no identificacion de fuente."
+    },
+    {
+      "path": "docs/visual/originals/athene-concept-gemini-20261015.jpg",
+      "status": "ai-generated-source",
+      "source": "Gemini_Generated_Image_t7ponit7ponit7po.jpg, aportada por Tomás el 2026-10-15 como ilustración generada con IA. Original preservado sin cambios; SHA-256 a5dfad46ec7efa2593817f7a1ec738435f980e47e618864427fe230de8819ff1.",
+      "rights": "Referencia generada con IA suministrada por el usuario. Sin verificación independiente de términos de uso o exclusividad. No fotografía, CAD aprobado, captura térmica real o evidencia de ensayo.",
+      "sha256": "a5dfad46ec7efa2593817f7a1ec738435f980e47e618864427fe230de8819ff1",
+      "approvedUse": "Conservación de procedencia y reutilización; no incluir el original en el build público."
+    },
+    {
+      "path": "assets/img/tech/athene-concept-1200.webp",
+      "status": "conceptual-public",
+      "source": "Gemini_Generated_Image_t7ponit7ponit7po.jpg, aportada por Tomás el 2026-10-15 como ilustración generada con IA. Original preservado sin cambios; SHA-256 a5dfad46ec7efa2593817f7a1ec738435f980e47e618864427fe230de8819ff1. Derivado WebP de 1200 × 896 px, sin alteración creativa del contenido.",
+      "rights": "Referencia generada con IA suministrada por el usuario. Sin verificación independiente de términos de uso o exclusividad. No fotografía, CAD aprobado, captura térmica real o evidencia de ensayo.",
+      "sha256": "17f48feb732b5ec417b826dc0a3442aa5f0a1e76f3bb1d2efd4b5974a6d289da",
+      "approvedUse": "Publicación en panel Athene autorizada por Tomás el 2026-10-15 (ADR-0020), sin visor de ampliación. Leyenda visible de generación IA y contenido térmico sintético. No atribuir identidad, clasificación o prestaciones."
+    },
+    {
+      "path": "assets/img/tech/athene-concept-2400.webp",
+      "status": "conceptual-reusable",
+      "source": "Gemini_Generated_Image_t7ponit7ponit7po.jpg, aportada por Tomás el 2026-10-15 como ilustración generada con IA. Original preservado sin cambios; SHA-256 a5dfad46ec7efa2593817f7a1ec738435f980e47e618864427fe230de8819ff1. Derivado WebP de 2400 × 1792 px, sin alteración creativa del contenido.",
+      "rights": "Referencia generada con IA suministrada por el usuario. Sin verificación independiente de términos de uso o exclusividad. No fotografía, CAD aprobado, captura térmica real o evidencia de ensayo.",
+      "sha256": "c90c3cb346f4440948af8313727ef7a7079ab8305084ab1fb6eb69b1f97763ee",
+      "approvedUse": "Derivado conservado para reutilización. No referenciado ni incluido en el build público actual; panel activo de 1200 px."
     }
   ],
   "institutionalLibrary": "docs/brand/institutional/README.md"

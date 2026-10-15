@@ -2,6 +2,19 @@
 
 El historial de versiones registra lo ocurrido, no especificaciones vigentes. Consultar el [índice](README.md) y el plan para el estado actual. Los documentos antiguos citados en las versiones están en la copia recuperable local descrita en el índice.
 
+## [2.4.8] — 2026-10-15
+
+- Publicación en main autorizada por Tomás: ilustración híbrida sin ampliación, estado público en lenguaje directo y texto cercano «Detección de personas y anomalías térmicas, con revisión humana», con paridad ES/EN. Sin alternancia animada: segunda escena aún por definir.
+
+### Iteraciones previas a la publicación
+
+- Por indicación de Tomás, retirados botón y visor «Ampliar ilustración», controlador, traducciones y estilos asociados. Imagen y capa SVG del panel conservadas; derivado de detalle disponible para reutilización, fuera del build público.
+- Candidata híbrida integrada localmente a partir de la imagen Gemini de Tomás: original y procedencia preservados, derivados WebP de 48/159 KB, capa SVG de información y referencias, textos ES/EN y ampliación accesible. Ilustración IA/imagen térmica sintética identificadas; SVG anterior conservado. Selección visual/publicación pendientes (ADR-0020 propuesto).
+- Estado público en lenguaje directo: diseño/desarrollo, integración/pruebas y evolución Noctua/Nest. Código TRL retirado de portada, resumen, términos y tarjeta social; madurez interna conservada (ADR-0019). Textos ES/EN alineados. Sin publicación.
+- Ampliación accesible de la ilustración en diálogo nativo: zoom/paneo, navegación por teclado, cierre y retorno de foco; paridad ES/EN y fallback sin JS. Candidata separada para evidencia, monitor y operador; asset activo y estado del proyecto conservados para revisión con Tomás. Sin publicación.
+- Diagramas de trabajo refinados en jerarquía, conexiones y distinción entre usuarios, información de episodios y gestión de misión. Exportaciones anteriores preservadas y verificación ampliada a solapamientos de texto y extremos lógicos.
+- Panel conceptual revisado al tamaño real en escritorio/móvil; documentada la propuesta de priorizar evidencia/pantalla y ampliación accesible. Portada y asset público conservados, sin nueva publicación.
+
 ## Material local del spot — 2026-10-12
 
 - Contexto y arquitectura lógica con límite del sistema, roles externos, responsabilidades e intercambios nombrados; vistas derivadas sin alterar fuentes de ingeniería ni fijar hardware.

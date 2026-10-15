@@ -2843,6 +2843,13 @@ body {
 /* ==========================================================================
    Pilot Application Modal & Form (Deep Navy Cyber Glass)
    ========================================================================== */
+.concept-scene { position: relative; margin: 0.75rem 0 0.25rem; }
+.concept-scene .concept-diagram { margin: 0; border-radius: 6px; }
+.concept-scene-overlay { position: absolute; inset: 0; display: block; width: 100%; height: 100%; pointer-events: none; }
+.concept-information-link { fill: none; stroke: #68d7e4; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+.concept-scene-markers circle { fill: #0b1926; stroke: #7ecbdc; stroke-width: 5; }
+.concept-scene-markers text { fill: #edf5f8; font: 500 56px var(--font-mono); text-anchor: middle; }
+
 body.modal-open {
   overflow: hidden;
 }
@@ -4243,7 +4250,7 @@ body.modal-open {
 }
 
 /* ==========================================================================
-   Hero Status Strip (TRL 3 Badge)
+   Hero Status Strip (Experimental development)
    ========================================================================== */
 .hero-status-strip {
   display: inline-flex;

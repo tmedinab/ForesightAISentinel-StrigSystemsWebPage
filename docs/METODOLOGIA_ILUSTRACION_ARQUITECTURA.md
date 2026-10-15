@@ -1,6 +1,18 @@
-# Ilustración de arquitectura Athene
+# Ilustración de funcionamiento de Athene
 
-Estado: 2026-10-09. SVG activo: [athene-architecture.svg](../assets/img/tech/athene-architecture.svg). Pieza conceptual de la web, no plano de Noctua ni evidencia de operación. [Plan](PLAN_ESTRATEGICO_MARCA_Y_ASSETS_VISUALES.md) para narrativa; [registro](ASSET_REGISTER.json) para procedencia.
+Estado: 2026-10-15. Ilustración aprobada: imagen Gemini de Tomás en WebP con capa SVG en HTML; publicación autorizada el 2026-10-15 (ADR-0020). SVG anterior [athene-architecture.svg](../assets/img/tech/athene-architecture.svg) preservado como referencia. Pieza conceptual, no plano de Noctua ni evidencia de operación. [Plan](PLAN_ESTRATEGICO_MARCA_Y_ASSETS_VISUALES.md) para narrativa; [registro](ASSET_REGISTER.json) para procedencia.
+
+## Candidata híbrida integrada para revisión
+
+Estado vigente tras indicación posterior de Tomás del 2026-10-15: botón y visor de ampliación retirados, incluida su lógica y estilos. La ilustración permanece en el panel. El derivado de 2400 px se conserva para reutilización y queda fuera del build al no referenciarse desde la página. Las verificaciones de zoom descritas debajo son antecedentes de la versión previa.
+
+Original de 2400 × 1792 px conservado en `docs/visual/originals/athene-concept-gemini-20261015.jpg`. Derivados: `athene-concept-1200.webp` (47.590 bytes) para el panel y `athene-concept-2400.webp` (158.886 bytes) para ampliación. `tools/prepare_concept_illustration.cjs` reproduce las exportaciones y registra procedencia/hashes; no altera creativamente el contenido. El original no se referencia desde la página ni entra al build público.
+
+La capa SVG en `index.html` añade el intercambio de información análisis→consola y referencias 01–03. Raster y capa usan el mismo encuadre 2400 × 1792 y escalan juntos, también al hacer zoom. Nombres de funciones y leyenda son HTML con traducción ES/EN. El raster mantiene la escena, la ampliación gris y los indicadores de rotor; no son un diagrama de protocolos o de despliegue físico. Los diagramas de arquitectura internos tienen otro propósito y no se reemplazan con esta ilustración.
+
+La imagen térmica generada tiene morfología ambigua: no asignar persona, especie o incendio. La leyenda visible identifica aeronave genérica y térmica sintética. No hay capturas propias, equipo integrado ni configuración Noctua acreditados. La revisión contempla composición, ampliación accesible, carga, lectura móvil y alineación de capas; no es validación de ingeniería ni de derechos.
+
+Comprobación de la candidata integrada: ES/EN a 1920/1440/390/320 px; foco, Escape, cierre por fondo, zoom/paneo/reinicio y retorno al botón, modal de resumen existente y fallback sin JS. Raster y SVG mantienen dimensiones y proporción comunes al acercar. Paneles revisados visualmente a 1440/390; ampliación de escritorio revisada. Preflight, i18n y build pasan (21 archivos); build incluye dos WebP y excluye el original y el SVG histórico. Registro de assets con origen/hashes actualizado. Esta comprobación corresponde a la prueba previa; Tomás autorizó publicar posteriormente la versión sin ampliación.
 
 ## Qué debe entenderse
 
@@ -17,15 +29,15 @@ Un VTOL de ala fija observa el territorio con cámara; el computador a bordo ana
 
 No confundir el campo de observación con un láser, ni un vínculo con control autónomo de actuación. Evitar check verde, precisión/confianza inventadas o imágenes falsamente reales. Mantener leyenda conceptual visible en la página ES/EN; metadata SVG no sustituye esa leyenda en una exportación independiente.
 
-## Fuentes y fidelidad
+## Fuentes y fidelidad del SVG anterior
 
 Se consultó `foresight-ai-mvp-2026/docs/01_CONOPS.md`, v0.5.46, §§1.2, 2.3, 4.1, 7.4 y 7.5; decisiones BB/BQ (autoridad humana), BS/BT/BW (evidencia y organización de central/enlace). Es arquitectura pre-MCR y objetivos, no prueba de implementación. No trasladar parámetros internos a la landing ni representar toda la estación robotizada futura como producto construido.
 
 Cuatro imágenes VTOL aportadas por Tomás ayudaron a comprender ala, fuselaje, booms, motores y cámara. Origen/licencia no verificados: no se incrustan, calcan ni atribuyen al proyecto. Mejorar relaciones mecánicas sin copiar una aeronave comercial ni inventar precisión de CAD.
 
-## Base y evolución conservadas
+## Base y evolución conservadas del SVG anterior
 
-La candidata `athene-architecture-astra-candidate-v1.svg` fue generada en una prueba de subagente solicitada por Tomás y elegida como base editable. Se edita incrementalmente, sin regenerar el conjunto cada vez.
+La candidata `athene-architecture-astra-candidate-v1.svg` fue generada en una prueba de subagente solicitada por Tomás y elegida como base editable del SVG anterior. Su evolución incremental permanece disponible como antecedente.
 
 1. Paso 1: limpieza de tres rótulos duplicados; geometría conservada.
 2. Paso 2: soportes/rotores con relaciones mecánicas más comprensibles.
@@ -41,13 +53,25 @@ Hitos anteriores en `assets/img/tech/athene-architecture-step01.svg` a `step04.s
 
 Definir el problema de lectura y el papel de cada objeto antes de dibujar. Conservar composición, proyección oblicua e iluminación; separar objeto, volumen, conexión y rótulo en grupos editables. Primero silueta y profundidad, después detalle que sobreviva al tamaño de uso. Variar un aspecto por ensayo, mostrar antes/después y evaluar en contexto.
 
-SVG sigue siendo la herramienta actual: geometría explícita, paths, gradientes moderados, clipping y grupos; sin necesidad de nueva imagen raster, filtros costosos o render 3D. Inkscape 1.3.2/CLI puede exportar y editar; no hay MCP conectado confirmado. [CLI Inkscape](https://wiki.inkscape.org/wiki/Using_the_Command_Line). [Three.js SVGRenderer](https://threejs.org/docs/pages/SVGRenderer.html) permite proyección pero no equivale a shading/render 3D completo. Blender/CAD quedan para otra fase; no se instaló Blender.
+SVG se mantiene para diagramas e interconexiones editables. La candidata actual usa raster para la escena y SVG/HTML para relaciones y rótulos; no se vectoriza automáticamente el arte generado. Los pasos del SVG anterior permanecen como antecedentes. Inkscape 1.3.2/CLI puede exportar y editar; no hay MCP conectado confirmado. [CLI Inkscape](https://wiki.inkscape.org/wiki/Using_the_Command_Line). [Three.js SVGRenderer](https://threejs.org/docs/pages/SVGRenderer.html) permite proyección pero no equivale a shading/render 3D completo. Blender/CAD quedan para otra fase; no se instaló Blender.
 
 Verificar XML, IDs únicos, referencias internas y ausencia de recursos externos inesperados; renderizar en Chromium y comparar escritorio 1440 y móvil 320, ES/EN. Verificar leyenda visible y ausencia de desbordamiento. El detalle de pantalla puede requerir ampliación en móvil; no afirmar legibilidad de microtexto por pasar un check geométrico. No llamar validación de ingeniería a un render.
 
+## Prioridad propuesta tras revisión a tamaño real — 2026-10-15
+
+La revisión inicial del SVG anterior midió 484 × 309 px en una ventana de 1440 px y 324 × 207 px en una ventana de 390 px. La silueta aérea y los tres momentos se reconocían, pero la tarjeta de evidencia y el contenido del monitor tenían poco tamaño. La candidata híbrida posterior ocupa 484 × 362 y 324 × 242 px, respectivamente; las capturas actuales de `scratch/spot-review-20261015/hero-panel-1440.png` y `hero-panel-390.png` corresponden a esa candidata, no a una prueba con usuarios.
+
+La comparación conserva aeronave, terreno, proyección y motivo térmico. La candidata en `scratch/evidence-review/index.html` amplía la referencia recibida de 56 × 44 a 86 × 62 unidades del SVG, simplifica el monitor a una imagen principal con el mismo indicio y refina la figura humana: ropa mate, un brazo visible, piernas con volumen y silla simplificada. Es una propuesta local, sin sustituir el asset activo. Revisar las candidatas al ancho real de uso, no solo a 720 px. No añadir animación antes de resolver la lectura estática.
+
+La ampliación accesible sí quedó implementada en la página local: botón «Ampliar ilustración», diálogo nativo con título y alcance traducidos, imagen ajustada y zoom al 180 % con desplazamiento nativo. Fondo inerte, bloqueo de scroll, recorrido de foco, Escape/cierre/backdrop, reinicio de zoom y retorno del foco al botón. Sin JavaScript se conserva la imagen de la página y se oculta el botón. No se requiere animación ni librería nueva. Verificado ES/EN en 1440/390 px, teclado, paneo, reapertura, modal de resumen existente y fallback sin JS; preflight, i18n y build público pasan. Capturas locales y prueba en `scratch/evidence-review/` y `scratch/verify-architecture-viewer.cjs`. Sin publicación en esta ronda.
+
+Para nomenclatura, evaluar con Tomás «Concepto de funcionamiento» en el panel web: describe la escena ilustrativa y la distingue de los diagramas de contexto/arquitectura lógica usados para discutir ingeniería. No se cambió el título público ni su traducción. Como segunda prioridad de sección, revisar si «Estado del proyecto» distingue con suficiente claridad trabajo actual, siguiente demostración y evolución; conservarlos como objetivos, sin inventar fechas o añadir material técnico reservado.
+
+Tomás aprobó separar «Hoy · Diseño y desarrollo», «Siguiente hito · Integración y pruebas» y «Evolución · Noctua y Nest» y retirar el código TRL de los textos públicos el 2026-10-15 (ADR-0019). La sección quedó actualizada en ES/EN, manteniendo «Desarrollo experimental» y la clasificación interna. La mención específica de demostración prevista en el resumen no se modificó; el bloque de estado utiliza el hito de integración sin fecha.
+
 ## Encargo de revisión independiente reutilizable
 
-Revisar SVG activo, AGENTS, este documento y plan; preservar familia A y narrativa aprobada. Evaluar silueta VTOL, profundidad coherente, cámara, inferencia a bordo, sentido del flujo, evidencia térmica y supervisión humana. Priorizar tres defectos observables, justificar cada corrección y proponer una candidata comparada con el control, cambiando una variable por vez. No añadir especificaciones, sensores o capacidades sin fuente. Señalar preguntas de decisión antes de cambiar significado. Entregar límites y pruebas, sin publicación ni instalación automática. Usar Astra sólo para encargos puntuales explícitamente solicitados; no es necesario para cada edición.
+Revisar la candidata híbrida activa localmente, el SVG anterior, AGENTS, este documento y plan; preservar identidad vigente y narrativa aprobada. Evaluar silueta VTOL, profundidad coherente, cámara, inferencia a bordo, sentido del flujo, evidencia térmica y supervisión humana. Priorizar tres defectos observables, justificar cada corrección y proponer una candidata comparada con el control, cambiando una variable por vez. No añadir especificaciones, sensores o capacidades sin fuente. Señalar preguntas de decisión antes de cambiar significado. Entregar límites y pruebas, sin publicación ni instalación automática. Usar Astra sólo para encargos puntuales explícitamente solicitados; no es necesario para cada edición.
 
 ## Animación futura: brief y criterio
 

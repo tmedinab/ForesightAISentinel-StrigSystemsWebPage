@@ -19,7 +19,7 @@
   <meta property="og:image" content="https://strigsystems.cl/assets/img/brand/strig-social.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Strig Systems · Athene · TRL 3 · Prototipo en desarrollo">
+  <meta property="og:image:alt" content="Strig Systems · Athene · Desarrollo experimental">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
@@ -35,7 +35,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=2.4.5">
+  <link rel="stylesheet" href="styles.css?v=2.4.8">
 
   <!-- Umami Analytics (Privacy-First & Cookie-less) -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="aa979513-3790-4797-99e5-03d4a57d74ee"></script>
@@ -118,7 +118,7 @@
           <!-- Hero Subtitle -->
           <p class="hero-subtitle" data-i18n="h_desc">Athene es un sistema en desarrollo que utiliza plataformas aéreas autónomas con supervisión humana para apoyar la vigilancia forestal nocturna. Busca detectar presencia de personas e indicios de incendio mediante análisis térmico a bordo y revisión humana de las alertas.</p>
 
-          <p class="hero-status" data-i18n="h_status">Desarrollo experimental · TRL 3</p>
+          <p class="hero-status" data-i18n="h_status">Desarrollo experimental</p>
 
           <!-- Hero Actions -->
           <div class="hero-actions">
@@ -138,27 +138,34 @@
         </div>
         <figure class="concept-panel glass-panel">
           <div class="concept-panel-heading">
-            <span class="concept-kind" data-i18n="h_visual_tag">ARQUITECTURA CONCEPTUAL</span>
+            <span class="concept-kind" data-i18n="h_visual_tag">CONCEPTO DE FUNCIONAMIENTO</span>
             <span class="concept-reference" aria-hidden="true">ATHENE // 01</span>
           </div>
           <h2 class="concept-title" data-i18n="h_visual_title">Un sistema. Tres funciones conectadas.</h2>
-          <img class="concept-diagram" src="assets/img/tech/athene-architecture.svg?v=2.4.3" width="720" height="460" alt="" decoding="async">
+          <div class="concept-scene">
+            <img class="concept-diagram" src="assets/img/tech/athene-concept-1200.webp" width="1200" height="896" alt="" decoding="async">
+            <svg class="concept-scene-overlay" viewBox="0 0 2400 1792" aria-hidden="true" focusable="false">
+              <defs><marker id="concept-arrow-hero" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M2 1 8 5 2 9" fill="none" stroke="#68d7e4" stroke-width="1.6"/></marker></defs>
+              <path class="concept-information-link" d="M2030 734V816Q2030 845 2001 845H1899Q1870 845 1870 874V1017" marker-end="url(#concept-arrow-hero)"/>
+              <g class="concept-scene-markers"><circle cx="540" cy="770" r="44"/><text x="540" y="790">01</text><circle cx="1755" cy="322" r="44"/><text x="1755" y="342">02</text><circle cx="1610" cy="1120" r="44"/><text x="1610" y="1140">03</text></g>
+            </svg>
+          </div>
           <ol class="concept-flow">
             <li><span class="concept-step" aria-hidden="true">01</span><span data-i18n="h_flow_1">Observación aérea</span></li>
             <li><span class="concept-step" aria-hidden="true">02</span><span data-i18n="h_flow_2">Análisis a bordo</span></li>
             <li><span class="concept-step" aria-hidden="true">03</span><span data-i18n="h_flow_3">Revisión humana</span></li>
           </ol>
-          <p class="concept-delivery" data-i18n="h_visual_delivery">Imágenes y alertas para el operador</p>
-          <figcaption data-i18n="h_visual_caption">Ilustración conceptual del flujo de observación, análisis a bordo y revisión humana. No representa el diseño de Noctua ni resultados de pruebas.</figcaption>
+          <p class="concept-delivery" data-i18n="h_visual_delivery">Detección de personas y anomalías térmicas, con revisión humana.</p>
+          <figcaption data-i18n="h_visual_caption">Ilustración generada con IA: aeronave genérica e imágenes térmicas sintéticas. No representa el diseño de Noctua ni resultados de pruebas.</figcaption>
         </figure>
       </section>
 
       <section class="project-stages" aria-labelledby="project-stages-title">
         <h2 id="project-stages-title" class="section-kicker" data-i18n="h_stage_label">ESTADO DEL PROYECTO</h2>
         <ol class="project-stages-grid">
-          <li><h3 data-i18n="h_stage_now">Hoy · TRL 3</h3><p data-i18n="h_stage_now_desc">Preparación de integración y primeras pruebas.</p></li>
-          <li><h3 data-i18n="h_stage_next">Próximo · Demostración 2027</h3><p data-i18n="h_stage_next_desc">Evaluación conjunta de los componentes.</p></li>
-          <li><h3 data-i18n="h_stage_future">Evolución · Aeronave y estación</h3><p data-i18n="h_stage_future_desc">Noctua y Nest como desarrollos futuros.</p></li>
+          <li><h3 data-i18n="h_stage_now">Hoy · Diseño y desarrollo</h3><p data-i18n="h_stage_now_desc">Definición de arquitectura y desarrollo de software.</p></li>
+          <li><h3 data-i18n="h_stage_next">Siguiente hito · Integración y pruebas</h3><p data-i18n="h_stage_next_desc">Evaluar el funcionamiento conjunto de los componentes.</p></li>
+          <li><h3 data-i18n="h_stage_future">Evolución · Noctua y Nest</h3><p data-i18n="h_stage_future_desc">Aeronave y estación previstas para la evolución del sistema.</p></li>
         </ol>
       </section>
 
@@ -518,7 +525,7 @@
 
         <div class="brief-paper-lead">
           <h2 id="brief-doc-title" class="brief-h1" data-i18n="eb_h1">Observación aérea para la vigilancia forestal nocturna</h2>
-          <p class="brief-summary" data-i18n="eb_summary">Athene es un sistema en desarrollo experimental (TRL 3 declarado) para apoyar la vigilancia forestal nocturna con plataformas aéreas autónomas y supervisión humana. Estamos preparando la integración y las primeras pruebas.</p>
+          <p class="brief-summary" data-i18n="eb_summary">Athene es un sistema en desarrollo experimental para apoyar la vigilancia forestal nocturna con plataformas aéreas autónomas y supervisión humana. Estamos preparando la integración y las primeras pruebas.</p>
         </div>
 
         <div class="brief-paper-grid">
@@ -564,6 +571,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=2.4.5"></script>
+  <script src="script.js?v=2.4.8"></script>
 </body>
 </html>

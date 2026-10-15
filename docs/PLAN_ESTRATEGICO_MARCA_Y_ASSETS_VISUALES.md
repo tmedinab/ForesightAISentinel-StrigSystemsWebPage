@@ -14,7 +14,7 @@ La portada pública es compacta: empresa, propósito de Athene, arquitectura con
 
 ## Evidencia y reserva técnica
 
-TRL 3 es el estado declarado por el proyecto; distinguir prueba de concepto de disponibilidad comercial. No publicar alcance, autonomía, viento, latencia o tasas de detección sin fuente y validación aprobadas. La discrepancia histórica 45–60 frente a 90+ minutos permanece sin resolver; no elegir una cifra para rellenar diseño.
+TRL 3 permanece como estado interno declarado por el proyecto; distinguir prueba de concepto de disponibilidad comercial. La comunicación pública usa «Desarrollo experimental» y trabajo/hitos, sin el código TRL (ADR-0019, decisión de Tomás del 2026-10-15). Estado: «Hoy · Diseño y desarrollo» / «Siguiente hito · Integración y pruebas» / «Evolución · Noctua y Nest». Esto no cambia la clasificación de ingeniería. No publicar alcance, autonomía, viento, latencia o tasas de detección sin fuente y validación aprobadas. La discrepancia histórica 45–60 frente a 90+ minutos permanece sin resolver; no elegir una cifra para rellenar diseño.
 
 Assets técnicos anteriores, incluido `vtol_payload.png`, se tratan como origen no verificado. Ilustraciones/renders deben llevar rótulo próximo, también en exports autónomos. Sin CAD aprobado no dibujar planos acotados de Noctua. No atribuir visión a través de suelo o vegetación opaca a un sensor térmico. No incorporar disuasión, sirenas o estrobos sólo porque figuran en documentos históricos. Tomás precisó durante la revisión final: detectar **presencia de personas** e indicios de incendio, sin reconocer identidad. La actividad humana se evalúa en contexto como posible riesgo; no toda presencia implica intención o causalidad. Se recupera esa intención preventiva de `dev`, sin sus cifras o promesas no verificadas.
 
@@ -27,7 +27,7 @@ Invitar a conversación técnica/piloto sin barrera legal intimidante ni cuestio
 | Identidad | Revisión del diseñador incorporada a derivados web (ADR-0018), con A anterior preservada; empresa/producto diferenciados. Contornos reconstruidos de JPEG, masters y fuente pendientes. |
 | Tipografía | Space Grotesk para titulares (700 máximo cargado), Outfit 400/500/600 para cuerpo y secundarios legibles; JetBrains Mono sólo para metadatos breves. |
 | Maquetación | Contenedor general 1200px con padding 24px; ampliar a 1400px fue propuesta, no decisión. Header flexible; proporción óptica Strig principal / Athene secundario. |
-| Arquitectura | `assets/img/tech/athene-architecture.svg`, paso 6 sobre candidata Astra. VTOL, cámara, inferencia, indicio y operador; representación conceptual. |
+| Ilustración funcional | Imagen Gemini aportada por Tomás: WebP de 1200 px y capa SVG editable, con nombres de funciones en HTML, sin visor de ampliación. Leyenda de generación IA e imagen térmica sintética; publicación autorizada el 2026-10-15 (ADR-0020). Derivado de 2400 px reservado para reutilización. SVG anterior de Astra conservado como referencia. |
 | Credenciales | «Finalistas 7th Gear Challenge - Gearbox UdeC». No generar logo Gearbox. |
 | Apoyos | Logos completos de IncubaUdeC y Corfo publicados por autorización de Tomás, con incubación, mentorías y financiamiento explícitos. Validación gráfica IU p.18 pendiente; no declara aprobación institucional (ADR-0014). |
 | Equipo | Tomás Medina (Cofundador · Responsable técnico), Carlos Gutiérrez (Cofundador · Operaciones), Ananda Glaria (Cofundadora) y Richard Solís (Cofundador). Cuatro fichas públicas. |
