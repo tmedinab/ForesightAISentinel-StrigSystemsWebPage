@@ -2845,6 +2845,13 @@ body {
    ========================================================================== */
 .concept-scene { position: relative; margin: 0.75rem 0 0.25rem; }
 .concept-scene .concept-diagram { margin: 0; border-radius: 6px; }
+.concept-scene .concept-scene-person { position: absolute; inset: 0; opacity: 0; transition: opacity 700ms ease-in-out; }
+.concept-scene.is-person .concept-scene-person { opacity: 1; }
+.concept-scene.is-inactive .concept-scene-person { transition: none; }
+.concept-scene:focus-visible { outline: 2px solid var(--accent-cyan); outline-offset: 4px; border-radius: 6px; }
+.concept-scene-help { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.concept-scene:focus-visible .concept-scene-help { z-index: 2; bottom: 0.5rem; left: 0.5rem; right: 0.5rem; width: auto; height: auto; clip-path: none; padding: 0.5rem; background: var(--bg-primary, #050811); color: var(--text-primary); font: 400 0.75rem var(--font-body); border-radius: 4px; }
+@media (prefers-reduced-motion: reduce) { .concept-scene .concept-scene-person { transition: none; } }
 .concept-scene-overlay { position: absolute; inset: 0; display: block; width: 100%; height: 100%; pointer-events: none; }
 .concept-information-link { fill: none; stroke: #68d7e4; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
 .concept-scene-markers circle { fill: #0b1926; stroke: #7ecbdc; stroke-width: 5; }

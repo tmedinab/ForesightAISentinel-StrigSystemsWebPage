@@ -2,6 +2,10 @@
 
 El historial de versiones registra lo ocurrido, no especificaciones vigentes. Consultar el [índice](README.md) y el plan para el estado actual. Los documentos antiguos citados en las versiones están en la copia recuperable local descrita en el índice.
 
+## [2.4.10] — 2026-10-16
+
+- Dos variantes Gemini optimizadas: anomalía térmica y presencia humana. Sin botones visibles: alternancia automática, selección por hover izquierda/derecha, toque y teclado, con pausa por visibilidad/foco y movimiento reducido. Originales y hashes preservados; publicación en main autorizada por Tomás tras revisar la prueba local.
+
 ## [2.4.8] — 2026-10-15
 
 - Publicación en main autorizada por Tomás: ilustración híbrida sin ampliación, estado público en lenguaje directo y texto cercano «Detección de personas y anomalías térmicas, con revisión humana», con paridad ES/EN. Sin alternancia animada: segunda escena aún por definir.

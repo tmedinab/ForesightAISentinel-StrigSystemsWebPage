@@ -2,7 +2,17 @@
 
 Estado: 2026-10-15. Ilustración aprobada: imagen Gemini de Tomás en WebP con capa SVG en HTML; publicación autorizada el 2026-10-15 (ADR-0020). SVG anterior [athene-architecture.svg](../assets/img/tech/athene-architecture.svg) preservado como referencia. Pieza conceptual, no plano de Noctua ni evidencia de operación. [Plan](PLAN_ESTRATEGICO_MARCA_Y_ASSETS_VISUALES.md) para narrativa; [registro](ASSET_REGISTER.json) para procedencia.
 
-## Candidata híbrida integrada para revisión
+## Dos escenarios aprobados — 2026-10-16
+
+Tomás autorizó probar en la web las dos nuevas imágenes Gemini. Tras la prueba local, Tomás autorizó publicar en main el 2026-10-16: `athene-thermal-20261016.webp` (55.116 bytes) y `athene-person-20261016.webp` (53.426 bytes), 1200 × 896 px. Originales preservados en `docs/visual/originals/` y hashes en el registro; exportación reproducible con `tools/prepare_concept_scenarios.cjs`. No se altera creativamente el raster.
+
+Por indicación posterior de Tomás, sin botones visibles. Alternancia cada 7 segundos y fundido de 700 ms. Hover por mitades: izquierda térmica, derecha personas, con zona neutral central; pausa durante hover y reanudación al salir. Toque cambia escena y deja selección manual. Teclado: flechas eligen, Enter cambia, Espacio pausa/reanuda; foco visible e instrucciones accesibles al enfocar. Pausa fuera del viewport, al ocultar pestaña y mientras se usa teclado. Con movimiento reducido sólo hay selección manual, sin fundido ni alternancia. Sin JS o si falla la segunda imagen, queda visible la primera. La capa SVG común conserva referencias y conexión hacia operador. Sin visor de ampliación.
+
+Persisten pequeñas diferencias entre escenas, flechas de rotor incrustadas y giro aparente de la hélice posterior. Tomás acepta usarlas para esta prueba; no se interpretan como validación de geometría, perfil de vuelo o prestaciones. Leyenda IA/sintética preservada. La firma naranja es una anomalía ilustrativa, sin clasificación de objeto confirmada. La revisión publicada anterior del ADR-0020 permanece preservada.
+
+Verificación local: 130 claves ES/EN, build de 21 archivos, originales y documentación excluidos. Navegador a 1440/390 px en ambos idiomas: imágenes, alternancia, hover izquierda/derecha con pausa, toque, teclado, movimiento reducido, pausa fuera de vista y fallback sin JS aprobados; sin desbordamiento ni errores JS. Paneles inspeccionados visualmente en móvil ES y escritorio EN.
+
+## Versión previa: integración híbrida
 
 Estado vigente tras indicación posterior de Tomás del 2026-10-15: botón y visor de ampliación retirados, incluida su lógica y estilos. La ilustración permanece en el panel. El derivado de 2400 px se conserva para reutilización y queda fuera del build al no referenciarse desde la página. Las verificaciones de zoom descritas debajo son antecedentes de la versión previa.
 

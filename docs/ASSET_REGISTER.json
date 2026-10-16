@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "scope": "Assets técnicos, identidad Strig/Athene y marcas institucionales; retratos pendientes de auditoría de derechos.",
   "ownerInstruction": "Tomás: tratar assets existentes como origen no verificado.",
   "assets": [
@@ -2770,6 +2770,38 @@
       "rights": "Referencia generada con IA suministrada por el usuario. Sin verificación independiente de términos de uso o exclusividad. No fotografía, CAD aprobado, captura térmica real o evidencia de ensayo.",
       "sha256": "c90c3cb346f4440948af8313727ef7a7079ab8305084ab1fb6eb69b1f97763ee",
       "approvedUse": "Derivado conservado para reutilización. No referenciado ni incluido en el build público actual; panel activo de 1200 px."
+    },
+    {
+      "path": "docs/visual/originals/athene-thermal-gemini-20261016.jpg",
+      "status": "ai-generated-source",
+      "source": "Imagen Gemini aportada por Tomás el 2026-10-16; escenario thermal. Original SHA-256 9aacf9f05ed213b58f9bfb4dd78a86c31ba6d245e76d993f85462f22b97167c9.",
+      "sha256": "9aacf9f05ed213b58f9bfb4dd78a86c31ba6d245e76d993f85462f22b97167c9",
+      "rights": "Ilustración IA suministrada por el usuario; sin verificación independiente de derechos. Aeronave genérica, evidencia térmica sintética; no CAD ni resultados de pruebas.",
+      "approvedUse": "Original preservado; excluir del build público."
+    },
+    {
+      "path": "assets/img/tech/athene-thermal-20261016.webp",
+      "status": "conceptual-public",
+      "source": "Imagen Gemini aportada por Tomás el 2026-10-16; escenario thermal. Original SHA-256 9aacf9f05ed213b58f9bfb4dd78a86c31ba6d245e76d993f85462f22b97167c9.",
+      "sha256": "883715ab0f75d7ddaf43aff0bf891ea3f73305fa9c162ad16b626812cb56b0b3",
+      "rights": "Ilustración IA suministrada por el usuario; sin verificación independiente de derechos. Aeronave genérica, evidencia térmica sintética; no CAD ni resultados de pruebas.",
+      "approvedUse": "Publicación autorizada por Tomás el 2026-10-16: escenarios alternantes sin botones, selección por hover/toque/teclado. Conservar leyenda IA/sintética; no acredita CAD, clasificación ni prestaciones."
+    },
+    {
+      "path": "docs/visual/originals/athene-person-gemini-20261016.jpg",
+      "status": "ai-generated-source",
+      "source": "Imagen Gemini aportada por Tomás el 2026-10-16; escenario person. Original SHA-256 66cbc99df007e7a804ca52d9fce64bb65af10ba97310e9dd5232f67306ecd700.",
+      "sha256": "66cbc99df007e7a804ca52d9fce64bb65af10ba97310e9dd5232f67306ecd700",
+      "rights": "Ilustración IA suministrada por el usuario; sin verificación independiente de derechos. Aeronave genérica, evidencia térmica sintética; no CAD ni resultados de pruebas.",
+      "approvedUse": "Original preservado; excluir del build público."
+    },
+    {
+      "path": "assets/img/tech/athene-person-20261016.webp",
+      "status": "conceptual-public",
+      "source": "Imagen Gemini aportada por Tomás el 2026-10-16; escenario person. Original SHA-256 66cbc99df007e7a804ca52d9fce64bb65af10ba97310e9dd5232f67306ecd700.",
+      "sha256": "3a9ba8e06c1784b280759e25b29dd1265cfbc9d6c3e1f9a234029423d607eae7",
+      "rights": "Ilustración IA suministrada por el usuario; sin verificación independiente de derechos. Aeronave genérica, evidencia térmica sintética; no CAD ni resultados de pruebas.",
+      "approvedUse": "Publicación autorizada por Tomás el 2026-10-16: escenarios alternantes sin botones, selección por hover/toque/teclado. Conservar leyenda IA/sintética; no acredita CAD, clasificación ni prestaciones."
     }
   ],
   "institutionalLibrary": "docs/brand/institutional/README.md"

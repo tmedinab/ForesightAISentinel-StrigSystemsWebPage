@@ -43,6 +43,9 @@ const translations = {
     h_visual_title: "Un sistema. Tres funciones conectadas.",
     h_visual_caption: "Ilustración generada con IA: aeronave genérica e imágenes térmicas sintéticas. No representa el diseño de Noctua ni resultados de pruebas.",
     h_visual_delivery: "Detección de personas y anomalías térmicas, con revisión humana.",
+    h_scene_thermal: "Anomalía térmica",
+    h_scene_person: "Presencia de personas",
+    h_scene_help: "Flechas: elegir escena. Enter: cambiar. Espacio: pausar o reanudar.",
     h_flow_1: "Observación aérea",
     h_flow_2: "Análisis a bordo",
     h_flow_3: "Revisión humana",
@@ -198,6 +201,9 @@ const translations = {
     h_visual_title: "One system. Three connected functions.",
     h_visual_caption: "AI-generated illustration: a generic aircraft and synthetic thermal imagery. It does not represent the Noctua design or test results.",
     h_visual_delivery: "Detection of people and thermal anomalies, with human review.",
+    h_scene_thermal: "Thermal anomaly",
+    h_scene_person: "Presence of people",
+    h_scene_help: "Arrows: choose scene. Enter: switch. Space: pause or resume.",
     h_flow_1: "Aerial observation",
     h_flow_2: "Onboard analysis",
     h_flow_3: "Human review",
@@ -682,6 +688,74 @@ function initSectionMotion() {
   });
 }
 
+function initConceptScenes() {
+  const scene = document.querySelector('.concept-scene');
+  if (!scene) return;
+  const image = scene.querySelector('.concept-scene-person');
+  const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let person = false, paused = false, visible = false, ready = false, focused = false, hovering = false;
+  let timer;
+  function label() {
+    const key = person ? 'h_scene_person' : 'h_scene_thermal';
+    scene.dataset.i18nAria = key;
+    scene.setAttribute('aria-label', translations[document.documentElement.lang === 'en' ? 'en' : 'es'][key]);
+  }
+  function select(next) {
+    if (!ready || person === next) return;
+    person = next;
+    scene.classList.toggle('is-person', person);
+    label();
+  }
+  function schedule() {
+    clearTimeout(timer);
+    scene.classList.toggle('is-inactive', !visible || document.hidden);
+    if (ready && visible && !document.hidden && !motion.matches && !paused && !focused && !hovering) {
+      timer = setTimeout(() => { select(!person); schedule(); }, 7000);
+    }
+  }
+  function pointerSelect(event) {
+    if (event.pointerType !== 'mouse' || !ready) return;
+    hovering = true;
+    const bounds = scene.getBoundingClientRect();
+    const position = (event.clientX - bounds.left) / bounds.width;
+    // A small neutral zone prevents flicker at the centre boundary.
+    if (position < 0.45) select(false);
+    else if (position > 0.55) select(true);
+    schedule();
+  }
+  scene.addEventListener('pointerenter', pointerSelect);
+  scene.addEventListener('pointermove', pointerSelect);
+  scene.addEventListener('pointerleave', () => { hovering = false; schedule(); });
+  scene.addEventListener('pointerup', event => {
+    if (event.pointerType !== 'mouse') { paused = true; select(!person); schedule(); }
+  });
+  scene.addEventListener('focus', () => { focused = scene.matches(':focus-visible'); schedule(); });
+  scene.addEventListener('blur', () => { focused = false; schedule(); });
+  scene.addEventListener('keydown', event => {
+    if (!['ArrowLeft', 'ArrowRight', 'Enter', ' '].includes(event.key)) return;
+    event.preventDefault();
+    focused = true;
+    if (event.key === 'ArrowLeft') select(false);
+    else if (event.key === 'ArrowRight') select(true);
+    else if (event.key === 'Enter') select(!person);
+    else paused = !paused;
+    schedule();
+  });
+  document.addEventListener('visibilitychange', schedule);
+  motion.addEventListener('change', schedule);
+  window.addEventListener('strig-lang-change', () => { if (ready) label(); });
+  const observer = new IntersectionObserver(entries => { visible = entries[0].isIntersecting; schedule(); }, { threshold: 0.2 });
+  observer.observe(scene);
+  image.decode().then(() => {
+    ready = true;
+    scene.tabIndex = 0;
+    scene.setAttribute('role', 'group');
+    scene.setAttribute('aria-describedby', 'concept-scene-help');
+    label();
+    schedule();
+  }).catch(() => { image.hidden = true; });
+}
+
 // DOM Initialization
 document.addEventListener('DOMContentLoaded', () => {
   console.log(
@@ -741,6 +815,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   initSectionMotion();
+  initConceptScenes();
 
   // Initialize Modals
   initContactModal();
